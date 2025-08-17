@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <SitePartDef>
+    <defName>NAT_CollectorLair_Base</defName>
+    <label>abandoned settlement</label>
+    <description>An abandoned settlement.</description>
+    <workerClass>NAT.SitePartWorker_CollectorLair</workerClass>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>World/WorldObjects/Expanding/DestroyedSettlement</expandingIconTexture>
+    <approachOrderString>Investigate {0}</approachOrderString>
+    <approachingReportString>Investigating {0}.</approachingReportString>
+    <arrivedLetterDef>NeutralEvent</arrivedLetterDef>
+    <minMapSize>(150, 1, 150)</minMapSize>
+    <gravShipsCanLandOn>true</gravShipsCanLandOn>
+    <selectionWeight>4</selectionWeight>
+    <tags>
+      <li>NAT_CollectorLair</li>
+    </tags>
+  </SitePartDef>
+  
+  <GenStepDef>
+    <defName>NAT_CollectorLair_Settlement</defName>
+    <linkWithSite>NAT_CollectorLair_Base</linkWithSite>
+    <order>454</order>
+    <genStep Class="GenStep_Settlement">
+      <count>1</count>
+      <nearMapCenter>true</nearMapCenter>
+      <generatePawns>false</generatePawns>
+      <postProcessSettlementParams>
+        <clearBuildingFaction>true</clearBuildingFaction>
+      </postProcessSettlementParams>
+    </genStep>
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>NAT_CollectorLairEntrance_Base</defName>
+    <linkWithSite>NAT_CollectorLair_Base</linkWithSite>
+    <order>900</order>
+    <genStep Class="NAT.GenStep_UndergroundEntrance">
+      <entranceDef>NAT_CollectorLairEntrance</entranceDef>
+      <trySpawnInRoom>true</trySpawnInRoom>
+    </genStep>
+  </GenStepDef>
+
+</Defs>

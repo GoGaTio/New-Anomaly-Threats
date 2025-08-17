@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+  <!-- Bile Heart -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>NAT_BileHeart</defName>
+    <label>bile heart</label>
+    <description>A modified human heart that allows a ghoul to spray bile.</description>
+    <spawnThingOnRemoved>NAT_BileHeart</spawnThingOnRemoved>
+    <abilities>
+      <li>NAT_BileSpray</li>
+    </abilities>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>0.85</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartGhoulBase">
+    <defName>NAT_BileHeart</defName>
+    <label>bile heart</label>
+    <description>A special bioferrite prosthetic that allows the ghoul to spray bile. The prosthetic uses serpent glands to create bile, which can be projected from the ghoul’s mouth.\n\nDue to the extremely painful nature of the prosthetic, only ghouls can tolerate this enhancement.</description>
+    <descriptionHyperlinks><RecipeDef>NAT_InstallBileHeart</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <Mass>0.3</Mass>
+      <WorkToMake>13200</WorkToMake>
+    </statBases>
+    <techHediffsTags>
+      <li>Ghoul</li>
+    </techHediffsTags>
+    <costList>
+      <Bioferrite>20</Bioferrite>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <NAT_BileGland>4</NAT_BileGland>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedHealthItemGhoul</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>GhoulEnhancements</researchPrerequisite>
+      <recipeUsers>
+        <li>BioferriteShaper</li>
+      </recipeUsers>
+      <displayPriority>160</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>NAT_InstallBileHeart</defName>
+    <label>install bile heart</label>
+    <description>Install bile heart.</description>
+    <descriptionHyperlinks>
+      <ThingDef>NAT_BileHeart</ThingDef>
+      <HediffDef>NAT_BileHeart</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bile heart.</jobString>
+    <anesthetize>false</anesthetize>
+    <surgeryOutcomeEffect IsNull="True" /> <!-- Always succeeds -->
+    <skillRequirements>
+      <Medicine>4</Medicine>
+    </skillRequirements>
+    <mutantPrerequisite>
+      <li>Ghoul</li>
+    </mutantPrerequisite>
+    <ingredients Inherit="false">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>NAT_BileHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>NAT_BileHeart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>NAT_BileHeart</addsHediff>
+  </RecipeDef>
+</Defs>

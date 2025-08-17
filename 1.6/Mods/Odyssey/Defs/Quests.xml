@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <QuestScriptDef>
+    <defName>NAT_OrbitalRustedStructure</defName>
+    <randomlySelectable>false</randomlySelectable>
+    <givenBy>
+      <li>OrbitalScanner</li>
+    </givenBy>
+    <rootSelectionWeight>0.3</rootSelectionWeight>
+    <isRootSpecial>true</isRootSpecial>
+    <autoAccept>true</autoAccept>
+    <defaultChallengeRating>3</defaultChallengeRating>
+    <questAvailableLetterTextIsDescription>true</questAvailableLetterTextIsDescription>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName(p=3)->[ancientPlatAdj] [platform]</li>
+        <li>questName->[PlaceOutlander] [platform]</li>
+        <li>questName->[platform] [greekLetter]</li>
+        <li>questName->[platAdj] [platform] [RomanNumeral]</li>
+
+        <li>ancientPlatAdj->abandoned</li>
+        <li>ancientPlatAdj->ancient</li>
+        <li>ancientPlatAdj->[platAdj]</li>
+
+        <li>platAdj->starlight</li>
+        <li>platAdj->nebula</li>
+        <li>platAdj->horizon</li>
+        <li>platAdj->eclipse</li>
+        <li>platAdj->zenith</li>
+        <li>platAdj->aurora</li>
+        <li>platAdj->corona</li>
+        <li>platAdj->nova</li>
+        <li>platAdj->eon</li>
+        <li>platAdj->solace</li>
+        <li>platAdj->lumina</li>
+        <li>platAdj->ion</li>
+        <li>platAdj->astralis</li>
+        
+        <li>platAdj->apollo</li>
+        <li>platAdj->ares</li>
+        <li>platAdj->hades</li>
+        <li>platAdj->ajax</li>
+        <li>platAdj->eos</li>
+        <li>platAdj->eros</li>
+        <li>platAdj->chronos</li>
+        <li>platAdj->zephyrus</li>
+        <li>platAdj->argos</li>
+        <li>platAdj->orion</li>
+        <li>platAdj->hermes</li>
+        <li>platAdj->atlas</li>
+        <li>platAdj->helios</li>
+        <li>platAdj->hephaestus</li>
+        <li>platAdj->talos</li>
+
+        <li>platAdj->vanguard</li>
+        <li>platAdj->aegis</li>
+        <li>platAdj->halcyon</li>
+        <li>platAdj->skyforge</li>
+        <li>platAdj->titan</li>
+
+        <li>platform(p=2)->structure</li>
+        <li>platform->object</li>
+        <li>platform->orbital platform</li>
+        <li>platform->orbital hub</li>
+        <li>platform(p=0.5)->skygate</li>
+        <li>platform(p=0.5)->spacedock</li>
+        <li>platform(p=0.5)->gateway</li>
+
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->[discoveryMethod] the location of an abandoned orbital platform. You don't detect any signs of life.\n\nYou can break in to obtain the loot inside, but the platform probably has defense systems.\n\nYou can travel to orbital locations using gravships, shuttles, or transport pods.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <canOccurOnAllPlanetLayers>true</canOccurOnAllPlanetLayers>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_IsSet">
+          <name>discoveryMethod</name>
+          <elseNode Class="QuestNode_RandomNode">
+            <nodes>
+              <li Class="QuestNode_Set">
+                <name>discoveryMethod</name>
+                <value>You have discovered</value>
+              </li>
+            </nodes>
+          </elseNode>
+        </li>
+        
+        <li Class="QuestNode_Root_Site">
+          <layerWhitelist>
+            <li>Orbit</li>
+          </layerWhitelist>
+          <canBeSpace>true</canBeSpace>
+          <sitePartDef>NAT_RustedCitadel_Orbit</sitePartDef>
+          <worldObjectDef>ClaimableSpaceSite</worldObjectDef>
+          <distanceFromColonyRange>1~3</distanceFromColonyRange> <!-- distance is in on the orbital layer tiles -->
+        </li>
+
+        <li Class="QuestNode_WorldObjectTimeout">
+          <worldObject>$site</worldObject>
+          <isQuestTimeout>true</isQuestTimeout>
+          <delayTicks>$(randInt(100,180)*60000)</delayTicks>
+          <inSignalDisable>site.MapGenerated</inSignalDisable>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_Letter">
+                <label TKey="LetterLabelQuestExpired">Quest expired: [resolvedQuestName]</label>
+                <text TKey="LetterTextQuestExpired">Intercepted communications indicate the platform has been claimed by others. The quest [resolvedQuestName] has expired.</text>
+              </li>
+              <li Class="QuestNode_End">
+                <outcome>Fail</outcome>
+              </li>
+            </nodes>
+          </node>
+        </li>
+
+        <li Class="QuestNode_NoWorldObject">
+          <worldObject>$site</worldObject>
+          <node Class="QuestNode_End" />
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+  
+  <QuestScriptDef>
+    <defName>NAT_OrbitalRustedStructure_Node</defName>
+    <randomlySelectable>false</randomlySelectable>
+    <givenBy>
+      <li>OrbitalScanner</li>
+    </givenBy>
+    <rootSelectionWeight>0.3</rootSelectionWeight>
+    <isRootSpecial>true</isRootSpecial>
+    <autoAccept>true</autoAccept>
+    <defaultChallengeRating>3</defaultChallengeRating>
+    <questAvailableLetterTextIsDescription>true</questAvailableLetterTextIsDescription>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName(p=3)->[ancientPlatAdj] [platform]</li>
+        <li>questName->[PlaceOutlander] [platform]</li>
+        <li>questName->[platform] [greekLetter]</li>
+        <li>questName->[platAdj] [platform] [RomanNumeral]</li>
+
+        <li>ancientPlatAdj->abandoned</li>
+        <li>ancientPlatAdj->ancient</li>
+        <li>ancientPlatAdj->[platAdj]</li>
+
+        <li>platAdj->starlight</li>
+        <li>platAdj->nebula</li>
+        <li>platAdj->horizon</li>
+        <li>platAdj->eclipse</li>
+        <li>platAdj->zenith</li>
+        <li>platAdj->aurora</li>
+        <li>platAdj->corona</li>
+        <li>platAdj->nova</li>
+        <li>platAdj->eon</li>
+        <li>platAdj->solace</li>
+        <li>platAdj->lumina</li>
+        <li>platAdj->ion</li>
+        <li>platAdj->astralis</li>
+        
+        <li>platAdj->apollo</li>
+        <li>platAdj->ares</li>
+        <li>platAdj->hades</li>
+        <li>platAdj->ajax</li>
+        <li>platAdj->eos</li>
+        <li>platAdj->eros</li>
+        <li>platAdj->chronos</li>
+        <li>platAdj->zephyrus</li>
+        <li>platAdj->argos</li>
+        <li>platAdj->orion</li>
+        <li>platAdj->hermes</li>
+        <li>platAdj->atlas</li>
+        <li>platAdj->helios</li>
+        <li>platAdj->hephaestus</li>
+        <li>platAdj->talos</li>
+
+        <li>platAdj->vanguard</li>
+        <li>platAdj->aegis</li>
+        <li>platAdj->halcyon</li>
+        <li>platAdj->skyforge</li>
+        <li>platAdj->titan</li>
+
+        <li>platform(p=2)->structure</li>
+        <li>platform->object</li>
+        <li>platform->orbital platform</li>
+        <li>platform->orbital hub</li>
+        <li>platform(p=0.5)->skygate</li>
+        <li>platform(p=0.5)->spacedock</li>
+        <li>platform(p=0.5)->gateway</li>
+
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->[discoveryMethod] the location of an abandoned orbital platform. You don't detect any signs of life.\n\nYou can break in to obtain the loot inside, but the platform probably has defense systems.\n\nYou can travel to orbital locations using gravships, shuttles, or transport pods.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <canOccurOnAllPlanetLayers>true</canOccurOnAllPlanetLayers>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_IsSet">
+          <name>discoveryMethod</name>
+          <elseNode Class="QuestNode_RandomNode">
+            <nodes>
+              <li Class="QuestNode_Set">
+                <name>discoveryMethod</name>
+                <value>You have discovered</value>
+              </li>
+            </nodes>
+          </elseNode>
+        </li>
+        
+        <li Class="QuestNode_Root_Site">
+          <layerWhitelist>
+            <li>Orbit</li>
+          </layerWhitelist>
+          <canBeSpace>true</canBeSpace>
+          <sitePartDef>NAT_RustedNode</sitePartDef>
+          <worldObjectDef>ClaimableSpaceSite</worldObjectDef>
+          <distanceFromColonyRange>1~3</distanceFromColonyRange> <!-- distance is in on the orbital layer tiles -->
+        </li>
+
+        <li Class="QuestNode_WorldObjectTimeout">
+          <worldObject>$site</worldObject>
+          <isQuestTimeout>true</isQuestTimeout>
+          <delayTicks>$(randInt(100,180)*60000)</delayTicks>
+          <inSignalDisable>site.MapGenerated</inSignalDisable>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_Letter">
+                <label TKey="LetterLabelQuestExpired">Quest expired: [resolvedQuestName]</label>
+                <text TKey="LetterTextQuestExpired">Intercepted communications indicate the platform has been claimed by others. The quest [resolvedQuestName] has expired.</text>
+              </li>
+              <li Class="QuestNode_End">
+                <outcome>Fail</outcome>
+              </li>
+            </nodes>
+          </node>
+        </li>
+
+        <li Class="QuestNode_NoWorldObject">
+          <worldObject>$site</worldObject>
+          <node Class="QuestNode_End" />
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+  
+</Defs>

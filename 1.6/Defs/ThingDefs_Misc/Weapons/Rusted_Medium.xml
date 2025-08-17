@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="NAT_BaseRustedWeapon">
+    <defName>NAT_Gun_RustedRevolver</defName>
+    <label>rusted revolver</label>
+    <description>A piece of bioferrite shaped like a revolver.\n\nSomehow can shoot if wielded by rusted creature.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapon/NAT_RustedRevolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>1.4</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+      <MarketValue>200</MarketValue>
+    </statBases>
+    <weaponTags>
+      <li>NAT_RustedRevolver</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>NAT_Bullet_RustedSmallStop</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>25.9</range>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <butcherProducts>
+      <Bioferrite>11</Bioferrite>
+    </butcherProducts>
+  </ThingDef>
+  
+  <ThingDef ParentName="NAT_BaseRustedWeapon">
+    <defName>NAT_Gun_RustedBoltActionRifle</defName>
+    <label>rusted rifle</label>
+    <description>A piece of bioferrite shaped like a bolt-action rifle.\n\nSomehow can shoot if wielded by rusted creature.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapon/NAT_RustedRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+      <MarketValue>300</MarketValue>
+    </statBases>
+    <weaponTags>
+      <li>NAT_RustedBoltRifle</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>NAT_Bullet_RustedMedium</defaultProjectile>
+        <warmupTime>1.7</warmupTime>
+        <range>36.9</range>
+        <soundCast>Shot_BoltActionRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <butcherProducts>
+      <Bioferrite>19</Bioferrite>
+    </butcherProducts>
+  </ThingDef>
+  
+  <ThingDef ParentName="NAT_BaseRustedWeapon">
+    <defName>NAT_Gun_RustedShotgun</defName>
+    <label>rusted shotgun</label>
+    <description>A piece of bioferrite shaped like a shotgun.\n\nSomehow can shoot if wielded by rusted creature.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapon/NAT_RustedShotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>3.4</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.87</AccuracyShort>
+      <AccuracyMedium>0.77</AccuracyMedium>
+      <AccuracyLong>0.64</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+      <MarketValue>300</MarketValue>
+    </statBases>
+    <weaponTags>
+      <li>NAT_RustedShotgun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>NAT_Bullet_RustedShotgun</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>15.9</range>
+        <soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <butcherProducts>
+      <Bioferrite>18</Bioferrite>
+    </butcherProducts>
+  </ThingDef>
+  
+  <ThingDef ParentName="NAT_BaseRustedWeapon">
+    <defName>NAT_Gun_RustedSMG</defName>
+    <label>rusted SMG</label>
+    <description>A piece of bioferrite shaped like a sub-machine gun.\n\nSomehow can shoot if wielded by rusted creature.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapon/NAT_RustedSMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+      <MarketValue>400</MarketValue>
+    </statBases>
+    <weaponTags>
+      <li>NAT_RustedSMG</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>NAT_Bullet_RustedSmall</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>11</ticksBetweenBurstShots>
+        <soundCast>Shot_HeavySMG</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <butcherProducts>
+      <Bioferrite>21</Bioferrite>
+    </butcherProducts>
+  </ThingDef>
+  
+  <!--==================Special==================-->
+  
+  <ThingDef ParentName="NAT_BaseRustedWeapon">
+    <defName>NAT_Weapon_RustedGrenade</defName>
+    <label>rusted grenades</label>
+    <description>A pieces of bioferrite shaped like grenades.\n\nSomehow can explode if were thrown by rusted creature.</description>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapon/NAT_RustedGrenades</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>1</Mass>
+      <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+      <MarketValue>250</MarketValue>
+    </statBases>
+    <weaponTags>
+      <li>NAT_RustedGrenade</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <label>throw rusted grenade</label>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>12.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>NAT_Proj_RustedGrenade</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <butcherProducts>
+      <Bioferrite>13</Bioferrite>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>NAT_Proj_RustedGrenade</defName>
+    <label>rusted grenade</label>
+	<thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/NAT_RustedGrenade</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <projectile>
+      <explosionRadius>1.9</explosionRadius >
+      <damageDef>NAT_RustedBomb</damageDef>
+      <explosionDelay>100</explosionDelay>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="NAT_BaseRustedWeapon">
+    <defName>NAT_MeleeWeapon_RustedSword</defName>
+    <label>rusted sword</label>
+    <description>A sharp bioferrite piece shaped like a sword.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapon/NAT_RustedSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>NAT_RustedMelee</li>
+    </weaponTags>
+    <statBases>
+      <Mass>0.85</Mass>
+      <MarketValue>250</MarketValue>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <butcherProducts>
+      <Bioferrite>17</Bioferrite>
+    </butcherProducts>
+  </ThingDef>
+  
+  <ThingDef ParentName="NAT_BaseRustedWeapon">
+    <defName>NAT_MeleeWeapon_RustedAxe</defName>
+    <label>rusted axe</label>
+    <description>A sharp bioferrite piece shaped like an axe.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapon/NAT_RustedAxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>NAT_RustedBreach</li>
+    </weaponTags>
+    <statBases>
+      <Mass>1.5</Mass>
+      <MarketValue>250</MarketValue>
+    </statBases>
+
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Demolish</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <butcherProducts>
+      <Bioferrite>17</Bioferrite>
+    </butcherProducts>
+
+  </ThingDef>
+
+  <ThingDef ParentName="NAT_BaseRustedWeapon">
+    <defName>NAT_MeleeWeapon_RustedArmyBanner</defName>
+    <label>rusted army banner</label>
+    <description>A piece of ancient fabric on a rusted bioferrite rod.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapon/NAT_RustedArmyBanner</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(3, 3)</drawSize>
+    </graphicData>   <uiIconPath>Things/Item/Equipment/Weapon/NAT_RustedArmyBanner_Icon</uiIconPath>
+    <uiIconScale>1</uiIconScale>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <weaponTags Inherit="False">
+      <li>NAT_RustedArmyBanner</li>
+    </weaponTags>
+    <thingSetMakerTags Inherit="False">
+      <li>NAT_RustedArmyBanner</li>
+    </thingSetMakerTags>
+    <statBases>
+      <Mass>2.65</Mass>
+      <MarketValue>100</MarketValue>
+    </statBases>    <equippedStatOffsets>
+      <MoveSpeed>0.2</MoveSpeed>
+    </equippedStatOffsets>
+    <equippedAngleOffset>-75</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <butcherProducts>
+      <Bioferrite>17</Bioferrite>
+    </butcherProducts>    <comps>
+      <li Class="NAT.CompProperties_RustedBanner">
+        <range>21.9</range>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

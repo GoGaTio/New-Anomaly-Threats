@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef Name="NAT_RustedOfficerBase" ParentName="NAT_BaseRustedPawn">
+    <defName>NAT_RustedOfficer</defName>
+    <label>rusted officer</label>
+    <description>A large bioferrite chunk shaped like fat human figure with tall three-eyed head. This creature usually appears as leader of rusted soldiers groups.</description>
+    <statBases>
+      <MoveSpeed>3.2</MoveSpeed>
+      <MarketValue>2700</MarketValue>
+      <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+      <MinimumContainmentStrength>100</MinimumContainmentStrength>
+      <StaggerDurationFactor>0</StaggerDurationFactor>
+    </statBases>
+    <race>
+      <baseBodySize>1.6</baseBodySize>
+      <baseHealthScale>3.25</baseHealthScale>
+      <nameGenerator>NAT_NamerRustedOfficer</nameGenerator>
+      <thinkTreeConstant>NAT_RustedOfficerConstant</thinkTreeConstant>
+      <body>NAT_RustFat</body>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+          <soundCall>NAT_Pawn_RustedOfficer_Call</soundCall>
+          <soundWounded>NAT_Pawn_RustedOfficer_Wounded</soundWounded>
+          <soundDeath>NAT_Pawn_RustedOfficer_Death</soundDeath>
+        </li>
+      </lifeStageAges>
+    </race>
+    <uiIconPath>Things/Pawn/NAT_RustedOfficer_Icon</uiIconPath>
+    <uiIconScale>1</uiIconScale>
+    <comps>
+      <li Class="CompProperties_HoldingPlatformTarget">
+        <baseEscapeIntervalMtbDays>40</baseEscapeIntervalMtbDays>
+      </li>
+      <li Class="CompProperties_EffecterOnDeath">
+        <effecterDef>NAT_RustedOfficerDeath</effecterDef>
+      </li>
+      <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.55, 0, .3)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.55, 0, .15)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.71, 0, -.71)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.71, 0, -.71)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>2.5</bioferriteDensity>
+      </li>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Advanced</knowledgeCategory>
+        <anomalyKnowledge>2.5</anomalyKnowledge>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+      <li Class="NAT.CompProperties_RustedCommander">
+        <startingUnits>6</startingUnits>
+        <ticksToRestore>180000</ticksToRestore>
+      </li>
+      <li Class="NAT.CompProperties_RustedSoldier">
+        <bodyType>Fat</bodyType>
+        <interaction>NAT_RustedChat</interaction>
+        <canInteract>true</canInteract>
+        <hasHead>true</hasHead>
+        <drawData>
+          <dataNorth><offset>(0, 0, 0.25)</offset></dataNorth>
+          <dataEast><offset>(0.3, 0, 0.25)</offset></dataEast>
+          <dataSouth><offset>(0, 0, 0.25)</offset></dataSouth>
+          <dataWest><offset>(-0.3, 0, 0.25)</offset></dataWest>
+        </drawData>
+        <headTags>
+          <li>Officer</li>
+        </headTags>
+      </li> 
+      <li Class="NAT.CompProperties_RustedWorker">
+        <skills>
+          <Shooting>12</Shooting>
+          <Melee>8</Melee>
+          <Construction>6</Construction>
+          <Cooking>6</Cooking>
+          <Mining>4</Mining>
+          <Plants>4</Plants>
+          <Crafting>10</Crafting>
+          <Medicine>6</Medicine>
+          <Intellectual>10</Intellectual>
+        </skills>
+        <canWork>true</canWork>
+        <workTags>
+          <li>Firefighting</li>
+          <li>Hunting</li>
+          <li>Constructing</li>
+          <li>Cooking</li>
+          <li>Mining</li>
+          <li>Crafting</li>
+          <li>Hauling</li>
+          <li>Cleaning</li>
+        </workTags>
+        <forceAllowWorkGivers>
+          <li>Strip</li>
+        </forceAllowWorkGivers>
+        <forceAllowWorkTypes>
+          <li>BasicWorker</li>
+          <li>PlantCutting</li>
+        </forceAllowWorkTypes>
+      </li>
+    </comps>
+    <tools Inherit="False"> 
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+	  <li>
+        <label>left claw</label>
+        <labelNoLocation>claw</labelNoLocation>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right claw</label>
+        <labelNoLocation>claw</labelNoLocation>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+    <killedLeavingsRanges>
+      <Bioferrite>7~12</Bioferrite>
+    </killedLeavingsRanges>
+  </ThingDef>
+
+  <PawnKindDef Name="NAT_RustedOfficerKindBase" ParentName="NAT_RustKindBase" >
+    <defName>NAT_RustedOfficer</defName>
+    <label>rusted officer</label>
+    <weaponTags>
+      <li>NAT_RustedRevolver</li>
+    </weaponTags>
+    <abilities>
+      <li>NAT_Reinforcement_Troopers</li>
+      <li>NAT_Reinforcement_MiniTurret</li>
+    </abilities>
+    <skipResistant>true</skipResistant>
+    <race>NAT_RustedOfficer</race>
+    <aiAvoidCover>false</aiAvoidCover>
+    <maxPerGroup>3</maxPerGroup>
+    <isBoss>true</isBoss>
+    <startingHediffs>
+      <li>
+        <def>NAT_RustedRegeneration</def>
+        <severity>0.9</severity>
+      </li>
+    </startingHediffs>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Bodies/NAT_Officer_A</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <combatPower>350</combatPower>
+    <weaponMoney>9999~9999</weaponMoney>
+    <modExtensions>
+      <li Class="NAT.RustedPawnExtention">
+        <scenarioAvailable>true</scenarioAvailable>
+      </li>
+    </modExtensions>
+    <combatEnhancingDrugsCount>-5~2</combatEnhancingDrugsCount>
+  </PawnKindDef>
+
+</Defs>

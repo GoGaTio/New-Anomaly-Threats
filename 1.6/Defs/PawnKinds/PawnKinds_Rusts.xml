@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef ParentName="NAT_RustedSoldierKindBase">
+    <defName>NAT_RustedBannerman</defName>
+    <label>rusted bannerman</label>
+    <weaponTags>
+      <li>NAT_RustedArmyBanner</li>
+    </weaponTags>
+    <combatPower>70</combatPower>
+    <maxPerGroup>1</maxPerGroup>
+    <combatEnhancingDrugsCount>-1~1</combatEnhancingDrugsCount>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="NAT_RustedSoldierKindBase">
+    <defName>NAT_RustedGrenadier</defName>
+    <label>rusted grenadier</label>
+    <canBeSapper>true</canBeSapper>
+    <isGoodBreacher>true</isGoodBreacher>
+    <weaponTags>
+	  <li>NAT_RustedGrenade</li>
+    </weaponTags>
+    <combatPower>110</combatPower>
+    <combatEnhancingDrugsCount>-10~2</combatEnhancingDrugsCount>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="NAT_RustedSoldierKindBase">
+    <defName>NAT_RustedRifleman</defName>
+    <label>rusted rifleman</label>
+    <weaponTags>
+      <li>NAT_RustedBoltRifle</li>
+    </weaponTags>
+    <combatEnhancingDrugsCount>-11~2</combatEnhancingDrugsCount>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="NAT_RustedSoldierKindBase">
+    <defName>NAT_RustedGunner</defName>
+    <label>rusted gunner</label>
+    <weaponTags>
+      <li>NAT_RustedSMG</li>
+    </weaponTags>
+    <combatPower>190</combatPower>
+    <combatEnhancingDrugsCount>-9~2</combatEnhancingDrugsCount>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="NAT_RustedSoldierKindBase">
+    <defName>NAT_RustedGunner_Heavy</defName>
+    <label>heavy rusted gunner</label>
+    <weaponTags>
+      <li>NAT_RustedMachineGun</li>
+    </weaponTags>
+    <combatPower>250</combatPower>
+    <combatEnhancingDrugsCount>-9~3</combatEnhancingDrugsCount>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="NAT_RustedSoldierKindBase">
+    <defName>NAT_RustedHussar</defName>
+    <label>rusted hussar</label>
+    <weaponTags>
+      <li>NAT_RustedMelee</li>
+    </weaponTags>
+    <combatPower>195</combatPower>
+    <combatEnhancingDrugsCount>-7~2</combatEnhancingDrugsCount>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="NAT_RustedSoldierKindBase">
+    <defName>NAT_RustedRenegade</defName>
+    <label>rusted renegade</label>
+    <biocodeWeaponChance>0.4</biocodeWeaponChance>
+    <defaultFactionType>HoraxCult</defaultFactionType>
+    <weaponTags>
+      <li>ShortShots</li>
+      <li>SimpleGun</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="NAT_RustedTrooperKindBase">
+    <defName>NAT_RustedTrooper_Reinforcement</defName>
+    <modExtensions Inherit="False">
+      <li Class="NAT.RustedPawnExtention">
+        <scenarioAvailable>false</scenarioAvailable>
+        <defaultDraftable>false</defaultDraftable>
+        <sendDeathLetter>false</sendDeathLetter>
+        <nonPlayer>true</nonPlayer>
+      </li>
+    </modExtensions>
+    <combatEnhancingDrugsCount>0~0</combatEnhancingDrugsCount>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="NAT_RustedTrooperKindBase">
+    <defName>NAT_RustedSapper</defName>
+    <label>rusted sapper</label>
+    <canBeSapper>true</canBeSapper>
+    <isGoodBreacher>true</isGoodBreacher>
+    <weaponTags Inherit="False">
+      <li>NAT_RustedBreach</li>
+    </weaponTags>
+    <combatPower>170</combatPower>
+  </PawnKindDef>
+  
+</Defs>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <AbilityDef>
+    <defName>NAT_CollectorHowl</defName>
+    <label>collector howl</label>
+    <description>Release a terrifying roar which has a chance to send nearby hostile humans and animals fleeing in terror.</description>
+    <iconPath>UI/Commands/TerrorRoar</iconPath>
+    <cooldownTicksRange>60000</cooldownTicksRange> <!-- 3 hours -->
+    <targetRequired>false</targetRequired>
+    <aiCanUse>false</aiCanUse>
+    <displayOrder>300</displayOrder>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <jobDef>NAT_CollectorCastAbility</jobDef>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <requireLineOfSight>false</requireLineOfSight>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+      <soundCast>Sightstealer_DistantHowlLarge</soundCast>
+      <targetable>false</targetable>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="NAT.CompProperties_AbilityCollectorHowl">
+        <chanceFromHearingCurve>
+          <points>
+            <li>(0.0, 0.0)</li>
+            <li>(1.0, 0.75)</li>
+          </points>
+        </chanceFromHearingCurve>
+        <sightstealersPointsFromPointsCurve>
+          <points>
+            <li>(0, 560)</li>
+            <li>(10000, 5600)</li>
+          </points>
+        </sightstealersPointsFromPointsCurve>
+      </li>
+      <li Class="CompProperties_AbilityEffecterOnCaster">
+        <effecterDef>NAT_CollectorHowl</effecterDef>
+        <maintainTicks>20</maintainTicks> <!-- Long enough for the "2nd wave" to spawn -->
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>NAT_ShapeRust</defName>
+    <label>shape bioferrite</label>
+    <description>Use dark psychic powers to shape the closest 100 bioferrite pieces into a living rust.</description>
+    <iconPath>UI/Abilities/NAT_ShapeRust</iconPath>
+    <hostile>false</hostile>
+    <statBases>
+      <Ability_Duration>1000</Ability_Duration>
+    </statBases>
+    <cooldownTicksRange>1800000</cooldownTicksRange>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <warmupEffecter>PsychicRitual_Sustained</warmupEffecter>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>5</warmupTime>
+      <range>9.9</range>
+      <targetParams>
+        <canTargetPawns>False</canTargetPawns>
+        <canTargetLocations>True</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="NAT.CompProperties_AbilityShapeRust">
+        <bioferriteCount>100</bioferriteCount>
+        <connectRadius>2.9</connectRadius>
+        <kinds>
+          <NAT_RustedSoldier>10</NAT_RustedSoldier>
+          <NAT_RustedTrooper>6</NAT_RustedTrooper>
+        </kinds>
+      </li>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>DarkPsychicShock</hediffDef>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>NAT_BileSpit</defName>
+    <label>bile spit</label>
+    <description>Use the glands to spit bile a short distance.</description>
+    <iconPath>UI/Abilities/NAT_BileSpray</iconPath>
+    <cooldownTicksRange>1200</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <displayOrder>300</displayOrder>
+    <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>13.9</range>
+      <warmupTime>0.4</warmupTime>
+      <soundCast>AcidSpray_Resolve</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilitySprayLiquid">
+        <projectileDef>NAT_Proj_Bile</projectileDef>
+        <numCellsToHit>9</numCellsToHit>
+        <sprayEffecter>NAT_BileSpray_Directional</sprayEffecter>
+      </li>
+      <li Class="NAT.CompProperties_AbilityBile"/>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>NAT_BileSpray</defName>
+    <label>bile spray</label>
+    <description>Use the bile heart to spray bile a short distance. The heart pumps the bile through a surgically implanted duct, allowing the ghoul to spew it from their mouth at high velocity.</description>
+    <iconPath>UI/Abilities/NAT_BileSpray</iconPath>
+    <cooldownTicksRange>3000</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <displayOrder>300</displayOrder>
+    <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+    <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>11.9</range>
+      <warmupTime>0.25</warmupTime>
+      <soundCast>AcidSpray_Resolve</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilitySprayLiquid">
+        <projectileDef>NAT_Proj_Bile</projectileDef>
+        <numCellsToHit>9</numCellsToHit>
+        <sprayEffecter>NAT_BileSpray_Directional</sprayEffecter>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <ThingDef>
+    <defName>NAT_Proj_Bile</defName>
+    <label>bile</label>
+    <thingClass>Projectile_Liquid</thingClass>
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <texPath>Things/Projectile/NAT_Bile</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>AcidBurn</damageDef>
+      <speed>35</speed>
+      <damageAmountBase>0</damageAmountBase>
+      <arcHeightFactor>0.4</arcHeightFactor>
+      <armorPenetrationBase>0</armorPenetrationBase>
+      <stoppingPower>2</stoppingPower>
+      <shadowSize>0</shadowSize>
+      <filth>NAT_Filth_SpentBile</filth>
+      <filthCount>1</filthCount>
+    </projectile>
+  </ThingDef>
+
+</Defs>

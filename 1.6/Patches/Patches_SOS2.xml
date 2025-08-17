@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/StatDef[defName="VacuumSpeedMultiplier"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[@Name="NAT_BaseRustedPawn"]/statBases</xpath>
+			<value>
+				<HypoxiaResistance>1</HypoxiaResistance>
+				<DecompressionResistance>1</DecompressionResistance>
+				<VacuumSpeedMultiplier>4</VacuumSpeedMultiplier> 
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef Name="NAT_RustedMass" ParentName="MysteriousSphereEntityBase">
+    <defName>NAT_RustedMass</defName>
+    <label>rusted mass</label>
+    <description>A large piece of bioferrite. It seems to be filling with strange energy.</description>
+    <uiIconPath>Things/Pawn/NAT_RustedMass</uiIconPath>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <race>
+      <body>FleshmassNucleus</body>
+      <thinkTreeMain>FleshmassNucleus</thinkTreeMain>
+      <thinkTreeConstant>FleshmassNucleusConstant</thinkTreeConstant>
+      <baseHealthScale>1.5</baseHealthScale>
+      <baseBodySize>1.2</baseBodySize>
+    </race>
+    <statBases>
+      <Flammability>2</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Advanced</knowledgeCategory>
+        <anomalyKnowledge>3</anomalyKnowledge>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>3</bioferriteDensity>
+      </li>
+      <li Class="CompProperties_Pushable">
+        <offsetDistance>0.5</offsetDistance>
+      </li>
+	  <li Class="CompProperties_StudyUnlocks">
+        <studyNotes>
+          <li>
+            <threshold>2</threshold>
+            <label>Rusted mass study progress</label>
+            <text>Investigation of the rusted mass has revealed some information. It is an archotech machine, that has a lot of psy-connections with something far away. \n\nIf not suppressed, its activity level will increase over time. You can't tell what will happen when the device fully activates.</text>
+          </li>
+          <li>
+            <threshold>10</threshold>
+            <label>Rusted mass study progress</label>
+            <text>You've learned more about the rusted mass. It is a beginning of rusted army, connected with countless rusted soldiers. Rusted mass will grow getting mor life power and then will transfofm into rusted soldiers, causing rusted hordes to attack this place.\n\nThe power level of the rusted mass rises unless suppressed. If it fully activates, it will transform into group of rusted soldiers and draw others to attack colony.\n\n{PAWN_nameDef} thinks that it may be possible to safely deactivate the rusted mass but this will need significantly more study.</text>
+          </li>
+          <li>
+            <threshold>30</threshold>
+            <label>Rusted mass study complete</label>
+            <text>{PAWN_nameDef} has completed {PAWN_possessive} investigation of the rusted mass. {PAWN_pronoun} has discovered a method for safely deactivating the mass using shards of archotechnology.\n\nYou can no longer study the rusted mass after deactivating it.</text>
+          </li>
+        </studyNotes>
+      </li>
+	  <li Class="NAT.CompProperties_RustedMassDeactivation">
+        <shardsRequired>1</shardsRequired>
+        <activeTicks>1</activeTicks>
+        <ticksToActivate>180</ticksToActivate>
+        <activateTexPath>UI/Commands/NAT_DeactivateRustedMass</activateTexPath>
+        <activateLabelString>Deactivate rusted mass</activateLabelString>
+        <activateDescString>Permanently and safely disable Rusted mass. This will prevent it from activating and being studied further.\n\nRequires 2 shards.</activateDescString>
+        <guiLabelString>Choose who should do this</guiLabelString>
+        <jobString>Deactivate rusted mass</jobString>
+        <activatingStringPending>deactivating rusted mass</activatingStringPending>
+        <activatingString>deactivating rusted mass: {1}s</activatingString>
+        <messageCompletedString>{PAWN_nameDef} has successfully deactivated rusted mass.</messageCompletedString>
+        <showMustBeActivatedByColonist>false</showMustBeActivatedByColonist>
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+      </li>
+	  <li Class="CompProperties_Activity">
+        <startingRange>0.2~0.4</startingRange>
+        <workerClass>PawnActivityWorker</workerClass>
+        <showLetterOnActivated>true</showLetterOnActivated>
+		<changePerDayOutside>0.4</changePerDayOutside>
+		<changePerDamage>0.02</changePerDamage>
+        <letterDef>ThreatBig</letterDef>
+        <letterTitle>Rusted mass activated!</letterTitle>
+        <letterDesc>The activity level of the rusted mass has reached 100% and it has activated. It summoned large rusted group nearby.\n\nIt also divided into rusted soldiers!</letterDesc> 
+        <activityResearchFactorCurve>
+          <points>
+            <li>0, 0.5</li>
+            <li>0.5, 1</li>
+            <li>1, 2</li>
+          </points>
+        </activityResearchFactorCurve>
+      </li>
+      <li Class="NAT.CompProperties_RustedMass">
+        <pointsFromCurrentPoints>
+		  <points>
+		    <li>(0,1000)</li>
+			<li>(10000, 8000)</li>
+		  </points>
+		</pointsFromCurrentPoints>
+		<pointsFactorFromRaidIndex>
+		  <points>
+		    <li>(0,0.5)</li>
+			<li>(1,0.8)</li>
+			<li>(6, 1.1)</li>
+			<li>(100, 1.5)</li>
+		  </points>
+		</pointsFactorFromRaidIndex>
+		<pointsFactorFromActivity>
+		  <points>
+		    <li>(0,0.3)</li>
+			<li>(0.2,0.7)</li>
+			<li>(0.6,1)</li>
+			<li>(0.8, 1.5)</li>
+			<li>(1, 2)</li>
+		  </points>
+		</pointsFactorFromActivity>
+		<cooldownFactorFromRaidIndex>
+		  <points>
+		    <li>(0,2)</li>
+			<li>(6,1.5)</li>
+			<li>(15,1)</li>
+			<li>(30,0.8)</li>
+		  </points>
+		</cooldownFactorFromRaidIndex>
+		<cooldownFactorFromActivity>
+		  <points>
+		    <li>(0,4)</li>
+			<li>(0.2,2)</li>
+			<li>(0.5,1.5)</li>
+			<li>(0.8,1)</li>
+			<li>(1,0.5)</li>
+		  </points>
+		</cooldownFactorFromActivity>
+		<cooldownDaysRange>2~3.5</cooldownDaysRange>
+      </li>
+      <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.35, 0, .25)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.30, 0, .20)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.35, 0, -.35)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.35, 0, -.35)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+    </comps>
+    <killedLeavingsRanges>
+      <Bioferrite>11~15</Bioferrite>
+    </killedLeavingsRanges>
+  </ThingDef>
+
+  <PawnKindDef>
+    <defName>NAT_RustedMass</defName>
+    <label>rusted mass</label>
+    <race>NAT_RustedMass</race>
+    <canMeleeAttack>false</canMeleeAttack>
+    <hostileToAll>true</hostileToAll>
+    <allowOldAgeInjuries>false</allowOldAgeInjuries>
+    <defaultFactionType>Entities</defaultFactionType>
+    <immuneToGameConditionEffects>true</immuneToGameConditionEffects>
+    <preventIdeo>true</preventIdeo>
+    <canStrip>false</canStrip>
+    <immuneToTraps>true</immuneToTraps>
+    <collidesWithPawns>false</collidesWithPawns>
+    <ignoresPainShock>true</ignoresPainShock>
+    <minGenerationAge>200</minGenerationAge>
+    <useFixedRotation>true</useFixedRotation>
+    <fixedRotation>South</fixedRotation>
+    <overrideDebugActionCategory>Entity</overrideDebugActionCategory>
+    <startingHediffs>
+      <li>
+        <def>Regeneration</def>
+        <severity>0.1</severity>
+      </li>
+    </startingHediffs>
+    <combatPower>100</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/NAT_RustedMass</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

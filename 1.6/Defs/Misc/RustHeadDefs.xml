@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Base -->
+
+  <NAT.RustHeadDef>
+    <defName>SoldierHead_A</defName>
+    <graphicData>
+      <texPath>Things/Pawn/Heads/NAT_Soldier_A</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <tag>Soldier</tag>
+  </NAT.RustHeadDef>
+
+  <NAT.RustHeadDef>
+    <defName>SoldierHead_B</defName>
+    <graphicData>
+      <texPath>Things/Pawn/Heads/NAT_Soldier_B</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+     <shaderType>Cutout</shaderType>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <tag>Soldier</tag>
+  </NAT.RustHeadDef>
+
+  <NAT.RustHeadDef>
+    <defName>SoldierHead_C</defName>
+    <graphicData>
+      <texPath>Things/Pawn/Heads/NAT_Soldier_C</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <tag>Soldier</tag>
+  </NAT.RustHeadDef>
+
+  <NAT.RustHeadDef>
+    <defName>SoldierHead_D</defName>
+    <graphicData>
+      <texPath>Things/Pawn/Heads/NAT_Soldier_D</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <tag>Soldier</tag>
+  </NAT.RustHeadDef>
+
+  <NAT.RustHeadDef>
+    <defName>TrooperHead_A</defName>
+    <graphicData>
+      <texPath>Things/Pawn/Heads/NAT_Trooper_A</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <tag>Trooper</tag>
+  </NAT.RustHeadDef>
+
+  <NAT.RustHeadDef>
+    <defName>OfficerHead_A</defName>
+    <graphicData>
+      <texPath>Things/Pawn/Heads/NAT_Officer_A</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <tag>Officer</tag>
+  </NAT.RustHeadDef>
+  
+    <NAT.RustHeadDef>
+    <defName>GuardsmanHead_A</defName>
+    <graphicData>
+      <texPath>Things/Pawn/Heads/NAT_Guardsman_A</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <tag>Guardsman</tag>
+  </NAT.RustHeadDef>
+
+</Defs>

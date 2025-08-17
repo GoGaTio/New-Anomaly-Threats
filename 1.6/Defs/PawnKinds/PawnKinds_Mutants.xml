@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <PawnKindDef ParentName="ShamblerBase">
+    <defName>NAT_ShamblerArmored</defName>
+    <label>shambler soldier</label>
+    <combatPower>70</combatPower>
+    <gearHealthRange>0.1~0.5</gearHealthRange>
+    <itemQuality>Good</itemQuality>
+    <isGoodBreacher>false</isGoodBreacher>
+    <apparelMoney>6000~9000</apparelMoney>
+    <apparelTags>
+      <li>SpacerMilitary</li>
+      <li>IndustrialMilitaryAdvanced</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_PowerArmorHelmet</li>
+      <li>Apparel_PowerArmor</li>
+    </apparelRequired>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <alternateTagChoices>
+          <li>
+            <tag>Apparel_ArmorRecon</tag>
+            <chance>0.5</chance>
+          </li>
+        </alternateTagChoices>
+      </li>
+      <li>
+        <bodyPartGroup>FullHead</bodyPartGroup>
+        <alternateTagChoices>
+          <li>
+            <tag>Apparel_ArmorHelmetRecon</tag>
+            <chance>0.5</chance>
+          </li>
+        </alternateTagChoices>
+      </li>
+    </specificApparelRequirements>
+    <techHediffsRequired>
+      <li>GhoulBarbs</li>
+      <li>GhoulPlating</li>
+    </techHediffsRequired>
+    <techHediffsMoney>1000~2000</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>Advanced</li>
+      <li>AdvancedWeapon</li>
+    </techHediffsTags>
+    <meleeAttackInfectionPathways>
+      <li>EntityAttacked</li>
+    </meleeAttackInfectionPathways>
+  </PawnKindDef>
+
+</Defs>

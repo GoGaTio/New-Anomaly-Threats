@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PrefabDef>
+    <defName>NAT_RustedBox_Edge</defName>
+    <edgeOnly>true</edgeOnly>
+    <size>(2,1)</size>
+    <things>
+      <NAT_RustedBox>
+        <position>(1,0,0)</position>
+      </NAT_RustedBox>
+    </things>
+  </PrefabDef>
+
+  <PrefabDef>
+    <defName>NAT_RustedFoamTurret_Edge</defName>
+    <edgeOnly>true</edgeOnly>
+    <size>(1,1)</size>
+    <things>
+      <NAT_RustedTurret_Foam>
+        <position>(0,0,0)</position>
+      </NAT_RustedTurret_Foam>
+    </things>
+  </PrefabDef>
+
+  <PrefabDef>
+    <defName>NAT_SecuredRustedStorage</defName>
+    <size>(5,3)</size>
+    <things>
+      <AncientGenerator>
+        <positions>
+          <li>(0, 0, 1)</li>
+          <li>(3, 0, 1)</li>
+        </positions>
+      </AncientGenerator>
+      <NAT_RustedTurret_Mini>
+        <rects>
+          <li>(2,0,2,2)</li>
+          <li>(4,0,4,0)</li>
+        </rects>
+      </NAT_RustedTurret_Mini>
+    </things>
+  </PrefabDef>
+  
+  <PrefabDef>
+    <defName>NAT_RustedPalletCluster</defName>
+    <size>(5,5)</size>
+    <things>
+      <NAT_RustedTurret_Mini>
+        <position>(2, 0, 2)</position>
+      </NAT_RustedTurret_Mini>
+      <NAT_RustedPallet>
+        <positions>
+          <li>(0, 0, 0)</li>
+          <li>(3, 0, 0)</li>
+          <li>(0, 0, 3)</li>
+          <li>(3, 0, 3)</li>
+        </positions>
+      </NAT_RustedPallet>
+      <Sandbags>
+        <rects>
+          <li>(2,1,2,1)</li>
+          <li>(1,2,1,2)</li>
+          <li>(3,2,3,2)</li>
+          <li>(2,3,2,3)</li>
+        </rects>
+        <stuff>NAT_AncientFabric</stuff>
+      </Sandbags>
+    </things>
+  </PrefabDef>
+
+  <PrefabDef>
+    <defName>NAT_RustedBox_Cluster</defName>
+    <rotations>East</rotations>
+    <size>(5,5)</size>
+    <things>
+      <NAT_RustedBox>
+        <positions>
+          <li>(0, 0, 0)</li>
+          <li>(2, 0, 0)</li>
+          <li>(4, 0, 0)</li>
+          <li>(0, 0, 3)</li>
+          <li>(2, 0, 3)</li>
+          <li>(4, 0, 3)</li>
+        </positions>
+      </NAT_RustedBox>
+    </things>
+  </PrefabDef>
+
+</Defs>

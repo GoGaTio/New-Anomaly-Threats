@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseFilth">
+    <thingClass>NAT.FilthBile</thingClass>
+    <defName>NAT_Filth_SpentBile</defName>
+    <tickerType>Normal</tickerType>
+    <useHitPoints>true</useHitPoints>
+    <label>spent bile</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>1.5</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Projectile/NAT_Bile</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>2.5</drawSize>
+      <color>(1,1,1,0.5)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>1~2</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>170</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <maxThickness>1</maxThickness>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseFilth">
+    <defName>NAT_Filth_RustedDebris</defName>
+    <label>rusted debris</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/NAT_RustedDebris</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <cleaningWorkToReduceThickness>140</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Scattered</cleaningSound>
+    </filth>
+  </ThingDef>
+
+</Defs>

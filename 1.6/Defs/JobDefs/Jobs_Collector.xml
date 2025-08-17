@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Revenant -->
+  <JobDef>
+    <defName>NAT_CollectorStealThing</defName>
+    <driverClass>NAT.JobDriver_CollectorStealThing</driverClass>
+    <reportString>collecting TargetA.</reportString>
+    <checkOverrideOnDamage>Never</checkOverrideOnDamage>
+  </JobDef>
+  
+  <JobDef>
+    <defName>NAT_CollectorStealPawn</defName>
+    <driverClass>NAT.JobDriver_CollectorStealPawn</driverClass>
+    <reportString>collecting TargetA.</reportString>
+    <checkOverrideOnDamage>Never</checkOverrideOnDamage>
+    <carryThingAfterJob>true</carryThingAfterJob>
+  </JobDef>
+
+  <JobDef>
+    <defName>NAT_CollectorWait</defName>
+    <driverClass>NAT.JobDriver_CollectorWait</driverClass>
+    <reportString>wandering</reportString>
+  </JobDef>
+
+  <JobDef>
+    <defName>NAT_CollectorEscape</defName>
+    <driverClass>NAT.JobDriver_CollectorEscape</driverClass>
+    <reportString>escaping</reportString>
+    <dropThingBeforeJob>false</dropThingBeforeJob>
+    <carryThingAfterJob>true</carryThingAfterJob>
+    <checkOverrideOnDamage>Never</checkOverrideOnDamage>
+  </JobDef>
+  
+  <JobDef>
+    <defName>NAT_CollectorCastAbility</defName>
+    <driverClass>JobDriver_CastAbility</driverClass>
+    <casualInterruptible>false</casualInterruptible>
+    <collideWithPawns>false</collideWithPawns>
+    <playerInterruptible>false</playerInterruptible>
+    <suspendable>false</suspendable>
+    <dropThingBeforeJob>false</dropThingBeforeJob>
+    <carryThingAfterJob>true</carryThingAfterJob>
+    <checkOverrideOnDamage>Never</checkOverrideOnDamage>
+  </JobDef>
+
+  <!--<JobDef>
+    <defName>NAT_CollectorEscape_Teleport</defName>
+    <driverClass>NAT.JobDriver_CollectorEscape_Teleport</driverClass>
+    <reportString>escaping</reportString>
+    <checkOverrideOnDamage>Never</checkOverrideOnDamage>
+  </JobDef>-->
+  
+</Defs>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Variant: Rusts -->
+
+  <SitePartDef ParentName="DistressCallBase">
+    <defName>NAT_DistressCall_RustedArmy</defName>
+    <workerClass>NAT.SitePartWorker_DistressCall_RustedArmy</workerClass>
+    <selectionWeight>2</selectionWeight>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>NAT_DistressCall_Settlement</defName>
+    <linkWithSite>NAT_DistressCall_RustedArmy</linkWithSite>
+    <order>454</order>
+    <genStep Class="GenStep_Settlement">
+      <count>1</count>
+      <nearMapCenter>true</nearMapCenter>
+      <generatePawns>false</generatePawns>
+      <postProcessSettlementParams>
+        <clearBuildingFaction>true</clearBuildingFaction>
+      </postProcessSettlementParams>
+    </genStep>
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>NAT_DistressCall_RustedOutpost</defName>
+    <linkWithSite>NAT_DistressCall_RustedArmy</linkWithSite>
+    <order>999</order>
+    <genStep Class="NAT.GenStep_RustedBase">
+      <layout>NAT_RustedOutpost</layout>
+      <minBaseSize>(30, 30)</minBaseSize>
+      <maxBaseSize>(40, 40)</maxBaseSize>
+    </genStep>
+  </GenStepDef> 
+
+  <GenStepDef>
+    <defName>NAT_DistressCall_BurntPatches</defName>
+    <linkWithSite>NAT_DistressCall_RustedArmy</linkWithSite>
+    <order>950</order>
+    <genStep Class="GenStep_BurntPatches" />
+  </GenStepDef>
+
+</Defs>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--<DamageDef>
+    <defName>NAT_PainPulse</defName>
+    <label>pain pulse</label>
+    <workerClass>DamageWorker_Stun</workerClass>
+    <externalViolenceForMechanoids>true</externalViolenceForMechanoids>
+    <deathMessage>{0} has been shocked to death.</deathMessage>
+    <harmsHealth>false</harmsHealth>
+    <impactSoundType>MechBandShockwave</impactSoundType>
+    <defaultDamage>50</defaultDamage>
+    <explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+    <explosionCenterEffecter>AgonyPulseExplosion</explosionCenterEffecter>
+    <explosionCellEffecter>MechBandElectricityArc</explosionCellEffecter>
+    <explosionCellEffecterChance>0.1</explosionCellEffecterChance>
+    <explosionCellEffecterMaxRadius>10</explosionCellEffecterMaxRadius>
+    <soundExplosion>Explosion_MechBandShockwave</soundExplosion>
+    <combatLogRules>Damage_MechBandShockwave</combatLogRules>
+    <causeStun>false</causeStun>
+    <constantStunDurationTicks>1200</constantStunDurationTicks>
+  </DamageDef>-->
+
+  <DamageDef ParentName="Bomb">
+    <defName>NAT_RustedBomb</defName>
+    <plantDamageFactor>8</plantDamageFactor>
+    <explosionColorCenter>(0.55, 0, 0)</explosionColorCenter>
+    <explosionColorEdge>(0.75, 0.35, 0.25)</explosionColorEdge>
+  </DamageDef>
+
+</Defs>

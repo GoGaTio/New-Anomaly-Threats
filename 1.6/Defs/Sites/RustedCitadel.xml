@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <SitePartDef>
+    <defName>NAT_RustedCitadel</defName>
+    <label>rusted citadel</label>
+    <description>An ancient complex containing treasure.</description>
+    <workerClass>NAT.SitePartWorker_RustedCitadel</workerClass>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>World/NAT_RustedCitadel</expandingIconTexture>
+    <approachOrderString>Investigate {0}</approachOrderString>
+    <approachingReportString>Investigating {0}.</approachingReportString>
+    <arrivedLetterDef>NeutralEvent</arrivedLetterDef>
+    <wantsThreatPoints>true</wantsThreatPoints>
+    <minMapSize>(150, 1, 150)</minMapSize>
+    <gravShipsCanLandOn>true</gravShipsCanLandOn>
+    <tags>
+      <li>NAT_RustedCitadel</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>NAT_RustedCitadel</defName>
+    <linkWithSite>NAT_RustedCitadel</linkWithSite>
+    <order>9</order>
+    <genStep Class="NAT.GenStep_RustedBase">
+      <layout>NAT_RustedCitadel</layout>
+      <minBaseSize>(80, 80)</minBaseSize>
+      <maxBaseSize>(100, 100)</maxBaseSize>
+    </genStep>
+  </GenStepDef>
+
+
+</Defs>

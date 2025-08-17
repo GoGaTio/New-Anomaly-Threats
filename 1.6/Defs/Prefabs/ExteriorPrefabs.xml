@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <PrefabDef>
+    <defName>NAT_RustedDish</defName>
+    <size>(5,5)</size>
+    <things>
+      <NAT_RustedBroadcastDish>
+        <position>(0,0,0)</position>
+      </NAT_RustedBroadcastDish>
+    </things>
+  </PrefabDef>
+
+</Defs>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  
+  <ThingDef ParentName="WarpedObelisk">
+    <defName>NAT_WarpedObelisk_Inducer</defName>
+    <label>crannied obelisk</label>
+    <graphicData>
+      <texPath>Things/Building/NAT_Obelisk_Crannied/NAT_CranniedObelisk</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Obelisk">
+        <compClass>NAT.CompObelisk_Inducer</compClass>
+        <interactionEffectCooldownDays>5</interactionEffectCooldownDays>
+      </li>
+      <li Class="CompProperties_StudyUnlocks">
+        <studyNotes>
+          <li>
+            <threshold>2</threshold>
+            <label>Obelisk study progress</label> <!-- text in this is the same as other obelisk so player can't tell which it is -->
+            <text>Investigation of the obelisk has revealed some information. It is an archotechnological device that seems to interact with matter in some indefinite way. It is probably a piece of a much larger archotech structure that was destroyed or broken apart long ago. The machinery at its core is inhumanly complex and frighteningly powerful. Its purpose and method of action remain totally mysterious.\n\nIf not suppressed, its activity level will increase over time. You can't tell what will happen when the device fully activates.</text>
+          </li>
+          <li>
+            <threshold>10</threshold>
+            <label>Obelisk study progress</label>
+            <text>You've learned more about the obelisk. It is an archotech machine that manipulates psychic powers. The device can create psy-waves and control minds.\n\nThe obelisk's energy level rises unless suppressed. If it fully activates, it could create powerful psy-pulse, warping minds of all living creatures in the region.\n\n{PAWN_nameDef} thinks that it may be possible to safely shut down the obelisk but this will need significantly more study.\n\nYou can now intentionally provoke a response from the crannied obelisk.</text>
+          </li>
+          <li>
+            <threshold>30</threshold>
+            <label>Obelisk study complete</label>
+            <text>{PAWN_nameDef} has completed {PAWN_possessive} investigation of the crannied obelisk. {PAWN_pronoun} has discovered a method for safely deactivating the obelisk using shards of archotechnology.\n\nYou can no longer study the obelisk after deactivating it.</text>
+          </li>
+        </studyNotes>
+      </li>
+      <li Class="CompProperties_ObeliskTriggerInteractor">
+        <activeTicks>1</activeTicks>
+        <ticksToActivate>180</ticksToActivate>
+        <cooldownTicks>1200000</cooldownTicks> <!-- 5 days -->
+        <onCooldownString>Pain pulse cooldown</onCooldownString>
+        <activateTexPath>UI/Commands/NAT_TriggerInducerObelisk</activateTexPath>
+        <activateLabelString>Trigger...</activateLabelString>
+        <activateDescString>Trigger obelisk to induce pain in creatures nearby.</activateDescString>
+        <guiLabelString>Choose who should do this</guiLabelString>
+        <jobString>Trigger pulse</jobString>
+        <activatingStringPending>triggering obelisk pulse</activatingStringPending>
+        <activatingString>triggering obelisk pulse: {1}s</activatingString>
+        <messageCompletedString>{PAWN_nameDef} has successfully triggered obelisk pulse.</messageCompletedString>
+        <messageCooldownEnded>The crannied obelisk is ready to use again.</messageCooldownEnded>
+        <showMustBeActivatedByColonist>false</showMustBeActivatedByColonist>
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+      </li>
+      <li Class="CompProperties_ObeliskDeactivationInteractor">
+        <shardsRequired>2</shardsRequired>
+        <activeTicks>1</activeTicks>
+        <ticksToActivate>180</ticksToActivate>
+        <activateTexPath>UI/Commands/DisableObelisk</activateTexPath>
+        <activateLabelString>Deactivate...</activateLabelString>
+        <activateDescString>Permanently and safely disable the crannied obelisk. This will prevent it from activating and being studied further.\n\nRequires 2 shards.</activateDescString>
+        <guiLabelString>Choose who should do this</guiLabelString>
+        <jobString>Deactivate obelisk</jobString>
+        <activatingStringPending>deactivating obelisk</activatingStringPending>
+        <activatingString>deactivating obelisk: {1}s</activatingString>
+        <messageCompletedString>{PAWN_nameDef} has successfully deactivated the obelisk.</messageCompletedString>
+        <showMustBeActivatedByColonist>false</showMustBeActivatedByColonist>
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

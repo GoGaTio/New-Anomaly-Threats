@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>NAT_AncientFabric</defName>
+    <label>ancient fabric</label>
+    <description>Spacer-tech synthetic fabric designed for making ordinary clothes. It is soft, light, strong, and insulates well.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Synthread</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>3</MarketValue>
+      <Mass>0.025</Mass>
+      <Flammability>0.1</Flammability>
+      <DeteriorationRate>3</DeteriorationRate>
+      <StuffPower_Armor_Sharp>0.94</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.26</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.90</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <commonality>0</commonality>
+      <color>(155,124,108)</color>
+      <statFactors>
+        <Flammability>0</Flammability>
+        <MaxHitPoints>1.2</MaxHitPoints>
+        <Beauty>1</Beauty>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+  
+</Defs>

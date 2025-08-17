@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Serpent -->
+
+  <BodyPartDef>
+    <defName>NAT_BileGland</defName>
+    <label>bile gland</label>
+    <hitPoints>5</hitPoints>
+    <skinCovered>false</skinCovered>
+    <spawnThingOnRemoved>NAT_BileGland</spawnThingOnRemoved>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <!-- Rusts -->
+
+  <BodyPartDef Abstract="True" Name="NAT_RustedBase">
+    <skinCovered>false</skinCovered>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <canBeVacuumBurnt>false</canBeVacuumBurnt>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="NAT_RustedBase">
+    <defName>NAT_RustedTorso</defName>
+    <label>torso</label>
+    <hitPoints>50</hitPoints>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="NAT_RustedBase">
+    <defName>NAT_RustedCore</defName>
+    <label>core</label>
+    <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <executionPartPriority>1000</executionPartPriority>
+    <tags>
+      <li>BloodPumpingSource</li>
+      <li>BloodFiltrationSource</li>
+      <li>ConsciousnessSource</li>
+      <li>HearingSource</li>
+    </tags>
+  </BodyPartDef>
+  
+  <BodyPartDef ParentName="NAT_RustedBase">
+    <defName>NAT_RustedEyeSocket</defName>
+    <label>eye socket</label>
+    <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <executionPartPriority>1000</executionPartPriority>
+    <tags>
+      <li>SightSource</li>
+      <li>HearingSource</li>
+    </tags>
+    <destroyableByDamage>false</destroyableByDamage>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="NAT_RustedBase">
+    <defName>NAT_RustedHead</defName>
+    <label>head</label>
+    <hitPoints>40</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="NAT_RustedBase">
+    <defName>NAT_RustedShoulder</defName>
+    <label>shoulder</label>
+    <hitPoints>30</hitPoints>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="NAT_RustedBase">
+    <defName>NAT_RustedArm</defName>
+    <label>arm</label>
+    <hitPoints>25</hitPoints>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+  
+  <BodyPartDef ParentName="NAT_RustedBase">
+    <defName>NAT_RustedFinger</defName>
+    <label>finger</label>
+    <hitPoints>15</hitPoints>
+    <tags>
+      <li>ManipulationLimbDigit</li>
+    </tags>
+	<frostbiteVulnerability>5</frostbiteVulnerability>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="NAT_RustedBase">
+    <defName>NAT_RustedLeg</defName>
+    <label>leg</label>
+    <hitPoints>30</hitPoints>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="NAT_RustedBase">
+    <defName>NAT_RustedFoot</defName>
+    <label>foot</label>
+    <hitPoints>20</hitPoints>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+   
+</Defs>

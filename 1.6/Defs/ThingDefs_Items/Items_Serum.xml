@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="SerumBase">
+    <defName>NAT_PainQuenchSerum</defName>
+    <label>pain quench serum</label>
+    <description>A syringe of turbid plum fluid that fully suppresses any pain, even induced.\n\nThe effect is temporary and does not stack.</description>
+    <graphicData>
+      <texPath>Things/Item/Serum/NAT_SerumPainQuench</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>40</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_UseEffectAddHediff">
+        <hediffDef>NAT_PainQuenchSerum</hediffDef>
+        <allowRepeatedUse>true</allowRepeatedUse>
+      </li>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>MechSerumUsed</soundOnUsed>
+      </li>
+    </comps>
+    <costList>
+      <NAT_PainClot>2</NAT_PainClot>
+      <Meat_Twisted>10</Meat_Twisted>
+      <Bioferrite>10</Bioferrite>
+    </costList>
+    <recipeMaker>
+      <workAmount>700</workAmount>
+      <researchPrerequisites>
+        <li>SerumSynthesis</li>
+      </researchPrerequisites>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="SerumBase">
+    <defName>NAT_BilePowerSerum</defName>
+    <label>bile power serum</label>
+    <description>A syringe of turbid plum fluid that fully suppresses any pain, even induced.\n\nThe effect is temporary and does not stack.</description>
+    <graphicData>
+      <texPath>Things/Item/Serum/NAT_SerumBilePower</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>160</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_UseEffectAddHediff">
+        <hediffDef>NAT_BilePowerSerum</hediffDef>
+        <allowRepeatedUse>true</allowRepeatedUse>
+      </li>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>MechSerumUsed</soundOnUsed>
+      </li>
+    </comps>
+    <costList>
+      <NAT_BileGland>1</NAT_BileGland>
+      <Bioferrite>10</Bioferrite>
+    </costList>
+    <recipeMaker>
+      <workAmount>700</workAmount>
+      <researchPrerequisites>
+        <li>SerumSynthesis</li>
+      </researchPrerequisites>
+    </recipeMaker>
+  </ThingDef>
+  
+</Defs>

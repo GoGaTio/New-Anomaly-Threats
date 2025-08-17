@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <NeedDef>
+    <defName>NAT_RustRest</defName>
+    <needClass>NAT.Need_RustRest</needClass>
+    <label>sleep</label>
+    <description>Sleep is how much time a creature has spent sleeping recently. If it is at zero, a creature will eventually fall asleep on the spot.</description>
+    <listPriority>700</listPriority>
+    <major>true</major>
+    <showForCaravanMembers>true</showForCaravanMembers>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+  </NeedDef>
+
+</Defs>

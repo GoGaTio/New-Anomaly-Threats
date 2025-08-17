@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName = "Entities"]/pawnGroupMakers</xpath>
+    <value>
+      <li>
+        <!-- Serpents -->
+        <kindDef>NAT_Serpents</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <NAT_BileSerpent>1</NAT_BileSerpent>
+        </options>
+      </li>
+      <li>
+        <!-- Serpents and devourers -->
+        <kindDef>NAT_SerpentsDevourers</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <NAT_BileSerpent>1</NAT_BileSerpent>
+          <Devourer>1</Devourer>
+        </options>
+      </li>
+      <li>
+        <!-- Sightstealers with collector -->
+        <kindDef>NAT_SightstealersCollector</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Sightstealer>1</Sightstealer>
+          <NAT_Collector>99</NAT_Collector>
+        </options>
+      </li>
+      <li>
+        <!-- Raid - Infantry -->
+        <kindDef>NAT_RustedArmy</kindDef>
+        <commonality>70</commonality>
+        <options>
+		  <NAT_RustedOfficer>3</NAT_RustedOfficer>
+		  <NAT_RustedRifleman>30</NAT_RustedRifleman>
+		  <NAT_RustedGunner>5</NAT_RustedGunner>
+		  <NAT_RustedTrooper>5</NAT_RustedTrooper>
+          <NAT_RustedSapper>5</NAT_RustedSapper>
+        </options>
+      </li>
+	  <li>
+        <!-- Raid - Low range x Melee -->
+        <kindDef>NAT_RustedArmy</kindDef>
+        <commonality>40</commonality>
+        <options>
+		  <NAT_RustedOfficer>1</NAT_RustedOfficer>
+		  <NAT_RustedGunner>5</NAT_RustedGunner>
+		  <NAT_RustedHussar>10</NAT_RustedHussar>
+		  <NAT_RustedGrenadier>5</NAT_RustedGrenadier>
+		  <NAT_RustedTrooper>15</NAT_RustedTrooper>
+		  <NAT_RustedSapper>5</NAT_RustedSapper>
+        </options>
+      </li>
+	  <li>
+        <!-- Raid Heavy Infantry -->
+        <kindDef>NAT_RustedArmy</kindDef>
+        <commonality>50</commonality>
+        <options>
+		  <NAT_RustedOfficer>4</NAT_RustedOfficer>
+		  <NAT_RustedRifleman>5</NAT_RustedRifleman>
+		  <NAT_RustedGunner>15</NAT_RustedGunner>
+		  <NAT_RustedGunner_Heavy>6</NAT_RustedGunner_Heavy>
+		  <NAT_RustedGuardsman>4</NAT_RustedGuardsman>
+		  <NAT_RustedTrooper>10</NAT_RustedTrooper>
+          <NAT_RustedSapper>3</NAT_RustedSapper>
+        </options>
+      </li>
+	  <li>
+	    <!-- Defence -->
+        <kindDef>NAT_RustedArmyDefence</kindDef>
+        <commonality>100</commonality>
+        <options>
+		  <NAT_RustedOfficer>10</NAT_RustedOfficer>
+		  <NAT_RustedRifleman>15</NAT_RustedRifleman>
+		  <NAT_RustedGunner>15</NAT_RustedGunner>
+		  <NAT_RustedGunner_Heavy>5</NAT_RustedGunner_Heavy>
+		  <NAT_RustedTrooper>10</NAT_RustedTrooper>
+		  <NAT_RustedGuardsman>5</NAT_RustedGuardsman>
+        </options>
+	  </li>
+    <li>
+	    <!-- Defence -->
+        <kindDef>NAT_RustedArmySiege</kindDef>
+        <commonality>100</commonality>
+        <options>
+		  <NAT_RustedOfficer>5</NAT_RustedOfficer>
+		  <NAT_RustedRifleman>15</NAT_RustedRifleman>
+		  <NAT_RustedGunner>15</NAT_RustedGunner>
+		  <NAT_RustedGunner_Heavy>5</NAT_RustedGunner_Heavy>
+		  <NAT_RustedTrooper>10</NAT_RustedTrooper>
+		  <NAT_RustedGuardsman>5</NAT_RustedGuardsman>
+        </options>
+	  </li>
+	  <li>
+	    <!-- Rusted mass drop -->
+        <kindDef>NAT_RustedMassDrop</kindDef>
+        <commonality>100</commonality>
+        <options>
+		  <NAT_RustedSoldier>1</NAT_RustedSoldier>
+        </options>
+	  </li>
+	  <li MayRequire="22.AnomalyPortal">
+		<kindDef>AP_MetalStormGroup</kindDef>
+		<commonality>7</commonality>
+		<options>
+		  <Metalhorror>40</Metalhorror>
+		  <NAT_RustedBannerman>999</NAT_RustedBannerman>
+		  <NAT_RustedOfficer>5</NAT_RustedOfficer>
+		  <NAT_RustedRifleman>20</NAT_RustedRifleman>
+		  <NAT_RustedGunner>15</NAT_RustedGunner>
+		  <NAT_RustedHussar>30</NAT_RustedHussar>
+		  <NAT_RustedGrenadier>10</NAT_RustedGrenadier>
+		  <NAT_RustedTrooper>15</NAT_RustedTrooper>
+		</options>
+	  </li>
+    </value>
+  </Operation> 
+  
+</Patch>

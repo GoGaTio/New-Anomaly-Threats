@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef>
+    <defName>NAT_ActivatedSpeed</defName>
+    <label>activated speed</label>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>This rust moving speed is amplified by rusted activator.</description>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0, 0.3, 0.99)</defaultLabelColor>
+    <comps>
+      <li Class="HediffCompProperties_DisappearsDisableable">
+        <disappearsAfterTicks>300000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath" />
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <MoveSpeed>0.4</MoveSpeed>
+		  <MeleeDodgeChance>10</MeleeDodgeChance>
+        </statOffsets>
+		<capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>1.25</postFactor>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>NAT_ActivatedDurability</defName>
+    <label>activated durability</label>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>This rust durability is amplified by rusted activator.</description>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.06, 0.54, 0.09)</defaultLabelColor>
+    <comps>
+      <li Class="HediffCompProperties_DisappearsDisableable">
+        <disappearsAfterTicks>240000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath" />
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <IncomingDamageFactor>0.75</IncomingDamageFactor> 
+          <Flammability>0.5</Flammability>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>NAT_ActivatedCharge</defName>
+    <label>activated charge</label>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>This rust consiousness and work speed is amplified by rusted activator.</description>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.75, 0.75, 0.1)</defaultLabelColor>
+    <comps>
+      <li Class="HediffCompProperties_DisappearsDisableable">
+        <disappearsAfterTicks>300000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath" />
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>1.2</postFactor>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>NAT_ActivatedRegeneration</defName>
+    <label>actvated regeneration</label>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>This rust regeneration is amplified by rusted activator.</description>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.74, 0.11, 0.11)</defaultLabelColor>
+    <comps>
+      <li Class="HediffCompProperties_DisappearsDisableable">
+        <disappearsAfterTicks>300000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath" />
+    </comps>
+    <stages>
+      <li>
+        <regeneration>50</regeneration>
+        <showRegenerationStat>true</showRegenerationStat>
+      </li>
+    </stages>
+  </HediffDef>
+  
+</Defs>

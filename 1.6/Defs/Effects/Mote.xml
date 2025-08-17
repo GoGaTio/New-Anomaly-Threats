@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>NAT_Mote_CollectorHowl_Dark</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverheadLow</altitudeLayer>
+    <mote>
+      <fadeInTime>0.05</fadeInTime>
+      <fadeOutTime>0.3</fadeOutTime>
+      <solidTime>0.6</solidTime>
+      <growthRate>6</growthRate>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/RadiationDistortion_A</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <color>(0, 0, 0, 1)</color>
+      <shaderType>MoteMultiplyCircularGrayscale</shaderType>
+      <shaderParameters>
+        <_MultiplyTex>/Things/Mote/RadiationDistortion_B</_MultiplyTex>
+        <_texAScale>0.3</_texAScale>
+        <_texBScale>0.3</_texBScale>
+        <_texAScrollSpeed>0.8</_texAScrollSpeed>
+        <_texBScrollSpeed>-0.4</_texBScrollSpeed>
+        <_texAScaleDist>0.5</_texAScaleDist>
+        <_DistortionScale>0.6</_DistortionScale>
+        <_Intensity>8</_Intensity>
+      </shaderParameters>
+      <drawSize>(2.5, 2.5)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>NAT_Mote_CollectorHowl_Distortion</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <fadeOutTime>0.3</fadeOutTime>
+      <solidTime>0.6</solidTime>
+      <growthRate>20</growthRate>
+    </mote>
+    <graphicData>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MotePsychicWarmupNeuroquake</shaderType>
+      <texPath>Things/Mote/MoteHellfireCannon_HeatWaveDistortion</texPath>
+      <shaderParameters>
+        <_distortionIntensity>0.5</_distortionIntensity>
+        <_brightnessMultiplier>0.5</_brightnessMultiplier>
+        <_distortionTint>(0, 0, 0.08, 0)</_distortionTint>
+        <_pulseSpeed>1</_pulseSpeed>
+      </shaderParameters>
+      <drawSize>2</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>NAT_Mote_BannerBoost_RustedFlash</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverheadLow</altitudeLayer>
+    <mote>
+      <fadeInTime>0.05</fadeInTime>
+      <fadeOutTime>0.3</fadeOutTime>
+      <solidTime>0.6</solidTime>
+      <growthRate>6</growthRate>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/RadiationDistortion_A</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <color>(0.44, 0.38, 0.38, 1)</color>
+      <shaderType>MoteMultiplyCircularGrayscale</shaderType>
+      <shaderParameters>
+        <_MultiplyTex>/Things/Mote/RadiationDistortion_B</_MultiplyTex>
+        <_texAScale>0.3</_texAScale>
+        <_texBScale>0.3</_texBScale>
+        <_texAScrollSpeed>0.8</_texAScrollSpeed>
+        <_texBScrollSpeed>-0.4</_texBScrollSpeed>
+        <_texAScaleDist>0.5</_texAScaleDist>
+        <_DistortionScale>0.6</_DistortionScale>
+        <_Intensity>8</_Intensity>
+      </shaderParameters>
+      <drawSize>(2.5, 2.5)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="MoteBase">
+    <defName>NAT_Mote_BannerBoost_FabricFlash</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverheadLow</altitudeLayer>
+    <mote>
+      <fadeInTime>0.05</fadeInTime>
+      <fadeOutTime>0.3</fadeOutTime>
+      <solidTime>0.6</solidTime>
+      <growthRate>6</growthRate>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/RadiationDistortion_A</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <color>(0.6, 0.49, 0.42, 1)</color>
+      <shaderType>MoteMultiplyCircularGrayscale</shaderType>
+      <shaderParameters>
+        <_MultiplyTex>/Things/Mote/RadiationDistortion_B</_MultiplyTex>
+        <_texAScale>0.3</_texAScale>
+        <_texBScale>0.3</_texBScale>
+        <_texAScrollSpeed>0.8</_texAScrollSpeed>
+        <_texBScrollSpeed>-0.4</_texBScrollSpeed>
+        <_texAScaleDist>0.5</_texAScaleDist>
+        <_DistortionScale>0.6</_DistortionScale>
+        <_Intensity>8</_Intensity>
+      </shaderParameters>
+      <drawSize>(2.5, 2.5)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="MoteBase">
+    <defName>NAT_Mote_BannerBoost_Distortion</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <fadeOutTime>0.3</fadeOutTime>
+      <solidTime>0.6</solidTime>
+      <growthRate>20</growthRate>
+    </mote>
+    <graphicData>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MotePsychicWarmupNeuroquake</shaderType>
+      <texPath>Things/Mote/MoteHellfireCannon_HeatWaveDistortion</texPath>
+      <shaderParameters>
+        <_distortionIntensity>0.5</_distortionIntensity>
+        <_brightnessMultiplier>0.5</_brightnessMultiplier>
+        <_distortionTint>(0, 0, 0.08, 0)</_distortionTint>
+        <_pulseSpeed>1</_pulseSpeed>
+      </shaderParameters>
+      <drawSize>2</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+
+  <ThingDef ParentName="MoteBase" Name="NAT_ActivatorMoteBase" Abstract="True">
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.05</fadeInTime>
+      <fadeOutTime>0.25</fadeOutTime>
+      <solidTime>0.15</solidTime> 
+      <growthRate>2.5</growthRate>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/RadiationDistortion_A</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <color>(0.85, 0.35, 0.25, 1.0)</color>
+      <shaderType>MoteMultiplyAddCircularGrayscale</shaderType>
+      <shaderParameters>
+        <_MultiplyTex>/Things/Mote/RadiationDistortion_B</_MultiplyTex>
+        <_texAScale>0.3</_texAScale>
+        <_texBScale>0.3</_texBScale>
+        <_texAScrollSpeed>1.5</_texAScrollSpeed>
+        <_texBScrollSpeed>-0.8</_texBScrollSpeed>
+        <_Intensity>11</_Intensity>
+      </shaderParameters>
+      <drawSize>(1.4, 1.4)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="NAT_ActivatorMoteBase">
+    <defName>NAT_Mote_Activator_Speed</defName>
+    <graphicData>
+      <color>(0, 0.30, 0.99, 0.75)</color>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="NAT_ActivatorMoteBase">
+    <defName>NAT_Mote_Activator_Durability</defName>
+    <graphicData>
+      <color>(0.06, 0.54, 0.09, 0.75)</color>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="NAT_ActivatorMoteBase">
+    <defName>NAT_Mote_Activator_Regeneration</defName>
+    <graphicData>
+      <color>(0.74, 0.11, 0.11, 0.75)</color>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="NAT_ActivatorMoteBase">
+    <defName>NAT_Mote_Activator_Charge</defName>
+    <graphicData>
+      <color>(0.75, 0.75, 0.1, 0.75)</color>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>NAT_Mote_HoraxBeam</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>0.1</solidTime>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+    </mote>
+    <drawOffscreen>true</drawOffscreen>
+    <graphicData>
+      <texPath>Things/Mote/GraserBeam</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteBeam</shaderType>
+      <shaderParameters>
+        <_ExtraTexA>/Things/Mote/BeamSecondaryNoise_A</_ExtraTexA>
+        <_ExtraTexB>/Things/Mote/BeamSecondaryNoise_B</_ExtraTexB>
+        <_ScrollSpeedA>0</_ScrollSpeedA>
+        <_ScrollSpeedB>0</_ScrollSpeedB>
+        <_Intensity>2</_Intensity>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+  
+</Defs>

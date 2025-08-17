@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="Wall">
+    <defName>NAT_RustedWall</defName>
+    <label>rusted wall</label>
+    <description>A solid rusted wall.</description>
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <filthLeaving>NAT_Filth_RustedDebris</filthLeaving> 
+    <designationCategory IsNull="True"/>
+    <stuffCategories Inherit="False"/>
+	<costStuffCount Inherit="False"/>
+    <damageMultipliers Inherit="False">
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+    </damageMultipliers>
+    <uiIconPath>Things/Building/Linked/GreyWall_MenuIcon</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/Linked/NAT_RustedWall_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <building>
+      <paintable>false</paintable>
+      <deconstructible>false</deconstructible>
+      <claimable>false</claimable>
+      <neverBuildable>true</neverBuildable>
+      <repairable>false</repairable>
+      <isAirtight>true</isAirtight>
+      <displayAttackToDestroyOnInspectPane>false</displayAttackToDestroyOnInspectPane>
+      <destroyEffecter>NAT_RustedSoldierDeath</destroyEffecter>
+    </building>
+    <statBases>
+      <MaxHitPoints>450</MaxHitPoints>
+      <Beauty>-4</Beauty>
+      <Flammability>1</Flammability>
+    </statBases>
+  </ThingDef> 
+
+  <ThingDef ParentName="DoorBase">
+    <defName>NAT_RustedDoor</defName>
+    <label>rusted door</label>
+    <description>A heavily-reinforced door made of an ultratech polymer. Hack the door to open it.</description>
+    <thingClass>Building_SupportedDoor</thingClass>
+    <designationCategory IsNull="True"/>
+    <graphicData>
+      <texPath>Things/Building/NAT_RustedDoor/NAT_RustedDoor_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <ignoreThingDrawColor>true</ignoreThingDrawColor>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/NAT_RustedDoor/NAT_RustedDoor_Icon</uiIconPath>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Beauty>-4</Beauty>
+      <Flammability>1</Flammability>
+    </statBases>
+    <useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+    <rotatable>true</rotatable>
+    <building>
+      <paintable>false</paintable>
+      <deconstructible>false</deconstructible>
+      <neverBuildable>true</neverBuildable>
+      <isAirtight>true</isAirtight>
+      <draftAttackNonDeconstructable>false</draftAttackNonDeconstructable>
+      <isSupportDoor>true</isSupportDoor>
+      <doorTopGraphic>
+        <texPath>Things/Building/NAT_RustedDoor/NAT_RustedDoor_Support</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(3, 3)</drawSize>
+      </doorTopGraphic>
+      <doorTopHorizontalOffset>(0,0,0.05)</doorTopHorizontalOffset>
+      <expandHomeArea>false</expandHomeArea>
+    </building>
+    <stuffCategories Inherit="False"/>
+    <costStuffCount>0</costStuffCount>
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <filthLeaving>NAT_Filth_RustedDebris</filthLeaving>
+  </ThingDef>
+  
+  <ThingDef ParentName="DoorBase">
+    <defName>NAT_RustedDoor_Double</defName>
+    <label>rusted door</label>
+    <description>Divides rooms. An intricately-carved door, decorated with gold. This large, heavy door requires adjacent walls to function.</description>
+    <thingClass>Building_MultiTileDoor</thingClass>
+    <statBases>
+      <MaxHitPoints>650</MaxHitPoints>
+      <Beauty>-4</Beauty>
+      <Flammability>1</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/NAT_RustedDoor/NAT_RustedDoor2x1_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/NAT_RustedDoor/NAT_RustedDoor2x1_Icon</uiIconPath>
+    <useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+    <size>(2, 1)</size>
+    <rotatable>true</rotatable>
+    <costStuffCount>0</costStuffCount>
+    <designationCategory IsNull="True"/>
+    <stuffCategories Inherit="False"/>
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <filthLeaving>NAT_Filth_RustedDebris</filthLeaving>
+    <building>
+      <paintable>false</paintable>
+      <deconstructible>false</deconstructible>
+      <neverBuildable>true</neverBuildable>
+      <isAirtight>true</isAirtight>
+      <isSupportDoor>true</isSupportDoor>
+      <doorTopGraphic>
+        <texPath>Things/Building/NAT_RustedDoor/NAT_RustedDoor2x1_Support</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(4, 3)</drawSize>
+      </doorTopGraphic>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_MultiCellDoor</li>
+    </placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>NAT_RustedBarrier</defName>
+    <label>rusted barrier</label>
+    <description>A waist-high barrier for use as cover from incoming shots. Barricades are ugly, but provide better cover than other low objects. Barricades will block certain kinds of animals the same way that fences do.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Linked/Barricade_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Barricades</li>
+      </linkFlags>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/Barricade_MenuIcon</uiIconPath>
+    <uiIconScale>1.2</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>42</pathCost>
+    <pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.45</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>-25</Beauty>
+      <Flammability>1.5</Flammability>
+    </statBases>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isFence>true</isFence>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <paintable>false</paintable>
+      <deconstructible>false</deconstructible>
+      <claimable>false</claimable>
+      <neverBuildable>true</neverBuildable>
+      <displayAttackToDestroyOnInspectPane>false</displayAttackToDestroyOnInspectPane>
+      <destroyEffecter>NAT_RustedSoldierDeath</destroyEffecter>
+    </building>
+    <filthLeaving>NAT_Filth_RustedDebris</filthLeaving>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <ThingDef>
+    <defName>NAT_PainClot</defName>
+    <label>pain clot</label>
+    <description>A piece of clotted pain.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <tradeability>None</tradeability>
+    <category>Item</category>
+    <genericMarketSellable>false</genericMarketSellable>
+    <drawerType>MapMeshOnly</drawerType>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <graphicData>
+      <texPath>Things/Item/NAT_PainClot</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <soundInteract>Standard_Pickup</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>75</stackLimit>
+    <intricate>true</intricate>
+    <statBases>
+      <Mass>0.05</Mass>
+      <Beauty>-10</Beauty>
+      <Flammability>0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+  </ThingDef>
+  
+  <ThingDef> 
+    <defName>NAT_CollectorNotes</defName> 
+    <label>collector notes</label> 
+    <description>Unremarkable leather bag, empty inside.</description> 
+    <thingClass>ThingWithComps</thingClass> 
+    <category>Item</category> 
+    <genericMarketSellable>false</genericMarketSellable> 
+    <drawerType>MapMeshOnly</drawerType> 
+    <tickerType>Normal</tickerType> 
+    <rotatable>false</rotatable> 
+    <altitudeLayer>Item</altitudeLayer> 
+    <selectable>true</selectable> 
+    <alwaysHaulable>true</alwaysHaulable> 
+    <drawGUIOverlay>true</drawGUIOverlay> 
+    <scatterableOnMapGen>false</scatterableOnMapGen> 
+    <useHitPoints>false</useHitPoints> 
+    <healthAffectsPrice>false</healthAffectsPrice> 
+    <graphicData> 
+      <texPath>Things/Item/NAT_CollectorNotes</texPath> 
+      <graphicClass>Graphic_Single</graphicClass> 
+      <drawSize>(0.85, 0.85)</drawSize> 
+    </graphicData> 
+    <soundInteract>Standard_Pickup</soundInteract> 
+    <soundDrop>Standard_Drop</soundDrop> 
+    <stackLimit>1</stackLimit> 
+    <intricate>true</intricate> 
+    <statBases> 
+      <Mass>0.05</Mass> 
+      <Beauty>-7</Beauty> 
+    </statBases> 
+    <thingCategories> 
+      <li>ItemsMisc</li> 
+    </thingCategories> 
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered> 
+    <comps> 
+      <li Class="CompProperties_Forbiddable"> 
+        <forbidOnMake>true</forbidOnMake> 
+      </li> 
+      <li Class="CompProperties_Studiable"> 
+        <frequencyTicks>120000</frequencyTicks> 
+        <knowledgeCategory>Advanced</knowledgeCategory> 
+        <anomalyKnowledge>0.5</anomalyKnowledge>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy> 
+        <showToggleGizmo>true</showToggleGizmo> 
+      </li> 
+      <li Class="CompProperties_StudyUnlocks"> 
+        <studyNotes> 
+          <li> 
+            <threshold>2</threshold> 
+            <label>Collector's notes study progress</label> 
+            <text>Investigation of the strange bag has revealed some information. It seems that this bag has a connection with a pocket dimension where the stolen items ended up.\n\n{PAWN_nameDef} believes that he can find, open this dimension and get things, but for this he wants to conduct additional research.</text> 
+          </li> 
+          <li> 
+            <threshold>8</threshold> 
+            <label>Collector's notes study complete</label> 
+            <text>{PAWN_nameDef} has completed {PAWN_possessive} studying. {PAWN_pronoun} finds a way to open the pocket dimension associated with it. Order someone to peruse them.</text> 
+          </li> 
+        </studyNotes> 
+      </li> 
+      <li Class="NAT.CompProperties_CollectorNotes"> 
+        <activeTicks>1</activeTicks> 
+        <ticksToActivate>180</ticksToActivate> 
+        <activateTexPath>UI/Commands/NAT_CollectorNotesRead</activateTexPath> 
+        <jobString>read notes</jobString> 
+        <activateLabelString>Order bag opening</activateLabelString> 
+        <activateDescString>Order someone to open the bag.</activateDescString> 
+        <guiLabelString>Choose who should open bag.</guiLabelString> 
+        <activatingString>opening bag</activatingString> 
+        <activatingStringPending>opening bag</activatingStringPending> 
+        <showMustBeActivatedByColonist>false</showMustBeActivatedByColonist> 
+        <targetingParameters> 
+          <canTargetBuildings>false</canTargetBuildings> 
+          <canTargetAnimals>false</canTargetAnimals> 
+          <canTargetMechs>false</canTargetMechs> 
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns> 
+        </targetingParameters> 
+      </li> 
+    </comps> 
+  </ThingDef>
+
+  <ThingDef>
+    <defName>NAT_BileGland</defName>
+    <label>bile gland</label>
+    <description>A small hollow organ where bile is stored and produced before it is released onto serpent enemies.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <tradeability>Sellable</tradeability>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <tickerType>Rare</tickerType>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <graphicData>
+      <texPath>Things/Item/NAT_BileGland</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <soundInteract>Standard_Pickup</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <intricate>true</intricate>
+    <statBases>
+      <Mass>0.25</Mass>
+      <Beauty>-15</Beauty>
+	  <Flammability>1.5</Flammability>
+	  <Nutrition>0.6</Nutrition>
+	  <MaxHitPoints>55</MaxHitPoints>
+    </statBases>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <ingredient>
+      <mergeCompatibilityTags>
+        <li>NAT_BileGland</li>
+      </mergeCompatibilityTags>
+    </ingredient>
+    <ingestible>
+      <foodType>Meat</foodType>
+      <preferability>DesperateOnly</preferability>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>RawMeat_Eat</ingestSound>
+      <specialThoughtDirect>AteTwistedMeat</specialThoughtDirect>
+      <specialThoughtAsIngredient>AteTwistedMeat</specialThoughtAsIngredient>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>5</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+      <li>
+        <compClass>CompHarbingerTreeConsumable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>NAT_RustedCore</defName>
+    <label>core of rust</label>
+    <description>A small metal icosahedron. Slowly grows bioferrite on surface.</description>
+    <thingClass>NAT.RustedCore</thingClass>
+    <tradeability>None</tradeability>
+    <category>Item</category>
+    <drawerType>RealtimeOnly</drawerType>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <graphicData>
+      <texPath>Things/Item/NAT_RustedCore/NAT_RustedCore_A</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <soundInteract>Standard_Pickup</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <intricate>true</intricate>
+    <statBases>
+      <Mass>1</Mass>
+      <Beauty>-4</Beauty>
+      <Flammability>0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="NAT.CompProperties_DestroyRustedCore">
+        <jobString>destroy</jobString>
+        <activateLabelString>None</activateLabelString>
+        <activateDescString>None</activateDescString> 
+        <guiLabelString>Choose who should destroy this.</guiLabelString>
+        <activatingString>destroying {0}: {1}s</activatingString>
+        <activatingStringPending>destroying {0}</activatingStringPending>
+        <showMustBeActivatedByColonist>false</showMustBeActivatedByColonist>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ChunkBase">
+    <defName>NAT_HoraxChunk</defName>
+    <label>dark archochunk</label>
+    <description>A chunk of steel slag. While it's useless in its current form, it can be smelted to recover steel.</description>
+    <graphicData>
+      <texPath>Things/Item/Chunk/ChunkSlag</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>10</Mass>
+    </statBases>
+    <soundDrop>ChunkSlag_Drop</soundDrop>
+    <thingCategories>
+      <li>Chunks</li>
+    </thingCategories>
+    <smeltable>true</smeltable>
+    <smeltProducts>
+      <Steel>15</Steel>
+    </smeltProducts>
+  </ThingDef>
+  
+</Defs>

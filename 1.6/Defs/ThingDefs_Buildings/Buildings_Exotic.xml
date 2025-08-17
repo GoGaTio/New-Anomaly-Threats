@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>NAT_CollectorLairEntrance</defName>
+    <label>ancient trapdoor</label>
+    <description>The entrance to a long-abandoned subterranean facility. Hack it to open the hatch.</description>
+    <size>(3,3)</size>
+    <useHitPoints>false</useHitPoints>
+    <thingClass>NAT.UndergroundEntrance</thingClass>
+    <rotatable>false</rotatable>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/NAT_CollectorLairEntrance/NAT_CollectorLairEntrance_Closed</texPath>
+      <drawSize>(3, 3)</drawSize>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <fillPercent>0</fillPercent>
+    <passability>Impassable</passability>
+    <holdsRoof>true</holdsRoof>
+    <destroyable>false</destroyable>
+    <building>
+      <isEdifice>true</isEdifice>
+      <deconstructible>false</deconstructible>
+      <isTargetable>false</isTargetable>
+      <isInert>true</isInert>
+      <claimable>false</claimable>
+      <expandHomeArea>false</expandHomeArea>
+    </building>
+    <portal>
+      <pocketMapGenerator>NAT_UndergroundLayout</pocketMapGenerator>
+      <exitDef>NAT_CollectorLairExit</exitDef>
+      <pocketMapSize>100</pocketMapSize>
+    </portal>
+    <statBases>
+      <Flammability>0</Flammability>
+    </statBases>
+    <comps>
+      <li Class="NAT.CompProperties_UndergroundEntrance">
+        <sealTicks>360</sealTicks> 
+        <sealEffect>ConstructDirt</sealEffect> 
+        <layout>NAT_CollectorLair</layout>
+        <canBeSealed>true</canBeSealed>
+        <sealedLabelOverride>buried entrance</sealedLabelOverride>
+        <openedLabelOverride>collector lair entrance</openedLabelOverride>
+        <sealTexPath>Designations/FillCrater</sealTexPath>
+        <sealJobReportOverride>buring {0}</sealJobReportOverride>
+        <openedGraphicData>          <texPath>Things/Building/NAT_CollectorLairEntrance/NAT_CollectorLairEntrance_Open</texPath>          <graphicClass>Graphic_Single</graphicClass>          <drawSize>(3,3)</drawSize>        </openedGraphicData>
+        <sealedGraphicData>          <texPath>Things/Building/NAT_CollectorLairEntrance/NAT_CollectorLairEntrance_Sealed</texPath>          <graphicClass>Graphic_Single</graphicClass>          <drawSize>(3,3)</drawSize>        </sealedGraphicData>
+        <activeTicks>1</activeTicks>
+        <ticksToActivate>300</ticksToActivate>
+        <activateTexPath>UI/Commands/NAT_OpenCollectorLair</activateTexPath> 
+        <jobString>open</jobString> 
+        <activateLabelString>Order trapdoor opening</activateLabelString> 
+        <activateDescString>Order someone to open the trapdoor.</activateDescString> 
+        <guiLabelString>Choose who should open trapdoor.</guiLabelString> 
+        <activatingString>opening trapdoor</activatingString> 
+        <activatingStringPending>opening trapdoor</activatingStringPending>
+        <showMustBeActivatedByColonist>false</showMustBeActivatedByColonist> 
+        <targetingParameters> 
+          <canTargetBuildings>false</canTargetBuildings> 
+          <canTargetAnimals>false</canTargetAnimals> 
+          <canTargetMechs>false</canTargetMechs> 
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns> 
+        </targetingParameters>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_ContentsMapPortal</li>
+    </inspectorTabs>
+  </ThingDef>
+
+  <ThingDef ParentName="PocketMapExit">
+    <defName>NAT_CollectorLairExit</defName>
+    <label>collector lair exit</label>
+    <description>A ladder which links to the surface trapdoor above.</description>
+    <size>(3,3)</size>
+    <drawerType>RealtimeOnly</drawerType>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/NAT_CollectorLairExit/NAT_CollectorLairExit</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_DrawAdditionalGraphics">
+        <graphics>
+          <li>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Building/NAT_CollectorLairExit/NAT_CollectorLairExit_Ladder</texPath>
+            <drawSize>(3,3)</drawSize>
+            <drawOffset>(0, 0.01, 0.7)</drawOffset>
+            <shaderType>Transparent</shaderType>
+          </li>
+        </graphics>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>NAT_CollectorGlassCase</defName>
+    <label>glass case</label>
+    <description>A bioferrite piece shaped like humanoid creature.\n\nCan be activated into rusted infantryman using shard.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/NAT_CollectorGlassCase/NAT_CollectorGlassCase</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <drawerType>RealtimeOnly</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <thingClass>NAT.Building_CollectionCase</thingClass>
+    <pathCost>50</pathCost>
+    <useHitPoints>true</useHitPoints>
+    <rotatable>false</rotatable>
+    <tickerType>Rare</tickerType>
+    <building>
+      <roofCollapseDamageMultiplier>0.1</roofCollapseDamageMultiplier>
+      <displayAttackToDestroyOnInspectPane>false</displayAttackToDestroyOnInspectPane>
+      <paintable>false</paintable>
+      <deconstructible>false</deconstructible>
+      <repairable>false</repairable>
+      <neverBuildable>true</neverBuildable>
+    </building>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <Flammability>0</Flammability>
+    </statBases>
+    <fillPercent>0.8</fillPercent>
+    <size>(3, 3)</size>
+  </ThingDef>
+  
+  <ThingDef Name="NAT_RustedSculptureBase" ParentName="BuildingBase" Abstract="True">
+    <genericMarketSellable>false</genericMarketSellable>
+    <tradeability>None</tradeability>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <pathCost>50</pathCost>
+    <useHitPoints>true</useHitPoints>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <building>
+      <roofCollapseDamageMultiplier>0.2</roofCollapseDamageMultiplier>
+      <displayAttackToDestroyOnInspectPane>false</displayAttackToDestroyOnInspectPane>
+      <paintable>false</paintable>
+      <deconstructible>false</deconstructible>
+      <repairable>false</repairable>
+      <destroyEffecter>NAT_RustedSoldierDeath</destroyEffecter>
+      <neverBuildable>true</neverBuildable>
+    </building>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>110</MaxHitPoints>
+      <Beauty>-10</Beauty>
+      <Flammability>1.5</Flammability>
+      <Mass>45</Mass>
+    </statBases>
+    <fillPercent>0.55</fillPercent>
+    <size>(1, 1)</size>
+    <filthLeaving>NAT_Filth_RustedDebris</filthLeaving>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>NAT_RustedSculpture_Soldier</defName>
+    <label>rusted sculpture</label>
+    <description>A bioferrite piece shaped like humanoid creature.\n\nCan be activated into rusted infantryman using shard.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/NAT_RustedSculpture/NAT_RustedSculpture_Soldier</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="NAT.CompProperties_RustedSculpture">
+        <pawnKind>NAT_RustedSoldier</pawnKind>
+        <offset>(0, 0, 0.25)</offset>
+        <activeTicks>1</activeTicks>
+        <ticksToActivate>210</ticksToActivate>
+        <activateTexPath>UI/Commands/NAT_ActivateSoldier</activateTexPath>
+        <jobString>activate</jobString>
+        <activateLabelString>Order activating</activateLabelString>
+        <activateDescString>Order a pawn to activate rusted infantryman.</activateDescString>
+        <guiLabelString>Choose who should activate rusted infantryman.</guiLabelString>
+        <activatingString>activating rusted infantryman</activatingString>
+        <activatingStringPending>activating rusted infantryman</activatingStringPending>
+        <showMustBeActivatedByColonist>false</showMustBeActivatedByColonist>
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>NAT_RustedSculpture_Trooper</defName>
+    <label>small rusted sculpture</label>
+    <description>A small bioferrite piece shaped like humanoid creature.\n\nCan be activated into rusted stormtrooper using shard.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/NAT_RustedSculpture/NAT_RustedSculpture_Trooper</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="NAT.CompProperties_RustedSculpture">
+        <pawnKind>NAT_RustedTrooper</pawnKind>
+        <offset>(0, 0, 0.15)</offset>
+        <activeTicks>1</activeTicks>
+        <ticksToActivate>210</ticksToActivate>
+        <activateTexPath>UI/Commands/NAT_ActivateSoldier</activateTexPath>
+        <jobString>activate</jobString>
+        <activateLabelString>Order activating</activateLabelString>
+        <activateDescString>Order a pawn to activate rusted stormtrooper.</activateDescString>
+        <guiLabelString>Choose who should activate rusted stormtrooper.</guiLabelString>
+        <activatingString>activating rusted stormtrooper</activatingString>
+        <activatingStringPending>activating rusted stormtrooper</activatingStringPending>
+        <showMustBeActivatedByColonist>false</showMustBeActivatedByColonist>
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>NAT_RustedSculpture_Guardsman</defName>
+    <label>large rusted sculpture</label>
+    <description>A large bioferrite piece shaped like humanoid creature.\n\nCan be activated into rusted guardsman using shard.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/NAT_RustedSculpture/NAT_RustedSculpture_Guardsman</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="NAT.CompProperties_RustedSculpture">
+        <pawnKind>NAT_RustedGuardsman</pawnKind>
+        <offset>(0, 0, 0.65)</offset>
+        <activeTicks>1</activeTicks>
+        <ticksToActivate>210</ticksToActivate>
+        <activateTexPath>UI/Commands/NAT_ActivateSoldier</activateTexPath>
+        <jobString>activate</jobString>
+        <activateLabelString>Order activating</activateLabelString>
+        <activateDescString>Order a pawn to activate rusted guardsman.</activateDescString>
+        <guiLabelString>Choose who should activate rusted guardsman.</guiLabelString>
+        <activatingString>activating rusted guardsman</activatingString>
+        <activatingStringPending>activating rusted guardsman</activatingStringPending>
+        <showMustBeActivatedByColonist>false</showMustBeActivatedByColonist>
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <StructureLayoutDef>
+    <defName>NAT_CollectorLair</defName>
+    <workerClass>NAT.LayoutWorker_CollectorLair</workerClass>
+    <canHaveMultipleLayoutsInRoom>false</canHaveMultipleLayoutsInRoom>
+    <clearRoomsEntirely>true</clearRoomsEntirely>
+    <minRoomWidth>11</minRoomWidth>
+    <minRoomHeight>11</minRoomHeight>
+    
+    <!-- Structure -->
+    <doorStuffDef>WoodLog</doorStuffDef>
+    <wallStuffDef>BlocksMarble</wallStuffDef>
+    <wallLampDef>TorchWallLamp</wallLampDef>
+    
+    <roomDefs>
+
+      <NAT_CollectorLairEntrance>
+        <weight>999</weight>
+        <countRange>1</countRange>
+      </NAT_CollectorLairEntrance>
+      
+      <NAT_CollectorBedroom>
+        <weight>999</weight>
+        <countRange>1</countRange>
+      </NAT_CollectorBedroom>
+
+      <NAT_CollectionRoom>
+        <weight>1</weight>
+      </NAT_CollectionRoom>
+      
+    </roomDefs>
+  </StructureLayoutDef>
+  
+</Defs>

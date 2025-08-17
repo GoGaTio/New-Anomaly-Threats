@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 1921249453
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a50fc0529e683e16fe992f0f0c19296a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4df8c69f2c8a6ad9e3cbf82bb83e4dc3
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/NAT_RustedPlatformEdge_Loop3.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/NAT_RustedPlatformBorderInside_UShape.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/UI/CodexEntries/NAT_BileSerpent_Silhouette.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/UI/CodexEntries/NAT_Collector_Silhouette.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/UI/Buttons/NAT_Rusts.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/NAT_RustedPlatformBorderInside_Flat.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/NAT_RustedFloor.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/UI/CodexEntries/NAT_BileSerpent.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/UI/CodexEntries/NAT_Obelisk_Crannied_Silhouette.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/UI/CodexEntries/NAT_RustedMass_Silhouette.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/NAT_RustedPlatformEdge_Right.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/NAT_RustedPlatformEdge_Single.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/NAT_RustedPlatformBorderInside_CornerOuter.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/UI/CodexEntries/NAT_Obelisk_Crannied.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/UI/CodexEntries/NAT_RustedArmy_Silhouette.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/NAT_RustedPlatformEdge_Loop1.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/UI/CodexEntries/NAT_Collector.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/UI/CodexEntries/NAT_RustedMass.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/NAT_RustedPlatformEdge_Left.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/NAT_RustedPlatformEdge_Loop2.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/NAT_RustedPlatformBorderInside_OShape.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/UI/Buttons/NAT_RustUse.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/NAT_RustedPlatformEdge_Loop5.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/NAT_RustedPlatformEdge_Loop4.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/NAT_RustedPlatformBorderInside_CornerInner.png
+- Assets/Data/GoGaTio.NewAnomalyThreats/Textures/UI/CodexEntries/NAT_RustedArmy.png
+Dependencies: []

@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BasePawn">
+    <defName>NAT_BileSerpent</defName>
+    <label>bile serpent</label>
+    <description>A huge predatory snake, that can spit bile at their enemies. Bile they produce is sticky and thick enough to slow even large animals like elephants, but doesn't affect other entities.</description>
+    <tradeability>None</tradeability>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <race>
+      <baseHealthScale>2</baseHealthScale>
+      <body>NAT_Serpent</body>
+      <baseBodySize>1</baseBodySize>
+      <leatherDef>Leather_Dread</leatherDef>
+      <needsRest>false</needsRest>
+      <fleshType>EntityFlesh</fleshType>
+      <isImmuneToInfections>true</isImmuneToInfections>
+      <specificMeatDef>Meat_Twisted</specificMeatDef>
+      <foodType>None</foodType>
+      <bloodDef>Filth_DarkBlood</bloodDef>
+      <bleedRateFactor>0.5</bleedRateFactor>
+      <thinkTreeMain>NAT_BileSerpent</thinkTreeMain>
+      <thinkTreeConstant>NAT_BileSerpentConstant</thinkTreeConstant>
+      <trainability>None</trainability>
+      <canBecomeShambler>true</canBecomeShambler>
+      <waterCellCost>1</waterCellCost>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+          <soundWounded>Pawn_Cobra_Wounded</soundWounded>
+          <soundDeath>Pawn_Cobra_Death</soundDeath>
+          <soundCall>Pawn_Cobra_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <hediffGiverSets>
+        <li>AnomalyEntity</li>
+      </hediffGiverSets>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <headPosPerRotation>
+        <li>(-0.03, 0, 0.35)</li>
+        <li>(0.03, 0, 0.36)</li>
+        <li>(-0.05, 0, 0.28)</li>
+        <li>(-0.03, 0, 0.36)</li>
+      </headPosPerRotation>
+      <hasGenders>false</hasGenders>
+      <disableIgniteVerb>true</disableIgniteVerb>
+      <corpseHiddenWhileUndiscovered>true</corpseHiddenWhileUndiscovered>
+    </race>
+    <statBases>
+      <MoveSpeed>4.4</MoveSpeed>
+      <MinimumContainmentStrength>50</MinimumContainmentStrength>
+      <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+      <ComfyTemperatureMax>60</ComfyTemperatureMax>
+      <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <LeatherAmount>30</LeatherAmount>
+      <MeatAmount>40</MeatAmount>
+      <ToxicResistance>1</ToxicResistance>
+    </statBases>
+    <uiIconScale>1.15</uiIconScale>
+    <tools>
+      <li>
+        <label>fangs</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+      <li>
+        <label>tail</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>NAT_TailAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.8</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>30</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Basic</knowledgeCategory>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <anomalyKnowledge>1.7</anomalyKnowledge>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+      <li Class="CompProperties_HoldingPlatformTarget">
+        <baseEscapeIntervalMtbDays>60</baseEscapeIntervalMtbDays>
+      </li>
+      
+      <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.6, 0, .6)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.6, 0, .6)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.6, 0, -.7)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.6, 0, -.7)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>1.7</bioferriteDensity>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef>
+    <defName>NAT_BileSerpent</defName>
+    <label>bile serpent</label>
+    <race>NAT_BileSerpent</race>
+    <overrideDeathOnDownedChance>0.6</overrideDeathOnDownedChance>
+    <overrideDebugActionCategory>Entity</overrideDebugActionCategory>
+    <combatPower>95</combatPower>
+    <ecoSystemWeight>0.5</ecoSystemWeight>
+    <defaultFactionType>Entities</defaultFactionType>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/NAT_BileSerpent/NAT_BileSerpent</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/NAT_BileSerpent/NAT_DessicatedBileSerpent</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+          <attachPoints>
+            <li>
+              <offset>(-.5, 0, .5)</offset>
+              <type>PlatformRestraint0</type>
+            </li>
+            <li>
+              <offset>(.5, 0, .5)</offset>
+              <type>PlatformRestraint1</type>
+            </li>
+            <li>
+              <offset>(.4, 0, -.5)</offset>
+              <type>PlatformRestraint2</type>
+            </li>
+            <li>
+              <offset>(-.4, 0, -.5)</offset>
+              <type>PlatformRestraint3</type>
+            </li>
+          </attachPoints>
+        </dessicatedBodyGraphicData>
+        <butcherBodyPart>
+          <bodyPartGroup>NAT_BileGland</bodyPartGroup>
+          <thing>NAT_BileGland</thing>
+        </butcherBodyPart>
+      </li>
+    </lifeStages>
+    <abilities>
+      <li>NAT_BileSpit</li>
+    </abilities>
+  </PawnKindDef>
+  
+</Defs>

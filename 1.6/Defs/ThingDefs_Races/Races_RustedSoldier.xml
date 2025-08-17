@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="NAT_BaseRustedPawn" Name="NAT_BaseRustedSoldier">
+    <defName>NAT_RustedSoldier</defName>
+    <label>rusted infantryman</label>
+    <description>Bioferrite pieces shaped like spindly human figure. Rusted soldiers usually appear in armed groups, sneaking around and looking for a target.</description>
+    <statBases>
+      <MinimumContainmentStrength>70</MinimumContainmentStrength>
+      <StaggerDurationFactor>0.5</StaggerDurationFactor>
+      <MarketValue>1100</MarketValue>
+    </statBases>
+    <race>
+      <nameGenerator>NAT_NamerRustedSoldier</nameGenerator>
+      <body>NAT_Rust</body>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+          <soundCall>NAT_Pawn_RustedSoldier_Call</soundCall>
+          <soundWounded>NAT_Pawn_RustedSoldier_Wounded</soundWounded>
+          <soundDeath>NAT_Pawn_RustedSoldier_Death</soundDeath>
+        </li>
+      </lifeStageAges>
+    </race>
+    <uiIconPath>Things/Pawn/NAT_RustedSoldier_Icon</uiIconPath>
+    <uiIconScale>1</uiIconScale>
+    <comps>
+      <li Class="CompProperties_HoldingPlatformTarget">
+        <baseEscapeIntervalMtbDays>60</baseEscapeIntervalMtbDays>
+      </li>
+	  <li Class="CompProperties_EffecterOnDeath">
+        <effecterDef>NAT_RustedSoldierDeath</effecterDef>
+      </li>
+      <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.37, 0, .2)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.42, 0, .21)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.25, 0, -.51)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.15, 0, -.41)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>2</bioferriteDensity>
+      </li>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Advanced</knowledgeCategory>
+        <anomalyKnowledge>1</anomalyKnowledge>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+      <li Class="NAT.CompProperties_RustedSoldier">
+        <interaction>NAT_RustedChat</interaction>
+        <canInteract>true</canInteract>
+        <hasHead>true</hasHead>
+        <drawData>
+          <dataNorth><offset>(0, 0, 0.25)</offset></dataNorth>
+          <dataEast><offset>(0.15, 0, 0.25)</offset></dataEast>
+          <dataSouth><offset>(0, 0, 0.25)</offset></dataSouth>
+          <dataWest><offset>(-0.15, 0, 0.25)</offset></dataWest>
+        </drawData>
+        <headTags>
+          <li>Soldier</li>
+        </headTags>
+        <apparelTagsToAllow>
+          <li>NAT_Rust_Belt</li>
+        </apparelTagsToAllow>
+      </li>
+      <li Class="NAT.CompProperties_RustedWorker">
+        <skills>
+          <Shooting>8</Shooting>
+          <Melee>8</Melee>
+          <Construction>4</Construction>
+          <Cooking>4</Cooking>
+          <Mining>4</Mining>
+          <Plants>4</Plants>
+          <Crafting>4</Crafting>
+          <Medicine>4</Medicine>
+          <Intellectual>4</Intellectual>
+        </skills>
+        <canWork>true</canWork>
+        <workTags>
+          <li>Firefighting</li>
+          <li>Hunting</li>
+          <li>Cooking</li>
+          <li>Constructing</li>
+          <li>Mining</li>
+          <li>Hauling</li>
+          <li>Cleaning</li>
+        </workTags>
+        <forceAllowWorkGivers>
+          <li>Strip</li>
+        </forceAllowWorkGivers>
+        <forceAllowWorkTypes>
+          <li>BasicWorker</li>
+          <li>Crafting</li>
+          <li>PlantCutting</li>
+        </forceAllowWorkTypes>
+      </li>
+    </comps>
+    <killedLeavingsRanges>
+      <Bioferrite>2~4</Bioferrite>
+    </killedLeavingsRanges>
+  </ThingDef>
+
+  <PawnKindDef Name="NAT_RustedSoldierKindBase" ParentName="NAT_RustKindBase">
+    <defName>NAT_RustedSoldier</defName>
+    <label>rusted infantryman</label>
+    <startingHediffs>
+      <li>
+        <def>NAT_RustedRegeneration</def>
+        <severity>0.4</severity>
+      </li>
+    </startingHediffs>
+    <race>NAT_RustedSoldier</race>
+    <alternateGraphicChance>0.5</alternateGraphicChance>
+    <alternateGraphics>
+
+      <li>
+        <texPath>Things/Pawn/Bodies/NAT_Soldier_B</texPath>
+        <attachPoints>
+          <li>
+            <offset>(-.47, 0, .25)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.25, 0, .15)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.1, 0, -.5)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.17, 0, -.52)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </attachPoints>
+      </li>
+
+      <!--<li>
+        <texPath>Things/Pawn/Bodies/NAT_Soldier_C</texPath>
+        <attachPoints>
+          <li>
+            <offset>(-.37, 0, .2)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.5, 0, .4)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.08, 0, -.55)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.23, 0, -.55)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </attachPoints>
+      </li>-->
+
+    </alternateGraphics>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Bodies/NAT_Soldier_A</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <combatPower>180</combatPower>
+    <weaponMoney>9999~9999</weaponMoney>
+    <modExtensions>
+      <li Class="NAT.RustedPawnExtention">
+        <scenarioAvailable>true</scenarioAvailable>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+
+</Defs>

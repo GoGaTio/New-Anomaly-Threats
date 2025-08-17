@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>NAT_WeaponsRusted</defName>
+    <label>rusted weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+
+  <ThingDef Abstract="True" ParentName="BaseGun" Name="NAT_WeaponUsablyByRust">
+    <techLevel>Archotech</techLevel>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>false</destroyOnDrop>
+    <relicChance>0</relicChance>
+    <smeltable>false</smeltable>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <thingCategories>
+      <li>NAT_WeaponsRusted</li>
+    </thingCategories>
+    <statBases>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Flammability>1.5</Flammability>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef Abstract="True" ParentName="NAT_WeaponUsablyByRust" Name="NAT_BaseRustedWeapon">
+    <description>A piece of bioferrite shaped like some sort of weapon.\n\nSomehow can shoot if wielded by rusted creature.</description>
+    <statBases>
+      <MarketValue>500</MarketValue>
+    </statBases>
+    <thingSetMakerTags>
+      <li>NAT_RustedWeapon</li>
+    </thingSetMakerTags>
+    <weaponTags>
+      <li>NAT_RustedMedium</li>
+    </weaponTags>
+    <techLevel>Archotech</techLevel>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>false</destroyOnDrop>
+    <relicChance>0</relicChance>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <comps>
+      <li Class="NAT.CompProperties_RustedEquipment" />
+    </comps>
+  </ThingDef>
+
+  <ThingDef Abstract="True" ParentName="NAT_WeaponUsablyByRust" Name="NAT_BaseHeavyRustedWeapon">
+    <description>A piece of bioferrite shaped like some sort of weapon.</description>
+    <statBases>
+      <MarketValue>1100</MarketValue>
+    </statBases>
+    <thingSetMakerTags>
+      <li>NAT_HeavyRustedWeapon</li>
+    </thingSetMakerTags>
+    <weaponTags>
+      <li>NAT_RustedHeavy</li>
+    </weaponTags>
+    <techLevel>Archotech</techLevel>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>false</destroyOnDrop>
+    <relicChance>0</relicChance>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <comps>
+      <li Class="NAT.CompProperties_RustedEquipment">
+        <minBodySize>1.3</minBodySize>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Abstract="True" Name="NAT_RustedTurretWeapon" ParentName="BaseWeaponTurret">
+    <techLevel>Archotech</techLevel>
+    <statBases>
+      <AccuracyTouch>0.28</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.66</AccuracyMedium>
+      <AccuracyLong>0.5</AccuracyLong>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>40</Mass>
+      <Flammability>2</Flammability>
+    </statBases>
+  </ThingDef>
+
+</Defs>

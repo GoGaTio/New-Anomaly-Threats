@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Entrance -->
+
+  <LayoutRoomDef>
+    <defName>NAT_CollectorLairEntrance</defName>
+    <roomContentsWorkerType>RoomContents_StockpileEntrance</roomContentsWorkerType>
+    <minSingleRectWidth>9</minSingleRectWidth>
+    <minSingleRectHeight>9</minSingleRectHeight>
+    <requiresSingleRectRoom>true</requiresSingleRectRoom>
+    <canMergeWithAdjacentRoom>false</canMergeWithAdjacentRoom>
+    <floorTypes>
+      <li>PavedTile</li>
+    </floorTypes>
+    <edgeTerrain>MetalTile</edgeTerrain> 
+    <!--<prefabs>
+      <MU_AncientFacilityEntrance>
+        <countPerTenEdgeCells>2</countPerTenEdgeCells>
+        <minMaxRange>1~1</minMaxRange>
+      </MU_AncientFacilityEntrance>
+      <MU_AncientUpgradesStorage_Edge>
+        <countPerHundredCells>5</countPerHundredCells>
+        <minMaxRange>1~3</minMaxRange>
+      </MU_AncientUpgradesStorage_Edge>
+      <AncientBasicRecharger_Edge>
+        <countPerHundredCells>5</countPerHundredCells>
+        <minMaxRange>1~1</minMaxRange>
+      </AncientBasicRecharger_Edge>
+      <AncientLamp_Single>
+        <countPerHundredCells>5</countPerHundredCells>
+        <minMaxRange>0~1</minMaxRange>
+      </AncientLamp_Single>
+    </prefabs>-->
+  </LayoutRoomDef>
+
+  <!-- Common -->
+
+  <LayoutRoomDef>
+    <defName>NAT_CollectionRoom</defName>
+    <canMergeWithAdjacentRoom>false</canMergeWithAdjacentRoom>
+    <requiresSingleRectRoom>true</requiresSingleRectRoom>
+    <minSingleRectWidth>10</minSingleRectWidth>
+    <minSingleRectHeight>10</minSingleRectHeight>
+    <prefabs>
+      <AncientDisplayBank_Edge>
+        <countPerTenEdgeCells>3</countPerTenEdgeCells>
+        <minMaxRange>2~6</minMaxRange>
+      </AncientDisplayBank_Edge>
+    </prefabs>
+    <floorTypes>
+      <li>CarpetMagenta</li>
+      <li>CarpetMossBright</li>
+      <li>CarpetBlue</li>
+    </floorTypes>
+    <edgeTerrain>TileMarble</edgeTerrain>
+  </LayoutRoomDef>
+
+  <LayoutRoomDef>
+    <defName>NAT_CollectorBedroom</defName>
+    <canMergeWithAdjacentRoom>false</canMergeWithAdjacentRoom>
+    <requiresSingleRectRoom>true</requiresSingleRectRoom>
+    <minSingleRectWidth>13</minSingleRectWidth>
+    <minSingleRectHeight>13</minSingleRectHeight>
+    <prefabs>
+      <AncientDisplayBank_Edge>
+        <countPerTenEdgeCells>3</countPerTenEdgeCells>
+        <minMaxRange>2~6</minMaxRange>
+      </AncientDisplayBank_Edge>
+      <AncientBandNode_Cluster>
+        <countPerHundredCells>10</countPerHundredCells>
+        <minMaxRange>5~15</minMaxRange>
+      </AncientBandNode_Cluster>
+    </prefabs>
+    <floorTypes>
+      <li>CarpetMagenta</li>
+      <li>CarpetMossBright</li>
+      <li>CarpetBlue</li>
+    </floorTypes>
+    <edgeTerrain>TileMarble</edgeTerrain>
+    <scatter>
+      <ChunkMechanoidSlag>
+        <groupsPerHundredCells>2~4</groupsPerHundredCells>
+        <itemsPerGroup>1~2</itemsPerGroup>
+        <groupDistRange>3~5</groupDistRange>
+        <minGroups>1</minGroups>
+      </ChunkMechanoidSlag>
+    </scatter>
+  </LayoutRoomDef>
+  
+</Defs>

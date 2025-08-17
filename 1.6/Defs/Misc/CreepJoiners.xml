@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!--<CreepJoinerBenefitDef>
+    <defName>NAT_RustShaper</defName>
+    <label>bioferrite shaper</label>
+    <weight>0.5</weight>
+    <letterExtra>{PAWN_pronoun} offers to use {PAWN_possessive} bioferrite shaping power to help you.</letterExtra>
+    <abilities>
+      <li>NAT_ShapeRust</li>
+    </abilities>
+  </CreepJoinerBenefitDef>-->
+
+  <!--<CreepJoinerFormKindDef ParentName="BaseCreepJoinerKind">
+    <defName>NAT_Ruster</defName>
+    <label>wayfarer of rust</label>
+    <weight>0.4</weight>
+    <letterLabel>A wayfarer is approaching the colony.</letterLabel>
+    <letterPrompt>A small, withered {PAWN_genderNoun} stands in front of you. Where {PAWN_possessive} eyes should be, there are only scar-crusted holes in {PAWN_possessive} flesh. Yet, even without eyes, {PAWN_pronoun} somehow looks at you with kindness. {PAWN_pronoun} says that {PAWN_pronoun} knows that {PAWN_possessive} skills are needed here and wants to stay for a while.</letterPrompt>
+    <minGenerationAge>34</minGenerationAge>
+    <maxGenerationAge>90</maxGenerationAge>
+    <forcedHair>Bald</forcedHair>
+    <fixedInventory>
+      <NAT_Gun_RustedShotgun />
+      <Apparel_BasicShirt>
+        <stuff>Leather_Dread</stuff>
+        <quality>Poor</quality>
+      </Apparel_BasicShirt>
+      <Apparel_Pants>
+        <stuff>Leather_Dread</stuff>
+        <quality>Poor</quality>
+      </Apparel_Pants>
+      <Apparel_CultistMask>
+        <stuff>Bioferrite</stuff>
+        <quality>Poor</quality>
+      </Apparel_CultistMask>
+      <Apparel_Robe>
+        <stuff>Leather_Dread</stuff>
+        <quality>Poor</quality>
+      </Apparel_Robe>
+    </fixedInventory>
+    <requires>
+      <li>NAT_RustShaper</li>
+    </requires>
+    <apparelColor>(85,85,85)</apparelColor>
+    <startingHediffs>
+      <li>
+        <def>Tentacle</def>
+        <chance>0.5</chance>
+      </li>
+    </startingHediffs>
+  </CreepJoinerFormKindDef>-->
+  
+</Defs>

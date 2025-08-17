@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <NAT.RustedLayoutDef>
+    <defName>NAT_RustedOutpost</defName>
+    <workerClass>NAT.LayoutWorker_RustedBase</workerClass>
+    <minRoomWidth>5</minRoomWidth>
+    <minRoomHeight>5</minRoomHeight>
+    <wallDef>NAT_RustedWall</wallDef>
+    <doorDef>NAT_RustedDoor</doorDef>
+	<terrainDef>NAT_RustedFloor</terrainDef>
+    <clearDoorFaction>false</clearDoorFaction>
+    <corridorDef>NAT_OutpostCorridor</corridorDef>
+    <canDisconnectRooms>false</canDisconnectRooms>
+    <areaPrunePercent>0.35</areaPrunePercent>
+    <exteriorDoorsRange>1~2</exteriorDoorsRange>
+    <corridorExpansion>1</corridorExpansion>
+    <roomToExteriorDoorRatio>0</roomToExteriorDoorRatio>
+    <canConnectRoomsExternally>false</canConnectRoomsExternally>
+    <wallChanceFromLayerCurve>
+      <points>
+        <li>(0, 1)</li>
+        <li>(1, 0.75)</li>
+        <li>(2, 0.25)</li>
+      </points>
+    </wallChanceFromLayerCurve>
+    <floorChanceFromLayerCurve>
+      <points>
+        <li>(0, 1)</li>
+        <li>(1, 1)</li>
+        <li>(2, 1)</li>
+        <li>(3, 1)</li>
+        <li>(4, 1)</li>
+        <li>(5, 1)</li>
+        <li>(6, 0.85)</li>
+        <li>(7, 0.65)</li>
+        <li>(8, 0.25)</li>
+        <li>(9, 0.1)</li>
+      </points>
+    </floorChanceFromLayerCurve>
+    <exteriorPrefabs>
+      <li>
+        <prefab>NAT_SecuredRustedStorage</prefab>
+        <cost>100</cost>
+        <weight>0.5</weight>
+      </li>
+      <li>
+        <prefab>NAT_RustedTurretPost</prefab>
+        <cost>50</cost>
+        <weight>3</weight>
+      </li>
+    </exteriorPrefabs>
+    <roomDefs>
+      <NAT_RustedRoom>
+        <weight>1</weight>
+      </NAT_RustedRoom>
+      <NAT_RustedStorage>
+        <weight>1</weight>
+      </NAT_RustedStorage>
+      <NAT_RustedStorage>
+        <weight>1</weight>
+      </NAT_RustedStorage>
+      <NAT_RustedStorage>
+        <weight>2</weight>
+        <countRange>0~2</countRange>
+      </NAT_RustedStorage>
+    </roomDefs>
+  </NAT.RustedLayoutDef>
+  
+  <NAT.RustedLayoutDef>
+    <defName>NAT_RustedCitadel</defName>
+    <workerClass>NAT.LayoutWorker_RustedBase</workerClass>
+    <minRoomWidth>7</minRoomWidth>
+    <minRoomHeight>7</minRoomHeight>
+    <wallDef>NAT_RustedWall</wallDef>
+    <doorDef>NAT_RustedDoor</doorDef>
+	<terrainDef>NAT_RustedFloor</terrainDef>
+    <clearDoorFaction>false</clearDoorFaction>
+    <corridorDef>NAT_CitadelCorridor</corridorDef>
+    <canDisconnectRooms>false</canDisconnectRooms>
+    <areaPrunePercent>0.35</areaPrunePercent>
+    <mergeRange>4~8</mergeRange>
+    <exteriorDoorsRange>2~3</exteriorDoorsRange>
+    <roomToExteriorDoorRatio>0</roomToExteriorDoorRatio>
+    <canConnectRoomsExternally>false</canConnectRoomsExternally>
+    <wallChanceFromLayerCurve>
+      <points>
+        <li>(0, 1)</li>
+        <li>(1, 1)</li>
+        <li>(2, 0.85)</li>
+        <li>(3, 0.4)</li>
+      </points>
+    </wallChanceFromLayerCurve>
+    <floorChanceFromLayerCurve>
+      <points>
+        <li>(0, 1)</li>
+        <li>(1, 1)</li>
+        <li>(2, 1)</li>
+        <li>(3, 1)</li>
+        <li>(4, 1)</li>
+        <li>(5, 1)</li>
+        <li>(6, 1)</li>
+        <li>(7, 1)</li>
+        <li>(8, 1)</li>
+        <li>(9, 1)</li>
+        <li>(10, 1)</li>
+        <li>(11, 0.9)</li>
+        <li>(12, 0.8)</li>
+        <li>(13, 0.45)</li>
+        <li>(14, 0.25)</li>
+      </points>
+    </floorChanceFromLayerCurve>
+    <exteriorPrefabs>
+      <li>
+        <prefab>NAT_SecuredRustedStorage</prefab>
+        <cost>100</cost>
+        <weight>0.5</weight>
+      </li>
+      <li>
+        <prefab>NAT_RustedSniperTurret</prefab>
+        <cost>200</cost>
+        <weight>1</weight>
+      </li>
+      <li>
+        <prefab>NAT_RustedTurretPost</prefab>
+        <cost>40</cost>
+        <weight>2</weight>
+      </li>
+    </exteriorPrefabs>
+    <roomDefs>
+      <NAT_RustedRoom>
+        <weight>5</weight>
+      </NAT_RustedRoom>
+      <NAT_RustedStorage>
+        <weight>1</weight>
+      </NAT_RustedStorage>
+      <NAT_RustedStorage>
+        <weight>1</weight>
+      </NAT_RustedStorage>
+      <NAT_RustedStorage>
+        <weight>2</weight>
+        <countRange>0~2</countRange>
+      </NAT_RustedStorage>
+    </roomDefs>
+  </NAT.RustedLayoutDef>
+  
+</Defs>

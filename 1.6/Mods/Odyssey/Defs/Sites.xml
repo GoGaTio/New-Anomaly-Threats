@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <SitePartDef>
+    <defName>NAT_RustedOutpost_Orbit</defName>
+    <label>rusted outpost</label>
+    <description>You have detected the energy signature of a gravcore.\n\nBe careful - orbital locations are extremely dangerous. Ensure your gravship is fully enclosed with airtight walls and equip your colonists with vacsuits. Plan your return trip, as living in orbit for long periods is very difficult.</description>
+    <tags>
+      <li>NAT_RustedOutpost_Orbit</li>
+    </tags>
+    <mainPartAllThreatsLabel>Contains: Gravcore</mainPartAllThreatsLabel>
+    <siteTexture>World/NAT_RustedCitadel_Orbit</siteTexture>
+    <expandingIconTexture>World/NAT_RustedOutpost_Orbit</expandingIconTexture>
+    <gravShipsCanLandOn>true</gravShipsCanLandOn>
+    <wantsThreatPoints>true</wantsThreatPoints>
+    <disallowsAutomaticDetectionTimerStart>true</disallowsAutomaticDetectionTimerStart>
+    <leaveAbandonedSettlement>false</leaveAbandonedSettlement>
+    <minMapSize>(300, 0, 300)</minMapSize>
+    <considerEnteringAsAttack>false</considerEnteringAsAttack>
+    <copyQuestName>true</copyQuestName>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>NAT_RustedOutpost_Orbit</defName>
+    <linkWithSite>NAT_RustedOutpost_Orbit</linkWithSite>
+    <order>399</order>
+    <genStep Class="NAT.GenStep_RustedPlatform">
+      <layout>NAT_RustedOutpost</layout>
+      <minBaseSize>(30, 30)</minBaseSize>
+      <maxBaseSize>(40, 40)</maxBaseSize>
+      <platformCountRange>2~4</platformCountRange>
+      <minPlatformSize>(5, 5)</minPlatformSize>
+      <maxPlatformSize>(10, 10)</maxPlatformSize>
+    </genStep>
+  </GenStepDef>
+
+  <SitePartDef>
+    <defName>NAT_RustedCitadel_Orbit</defName>
+    <label>rusted citadel</label>
+    <description>You have detected the energy signature of a gravcore.\n\nBe careful - orbital locations are extremely dangerous. Ensure your gravship is fully enclosed with airtight walls and equip your colonists with vacsuits. Plan your return trip, as living in orbit for long periods is very difficult.</description>
+    <tags>
+      <li>NAT_RustedCitadel_Orbit</li>
+    </tags>
+    <mainPartAllThreatsLabel>Contains: Gravcore</mainPartAllThreatsLabel>
+    <siteTexture>World/NAT_RustedOutpost_Orbit</siteTexture>
+    <expandingIconTexture>World/NAT_RustedCitadel_Orbit</expandingIconTexture>
+    <gravShipsCanLandOn>true</gravShipsCanLandOn>
+    <wantsThreatPoints>true</wantsThreatPoints>
+    <disallowsAutomaticDetectionTimerStart>true</disallowsAutomaticDetectionTimerStart>
+    <leaveAbandonedSettlement>false</leaveAbandonedSettlement>
+    <minMapSize>(300, 0, 300)</minMapSize>
+    <considerEnteringAsAttack>false</considerEnteringAsAttack>
+    <copyQuestName>true</copyQuestName>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>NAT_RustedCitadel_Orbit</defName>
+    <linkWithSite>NAT_RustedCitadel_Orbit</linkWithSite>
+    <order>399</order>
+    <genStep Class="NAT.GenStep_RustedPlatform">
+      <layout>NAT_RustedCitadel</layout>
+      <minBaseSize>(80, 80)</minBaseSize>
+      <maxBaseSize>(100, 100)</maxBaseSize>
+      <platformCountRange>2~4</platformCountRange>
+      <minPlatformSize>(10, 10)</minPlatformSize>
+      <maxPlatformSize>(20, 20)</maxPlatformSize>
+    </genStep>
+  </GenStepDef>
+
+  <SitePartDef>
+    <defName>NAT_RustedNode</defName>
+    <label>rusted broadcast node</label>
+    <description>You have detected the energy signature of a gravcore.\n\nBe careful - orbital locations are extremely dangerous. Ensure your gravship is fully enclosed with airtight walls and equip your colonists with vacsuits. Plan your return trip, as living in orbit for long periods is very difficult.</description>
+    <tags>
+      <li>NAT_RustedNode</li>
+    </tags>
+    <mainPartAllThreatsLabel>Contains: Gravcore</mainPartAllThreatsLabel>
+    <siteTexture>World/NAT_RustedNode</siteTexture>
+    <expandingIconTexture>World/NAT_RustedNode</expandingIconTexture>
+    <gravShipsCanLandOn>true</gravShipsCanLandOn>
+    <wantsThreatPoints>true</wantsThreatPoints>
+    <disallowsAutomaticDetectionTimerStart>true</disallowsAutomaticDetectionTimerStart>
+    <leaveAbandonedSettlement>false</leaveAbandonedSettlement>
+    <minMapSize>(300, 0, 300)</minMapSize>
+    <considerEnteringAsAttack>false</considerEnteringAsAttack>
+    <copyQuestName>true</copyQuestName>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>NAT_RustedNode</defName>
+    <linkWithSite>NAT_RustedNode</linkWithSite>
+    <order>399</order>
+    <genStep Class="NAT.GenStep_RustedNode">
+      <floorChanceFromLayerCurve>
+        <points>
+          <li>(0, 0.85)</li>
+          <li>(1, 0.65)</li>
+          <li>(2, 0.25)</li>
+          <li>(3, 0.1)</li>
+        </points>
+      </floorChanceFromLayerCurve>
+      <mainPlatformPrefabs>
+        <li>
+          <prefab>NAT_RustedBeacon</prefab>
+          <cost>200</cost>
+          <weight>0.5</weight>
+        </li>
+        <li>
+          <prefab>NAT_RustedTurretPost</prefab>
+          <cost>50</cost>
+          <weight>2</weight>
+        </li>
+        <li>
+          <prefab>NAT_RustedAutoTurret</prefab>
+          <cost>100</cost>
+          <weight>1</weight>
+        </li>
+        <li>
+          <prefab>NAT_RustedSniperTurret</prefab>
+          <cost>200</cost>
+          <weight>0.5</weight>
+        </li>
+      </mainPlatformPrefabs>
+      <prefabs>
+        <li>
+          <prefab>NAT_RustedPallet</prefab>
+          <cost>50</cost>
+          <weight>1.5</weight>
+        </li>
+        <li>
+          <prefab>NAT_RustedArmyBanner</prefab>
+          <cost>0</cost>
+          <weight>0.25</weight>
+        </li>
+        <li>
+          <prefab>NAT_RustedTurretPost</prefab>
+          <cost>70</cost>
+          <weight>1</weight>
+        </li>
+        <li>
+          <prefab>NAT_RustedBeacon</prefab>
+          <cost>200</cost>
+          <weight>0.5</weight>
+        </li>
+      </prefabs>
+      <platformCountRange>3~5</platformCountRange>
+      <mainPlatformSizeRange>30~40</mainPlatformSizeRange>
+      <platformSizeRange>10~20</platformSizeRange>
+      <fixedPoints>1500~2000</fixedPoints>
+    </genStep>
+  </GenStepDef> 
+  
+</Defs>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <QuestScriptDef>
+    <defName>NAT_CollectorScript</defName>
+    <defaultHidden>true</defaultHidden>
+    <autoAccept>true</autoAccept>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->collector</li><!-- hidden -->
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->collector</li><!-- hidden -->
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="NAT.QuestNode_Root_Collector" />
+  </QuestScriptDef>
+
+</Defs>

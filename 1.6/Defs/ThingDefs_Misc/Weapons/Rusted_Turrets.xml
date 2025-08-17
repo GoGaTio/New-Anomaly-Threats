@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="NAT_RustedTurretWeapon">
+    <defName>NAT_Gun_RustedMiniTurret</defName>
+    <label>rusted mini-turret gun</label>
+    <description>A simple automatic gun made to be mounted on a turret.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapon/NAT_RustedMiniTurret</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>4.8</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>NAT_Bullet_RustedSmall</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>44.9</range>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="NAT_RustedTurretWeapon">
+    <defName>NAT_Gun_RustedAutoTurret</defName>
+    <label>rusted autocannon</label>
+    <description>A self-loading large-bore cannon designed to attach to a turret.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapon/NAT_RustedAutoTurret</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.30</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.5</AccuracyLong>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>40</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>NAT_Bullet_RustedLarge</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <minRange>3.9</minRange>
+        <range>34.9</range>
+        <ticksBetweenBurstShots>17</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>Shot_Autocannon</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="NAT_RustedTurretWeapon">
+    <defName>NAT_Gun_RustedSniperTurret</defName>
+    <label>rusted sniper cannon</label>
+    <description>A self-loading uranium slug cannon designed to attach to a turret.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapon/NAT_RustedSniperTurret</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.10</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.95</AccuracyLong>
+      <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>40</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>NAT_Bullet_RustedHighVelocity</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <minRange>5.9</minRange>
+        <range>49.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Shot_TurretSniper</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>18</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="NAT_RustedTurretWeapon">
+    <defName>NAT_Gun_RustedFoamTurret</defName>
+    <label>rusted foam sprayer</label>
+    <description>A high-pressure firefoam sprayer usually mounted on a turret.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapon/NAT_RustedFoamTurret</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>1</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>1</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <defaultProjectile>NAT_Proj_FoamBomb</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>19.9</range>
+        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        <burstShotCount>10</burstShotCount>
+        <forcedMissRadius>3.4</forcedMissRadius>
+        <sprayEffecterDef>FoamSpray_Directional</sprayEffecterDef>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <ThingDef Name="ProjectileFoamBase">
+    <defName>NAT_Proj_FoamBomb</defName>
+    <label>foam bomb</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <texPath>Things/Projectile/FoamLong/Foam</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Extinguish</damageDef>
+      <speed>27</speed>
+      <damageAmountBase>9999</damageAmountBase>
+      <arcHeightFactor>2</arcHeightFactor>
+      <armorPenetrationBase>0.8</armorPenetrationBase>
+      <stoppingPower>1</stoppingPower>
+      <shadowSize>0.4</shadowSize>
+      <filth>Filth_FireFoam</filth>
+      <filthCount>1</filthCount>
+      <landedEffecter>ExtinguisherPuffSmall</landedEffecter>
+      <doExplosionVFX>false</doExplosionVFX>
+      <screenShakeFactor>0</screenShakeFactor>
+      <soundExplode>Foam_Impact</soundExplode>
+      <explosionRadius>1.4</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+</Defs>

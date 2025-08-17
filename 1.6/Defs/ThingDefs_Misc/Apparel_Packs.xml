@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="ApparelNoQualityBase">
+    <defName>NAT_Apparel_RustedGrenadesPack</defName>
+    <label>rusted grenades pack</label>
+    <description>A wearable pack that deploys a hunter drone. The drone will close with the target and detonate when it is within range.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/HunterDronePack/HunterDronePack</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>3</Mass>
+      <Flammability>0.6</Flammability>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+    <costList>
+      <Steel>60</Steel>
+      <Chemfuel>40</Chemfuel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+      <researchPrerequisite>HunterDrones</researchPrerequisite>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <displayPriority>360</displayPriority>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <mergeVerbGizmos>false</mergeVerbGizmos>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <scoreOffset>4</scoreOffset>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/HunterDronePack/HunterDronePack</wornGraphicPath>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+        <north>
+          <offset>(0,0)</offset>
+        </north>
+        <south>
+          <offset>(0,0)</offset>
+        </south>
+        <east>
+          <scale>(0.75,0.75)</scale>
+          <offset>(-0.3,-0.05)</offset>
+          <thin>
+            <offset>(0.05,0)</offset>
+          </thin>
+          <hulk>
+            <offset>(-0.1,0)</offset>
+          </hulk>
+          <fat>
+            <offset>(-0.1,0)</offset>
+          </fat>
+        </east>
+        <west>
+          <scale>(0.75,0.75)</scale>
+          <offset>(0.3,-0.05)</offset>
+          <thin>
+            <offset>(-0.05,0)</offset>
+          </thin>
+          <hulk>
+            <offset>(0.1,0)</offset>
+          </hulk>
+          <fat>
+            <offset>(0.1,0)</offset>
+          </fat>
+        </west>
+        <male>
+          <scale>(0.75,0.75)</scale>
+        </male>
+        <female>
+          <scale>(0.7,0.7)</scale>
+        </female>
+        <thin>
+          <scale>(0.7,0.7)</scale>
+        </thin>
+        <hulk>
+          <scale>(0.9,0.85)</scale>
+        </hulk>
+        <fat>
+          <scale>(0.8,0.8)</scale>
+        </fat>
+      </wornGraphicData>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>3</maxCharges>
+        <ammoDef>NAT_RustedStickGrenade</ammoDef>
+        <ammoCountToRefill>1</ammoCountToRefill>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>rusted grenade</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+      <li Class="CompProperties_AIUSablePack">
+        <compClass>NAT.CompRustedGrenadesPack</compClass>
+        <checkInterval>360</checkInterval>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <label>throw rusted stick grenade</label>
+        <defaultProjectile>NAT_Proj_RustedStickGrenade</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>19.9</range>
+        <burstShotCount>1</burstShotCount>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <targetParams>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <forcedMissRadius>2.1</forcedMissRadius>
+        <onlyManualCast>True</onlyManualCast>
+        <defaultCooldownTime>1</defaultCooldownTime>
+      </li>
+    </verbs>
+    <tradeTags>
+      <li>Clothing</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>NAT_Proj_RustedStickGrenade</defName>
+    <label>rusted stick grenade</label>
+	<thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/NAT_RustedStickGrenade</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <projectile>
+      <explosionRadius>2.9</explosionRadius >
+      <damageDef>NAT_RustedBomb</damageDef>
+      <explosionDelay>100</explosionDelay>
+      <spinRate>3</spinRate>
+      <preExplosionSpawnSingleThingDef>Filth_BlastMark</preExplosionSpawnSingleThingDef>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>NAT_RustedStickGrenade</defName>
+    <label>rusted stick grenade</label>
+    <description>A piece of clotted pain.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <tradeability>None</tradeability>
+    <category>Item</category>
+    <genericMarketSellable>false</genericMarketSellable>
+    <drawerType>MapMeshOnly</drawerType>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+	<useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <graphicData>
+      <texPath>Things/Item/NAT_PainClot</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <soundInteract>Standard_Pickup</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <intricate>true</intricate>
+    <statBases>
+      <Mass>1</Mass>
+      <Beauty>-10</Beauty>
+      <Flammability>0</Flammability>
+      <MaxHitPoints>100</MaxHitPoints>
+    </statBases>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.9</explosiveRadius>
+        <explosiveDamageType>NAT_RustedBomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.4</startWickHitPointsPercent>
+        <wickTicks>30~60</wickTicks>
+        <preExplosionSpawnSingleThingDef>Filth_BlastMark</preExplosionSpawnSingleThingDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

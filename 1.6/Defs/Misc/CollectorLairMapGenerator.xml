@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <MapGeneratorDef>
+    <defName>NAT_UndergroundLayout</defName>
+    <label>collector lair</label>
+    <isUnderground>true</isUnderground>
+    <disableCallAid>true</disableCallAid>
+    <pocketMapProperties>
+      <biome>Underground</biome>
+      <temperature>7</temperature>
+    </pocketMapProperties>
+    <genSteps>
+      <li>ElevationFertility</li>
+      <li>Underground_RocksFromGrid</li>
+      <li>Terrain</li>
+      <!-- AncientStockpile added by AncientHatch -->
+      <li>Fog</li>
+    </genSteps>
+  </MapGeneratorDef>
+
+  <GenStepDef>
+    <defName>NAT_UndergroundLayout</defName>
+    <order>551</order>
+    <genStep Class="NAT.GenStep_UndergroundLayout" />
+  </GenStepDef>
+</Defs>

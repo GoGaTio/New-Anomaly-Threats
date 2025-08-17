@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef Abstract="True" Name="NAT_RustedBuildingBase" ParentName="BuildingBase">
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <building>
+      <openingStartedSound>CrateOpeningStarted</openingStartedSound>
+      <isInert>true</isInert>
+      <roofCollapseDamageMultiplier>0.2</roofCollapseDamageMultiplier>
+      <displayAttackToDestroyOnInspectPane>false</displayAttackToDestroyOnInspectPane>
+      <paintable>false</paintable>
+      <deconstructible>false</deconstructible>
+      <claimable>false</claimable>
+      <repairable>false</repairable>
+      <destroyEffecter>NAT_RustedSoldierDeath</destroyEffecter>
+      <neverBuildable>true</neverBuildable>
+    </building>
+    <filthLeaving>NAT_Filth_RustedDebris</filthLeaving>
+    <stealable>false</stealable>
+    <statBases>
+      <Flammability>1.5</Flammability>
+      <Beauty>-10</Beauty>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="NAT_RustedBuildingBase">
+    <defName>NAT_RustedBeacon_Reinforcements</defName>
+    <label>rusted beacon</label>
+    <description>A figure of clotted pain. It hurts to look on.</description>
+    <graphicData>
+      <texPath>Things/Building/NAT_RustedBeacon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <pathCost>25</pathCost>
+    <castEdgeShadows>false</castEdgeShadows>
+    <hasInteractionCell>false</hasInteractionCell>
+    <fillPercent>0.3</fillPercent>
+    <tickerType>Normal</tickerType>
+    <canOverlapZones>false</canOverlapZones>
+    <building>
+      <buildingTags>
+        <li>NAT_RustedBeacon</li>
+        <li>NAT_RustedSiegeMember</li>
+      </buildingTags>
+      <ai_chillDestination>false</ai_chillDestination>
+      <ai_neverTrashThis>false</ai_neverTrashThis>
+      <combatPower>200</combatPower>
+    </building>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+    </statBases>
+    <rotatable>false</rotatable>
+    <staticSunShadowHeight>0.3</staticSunShadowHeight>
+    <size>(1,1)</size>
+    <filthLeaving>NAT_Filth_RustedDebris</filthLeaving>
+    <comps>
+      <li Class="CompProperties_Stunnable">
+        <affectedDamageDefs>
+          <li>Stun</li>
+          <li>EMP</li>
+          <li>NerveStun</li>
+        </affectedDamageDefs>
+        <adaptableDamageDefs>
+          <li>EMP</li>
+        </adaptableDamageDefs>
+      </li>
+      <li Class="NAT.CompProperties_ReinforcementsBeacon">
+        <fleck>NAT_RustedBeaconFlash</fleck>
+        <emissionInterval>100</emissionInterval>
+        <pawnKind>NAT_RustedTrooper_Reinforcement</pawnKind>
+        <skyfaller>NAT_RustedTrooperIncoming</skyfaller>
+        <units>3</units>
+        <range>5</range>
+        <activateOnDamagedChance>0.4</activateOnDamagedChance>
+        <spawnEffecter>NAT_RustedBeaconActivated</spawnEffecter>
+      </li>
+    </comps>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+      <li>
+        <damageDef>EMP</damageDef>
+        <multiplier>0.4</multiplier>
+      </li>
+    </damageMultipliers>
+  </ThingDef>
+
+  <ThingDef ParentName="NAT_RustedBuildingBase">
+    <defName>NAT_RustedBroadcastDish</defName>
+    <label>rusted broadcast dish</label>
+    <description>A figure of clotted pain. It hurts to look on.</description>
+    <graphicData>
+      <texPath>Things/Building/NAT_RustedBroadcastDish</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(5, 5)</drawSize>
+      <shadowData>
+        <volume>(3,0.35,3)</volume>
+        <offset>(0,0,-1)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Building/NAT_RustedBroadcastDish_Icon</uiIconPath>
+    <castEdgeShadows>false</castEdgeShadows>
+    <hasInteractionCell>false</hasInteractionCell>
+    <tickerType>Normal</tickerType>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <canOverlapZones>false</canOverlapZones>
+    <building>
+      <destroyEffecter>NAT_RustedBuildingDeath</destroyEffecter>
+    </building>
+    <statBases>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Beauty>-20</Beauty>
+      <ArmorRating_Blunt>1.7</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.3</ArmorRating_Sharp>
+    </statBases>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <rotatable>false</rotatable>
+    <!--<staticSunShadowHeight>0.3</staticSunShadowHeight>-->
+    <size>(5,5)</size>
+    <comps>
+      <li Class="NAT.CompProperties_RustedDish">
+        <graphicData>
+          <texPath>Things/Building/NAT_RustedBroadcastDish_Top</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(7,7)</drawSize>
+        </graphicData>
+      </li>
+      <li Class="NAT.CompProperties_RustedArmor"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="NAT_RustedBuildingBase">
+    <defName>NAT_RustedArmyBanner</defName>
+    <label>rusted army banner</label>
+    <description>A figure of clotted pain. It hurts to look on.</description>
+    <graphicData>
+      <texPath>Things/Building/NAT_RustedArmyBanner</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3, 3)</drawSize>
+    </graphicData>
+    <pathCost>25</pathCost>
+    <castEdgeShadows>false</castEdgeShadows>
+    <hasInteractionCell>false</hasInteractionCell>
+    <fillPercent>0.3</fillPercent>
+    <tickerType>Normal</tickerType>
+    <canOverlapZones>false</canOverlapZones>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <ai_neverTrashThis>false</ai_neverTrashThis>
+    </building>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+    </statBases>
+    <rotatable>false</rotatable>
+    <staticSunShadowHeight>0.3</staticSunShadowHeight>
+    <size>(1,1)</size>
+    <uiIconPath>Things/Building/NAT_RustedArmyBanner_Icon</uiIconPath>
+    <uiIconScale>1</uiIconScale>
+    <comps>
+      <li Class="NAT.CompProperties_RustedBanner">
+        <range>21.9</range>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="NAT_RustedBuildingBase">
+    <defName>NAT_RustedHatch</defName>
+    <label> entrance</label>
+    <description>The entrance to a long-abandoned subterranean facility. Hack it to open the hatch.</description>
+    <size>(3,3)</size>
+    <useHitPoints>false</useHitPoints>
+    <thingClass>AncientHatch</thingClass>
+    <rotatable>false</rotatable>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/AncientHatch/AncientHatch_Closed</texPath>
+      <drawSize>(3, 3)</drawSize>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <fillPercent>0</fillPercent>
+    <passability>Impassable</passability>
+    <holdsRoof>true</holdsRoof>
+    <destroyable>false</destroyable>
+    <building>
+      <isEdifice>true</isEdifice>
+      <deconstructible>false</deconstructible>
+      <isTargetable>false</isTargetable>
+      <isInert>true</isInert>
+      <claimable>false</claimable>
+      <expandHomeArea>false</expandHomeArea>
+    </building>
+    <portal>
+      <pocketMapGenerator>AncientStockpile</pocketMapGenerator>
+      <exitDef>NAT_RustedHatchExit</exitDef>
+      <pocketMapSize>75</pocketMapSize>
+    </portal>
+    <statBases>
+      <Flammability>0</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hackable">
+        <defence>39000</defence>
+        <effectHacking>HackingTerminal</effectHacking>
+        <lockoutDurationHoursRange>6~18</lockoutDurationHoursRange>
+        <showProgressAfterHackCompletion>false</showProgressAfterHackCompletion>
+        <notHackedInspectString>Hack to open.</notHackedInspectString>
+        <intellectualSkillPrerequisite>4</intellectualSkillPrerequisite>
+        <hackingCompletedSound>AncientHatchOpened</hackingCompletedSound>
+        <hackedMessage>{HACKER_labelShort} has finished hacking {SUBJECT_labelNoParenthesisDef}.</hackedMessage>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(239,133,50,0)</glowColor>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_ContentsMapPortal</li>
+    </inspectorTabs>
+  </ThingDef>
+
+  <ThingDef ParentName="PocketMapExit">
+    <defName>NAT_RustedHatchExit</defName>
+    <label>rusted stockpile exit</label>
+    <description>A ladder which links to the surface hatch above.</description>
+    <size>(3,3)</size>
+    <drawerType>RealtimeOnly</drawerType>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/AncientHatchExit/AncientHatchExit</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_DrawAdditionalGraphics">
+        <graphics>
+          <li>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Building/AncientHatchExit/AncientHatchExit_Ladder</texPath>
+            <drawSize>(3,3)</drawSize>
+            <drawOffset>(0, 0.01, 0.7)</drawOffset>
+            <shaderType>Transparent</shaderType>
+          </li>
+        </graphics>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

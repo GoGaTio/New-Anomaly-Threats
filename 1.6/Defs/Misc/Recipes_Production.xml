@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--<RecipeDef>
+    <defName>NAT_ShredRustedStuff</defName>
+    <label>make any stone blocks</label>
+    <description>Cut rock chunks into usable stone blocks.</description>
+    <jobString>Cutting stone blocks from chunk.</jobString>
+    <workAmount>2500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0</workSkillLearnFactor>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>NAT_WeaponsRusted</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>NAT_WeaponsRusted</li>
+      </categories>
+    </fixedIngredientFilter>
+    <specialProducts>
+      <li>Butchery</li>
+    </specialProducts>
+  </RecipeDef>-->
+
+</Defs>

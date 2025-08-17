@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FleckDef ParentName="FleckBase">
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <defName>NAT_RustedBeaconFlash</defName>
+    <solidTime>0.15</solidTime>
+    <fadeOutTime>0.1</fadeOutTime>
+    <growthRate>37</growthRate>
+    <graphicData>
+      <drawSize>0.32</drawSize>
+      <color>(255, 0, 0, 180)</color>
+      <texPath>Things/Mote/BrightFlash</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>NAT_RustedBeaconActivated</defName>
+    <graphicData>
+      <graphicClass>Graphic_FleckPulse</graphicClass>
+      <texPath>Things/Mote/BrightFlash</texPath>
+      <color>(255, 0, 0, 180)</color>
+      <shaderType>MoteGlowPulse</shaderType>
+      <shaderParameters>
+        <_Interval>0.04</_Interval>
+      </shaderParameters>
+      <drawSize>7</drawSize>
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <solidTime>0.8</solidTime>
+    <fadeOutTime>0.1</fadeOutTime>
+    <growthRate>0.5</growthRate>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>NAT_BileSpray</defName>
+    <graphicData>
+      <texPath>Things/Mote/NAT_BileSpray</texPath>
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.04</fadeInTime>
+    <solidTime>0.2</solidTime>
+    <fadeOutTime>1</fadeOutTime>
+    <growthRate>0.9</growthRate>
+  </FleckDef> 
+
+  <FleckDef ParentName="FleckBase_RandomGraphic_Thrown">
+    <defName>NAT_RustedSoldierDeath</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0</fadeInTime>
+    <solidTime>2</solidTime>
+    <fadeOutTime>0</fadeOutTime>
+    <growthRate>-4</growthRate>
+    <speedPerTime>-150</speedPerTime>
+    <randomGraphics>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Mote/NAT_RustedShardA</texPath>
+        <shaderType>Mote</shaderType>
+        <drawSize>0.75</drawSize>
+      </li>
+	  <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Mote/NAT_RustedShardB</texPath>
+        <shaderType>Mote</shaderType>
+        <drawSize>0.75</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Mote/NAT_RustedShardC</texPath>
+        <shaderType>Mote</shaderType>
+        <drawSize>0.75</drawSize>
+      </li>
+    </randomGraphics>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase_RandomGraphic">
+    <defName>NAT_RustedSoldierDeathFlash</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0</fadeInTime>
+    <solidTime>0</solidTime>
+    <fadeOutTime>1</fadeOutTime>
+    <randomGraphics>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Mote/LensFlares/LensFlareA</texPath>
+        <shaderType>MoteGlow</shaderType>
+        <color>(0.32, 0.35, 0.33, .75)</color>
+        <drawSize>4</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Mote/LensFlares/LensFlareB</texPath>
+        <shaderType>MoteGlow</shaderType>
+        <color>(0.32, 0.35, 0.33, .75)</color>
+        <drawSize>4</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Mote/LensFlares/LensFlareC</texPath>
+        <shaderType>MoteGlow</shaderType>
+        <color>(0.32, 0.35, 0.33, .75)</color>
+        <drawSize>4</drawSize>
+      </li>
+    </randomGraphics>
+  </FleckDef>
+
+</Defs>

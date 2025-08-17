@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <AbilityDef Name="NAT_RustCommandBase" Abstract="True">
+    <groupDef>NAT_RustedCommander</groupDef>
+    <warmupSound>PsycastCastLoop</warmupSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>44.9</range>
+      <requireLineOfSight>False</requireLineOfSight>
+      <warmupTime>1</warmupTime>
+      <targetParams>
+        <canTargetPawns>False</canTargetPawns>
+        <canTargetLocations>True</canTargetLocations>
+        <canTargetBuildings>False</canTargetBuildings>
+        <canTargetAnimals>False</canTargetAnimals>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+
+  <AbilityGroupDef>
+    <defName>NAT_RustedCommander</defName>
+    <cooldownTicks>2500</cooldownTicks>
+    <sendMessageOnCooldownComplete>false</sendMessageOnCooldownComplete>
+  </AbilityGroupDef>
+
+  <AbilityDef ParentName="NAT_RustCommandBase">
+    <defName>NAT_Reinforcement_Troopers</defName>
+    <label>call rusted troopers</label>
+    <description>Call rusted troopers as reinforcements from orbital rusted structures.</description>
+    <iconPath>UI/Abilities/NAT_Reinforcement_Troopers</iconPath>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+    </verbProperties>
+    <comps>
+      <li Class="NAT.CompProperties_AbilityReinforcements">
+        <missRadius>2.9</missRadius>
+        <kindDefs>
+          <NAT_RustedTrooper_Reinforcement>2</NAT_RustedTrooper_Reinforcement>
+        </kindDefs>
+      </li>
+      <li Class="NAT.CompProperties_AbilityRustedCommander">
+        <cost>3</cost>
+        <castParms>
+          <li>
+            <conditions>EnemyNearby</conditions>
+            <location>OnTarget</location>
+            <weight>49</weight>
+          </li>
+          <li>
+            <conditions>EnemyNearby</conditions>
+            <location>NearCaster</location>
+            <weight>49</weight>
+          </li>
+          <li>
+            <conditions>Attacking, OverwhelmingEnemies</conditions>
+            <location>OnTarget</location>
+            <weight>0.5</weight>
+          </li>
+          <li>
+            <conditions>OverwhelmingEnemies</conditions>
+            <location>BehindTarget</location>
+            <weight>2</weight>
+          </li>
+        </castParms>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  <AbilityDef ParentName="NAT_RustCommandBase">
+    <defName>NAT_Reinforcement_MiniTurret</defName>
+    <label>call rusted mini turret</label>
+    <description>Call rusted mini turret as reinforcement from orbital rusted structures.</description>
+    <iconPath>UI/Abilities/NAT_Reinforcement_MiniTurret</iconPath>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+    </verbProperties>
+    <comps>
+      <li Class="NAT.CompProperties_AbilityReinforcements">
+        <missRadius>1.9</missRadius>
+        <thingDefs>
+          <NAT_RustedTurret_Mini>1</NAT_RustedTurret_Mini>
+        </thingDefs>
+      </li>
+      <li Class="NAT.CompProperties_AbilityRustedCommander">
+        <cost>2</cost>
+        <castParms>
+          <li>
+            <conditions>Attacking</conditions>
+            <location>Turret</location>
+            <weight>1</weight>
+          </li>
+          <li>
+            <conditions>EnemyNearby</conditions>
+            <location>OnTarget</location>
+            <weight>99</weight>
+          </li>
+        </castParms>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="NAT_RustCommandBase">
+    <defName>NAT_Reinforcement_AutoTurret</defName>
+    <label>call rusted auto turret</label>
+    <description>Call rusted auto turret as reinforcement from orbital rusted structures.</description>
+    <iconPath>UI/Abilities/NAT_Reinforcement_AutoTurret</iconPath>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+    </verbProperties>
+    <comps>
+      <li Class="NAT.CompProperties_AbilityReinforcements">
+        <missRadius>1.9</missRadius>
+        <thingDefs>
+          <NAT_RustedTurret_Auto>1</NAT_RustedTurret_Auto>
+        </thingDefs>
+      </li>
+      <li Class="NAT.CompProperties_AbilityRustedCommander">
+        <cost>3</cost>
+        <castParms>
+          <li>
+            <conditions>Attacking</conditions>
+            <location>Turret</location>
+            <weight>1</weight>
+          </li>
+          <li>
+            <conditions>EnemyNearby</conditions>
+            <location>OnTarget</location>
+            <weight>99</weight>
+          </li>
+        </castParms>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="NAT_RustCommandBase">
+    <defName>NAT_Reinforcement_SniperTurret</defName>
+    <label>call rusted sniper turret</label>
+    <description>Call rusted sniper turret as reinforcement from orbital rusted structures.</description>
+    <iconPath>UI/Abilities/NAT_Reinforcement_SniperTurret</iconPath>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+    </verbProperties>
+    <comps>
+      <li Class="NAT.CompProperties_AbilityReinforcements">
+        <missRadius>1.9</missRadius>
+        <thingDefs>
+          <NAT_RustedTurret_Sniper>1</NAT_RustedTurret_Sniper>
+        </thingDefs>
+      </li>
+      <li Class="NAT.CompProperties_AbilityRustedCommander">
+        <cost>4</cost>
+        <castParms>
+          <li>
+            <conditions>Attacking</conditions>
+            <location>Turret</location>
+            <weight>1</weight>
+          </li>
+          <li>
+            <conditions>EnemyNearby</conditions>
+            <location>OnTarget</location>
+            <weight>99</weight>
+          </li>
+        </castParms>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="NAT_RustCommandBase">
+    <defName>NAT_Reinforcement_Guardsmans</defName>
+    <label>call rusted guardsmans</label>
+    <description>Call rusted guardsmans as reinforcements from orbital rusted structures.</description>
+    <iconPath>UI/Abilities/Chunkskip</iconPath>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+    </verbProperties>
+    <comps>
+      <li Class="NAT.CompProperties_AbilityReinforcements">
+        <missRadius>4.9</missRadius>
+        <kindDefs>
+          <NAT_RustedGuardsman>4</NAT_RustedGuardsman>
+        </kindDefs>
+      </li>
+      <li Class="NAT.CompProperties_AbilityRustedCommander">
+        <cost>7</cost>
+        <castParms>
+          <li>
+            <conditions>Attacking</conditions>
+            <location>Turret</location>
+            <weight>1</weight>
+          </li>
+          <li>
+            <conditions>EnemyNearby</conditions>
+            <location>OnTarget</location>
+            <weight>99</weight>
+          </li>
+        </castParms>
+      </li>
+    </comps>
+  </AbilityDef>
+
+</Defs>

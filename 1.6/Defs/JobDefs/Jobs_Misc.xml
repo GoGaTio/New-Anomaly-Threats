@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <JobDef>
+    <defName>NAT_BuildRust</defName>
+    <driverClass>NAT.JobDriver_BuildRust</driverClass>
+    <reportString>constructing rust</reportString>
+  </JobDef>
+  
+  <JobDef>
+    <defName>NAT_UseItemByRust</defName>
+    <driverClass>NAT.JobDriver_UseItemByRust</driverClass>
+    <reportString>using TargetA.</reportString>
+  </JobDef>
+  
+  <JobDef>
+    <defName>NAT_Seal</defName>
+    <driverClass>NAT.JobDriver_Seal</driverClass>
+    <reportString>sealing TargetA.</reportString>
+  </JobDef>
+
+</Defs>

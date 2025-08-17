@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ================================= Industrial ==================================== -->
+
+  <ThingDef Name="NAT_RustedBullet" Abstract="True" ParentName="BaseBullet">
+    <graphicData>
+      <color>(255,30,30)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="NAT_RustedBullet">
+    <defName>NAT_Bullet_RustedSmall</defName>
+    <label>rusted bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+    </graphicData>
+    <projectile>
+      <damageAmountBase>9</damageAmountBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="NAT_RustedBullet">
+    <defName>NAT_Bullet_RustedSmallStop</defName>
+    <label>rusted bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+    </graphicData>
+    <projectile>
+      <damageAmountBase>13</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="NAT_RustedBullet">
+    <defName>NAT_Bullet_RustedMedium</defName>
+    <label>rusted bullet</label>
+    <projectile>
+      <damageAmountBase>19</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_big</texPath>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="NAT_RustedBullet">
+    <defName>NAT_Bullet_RustedLarge</defName>
+    <label>rusted shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+    </graphicData>
+    <projectile>
+      <damageAmountBase>27</damageAmountBase>
+      <stoppingPower>1.8</stoppingPower>
+      <speed>88</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="NAT_RustedBullet">
+    <defName>NAT_Bullet_RustedHighVelocity</defName>
+    <label>rusted shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <projectile>
+      <damageAmountBase>55</damageAmountBase>
+      <speed>120</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="NAT_RustedBullet">
+    <defName>NAT_Bullet_RustedShotgun</defName>
+    <label>rusted shotgun blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+    </graphicData>
+    <projectile>
+      <damageAmountBase>18</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+      <armorPenetrationBase>0.14</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+</Defs>

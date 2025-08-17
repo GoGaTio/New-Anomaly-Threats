@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <IncidentDef ParentName="AnomalyIncidentBase">
+    <defName>NAT_RustedArmyRaid</defName>
+    <label>rusted army raid</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>NAT.IncidentWorker_RustedArmyRaid</workerClass>
+    <baseChance>0.5</baseChance>
+    <minAnomalyThreatLevel>1</minAnomalyThreatLevel>
+    <minPopulation>1</minPopulation>
+    <minThreatPoints>500</minThreatPoints>
+    <earliestDay>45</earliestDay>
+    <category>ThreatBig</category>
+    <minRefireDays>15</minRefireDays>
+    <pointsScaleable>true</pointsScaleable>
+  </IncidentDef>
+  
+  <IncidentDef ParentName="AnomalyIncidentBase">
+    <defName>NAT_RustedArmySiege</defName>
+    <label>rusted army siege</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>NAT.IncidentWorker_RustedArmySiege</workerClass>
+    <baseChance>0</baseChance>
+    <minAnomalyThreatLevel>2</minAnomalyThreatLevel>
+    <minPopulation>1</minPopulation>
+    <minThreatPoints>1500</minThreatPoints>
+    <earliestDay>30</earliestDay>
+    <category>ThreatBig</category>
+    <minRefireDays>30</minRefireDays>
+    <pointsScaleable>true</pointsScaleable>
+  </IncidentDef>
+
+  <IncidentDef ParentName="EntityAttackBase">
+    <defName>NAT_SerpentAssault</defName>
+    <label>serpent assault</label>
+    <workerClass>NAT.IncidentWorker_SerpentAssault</workerClass>
+    <baseChance>1</baseChance>
+    <minThreatPoints>130</minThreatPoints>
+    <minAnomalyThreatLevel>1</minAnomalyThreatLevel>
+    <letterLabel>Bile serpent attack</letterLabel>
+    <letterText>A swarm of huge gape-mawed monsters are attacking!\n\nThese creatures' jaws are massive enough to swallow a human whole. Keep your distance!</letterText>
+    <letterDef>ThreatBig</letterDef>
+    <earliestDay>15</earliestDay>
+  </IncidentDef>
+
+</Defs>

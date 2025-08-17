@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <NAT.PsychicRitualDef_CreateRust>
+    <defName>NAT_CreateRust_Soldier</defName>
+    <label>rusted infantryman creation</label>
+    <description>Create rusted infantryman using bioferrite and dark archotechnology shards. There's always a fail chance, so ritual may require many attempts.</description>
+    <researchPrerequisite>NAT_RustedSoldiers</researchPrerequisite>
+    <outcomeDescription>With the current ritual quality, there is a {0} chance of successful rusted infantryman creation.\n\nIf the ritual fails, some bioferrite and all shards will be lost.</outcomeDescription>
+    <hoursUntilOutcome>4</hoursUntilOutcome>
+    <requiredOffering>
+      <filter>
+        <thingDefs>
+          <li>Shard</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </requiredOffering>
+    <bioferriteCount>125</bioferriteCount>
+    <rustKind>NAT_RustedSoldier</rustKind>
+    <successChanceFromQualityCurve>
+      <points>
+        <li>(0, 0.1)</li>
+        <li>(0.5, 0.55)</li>
+        <li>(0.7, 0.7)</li>
+        <li>(1, 0.99)</li>
+      </points>
+    </successChanceFromQualityCurve>
+    <cooldownHours>480</cooldownHours>
+    <iconPath>UI/PsychicRituals/NAT_PsychicRitual_CreateRustedSoldier</iconPath>
+  </NAT.PsychicRitualDef_CreateRust>
+
+  <NAT.PsychicRitualDef_CreateRust>
+    <defName>NAT_CreateRust_Trooper</defName>
+    <label>rusted stormtrooper creation</label>
+    <description>Create rusted trooper using bioferrite and dark archotechnology shards. There's always a fail chance, so ritual may require many attempts.</description>
+    <researchPrerequisite>NAT_RustedSoldiers</researchPrerequisite>
+    <outcomeDescription>With the current ritual quality, there is a {0} chance of successful rusted stormtrooper creation.\n\nIf the ritual fails, some bioferrite and all shards will be lost.</outcomeDescription>
+    <hoursUntilOutcome>4</hoursUntilOutcome>
+    <requiredOffering>
+      <filter>
+        <thingDefs>
+          <li>Shard</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </requiredOffering>
+    <bioferriteCount>75</bioferriteCount>
+    <rustKind>NAT_RustedTrooper</rustKind>
+    <successChanceFromQualityCurve>
+      <points>
+        <li>(0, 0.1)</li>
+        <li>(0.5, 0.6)</li>
+        <li>(0.7, 0.75)</li>
+        <li>(1, 0.99)</li>
+      </points>
+    </successChanceFromQualityCurve>
+    <cooldownHours>480</cooldownHours>
+    <iconPath>UI/PsychicRituals/NAT_PsychicRitual_CreateRustedTrooper</iconPath>
+  </NAT.PsychicRitualDef_CreateRust>
+
+</Defs>

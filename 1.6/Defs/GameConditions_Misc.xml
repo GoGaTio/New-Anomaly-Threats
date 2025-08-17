@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GameConditionDef>
+    <defName>NAT_DeadlifeSpewer</defName>
+    <conditionClass>NAT.GameCondition_DeadlifeSpewer</conditionClass>
+    <label>deadlife spewer</label>
+    <description>The dead will rise! Burn, bury, destroy, or move corpses indoors to prevent them from resurrecting.</description>
+    <letterText>A death-gray cloud has descended on the area.\n\nThe cloud is made of microscopic self-powered archites created by some unknown superintelligence. Where they land on dead flesh, they will enter the body and reanimate it to create a twisted imitation of life.\n\nThe dead will rise! Burn, bury, destroy, or move corpses indoors to prevent them from resurrecting.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <weatherDef>UnnaturalFog</weatherDef>
+    <canBePermanent>true</canBePermanent>
+    <natural>false</natural>
+    <allowUnderground>true</allowUnderground>
+  </GameConditionDef>
+  
+  <GameConditionDef>
+    <defName>HateChantDrone</defName>
+    <conditionClass>GameCondition_HateChantDrone</conditionClass>
+    <label>hate chanting</label>
+    <description>Cultists of Horax are performing a psychically tuned chant. The ominous chanting conveys a dark and dreamlike hatred. It makes your head pound and your skin crawl. So long as the drone continues, colonists will be unhappy.\n\nThe chant will continue to grow more powerful as long as the cultists are not stopped.</description>
+    <canBePermanent>true</canBePermanent>
+  </GameConditionDef>
+
+  <GameConditionDef>
+    <defName>NAT_ForcedUnnaturalDarkness</defName>
+    <conditionClass>GameCondition_UnnaturalDarkness</conditionClass>
+    <label>unnatural darkness</label>
+    <description>The world is blanketed by a layer of unnatural darkness. From the inky blackness, one can hear the inhuman groaning of deadly creatures. Stay in the light.</description>
+    <weatherDef>UnnaturalDarkness_Stage1</weatherDef>
+    <preventNeutralVisitors>true</preventNeutralVisitors>
+    <preventIncidents>false</preventIncidents>
+    <canBePermanent>true</canBePermanent>
+    <displayOnUI>false</displayOnUI> <!--  Displayed by weather instead -->
+    <natural>false</natural>
+    <allowUnderground>false</allowUnderground>
+  </GameConditionDef>
+
+  <GameConditionDef>
+    <defName>NAT_PainCauser</defName>
+    <conditionClass>GameCondition_UnnaturalDarkness</conditionClass>
+    <label>unnatural darkness</label>
+    <description>The world is blanketed by a layer of unnatural darkness. From the inky blackness, one can hear the inhuman groaning of deadly creatures. Stay in the light.</description>
+    <preventNeutralVisitors>true</preventNeutralVisitors>
+    <preventIncidents>false</preventIncidents>
+    <canBePermanent>true</canBePermanent>
+    <displayOnUI>true</displayOnUI>
+    <natural>false</natural>
+    <allowUnderground>true</allowUnderground>
+  </GameConditionDef>
+
+  <GameConditionDef>
+    <defName>UnnaturalHeat</defName>
+    <conditionClass>GameCondition_UnnaturalHeat</conditionClass>
+    <label>unnatural heat</label>
+    <description>A thermal projection device is agitating gas molecules in the atmosphere, raising outdoor temperatures.</description>
+    <displayOnUI>false</displayOnUI>
+  </GameConditionDef>
+
+</Defs>

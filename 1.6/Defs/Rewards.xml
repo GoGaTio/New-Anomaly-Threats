@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<VSEWW.RewardDef MayRequire="VanillaStorytellersExpanded.WinstonWave">
+		<defName>NAT_FriendlyRustsNormal</defName>
+		<texPath>UI/Rewards/NAT_RewardRusts_Normal</texPath>
+		<label>Rusted units drop</label>
+		<description>Receive 1 rusted stormtrooper</description>
+		<category>Normal</category>
+		<type>Combat</type>
+		<pawns>
+			<li>
+				<pawnkind>NAT_RustedTrooper</pawnkind>
+				<count>1</count>
+			</li>
+		</pawns>
+	</VSEWW.RewardDef>
+
+	<VSEWW.RewardDef MayRequire="VanillaStorytellersExpanded.WinstonWave">
+		<defName>NAT_FriendlyRustsGood</defName>
+		<texPath>UI/Rewards/NAT_RewardRusts_Good</texPath>
+		<label>Rusted units drop</label>
+		<description>Receive a rusted gunner and a rusted stormtrooper</description>
+		<category>Good</category>
+		<type>Combat</type>
+		<pawns>
+			<li>
+				<pawnkind>NAT_RustedGunner</pawnkind>
+				<count>1</count>
+			</li>
+        <li>
+				<pawnkind>NAT_RustedTrooper</pawnkind>
+				<count>1</count>
+			</li>
+		</pawns>
+	</VSEWW.RewardDef>
+
+	<VSEWW.RewardDef MayRequire="VanillaStorytellersExpanded.WinstonWave">
+		<defName>NAT_FriendlyRustsExcellent</defName>
+		<texPath>UI/Rewards/NAT_RewardRusts_Excellent</texPath>
+		<label>Rusted units drop</label>
+		<description>Receive a rusted guardsman, 2 rusted stormtroopers and a rusted gunner</description>
+		<category>Excellent</category>
+		<type>Combat</type>
+		<pawns>
+			<li>
+				<pawnkind>NAT_RustedGuardsman</pawnkind>
+				<count>1</count>
+			</li>
+			<li>
+				<pawnkind>NAT_RustedGunner</pawnkind>
+				<count>1</count>
+			</li>
+			<li>
+				<pawnkind>NAT_RustedTrooper</pawnkind>
+				<count>2</count>
+			</li>
+		</pawns>
+	</VSEWW.RewardDef>
+
+	<VSEWW.RewardDef MayRequire="VanillaStorytellersExpanded.WinstonWave">
+		<defName>NAT_FriendlyRustsLegendary</defName>
+		<texPath>UI/Rewards/NAT_RewardRusts_Legendary</texPath>
+		<label>Rusted units drop</label>
+		<description>Receive a rusted guardsman, a rusted officer, 2 rusted gunners and 2 rusted stormtroopers</description>
+		<category>Legendary</category>
+		<type>Combat</type>
+		<pawns>
+			<li>
+				<pawnkind>NAT_RustedGuardsman</pawnkind>
+				<count>1</count>
+			</li>
+			<li>
+				<pawnkind>NAT_RustedOfficer</pawnkind>
+				<count>1</count>
+			</li>
+			<li>
+				<pawnkind>NAT_RustedGunner</pawnkind>
+				<count>2</count>
+			</li>
+			<li>
+				<pawnkind>NAT_RustedTrooper</pawnkind>
+				<count>2</count>
+			</li>
+		</pawns>
+	</VSEWW.RewardDef>
+
+</Defs>

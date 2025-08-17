@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="SkyfallerBase">
+    <defName>NAT_RustedTrooperIncoming</defName>
+    <label>rusted trooper (incoming)</label>
+	<thingClass>NAT.Skyfaller_RustedChunk</thingClass>
+    <graphicData>
+      <texPath>Things/NAT_RustedTrooperIncoming</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>(3, 3)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>ConstantSpeed</movementType>
+      <shadowSize>(1, 1)</shadowSize>
+      <ticksToImpactRange>300~420</ticksToImpactRange>
+      <anticipationSound>WarpedObelisk_Fall</anticipationSound>
+      <anticipationSoundTicks>360</anticipationSoundTicks>
+      <impactSound>WarpedObelisk_Impact</impactSound>
+      <rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+      <motesPerCell>0</motesPerCell>
+      <explosionRadius>1</explosionRadius>
+    </skyfaller>
+  </ThingDef>
+  
+  <ThingDef ParentName="SkyfallerBase">
+    <defName>NAT_RustedMassIncoming</defName>
+    <label>rusted mass (incoming)</label>
+    <graphicData>
+      <texPath>Things/NAT_RustedMassIncoming</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>(3, 3)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>ConstantSpeed</movementType>
+      <shadow>Things/Skyfaller/SkyfallerShadowRectangle</shadow>
+      <shadowSize>(1, 1)</shadowSize>
+      <ticksToImpactRange>780~780</ticksToImpactRange>
+      <anticipationSound>WarpedObelisk_Fall</anticipationSound>
+      <anticipationSoundTicks>780</anticipationSoundTicks>
+      <impactSound>WarpedObelisk_Impact</impactSound>
+      <rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+      <motesPerCell>0</motesPerCell>
+      <explosionRadius>1</explosionRadius>
+      <explosionDamage>Bomb</explosionDamage>
+    </skyfaller>
+  </ThingDef>
+
+  <ThingDef ParentName="SkyfallerBase">
+    <defName>NAT_RustedChunkPawnIncoming</defName>
+    <label>rusted chunk (incoming)</label>
+    <thingClass>NAT.Skyfaller_RustedChunk</thingClass>
+    <graphicData>
+      <texPath>Things/NAT_RustedChunk1x1Incoming</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>(5, 5)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>ConstantSpeed</movementType>
+      <ticksToImpactRange>300~420</ticksToImpactRange>
+      <anticipationSound>WarpedObelisk_Fall</anticipationSound>
+      <anticipationSoundTicks>360</anticipationSoundTicks>
+      <impactSound>WarpedObelisk_Impact</impactSound>
+      <rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+      <motesPerCell>0</motesPerCell>
+      <shadowSize>(1.5, 1.5)</shadowSize>
+      <explosionRadius>2</explosionRadius>
+      <explosionDamageFactor>0.25</explosionDamageFactor>
+    </skyfaller>
+  </ThingDef>
+  
+  <ThingDef ParentName="SkyfallerBase">
+    <defName>NAT_RustedChunk1x1Incoming</defName>
+    <label>rusted chunk (incoming)</label>
+    <thingClass>NAT.Skyfaller_RustedChunk</thingClass>
+    <size>(1, 1)</size>
+    <graphicData>
+      <texPath>Things/NAT_RustedChunk1x1Incoming</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>(5, 5)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>ConstantSpeed</movementType>
+      <ticksToImpactRange>300~420</ticksToImpactRange>
+      <anticipationSound>WarpedObelisk_Fall</anticipationSound>
+      <anticipationSoundTicks>360</anticipationSoundTicks>
+      <impactSound>WarpedObelisk_Impact</impactSound>
+      <rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+      <motesPerCell>0</motesPerCell>
+      <shadowSize>(1.5, 1.5)</shadowSize>
+      <explosionRadius>2</explosionRadius>
+      <explosionDamageFactor>0.25</explosionDamageFactor>
+    </skyfaller>
+  </ThingDef>
+
+  <ThingDef ParentName="SkyfallerBase">
+    <defName>NAT_RustedChunk2x2Incoming</defName>
+    <label>rusted chunk (incoming)</label>
+    <thingClass>NAT.Skyfaller_RustedChunk</thingClass>
+    <size>(2, 2)</size>
+    <graphicData>
+      <texPath>Things/NAT_RustedChunk2x2Incoming</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>(5, 5)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>ConstantSpeed</movementType>
+      <ticksToImpactRange>300~420</ticksToImpactRange>
+      <anticipationSound>WarpedObelisk_Fall</anticipationSound>
+      <anticipationSoundTicks>360</anticipationSoundTicks>
+      <impactSound>WarpedObelisk_Impact</impactSound>
+      <rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+      <motesPerCell>0</motesPerCell>
+      <shadowSize>(2.5, 2.5)</shadowSize>
+      <explosionRadius>3.4</explosionRadius>
+      <explosionDamageFactor>0.25</explosionDamageFactor>
+    </skyfaller>
+  </ThingDef>
+
+  <ThingDef ParentName="SkyfallerBase">
+    <defName>NAT_RustedChunk3x3Incoming</defName>
+    <label>large rusted chunk (incoming)</label>
+    <thingClass>NAT.Skyfaller_RustedChunk</thingClass> 
+    <size>(3, 3)</size>
+    <skyfaller>
+      <shadow>Things/Skyfaller/SkyfallerShadowRectangle</shadow>
+      <shadowSize>(3.5, 3.5)</shadowSize>
+      <explosionRadius>4.5</explosionRadius>
+      <explosionDamageFactor>0.25</explosionDamageFactor>
+      <cameraShake>1</cameraShake>
+      <ticksToImpactRange>180~270</ticksToImpactRange>
+    </skyfaller>
+  </ThingDef>
+
+</Defs>
