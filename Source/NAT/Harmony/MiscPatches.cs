@@ -216,6 +216,7 @@ namespace NAT
 		[HarmonyPostfix]
 		public static void Postfix(List<CellRect> structureRects, int numStructures, ThingDef structureDef, List<Thing> tmpStageStructures, string structureActivatedSignal)
 		{
+			return; //not finished yet
 			if (!LoadedModManager.GetMod<NewAnomalyThreatsMod>().GetSettings<NewAnomalyThreatsSettings>().allowEndGameRaid)
 			{
 				return;

@@ -230,8 +230,6 @@ namespace NAT
 
 	public class CompProperties_AbilityCollectorHowl : CompProperties_AbilityEffect
 	{
-		public SimpleCurve chanceFromHearingCurve = new SimpleCurve();
-
 		public SimpleCurve sightstealersPointsFromPointsCurve = new SimpleCurve();
 
 		public CompProperties_AbilityCollectorHowl()
@@ -242,15 +240,6 @@ namespace NAT
 	public class CompAbilityEffect_CollectorHowl : CompAbilityEffect
 	{
 		public new CompProperties_AbilityCollectorHowl Props => (CompProperties_AbilityCollectorHowl)props;
-
-		public override bool Valid(LocalTargetInfo target, bool throwMessages = false)
-		{
-			if (target.Pawn == null)
-			{
-				return false;
-			}
-			return Rand.Chance(Props.chanceFromHearingCurve.Evaluate(target.Pawn.health.capacities.GetLevel(PawnCapacityDefOf.Hearing)));
-		}
 
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {

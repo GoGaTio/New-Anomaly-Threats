@@ -6,7 +6,7 @@
     <label>rusted grenades pack</label>
     <description>A wearable pack that deploys a hunter drone. The drone will close with the target and detonate when it is within range.</description>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/HunterDronePack/HunterDronePack</texPath>
+      <texPath>Things/Pawn/Apparel/NAT_RustedGrenadesPack/NAT_RustedGrenadesPack</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.7,0.7)</drawSize>
     </graphicData>
@@ -21,31 +21,6 @@
     <thingCategories>
       <li>ApparelUtility</li>
     </thingCategories>
-    <thingSetMakerTags>
-      <li>RewardStandardLowFreq</li>
-    </thingSetMakerTags>
-    <costList>
-      <Steel>60</Steel>
-      <Chemfuel>40</Chemfuel>
-      <ComponentIndustrial>2</ComponentIndustrial>
-    </costList>
-    <recipeMaker>
-      <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
-      <researchPrerequisite>HunterDrones</researchPrerequisite>
-      <recipeUsers>
-        <li>TableMachining</li>
-      </recipeUsers>
-      <useIngredientsForColor>false</useIngredientsForColor>
-      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-      <workSkill>Crafting</workSkill>
-      <effectWorking>Smith</effectWorking>
-      <soundWorking>Recipe_Smith</soundWorking>
-      <displayPriority>360</displayPriority>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-    <mergeVerbGizmos>false</mergeVerbGizmos>
     <apparel>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
       <scoreOffset>4</scoreOffset>
@@ -58,7 +33,7 @@
       <layers>
         <li>Belt</li>
       </layers>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/HunterDronePack/HunterDronePack</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Apparel/NAT_RustedGrenadesPack/NAT_RustedGrenadesPack</wornGraphicPath>
       <wornGraphicData>
         <renderUtilityAsPack>true</renderUtilityAsPack>
         <north>
@@ -148,9 +123,7 @@
         <defaultCooldownTime>1</defaultCooldownTime>
       </li>
     </verbs>
-    <tradeTags>
-      <li>Clothing</li>
-    </tradeTags>
+	<smeltable>false</smeltable>
   </ThingDef>
 
   <ThingDef ParentName="BaseGrenadeProjectile">

@@ -67,7 +67,7 @@ namespace NAT
 
 		public static TerrainDef NAT_RustedFloor;
 
-		public static ThingDef NAT_RustedFreezer;
+		//public static ThingDef NAT_RustedFreezer;
 
 		public static ThingDef NAT_RustedCore;
 

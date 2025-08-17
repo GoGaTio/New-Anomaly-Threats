@@ -28,8 +28,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Clip">
-            <clipPath>Pawn/Abilities/AnimalWarcall/Animal_Warcall_Resolve_A01</clipPath>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Interact/Joy/PokerChips</clipFolderPath>
           </li>
         </grains>
         <volumeRange>60</volumeRange>

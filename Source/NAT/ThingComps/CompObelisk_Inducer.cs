@@ -54,10 +54,10 @@ namespace NAT
 			}
 			List<Pawn> list = new List<Pawn>();
 			int colonistsUnffected = parent.Map.mapPawns.ColonistsSpawnedCount;
-			int colonists = Mathf.CeilToInt(colonistsUnffected * 0.3f);
+			int colonists = Mathf.CeilToInt(colonistsUnffected * 0.4f);
 			foreach (Pawn p in parent.Map.mapPawns.AllPawnsSpawned.InRandomOrder().ToList())
 			{
-                if (CanAffect(p) && (!triggeredByPlayer || (p.IsColonist && colonistsUnffected > colonists)) && TryCastNegativeAction(p, p.IsColonist))
+				if (Affectable(p) && TryCastNegativeAction(p, p.IsColonist, true, false, true))
                 {
 					if (p.IsColonist)
 					{
@@ -73,13 +73,36 @@ namespace NAT
 			}
 			string text = triggeredByPlayer ? "NAT_InducerTriggeredPlayer_Desc".Translate() : "NAT_InducerTriggered_Desc".Translate(interactor.Named("PAWN"));
 			Find.LetterStack.ReceiveLetter(LetterMaker.MakeLetter("NAT_InducerTriggered_Label".Translate(), text, triggeredByPlayer ? LetterDefOf.NeutralEvent : LetterDefOf.ThreatSmall, list));
+			bool Affectable(Pawn p)
+			{
+				if (!CanAffect(p))
+				{
+					return false;
+				}
+				if(p.IsColonist)
+				{
+					if (triggeredByPlayer)
+					{
+                        return false;
+                    }
+					if(colonistsUnffected <= colonists)
+					{
+						return false;
+					}
+				}
+				return true;
+			}
 		}
 
-		public bool TryCastNegativeAction(Pawn pawn, bool sendLetters, bool canSubdue = true, bool onlySuppress = false)
+		public bool TryCastNegativeAction(Pawn pawn, bool sendLetters, bool canSubdue = true, bool onlySuppress = false, bool disallowSupress = false)
 		{
             if (!onlySuppress)
             {
 				float num = Rand.Value;
+				if (disallowSupress)
+				{
+					num -= 0.31f;
+                }
 				if (canSubdue && num < 0.1f)
 				{
 					return TrySubduePawn(pawn, sendLetters);

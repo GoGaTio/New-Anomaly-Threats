@@ -42,12 +42,6 @@
     <requiresSingleRectRoom>true</requiresSingleRectRoom>
     <minSingleRectWidth>10</minSingleRectWidth>
     <minSingleRectHeight>10</minSingleRectHeight>
-    <prefabs>
-      <AncientDisplayBank_Edge>
-        <countPerTenEdgeCells>3</countPerTenEdgeCells>
-        <minMaxRange>2~6</minMaxRange>
-      </AncientDisplayBank_Edge>
-    </prefabs>
     <floorTypes>
       <li>CarpetMagenta</li>
       <li>CarpetMossBright</li>
@@ -62,16 +56,6 @@
     <requiresSingleRectRoom>true</requiresSingleRectRoom>
     <minSingleRectWidth>13</minSingleRectWidth>
     <minSingleRectHeight>13</minSingleRectHeight>
-    <prefabs>
-      <AncientDisplayBank_Edge>
-        <countPerTenEdgeCells>3</countPerTenEdgeCells>
-        <minMaxRange>2~6</minMaxRange>
-      </AncientDisplayBank_Edge>
-      <AncientBandNode_Cluster>
-        <countPerHundredCells>10</countPerHundredCells>
-        <minMaxRange>5~15</minMaxRange>
-      </AncientBandNode_Cluster>
-    </prefabs>
     <floorTypes>
       <li>CarpetMagenta</li>
       <li>CarpetMossBright</li>
