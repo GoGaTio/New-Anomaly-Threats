@@ -177,7 +177,7 @@
     </comps>
   </ThingDef>
 
-  <ThingDef ParentName="NAT_RustedBuildingBase">
+  <!--<ThingDef ParentName="NAT_RustedBuildingBase">
     <defName>NAT_RustedHatch</defName>
     <label> entrance</label>
     <description>The entrance to a long-abandoned subterranean facility. Hack it to open the hatch.</description>
@@ -259,6 +259,7 @@
         </graphics>
       </li>
     </comps>
-  </ThingDef>
+
+  </ThingDef>-->
 
 </Defs>
