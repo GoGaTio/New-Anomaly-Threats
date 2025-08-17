@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThinkTreeDef>
+    <defName>NAT_Rust</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Despawned -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Despawned</treeDef>
+        </li>
+
+        <!-- Downed -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Downed</treeDef>
+        </li>
+
+        <!-- Sleep -->
+       <li Class="NAT.JobGiver_Sleep">          <wantedLevel>0</wantedLevel>
+          <forceIfExhausted>true</forceIfExhausted>       </li>
+        <!-- Do a queued job -->
+        <li Class="ThinkNode_QueuedJob" />
+
+        <!-- Escape -->
+        <li Class="ThinkNodeConditional_EscapingHoldingPlatform">
+          <subNodes>
+            <li Class="JobGiver_EscapingHoldingPlatform" />
+          </subNodes>
+        </li>
+
+        <!-- Burning Response -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>BurningResponse</treeDef>
+        </li>
+
+        <!-- Wait if drafted -->
+        <li Class="ThinkNode_ConditionalOfPlayerFaction">
+          <subNodes>
+            <li Class="ThinkNode_Tagger">
+              <tagToGive>DraftedOrder</tagToGive>
+              <subNodes>
+                <li Class="JobGiver_MoveToStandable" />
+                <li Class="JobGiver_Orders" />
+              </subNodes>
+            </li>
+          </subNodes>
+        </li>                <!-- Commander abilities -->        <li Class="NAT.JobGiver_RustedCommander" />
+
+        <!-- Lord -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>LordDuty</treeDef>
+        </li>
+
+        <!-- Reinforcement -->
+        <li Class="NAT.ThinkNode_ConditionalReinforcement">
+          <subNodes>
+                    <li Class="JobGiver_AIFightEnemies">
+                 <targetAcquireRadius>90</targetAcquireRadius>
+                 <targetKeepRadius>145</targetKeepRadius>
+               </li>
+        
+               <li Class="JobGiver_ExitMapRandom">
+                 <defaultLocomotion>Walk</defaultLocomotion>
+               </li>
+          </subNodes>
+        </li>
+
+        <!-- Player rusts -->
+        <li Class="ThinkNode_ConditionalOfPlayerFaction">
+          <subNodes>
+            <li Class="ThinkNode_ConditionalNotFormingCaravan">
+              <subNodes>
+
+                              <!-- Seek area and defend it -->
+                <li Class="JobGiver_SeekAllowedArea" />
+
+                <li Class="JobGiver_PickupDroppedWeapon">
+                  <ignoreForbidden>true</ignoreForbidden>
+                </li>
+
+                <li Class="JobGiver_AIFightEnemies">
+                  <targetAcquireRadius>65</targetAcquireRadius>
+                  <targetKeepRadius>72</targetKeepRadius>
+                </li>
+
+                <!-- Sleep -->                <li Class="NAT.JobGiver_Sleep">
+                  <wantedLevel>0.9</wantedLevel>
+                  <startFromLevel>0.3</startFromLevel>
+                </li>
+
+                <li Class="ThinkNode_Tagger">
+                  <tagToGive>UnloadingOwnInventory</tagToGive>
+                  <subNodes>
+                    <li Class="JobGiver_UnloadYourInventory" />
+                  </subNodes>
+                </li>
+
+                <li Class="JobGiver_Reload"/>
+
+                <li Class="JobGiver_DropUnusedInventory" />
+
+                <li Class="JobGiver_Work">
+                  <emergency>true</emergency>
+                </li>
+                
+                <li Class="JobGiver_Work"/>
+
+                <!-- Sleep -->
+                <li Class="NAT.JobGiver_Sleep">
+                  <wantedLevel>1</wantedLevel>
+                  <startFromLevel>0.9</startFromLevel>
+                </li>
+
+              </subNodes>
+            </li>
+
+            <li Class="ThinkNode_Tagger">
+              <tagToGive>Idle</tagToGive>
+              <subNodes>
+                <li Class="JobGiver_ShamblerWander">
+                  <wanderRadius>9</wanderRadius>
+                </li>
+              </subNodes>
+            </li>
+
+          </subNodes>
+        </li>
+
+        <!-- Idle -->
+        <li Class="ThinkNode_Tagger">
+          <tagToGive>Idle</tagToGive>
+          <subNodes>
+            <li Class="JobGiver_WanderAnywhere">
+              <maxDanger>Deadly</maxDanger>
+            </li>
+          </subNodes>
+        </li>
+        
+        <!-- Idle error -->
+        <li Class="JobGiver_IdleError"/>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+
+  <ThinkTreeDef>
+    <defName>NAT_RustConstant</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Despawned -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Despawned</treeDef>
+        </li>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+
+  <ThinkTreeDef>
+    <defName>NAT_RustedOfficerConstant</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Despawned -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Despawned</treeDef>
+        </li>
+
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+
+</Defs>

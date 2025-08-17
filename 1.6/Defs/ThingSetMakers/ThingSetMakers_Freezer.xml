@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingSetMakerDef>
+    <defName>NAT_RustedFreezer</defName>
+    <root Class="ThingSetMaker_Sum">
+      <options>
+
+        <!-- Resources -->
+        <li>
+          <chance>1</chance>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>Meat_Human</li>
+                </thingDefs>
+              </filter>
+              <countRange>150~250</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <!-- Corpses -->
+        <li>
+          <chance>1</chance>
+          <thingSetMaker Class="NAT.ThingSetMaker_FridgePawn">
+            <allowApparel>false</allowApparel>
+            <countRange>0~3</countRange> 
+            <killerKind>NAT_RustedSoldier</killerKind>
+            <corpseAgeRangeDays>10~300</corpseAgeRangeDays>
+          </thingSetMaker>
+        </li>
+
+      </options>
+    </root>
+  </ThingSetMakerDef>
+
+</Defs>

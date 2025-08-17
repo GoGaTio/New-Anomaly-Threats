@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThinkTreeDef>
+    <defName>NAT_Collector</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Despawned -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Despawned</treeDef>
+        </li>
+
+        <!-- Downed -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Downed</treeDef>
+        </li>
+
+        <li Class="ThinkNode_Subtree">
+          <treeDef>BurningResponse</treeDef>
+        </li>
+
+        <li Class="NAT.ThinkNode_ConditionalCollectorState">
+          <state>Wait</state>
+          <subNodes>
+            <li Class="NAT.JobGiver_CollectorWait" />
+          </subNodes>
+        </li>
+        <li Class="NAT.ThinkNode_ConditionalCollectorState">
+          <state>Collect</state>
+          <subNodes>
+            <li Class="NAT.JobGiver_CollectorSteal" />
+          </subNodes>
+        </li>
+        <li Class="NAT.ThinkNode_ConditionalCollectorState">
+          <state>Escape</state>
+          <subNodes>
+            <li Class="NAT.JobGiver_CollectorEscape" />
+          </subNodes>
+        </li>
+        <li Class="JobGiver_AIFightEnemies">
+          <targetAcquireRadius>65</targetAcquireRadius>
+          <targetKeepRadius>72</targetKeepRadius>
+        </li>
+        <li Class="JobGiver_AIGotoNearestHostile" />
+        <li Class="JobGiver_WanderAnywhere" />
+
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+  
+  <ThinkTreeDef>
+    <defName>NAT_CollectorConstant</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Despawned -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Despawned</treeDef>
+        </li>
+        
+        <li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">
+          <subNodes>
+            <!-- Smokepop -->
+            <li Class="ThinkNode_ConditionalHasAbility">
+              <ability>NAT_CollectorHowl</ability>
+              <subNodes>
+                <li Class="ThinkNode_ConditionalShotRecently">
+                  <thresholdTicks>600</thresholdTicks>
+                  <subNodes>
+                    <li Class="ThinkNode_ConditionalTotalDamage">
+                      <thresholdPercent>0.10</thresholdPercent>
+                      <subNodes>
+                        <li Class="JobGiver_AICastAbilityOnSelf">
+                          <ability>NAT_CollectorHowl</ability>
+                        </li>
+                      </subNodes>
+                    </li>
+                  </subNodes>
+                </li>
+              </subNodes>
+            </li>
+          </subNodes>
+        </li>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+  
+</Defs>

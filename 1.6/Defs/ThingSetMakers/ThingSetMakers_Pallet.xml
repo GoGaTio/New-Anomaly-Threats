@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingSetMakerDef>
+    <defName>NAT_RustedPallet</defName>
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <li>
+          <weight>0.3</weight> 
+          <thingSetMaker Class="NAT.ThingSetMaker_Rusts">
+            <kindDef>NAT_RustedTrooper</kindDef>
+            <ageRange>200~600</ageRange>
+            <weaponOverride>NAT_Gun_RustedShotgun</weaponOverride>
+            <countRange>1</countRange>
+          </thingSetMaker>
+        </li>
+
+        <li>
+          <weight>1</weight> 
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingSetMakerTagsToAllow>
+                  <li>NAT_RustedActivator</li>
+                </thingSetMakerTagsToAllow>
+              </filter>
+              <countRange>8~14</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+        <li>
+          <weight>1</weight>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>MedicineIndustrial</li>
+                </thingDefs>
+              </filter>
+              <countRange>10~20</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+        <li>
+          <weight>1</weight>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>MealSurvivalPack</li>
+                </thingDefs>
+              </filter>
+              <countRange>10~20</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li>
+          <weight>1</weight>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <tradeTagsToAllow>
+                  <li>Serum</li>
+                </tradeTagsToAllow>
+              </filter>
+              <countRange>8~14</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+        <li>
+          <weight>2</weight>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>Leather_Dread</li>
+                </thingDefs>
+              </filter>
+              <countRange>100~140</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+        <li>
+          <weight>1.7</weight>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>Meat_Twisted</li>
+                </thingDefs>
+              </filter>
+              <countRange>110~150</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+        <li>
+          <weight>0.9</weight>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>Silver</li>
+                </thingDefs>
+              </filter>
+              <countRange>450~700</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+        <li>
+          <weight>0.3</weight>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>Shard</li>
+                </thingDefs>
+              </filter>
+              <countRange>5~7</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li>
+          <weight>0.7</weight>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>FirefoamPopper</li>
+                </thingDefs>
+              </filter>
+              <countRange>1~2</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+		
+        <li>
+          <weight>0.7</weight>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>Lung</li>
+                  <li>Kidney</li>
+                  <li>Heart</li>
+                </thingDefs>
+              </filter>
+              <countRange>3~5</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+      </options>
+    </root>
+  </ThingSetMakerDef>
+
+</Defs>
