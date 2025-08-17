@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="NAT_RustedBullet"]/projectile</xpath>
+		<value>
+			<thingClass>CombatExtended.BulletCE</thingClass>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<damageDef>Bullet</damageDef>
+			</projectile>
+		</value>
+	</Operation>
+
+	<!-- ========== Misc ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="NAT_Bullet_RustedSmall"]/projectile</xpath>
+		<value>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<damageAmountBase>12</damageAmountBase>
+				<armorPenetrationSharp>3.5</armorPenetrationSharp>
+				<armorPenetrationBlunt>10.860</armorPenetrationBlunt>
+				<speed>67</speed>
+			</projectile>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="NAT_Bullet_RustedSmallStop"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="NAT_Bullet_RustedShotgun"]/projectile</xpath>
+		<value>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<damageAmountBase>8</damageAmountBase>
+				<pelletCount>9</pelletCount>
+				<armorPenetrationSharp>4</armorPenetrationSharp>
+				<armorPenetrationBlunt>4.52</armorPenetrationBlunt>
+				<spreadMult>8.9</spreadMult>
+				<speed>83</speed>
+			</projectile>
+			<graphicData>
+				<texPath>Things/Projectile/Shotgun_Pellet</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="NAT_Bullet_RustedMedium"]/projectile</xpath>
+		<value>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<damageAmountBase>20</damageAmountBase>
+				<armorPenetrationSharp>6.5</armorPenetrationSharp>
+				<armorPenetrationBlunt>67</armorPenetrationBlunt>
+				<speed>147</speed>
+			</projectile>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="NAT_Bullet_RustedLarge"]/projectile</xpath>
+		<value>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<damageAmountBase>44</damageAmountBase>
+				<armorPenetrationSharp>30</armorPenetrationSharp>
+				<armorPenetrationBlunt>1029.080</armorPenetrationBlunt>
+				<speed>182</speed>
+			</projectile>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="NAT_Bullet_RustedHighVelocity"]/projectile</xpath>
+		<value>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>105</damageAmountBase>
+			<armorPenetrationSharp>70</armorPenetrationSharp>
+			<armorPenetrationBlunt>6502.5</armorPenetrationBlunt>
+			<speed>158</speed>
+			</projectile>
+		</value>
+	</Operation>
+
+</Patch>

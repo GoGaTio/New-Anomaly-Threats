@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- ========== Shambler ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="NAT_HediffCollector"]/stages</xpath>
+		<value>
+			<stages>
+      <li>
+		<painOffset>-0.85</painOffset>
+		<minSeverity>0</minSeverity>
+        <regeneration>75</regeneration>
+        <showRegenerationStat>false</showRegenerationStat>
+      </li>
+	  <li>
+	    <label>rage</label>
+		<painFactor>0</painFactor>
+	    <minSeverity>0.6</minSeverity>
+        <regeneration>250</regeneration>
+        <showRegenerationStat>false</showRegenerationStat>
+		<statFactors>
+          <MoveSpeed>2</MoveSpeed>
+		  <MeleeCooldownFactor>0.6</MeleeCooldownFactor>
+		  <MeleeDamageFactor>1.5</MeleeDamageFactor>
+		  <StaggerDurationFactor>0</StaggerDurationFactor>
+			<IncomingDamageFactor>0.7</IncomingDamageFactor>
+        </statFactors>
+		<statOffsets>
+	      <MeleeHitChance>4</MeleeHitChance>
+	    </statOffsets>
+		<damageFactors>
+          <Flame>0.25</Flame>
+          <Burn>0.25</Burn>
+          <PrometheumFlame>0.25</PrometheumFlame>
+			<Flame_Secondary>0.25</Flame_Secondary>
+        </damageFactors>
+	  </li>
+	  <li>
+	    <label>rage</label>
+		<painFactor>0</painFactor>
+	    <minSeverity>0.75</minSeverity>
+        <regeneration>500</regeneration>
+        <showRegenerationStat>false</showRegenerationStat>
+		<statFactors>
+          <MoveSpeed>3</MoveSpeed>
+		  <MeleeCooldownFactor>0.3</MeleeCooldownFactor>
+		  <MeleeDamageFactor>2</MeleeDamageFactor>
+		  <StaggerDurationFactor>0</StaggerDurationFactor>
+			<IncomingDamageFactor>0.5</IncomingDamageFactor>
+        </statFactors>
+		<statOffsets>
+	      <MeleeHitChance>7</MeleeHitChance>
+	    </statOffsets>
+		<damageFactors>
+          <Flame>0.1</Flame>
+          <Burn>0.1</Burn>
+          <PrometheumFlame>0.1</PrometheumFlame>
+			<Flame_Secondary>0.1</Flame_Secondary>
+        </damageFactors>
+	  </li>
+	  <li>
+	    <label>rage</label>
+		<painFactor>0</painFactor>
+	    <minSeverity>0.9</minSeverity>
+        <regeneration>1200</regeneration>
+        <showRegenerationStat>false</showRegenerationStat>
+		<statFactors>
+          <MoveSpeed>5</MoveSpeed>
+		  <MeleeCooldownFactor>0.1</MeleeCooldownFactor>
+		  <MeleeDamageFactor>3</MeleeDamageFactor>
+		  <StaggerDurationFactor>0</StaggerDurationFactor>
+			<IncomingDamageFactor>0.35</IncomingDamageFactor>
+        </statFactors>
+		<statOffsets>
+	      <MeleeHitChance>10</MeleeHitChance>
+	    </statOffsets>
+		<damageFactors>
+          <Flame>0.05</Flame>
+          <Burn>0.05</Burn>
+           <PrometheumFlame>0.05</PrometheumFlame>
+			<Flame_Secondary>0.05</Flame_Secondary>
+        </damageFactors>
+	  </li>
+    </stages>
+		</value>
+	</Operation>
+
+	<!-- ========== Ghoul ========== -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="Ghoul"]/stages/li/statFactors</xpath>
+		<value>
+			<Suppressability>0</Suppressability>
+			<SmokeSensitivity>0.5</SmokeSensitivity>
+			<IncomingDamageFactor>0.75</IncomingDamageFactor>
+		</value>
+	</Operation>
+
+	<!-- ========== Awoken Corpse ========== -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="AwokenCorpse"]/stages/*/statFactors</xpath>
+		<value>
+			<Suppressability>0</Suppressability>
+			<SmokeSensitivity>0</SmokeSensitivity>
+		</value>
+	</Operation>
+
+</Patch>
