@@ -2,9 +2,9 @@
 <LanguageData>
   
   <!-- EN: rust creation -->
-  <NAT_RustedSoldiers.label>rust creation</NAT_RustedSoldiers.label>
+  <NAT_RustedSoldiers.label>создание ржавчины</NAT_RustedSoldiers.label>
   <!-- EN: Perform a psychic ritual which creates controlled rust from bioferrite and shards. -->
-  <NAT_RustedSoldiers.description>Perform a psychic ritual which creates controlled rust from bioferrite and shards.</NAT_RustedSoldiers.description>
+  <NAT_RustedSoldiers.description>Проводите псионические ритуалы, которые создают живую ржавчину из биоферрита и осколков.</NAT_RustedSoldiers.description>
   <!-- EN:
     <li>subject->rusted soldiers</li>
     <li>subject->bioferrite soldiers</li>
@@ -18,9 +18,9 @@
     <li>subject_gerund->creating army of bioferrite warriors</li>
   -->
   <NAT_RustedSoldiers.generalRules.rulesStrings>
-    <li>subject->rusted soldiers</li>
-    <li>subject->bioferrite soldiers</li>
-    <li>subject->controlled rusts</li>
+    <li>subject->ржавые солдаты</li>
+    <li>subject->биоферритовые войны</li>
+    <li>subject->живая ржавчина</li>
     <li>subject_story->computer-modelled archotech possibility spaces</li>
     <li>subject_story->was employed by a sibyl to sculpt her dreams</li>
     <li>subject_story->wanted to bring sculptures to life</li>

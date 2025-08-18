@@ -2,42 +2,36 @@
 <LanguageData>
   
   <!-- EN: rusted assault shotgun -->
-  <NAT_Gun_RustedAssaultShotgun.label>rusted assault shotgun</NAT_Gun_RustedAssaultShotgun.label>
+  <NAT_Gun_RustedAssaultShotgun.label>ржавый штурмовой дробовик</NAT_Gun_RustedAssaultShotgun.label>
   <!-- EN: A piece of bioferrite shaped like a large chain shotgun.\n\nSomehow can shoot if wielded by rusted creature. -->
-  <NAT_Gun_RustedAssaultShotgun.description>A piece of bioferrite shaped like a large chain shotgun.
-
-Somehow can shoot if wielded by rusted creature.</NAT_Gun_RustedAssaultShotgun.description>
+  <NAT_Gun_RustedAssaultShotgun.description>Кусок биоферрита в форме большого авто-дробовика.\n\nМожет стрелять, если используется ржавым созданием.</NAT_Gun_RustedAssaultShotgun.description>
   <!-- EN: stock -->
-  <NAT_Gun_RustedAssaultShotgun.tools.stock.label>stock</NAT_Gun_RustedAssaultShotgun.tools.stock.label>
+  <NAT_Gun_RustedAssaultShotgun.tools.stock.label>приклад</NAT_Gun_RustedAssaultShotgun.tools.stock.label>
   <!-- EN: barrel -->
-  <NAT_Gun_RustedAssaultShotgun.tools.barrel.label>barrel</NAT_Gun_RustedAssaultShotgun.tools.barrel.label>
+  <NAT_Gun_RustedAssaultShotgun.tools.barrel.label>ствол</NAT_Gun_RustedAssaultShotgun.tools.barrel.label>
   <!-- EN: rusted assault shotgun -->
-  <NAT_Gun_RustedAssaultShotgun.verbs.Verb_Shoot.label>rusted assault shotgun</NAT_Gun_RustedAssaultShotgun.verbs.Verb_Shoot.label>
+  <NAT_Gun_RustedAssaultShotgun.verbs.Verb_Shoot.label>ржавый штурмовой дробовик</NAT_Gun_RustedAssaultShotgun.verbs.Verb_Shoot.label>
   
   <!-- EN: rusted machine gun -->
-  <NAT_Gun_RustedMachineGun.label>rusted machine gun</NAT_Gun_RustedMachineGun.label>
+  <NAT_Gun_RustedMachineGun.label>ржавый пулемёт</NAT_Gun_RustedMachineGun.label>
   <!-- EN: A piece of bioferrite shaped like a machine gun.\n\nSomehow can shoot if wielded by rusted creature. -->
-  <NAT_Gun_RustedMachineGun.description>A piece of bioferrite shaped like a machine gun.
-
-Somehow can shoot if wielded by rusted creature.</NAT_Gun_RustedMachineGun.description>
+  <NAT_Gun_RustedMachineGun.description>Кусок биоферрита в форме тяжёлого пулемёта.\n\nМожет стрелять, если используется ржавым созданием.</NAT_Gun_RustedMachineGun.description>
   <!-- EN: stock -->
-  <NAT_Gun_RustedMachineGun.tools.stock.label>stock</NAT_Gun_RustedMachineGun.tools.stock.label>
+  <NAT_Gun_RustedMachineGun.tools.stock.label>приклад</NAT_Gun_RustedMachineGun.tools.stock.label>
   <!-- EN: barrel -->
-  <NAT_Gun_RustedMachineGun.tools.barrel.label>barrel</NAT_Gun_RustedMachineGun.tools.barrel.label>
+  <NAT_Gun_RustedMachineGun.tools.barrel.label>ствол</NAT_Gun_RustedMachineGun.tools.barrel.label>
   <!-- EN: rusted machine gun -->
-  <NAT_Gun_RustedMachineGun.verbs.Verb_Shoot.label>rusted machine gun</NAT_Gun_RustedMachineGun.verbs.Verb_Shoot.label>
+  <NAT_Gun_RustedMachineGun.verbs.Verb_Shoot.label>ржавый пулемёт</NAT_Gun_RustedMachineGun.verbs.Verb_Shoot.label>
   
   <!-- EN: rusted sniper rifle -->
-  <NAT_Gun_RustedSniperRifle.label>rusted sniper rifle</NAT_Gun_RustedSniperRifle.label>
+  <NAT_Gun_RustedSniperRifle.label>ржавая снайперская винтовка</NAT_Gun_RustedSniperRifle.label>
   <!-- EN: A piece of bioferrite shaped like a bolt-action rifle.\n\nSomehow can shoot if wielded by rusted creature. -->
-  <NAT_Gun_RustedSniperRifle.description>A piece of bioferrite shaped like a bolt-action rifle.
-
-Somehow can shoot if wielded by rusted creature.</NAT_Gun_RustedSniperRifle.description>
+  <NAT_Gun_RustedSniperRifle.description>Кусок биоферрита в форме .\n\nМожет стрелять, если используется ржавым созданием.</NAT_Gun_RustedSniperRifle.description>
   <!-- EN: stock -->
-  <NAT_Gun_RustedSniperRifle.tools.stock.label>stock</NAT_Gun_RustedSniperRifle.tools.stock.label>
+  <NAT_Gun_RustedSniperRifle.tools.stock.label>приклад</NAT_Gun_RustedSniperRifle.tools.stock.label>
   <!-- EN: barrel -->
-  <NAT_Gun_RustedSniperRifle.tools.barrel.label>barrel</NAT_Gun_RustedSniperRifle.tools.barrel.label>
+  <NAT_Gun_RustedSniperRifle.tools.barrel.label>ствол</NAT_Gun_RustedSniperRifle.tools.barrel.label>
   <!-- EN: rusted sniper rifle -->
-  <NAT_Gun_RustedSniperRifle.verbs.Verb_Shoot.label>rusted sniper rifle</NAT_Gun_RustedSniperRifle.verbs.Verb_Shoot.label>
+  <NAT_Gun_RustedSniperRifle.verbs.Verb_Shoot.label>ржавая снайперская винтовка</NAT_Gun_RustedSniperRifle.verbs.Verb_Shoot.label>
   
 </LanguageData>

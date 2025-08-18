@@ -2,18 +2,18 @@
 <LanguageData>
   
   <!-- EN: Wounds - pre apparel -->
-  <NAT_RustedPawn.root.children.0.children.0.debugLabel>Wounds - pre apparel</NAT_RustedPawn.root.children.0.children.0.debugLabel>
+  <NAT_RustedPawn.root.children.0.children.0.debugLabel>Раны - до одежды</NAT_RustedPawn.root.children.0.children.0.debugLabel>
   <!-- EN: Apparel root -->
-  <NAT_RustedPawn.root.children.0.children.1.debugLabel>Apparel root</NAT_RustedPawn.root.children.0.children.1.debugLabel>
+  <NAT_RustedPawn.root.children.0.children.1.debugLabel>Одежда</NAT_RustedPawn.root.children.0.children.1.debugLabel>
   <!-- EN: Wounds - post apparel -->
-  <NAT_RustedPawn.root.children.0.children.2.debugLabel>Wounds - post apparel</NAT_RustedPawn.root.children.0.children.2.debugLabel>
+  <NAT_RustedPawn.root.children.0.children.2.debugLabel>Раны - после одежды</NAT_RustedPawn.root.children.0.children.2.debugLabel>
   <!-- EN: Head wounds -->
-  <NAT_RustedPawn.root.children.1.children.0.debugLabel>Head wounds</NAT_RustedPawn.root.children.1.children.0.debugLabel>
+  <NAT_RustedPawn.root.children.1.children.0.debugLabel>Раны головы</NAT_RustedPawn.root.children.1.children.0.debugLabel>
   <!-- EN: Apparel root -->
-  <NAT_RustedPawn.root.children.1.children.1.debugLabel>Apparel root</NAT_RustedPawn.root.children.1.children.1.debugLabel>
+  <NAT_RustedPawn.root.children.1.children.1.debugLabel>Одежда</NAT_RustedPawn.root.children.1.children.1.debugLabel>
   <!-- EN: Status overlay -->
-  <NAT_RustedPawn.root.children.1.children.3.debugLabel>Status overlay</NAT_RustedPawn.root.children.1.children.3.debugLabel>
+  <NAT_RustedPawn.root.children.1.children.3.debugLabel>Оверлей</NAT_RustedPawn.root.children.1.children.3.debugLabel>
   <!-- EN: Weapon/carried thing -->
-  <NAT_RustedPawn.root.children.2.debugLabel>Weapon/carried thing</NAT_RustedPawn.root.children.2.debugLabel>
+  <NAT_RustedPawn.root.children.2.debugLabel>Оружие/переносимый предмет</NAT_RustedPawn.root.children.2.debugLabel>
   
 </LanguageData>

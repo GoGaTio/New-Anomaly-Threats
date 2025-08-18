@@ -44,46 +44,46 @@
     <li>subjectRustAbstract->the freedom</li>
   -->
   <NAT_RustedDialogue.rulePack.rulesStrings>
-    <li>placeAdj->western</li>
-    <li>placeAdj->eastern</li>
-    <li>placeAdj->northern</li>
-    <li>placeAdj->southern</li>
-    <li>placeAdj->highland</li>
-    <li>placeAdj->coastal</li>
-    <li>placeRust->the Citadel</li>
-    <li>placeRust->the Collector's lair</li>
-    <li>placeRust->rusted fortress</li>
-    <li>placeRust->abandoned city</li>
-    <li>placeRust->the [placeAdj] outpost</li>
-    <li>placeRust->the basement</li>
-    <li>subjectRust->danger of fire</li>
-    <li>subjectRust->bioferrite</li>
-    <li>subjectRust->new rust</li>
-    <li>subjectRust->mechanoids</li>
-    <li>subjectRust->pain</li>
-    <li>subjectRust->sieges</li>
-    <li>subjectRust->raids</li>
-    <li>subjectRust->cultists</li>
-    <li>subjectRust->waffers</li>
-    <li>subjectRust->dust</li>
-    <li>subjectRust->waiting</li>
-    <li>subjectRust->languages</li>
-    <li>subjectRust->armor</li>
-    <li>subjectRust->needles</li>
-    <li>subjectRustAbstract->greatness of rust</li>
-    <li>subjectRustAbstract->building of the Citadel</li>
-    <li>subjectRustAbstract->the Fieldmarshal</li>
+    <li>placeAdj->западный</li>
+    <li>placeAdj->восточный</li>
+    <li>placeAdj->северный</li>
+    <li>placeAdj->южный</li>
+    <li>placeAdj->высокогорный</li>
+    <li>placeAdj->прибрежный</li>
+    <li>placeRust->Цитадель</li>
+    <li>placeRust->логово коллекционера</li>
+    <li>placeRust->ржавую крепость</li>
+    <li>placeRust->заброшенный город</li>
+    <li>placeRust->[placeAdj] блокпост</li>
+    <li>placeRust->подвал</li>
+    <li>subjectRust->опасность огня</li>
+    <li>subjectRust->биоферрит</li>
+    <li>subjectRust->новую ржавчину</li>
+    <li>subjectRust->механоидов</li>
+    <li>subjectRust->боль</li>
+    <li>subjectRust->осады</li>
+    <li>subjectRust->налёты</li>
+    <li>subjectRust->культистов</li>
+    <li>subjectRust->вафли</li>
+    <li>subjectRust->пыль</li>
+    <li>subjectRust->ожидание</li>
+    <li>subjectRust->языки</li>
+    <li>subjectRust->броню</li>
+    <li>subjectRust->иглы</li>
+    <li>subjectRustAbstract->величие ржавчины</li>
+    <li>subjectRustAbstract->строительство Цитадели</li>
+    <li>subjectRustAbstract->Фельдмаршала</li>
     <li>subjectRustAbstract->WD-40</li>
-    <li>subjectRustAbstract->the death</li>
-    <li>subjectRustAbstract->the G.O.D.</li>
-    <li>subjectRustAbstract->the Hate</li>
-    <li>subjectRustAbstract->the raining frogs</li>
-    <li>subjectRustAbstract->the dust in the sky</li>
-    <li>subjectRustAbstract->the sweetness of blood</li>
-    <li>subjectRustAbstract->the basements</li>
-    <li>subjectRustAbstract->the future</li>
-    <li>subjectRustAbstract->the past</li>
-    <li>subjectRustAbstract->the freedom</li>
+    <li>subjectRustAbstract->смерть</li>
+    <li>subjectRustAbstract->Б.О.Г.а</li>
+    <li>subjectRustAbstract->Злобу</li>
+    <li>subjectRustAbstract->дождь из лягух</li>
+    <li>subjectRustAbstract->пыль в небесах</li>
+    <li>subjectRustAbstract->сладость крови</li>
+    <li>subjectRustAbstract->подвалы</li>
+    <li>subjectRustAbstract->будущее</li>
+    <li>subjectRustAbstract->прошлое</li>
+    <li>subjectRustAbstract->свободу</li>
   </NAT_RustedDialogue.rulePack.rulesStrings>
   
 </LanguageData>

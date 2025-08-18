@@ -2,62 +2,60 @@
 <LanguageData>
   
   <!-- EN: bile gland -->
-  <NAT_BileGland.label>bile gland</NAT_BileGland.label>
+  <NAT_BileGland.label>желчная железа</NAT_BileGland.label>
   <!-- EN: A small hollow organ where bile is stored and produced before it is released onto serpent enemies. -->
-  <NAT_BileGland.description>A small hollow organ where bile is stored and produced before it is released onto serpent enemies.</NAT_BileGland.description>
+  <NAT_BileGland.description>Небольшой полый орган хранящий и производящий желчь.</NAT_BileGland.description>
   
   <!-- EN: collector notes -->
-  <NAT_CollectorNotes.label>collector notes</NAT_CollectorNotes.label>
+  <NAT_CollectorNotes.label>записки коллекционера</NAT_CollectorNotes.label>
   <!-- EN: Piece of leather with unreadable symbols. -->
-  <NAT_CollectorNotes.description>Piece of leather with unreadable symbols.</NAT_CollectorNotes.description>
+  <NAT_CollectorNotes.description>Кусок тёмной кожи с нанесёнными нечитаемыми символами.</NAT_CollectorNotes.description>
   <!-- EN: Collector's notes study progress -->
-  <NAT_CollectorNotes.comps.CompStudyUnlocks.studyNotes.0.label>Collector's notes study progress</NAT_CollectorNotes.comps.CompStudyUnlocks.studyNotes.0.label>
-  <!-- EN: Investigation of the strange bag has revealed some information. It seems that this bag has a connection with a pocket dimension where the stolen items ended up.\n\n{PAWN_nameDef} believes that he can find, open this dimension and get things, but for this he wants to conduct additional research. -->
-  <NAT_CollectorNotes.comps.CompStudyUnlocks.studyNotes.0.text>Investigation of the strange bag has revealed some information. It seems that this bag has a connection with a pocket dimension where the stolen items ended up.
-
-{PAWN_nameDef} believes that he can find, open this dimension and get things, but for this he wants to conduct additional research.</NAT_CollectorNotes.comps.CompStudyUnlocks.studyNotes.0.text>
+  <NAT_CollectorNotes.comps.CompStudyUnlocks.studyNotes.0.label>Прогресс в изучении записей коллекционера</NAT_CollectorNotes.comps.CompStudyUnlocks.studyNotes.0.label>
+  <!-- EN: Investigation of the strange symbols has revealed some information. It seems that these notes designate location of all stolen things.\n\n{PAWN_nameDef} believes that he can find out, how to decrypt it. -->
+  <NAT_CollectorNotes.comps.CompStudyUnlocks.studyNotes.0.text>Исследование записей коллекционера дало некоторую информацию. Предположительно их значение указывает на местоположение всего украденного.\n\n{PAWN_nameDef} считает что сможет найти способ расшифровать символы.</NAT_CollectorNotes.comps.CompStudyUnlocks.studyNotes.0.text>
   <!-- EN: Collector's notes study complete -->
-  <NAT_CollectorNotes.comps.CompStudyUnlocks.studyNotes.1.label>Collector's notes study complete</NAT_CollectorNotes.comps.CompStudyUnlocks.studyNotes.1.label>
-  <!-- EN: {PAWN_nameDef} has completed {PAWN_possessive} studying. {PAWN_pronoun} finds a way to open the pocket dimension associated with it. Order someone to peruse them. -->
-  <NAT_CollectorNotes.comps.CompStudyUnlocks.studyNotes.1.text>{PAWN_nameDef} has completed {PAWN_possessive} studying. {PAWN_pronoun} finds a way to open the pocket dimension associated with it. Order someone to peruse them.</NAT_CollectorNotes.comps.CompStudyUnlocks.studyNotes.1.text>
+  <NAT_CollectorNotes.comps.CompStudyUnlocks.studyNotes.1.label>Изучение записей коллекционера завершено</NAT_CollectorNotes.comps.CompStudyUnlocks.studyNotes.1.label>
+  <!-- EN: {PAWN_nameDef} has completed {PAWN_possessive} studying. {PAWN_pronoun} finds a way to decrypt the notes. Order someone to peruse them. -->
+  <NAT_CollectorNotes.comps.CompStudyUnlocks.studyNotes.1.text>{PAWN_nameDef} завершает изучение таинственных символов. Теперь {PAWN_pronoun} знает как их расшифровать, отправьте кого-нибудь сделать это.</NAT_CollectorNotes.comps.CompStudyUnlocks.studyNotes.1.text>
   <!-- EN: Order someone to decrypt notes. -->
-  <NAT_CollectorNotes.comps.CompCollectorNotes.activateDescString>Order someone to decrypt notes.</NAT_CollectorNotes.comps.CompCollectorNotes.activateDescString>
+  <NAT_CollectorNotes.comps.CompCollectorNotes.activateDescString>Отправьте кого-нибудь расшифровать записи.</NAT_CollectorNotes.comps.CompCollectorNotes.activateDescString>
   <!-- EN: Order notes decrypting -->
-  <NAT_CollectorNotes.comps.CompCollectorNotes.activateLabelString>Order notes decrypting</NAT_CollectorNotes.comps.CompCollectorNotes.activateLabelString>
+  <NAT_CollectorNotes.comps.CompCollectorNotes.activateLabelString>Расшифровать записи</NAT_CollectorNotes.comps.CompCollectorNotes.activateLabelString>
   <!-- EN: decrypting notes -->
-  <NAT_CollectorNotes.comps.CompCollectorNotes.activatingString>decrypting notes</NAT_CollectorNotes.comps.CompCollectorNotes.activatingString>
+  <NAT_CollectorNotes.comps.CompCollectorNotes.activatingString>расшифровывает записи</NAT_CollectorNotes.comps.CompCollectorNotes.activatingString>
   <!-- EN: decrypting notes -->
-  <NAT_CollectorNotes.comps.CompCollectorNotes.activatingStringPending>decrypting notes</NAT_CollectorNotes.comps.CompCollectorNotes.activatingStringPending>
+  <NAT_CollectorNotes.comps.CompCollectorNotes.activatingStringPending>расшифровывает записи</NAT_CollectorNotes.comps.CompCollectorNotes.activatingStringPending>
   <!-- EN: Choose who should decrypt notes. -->
-  <NAT_CollectorNotes.comps.CompCollectorNotes.guiLabelString>Choose who should decrypt notes.</NAT_CollectorNotes.comps.CompCollectorNotes.guiLabelString>
+  <NAT_CollectorNotes.comps.CompCollectorNotes.guiLabelString>Выберите кто должен расшифровать записи.</NAT_CollectorNotes.comps.CompCollectorNotes.guiLabelString>
   <!-- EN: decrypt notes -->
-  <NAT_CollectorNotes.comps.CompCollectorNotes.jobString>decrypt notes</NAT_CollectorNotes.comps.CompCollectorNotes.jobString>
+  <NAT_CollectorNotes.comps.CompCollectorNotes.jobString>расшифровать записи</NAT_CollectorNotes.comps.CompCollectorNotes.jobString>
   
   <!-- EN: dark archochunk -->
-  <NAT_HoraxChunk.label>dark archochunk</NAT_HoraxChunk.label>
+  <NAT_HoraxChunk.label>тёмный архо-обломок</NAT_HoraxChunk.label>
   <!-- EN: A chunk of steel slag. While it's useless in its current form, it can be smelted to recover steel. -->
   <NAT_HoraxChunk.description>A chunk of steel slag. While it's useless in its current form, it can be smelted to recover steel.</NAT_HoraxChunk.description>
   
   <!-- EN: pain clot -->
-  <NAT_PainClot.label>pain clot</NAT_PainClot.label>
+  <NAT_PainClot.label>сгусток боли</NAT_PainClot.label>
   <!-- EN: A piece of clotted pain. -->
-  <NAT_PainClot.description>A piece of clotted pain.</NAT_PainClot.description>
+  <NAT_PainClot.description>Обломки сгущённой боли.</NAT_PainClot.description>
   
   <!-- EN: core of rust -->
-  <NAT_RustedCore.label>core of rust</NAT_RustedCore.label>
+  <NAT_RustedCore.label>ядро ржавчины</NAT_RustedCore.label>
   <!-- EN: A small metal icosahedron. Slowly grows bioferrite on surface. -->
-  <NAT_RustedCore.description>A small metal icosahedron. Slowly grows bioferrite on surface.</NAT_RustedCore.description>
+  <NAT_RustedCore.description>Небольшой экосаэдр из скользкого тёмного металла. Медленно обрастает биоферритом.</NAT_RustedCore.description>
   <!-- EN: None -->
   <NAT_RustedCore.comps.CompDestroyRustedCore.activateDescString>None</NAT_RustedCore.comps.CompDestroyRustedCore.activateDescString>
   <!-- EN: None -->
   <NAT_RustedCore.comps.CompDestroyRustedCore.activateLabelString>None</NAT_RustedCore.comps.CompDestroyRustedCore.activateLabelString>
   <!-- EN: destroying {0}: {1}s -->
-  <NAT_RustedCore.comps.CompDestroyRustedCore.activatingString>destroying {0}: {1}s</NAT_RustedCore.comps.CompDestroyRustedCore.activatingString>
+  <NAT_RustedCore.comps.CompDestroyRustedCore.activatingString>уничтожает {0}: {1}s</NAT_RustedCore.comps.CompDestroyRustedCore.activatingString>
   <!-- EN: destroying {0} -->
-  <NAT_RustedCore.comps.CompDestroyRustedCore.activatingStringPending>destroying {0}</NAT_RustedCore.comps.CompDestroyRustedCore.activatingStringPending>
+  <NAT_RustedCore.comps.CompDestroyRustedCore.activatingStringPending>уничтожает {0}</NAT_RustedCore.comps.CompDestroyRustedCore.activatingStringPending>
   <!-- EN: Choose who should destroy this. -->
-  <NAT_RustedCore.comps.CompDestroyRustedCore.guiLabelString>Choose who should destroy this.</NAT_RustedCore.comps.CompDestroyRustedCore.guiLabelString>
+  <NAT_RustedCore.comps.CompDestroyRustedCore.guiLabelString>Выберите кто должен уничтожить это ядро.</NAT_RustedCore.comps.CompDestroyRustedCore.guiLabelString>
   <!-- EN: destroy -->
-  <NAT_RustedCore.comps.CompDestroyRustedCore.jobString>destroy</NAT_RustedCore.comps.CompDestroyRustedCore.jobString>
+  <NAT_RustedCore.comps.CompDestroyRustedCore.jobString>уничтожить</NAT_RustedCore.comps.CompDestroyRustedCore.jobString>
   
 </LanguageData>

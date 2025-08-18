@@ -2,8 +2,8 @@
 <LanguageData>
   
   <!-- EN: sleep -->
-  <NAT_RustRest.label>sleep</NAT_RustRest.label>
+  <NAT_RustRest.label>сон</NAT_RustRest.label>
   <!-- EN: Sleep is how much time a creature has spent sleeping recently. If it is at zero, a creature will eventually fall asleep on the spot. -->
-  <NAT_RustRest.description>Sleep is how much time a creature has spent sleeping recently. If it is at zero, a creature will eventually fall asleep on the spot.</NAT_RustRest.description>
+  <NAT_RustRest.description>Описание должно генерироваться в процессе игры, если вы видите это, обратитесь к разработчику мода.</NAT_RustRest.description>
   
 </LanguageData>

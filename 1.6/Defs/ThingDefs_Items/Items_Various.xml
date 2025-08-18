@@ -92,12 +92,12 @@
           <li> 
             <threshold>2</threshold> 
             <label>Collector's notes study progress</label> 
-            <text>Investigation of the strange bag has revealed some information. It seems that this bag has a connection with a pocket dimension where the stolen items ended up.\n\n{PAWN_nameDef} believes that he can find, open this dimension and get things, but for this he wants to conduct additional research.</text> 
+            <text>Investigation of the strange symbols has revealed some information. It seems that these notes designate location of all stolen things.\n\n{PAWN_nameDef} believes that he can find out, how to decrypt it.</text> 
           </li> 
           <li> 
             <threshold>8</threshold> 
             <label>Collector's notes study complete</label> 
-            <text>{PAWN_nameDef} has completed {PAWN_possessive} studying. {PAWN_pronoun} finds a way to open the pocket dimension associated with it. Order someone to peruse them.</text> 
+            <text>{PAWN_nameDef} has completed {PAWN_possessive} studying. {PAWN_pronoun} finds a way to decrypt the notes. Order someone to peruse them.</text> 
           </li> 
         </studyNotes> 
       </li> 

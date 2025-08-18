@@ -2,8 +2,8 @@
 <LanguageData>
   
   <!-- EN: shard upgrade -->
-  <NAT_ShardUpgrade.label>shard upgrade</NAT_ShardUpgrade.label>
+  <NAT_ShardUpgrade.label>осколочное улучшение</NAT_ShardUpgrade.label>
   <!-- EN: This rusted soldier is upgraded using shard of dark archotechnology. -->
-  <NAT_ShardUpgrade.description>This rusted soldier is upgraded using shard of dark archotechnology.</NAT_ShardUpgrade.description>
+  <NAT_ShardUpgrade.description>Этот ржавый солдат улучшен осколком.</NAT_ShardUpgrade.description>
   
 </LanguageData>

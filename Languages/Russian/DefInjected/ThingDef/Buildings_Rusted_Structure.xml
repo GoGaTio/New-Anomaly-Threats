@@ -2,18 +2,18 @@
 <LanguageData>
   
   <!-- EN: rusted door -->
-  <NAT_RustedDoor.label>rusted door</NAT_RustedDoor.label>
+  <NAT_RustedDoor.label>ржавая дверь</NAT_RustedDoor.label>
   <!-- EN: A rusted door. -->
-  <NAT_RustedDoor.description>A rusted door.</NAT_RustedDoor.description>
+  <NAT_RustedDoor.description>Ржавая дверь.</NAT_RustedDoor.description>
   
   <!-- EN: rusted door -->
-  <NAT_RustedDoor_Double.label>rusted door</NAT_RustedDoor_Double.label>
+  <NAT_RustedDoor_Double.label>ржавая дверь</NAT_RustedDoor_Double.label>
   <!-- EN: A large rusted door. -->
-  <NAT_RustedDoor_Double.description>A large rusted door.</NAT_RustedDoor_Double.description>
+  <NAT_RustedDoor_Double.description>Большая ржавая дверь.</NAT_RustedDoor_Double.description>
   
   <!-- EN: rusted wall -->
-  <NAT_RustedWall.label>rusted wall</NAT_RustedWall.label>
+  <NAT_RustedWall.label>ржавая стена</NAT_RustedWall.label>
   <!-- EN: A solid rusted wall. -->
-  <NAT_RustedWall.description>A solid rusted wall.</NAT_RustedWall.description>
+  <NAT_RustedWall.description>Плотная ржавая стена.</NAT_RustedWall.description>
   
 </LanguageData>

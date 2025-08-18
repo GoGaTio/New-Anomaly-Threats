@@ -5,13 +5,13 @@
     <li>questDescription->collector</li>
   -->
   <NAT_CollectorScript.questDescriptionRules.rulesStrings>
-    <li>questDescription->collector</li>
+    <li>questDescription->коллекционер</li>
   </NAT_CollectorScript.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->collector</li>
   -->
   <NAT_CollectorScript.questNameRules.rulesStrings>
-    <li>questName->collector</li>
+    <li>questName->коллекционер</li>
   </NAT_CollectorScript.questNameRules.rulesStrings>
   
 </LanguageData>

@@ -2,14 +2,14 @@
 <LanguageData>
   
   <!-- EN: allowed area -->
-  <NAT_AllowedAreaRusts.label>allowed area</NAT_AllowedAreaRusts.label>
+  <NAT_AllowedAreaRusts.label>доступные области</NAT_AllowedAreaRusts.label>
   <!-- EN: Allowed areas only apply for rusted soldiers. -->
-  <NAT_AllowedAreaRusts.headerTip>Allowed areas only apply for rusted soldiers.</NAT_AllowedAreaRusts.headerTip>
+  <NAT_AllowedAreaRusts.headerTip>Доступные области применимы только к ржавчинам.</NAT_AllowedAreaRusts.headerTip>
   
   <!-- EN: draft -->
-  <NAT_DraftRusts.label>draft</NAT_DraftRusts.label>
+  <NAT_DraftRusts.label>режим призыва</NAT_DraftRusts.label>
   
   <!-- EN: health -->
-  <NAT_HealthRusts.label>health</NAT_HealthRusts.label>
+  <NAT_HealthRusts.label>здоровье</NAT_HealthRusts.label>
   
 </LanguageData>

@@ -2,22 +2,20 @@
 <LanguageData>
   
   <!-- EN: bile serpent -->
-  <NAT_BileSerpent.label>bile serpent</NAT_BileSerpent.label>
+  <NAT_BileSerpent.label>желчный змей</NAT_BileSerpent.label>
   
   <!-- EN: collector -->
-  <NAT_Collector.label>collector</NAT_Collector.label>
+  <NAT_Collector.label>коллекционер</NAT_Collector.label>
   
   <!-- EN: crannied obelisk -->
-  <NAT_CranniedObelisk.label>crannied obelisk</NAT_CranniedObelisk.label>
+  <NAT_CranniedObelisk.label>потрескавшийся обелиск</NAT_CranniedObelisk.label>
   
   <!-- EN: rusted army -->
-  <NAT_RustedArmy.label>rusted army</NAT_RustedArmy.label>
+  <NAT_RustedArmy.label>Ржавая армия</NAT_RustedArmy.label>
   <!-- EN: Alive bioferrite pieces, behaving like some kind of military organization. Rough bioferrite bodies make them tough, but also very flammable.\n\nOutlander researchers don't fully understand the nature of rusted creatures, their goals and function mechanism, but designate that rusts have signs of separation from Horax mind. -->
-  <NAT_RustedArmy.description>Alive bioferrite pieces, behaving like some kind of military organization. Rough bioferrite bodies make them tough, but also very flammable.
-
-Outlander researchers don't fully understand the nature of rusted creatures, their goals and function mechanism, but designate that rusts have signs of separation from Horax mind.</NAT_RustedArmy.description>
+  <NAT_RustedArmy.description>Куски ржавого биоферрита, ведущие себя как какая-то организация военного толка. Грубые биоферритовые тела делают их крепкими, но легковоспаменяющимися.\n\nУчёные-чужеземцы не до конца понимают их природу, но выделяют их среди прочих тварей, как тех, кто обоадает какой-то степенью отдаленности от Хоракса.</NAT_RustedArmy.description>
   
   <!-- EN: rusted mass -->
-  <NAT_RustedMass.label>rusted mass</NAT_RustedMass.label>
+  <NAT_RustedMass.label>ржавая масса</NAT_RustedMass.label>
   
 </LanguageData>

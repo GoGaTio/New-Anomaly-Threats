@@ -2,10 +2,8 @@
 <LanguageData>
   
   <!-- EN: bile heart -->
-  <NAT_BileHeart.label>bile heart</NAT_BileHeart.label>
+  <NAT_BileHeart.label>желчное сердце</NAT_BileHeart.label>
   <!-- EN: A special bioferrite prosthetic that allows the ghoul to spray bile. The prosthetic uses serpent glands to create bile, which can be projected from the ghoul’s mouth.\n\nDue to the extremely painful nature of the prosthetic, only ghouls can tolerate this enhancement. -->
-  <NAT_BileHeart.description>A special bioferrite prosthetic that allows the ghoul to spray bile. The prosthetic uses serpent glands to create bile, which can be projected from the ghoul’s mouth.
-
-Due to the extremely painful nature of the prosthetic, only ghouls can tolerate this enhancement.</NAT_BileHeart.description>
+  <NAT_BileHeart.description>Особый биоферритовый протез, позволяющий упырю разбрызгивать желчь. В камере сердца упыря при помощи желёз змеев вырабатываться желчь, которой он может плеваться.\n\nЧеловек был бы не в силах носить этот протез. Такую страшную боль может стерпеть только упырь.</NAT_BileHeart.description>
   
 </LanguageData>

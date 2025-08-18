@@ -2,22 +2,22 @@
 <LanguageData>
   
   <!-- EN: rusted grenades pack -->
-  <NAT_Apparel_RustedGrenadesPack.label>rusted grenades pack</NAT_Apparel_RustedGrenadesPack.label>
+  <NAT_Apparel_RustedGrenadesPack.label>ранец с ржавыми гранатами</NAT_Apparel_RustedGrenadesPack.label>
   <!-- EN: A wearable pack that deploys a hunter drone. The drone will close with the target and detonate when it is within range. -->
   <NAT_Apparel_RustedGrenadesPack.description>A wearable pack that deploys a hunter drone. The drone will close with the target and detonate when it is within range.</NAT_Apparel_RustedGrenadesPack.description>
   <!-- EN: rusted grenade -->
-  <NAT_Apparel_RustedGrenadesPack.comps.CompApparelReloadable.chargeNoun>rusted grenade</NAT_Apparel_RustedGrenadesPack.comps.CompApparelReloadable.chargeNoun>
+  <NAT_Apparel_RustedGrenadesPack.comps.CompApparelReloadable.chargeNoun>ржавая граната</NAT_Apparel_RustedGrenadesPack.comps.CompApparelReloadable.chargeNoun>
   <!-- EN: on cooldown -->
-  <NAT_Apparel_RustedGrenadesPack.comps.CompApparelReloadable.cooldownGerund>on cooldown</NAT_Apparel_RustedGrenadesPack.comps.CompApparelReloadable.cooldownGerund>
+  <NAT_Apparel_RustedGrenadesPack.comps.CompApparelReloadable.cooldownGerund>перезарядка</NAT_Apparel_RustedGrenadesPack.comps.CompApparelReloadable.cooldownGerund>
   <!-- EN: throw rusted stick grenade -->
-  <NAT_Apparel_RustedGrenadesPack.verbs.throw_rusted_stick_grenade.label>throw rusted stick grenade</NAT_Apparel_RustedGrenadesPack.verbs.throw_rusted_stick_grenade.label>
+  <NAT_Apparel_RustedGrenadesPack.verbs.throw_rusted_stick_grenade.label>кинуть ржавую гранату</NAT_Apparel_RustedGrenadesPack.verbs.throw_rusted_stick_grenade.label>
   
   <!-- EN: rusted stick grenade -->
-  <NAT_Proj_RustedStickGrenade.label>rusted stick grenade</NAT_Proj_RustedStickGrenade.label>
+  <NAT_Proj_RustedStickGrenade.label>ржавая граната</NAT_Proj_RustedStickGrenade.label>
   
   <!-- EN: rusted stick grenade -->
-  <NAT_RustedStickGrenade.label>rusted stick grenade</NAT_RustedStickGrenade.label>
-  <!-- EN: A piece of clotted pain. -->
-  <NAT_RustedStickGrenade.description>A piece of clotted pain.</NAT_RustedStickGrenade.description>
+  <NAT_RustedStickGrenade.label>ржавая граната</NAT_RustedStickGrenade.label>
+  <!-- EN: A rusted stick grenade. Can detonate if used by rusted creature. -->
+  <NAT_RustedStickGrenade.description>Ржавая ручная граната с прочной ручкой.</NAT_RustedStickGrenade.description>
   
 </LanguageData>

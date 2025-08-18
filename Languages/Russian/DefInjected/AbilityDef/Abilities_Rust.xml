@@ -2,28 +2,28 @@
 <LanguageData>
   
   <!-- EN: call rusted auto turret -->
-  <NAT_Reinforcement_AutoTurret.label>call rusted auto turret</NAT_Reinforcement_AutoTurret.label>
+  <NAT_Reinforcement_AutoTurret.label>вызвать ржавую авто-турель</NAT_Reinforcement_AutoTurret.label>
   <!-- EN: Call rusted auto turret as reinforcement from orbital rusted structures. -->
-  <NAT_Reinforcement_AutoTurret.description>Call rusted auto turret as reinforcement from orbital rusted structures.</NAT_Reinforcement_AutoTurret.description>
+  <NAT_Reinforcement_AutoTurret.description>Вызвать подкрепление с орбитальных ржавых структур в виде ржавой авто-турели.</NAT_Reinforcement_AutoTurret.description>
   
   <!-- EN: call rusted guardsmans -->
-  <NAT_Reinforcement_Guardsmans.label>call rusted guardsmans</NAT_Reinforcement_Guardsmans.label>
+  <NAT_Reinforcement_Guardsmans.label>вызвать ржавых гвардейцев</NAT_Reinforcement_Guardsmans.label>
   <!-- EN: Call rusted guardsmans as reinforcements from orbital rusted structures. -->
-  <NAT_Reinforcement_Guardsmans.description>Call rusted guardsmans as reinforcements from orbital rusted structures.</NAT_Reinforcement_Guardsmans.description>
+  <NAT_Reinforcement_Guardsmans.description>Вызвать подкрепление с орбитальных ржавых структур в виде 3 ржавых гвардейцев.</NAT_Reinforcement_Guardsmans.description>
   
   <!-- EN: call rusted mini turret -->
-  <NAT_Reinforcement_MiniTurret.label>call rusted mini turret</NAT_Reinforcement_MiniTurret.label>
+  <NAT_Reinforcement_MiniTurret.label>вызвать ржавую мини-турель</NAT_Reinforcement_MiniTurret.label>
   <!-- EN: Call rusted mini turret as reinforcement from orbital rusted structures. -->
-  <NAT_Reinforcement_MiniTurret.description>Call rusted mini turret as reinforcement from orbital rusted structures.</NAT_Reinforcement_MiniTurret.description>
+  <NAT_Reinforcement_MiniTurret.description>Вызвать подкрепление с орбитальных ржавых структур в виде ржавой мини-турели.</NAT_Reinforcement_MiniTurret.description>
   
   <!-- EN: call rusted sniper turret -->
-  <NAT_Reinforcement_SniperTurret.label>call rusted sniper turret</NAT_Reinforcement_SniperTurret.label>
+  <NAT_Reinforcement_SniperTurret.label>вызвать ржавую снайперскую турель</NAT_Reinforcement_SniperTurret.label>
   <!-- EN: Call rusted sniper turret as reinforcement from orbital rusted structures. -->
-  <NAT_Reinforcement_SniperTurret.description>Call rusted sniper turret as reinforcement from orbital rusted structures.</NAT_Reinforcement_SniperTurret.description>
+  <NAT_Reinforcement_SniperTurret.description>Вызвать подкрепление с орбитальных ржавых структур в виде ржавой снайперской турели.</NAT_Reinforcement_SniperTurret.description>
   
   <!-- EN: call rusted troopers -->
-  <NAT_Reinforcement_Troopers.label>call rusted troopers</NAT_Reinforcement_Troopers.label>
+  <NAT_Reinforcement_Troopers.label>вызвать ржавых десантников</NAT_Reinforcement_Troopers.label>
   <!-- EN: Call rusted troopers as reinforcements from orbital rusted structures. -->
-  <NAT_Reinforcement_Troopers.description>Call rusted troopers as reinforcements from orbital rusted structures.</NAT_Reinforcement_Troopers.description>
+  <NAT_Reinforcement_Troopers.description>Вызвать подкрепление с орбитальных ржавых структур в виде 2 ржавых десантников.</NAT_Reinforcement_Troopers.description>
   
 </LanguageData>

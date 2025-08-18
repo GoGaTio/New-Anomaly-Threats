@@ -2,23 +2,23 @@
 <LanguageData>
   
   <!-- EN: activated charge -->
-  <NAT_ActivatedCharge.label>activated charge</NAT_ActivatedCharge.label>
+  <NAT_ActivatedCharge.label>активированный заряд</NAT_ActivatedCharge.label>
   <!-- EN: This rust consiousness and work speed is amplified by rusted activator. -->
-  <NAT_ActivatedCharge.description>This rust consiousness and work speed is amplified by rusted activator.</NAT_ActivatedCharge.description>
+  <NAT_ActivatedCharge.description>Сознание и скорость работы этой ржавчины усилены ржавым активатором.</NAT_ActivatedCharge.description>
   
   <!-- EN: activated durability -->
-  <NAT_ActivatedDurability.label>activated durability</NAT_ActivatedDurability.label>
+  <NAT_ActivatedDurability.label>активированная прочность</NAT_ActivatedDurability.label>
   <!-- EN: This rust durability is amplified by rusted activator. -->
-  <NAT_ActivatedDurability.description>This rust durability is amplified by rusted activator.</NAT_ActivatedDurability.description>
+  <NAT_ActivatedDurability.description>Прочность этой ржавчины усилена ржавым активатором.</NAT_ActivatedDurability.description>
   
   <!-- EN: actvated regeneration -->
-  <NAT_ActivatedRegeneration.label>actvated regeneration</NAT_ActivatedRegeneration.label>
+  <NAT_ActivatedRegeneration.label>активированная регенерация</NAT_ActivatedRegeneration.label>
   <!-- EN: This rust regeneration is amplified by rusted activator. -->
-  <NAT_ActivatedRegeneration.description>This rust regeneration is amplified by rusted activator.</NAT_ActivatedRegeneration.description>
+  <NAT_ActivatedRegeneration.description>Регенерация этой ржавчины усилена ржавым активатором.</NAT_ActivatedRegeneration.description>
   
   <!-- EN: activated speed -->
-  <NAT_ActivatedSpeed.label>activated speed</NAT_ActivatedSpeed.label>
+  <NAT_ActivatedSpeed.label>активированная скорость</NAT_ActivatedSpeed.label>
   <!-- EN: This rust moving speed is amplified by rusted activator. -->
-  <NAT_ActivatedSpeed.description>This rust moving speed is amplified by rusted activator.</NAT_ActivatedSpeed.description>
+  <NAT_ActivatedSpeed.description>Скорость движения этой ржавчины усилена ржавым активатором.</NAT_ActivatedSpeed.description>
   
 </LanguageData>

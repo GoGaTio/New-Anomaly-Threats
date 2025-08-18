@@ -2,8 +2,8 @@
 <LanguageData>
   
   <!-- EN: bomb -->
-  <NAT_RustedBomb.label>bomb</NAT_RustedBomb.label>
+  <NAT_RustedBomb.label>взрыв</NAT_RustedBomb.label>
   <!-- EN: {0} has died in an explosion. -->
-  <NAT_RustedBomb.deathMessage>{0} has died in an explosion.</NAT_RustedBomb.deathMessage>
+  <NAT_RustedBomb.deathMessage>{PAWN_nameDef} {PAWN_gender ? убит : убита} взрывом.</NAT_RustedBomb.deathMessage>
   
 </LanguageData>

@@ -2,8 +2,8 @@
 <LanguageData>
   
   <!-- EN: rusted soldiers -->
-  <NAT_Rusts.label>rusted soldiers</NAT_Rusts.label>
+  <NAT_Rusts.label>ржавчина</NAT_Rusts.label>
   <!-- EN: View and organize the colony's rusts. -->
-  <NAT_Rusts.description>View and organize the colony's rusts.</NAT_Rusts.description>
+  <NAT_Rusts.description>Информация о ваших ржавчинах и управление ими.</NAT_Rusts.description>
   
 </LanguageData>

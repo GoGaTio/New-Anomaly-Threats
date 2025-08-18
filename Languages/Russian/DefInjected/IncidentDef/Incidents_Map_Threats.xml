@@ -2,18 +2,16 @@
 <LanguageData>
   
   <!-- EN: rusted army raid -->
-  <NAT_RustedArmyRaid.label>rusted army raid</NAT_RustedArmyRaid.label>
+  <NAT_RustedArmyRaid.label>налёт</NAT_RustedArmyRaid.label>
   
   <!-- EN: rusted army siege -->
-  <NAT_RustedArmySiege.label>rusted army siege</NAT_RustedArmySiege.label>
+  <NAT_RustedArmySiege.label>осада</NAT_RustedArmySiege.label>
   
   <!-- EN: serpent assault -->
-  <NAT_SerpentAssault.label>serpent assault</NAT_SerpentAssault.label>
+  <NAT_SerpentAssault.label>атака змеев</NAT_SerpentAssault.label>
   <!-- EN: Bile serpent attack -->
-  <NAT_SerpentAssault.letterLabel>Bile serpent attack</NAT_SerpentAssault.letterLabel>
+  <NAT_SerpentAssault.letterLabel>Нападение желчных змеев</NAT_SerpentAssault.letterLabel>
   <!-- EN: A swarm of huge gape-mawed monsters are attacking!\n\nThese creatures' jaws are massive enough to swallow a human whole. Keep your distance! -->
-  <NAT_SerpentAssault.letterText>A swarm of huge gape-mawed monsters are attacking!
-
-These creatures' jaws are massive enough to swallow a human whole. Keep your distance!</NAT_SerpentAssault.letterText>
+  <NAT_SerpentAssault.letterText>Свора огромных плотоядных змеев нападает!\n\nЖелчные змеи используют свою желчь в качестве оружия, соблюдайте дистанцию чтобы не попасть под плевок.</NAT_SerpentAssault.letterText>
   
 </LanguageData>

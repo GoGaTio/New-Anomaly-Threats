@@ -2,16 +2,18 @@
 <Defs>
 
   <BodyDef>
-    <defName>NAT_Rust</defName>
+    <defName>NAT_RustTall</defName>
     <label>rust</label>
     <corePart>
       <def>NAT_RustedTorso</def>
       <height>Middle</height>
       <depth>Outside</depth>
       <groups>
-        <li>Torso</li>
+        <li>Torso</li>
+
       </groups>
-      <parts>
+      <parts>
+
         <li>
           <def>NAT_RustedHead</def>
           <coverage>0.20</coverage>
@@ -104,7 +106,8 @@
                     <li>LeftHand</li>
                     <li>Hands</li>
                   </groups>
-                </li>
+                </li>
+
               </parts>
             </li>
           </parts>
@@ -160,7 +163,8 @@
                     <li>RightHand</li>
                     <li>Hands</li>
                   </groups>
-                </li>
+                </li>
+
               </parts>
             </li>
           </parts>
@@ -179,7 +183,8 @@
           <coverage>0.2</coverage>
           <height>Bottom</height>
           <groups>
-            <li>Legs</li>
+            <li>Legs</li>
+
           </groups>
           <parts>
             <li>
@@ -187,7 +192,8 @@
               <customLabel>left foot</customLabel>
               <coverage>0.1</coverage>
               <groups>
-                <li>Feet</li>
+                <li>Feet</li>
+
               </groups>
             </li>
           </parts>
@@ -198,7 +204,8 @@
           <coverage>0.2</coverage>
           <height>Bottom</height>
           <groups>
-            <li>Legs</li>
+            <li>Legs</li>
+
           </groups>
           <parts>
             <li>
@@ -206,7 +213,8 @@
               <customLabel>right foot</customLabel>
               <coverage>0.1</coverage>
               <groups>
-                <li>Feet</li>
+                <li>Feet</li>
+
               </groups>
             </li>
           </parts>
@@ -223,9 +231,11 @@
       <height>Middle</height>
       <depth>Outside</depth>
       <groups>
-        <li>Torso</li>
+        <li>Torso</li>
+
       </groups>
-      <parts>
+      <parts>
+
         <li>
           <def>NAT_RustedHead</def>
           <coverage>0.17</coverage>
@@ -337,7 +347,8 @@
                     <li>LeftHand</li>
                     <li>Hands</li>
                   </groups>
-                </li>
+                </li>
+
               </parts>
             </li>
           </parts>
@@ -402,7 +413,8 @@
                     <li>RightHand</li>
                     <li>Hands</li>
                   </groups>
-                </li>
+                </li>
+
               </parts>
             </li>
           </parts>
@@ -421,7 +433,8 @@
           <coverage>0.1</coverage>
           <height>Bottom</height>
           <groups>
-            <li>Legs</li>
+            <li>Legs</li>
+
           </groups>
           <parts>
             <li>
@@ -429,7 +442,8 @@
               <customLabel>left foot</customLabel>
               <coverage>0.1</coverage>
               <groups>
-                <li>Feet</li>
+                <li>Feet</li>
+
               </groups>
             </li>
           </parts>
@@ -440,7 +454,8 @@
           <coverage>0.1</coverage>
           <height>Bottom</height>
           <groups>
-            <li>Legs</li>
+            <li>Legs</li>
+
           </groups>
           <parts>
             <li>
@@ -448,7 +463,8 @@
               <customLabel>right foot</customLabel>
               <coverage>0.1</coverage>
               <groups>
-                <li>Feet</li>
+                <li>Feet</li>
+
               </groups>
             </li>
           </parts>
@@ -465,9 +481,11 @@
       <height>Middle</height>
       <depth>Outside</depth>
       <groups>
-        <li>Torso</li>
+        <li>Torso</li>
+
       </groups>
-      <parts>
+      <parts>
+
         <li>
           <def>NAT_RustedHead</def>
           <coverage>0.20</coverage>
@@ -509,7 +527,7 @@
             </li>
             <li>
               <def>NAT_RustedEyeSocket</def>
-              <customLabel>left eye socket</customLabel>
+              <customLabel>side left eye socket</customLabel>
               <coverage>0.02</coverage>
               <groups>
                 <li>Eyes</li>
@@ -519,7 +537,7 @@
             </li>
             <li>
               <def>NAT_RustedEyeSocket</def>
-              <customLabel>right eye socket</customLabel>
+              <customLabel>side right eye socket</customLabel>
               <coverage>0.02</coverage>
               <groups>
                 <li>Eyes</li>
@@ -580,7 +598,8 @@
                     <li>LeftHand</li>
                     <li>Hands</li>
                   </groups>
-                </li>
+                </li>
+
               </parts>
             </li>
           </parts>
@@ -636,7 +655,8 @@
                     <li>RightHand</li>
                     <li>Hands</li>
                   </groups>
-                </li>
+                </li>
+
               </parts>
             </li>
           </parts>
@@ -655,7 +675,8 @@
           <coverage>0.2</coverage>
           <height>Bottom</height>
           <groups>
-            <li>Legs</li>
+            <li>Legs</li>
+
           </groups>
           <parts>
             <li>
@@ -663,7 +684,8 @@
               <customLabel>left foot</customLabel>
               <coverage>0.1</coverage>
               <groups>
-                <li>Feet</li>
+                <li>Feet</li>
+
               </groups>
             </li>
           </parts>
@@ -674,7 +696,8 @@
           <coverage>0.2</coverage>
           <height>Bottom</height>
           <groups>
-            <li>Legs</li>
+            <li>Legs</li>
+
           </groups>
           <parts>
             <li>
@@ -682,7 +705,8 @@
               <customLabel>right foot</customLabel>
               <coverage>0.1</coverage>
               <groups>
-                <li>Feet</li>
+                <li>Feet</li>
+
               </groups>
             </li>
           </parts>

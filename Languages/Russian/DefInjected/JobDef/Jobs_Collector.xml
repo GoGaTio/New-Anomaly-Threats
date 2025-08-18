@@ -2,18 +2,18 @@
 <LanguageData>
   
   <!-- EN: Doing something. -->
-  <NAT_CollectorCastAbility.reportString>Doing something.</NAT_CollectorCastAbility.reportString>
+  <NAT_CollectorCastAbility.reportString>что-то делает.</NAT_CollectorCastAbility.reportString>
   
   <!-- EN: escaping -->
-  <NAT_CollectorEscape.reportString>escaping</NAT_CollectorEscape.reportString>
+  <NAT_CollectorEscape.reportString>убегает</NAT_CollectorEscape.reportString>
   
   <!-- EN: collecting TargetA. -->
-  <NAT_CollectorStealPawn.reportString>collecting TargetA.</NAT_CollectorStealPawn.reportString>
+  <NAT_CollectorStealPawn.reportString>коллекционирует TargetA.</NAT_CollectorStealPawn.reportString>
   
   <!-- EN: collecting TargetA. -->
-  <NAT_CollectorStealThing.reportString>collecting TargetA.</NAT_CollectorStealThing.reportString>
+  <NAT_CollectorStealThing.reportString>коллекционирует TargetA.</NAT_CollectorStealThing.reportString>
   
   <!-- EN: wandering -->
-  <NAT_CollectorWait.reportString>wandering</NAT_CollectorWait.reportString>
+  <NAT_CollectorWait.reportString>бродит</NAT_CollectorWait.reportString>
   
 </LanguageData>

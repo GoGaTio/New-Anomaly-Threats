@@ -2,10 +2,10 @@
 <LanguageData>
   
   <!-- EN: install bile heart -->
-  <NAT_InstallBileHeart.label>install bile heart</NAT_InstallBileHeart.label>
+  <NAT_InstallBileHeart.label>вживить желчное сердце</NAT_InstallBileHeart.label>
   <!-- EN: Install bile heart. -->
-  <NAT_InstallBileHeart.description>Install bile heart.</NAT_InstallBileHeart.description>
+  <NAT_InstallBileHeart.description>вживить желчное сердце.</NAT_InstallBileHeart.description>
   <!-- EN: Installing bile heart. -->
-  <NAT_InstallBileHeart.jobString>Installing bile heart.</NAT_InstallBileHeart.jobString>
+  <NAT_InstallBileHeart.jobString>Вживляет желчное сердце.</NAT_InstallBileHeart.jobString>
   
 </LanguageData>

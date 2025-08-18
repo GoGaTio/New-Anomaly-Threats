@@ -2,12 +2,12 @@
 <LanguageData>
   
   <!-- EN: constructing rust -->
-  <NAT_BuildRust.reportString>constructing rust</NAT_BuildRust.reportString>
+  <NAT_BuildRust.reportString>собирает ржавчину</NAT_BuildRust.reportString>
   
   <!-- EN: sealing TargetA. -->
-  <NAT_Seal.reportString>sealing TargetA.</NAT_Seal.reportString>
+  <NAT_Seal.reportString>закрывает TargetA.</NAT_Seal.reportString>
   
   <!-- EN: using TargetA. -->
-  <NAT_UseItemByRust.reportString>using TargetA.</NAT_UseItemByRust.reportString>
+  <NAT_UseItemByRust.reportString>использует TargetA.</NAT_UseItemByRust.reportString>
   
 </LanguageData>

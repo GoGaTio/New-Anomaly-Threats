@@ -2,20 +2,18 @@
 <LanguageData>
   
   <!-- EN: collector -->
-  <NAT_Collector.label>collector</NAT_Collector.label>
+  <NAT_Collector.label>коллекционер</NAT_Collector.label>
   <!-- EN: A curved human figure with massive shoulder and carpal protrusions.\n\nThe Collector is an overgrown sightstealer who has acquired an irresistible mania for collecting along with complete self-awareness. -->
-  <NAT_Collector.description>A curved human figure with massive shoulder and carpal protrusions.
-
-The Collector is an overgrown sightstealer who has acquired an irresistible mania for collecting along with complete self-awareness.</NAT_Collector.description>
+  <NAT_Collector.description></NAT_Collector.description>
   <!-- EN: head -->
-  <NAT_Collector.tools.head.label>head</NAT_Collector.tools.head.label>
+  <NAT_Collector.tools.head.label>голова</NAT_Collector.tools.head.label>
   <!-- EN: left claw -->
-  <NAT_Collector.tools.left_claw.label>left claw</NAT_Collector.tools.left_claw.label>
+  <NAT_Collector.tools.left_claw.label>левая клешня</NAT_Collector.tools.left_claw.label>
   <!-- EN: claw -->
-  <NAT_Collector.tools.left_claw.labelNoLocation>claw</NAT_Collector.tools.left_claw.labelNoLocation>
+  <NAT_Collector.tools.left_claw.labelNoLocation>клешня</NAT_Collector.tools.left_claw.labelNoLocation>
   <!-- EN: right claw -->
-  <NAT_Collector.tools.right_claw.label>right claw</NAT_Collector.tools.right_claw.label>
+  <NAT_Collector.tools.right_claw.label>правая клешня</NAT_Collector.tools.right_claw.label>
   <!-- EN: claw -->
-  <NAT_Collector.tools.right_claw.labelNoLocation>claw</NAT_Collector.tools.right_claw.labelNoLocation>
+  <NAT_Collector.tools.right_claw.labelNoLocation>клешня</NAT_Collector.tools.right_claw.labelNoLocation>
   
 </LanguageData>

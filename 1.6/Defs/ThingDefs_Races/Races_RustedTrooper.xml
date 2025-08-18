@@ -144,7 +144,7 @@
 
   <PawnKindDef Name="NAT_RustedTrooperKindBase" ParentName="NAT_RustKindBase">
     <defName>NAT_RustedTrooper</defName>
-    <label>rusted trooper</label>
+    <label>rusted stormtrooper</label>
     <startingHediffs>
       <li>
         <def>NAT_RustedRegeneration</def>

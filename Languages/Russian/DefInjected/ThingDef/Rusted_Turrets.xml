@@ -2,34 +2,34 @@
 <LanguageData>
   
   <!-- EN: rusted autocannon -->
-  <NAT_Gun_RustedAutoTurret.label>rusted autocannon</NAT_Gun_RustedAutoTurret.label>
+  <NAT_Gun_RustedAutoTurret.label>ржавая автопушка</NAT_Gun_RustedAutoTurret.label>
   <!-- EN: A pieces of bioferrite shaped like self-loading large-bore cannon. -->
-  <NAT_Gun_RustedAutoTurret.description>A pieces of bioferrite shaped like self-loading large-bore cannon.</NAT_Gun_RustedAutoTurret.description>
+  <NAT_Gun_RustedAutoTurret.description>Кусок биоферрита в форме автопушки.</NAT_Gun_RustedAutoTurret.description>
   <!-- EN: rusted autocannon -->
-  <NAT_Gun_RustedAutoTurret.verbs.Verb_Shoot.label>rusted autocannon</NAT_Gun_RustedAutoTurret.verbs.Verb_Shoot.label>
+  <NAT_Gun_RustedAutoTurret.verbs.Verb_Shoot.label>ржавая автопушка</NAT_Gun_RustedAutoTurret.verbs.Verb_Shoot.label>
   
   <!-- EN: rusted foam sprayer -->
-  <NAT_Gun_RustedFoamTurret.label>rusted foam sprayer</NAT_Gun_RustedFoamTurret.label>
+  <NAT_Gun_RustedFoamTurret.label>ржавый распылитель пены</NAT_Gun_RustedFoamTurret.label>
   <!-- EN: A pieces of bioferrite shaped like firefoam sprayer. -->
-  <NAT_Gun_RustedFoamTurret.description>A pieces of bioferrite shaped like firefoam sprayer.</NAT_Gun_RustedFoamTurret.description>
+  <NAT_Gun_RustedFoamTurret.description>Кусок биоферрита в форме пенного распылителя.</NAT_Gun_RustedFoamTurret.description>
   <!-- EN: rusted foam sprayer -->
-  <NAT_Gun_RustedFoamTurret.verbs.Verb_LaunchProjectile.label>rusted foam sprayer</NAT_Gun_RustedFoamTurret.verbs.Verb_LaunchProjectile.label>
+  <NAT_Gun_RustedFoamTurret.verbs.Verb_LaunchProjectile.label>ржавый распылитель пены</NAT_Gun_RustedFoamTurret.verbs.Verb_LaunchProjectile.label>
   
   <!-- EN: rusted mini-turret gun -->
-  <NAT_Gun_RustedMiniTurret.label>rusted mini-turret gun</NAT_Gun_RustedMiniTurret.label>
+  <NAT_Gun_RustedMiniTurret.label>ржавая мини-турель</NAT_Gun_RustedMiniTurret.label>
   <!-- EN: A pieces of bioferrite shaped like simple automatic gun. -->
-  <NAT_Gun_RustedMiniTurret.description>A pieces of bioferrite shaped like simple automatic gun.</NAT_Gun_RustedMiniTurret.description>
+  <NAT_Gun_RustedMiniTurret.description>Кусок биоферрита в форме простого автоматического орудия.</NAT_Gun_RustedMiniTurret.description>
   <!-- EN: rusted mini-turret gun -->
-  <NAT_Gun_RustedMiniTurret.verbs.Verb_Shoot.label>rusted mini-turret gun</NAT_Gun_RustedMiniTurret.verbs.Verb_Shoot.label>
+  <NAT_Gun_RustedMiniTurret.verbs.Verb_Shoot.label>ржавая мини-турель</NAT_Gun_RustedMiniTurret.verbs.Verb_Shoot.label>
   
   <!-- EN: rusted sniper cannon -->
-  <NAT_Gun_RustedSniperTurret.label>rusted sniper cannon</NAT_Gun_RustedSniperTurret.label>
+  <NAT_Gun_RustedSniperTurret.label>ржавая снайперскакя пушка</NAT_Gun_RustedSniperTurret.label>
   <!-- EN: A pieces of bioferrite shaped like self-loading uranium slug cannon. -->
-  <NAT_Gun_RustedSniperTurret.description>A pieces of bioferrite shaped like self-loading uranium slug cannon.</NAT_Gun_RustedSniperTurret.description>
+  <NAT_Gun_RustedSniperTurret.description>Кусок биоферрита в форме самозарядной пушки.</NAT_Gun_RustedSniperTurret.description>
   <!-- EN: rusted sniper cannon -->
-  <NAT_Gun_RustedSniperTurret.verbs.Verb_Shoot.label>rusted sniper cannon</NAT_Gun_RustedSniperTurret.verbs.Verb_Shoot.label>
+  <NAT_Gun_RustedSniperTurret.verbs.Verb_Shoot.label>ржавая снайперскакя пушка</NAT_Gun_RustedSniperTurret.verbs.Verb_Shoot.label>
   
   <!-- EN: foam bomb -->
-  <NAT_Proj_FoamBomb.label>foam bomb</NAT_Proj_FoamBomb.label>
+  <NAT_Proj_FoamBomb.label>пенный заряд</NAT_Proj_FoamBomb.label>
   
 </LanguageData>

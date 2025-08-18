@@ -18,7 +18,7 @@
           <li>
             <threshold>2</threshold>
             <label>Obelisk study progress</label> <!-- text in this is the same as other obelisk so player can't tell which it is -->
-            <text>Investigation of the obelisk has revealed some information. It is an archotechnological device that seems to interact with matter in some indefinite way. It is probably a piece of a much larger archotech structure that was destroyed or broken apart long ago. The machinery at its core is inhumanly complex and frighteningly powerful. Its purpose and method of action remain totally mysterious.\n\nIf not suppressed, its activity level will increase over time. You can't tell what will happen when the device fully activates.</text>
+            <text>Investigation of the obelisk has revealed some information. It is an archotechnological device that seems to interact with organic creatures at a distance. It is probably a piece of a much larger archotech structure that was destroyed or broken apart long ago. The machinery at its core is inhumanly complex and frighteningly powerful. Its purpose and method of action remain totally mysterious.\n\nIf not suppressed, its activity level will increase over time. You can't tell what will happen when the device fully activates.</text>
           </li>
           <li>
             <threshold>10</threshold>
@@ -36,10 +36,10 @@
         <activeTicks>1</activeTicks>
         <ticksToActivate>180</ticksToActivate>
         <cooldownTicks>1200000</cooldownTicks> <!-- 5 days -->
-        <onCooldownString>Pain pulse cooldown</onCooldownString>
+        <onCooldownString>Psy-pulse cooldown</onCooldownString>
         <activateTexPath>UI/Commands/NAT_TriggerInducerObelisk</activateTexPath>
         <activateLabelString>Trigger...</activateLabelString>
-        <activateDescString>Trigger obelisk to induce pain in creatures nearby.</activateDescString>
+        <activateDescString>Trigger obelisk to induce psy-pulse in creatures nearby.</activateDescString>
         <guiLabelString>Choose who should do this</guiLabelString>
         <jobString>Trigger pulse</jobString>
         <activatingStringPending>triggering obelisk pulse</activatingStringPending>
@@ -75,6 +75,8 @@
         </targetingParameters>
       </li>
     </comps>
-  </ThingDef>
+  </ThingDef>
+
+
   
 </Defs>

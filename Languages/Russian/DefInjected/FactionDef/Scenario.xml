@@ -2,16 +2,14 @@
 <LanguageData>
   
   <!-- EN: Outlaw cultists -->
-  <NAT_PlayerCult.label>Outlaw cultists</NAT_PlayerCult.label>
+  <NAT_PlayerCult.label>Бежавшие культисты</NAT_PlayerCult.label>
   <!-- EN: A group of outlaw cultists. -->
-  <NAT_PlayerCult.description>A group of outlaw cultists.</NAT_PlayerCult.description>
+  <NAT_PlayerCult.description>Группа бежавших культистов.</NAT_PlayerCult.description>
   <!-- EN: leader -->
-  <NAT_PlayerCult.leaderTitle>leader</NAT_PlayerCult.leaderTitle>
-  <!-- EN: {0} from {1} are attacking your {2}. -->
-  <NAT_PlayerCult.messageDefendersAttacking>{0} from {1} are attacking your {2}.</NAT_PlayerCult.messageDefendersAttacking>
+  <NAT_PlayerCult.leaderTitle>лидер</NAT_PlayerCult.leaderTitle>
   <!-- EN: cultist -->
-  <NAT_PlayerCult.pawnSingular>cultist</NAT_PlayerCult.pawnSingular>
+  <NAT_PlayerCult.pawnSingular>культист</NAT_PlayerCult.pawnSingular>
   <!-- EN: cultists -->
-  <NAT_PlayerCult.pawnsPlural>cultists</NAT_PlayerCult.pawnsPlural>
+  <NAT_PlayerCult.pawnsPlural>культисты</NAT_PlayerCult.pawnsPlural>
   
 </LanguageData>

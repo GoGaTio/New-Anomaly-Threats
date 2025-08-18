@@ -2,23 +2,21 @@
 <LanguageData>
   
   <!-- EN: pain lance -->
-  <NAT_Apparel_PainLance.label>pain lance</NAT_Apparel_PainLance.label>
+  <NAT_Apparel_PainLance.label>болевое копьё</NAT_Apparel_PainLance.label>
   <!-- EN: A limited-use psychic effector. It induces pain into the target and creatures nearby.\n\nThis pain lance was crafted from a broken shard of dark archotechnology. -->
-  <NAT_Apparel_PainLance.description>A limited-use psychic effector. It induces pain into the target and creatures nearby.
-
-This pain lance was crafted from a broken shard of dark archotechnology.</NAT_Apparel_PainLance.description>
+  <NAT_Apparel_PainLance.description>Генератор болевого импульса, который можно использовать всего несколько раз. Копьё накладывает боль на цель и других существ поблизости.\n\nДля изготовления болевого копья использовали тёмный архо-осколок.</NAT_Apparel_PainLance.description>
   <!-- EN: charge -->
-  <NAT_Apparel_PainLance.comps.CompApparelReloadable.chargeNoun>charge</NAT_Apparel_PainLance.comps.CompApparelReloadable.chargeNoun>
+  <NAT_Apparel_PainLance.comps.CompApparelReloadable.chargeNoun>заряд</NAT_Apparel_PainLance.comps.CompApparelReloadable.chargeNoun>
   <!-- EN: on cooldown -->
-  <NAT_Apparel_PainLance.comps.CompApparelReloadable.cooldownGerund>on cooldown</NAT_Apparel_PainLance.comps.CompApparelReloadable.cooldownGerund>
+  <NAT_Apparel_PainLance.comps.CompApparelReloadable.cooldownGerund>перезарядка</NAT_Apparel_PainLance.comps.CompApparelReloadable.cooldownGerund>
   <!-- EN: pain lance -->
-  <NAT_Apparel_PainLance.verbs.pain_lance.label>pain lance</NAT_Apparel_PainLance.verbs.pain_lance.label>
+  <NAT_Apparel_PainLance.verbs.pain_lance.label>болевое копьё</NAT_Apparel_PainLance.verbs.pain_lance.label>
   
   <!-- EN: pain pulser -->
-  <NAT_PainPulser.label>pain pulser</NAT_PainPulser.label>
+  <NAT_PainPulser.label>болевой импульс</NAT_PainPulser.label>
   <!-- EN: A one-use broad-wave psychic effector created from a dark archotech shard. The device creates a pulse that induces pain into living creatures within the region. People and animals currently under your control will not be affected. -->
-  <NAT_PainPulser.description>A one-use broad-wave psychic effector created from a dark archotech shard. The device creates a pulse that induces pain into living creatures within the region. People and animals currently under your control will not be affected.</NAT_PainPulser.description>
+  <NAT_PainPulser.description>Одноразовый широковолновой генератор болевого импульса, созданный с использованием тёмного архо-осколка. Импульс действует на всех живых существ в регионе. Ваших людей и животных импульс не затронет.</NAT_PainPulser.description>
   <!-- EN: Activate {0_label} -->
-  <NAT_PainPulser.comps.CompUsable.useLabel>Activate {0_label}</NAT_PainPulser.comps.CompUsable.useLabel>
+  <NAT_PainPulser.comps.CompUsable.useLabel>Активировать {0_label}</NAT_PainPulser.comps.CompUsable.useLabel>
   
 </LanguageData>

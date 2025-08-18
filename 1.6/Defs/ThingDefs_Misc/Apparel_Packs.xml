@@ -146,7 +146,7 @@
   <ThingDef>
     <defName>NAT_RustedStickGrenade</defName>
     <label>rusted stick grenade</label>
-    <description>A piece of clotted pain.</description>
+    <description>A rusted stick grenade. Can detonate if used by rusted creature.</description>
     <thingClass>ThingWithComps</thingClass>
     <tradeability>None</tradeability>
     <category>Item</category>

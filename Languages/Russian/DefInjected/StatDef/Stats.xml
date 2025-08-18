@@ -2,8 +2,8 @@
 <LanguageData>
   
   <!-- EN: core stability -->
-  <NAT_CoreDropChance.label>core stability</NAT_CoreDropChance.label>
+  <NAT_CoreDropChance.label>стабильность ядра</NAT_CoreDropChance.label>
   <!-- EN: How stable core of this rust is. The higher stability, the higher chance to drop core ater death. -->
-  <NAT_CoreDropChance.description>How stable core of this rust is. The higher stability, the higher chance to drop core ater death.</NAT_CoreDropChance.description>
+  <NAT_CoreDropChance.description>Насколько стабильно ядро этой ржавчины. Чем выше стабильность, тем выше шанс оставить ядро после смерти.</NAT_CoreDropChance.description>
   
 </LanguageData>

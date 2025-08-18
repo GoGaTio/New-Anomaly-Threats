@@ -2,23 +2,23 @@
 <LanguageData>
   
   <!-- EN: bile spit -->
-  <NAT_BileSpit.label>bile spit</NAT_BileSpit.label>
+  <NAT_BileSpit.label>плевок желчью</NAT_BileSpit.label>
   <!-- EN: Use the glands to spit bile a short distance. -->
-  <NAT_BileSpit.description>Use the glands to spit bile a short distance.</NAT_BileSpit.description>
+  <NAT_BileSpit.description>Плюнуть желчью на короткое расстояние.</NAT_BileSpit.description>
   
   <!-- EN: bile spray -->
-  <NAT_BileSpray.label>bile spray</NAT_BileSpray.label>
+  <NAT_BileSpray.label>плевок желчью</NAT_BileSpray.label>
   <!-- EN: Use the bile heart to spray bile a short distance. The heart pumps the bile through a surgically implanted duct, allowing the ghoul to spew it from their mouth at high velocity. -->
-  <NAT_BileSpray.description>Use the bile heart to spray bile a short distance. The heart pumps the bile through a surgically implanted duct, allowing the ghoul to spew it from their mouth at high velocity.</NAT_BileSpray.description>
+  <NAT_BileSpray.description>Распылить желчь на близком расстоянии с помощью желчного сердца. Оно перекачивает желчь через хирургически вживлённый канал, позволяя упырю извергать её изо рта с большой скоростью.</NAT_BileSpray.description>
   
   <!-- EN: collector howl -->
-  <NAT_CollectorHowl.label>collector howl</NAT_CollectorHowl.label>
-  <!-- EN: Release a terrifying roar which has a chance to send nearby hostile humans and animals fleeing in terror. -->
-  <NAT_CollectorHowl.description>Release a terrifying roar which has a chance to send nearby hostile humans and animals fleeing in terror.</NAT_CollectorHowl.description>
+  <NAT_CollectorHowl.label>крик коллекционера</NAT_CollectorHowl.label>
+  <!-- EN: Release a terrifying roar which will summon sightstealers neraby. -->
+  <NAT_CollectorHowl.description>Испустить ужасающий крик, призывая взглядокрадов.</NAT_CollectorHowl.description>
   
   <!-- EN: shape bioferrite -->
-  <NAT_ShapeRust.label>shape bioferrite</NAT_ShapeRust.label>
+  <NAT_ShapeRust.label>формировка ржавчины</NAT_ShapeRust.label>
   <!-- EN: Use dark psychic powers to shape the closest 100 bioferrite pieces into a living rust. -->
-  <NAT_ShapeRust.description>Use dark psychic powers to shape the closest 100 bioferrite pieces into a living rust.</NAT_ShapeRust.description>
+  <NAT_ShapeRust.description>Использовать темные архо-силы чтобы преобразовать блидайшие 100 биоферрита в живую ржавчину.</NAT_ShapeRust.description>
   
 </LanguageData>

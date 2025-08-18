@@ -2,56 +2,56 @@
 <LanguageData>
   
   <!-- EN: combat boost -->
-  <NAT_BannerBoost.label>combat boost</NAT_BannerBoost.label>
+  <NAT_BannerBoost.label>боевое усиление</NAT_BannerBoost.label>
   <!-- EN: This rust is affected by battke cry and fights better. -->
-  <NAT_BannerBoost.description>This rust is affected by battke cry and fights better.</NAT_BannerBoost.description>
+  <NAT_BannerBoost.description>Боевые способности этой ржавчины усилены боевым кличем.</NAT_BannerBoost.description>
   
   <!-- EN: bile power -->
-  <NAT_BilePowerSerum.label>bile power</NAT_BilePowerSerum.label>
+  <NAT_BilePowerSerum.label>желчная сила</NAT_BilePowerSerum.label>
   <!-- EN: This creature has the bile power serum in their bloodstream. This substance makes it resistant to bile slowdown effect and additionally decreases acid damage. -->
-  <NAT_BilePowerSerum.description>This creature has the bile power serum in their bloodstream. This substance makes it resistant to bile slowdown effect and additionally decreases acid damage.</NAT_BilePowerSerum.description>
+  <NAT_BilePowerSerum.description>Сыворотка желчной силы в крови. Эта субстанция даёт устойчивость к желчи, огню и кислоте.</NAT_BilePowerSerum.description>
   
   <!-- EN: collector hypnosis -->
-  <NAT_CollectorHypnosis.label>collector hypnosis</NAT_CollectorHypnosis.label>
+  <NAT_CollectorHypnosis.label>гипноз коллекционера</NAT_CollectorHypnosis.label>
   <!-- EN: An aftereffect of hypnosis by collector. -->
-  <NAT_CollectorHypnosis.description>An aftereffect of hypnosis by collector.</NAT_CollectorHypnosis.description>
+  <NAT_CollectorHypnosis.description>Шок вызванный гипнозом коллекционера.</NAT_CollectorHypnosis.description>
   
   <!-- EN: emotions suppression -->
-  <NAT_EmotionSuppression.label>emotions suppression</NAT_EmotionSuppression.label>
+  <NAT_EmotionSuppression.label>подавление эмоций</NAT_EmotionSuppression.label>
   <!-- EN: This person's neural patterns are being moderated by distant archotech structure. They're unaffected by the highs and lows of human emotion. They will never have a mental break but they will also never feel inspired. -->
-  <NAT_EmotionSuppression.description>This person's neural patterns are being moderated by distant archotech structure. They're unaffected by the highs and lows of human emotion. They will never have a mental break but they will also never feel inspired.</NAT_EmotionSuppression.description>
+  <NAT_EmotionSuppression.description>Нейронная система этого человека находится под воздействием далёкой архо-структуры. Он не способен ощущать сильные эмоции, а также переживать срывы и воодушевление.</NAT_EmotionSuppression.description>
   
   <!-- EN: induced pain -->
-  <NAT_InducedPain.label>induced pain</NAT_InducedPain.label>
+  <NAT_InducedPain.label>наведённая боль</NAT_InducedPain.label>
   <!-- EN: A pain without any visible reason. -->
-  <NAT_InducedPain.description>A pain without any visible reason.</NAT_InducedPain.description>
+  <NAT_InducedPain.description>Боль без каких-либо видимых причин.</NAT_InducedPain.description>
   
   <!-- EN: pain quench -->
-  <NAT_PainQuenchSerum.label>pain quench</NAT_PainQuenchSerum.label>
+  <NAT_PainQuenchSerum.label>подавление боли</NAT_PainQuenchSerum.label>
   <!-- EN: This creature has the pain quench serum in their bloodstream. This substance makes it fully resistant to any pain source and additionally suppress induced pain. -->
-  <NAT_PainQuenchSerum.description>This creature has the pain quench serum in their bloodstream. This substance makes it fully resistant to any pain source and additionally suppress induced pain.</NAT_PainQuenchSerum.description>
+  <NAT_PainQuenchSerum.description>Сыворотка болеподавления в крови. Это вещество полностью подавляет боль, в том числе и наведённую.</NAT_PainQuenchSerum.description>
   
   <!-- EN: rusted regeneration -->
-  <NAT_RustedRegeneration.label>rusted regeneration</NAT_RustedRegeneration.label>
+  <NAT_RustedRegeneration.label>ржавая регенерация</NAT_RustedRegeneration.label>
   <!-- EN: Rusted regeneration. -->
-  <NAT_RustedRegeneration.description>Rusted regeneration.</NAT_RustedRegeneration.description>
+  <NAT_RustedRegeneration.description>Ржавая регенерация.</NAT_RustedRegeneration.description>
   
   <!-- EN: slowed by bile -->
-  <NAT_SlowedByBile.label>slowed by bile</NAT_SlowedByBile.label>
+  <NAT_SlowedByBile.label>замедление желчью</NAT_SlowedByBile.label>
   <!-- EN: Bile covers body and sticks to skin, making movement and manipulation much harder. Serpents' bile is fire-resistant and reacts with acid, causing severe burns. Continued exposure to tox gas results in toxic buildup and eventually death. -->
-  <NAT_SlowedByBile.description>Bile covers body and sticks to skin, making movement and manipulation much harder. Serpents' bile is fire-resistant and reacts with acid, causing severe burns. Continued exposure to tox gas results in toxic buildup and eventually death.</NAT_SlowedByBile.description>
+  <NAT_SlowedByBile.description>Желчь покрывает тело и липнет к коже, затрудняя передвижение и взаимодействие. Желчь змеев устойчива к огню, но реагирует с кислотой, усиливая её эффект.</NAT_SlowedByBile.description>
   <!-- EN: slowed by bile -->
-  <NAT_SlowedByBile.battleStateLabel>slowed by bile</NAT_SlowedByBile.battleStateLabel>
+  <NAT_SlowedByBile.battleStateLabel>замедление желчью</NAT_SlowedByBile.battleStateLabel>
   <!-- EN: slightly -->
-  <NAT_SlowedByBile.stages.slightly.label>slightly</NAT_SlowedByBile.stages.slightly.label>
+  <NAT_SlowedByBile.stages.slightly.label>незначительное</NAT_SlowedByBile.stages.slightly.label>
   <!-- EN: moderately -->
-  <NAT_SlowedByBile.stages.moderately.label>moderately</NAT_SlowedByBile.stages.moderately.label>
+  <NAT_SlowedByBile.stages.moderately.label>заметное</NAT_SlowedByBile.stages.moderately.label>
   <!-- EN: significantly -->
-  <NAT_SlowedByBile.stages.significantly.label>significantly</NAT_SlowedByBile.stages.significantly.label>
+  <NAT_SlowedByBile.stages.significantly.label>значительное</NAT_SlowedByBile.stages.significantly.label>
   
   <!-- EN: subdued -->
-  <NAT_Subdued.label>subdued</NAT_Subdued.label>
+  <NAT_Subdued.label>подчинение</NAT_Subdued.label>
   <!-- EN: This person is subdued by distant archotech structure. -->
-  <NAT_Subdued.description>This person is subdued by distant archotech structure.</NAT_Subdued.description>
+  <NAT_Subdued.description>Этот человек подчинён далёкой архо-структуре.</NAT_Subdued.description>
   
 </LanguageData>

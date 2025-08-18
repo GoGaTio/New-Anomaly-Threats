@@ -75,7 +75,7 @@
   <HediffDef>
     <defName>NAT_SlowedByBile</defName>
     <label>slowed by bile</label>
-    <description>Bile covers body and sticks to skin, making movement and manipulation much harder. Serpents' bile is fire-resistant and reacts with acid, causing severe burns. Continued exposure to tox gas results in toxic buildup and eventually death.</description>
+    <description>Bile covers body and sticks to skin, making movement and manipulation much harder. Serpents' bile is fire-resistant and reacts with acid, causing severe burns.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <maxSeverity>1</maxSeverity>
     <initialSeverity>0.001</initialSeverity>

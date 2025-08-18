@@ -2,21 +2,21 @@
 <LanguageData>
   
   <!-- EN: rusted chunk (incoming) -->
-  <NAT_RustedChunk1x1Incoming.label>rusted chunk (incoming)</NAT_RustedChunk1x1Incoming.label>
+  <NAT_RustedChunk1x1Incoming.label>ржавый обломок (падает)</NAT_RustedChunk1x1Incoming.label>
   
   <!-- EN: rusted chunk (incoming) -->
-  <NAT_RustedChunk2x2Incoming.label>rusted chunk (incoming)</NAT_RustedChunk2x2Incoming.label>
+  <NAT_RustedChunk2x2Incoming.label>ржавый обломок (падает)</NAT_RustedChunk2x2Incoming.label>
   
   <!-- EN: large rusted chunk (incoming) -->
-  <NAT_RustedChunk3x3Incoming.label>large rusted chunk (incoming)</NAT_RustedChunk3x3Incoming.label>
+  <NAT_RustedChunk3x3Incoming.label>большой ржавый обломок (падает)</NAT_RustedChunk3x3Incoming.label>
   
   <!-- EN: rusted chunk (incoming) -->
-  <NAT_RustedChunkPawnIncoming.label>rusted chunk (incoming)</NAT_RustedChunkPawnIncoming.label>
+  <NAT_RustedChunkPawnIncoming.label>ржавый обломок (падает)</NAT_RustedChunkPawnIncoming.label>
   
   <!-- EN: rusted mass (incoming) -->
-  <NAT_RustedMassIncoming.label>rusted mass (incoming)</NAT_RustedMassIncoming.label>
+  <NAT_RustedMassIncoming.label>ржавая масса (падает)</NAT_RustedMassIncoming.label>
   
   <!-- EN: rusted trooper (incoming) -->
-  <NAT_RustedTrooperIncoming.label>rusted trooper (incoming)</NAT_RustedTrooperIncoming.label>
+  <NAT_RustedTrooperIncoming.label>ржавый десантник (падает)</NAT_RustedTrooperIncoming.label>
   
 </LanguageData>

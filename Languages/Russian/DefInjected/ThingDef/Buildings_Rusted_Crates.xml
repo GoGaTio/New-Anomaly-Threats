@@ -2,13 +2,13 @@
 <LanguageData>
   
   <!-- EN: rusted crate -->
-  <NAT_RustedBox.label>rusted crate</NAT_RustedBox.label>
+  <NAT_RustedBox.label>ржавый ящик</NAT_RustedBox.label>
   <!-- EN: A rusted bioferrite crate, may content something valuable. -->
-  <NAT_RustedBox.description>A rusted bioferrite crate, may content something valuable.</NAT_RustedBox.description>
+  <NAT_RustedBox.description>Ржавый ящик, может содержать что-то ценное.</NAT_RustedBox.description>
   
   <!-- EN: rusted pallet -->
-  <NAT_RustedPallet.label>rusted pallet</NAT_RustedPallet.label>
+  <NAT_RustedPallet.label>ржавая палета</NAT_RustedPallet.label>
   <!-- EN: A rusted pallet containing various stuff. -->
-  <NAT_RustedPallet.description>A rusted pallet containing various stuff.</NAT_RustedPallet.description>
+  <NAT_RustedPallet.description>Ржавая палета, содержащая что-то, необходимое Ржавой армии.</NAT_RustedPallet.description>
   
 </LanguageData>

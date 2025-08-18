@@ -4,7 +4,7 @@
   <AbilityDef>
     <defName>NAT_CollectorHowl</defName>
     <label>collector howl</label>
-    <description>Release a terrifying roar which has a chance to send nearby hostile humans and animals fleeing in terror.</description>
+    <description>Release a terrifying roar which will summon sightstealers neraby.</description>
     <cooldownTicksRange>60000</cooldownTicksRange> <!-- 1 day -->
     <targetRequired>false</targetRequired>
     <aiCanUse>false</aiCanUse>

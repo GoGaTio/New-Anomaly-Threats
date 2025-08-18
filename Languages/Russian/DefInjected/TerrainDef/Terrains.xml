@@ -2,12 +2,12 @@
 <LanguageData>
   
   <!-- EN: rusted surface -->
-  <NAT_RustedFloor.label>rusted surface</NAT_RustedFloor.label>
+  <NAT_RustedFloor.label>ржавая поверхность</NAT_RustedFloor.label>
   <!-- EN: TODO -->
   <NAT_RustedFloor.description>TODO</NAT_RustedFloor.description>
   
   <!-- EN: rusted tile -->
-  <NAT_RustedTile.label>rusted tile</NAT_RustedTile.label>
+  <NAT_RustedTile.label>ржавая плитка</NAT_RustedTile.label>
   <!-- EN: TODO -->
   <NAT_RustedTile.description>TODO</NAT_RustedTile.description>
   
