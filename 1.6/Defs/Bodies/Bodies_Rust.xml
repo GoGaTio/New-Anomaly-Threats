@@ -2,7 +2,7 @@
 <Defs>
 
   <BodyDef>
-    <defName>NAT_RustTall</defName>
+    <defName>NAT_Rust</defName>
     <label>rust</label>
     <corePart>
       <def>NAT_RustedTorso</def>
