@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <ResearchProjectDef>
+  <!--<ResearchProjectDef>
     <defName>NAT_PainWeaponry</defName>
     <label>pain technologies</label>
     <description>Create serums, weapons and inhibitors from pain clots.</description>
@@ -29,7 +29,7 @@
 		<li>subject_gerund->creating pain inhibitors</li>
       </rulesStrings>
     </generalRules>
-  </ResearchProjectDef>
+  </ResearchProjectDef>-->
   
   <ResearchProjectDef>
     <defName>NAT_RustedSoldiers</defName>

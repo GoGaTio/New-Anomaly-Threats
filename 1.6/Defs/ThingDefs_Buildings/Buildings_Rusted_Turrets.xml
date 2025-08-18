@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+<Defs>
+
 
   <ThingDef Name="NAT_BaseRustedTurret" ParentName="NAT_RustedBuildingBase" Abstract="True">
     <thingClass>NAT.Building_RustedTurret</thingClass>
@@ -58,7 +59,8 @@
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
     <soundImpactDefault>NAT_Pawn_RustedSoldier_Wounded</soundImpactDefault>
-    <placeWorkers>
+    <placeWorkers>
+
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_ShowTurretRadius</li>
     </placeWorkers>
@@ -84,11 +86,13 @@
   <ThingDef ParentName="NAT_BaseRustedTurret">
     <defName>NAT_RustedTurret_Mini</defName>
     <label>rusted mini-turret</label>
-    <description>A rusted bioferrite piece shaped like a small automatic turret. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+    <description>A rusted bioferrite piece shaped like a small automatic turret. Not actually a turret, rusted mini-turret is a static rusted creature, powered by dark archotechnology shard. Can shoot through the smoke and slowly regenerate.</description>
+
     <graphicData>
       <texPath>Things/Building/NAT_RustedTurret</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1,1)</drawSize>
+      <drawSize>(1,1)</drawSize>
+
       <shadowData>
         <volume>(0.27,0.25,0.27)</volume>
         <offset>(0,0,0)</offset>
@@ -100,7 +104,8 @@
       <MaxHitPoints>150</MaxHitPoints>
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
     </statBases>
-    <comps>
+    <comps>
+
       <li Class="CompProperties_SelfhealHitpoints">
         <ticksPerHeal>1000</ticksPerHeal>
       </li>
@@ -119,11 +124,14 @@
       <Bioferrite>2~6</Bioferrite>
       <Shard>-18~1</Shard>
     </killedLeavingsRanges>
-  </ThingDef>
+  </ThingDef>
+
+
 
   <!--=============== Autocannon turret ===============-->
 
-  <ThingDef ParentName="NAT_BaseRustedTurret" Name="NAT_HeavyRustedTurret" Abstract="True"> 
+  <ThingDef ParentName="NAT_BaseRustedTurret" Name="NAT_HeavyRustedTurret" Abstract="True"> 
+
     <graphicData>
       <texPath>Things/Building/NAT_RustedHeavyTurret</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -143,13 +151,19 @@
       <Mass>100</Mass>
       <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
-    </statBases>
-    <fillPercent>0.5</fillPercent>
-    <building>
+    </statBases>
+
+
+    <fillPercent>0.5</fillPercent>
+
+
+    <building>
+
       <turretTopDrawSize>3</turretTopDrawSize>
       <turretTopOffset>(0, 0.1)</turretTopOffset>
       <destroyEffecter>NAT_RustedOfficerDeath</destroyEffecter>
-    </building>
+    </building>
+
     <uiIconScale>0.95</uiIconScale>
     <soundImpactDefault>NAT_Pawn_RustedOfficer_Wounded</soundImpactDefault>
   </ThingDef>
@@ -157,7 +171,7 @@
   <ThingDef ParentName="NAT_HeavyRustedTurret">
     <defName>NAT_RustedTurret_Auto</defName>
     <label>rusted autocannon turret</label>
-    <description>A rusted bioferrite piece shaped like a heavy automatic turret. Its large-caliber shells do heavy damage over significant ranges, but its barrel must be refurbished after use. It cannot fire at close-up targets, and may explode when damaged.</description>
+    <description>A rusted bioferrite piece shaped like a heavy automatic turret. Not actually a turret, rusted autocannon turret is a static rusted creature, powered by dark archotechnology shard. Can shoot through the smoke and slowly regenerate.</description>
     <uiIconPath>Things/Building/NAT_RustedAutoTurret_Icon</uiIconPath>
     <statBases>
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret> <!-- like level 8 human shooter -->
@@ -171,7 +185,9 @@
       <Bioferrite>10~25</Bioferrite>
       <Shard>-7~1</Shard>
     </killedLeavingsRanges>
-  </ThingDef>
+  </ThingDef>
+
+
 
   <!--=============== Sniper ===============-->
 
@@ -193,14 +209,15 @@
       <Bioferrite>10~30</Bioferrite>
       <Shard>-6~1</Shard>
     </killedLeavingsRanges>
-  </ThingDef>
+  </ThingDef>
+
 
   <!--=============== Foam ===============-->
 
   <ThingDef ParentName="NAT_BaseRustedTurret">
     <defName>NAT_RustedTurret_Foam</defName>
     <label>rusted foam turret</label>
-    <description>An activatable turret for extinguishing fires. The turret stands idle until someone approaches and activates it, after which it will automatically spray large amounts of firefoam on any flames in sight.</description>
+    <description>A rusted bioferrite piece shaped like a foam turret. Not actually a turret, rusted foam turret is a static rusted creature, powered by dark archotechnology shard. Can shoot through the smoke and slowly regenerate.</description>
     <thingClass>Building_TurretFoam</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
@@ -226,7 +243,10 @@
       <li Class="CompProperties_SelfhealHitpoints">
         <ticksPerHeal>1000</ticksPerHeal>
       </li>
-    </comps>    <generateCommonality>0.2</generateCommonality> <!-- a bit less common than other turrets -->
+    </comps>
+
+
+    <generateCommonality>0.2</generateCommonality> <!-- a bit less common than other turrets -->
     <building>
       <combatPower>5</combatPower>
       <ai_combatDangerous>false</ai_combatDangerous>
@@ -237,7 +257,8 @@
         <li>NAT_RustedSiegeMember</li>
       </buildingTags>
       <turretBurstWarmupTime>0</turretBurstWarmupTime>
-    </building>
+    </building>
+
   </ThingDef>
 
 </Defs>

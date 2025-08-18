@@ -4,7 +4,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>NAT_AncientFabric</defName>
     <label>ancient fabric</label>
-    <description>Spacer-tech synthetic fabric designed for making ordinary clothes. It is soft, light, strong, and insulates well.</description>
+    <description>Ancient fabric usually found in Rusted army furnisments. It is soft, light, non-flammable, and insulates well.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Synthread</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -16,7 +16,7 @@
       <MaxHitPoints>80</MaxHitPoints>
       <MarketValue>3</MarketValue>
       <Mass>0.025</Mass>
-      <Flammability>0.1</Flammability>
+      <Flammability>0</Flammability>
       <DeteriorationRate>3</DeteriorationRate>
       <StuffPower_Armor_Sharp>0.94</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>0.26</StuffPower_Armor_Blunt>

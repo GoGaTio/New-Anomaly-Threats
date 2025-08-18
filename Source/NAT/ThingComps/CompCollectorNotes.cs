@@ -138,7 +138,7 @@ namespace NAT
 			if (StudyComp.Completed)
 			{
 				questPart.GenerateSite(caster.MapHeld ?? parent.MapHeld ?? Current.Game.CurrentMap, caster);
-				parent.Destroy();
+                parent.Destroy();
 			}
 		}
 	}

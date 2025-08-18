@@ -57,7 +57,7 @@ namespace NAT
 {
 	public class SitePartWorker_CollectorLair : SitePartWorker
 	{
-        public override string GetPostProcessedThreatLabel(Site site, SitePart sitePart)
+        /*public override string GetPostProcessedThreatLabel(Site site, SitePart sitePart)
         {
 			if(sitePart.parms is CollectorLairParams p)
             {
@@ -76,7 +76,7 @@ namespace NAT
             {
 				return "Parms is not CollectorLairParams";
 			}
-        }
+        }*/
     }
 
 	public class SitePartWorker_DistressCall_RustedArmy : SitePartWorker_DistressCall

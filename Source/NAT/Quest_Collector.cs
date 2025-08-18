@@ -197,7 +197,8 @@ namespace NAT
 				})
 			}, tile, null);
 			Find.WorldObjects.Add(site);
-		}
+            Find.LetterStack.ReceiveLetter("NAT_CollectorLairFound".Translate(), "NAT_CollectorLairFound_Desc".Translate(site.Label), LetterDefOf.PositiveEvent, site);
+        }
 
 		public void EscapeCollector(Pawn stolenPawn = null)
 		{

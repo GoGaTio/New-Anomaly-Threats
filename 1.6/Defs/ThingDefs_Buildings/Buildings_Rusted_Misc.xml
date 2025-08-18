@@ -31,7 +31,7 @@
   <ThingDef ParentName="NAT_RustedBuildingBase">
     <defName>NAT_RustedBeacon_Reinforcements</defName>
     <label>rusted beacon</label>
-    <description>A figure of clotted pain. It hurts to look on.</description>
+    <description>A rusted beacon that calls reinforcements if there are enemies nearby. Can be stunned with EMP or disruptors.</description>
     <graphicData>
       <texPath>Things/Building/NAT_RustedBeacon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -100,7 +100,7 @@
   <ThingDef ParentName="NAT_RustedBuildingBase">
     <defName>NAT_RustedBroadcastDish</defName>
     <label>rusted broadcast dish</label>
-    <description>A figure of clotted pain. It hurts to look on.</description>
+    <description>A large rusted broadcast dish. Transfers signals in Rusted army communication network.</description>
     <graphicData>
       <texPath>Things/Building/NAT_RustedBroadcastDish</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -146,7 +146,7 @@
   <ThingDef ParentName="NAT_RustedBuildingBase">
     <defName>NAT_RustedArmyBanner</defName>
     <label>rusted army banner</label>
-    <description>A figure of clotted pain. It hurts to look on.</description>
+    <description>A Rusted army banner.</description>
     <graphicData>
       <texPath>Things/Building/NAT_RustedArmyBanner</texPath>
       <graphicClass>Graphic_Single</graphicClass>

@@ -4,7 +4,7 @@
   <ThingDef ParentName="NAT_RustedTurretWeapon">
     <defName>NAT_Gun_RustedMiniTurret</defName>
     <label>rusted mini-turret gun</label>
-    <description>A simple automatic gun made to be mounted on a turret.</description>
+    <description>A pieces of bioferrite shaped like simple automatic gun.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/Weapon/NAT_RustedMiniTurret</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -38,7 +38,7 @@
   <ThingDef ParentName="NAT_RustedTurretWeapon">
     <defName>NAT_Gun_RustedAutoTurret</defName>
     <label>rusted autocannon</label>
-    <description>A self-loading large-bore cannon designed to attach to a turret.</description>
+    <description>A pieces of bioferrite shaped like self-loading large-bore cannon.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/Weapon/NAT_RustedAutoTurret</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -73,7 +73,7 @@
   <ThingDef ParentName="NAT_RustedTurretWeapon">
     <defName>NAT_Gun_RustedSniperTurret</defName>
     <label>rusted sniper cannon</label>
-    <description>A self-loading uranium slug cannon designed to attach to a turret.</description>
+    <description>A pieces of bioferrite shaped like self-loading uranium slug cannon.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/Weapon/NAT_RustedSniperTurret</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -107,7 +107,7 @@
   <ThingDef ParentName="NAT_RustedTurretWeapon">
     <defName>NAT_Gun_RustedFoamTurret</defName>
     <label>rusted foam sprayer</label>
-    <description>A high-pressure firefoam sprayer usually mounted on a turret.</description>
+    <description>A pieces of bioferrite shaped like firefoam sprayer.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/Weapon/NAT_RustedFoamTurret</texPath>
       <graphicClass>Graphic_Single</graphicClass>

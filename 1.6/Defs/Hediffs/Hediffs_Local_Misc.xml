@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+<Defs>
+
 
   <HediffDef>
     <defName>NAT_ActivatedSpeed</defName>
@@ -50,7 +51,8 @@
         <statOffsets>
           <IncomingDamageFactor>0.75</IncomingDamageFactor> 
           <Flammability>0.5</Flammability>
-        </statOffsets>
+        </statOffsets>
+
       </li>
     </stages>
   </HediffDef>

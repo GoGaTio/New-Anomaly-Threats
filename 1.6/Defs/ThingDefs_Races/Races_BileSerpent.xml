@@ -68,7 +68,8 @@
         </capacities>
         <power>15</power>
         <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+
       </li>
       <li>
         <label>head</label>
@@ -101,7 +102,8 @@
         </surpriseAttack>
       </li>
     </tools>
-    <comps>
+    <comps>
+
       <li Class="CompProperties_Studiable">
         <frequencyTicks>120000</frequencyTicks>
         <knowledgeCategory>Basic</knowledgeCategory>
@@ -116,19 +118,19 @@
       <li Class="CompProperties_AttachPoints">
         <points>
           <li>
-            <offset>(-.6, 0, .6)</offset>
+            <offset>(-.29, 0, .21)</offset>
             <type>PlatformRestraint0</type>
           </li>
           <li>
-            <offset>(.6, 0, .6)</offset>
+            <offset>(.42, 0, .5)</offset>
             <type>PlatformRestraint1</type>
           </li>
           <li>
-            <offset>(.6, 0, -.7)</offset>
+            <offset>(.44, 0, -.56)</offset>
             <type>PlatformRestraint2</type>
           </li>
           <li>
-            <offset>(-.6, 0, -.7)</offset>
+            <offset>(-.15, 0, -.56)</offset>
             <type>PlatformRestraint3</type>
           </li>
         </points>
@@ -145,7 +147,7 @@
     <race>NAT_BileSerpent</race>
     <overrideDeathOnDownedChance>0.6</overrideDeathOnDownedChance>
     <overrideDebugActionCategory>Entity</overrideDebugActionCategory>
-    <combatPower>95</combatPower>
+    <combatPower>105</combatPower>
     <ecoSystemWeight>0.5</ecoSystemWeight>
     <defaultFactionType>Entities</defaultFactionType>
     <lifeStages>

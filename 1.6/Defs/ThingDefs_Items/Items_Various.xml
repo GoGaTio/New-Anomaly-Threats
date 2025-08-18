@@ -45,7 +45,7 @@
   <ThingDef> 
     <defName>NAT_CollectorNotes</defName> 
     <label>collector notes</label> 
-    <description>Unremarkable leather bag, empty inside.</description> 
+    <description>Piece of leather with unreadable symbols.</description> 
     <thingClass>ThingWithComps</thingClass> 
     <category>Item</category> 
     <genericMarketSellable>false</genericMarketSellable> 
@@ -105,12 +105,12 @@
         <activeTicks>1</activeTicks> 
         <ticksToActivate>180</ticksToActivate> 
         <activateTexPath>UI/Commands/NAT_CollectorNotesRead</activateTexPath> 
-        <jobString>read notes</jobString> 
-        <activateLabelString>Order bag opening</activateLabelString> 
-        <activateDescString>Order someone to open the bag.</activateDescString> 
-        <guiLabelString>Choose who should open bag.</guiLabelString> 
-        <activatingString>opening bag</activatingString> 
-        <activatingStringPending>opening bag</activatingStringPending> 
+        <jobString>decrypt notes</jobString> 
+        <activateLabelString>Order notes decrypting</activateLabelString> 
+        <activateDescString>Order someone to decrypt notes.</activateDescString> 
+        <guiLabelString>Choose who should decrypt notes.</guiLabelString> 
+        <activatingString>decrypting notes</activatingString> 
+        <activatingStringPending>decrypting notes</activatingStringPending> 
         <showMustBeActivatedByColonist>false</showMustBeActivatedByColonist> 
         <targetingParameters> 
           <canTargetBuildings>false</canTargetBuildings> 

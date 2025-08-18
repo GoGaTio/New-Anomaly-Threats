@@ -77,7 +77,9 @@ namespace NAT
 
 		public static ThingDef NAT_CollectorGlassCase;
 
-		public static JobDef NAT_CollectorStealPawn;
+		public static ThingDef NAT_CollectorLairExit;
+
+        public static JobDef NAT_CollectorStealPawn;
 
 		public static JobDef NAT_CollectorStealThing;
 
@@ -158,7 +160,9 @@ namespace NAT
 
 		public static SoundDef NAT_World_RustedBannerCall;
 
-		public static QuestScriptDef NAT_CollectorScript;
+        public static SoundDef GestatorGlassShattered;
+
+        public static QuestScriptDef NAT_CollectorScript;
 
 		//public static QuestScriptDef NAT_CollectorLair;
 

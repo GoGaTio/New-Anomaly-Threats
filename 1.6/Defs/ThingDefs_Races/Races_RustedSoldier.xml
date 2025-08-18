@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+<Defs>
+
   
   <ThingDef ParentName="NAT_BaseRustedPawn" Name="NAT_BaseRustedSoldier">
     <defName>NAT_RustedSoldier</defName>
@@ -38,15 +39,15 @@
             <type>PlatformRestraint0</type>
           </li>
           <li>
-            <offset>(.42, 0, .21)</offset>
+            <offset>(.46, 0, .09)</offset>
             <type>PlatformRestraint1</type>
           </li>
           <li>
-            <offset>(.25, 0, -.51)</offset>
+            <offset>(.15, 0, -.51)</offset>
             <type>PlatformRestraint2</type>
           </li>
           <li>
-            <offset>(-.15, 0, -.41)</offset>
+            <offset>(-.07, 0, -.59)</offset>
             <type>PlatformRestraint3</type>
           </li>
         </points>
@@ -109,7 +110,8 @@
           <li>PlantCutting</li>
         </forceAllowWorkTypes>
       </li>
-    </comps>
+    </comps>
+
     <killedLeavingsRanges>
       <Bioferrite>2~4</Bioferrite>
     </killedLeavingsRanges>
@@ -123,8 +125,10 @@
         <def>NAT_RustedRegeneration</def>
         <severity>0.4</severity>
       </li>
-    </startingHediffs>
-    <race>NAT_RustedSoldier</race>
+    </startingHediffs>
+
+    <race>NAT_RustedSoldier</race>
+
     <alternateGraphicChance>0.5</alternateGraphicChance>
     <alternateGraphics>
 
@@ -132,19 +136,19 @@
         <texPath>Things/Pawn/Bodies/NAT_Soldier_B</texPath>
         <attachPoints>
           <li>
-            <offset>(-.47, 0, .25)</offset>
+            <offset>(-.39, 0, .11)</offset>
             <type>PlatformRestraint0</type>
           </li>
           <li>
-            <offset>(.25, 0, .15)</offset>
+            <offset>(.33, 0, .01)</offset>
             <type>PlatformRestraint1</type>
           </li>
           <li>
-            <offset>(.1, 0, -.5)</offset>
+            <offset>(.1, 0, -.63)</offset>
             <type>PlatformRestraint2</type>
           </li>
           <li>
-            <offset>(-.17, 0, -.52)</offset>
+            <offset>(-.13, 0, -.64)</offset>
             <type>PlatformRestraint3</type>
           </li>
         </attachPoints>
@@ -182,7 +186,7 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
-    <combatPower>180</combatPower>
+    <combatPower>250</combatPower>
     <weaponMoney>9999~9999</weaponMoney>
     <modExtensions>
       <li Class="NAT.RustedPawnExtention">

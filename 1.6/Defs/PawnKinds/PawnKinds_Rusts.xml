@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+<Defs>
+
 
   <PawnKindDef ParentName="NAT_RustedSoldierKindBase">
     <defName>NAT_RustedBannerman</defName>
@@ -20,7 +21,7 @@
     <weaponTags>
 	  <li>NAT_RustedGrenade</li>
     </weaponTags>
-    <combatPower>110</combatPower>
+    <combatPower>240</combatPower>
     <combatEnhancingDrugsCount>-10~2</combatEnhancingDrugsCount>
   </PawnKindDef>
   
@@ -39,7 +40,7 @@
     <weaponTags>
       <li>NAT_RustedSMG</li>
     </weaponTags>
-    <combatPower>190</combatPower>
+    <combatPower>290</combatPower>
     <combatEnhancingDrugsCount>-9~2</combatEnhancingDrugsCount>
   </PawnKindDef>
 
@@ -59,7 +60,7 @@
     <weaponTags>
       <li>NAT_RustedMelee</li>
     </weaponTags>
-    <combatPower>195</combatPower>
+    <combatPower>295</combatPower>
     <combatEnhancingDrugsCount>-7~2</combatEnhancingDrugsCount>
   </PawnKindDef>
   
@@ -95,7 +96,7 @@
     <weaponTags Inherit="False">
       <li>NAT_RustedBreach</li>
     </weaponTags>
-    <combatPower>170</combatPower>
+    <combatPower>230</combatPower>
   </PawnKindDef>
   
 </Defs>

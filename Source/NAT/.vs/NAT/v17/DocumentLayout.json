@@ -3,28 +3,90 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Misc\\Sounds.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Misc\\Stats.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Misc\\Apparel_Packs.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Misc\\CreepJoiners.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\newanomalythreats\\source\\nat\\harmony\\miscpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:harmony\\miscpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Sites\\DistressCall.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Scenario.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Languages\\English\\Keyed\\Misc_Gameplay.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\newanomalythreats\\source\\nat\\thingcomps\\compobelisk_inducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:thingcomps\\compobelisk_inducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Layouts\\LayoutRoomDefs_CollectorLair.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\newanomalythreats\\source\\nat\\harmony\\miscpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:harmony\\miscpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Abilities\\Abilities_Misc.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ResearchProjects_Anomaly.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\newanomalythreats\\source\\nat\\abilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:abilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_RustedTrooper.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_RustedSoldier.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_RustedOfficer.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_RustedMass.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_RustedGuardsman.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_Collector.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_BileSerpent.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Misc\\Weapons\\Rusted_Turrets.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Misc\\Weapons\\Rusted_Medium.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Rusted_Structure.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Misc\\Weapons\\Rusted_Heavy.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Misc\\Weapons\\Rusted_Base.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Exotic.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Items\\Items_Various.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Items\\Items_UsableByRusts.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Items\\Items_Serum.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Items\\Items_Manufactured.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Rusted_Turrets.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Rusted_Misc.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Rusted_Crates.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\newanomalythreats\\source\\nat\\defof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,115 +95,389 @@
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Apparel_Packs.xml",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Misc\\Apparel_Packs.xml",
-              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Misc\\Apparel_Packs.xml",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Misc\\Apparel_Packs.xml",
-              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Misc\\Apparel_Packs.xml",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAHwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-08-17T19:02:10.185Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MiscPatches.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\Harmony\\MiscPatches.cs",
-              "RelativeDocumentMoniker": "Harmony\\MiscPatches.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\Harmony\\MiscPatches.cs",
-              "RelativeToolTip": "Harmony\\MiscPatches.cs",
-              "ViewState": "AgIAAMUAAAAAAAAAAAAAwNYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T19:00:36.07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Sounds.xml",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Misc\\Sounds.xml",
-              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\Misc\\Sounds.xml",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Misc\\Sounds.xml",
-              "RelativeToolTip": "..\\..\\1.6\\Defs\\Misc\\Sounds.xml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-08-17T18:45:45.846Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LayoutRoomDefs_CollectorLair.xml",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Layouts\\LayoutRoomDefs_CollectorLair.xml",
-              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\Layouts\\LayoutRoomDefs_CollectorLair.xml",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Layouts\\LayoutRoomDefs_CollectorLair.xml",
-              "RelativeToolTip": "..\\..\\1.6\\Defs\\Layouts\\LayoutRoomDefs_CollectorLair.xml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-08-17T18:44:45.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Abilities.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\Abilities.cs",
-              "RelativeDocumentMoniker": "Abilities.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\Abilities.cs",
-              "RelativeToolTip": "Abilities.cs",
-              "ViewState": "AgIAAOAAAAAAAAAAAAAqwPIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T18:35:49.554Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Abilities_Misc.xml",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Abilities\\Abilities_Misc.xml",
-              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\Abilities\\Abilities_Misc.xml",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Abilities\\Abilities_Misc.xml",
-              "RelativeToolTip": "..\\..\\1.6\\Defs\\Abilities\\Abilities_Misc.xml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-08-17T18:35:01.551Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CompObelisk_Inducer.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\ThingComps\\CompObelisk_Inducer.cs",
-              "RelativeDocumentMoniker": "ThingComps\\CompObelisk_Inducer.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\ThingComps\\CompObelisk_Inducer.cs",
-              "RelativeToolTip": "ThingComps\\CompObelisk_Inducer.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAUwEAAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T18:29:39.678Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 28,
               "Title": "DefOf.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\DefOf.cs",
               "RelativeDocumentMoniker": "DefOf.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\DefOf.cs",
               "RelativeToolTip": "DefOf.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAQwEUAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwEMAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T18:00:33.438Z",
+              "WhenOpened": "2025-08-18T08:10:42.148Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Stats.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Misc\\Stats.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\Misc\\Stats.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Misc\\Stats.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\Misc\\Stats.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T11:13:36.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreepJoiners.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Misc\\CreepJoiners.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\Misc\\CreepJoiners.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Misc\\CreepJoiners.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\Misc\\CreepJoiners.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T11:13:03.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DistressCall.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Sites\\DistressCall.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\Sites\\DistressCall.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Sites\\DistressCall.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\Sites\\DistressCall.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T11:12:35.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Scenario.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Scenario.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\Scenario.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Scenario.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\Scenario.xml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAF4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T11:12:01.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MiscPatches.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\Harmony\\MiscPatches.cs",
+              "RelativeDocumentMoniker": "Harmony\\MiscPatches.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\Harmony\\MiscPatches.cs",
+              "RelativeToolTip": "Harmony\\MiscPatches.cs",
+              "ViewState": "AgIAANMAAAAAAAAAAAAYwOkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T11:10:23.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CompObelisk_Inducer.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\ThingComps\\CompObelisk_Inducer.cs",
+              "RelativeDocumentMoniker": "ThingComps\\CompObelisk_Inducer.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\ThingComps\\CompObelisk_Inducer.cs",
+              "RelativeToolTip": "ThingComps\\CompObelisk_Inducer.cs",
+              "ViewState": "AgIAALAAAAAAAAAAAAAIwOoAAAB2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T11:07:19.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Misc_Gameplay.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Languages\\English\\Keyed\\Misc_Gameplay.xml",
+              "RelativeDocumentMoniker": "..\\..\\Languages\\English\\Keyed\\Misc_Gameplay.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Languages\\English\\Keyed\\Misc_Gameplay.xml",
+              "RelativeToolTip": "..\\..\\Languages\\English\\Keyed\\Misc_Gameplay.xml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADEAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T11:06:05.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ResearchProjects_Anomaly.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ResearchProjects_Anomaly.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ResearchProjects_Anomaly.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ResearchProjects_Anomaly.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ResearchProjects_Anomaly.xml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T11:05:45.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Races_RustedTrooper.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_RustedTrooper.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Races\\Races_RustedTrooper.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_RustedTrooper.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Races\\Races_RustedTrooper.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T11:05:23.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Races_RustedSoldier.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_RustedSoldier.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Races\\Races_RustedSoldier.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_RustedSoldier.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Races\\Races_RustedSoldier.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T11:05:16.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Races_RustedOfficer.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_RustedOfficer.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Races\\Races_RustedOfficer.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_RustedOfficer.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Races\\Races_RustedOfficer.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAACSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T11:05:05.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Races_RustedMass.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_RustedMass.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Races\\Races_RustedMass.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_RustedMass.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Races\\Races_RustedMass.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T11:05:02.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Races_RustedGuardsman.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_RustedGuardsman.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Races\\Races_RustedGuardsman.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_RustedGuardsman.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Races\\Races_RustedGuardsman.xml",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAAYAAACgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T11:03:49.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Races_Collector.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_Collector.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Races\\Races_Collector.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_Collector.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Races\\Races_Collector.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T11:03:38.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Races_BileSerpent.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_BileSerpent.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Races\\Races_BileSerpent.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_BileSerpent.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Races\\Races_BileSerpent.xml",
+              "ViewState": "AgIAALcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T11:03:27.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Rusted_Turrets.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Misc\\Weapons\\Rusted_Turrets.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Misc\\Weapons\\Rusted_Turrets.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Misc\\Weapons\\Rusted_Turrets.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Misc\\Weapons\\Rusted_Turrets.xml",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAG4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T11:01:49.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Rusted_Medium.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Misc\\Weapons\\Rusted_Medium.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Misc\\Weapons\\Rusted_Medium.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Misc\\Weapons\\Rusted_Medium.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Misc\\Weapons\\Rusted_Medium.xml",
+              "ViewState": "AgIAANUAAAAAAAAAAAAEwOoAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T11:01:04.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Rusted_Heavy.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Misc\\Weapons\\Rusted_Heavy.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Misc\\Weapons\\Rusted_Heavy.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Misc\\Weapons\\Rusted_Heavy.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Misc\\Weapons\\Rusted_Heavy.xml",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T11:00:49.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Rusted_Base.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Misc\\Weapons\\Rusted_Base.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Misc\\Weapons\\Rusted_Base.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Misc\\Weapons\\Rusted_Base.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Misc\\Weapons\\Rusted_Base.xml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAADEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T11:00:34.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Items_Various.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Items\\Items_Various.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Items\\Items_Various.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Items\\Items_Various.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Items\\Items_Various.xml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAHUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T10:53:17.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Items_UsableByRusts.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Items\\Items_UsableByRusts.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Items\\Items_UsableByRusts.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Items\\Items_UsableByRusts.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Items\\Items_UsableByRusts.xml",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAAJ0AAAB7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T10:51:52.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Items_Serum.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Items\\Items_Serum.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Items\\Items_Serum.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Items\\Items_Serum.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Items\\Items_Serum.xml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAACJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T10:49:07.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Items_Manufactured.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Items\\Items_Manufactured.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Items\\Items_Manufactured.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Items\\Items_Manufactured.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Items\\Items_Manufactured.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T10:47:22.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Buildings_Rusted_Turrets.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Rusted_Turrets.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Rusted_Turrets.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Rusted_Turrets.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Rusted_Turrets.xml",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAAANsAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T10:44:21.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Buildings_Rusted_Structure.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Rusted_Structure.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Rusted_Structure.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Rusted_Structure.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Rusted_Structure.xml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAALsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T10:43:30.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Buildings_Rusted_Misc.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Rusted_Misc.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Rusted_Misc.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Rusted_Misc.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Rusted_Misc.xml",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAAAJQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T10:41:03.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Buildings_Rusted_Crates.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Rusted_Crates.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Rusted_Crates.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Rusted_Crates.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Rusted_Crates.xml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAF0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T10:39:11.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Buildings_Exotic.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Exotic.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Exotic.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Exotic.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Exotic.xml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-18T10:34:16.206Z",
               "EditorCaption": ""
             }
           ]

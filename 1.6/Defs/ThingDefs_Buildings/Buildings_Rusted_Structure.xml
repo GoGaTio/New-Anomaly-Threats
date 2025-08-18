@@ -46,7 +46,7 @@
   <ThingDef ParentName="DoorBase">
     <defName>NAT_RustedDoor</defName>
     <label>rusted door</label>
-    <description>A heavily-reinforced door made of an ultratech polymer. Hack the door to open it.</description>
+    <description>A rusted door.</description>
     <thingClass>Building_SupportedDoor</thingClass>
     <designationCategory IsNull="True"/>
     <graphicData>
@@ -89,7 +89,7 @@
   <ThingDef ParentName="DoorBase">
     <defName>NAT_RustedDoor_Double</defName>
     <label>rusted door</label>
-    <description>Divides rooms. An intricately-carved door, decorated with gold. This large, heavy door requires adjacent walls to function.</description>
+    <description>A large rusted door.</description>
     <thingClass>Building_MultiTileDoor</thingClass>
     <statBases>
       <MaxHitPoints>650</MaxHitPoints>
@@ -130,7 +130,7 @@
     </placeWorkers>
   </ThingDef>
 
-  <ThingDef ParentName="BuildingBase">
+  <!--<ThingDef ParentName="BuildingBase">
     <defName>NAT_RustedBarrier</defName>
     <label>rusted barrier</label>
     <description>A waist-high barrier for use as cover from incoming shots. Barricades are ugly, but provide better cover than other low objects. Barricades will block certain kinds of animals the same way that fences do.</description>
@@ -142,7 +142,8 @@
       <linkType>Basic</linkType>
       <linkFlags>
         <li>Barricades</li>
-      </linkFlags>
+      </linkFlags>
+
     </graphicData>
     <uiIconPath>Things/Building/Linked/Barricade_MenuIcon</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
@@ -152,30 +153,38 @@
     <passability>PassThroughOnly</passability>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.45</fillPercent>
-    <canOverlapZones>false</canOverlapZones>
+    <canOverlapZones>false</canOverlapZones>
+
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <Beauty>-25</Beauty>
+      <Beauty>-25</Beauty>
+
       <Flammability>1.5</Flammability>
     </statBases>
     <building>
       <ai_chillDestination>false</ai_chillDestination>
       <isInert>true</isInert>
       <isFence>true</isFence>
-      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+
       <paintable>false</paintable>
       <deconstructible>false</deconstructible>
       <claimable>false</claimable>
       <neverBuildable>true</neverBuildable>
       <displayAttackToDestroyOnInspectPane>false</displayAttackToDestroyOnInspectPane>
       <destroyEffecter>NAT_RustedSoldierDeath</destroyEffecter>
-    </building>
+    </building>
+
+
     <filthLeaving>NAT_Filth_RustedDebris</filthLeaving>
     <rotatable>false</rotatable>
     <selectable>true</selectable>
-    <neverMultiSelect>true</neverMultiSelect>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <staticSunShadowHeight>0.20</staticSunShadowHeight>
-  </ThingDef>
+    <neverMultiSelect>true</neverMultiSelect>
+
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+
+  </ThingDef>-->
 
 </Defs>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+<Defs>
+
   
   <!--<CreepJoinerBenefitDef>
     <defName>NAT_RustShaper</defName>
@@ -21,7 +22,8 @@
     <maxGenerationAge>90</maxGenerationAge>
     <forcedHair>Bald</forcedHair>
     <fixedInventory>
-      <NAT_Gun_RustedShotgun />
+      <NAT_Gun_RustedShotgun />
+
       <Apparel_BasicShirt>
         <stuff>Leather_Dread</stuff>
         <quality>Poor</quality>

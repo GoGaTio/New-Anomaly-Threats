@@ -5,7 +5,7 @@
 
   <LayoutRoomDef>
     <defName>NAT_CollectorLairEntrance</defName>
-    <roomContentsWorkerType>RoomContents_StockpileEntrance</roomContentsWorkerType>
+    <roomContentsWorkerType>NAT.RoomContents_CollectorLairEntrance</roomContentsWorkerType>
     <minSingleRectWidth>9</minSingleRectWidth>
     <minSingleRectHeight>9</minSingleRectHeight>
     <requiresSingleRectRoom>true</requiresSingleRectRoom>
@@ -40,8 +40,8 @@
     <defName>NAT_CollectionRoom</defName>
     <canMergeWithAdjacentRoom>false</canMergeWithAdjacentRoom>
     <requiresSingleRectRoom>true</requiresSingleRectRoom>
-    <minSingleRectWidth>10</minSingleRectWidth>
-    <minSingleRectHeight>10</minSingleRectHeight>
+    <minSingleRectWidth>7</minSingleRectWidth>
+    <minSingleRectHeight>7</minSingleRectHeight>
     <floorTypes>
       <li>CarpetMagenta</li>
       <li>CarpetMossBright</li>
@@ -54,22 +54,14 @@
     <defName>NAT_CollectorBedroom</defName>
     <canMergeWithAdjacentRoom>false</canMergeWithAdjacentRoom>
     <requiresSingleRectRoom>true</requiresSingleRectRoom>
-    <minSingleRectWidth>13</minSingleRectWidth>
-    <minSingleRectHeight>13</minSingleRectHeight>
+    <minSingleRectWidth>9</minSingleRectWidth>
+    <minSingleRectHeight>9</minSingleRectHeight>
     <floorTypes>
       <li>CarpetMagenta</li>
       <li>CarpetMossBright</li>
       <li>CarpetBlue</li>
     </floorTypes>
     <edgeTerrain>TileMarble</edgeTerrain>
-    <scatter>
-      <ChunkMechanoidSlag>
-        <groupsPerHundredCells>2~4</groupsPerHundredCells>
-        <itemsPerGroup>1~2</itemsPerGroup>
-        <groupDistRange>3~5</groupDistRange>
-        <minGroups>1</minGroups>
-      </ChunkMechanoidSlag>
-    </scatter>
   </LayoutRoomDef>
   
 </Defs>

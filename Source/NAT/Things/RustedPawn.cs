@@ -399,7 +399,7 @@ namespace NAT
 			IntVec3 pos = PositionHeld;
 			Map map = MapHeld;
 			bool isPlayer = Faction == Faction.OfPlayerSilentFail;
-			if (pos.IsValid && equipment?.Primary != null && equipment.Primary.TryGetComp<CompRustedBanner>(out var banner))
+			/*if (pos.IsValid && equipment?.Primary != null && equipment.Primary.TryGetComp<CompRustedBanner>(out var banner))
 			{
 				banner.ApplyEffect(pos, map);
 				equipment.Remove(banner.parent);
@@ -407,7 +407,7 @@ namespace NAT
                 {
 					banner.parent.Destroy();
 				}
-			}
+			}*/
 			float chance = this.GetStatValue(NATDefOf.NAT_CoreDropChance);
 			if (Faction != Faction.OfPlayerSilentFail)
 			{

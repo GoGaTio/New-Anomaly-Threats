@@ -266,10 +266,10 @@ namespace NAT
 		{
 			Listing_Standard listingStandard = new Listing_Standard();
 			listingStandard.Begin(inRect);
-			listingStandard.CheckboxLabeled("NAT_Setting_NameDraft".Translate(), ref settings.rustedSoldierName_Draft, "NAT_Setting_NameDraft_Desc".Translate());
-			listingStandard.CheckboxLabeled("NAT_Setting_NameNoDraft".Translate(), ref settings.rustedSoldierName_NoDraft, "NAT_Setting_NameNoDraft_Desc".Translate());
+			//listingStandard.CheckboxLabeled("NAT_Setting_NameDraft".Translate(), ref settings.rustedSoldierName_Draft, "NAT_Setting_NameDraft_Desc".Translate());
+			//listingStandard.CheckboxLabeled("NAT_Setting_NameNoDraft".Translate(), ref settings.rustedSoldierName_NoDraft, "NAT_Setting_NameNoDraft_Desc".Translate());
 			//listingStandard.CheckboxLabeled("NAT_Setting_WeaponChange".Translate(), ref settings.rustedSoldierWeaponChange, "NAT_Setting_WeaponChange_Desc".Translate());
-			listingStandard.CheckboxLabeled("NAT_Setting_DeathNotification".Translate(), ref settings.rustedSoldierDeathNotification, "NAT_Setting_DeathNotification_Desc".Translate());
+			//listingStandard.CheckboxLabeled("NAT_Setting_DeathNotification".Translate(), ref settings.rustedSoldierDeathNotification, "NAT_Setting_DeathNotification_Desc".Translate());
 			listingStandard.CheckboxLabeled("NAT_Setting_AllowRaid".Translate(), ref settings.allowEndGameRaid, "NAT_Setting_AllowRaid_Desc".Translate());
 			listingStandard.End();
 			base.DoSettingsWindowContents(inRect);

@@ -211,7 +211,7 @@ namespace NAT
         public override string CompInspectStringExtra()
         {
 			string s = null;
-			if(Collector.CurJob != null)
+			if(DebugSettings.ShowDevGizmos && Collector.CurJob != null)
             {
 				s = Collector.CurJob.def.defName;
 			}
@@ -221,7 +221,7 @@ namespace NAT
         public override void PostDrawExtraSelectionOverlays()
         {
             base.PostDrawExtraSelectionOverlays();
-			if (Collector.CurJob != null)
+			if (DebugSettings.ShowDevGizmos && Collector.CurJob != null)
 			{
 				if (Collector.CurJob.targetA.IsValid)
 				{

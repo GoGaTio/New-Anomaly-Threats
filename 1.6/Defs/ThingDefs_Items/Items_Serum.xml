@@ -38,7 +38,7 @@
   <ThingDef ParentName="SerumBase">
     <defName>NAT_BilePowerSerum</defName>
     <label>bile power serum</label>
-    <description>A syringe of turbid plum fluid that fully suppresses any pain, even induced.\n\nThe effect is temporary and does not stack.</description>
+    <description>A syringe of sticky fluid made from bile serpents gland. It supresses effect of bile slowness and decreases acid damage.\n\nThe effect is temporary and does not stack.</description>
     <graphicData>
       <texPath>Things/Item/Serum/NAT_SerumBilePower</texPath>
       <graphicClass>Graphic_Single</graphicClass>

@@ -197,11 +197,11 @@ namespace NAT
                 {
                     if (pawn.carryTracker.TryStartCarry(victim))
                     {
-						Hediff h = pawn.health.GetOrAddHediff(NATDefOf.NAT_CollectorHypnosis);
-						h.Severity = 1f;
 					}
 				}
-				Find.Anomaly.EndHypnotize(pawn);
+                Hediff h = victim.health.GetOrAddHediff(NATDefOf.NAT_CollectorHypnosis);
+                h.Severity = 1f;
+                Find.Anomaly.EndHypnotize(victim);
 				//Find.TickManager.Pause();
 			});
 			yield return toil3;
@@ -367,4 +367,17 @@ namespace NAT
 			yield return toil2;
 		}
 	}
+
+    public class ThinkNode_ConditionalNotHasJobDef : ThinkNode_Conditional
+    {
+		public JobDef def;
+        protected override bool Satisfied(Pawn pawn)
+        {
+            if (pawn.CurJob != null && pawn.CurJob.def == def)
+            {
+                return false;
+            }
+			return true;
+        }
+    }
 }

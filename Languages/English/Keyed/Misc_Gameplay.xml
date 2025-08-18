@@ -6,7 +6,7 @@
   <NAT_InducerObeliskLetter>The obelisk is activating! It swells with grisly energy as the air crackles around it. It is about to self-destruct in a great explosion, but before it does, it will create pulses, inducing rage and twisting minds.</NAT_InducerObeliskLetter>
   
   <NAT_InducerTriggered_Label>Obelisk pulse</NAT_InducerTriggered_Label>
-  <NAT_InducerTriggered_Desc>While interacting with the obelisk, {PAWN_nameDef} felt weaves of pain induces from it. {PAWN_pronoun} got no injuries or other consequences, but things in the region turned into clotted pain.</NAT_InducerTriggered_Desc>
+  <NAT_InducerTriggered_Desc>While interacting with the obelisk, {PAWN_nameDef} felt psychic weaves induced from it.</NAT_InducerTriggered_Desc>
   <NAT_InducerTriggeredPlayer_Desc></NAT_InducerTriggeredPlayer_Desc>
   
   <NAT_InducerEffect_Animals>Animals gone mad</NAT_InducerEffect_Animals>
@@ -15,10 +15,10 @@
   <NAT_InducerEffect_Subdue>Obelisk subdued {PAWN_nameDef}</NAT_InducerEffect_Subdue>
   <NAT_InducerEffectDesc_Subdue>Obelisk took control on {PAWN_nameDef}'s mind. {PAWN_pronoun} will attack your colonists and your allies.</NAT_InducerEffectDesc_Subdue>
   
-  <NAT_InducerEffect_Shock>Obelisk shock</NAT_InducerEffect_Shock>
+  <NAT_InducerEffect_Shock>Obelisk shocked {PAWN_nameDef}</NAT_InducerEffect_Shock>
   <NAT_InducerEffectDesc_Shock>Obelisk pulse induced void shock on {PAWN_nameDef}. {PAWN_pronoun} will be in this condition for around a day.</NAT_InducerEffectDesc_Shock>
   
-  <NAT_InducerEffect_Suppression>Obelisk supression</NAT_InducerEffect_Suppression>
+  <NAT_InducerEffect_Suppression>Obelisk supressed {PAWN_nameDef}</NAT_InducerEffect_Suppression>
   <NAT_InducerEffectDesc_Suppression>Obelisk pulse mentally supressed {PAWN_nameDef}. {PAWN_pronoun} will feel this wave of anxiety and anger for some time.</NAT_InducerEffectDesc_Suppression>
   
   <NAT_ObeliskCausedBreak>This happened because of crannied obelisk psy-pulse.</NAT_ObeliskCausedBreak>
@@ -34,15 +34,20 @@
   
   <!--Collector-->
   <NAT_LetterPawnStealed>{PAWN_nameDef} was stealed by collector. Now {PAWN_pronoun} is in his lair somewhere nearby.\n\nFind and kill colector to save {PAWN_objective}.</NAT_LetterPawnStealed>
-  <NAT_LetterLabelCollectorRevealed>Collector revealed!</NAT_LetterLabelCollectorRevealed>
+  <NAT_LetterLabelCollectorRevealed>Collector revealed</NAT_LetterLabelCollectorRevealed>
   <NAT_LetterCollectorRevealed>Invisible creature appeared nearby!</NAT_LetterCollectorRevealed>
   <NAT_MessageCollectorRevealed>Collector revealed!</NAT_MessageCollectorRevealed>
-  <NAT_CubeStealed>Cube disappeared!</NAT_CubeStealed>
+  <NAT_CubeStealed>Cube disappeared</NAT_CubeStealed>
   <NAT_LetterGoldenCubeStealed>You've found out that golden cube, beautiful Cube, was stealed.\n\nMaybe cube was stealed by collector, creature that steals everything valuable.</NAT_LetterGoldenCubeStealed>
-  
+  <NAT_CollectorLairFound>Collector lair found</NAT_CollectorLairFound>
+  <NAT_CollectorLairFound_Desc>You have designate location of collector's lair. It seems to be in {0}.</NAT_CollectorLairFound_Desc>
   <!--Rusted army-->
   <NAT_RustedArmyRaid>Raid: Rusted Army</NAT_RustedArmyRaid>
-  <NAT_RustedArmyRaid_NoGroups>A group of rusted soldiers walked in the region nearby.</NAT_RustedArmyRaid_NoGroups>
+  <NAT_RustedArmyRaid_NoGroups>A group of rusts walked in the region nearby.</NAT_RustedArmyRaid_NoGroups>
+
+  <NAT_RustedArmySiege>Siege: Rusted Army</NAT_RustedArmySiege>
+  <NAT_RustedArmySiege_Desc>A group of rusts has dropped from the orbit nearby.\n\nThey will stay there until someone would provoke them.</NAT_RustedArmySiege_Desc>
+	<NAT_VoidSiege>\n\nSiege will try to stop anyone from activating void structures.</NAT_VoidSiege>
   <NAT_RustedArmyRaid_Groups>{0} groups of rusted soldiers walked in the region nearby.</NAT_RustedArmyRaid_Groups>
   <NAT_RustedArmyRaid_Immediate>They are attacking immediately.</NAT_RustedArmyRaid_Immediate>
   <NAT_RustedArmyRaid_Stage>They will prepare before attack for some time.</NAT_RustedArmyRaid_Stage>

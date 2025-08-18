@@ -82,8 +82,9 @@ namespace NAT
 						if(list.RandomElement().TryFindRandomInnerRect(size, out var rect, Validator))
                         {
 							Building_CollectionCase glassCase = ThingMaker.MakeThing(NATDefOf.NAT_CollectorGlassCase) as Building_CollectionCase;
-							glassCase.innerContainer.TryAddOrTransfer(p);
-							GenSpawn.Spawn(glassCase, rect.CenterCell, map);
+							glassCase.pawn = p;
+							glassCase.questPart = questPart_Collector;
+                            GenSpawn.Spawn(glassCase, rect.CenterCell, map);
 							break;
 						}
                     }
@@ -120,30 +121,6 @@ namespace NAT
 			foreach (LayoutRoom room in layout.Rooms)
 			{
 				room.noExteriorDoors = base.Def.exteriorDoorDef == null;
-			}
-		}
-
-		protected override void PostLayoutFlushedToSketch(LayoutStructureSketch parms)
-		{
-			base.PostLayoutFlushedToSketch(parms);
-			ReplaceDoors(parms.layoutSketch);
-		}
-
-		private static void ReplaceDoors(LayoutSketch sketch)
-		{
-			int num = Mathf.CeilToInt((float)sketch.Things.Count((SketchThing thing) => thing.def.IsDoor) * 0.5f);
-			foreach (SketchThing item in sketch.Things.InRandomOrder())
-			{
-				if (item.def.IsDoor)
-				{
-					item.def = ThingDefOf.AncientBlastDoor;
-					item.stuff = null;
-					num--;
-					if (num <= 0)
-					{
-						break;
-					}
-				}
 			}
 		}
 	}

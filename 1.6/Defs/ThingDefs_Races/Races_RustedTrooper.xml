@@ -33,15 +33,15 @@
       <li Class="CompProperties_AttachPoints">
         <points>
           <li>
-            <offset>(-.37, 0, .2)</offset>
+            <offset>(-.39, 0, .36)</offset>
             <type>PlatformRestraint0</type>
           </li>
           <li>
-            <offset>(.42, 0, .21)</offset>
+            <offset>(.3, 0, .33)</offset>
             <type>PlatformRestraint1</type>
           </li>
           <li>
-            <offset>(.25, 0, -.51)</offset>
+            <offset>(.13, 0, -.43)</offset>
             <type>PlatformRestraint2</type>
           </li>
           <li>
@@ -135,7 +135,8 @@
           <li>BasicWorker</li>
         </forceAllowWorkTypes>
       </li>
-    </comps>
+    </comps>
+
     <killedLeavingsRanges>
       <Bioferrite>2~5</Bioferrite>
     </killedLeavingsRanges>
@@ -165,22 +166,22 @@
       <li>
         <texPath>Things/Pawn/Bodies/NAT_Trooper_A</texPath>
         <attachPoints>
-          <li>
-            <offset>(-.47, 0, .25)</offset>
-            <type>PlatformRestraint0</type>
-          </li>
-          <li>
-            <offset>(.25, 0, .15)</offset>
-            <type>PlatformRestraint1</type>
-          </li>
-          <li>
-            <offset>(.1, 0, -.5)</offset>
-            <type>PlatformRestraint2</type>
-          </li>
-          <li>
-            <offset>(-.17, 0, -.52)</offset>
-            <type>PlatformRestraint3</type>
-          </li>
+			<li>
+				<offset>(-.39, 0, .36)</offset>
+				<type>PlatformRestraint0</type>
+			</li>
+			<li>
+				<offset>(.3, 0, .33)</offset>
+				<type>PlatformRestraint1</type>
+			</li>
+			<li>
+				<offset>(.13, 0, -.43)</offset>
+				<type>PlatformRestraint2</type>
+			</li>
+			<li>
+				<offset>(-.15, 0, -.41)</offset>
+				<type>PlatformRestraint3</type>
+			</li>
         </attachPoints>
       </li>
     </alternateGraphics>
@@ -193,9 +194,10 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
-    <combatPower>190</combatPower>
+    <combatPower>240</combatPower>
     <weaponMoney>9999~9999</weaponMoney>
     <combatEnhancingDrugsCount>-7~2</combatEnhancingDrugsCount>
-  </PawnKindDef>
+  </PawnKindDef>
+
 
 </Defs>

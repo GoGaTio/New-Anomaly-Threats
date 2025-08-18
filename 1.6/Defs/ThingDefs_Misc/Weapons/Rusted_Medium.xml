@@ -27,7 +27,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>NAT_Bullet_RustedSmallStop</defaultProjectile>
         <warmupTime>0.3</warmupTime>
-        <range>25.9</range>
+        <range>34.9</range>
         <soundCast>Shot_Revolver</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -291,7 +291,8 @@
     <graphicData>
       <texPath>Things/Item/Equipment/Weapon/NAT_RustedSword</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
+    </graphicData>
+
     <weaponClasses>
       <li>Melee</li>
     </weaponClasses>
@@ -301,7 +302,8 @@
     <statBases>
       <Mass>0.85</Mass>
       <MarketValue>250</MarketValue>
-    </statBases>
+    </statBases>
+
     <equippedAngleOffset>-65</equippedAngleOffset>
     <tools>
       <li>
@@ -331,7 +333,8 @@
     </tools>
     <butcherProducts>
       <Bioferrite>17</Bioferrite>
-    </butcherProducts>
+    </butcherProducts>
+
   </ThingDef>
   
   <ThingDef ParentName="NAT_BaseRustedWeapon">
@@ -388,7 +391,8 @@
       <texPath>Things/Item/Equipment/Weapon/NAT_RustedArmyBanner</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>(3, 3)</drawSize>
-    </graphicData>   <uiIconPath>Things/Item/Equipment/Weapon/NAT_RustedArmyBanner_Icon</uiIconPath>
+    </graphicData>
+   <uiIconPath>Things/Item/Equipment/Weapon/NAT_RustedArmyBanner_Icon</uiIconPath>
     <uiIconScale>1</uiIconScale>
     <weaponClasses>
       <li>Melee</li>
@@ -402,7 +406,8 @@
     <statBases>
       <Mass>2.65</Mass>
       <MarketValue>100</MarketValue>
-    </statBases>    <equippedStatOffsets>
+    </statBases>
+    <equippedStatOffsets>
       <MoveSpeed>0.2</MoveSpeed>
     </equippedStatOffsets>
     <equippedAngleOffset>-75</equippedAngleOffset>
@@ -426,11 +431,13 @@
     </tools>
     <butcherProducts>
       <Bioferrite>17</Bioferrite>
-    </butcherProducts>    <comps>
+    </butcherProducts>
+    <comps>
       <li Class="NAT.CompProperties_RustedBanner">
         <range>21.9</range>
       </li>
     </comps>
-  </ThingDef>
+  </ThingDef>
+
 
 </Defs>

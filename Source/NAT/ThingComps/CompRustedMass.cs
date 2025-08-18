@@ -111,7 +111,7 @@ namespace NAT
 				Thing t = parent.SpawnedParentOrMe;
 				parent.ParentHolder.GetDirectlyHeldThings().TryDrop(parent, t.PositionHeld, t.MapHeld, ThingPlaceMode.Near, 1, out var _);
 			}
-			ExecuteRaid(2f);
+			ExecuteRaid(map, 2f);
 			if(parent.SpawnedOrAnyParentSpawned)
             {
 				PawnGroupMakerParms pawnGroupMakerParms = new PawnGroupMakerParms
@@ -166,8 +166,13 @@ namespace NAT
 		public override void PostPostMake()
 		{
 			ticksSinceRaid = 240000;
-			mapToAttack = parent.MapHeld;
 		}
+
+        public override void PostSpawnSetup(bool respawningAfterLoad)
+        {
+            base.PostSpawnSetup(respawningAfterLoad);
+            mapToAttack = parent.MapHeld;
+        }
 
 		public override IEnumerable<Gizmo> CompGetGizmosExtra()
 		{
@@ -182,7 +187,7 @@ namespace NAT
 					defaultLabel = "DEV: Force raid",
 					action = delegate
 					{
-						ExecuteRaid();
+						ExecuteRaid(mapToAttack);
 						raidIndex++;
 						ticksSinceRaid = Mathf.RoundToInt(Props.cooldownFactorFromRaidIndex.Evaluate(raidIndex) * Props.cooldownFactorFromActivity.Evaluate(activity.ActivityLevel) * Props.cooldownDaysRange.RandomInRange * 60000f);
 					}
@@ -191,19 +196,24 @@ namespace NAT
 		}
 		public override void CompTick()
 		{
-			if (parent.IsHashIntervalTick(250))
+			if (!parent.IsHashIntervalTick(250))
 			{
-				(parent as Pawn).Drawer.renderer.SetAllGraphicsDirty();
+				return;
 			}
 			if (parent.MapHeld != null)
 			{
 				mapToAttack = parent.MapHeld;
-			}
+                (parent as Pawn).Drawer.renderer.SetAllGraphicsDirty();
+            }
+			if (mapToAttack.IsPocketMap)
+			{
+                mapToAttack = mapToAttack.PocketMapParent.sourceMap;
+            }
 			if (mapToAttack != null)
 			{
 				if (ticksSinceRaid <= 0)
 				{
-					ExecuteRaid();
+					ExecuteRaid(mapToAttack);
 					raidIndex++;
 					ticksSinceRaid = Mathf.RoundToInt(Props.cooldownFactorFromRaidIndex.Evaluate(raidIndex) * Props.cooldownFactorFromActivity.Evaluate(activity.ActivityLevel) * Props.cooldownDaysRange.RandomInRange * 60000f);
 				}
@@ -211,19 +221,19 @@ namespace NAT
 				{
 					if (ticksTillRaid == 1)
 					{
-						ExecuteRaid(1.2f);
+						ExecuteRaid(mapToAttack, 1.2f);
 					}
 					ticksTillRaid--;
 				}
 			}
 			if (ticksSinceRaid > 0)
 			{
-				ticksSinceRaid--;
+				ticksSinceRaid -= 250;
 			}
 		}
-		public void ExecuteRaid(float pointsFactor = 1)
+		public void ExecuteRaid(Map map, float pointsFactor = 1)
 		{
-			RustedArmyUtility.ExecuteRaid(mapToAttack, Props.pointsFactorFromRaidIndex.Evaluate(raidIndex) * pointsFactor * Props.pointsFactorFromActivity.Evaluate(activity.ActivityLevel) * Props.pointsFromCurrentPoints.Evaluate(StorytellerUtility.DefaultThreatPointsNow(parent.MapHeld)), Rand.Chance(0.7f) ? 1 : new IntRange(2, 7).RandomInRange, false, true, "NAT_RustedArmyRaid_Mass".Translate());
+			RustedArmyUtility.ExecuteRaid(mapToAttack, Props.pointsFactorFromRaidIndex.Evaluate(raidIndex) * pointsFactor * Props.pointsFactorFromActivity.Evaluate(activity.ActivityLevel) * Props.pointsFromCurrentPoints.Evaluate(StorytellerUtility.DefaultThreatPointsNow(map)), Rand.Chance(0.7f) ? 1 : new IntRange(2, 7).RandomInRange, false, true, "NAT_RustedArmyRaid_Mass".Translate());
 		}
 
 		public override void Notify_Killed(Map prevMap, DamageInfo? dinfo = null)
@@ -232,7 +242,11 @@ namespace NAT
 			{
 				mapToAttack = prevMap;
 			}
-			Activate(mapToAttack);
+            if (mapToAttack.IsPocketMap)
+            {
+                mapToAttack = mapToAttack.PocketMapParent.sourceMap;
+            }
+            Activate(mapToAttack);
 			base.Notify_Killed(prevMap, dinfo);
 		}
 	}

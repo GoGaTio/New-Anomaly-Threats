@@ -7,7 +7,8 @@
     <parent>Weapons</parent>
   </ThingCategoryDef>
 
-  <ThingDef Abstract="True" ParentName="BaseGun" Name="NAT_WeaponUsablyByRust">
+  <ThingDef Abstract="True" ParentName="BaseGun" Name="NAT_WeaponUsablyByRust">
+
     <techLevel>Archotech</techLevel>
     <tradeability>None</tradeability>
     <destroyOnDrop>false</destroyOnDrop>
@@ -17,14 +18,15 @@
     <thingCategories>
       <li>NAT_WeaponsRusted</li>
     </thingCategories>
-    <statBases>
-      <DeteriorationRate>0</DeteriorationRate>
+    <statBases>
+
+      <DeteriorationRate>0</DeteriorationRate>
+
       <Flammability>1.5</Flammability>
     </statBases>
   </ThingDef>
 
   <ThingDef Abstract="True" ParentName="NAT_WeaponUsablyByRust" Name="NAT_BaseRustedWeapon">
-    <description>A piece of bioferrite shaped like some sort of weapon.\n\nSomehow can shoot if wielded by rusted creature.</description>
     <statBases>
       <MarketValue>500</MarketValue>
     </statBases>
@@ -45,7 +47,6 @@
   </ThingDef>
 
   <ThingDef Abstract="True" ParentName="NAT_WeaponUsablyByRust" Name="NAT_BaseHeavyRustedWeapon">
-    <description>A piece of bioferrite shaped like some sort of weapon.</description>
     <statBases>
       <MarketValue>1100</MarketValue>
     </statBases>

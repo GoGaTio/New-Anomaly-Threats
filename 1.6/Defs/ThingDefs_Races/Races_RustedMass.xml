@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+<Defs>
+
   
   <ThingDef Name="NAT_RustedMass" ParentName="MysteriousSphereEntityBase">
     <defName>NAT_RustedMass</defName>
@@ -133,19 +134,19 @@
       <li Class="CompProperties_AttachPoints">
         <points>
           <li>
-            <offset>(-.35, 0, .25)</offset>
+            <offset>(-.35, 0, .10)</offset>
             <type>PlatformRestraint0</type>
           </li>
           <li>
-            <offset>(.30, 0, .20)</offset>
+            <offset>(.30, 0, .05)</offset>
             <type>PlatformRestraint1</type>
           </li>
           <li>
-            <offset>(.35, 0, -.35)</offset>
+            <offset>(.35, 0, -.51)</offset>
             <type>PlatformRestraint2</type>
           </li>
           <li>
-            <offset>(-.35, 0, -.35)</offset>
+            <offset>(-.51, 0, -.43)</offset>
             <type>PlatformRestraint3</type>
           </li>
         </points>

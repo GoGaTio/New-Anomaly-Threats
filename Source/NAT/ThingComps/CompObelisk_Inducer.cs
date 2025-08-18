@@ -57,7 +57,7 @@ namespace NAT
 			int colonists = Mathf.CeilToInt(colonistsUnffected * 0.4f);
 			foreach (Pawn p in parent.Map.mapPawns.AllPawnsSpawned.InRandomOrder().ToList())
 			{
-				if (Affectable(p) && TryCastNegativeAction(p, p.IsColonist, true, false, true))
+				if (Affectable(p) && TryCastNegativeAction(p, p.IsColonist, true, false, triggeredByPlayer))
                 {
 					if (p.IsColonist)
 					{
@@ -218,7 +218,7 @@ namespace NAT
 			h.TryGetComp<HediffComp_Disappears>().ticksToDisappear = 60000;
 			if (sendLetter)
 			{
-				Find.LetterStack.ReceiveLetter(LetterMaker.MakeLetter("NAT_InducerEffect_Shock".Translate(), "NAT_InducerEffectDesc_Shock".Translate(pawn.Named("PAWN")), LetterDefOf.ThreatSmall, pawn));
+				Find.LetterStack.ReceiveLetter(LetterMaker.MakeLetter("NAT_InducerEffect_Shock".Translate(pawn.Named("PAWN")), "NAT_InducerEffectDesc_Shock".Translate(pawn.Named("PAWN")), LetterDefOf.ThreatSmall, pawn));
 			}
 			return true;
 		}
@@ -232,7 +232,7 @@ namespace NAT
 			pawn.needs.mood.thoughts.memories.TryGainMemory(NATDefOf.NAT_ObeliskSuppression);
             if (sendLetter)
             {
-				Find.LetterStack.ReceiveLetter(LetterMaker.MakeLetter("NAT_InducerEffect_Suppression".Translate(), "NAT_InducerEffectDesc_Suppression".Translate(pawn.Named("PAWN")), LetterDefOf.ThreatSmall, pawn));
+				Find.LetterStack.ReceiveLetter(LetterMaker.MakeLetter("NAT_InducerEffect_Suppression".Translate(pawn.Named("PAWN")), "NAT_InducerEffectDesc_Suppression".Translate(pawn.Named("PAWN")), LetterDefOf.ThreatSmall, pawn));
 			}
 			return true;
         }

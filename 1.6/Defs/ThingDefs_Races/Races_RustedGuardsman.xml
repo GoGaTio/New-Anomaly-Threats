@@ -4,7 +4,7 @@
   <ThingDef ParentName="NAT_BaseRustedPawn">
     <defName>NAT_RustedGuardsman</defName>
     <label>rusted guardsman</label>
-    <description>Bioferrite pieces shaped like tall human figure. This type of rusted soldier have bioferrite shield that should be destroyed to harm trooper.</description>
+    <description>Bioferrite pieces shaped like tall human figure. This type of rusted creature has thicker armor and better combat skills than regulasr soldiers.</description>
     <statBases>
       <MoveSpeed>4.8</MoveSpeed>
       <MarketValue>2100</MarketValue>
@@ -38,19 +38,19 @@
       <li Class="CompProperties_AttachPoints">
         <points>
           <li>
-            <offset>(-.7, 0, .4)</offset>
+            <offset>(-.52, 0, .21)</offset>
             <type>PlatformRestraint0</type>
           </li>
           <li>
-            <offset>(.7, 0, .4)</offset>
+            <offset>(.6, 0, .35)</offset>
             <type>PlatformRestraint1</type>
           </li>
           <li>
-            <offset>(.25, 0, -.51)</offset>
+            <offset>(.28, 0, -.57)</offset>
             <type>PlatformRestraint2</type>
           </li>
           <li>
-            <offset>(-.15, 0, -.51)</offset>
+            <offset>(-.22, 0, -.65)</offset>
             <type>PlatformRestraint3</type>
           </li>
         </points>
@@ -201,9 +201,10 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
-    <combatPower>400</combatPower>
+    <combatPower>460</combatPower>
     <weaponMoney>9999~9999</weaponMoney>
     <combatEnhancingDrugsCount>-4~2</combatEnhancingDrugsCount>
-  </PawnKindDef>
+  </PawnKindDef>
+
 
 </Defs>

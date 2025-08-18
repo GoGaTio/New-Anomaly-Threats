@@ -62,8 +62,8 @@
             <li Class="ThinkNode_ConditionalHasAbility">
               <ability>NAT_CollectorHowl</ability>
               <subNodes>
-                <li Class="ThinkNode_ConditionalShotRecently">
-                  <thresholdTicks>600</thresholdTicks>
+                <li Class="NAT.ThinkNode_ConditionalNotHasJobDef">
+                  <def>NAT_CollectorStealPawn</def>
                   <subNodes>
                     <li Class="ThinkNode_ConditionalTotalDamage">
                       <thresholdPercent>0.10</thresholdPercent>

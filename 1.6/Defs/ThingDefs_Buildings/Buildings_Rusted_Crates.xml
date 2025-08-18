@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Defs>
 
   <ThingDef Abstract="True" Name="NAT_RustedCrateBase" ParentName="NAT_RustedBuildingBase">
@@ -7,7 +8,8 @@
     <hasInteractionCell>false</hasInteractionCell>
     <fillPercent>0.4</fillPercent>
     <tickerType>Normal</tickerType>
-    <drawerType>MapMeshAndRealTime</drawerType>    <thingClass>Building_Crate</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <thingClass>Building_Crate</thingClass>
     <canOverlapZones>false</canOverlapZones>
     <building>
       <ai_chillDestination>true</ai_chillDestination>
@@ -16,7 +18,9 @@
       <deconstructible>false</deconstructible>
       <claimable>false</claimable>
       <neverBuildable>true</neverBuildable>
-      <destroyEffecter>NAT_RustedSoldierDeath</destroyEffecter>      <openingStartedSound>Building_Deconstructed</openingStartedSound>      <isInert>true</isInert>
+      <destroyEffecter>NAT_RustedSoldierDeath</destroyEffecter>
+      <openingStartedSound>Building_Deconstructed</openingStartedSound>
+      <isInert>true</isInert>
     </building>
     <statBases>
       <MaxHitPoints>150</MaxHitPoints>
@@ -26,21 +30,32 @@
     <passability>PassThroughOnly</passability>
     <blockWind>false</blockWind>
     <rotatable>false</rotatable>
-    <staticSunShadowHeight>0.4</staticSunShadowHeight>    <noRightClickDraftAttack>true</noRightClickDraftAttack>
+    <staticSunShadowHeight>0.4</staticSunShadowHeight>
+    <noRightClickDraftAttack>true</noRightClickDraftAttack>
   </ThingDef>
 
   <ThingDef ParentName="NAT_RustedCrateBase">
     <defName>NAT_RustedBox</defName>
     <label>rusted crate</label>
-    <description>A figure of clotted pain. It hurts to look on.</description>
+    <description>A rusted bioferrite crate, may content something valuable.</description>
     <graphicData>
       <texPath>Things/Building/NAT_RustedCrates/NAT_RustedBox</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(3, 2)</drawSize>
     </graphicData>
-    <size>(2,1)</size>	<rotatable>true</rotatable>
+    <size>(2,1)</size>
+	<rotatable>true</rotatable>
     <comps>
-      <li Class="CompProperties_EmptyStateGraphic">        <graphicData>          <texPath>Things/Building/NAT_RustedCrates/NAT_RustedBox_Open</texPath>          <graphicClass>Graphic_Multi</graphicClass>          <drawSize>(3,2)</drawSize>        </graphicData>      </li>      <li Class="CompProperties_LootSpawn">        <contents>NAT_RustedBox</contents>      </li>
+      <li Class="CompProperties_EmptyStateGraphic">
+        <graphicData>
+          <texPath>Things/Building/NAT_RustedCrates/NAT_RustedBox_Open</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(3,2)</drawSize>
+        </graphicData>
+      </li>
+      <li Class="CompProperties_LootSpawn">
+        <contents>NAT_RustedBox</contents>
+      </li>
     </comps>
   </ThingDef> 
 
@@ -53,13 +68,56 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2, 2)</drawSize>
     </graphicData>
-    <size>(2,2)</size>    <statBases>      <MaxHitPoints>150</MaxHitPoints>      <Flammability>1</Flammability>      <Beauty>-2</Beauty>    </statBases>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>1</Flammability>
+      <Beauty>-2</Beauty>
+    </statBases>
     <comps>
-      <li Class="CompProperties_EmptyStateGraphic">        <graphicData>          <texPath>Things/Building/Ancient/OpenableContainers/AirdropPallet_Open</texPath>          <graphicClass>Graphic_Single</graphicClass>          <drawSize>(2,2)</drawSize>        </graphicData>      </li>      <li Class="CompProperties_LootSpawn">        <contents>Reward_Pallet_Medicine</contents>      </li>
+      <li Class="CompProperties_EmptyStateGraphic">
+        <graphicData>
+          <texPath>Things/Building/Ancient/OpenableContainers/AirdropPallet_Open</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(2,2)</drawSize>
+        </graphicData>
+      </li>
+      <li Class="CompProperties_LootSpawn">
+        <contents>Reward_Pallet_Medicine</contents>
+      </li>
     </comps>
   </ThingDef>-->
-  <ThingDef ParentName="NAT_RustedCrateBase">    <defName>NAT_RustedPallet</defName>     <label>rusted pallet</label>    <description>A rusted pallet containing old medical supplies.</description>    <graphicData>      <texPath>Things/Building/NAT_RustedCrates/NAT_RustedPallet</texPath>      <graphicClass>Graphic_Single</graphicClass>      <drawSize>(2, 2)</drawSize>    </graphicData>    <size>(2,2)</size>    <statBases>      <MaxHitPoints>150</MaxHitPoints>      <Flammability>1</Flammability>      <Beauty>-2</Beauty>    </statBases>    <comps>      <li Class="CompProperties_EmptyStateGraphic">        <graphicData>          <texPath>Things/Building/NAT_RustedCrates/NAT_RustedPallet_Open</texPath>          <graphicClass>Graphic_Single</graphicClass>          <drawSize>(2,2)</drawSize>        </graphicData>      </li>      <li Class="CompProperties_LootSpawn">        <contents>NAT_RustedPallet</contents>      </li>    </comps>  </ThingDef> 
-  <!--<ThingDef ParentName="NAT_RustedCrateBase">
+
+  <ThingDef ParentName="NAT_RustedCrateBase">
+    <defName>NAT_RustedPallet</defName> 
+    <label>rusted pallet</label>
+    <description>A rusted pallet containing various stuff.</description>
+    <graphicData>
+      <texPath>Things/Building/NAT_RustedCrates/NAT_RustedPallet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2, 2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>1</Flammability>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_EmptyStateGraphic">
+        <graphicData>
+          <texPath>Things/Building/NAT_RustedCrates/NAT_RustedPallet_Open</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(2,2)</drawSize>
+        </graphicData>
+      </li>
+      <li Class="CompProperties_LootSpawn">
+        <contents>NAT_RustedPallet</contents>
+      </li>
+    </comps>
+  </ThingDef> 
+
+  <!--<ThingDef ParentName="NAT_RustedCrateBase">
     <defName>NAT_RustedFreezer</defName> 
     <label>rusted freezer</label>
     <description>A locked bioferrite container. It appears to be used as a freezer, as the cracks on its surface radiate cold.</description>
@@ -71,14 +129,22 @@
     <size>(2,2)</size>
     <comps>
       <li Class="CompProperties_EmptyStateGraphic">
-        <graphicData>
-          <texPath>Things/Building/Ancient/OpenableContainers/AirdropPallet_Open</texPath>
-          <graphicClass>Graphic_Single</graphicClass>
-          <drawSize>(2,2)</drawSize>
-        </graphicData>
+
+        <graphicData>
+
+          <texPath>Things/Building/Ancient/OpenableContainers/AirdropPallet_Open</texPath>
+
+          <graphicClass>Graphic_Single</graphicClass>
+
+          <drawSize>(2,2)</drawSize>
+
+        </graphicData>
       </li>
-      <li Class="CompProperties_LootSpawn">        <contents>Reward_Pallet_Medicine</contents>      </li>
+      <li Class="CompProperties_LootSpawn">
+        <contents>Reward_Pallet_Medicine</contents>
+      </li>
     </comps>
-  </ThingDef>-->
+  </ThingDef>-->
+
   
 </Defs>

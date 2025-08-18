@@ -55,6 +55,8 @@ namespace NAT
             faction = null;
         }
 
+        public override bool ShouldRemove => pawn.Downed || base.ShouldRemove;
+
         public override void ExposeData()
         {
             Scribe_References.Look(ref faction, "faction");

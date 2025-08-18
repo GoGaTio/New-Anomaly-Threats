@@ -120,8 +120,9 @@ namespace NAT
 
 		private static List<Pawn> FireSightstealerCollectorAssault(float points, Map map)
 		{
-			float points2 = Mathf.Max(points, 1500f);
-			IncidentParms incidentParms = new IncidentParms
+            Log.Message("New Anomaly Threats - firing sightstealers+collector assault");
+            float points2 = Mathf.Max(points, Faction.OfEntities.def.MinPointsToGeneratePawnGroup(PawnGroupKindDefOf.Sightstealers) * 1.05f);
+            IncidentParms incidentParms = new IncidentParms
 			{
 				target = map,
 				raidArrivalMode = PawnsArrivalModeDefOf.EdgeWalkIn,
@@ -134,10 +135,11 @@ namespace NAT
 			}
 			List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(new PawnGroupMakerParms
 			{
-				groupKind = NATDefOf.NAT_SightstealersCollector,
+				groupKind = PawnGroupKindDefOf.Sightstealers,
 				points = points2,
 				faction = Faction.OfEntities
 			}).ToList();
+			list.Add(PawnGenerator.GeneratePawn(NATDefOf.NAT_Collector, Faction.OfEntities));
 			PawnsArrivalModeDefOf.EdgeWalkInDistributedGroups.Worker.Arrive(list, incidentParms);
 			LordMaker.MakeNewLord(Faction.OfEntities, new LordJob_AssaultColony(incidentParms.faction, canKidnap: false, canTimeoutOrFlee: false, sappers: false, useAvoidGridSmart: false, canSteal: false), map, list);
 			return list.ToList();
@@ -145,8 +147,9 @@ namespace NAT
 
 		private static List<Pawn> FireSerpentAssault(float points, Map map)
 		{
-			float points2 = Mathf.Max(points, Faction.OfEntities.def.MinPointsToGeneratePawnGroup(NATDefOf.NAT_Serpents) * 1.05f);
-			IncidentParms incidentParms = new IncidentParms
+            Log.Message("New Anomaly Threats - firing serpents assault");
+            float points2 = Mathf.Max(points, Faction.OfEntities.def.MinPointsToGeneratePawnGroup(NATDefOf.NAT_Serpents) * 1.05f);
+            IncidentParms incidentParms = new IncidentParms
 			{
 				target = map,
 				raidArrivalMode = PawnsArrivalModeDefOf.EdgeWalkIn,
@@ -170,7 +173,8 @@ namespace NAT
 
 		private static List<Pawn> FireSerpentDevourerAssault(float points, Map map)
 		{
-			float points2 = Mathf.Max(points / 2f, Faction.OfEntities.def.MinPointsToGeneratePawnGroup(PawnGroupKindDefOf.Devourers) * 1.05f);
+            Log.Message("New Anomaly Threats - firing serpents+devourers assault");
+            float points2 = Mathf.Max(points / 2f, Faction.OfEntities.def.MinPointsToGeneratePawnGroup(PawnGroupKindDefOf.Devourers) * 1.05f);
 			float points3 = Mathf.Max(points / 2f, Faction.OfEntities.def.MinPointsToGeneratePawnGroup(NATDefOf.NAT_Serpents) * 1.05f);
 			IncidentParms incidentParms = new IncidentParms
 			{
@@ -227,7 +231,7 @@ namespace NAT
 			parms.target = map;
 			parms.points = DefenderPointsByCombatPoints.Evaluate(StorytellerUtility.DefaultThreatPointsNow(map));
 			IncidentWorker_RustedArmySiege worker = NATDefOf.NAT_RustedArmySiege.Worker as IncidentWorker_RustedArmySiege;
-			worker.letterDescExtra = "NAT_".Translate();
+			worker.letterDescExtra = "NAT_VoidSiege".Translate();
 			worker.TryExecute(parms);
 			/*PawnGroupMakerParms pawnGroupMakerParms = new PawnGroupMakerParms
 			{

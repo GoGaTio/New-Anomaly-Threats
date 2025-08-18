@@ -30,7 +30,8 @@
     </thingCategories>
     <comps>
       <li Class="CompProperties_Forbiddable" />
-    </comps>
+    </comps>
+
   </ThingDef>
 
   <ThingDef Name="NAT_RustActivatorBase" Abstract="True" ParentName="NAT_ItemUsableByRust">
@@ -61,7 +62,7 @@
   <ThingDef ParentName="NAT_RustActivatorBase">
     <defName>NAT_RustedActivator_Speed</defName>
     <label>rusted speed activator</label>
-    <description>A small device that increases speed of rusted soldier.</description>
+    <description>A small device that increases speed of rust.</description>
     <graphicData>
       <texPath>Things/Item/NAT_RustedActivator_Speed</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -84,7 +85,7 @@
   <ThingDef ParentName="NAT_RustActivatorBase">
     <defName>NAT_RustedActivator_Durability</defName>
     <label>rusted durability activator</label>
-    <description>A small device that increases durability of rusted soldier.</description>
+    <description>A small device that increases durability of rust.</description>
     <graphicData>
       <texPath>Things/Item/NAT_RustedActivator_Durability</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -107,7 +108,7 @@
   <ThingDef ParentName="NAT_RustActivatorBase">
     <defName>NAT_RustedActivator_Charge</defName>
     <label>rusted charge activator</label>
-    <description>A small device that increases durability of rusted soldier.</description>
+    <description>A small device that increases work speed of rust.</description>
     <graphicData>
       <texPath>Things/Item/NAT_RustedActivator_Charge</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -131,7 +132,7 @@
   <ThingDef ParentName="NAT_RustActivatorBase">
     <defName>NAT_RustedActivator_Regeneration</defName>
     <label>rusted regeneration activator</label>
-    <description>A small device that activates regeneration of rusted soldier, but causes statis condition.</description>
+    <description>A small device that increases regeneration of rust.</description>
     <graphicData>
       <texPath>Things/Item/NAT_RustedActivator_Regeneration</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -154,7 +155,7 @@
   <ThingDef ParentName="NAT_ItemUsableByRust">
     <defName>NAT_ShardUpgrader</defName>
     <label>shard upgrader</label>
-    <description>Special device that can upgrade rusted soldier using shard of dark archotechnology.</description>
+    <description>Special device that can upgrade rust using shard of dark archotechnology.\n\nMakes rust core fully stable.</description>
     <graphicData>
       <texPath>Things/Item/NAT_ShardRustUpgrader</texPath>
       <graphicClass>Graphic_Single</graphicClass>

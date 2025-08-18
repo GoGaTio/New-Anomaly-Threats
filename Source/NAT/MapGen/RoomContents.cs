@@ -53,7 +53,27 @@ using Verse.Steam;
 
 namespace NAT
 {
-	public class RoomContents_RustedRegular : RoomContentsWorker
+    public class RoomContents_CollectorLairEntrance : RoomContentsWorker
+    {
+        private static readonly IntRange TurretsRange = new IntRange(1, 2);
+
+        public override void FillRoom(Map map, LayoutRoom room, Faction faction, float? threatPoints = null)
+        {
+            SpawnExit(map, room);
+            base.FillRoom(map, room, faction, threatPoints);
+        }
+
+        private void SpawnExit(Map map, LayoutRoom room)
+        {
+            List<Thing> list = new List<Thing>();
+            ThingDef exit = NATDefOf.NAT_CollectorLairExit;
+            List<Thing> spawned = list;
+            RoomGenUtility.FillWithPadding(exit, 1, room, map, null, null, spawned, 3);
+            MapGenerator.PlayerStartSpot = list.First().Position;
+        }
+    }
+
+    public class RoomContents_RustedRegular : RoomContentsWorker
 	{
 		public override void FillRoom(Map map, LayoutRoom room, Faction faction, float? threatPoints = null)
 		{

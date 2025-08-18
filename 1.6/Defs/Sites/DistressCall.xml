@@ -6,7 +6,7 @@
   <SitePartDef ParentName="DistressCallBase">
     <defName>NAT_DistressCall_RustedArmy</defName>
     <workerClass>NAT.SitePartWorker_DistressCall_RustedArmy</workerClass>
-    <selectionWeight>2</selectionWeight>
+    <selectionWeight>0</selectionWeight> <!--Disabled yet-->
   </SitePartDef>
 
   <GenStepDef>
@@ -32,7 +32,8 @@
       <minBaseSize>(30, 30)</minBaseSize>
       <maxBaseSize>(40, 40)</maxBaseSize>
     </genStep>
-  </GenStepDef> 
+  </GenStepDef>
+ 
 
   <GenStepDef>
     <defName>NAT_DistressCall_BurntPatches</defName>

@@ -4,7 +4,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>NAT_CollectorLairEntrance</defName>
     <label>ancient trapdoor</label>
-    <description>The entrance to a long-abandoned subterranean facility. Hack it to open the hatch.</description>
+    <description>The entrance to an abandoned underground facility. Probably there you would find collector lair.</description>
     <size>(3,3)</size>
     <useHitPoints>false</useHitPoints>
     <thingClass>NAT.UndergroundEntrance</thingClass>
@@ -48,8 +48,18 @@
         <openedLabelOverride>collector lair entrance</openedLabelOverride>
         <sealTexPath>Designations/FillCrater</sealTexPath>
         <sealJobReportOverride>buring {0}</sealJobReportOverride>
-        <openedGraphicData>          <texPath>Things/Building/NAT_CollectorLairEntrance/NAT_CollectorLairEntrance_Open</texPath>          <graphicClass>Graphic_Single</graphicClass>          <drawSize>(3,3)</drawSize>        </openedGraphicData>
-        <sealedGraphicData>          <texPath>Things/Building/NAT_CollectorLairEntrance/NAT_CollectorLairEntrance_Sealed</texPath>          <graphicClass>Graphic_Single</graphicClass>          <drawSize>(3,3)</drawSize>        </sealedGraphicData>
+		  <sealGizmoLabel>Bury</sealGizmoLabel>
+		  <sealGizmoDesc>Bury entrance forever.</sealGizmoDesc>
+        <openedGraphicData>
+          <texPath>Things/Building/NAT_CollectorLairEntrance/NAT_CollectorLairEntrance_Open</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(3,3)</drawSize>
+        </openedGraphicData>
+        <sealedGraphicData>
+          <texPath>Things/Building/NAT_CollectorLairEntrance/NAT_CollectorLairEntrance_Sealed</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(3,3)</drawSize>
+        </sealedGraphicData>
         <activeTicks>1</activeTicks>
         <ticksToActivate>300</ticksToActivate>
         <activateTexPath>UI/Commands/NAT_OpenCollectorLair</activateTexPath> 
@@ -76,7 +86,7 @@
   <ThingDef ParentName="PocketMapExit">
     <defName>NAT_CollectorLairExit</defName>
     <label>collector lair exit</label>
-    <description>A ladder which links to the surface trapdoor above.</description>
+    <description>A ladder which links to the surface above.</description>
     <size>(3,3)</size>
     <drawerType>RealtimeOnly</drawerType>
     <graphicData>
@@ -102,7 +112,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>NAT_CollectorGlassCase</defName>
     <label>glass case</label>
-    <description>A bioferrite piece shaped like humanoid creature.\n\nCan be activated into rusted infantryman using shard.</description>
+    <description>A large spiked vessel. It's surface is slick and turbid, but there is definitely something or someone inside.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Building/NAT_CollectorGlassCase/NAT_CollectorGlassCase</texPath>

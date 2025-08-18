@@ -79,11 +79,11 @@
       <li Class="CompProperties_AttachPoints">
         <points>
           <li>
-            <offset>(-.45, 0, .35)</offset>
+            <offset>(-.51, 0, .43)</offset>
             <type>PlatformRestraint0</type>
           </li>
           <li>
-            <offset>(.45, 0, .35)</offset>
+            <offset>(.51, 0, .43)</offset>
             <type>PlatformRestraint1</type>
           </li>
           <li>
@@ -91,7 +91,7 @@
             <type>PlatformRestraint2</type>
           </li>
           <li>
-            <offset>(-.2, 0, -.71)</offset>
+            <offset>(-.26, 0, -.75)</offset>
             <type>PlatformRestraint3</type>
           </li>
         </points>

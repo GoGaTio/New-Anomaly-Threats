@@ -88,7 +88,7 @@ namespace NAT
 		public override void PostDrawExtraSelectionOverlays()
 		{
 			base.PostDrawExtraSelectionOverlays();
-			if (Rust.mindState.enemyTarget != null)
+			if (DebugSettings.ShowDevGizmos && Rust.mindState.enemyTarget != null)
 			{
 				GenDraw.DrawCircleOutline(Rust.mindState.enemyTarget.TrueCenter(), 0.7f, SimpleColor.Red);
 				GenDraw.DrawLineBetween(parent.TrueCenter(), Rust.mindState.enemyTarget.TrueCenter(), SimpleColor.Red);
@@ -133,7 +133,7 @@ namespace NAT
 				for (int i = 0; i < list.Count; i++)
 				{
 					Thing thing = list[i];
-					if (thing.Position.InHorDistOf(parent.Position, 44f) && thing.HostileTo(parent))
+					if (thing.Position.InHorDistOf(parent.Position, 44f) && thing.HostileTo(parent) && (!(thing is Pawn pawn) || !pawn.Downed))
 					{
 						enemy = thing;
 						break;
@@ -145,7 +145,7 @@ namespace NAT
             {
 				return LocalTargetInfo.Invalid;
 			}
-			bool enemyNearby = PawnUtility.EnemiesAreNearby(Rust, 9, passDoors: true, 6f, 1);
+			bool enemyNearby = PawnUtility.EnemiesAreNearby(Rust, 9, passDoors: true, 6f, 1, true);
 			bool overwhelmingEnemies = PawnUtility.EnemiesAreNearby(Rust, 25, passDoors: true, 45f, Rust.GetLord()?.ownedPawns?.Count ?? 2);
 			if (castParms.TryRandomElementByWeight((CastParms p) => WeightCalc(p, enemyNearby, overwhelmingEnemies), out var result))
             {
