@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: rusted stormtrooper -->
+  <NAT_RustedTrooper.label>rusted stormtrooper</NAT_RustedTrooper.label>
+  <!-- EN: Bioferrite pieces shaped like human figure. Rusted stormtroopers have bioferrite shield that protects them from incoming damage. -->
+  <NAT_RustedTrooper.description>Bioferrite pieces shaped like human figure. Rusted stormtroopers have bioferrite shield that protects them from incoming damage.</NAT_RustedTrooper.description>
+  <!-- EN: Rusted shield -->
+  <NAT_RustedTrooper.comps.CompRustedShield.renderProps.debugLabel>Rusted shield</NAT_RustedTrooper.comps.CompRustedShield.renderProps.debugLabel>
+  <!-- EN: head -->
+  <NAT_RustedTrooper.tools.head.label>head</NAT_RustedTrooper.tools.head.label>
+  <!-- EN: left claw -->
+  <NAT_RustedTrooper.tools.left_claw.label>left claw</NAT_RustedTrooper.tools.left_claw.label>
+  <!-- EN: claw -->
+  <NAT_RustedTrooper.tools.left_claw.labelNoLocation>claw</NAT_RustedTrooper.tools.left_claw.labelNoLocation>
+  <!-- EN: right claw -->
+  <NAT_RustedTrooper.tools.right_claw.label>right claw</NAT_RustedTrooper.tools.right_claw.label>
+  <!-- EN: claw -->
+  <NAT_RustedTrooper.tools.right_claw.labelNoLocation>claw</NAT_RustedTrooper.tools.right_claw.labelNoLocation>
+  
+</LanguageData>

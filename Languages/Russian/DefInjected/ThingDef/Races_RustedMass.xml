@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: rusted mass -->
+  <NAT_RustedMass.label>rusted mass</NAT_RustedMass.label>
+  <!-- EN: A large piece of bioferrite. It seems to be filling with strange energy. -->
+  <NAT_RustedMass.description>A large piece of bioferrite. It seems to be filling with strange energy.</NAT_RustedMass.description>
+  <!-- EN: Rusted mass study progress -->
+  <NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.0.label>Rusted mass study progress</NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.0.label>
+  <!-- EN: Investigation of the rusted mass has revealed some information. It is an archotech machine, that has a lot of psy-connections with something far away. \n\nIf not suppressed, its activity level will increase over time. You can't tell what will happen when the device fully activates. -->
+  <NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.0.text>Investigation of the rusted mass has revealed some information. It is an archotech machine, that has a lot of psy-connections with something far away. 
+
+If not suppressed, its activity level will increase over time. You can't tell what will happen when the device fully activates.</NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.0.text>
+  <!-- EN: Rusted mass study progress -->
+  <NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.1.label>Rusted mass study progress</NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.1.label>
+  <!-- EN: You've learned more about the rusted mass. It is a beginning of rusted army, connected with countless rusted soldiers. Rusted mass will grow getting mor life power and then will transfofm into rusted soldiers, causing rusted hordes to attack this place.\n\nThe power level of the rusted mass rises unless suppressed. If it fully activates, it will transform into group of rusted soldiers and draw others to attack colony.\n\n{PAWN_nameDef} thinks that it may be possible to safely deactivate the rusted mass but this will need significantly more study. -->
+  <NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.1.text>You've learned more about the rusted mass. It is a beginning of rusted army, connected with countless rusted soldiers. Rusted mass will grow getting mor life power and then will transfofm into rusted soldiers, causing rusted hordes to attack this place.
+
+The power level of the rusted mass rises unless suppressed. If it fully activates, it will transform into group of rusted soldiers and draw others to attack colony.
+
+{PAWN_nameDef} thinks that it may be possible to safely deactivate the rusted mass but this will need significantly more study.</NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.1.text>
+  <!-- EN: Rusted mass study complete -->
+  <NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.2.label>Rusted mass study complete</NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.2.label>
+  <!-- EN: {PAWN_nameDef} has completed {PAWN_possessive} investigation of the rusted mass. {PAWN_pronoun} has discovered a method for safely deactivating the mass using shards of archotechnology.\n\nYou can no longer study the rusted mass after deactivating it. -->
+  <NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.2.text>{PAWN_nameDef} has completed {PAWN_possessive} investigation of the rusted mass. {PAWN_pronoun} has discovered a method for safely deactivating the mass using shards of archotechnology.
+
+You can no longer study the rusted mass after deactivating it.</NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.2.text>
+  <!-- EN: Permanently and safely disable Rusted mass. This will prevent it from activating and being studied further.\n\nRequires 2 shards. -->
+  <NAT_RustedMass.comps.CompRustedMassDeactivation.activateDescString>Permanently and safely disable Rusted mass. This will prevent it from activating and being studied further.
+
+Requires 2 shards.</NAT_RustedMass.comps.CompRustedMassDeactivation.activateDescString>
+  <!-- EN: Deactivate rusted mass -->
+  <NAT_RustedMass.comps.CompRustedMassDeactivation.activateLabelString>Deactivate rusted mass</NAT_RustedMass.comps.CompRustedMassDeactivation.activateLabelString>
+  <!-- EN: deactivating rusted mass: {1}s -->
+  <NAT_RustedMass.comps.CompRustedMassDeactivation.activatingString>deactivating rusted mass: {1}s</NAT_RustedMass.comps.CompRustedMassDeactivation.activatingString>
+  <!-- EN: deactivating rusted mass -->
+  <NAT_RustedMass.comps.CompRustedMassDeactivation.activatingStringPending>deactivating rusted mass</NAT_RustedMass.comps.CompRustedMassDeactivation.activatingStringPending>
+  <!-- EN: Choose who should do this -->
+  <NAT_RustedMass.comps.CompRustedMassDeactivation.guiLabelString>Choose who should do this</NAT_RustedMass.comps.CompRustedMassDeactivation.guiLabelString>
+  <!-- EN: Deactivate rusted mass -->
+  <NAT_RustedMass.comps.CompRustedMassDeactivation.jobString>Deactivate rusted mass</NAT_RustedMass.comps.CompRustedMassDeactivation.jobString>
+  <!-- EN: {PAWN_nameDef} has successfully deactivated rusted mass. -->
+  <NAT_RustedMass.comps.CompRustedMassDeactivation.messageCompletedString>{PAWN_nameDef} has successfully deactivated rusted mass.</NAT_RustedMass.comps.CompRustedMassDeactivation.messageCompletedString>
+  <!-- EN: The activity level of the rusted mass has reached 100% and it has activated. It summoned large rusted group nearby.\n\nIt also divided into rusted soldiers! -->
+  <NAT_RustedMass.comps.CompActivity.letterDesc>The activity level of the rusted mass has reached 100% and it has activated. It summoned large rusted group nearby.
+
+It also divided into rusted soldiers!</NAT_RustedMass.comps.CompActivity.letterDesc>
+  <!-- EN: Rusted mass activated! -->
+  <NAT_RustedMass.comps.CompActivity.letterTitle>Rusted mass activated!</NAT_RustedMass.comps.CompActivity.letterTitle>
+  
+</LanguageData>

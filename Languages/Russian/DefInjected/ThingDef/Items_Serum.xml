@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: bile power serum -->
+  <NAT_BilePowerSerum.label>bile power serum</NAT_BilePowerSerum.label>
+  <!-- EN: A syringe of sticky fluid made from bile serpents gland. It supresses effect of bile slowness and decreases acid damage.\n\nThe effect is temporary and does not stack. -->
+  <NAT_BilePowerSerum.description>A syringe of sticky fluid made from bile serpents gland. It supresses effect of bile slowness and decreases acid damage.
+
+The effect is temporary and does not stack.</NAT_BilePowerSerum.description>
+  <!-- EN: Use {0_label} -->
+  <NAT_BilePowerSerum.comps.CompUsable.useLabel>Use {0_label}</NAT_BilePowerSerum.comps.CompUsable.useLabel>
+  <!-- EN: Ingest {0} -->
+  <NAT_BilePowerSerum.ingestible.ingestCommandString>Ingest {0}</NAT_BilePowerSerum.ingestible.ingestCommandString>
+  <!-- EN: Ingesting {0}. -->
+  <NAT_BilePowerSerum.ingestible.ingestReportString>Ingesting {0}.</NAT_BilePowerSerum.ingestible.ingestReportString>
+  
+  <!-- EN: pain quench serum -->
+  <NAT_PainQuenchSerum.label>pain quench serum</NAT_PainQuenchSerum.label>
+  <!-- EN: A syringe of turbid plum fluid that fully suppresses any pain, even induced.\n\nThe effect is temporary and does not stack. -->
+  <NAT_PainQuenchSerum.description>A syringe of turbid plum fluid that fully suppresses any pain, even induced.
+
+The effect is temporary and does not stack.</NAT_PainQuenchSerum.description>
+  <!-- EN: Use {0_label} -->
+  <NAT_PainQuenchSerum.comps.CompUsable.useLabel>Use {0_label}</NAT_PainQuenchSerum.comps.CompUsable.useLabel>
+  <!-- EN: Ingest {0} -->
+  <NAT_PainQuenchSerum.ingestible.ingestCommandString>Ingest {0}</NAT_PainQuenchSerum.ingestible.ingestCommandString>
+  <!-- EN: Ingesting {0}. -->
+  <NAT_PainQuenchSerum.ingestible.ingestReportString>Ingesting {0}.</NAT_PainQuenchSerum.ingestible.ingestReportString>
+  
+</LanguageData>

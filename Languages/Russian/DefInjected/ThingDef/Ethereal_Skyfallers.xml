@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: rusted chunk (incoming) -->
+  <NAT_RustedChunk1x1Incoming.label>rusted chunk (incoming)</NAT_RustedChunk1x1Incoming.label>
+  
+  <!-- EN: rusted chunk (incoming) -->
+  <NAT_RustedChunk2x2Incoming.label>rusted chunk (incoming)</NAT_RustedChunk2x2Incoming.label>
+  
+  <!-- EN: large rusted chunk (incoming) -->
+  <NAT_RustedChunk3x3Incoming.label>large rusted chunk (incoming)</NAT_RustedChunk3x3Incoming.label>
+  
+  <!-- EN: rusted chunk (incoming) -->
+  <NAT_RustedChunkPawnIncoming.label>rusted chunk (incoming)</NAT_RustedChunkPawnIncoming.label>
+  
+  <!-- EN: rusted mass (incoming) -->
+  <NAT_RustedMassIncoming.label>rusted mass (incoming)</NAT_RustedMassIncoming.label>
+  
+  <!-- EN: rusted trooper (incoming) -->
+  <NAT_RustedTrooperIncoming.label>rusted trooper (incoming)</NAT_RustedTrooperIncoming.label>
+  
+</LanguageData>

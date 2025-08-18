@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: bile gland -->
+  <NAT_BileGland.label>bile gland</NAT_BileGland.label>
+  
+  <!-- EN: arm -->
+  <NAT_RustedArm.label>arm</NAT_RustedArm.label>
+  
+  <!-- EN: core -->
+  <NAT_RustedCore.label>core</NAT_RustedCore.label>
+  
+  <!-- EN: eye socket -->
+  <NAT_RustedEyeSocket.label>eye socket</NAT_RustedEyeSocket.label>
+  
+  <!-- EN: finger -->
+  <NAT_RustedFinger.label>finger</NAT_RustedFinger.label>
+  
+  <!-- EN: foot -->
+  <NAT_RustedFoot.label>foot</NAT_RustedFoot.label>
+  
+  <!-- EN: head -->
+  <NAT_RustedHead.label>head</NAT_RustedHead.label>
+  
+  <!-- EN: leg -->
+  <NAT_RustedLeg.label>leg</NAT_RustedLeg.label>
+  
+  <!-- EN: shoulder -->
+  <NAT_RustedShoulder.label>shoulder</NAT_RustedShoulder.label>
+  
+  <!-- EN: torso -->
+  <NAT_RustedTorso.label>torso</NAT_RustedTorso.label>
+  
+</LanguageData>

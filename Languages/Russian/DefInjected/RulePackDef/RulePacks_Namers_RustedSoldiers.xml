@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>r_name(p=6)->[nat_twisted][nat_postfix]</li>
+    <li>r_name(p=5)->[nat_twisted][nat_twisted]</li>
+    <li>r_name(p=7)->[nat_prefix][nat_twisted]</li>
+    <li>r_name(p=3)->[nat_twisted][nat_twisted][nat_postfix]</li>
+    <li>r_name->[nat_twisted][nat_twisted][nat_twisted]</li>
+    <li>r_name(p=4)->[nat_prefix][nat_twisted][nat_twisted]</li>
+  -->
+  <NAT_NamerEliteRust.rulePack.rulesStrings>
+    <li>r_name(p=6)->[nat_twisted][nat_postfix]</li>
+    <li>r_name(p=5)->[nat_twisted][nat_twisted]</li>
+    <li>r_name(p=7)->[nat_prefix][nat_twisted]</li>
+    <li>r_name(p=3)->[nat_twisted][nat_twisted][nat_postfix]</li>
+    <li>r_name->[nat_twisted][nat_twisted][nat_twisted]</li>
+    <li>r_name(p=4)->[nat_prefix][nat_twisted][nat_twisted]</li>
+  </NAT_NamerEliteRust.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>r_name(p=10)->[nat_prefix][nat_postfix_dumb]</li>
+    <li>r_name(p=3)->[nat_solid]</li>
+    <li>r_name(p=6)->[nat_postfix][nat_prefix]</li>
+  -->
+  <NAT_NamerRustedDumb.rulePack.rulesStrings>
+    <li>r_name(p=10)->[nat_prefix][nat_postfix_dumb]</li>
+    <li>r_name(p=3)->[nat_solid]</li>
+    <li>r_name(p=6)->[nat_postfix][nat_prefix]</li>
+  </NAT_NamerRustedDumb.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>r_name(p=10)->[nat_prefix]-[nat_prefix][nat_postfix]</li>
+    <li>r_name(p=4)->[nat_prefix]-[nat_prefix][nat_postfix] [nnumber]</li>
+    <li>r_name(p=6)->[nat_prefix][nat_postfix] [nnumber]</li>
+  -->
+  <NAT_NamerRustedOfficer.rulePack.rulesStrings>
+    <li>r_name(p=10)->[nat_prefix]-[nat_prefix][nat_postfix]</li>
+    <li>r_name(p=4)->[nat_prefix]-[nat_prefix][nat_postfix] [nnumber]</li>
+    <li>r_name(p=6)->[nat_prefix][nat_postfix] [nnumber]</li>
+  </NAT_NamerRustedOfficer.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>nnumber(p=6)->I</li>
+    <li>nnumber(p=6)->II</li>
+    <li>nnumber(p=4)->III</li>
+    <li>nnumber(p=6)->IV</li>
+    <li>nnumber(p=6)->V</li>
+    <li>nnumber(p=6)->VI</li>
+    <li>nnumber(p=3)->VII</li>
+    <li>nnumber(p=2)->VIII</li>
+    <li>nnumber(p=4)->IX</li>
+    <li>nnumber(p=4)->X</li>
+    <li>nnumber(p=4)->XI</li>
+    <li>nnumber(p=2)->XII</li>
+    <li>nnumber(p=2)->XIII</li>
+    <li>nnumber->XIV</li>
+    <li>nnumber(p=2)->XV</li>
+    <li>nnumber->XVI</li>
+    <li>nnumber->XVII</li>
+    <li>nnumber->XVIII</li>
+    <li>nnumber->XIX</li>
+    <li>nnumber->XX</li>
+    <li>nnumber->XXI</li>
+    <li>nnumber->XXII</li>
+    <li>nnumber->XXIII</li>
+    <li>nnumber->XXIV</li>
+    <li>nnumber->XXV</li>
+    <li>nnumber->XXVI</li>
+  -->
+  <NAT_NamerRustedPawn.rulePack.rulesStrings>
+    <li>nnumber(p=6)->I</li>
+    <li>nnumber(p=6)->II</li>
+    <li>nnumber(p=4)->III</li>
+    <li>nnumber(p=6)->IV</li>
+    <li>nnumber(p=6)->V</li>
+    <li>nnumber(p=6)->VI</li>
+    <li>nnumber(p=3)->VII</li>
+    <li>nnumber(p=2)->VIII</li>
+    <li>nnumber(p=4)->IX</li>
+    <li>nnumber(p=4)->X</li>
+    <li>nnumber(p=4)->XI</li>
+    <li>nnumber(p=2)->XII</li>
+    <li>nnumber(p=2)->XIII</li>
+    <li>nnumber->XIV</li>
+    <li>nnumber(p=2)->XV</li>
+    <li>nnumber->XVI</li>
+    <li>nnumber->XVII</li>
+    <li>nnumber->XVIII</li>
+    <li>nnumber->XIX</li>
+    <li>nnumber->XX</li>
+    <li>nnumber->XXI</li>
+    <li>nnumber->XXII</li>
+    <li>nnumber->XXIII</li>
+    <li>nnumber->XXIV</li>
+    <li>nnumber->XXV</li>
+    <li>nnumber->XXVI</li>
+  </NAT_NamerRustedPawn.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>r_name(p=10)->[nat_prefix][nat_postfix]</li>
+    <li>r_name->[nat_solid]</li>
+    <li>r_name(p=6)->[nat_prefix][nat_postfix] [nnumber]</li>
+  -->
+  <NAT_NamerRustedSoldier.rulePack.rulesStrings>
+    <li>r_name(p=10)->[nat_prefix][nat_postfix]</li>
+    <li>r_name->[nat_solid]</li>
+    <li>r_name(p=6)->[nat_prefix][nat_postfix] [nnumber]</li>
+  </NAT_NamerRustedSoldier.rulePack.rulesStrings>
+  
+</LanguageData>

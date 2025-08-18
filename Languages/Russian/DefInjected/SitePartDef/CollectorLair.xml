@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: abandoned settlement -->
+  <NAT_CollectorLair_Base.label>abandoned settlement</NAT_CollectorLair_Base.label>
+  <!-- EN: An abandoned settlement. -->
+  <NAT_CollectorLair_Base.description>An abandoned settlement.</NAT_CollectorLair_Base.description>
+  <!-- EN: Investigating {0}. -->
+  <NAT_CollectorLair_Base.approachingReportString>Investigating {0}.</NAT_CollectorLair_Base.approachingReportString>
+  <!-- EN: Investigate {0} -->
+  <NAT_CollectorLair_Base.approachOrderString>Investigate {0}</NAT_CollectorLair_Base.approachOrderString>
+  
+</LanguageData>

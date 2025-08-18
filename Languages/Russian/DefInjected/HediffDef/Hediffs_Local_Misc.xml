@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: activated charge -->
+  <NAT_ActivatedCharge.label>activated charge</NAT_ActivatedCharge.label>
+  <!-- EN: This rust consiousness and work speed is amplified by rusted activator. -->
+  <NAT_ActivatedCharge.description>This rust consiousness and work speed is amplified by rusted activator.</NAT_ActivatedCharge.description>
+  
+  <!-- EN: activated durability -->
+  <NAT_ActivatedDurability.label>activated durability</NAT_ActivatedDurability.label>
+  <!-- EN: This rust durability is amplified by rusted activator. -->
+  <NAT_ActivatedDurability.description>This rust durability is amplified by rusted activator.</NAT_ActivatedDurability.description>
+  
+  <!-- EN: actvated regeneration -->
+  <NAT_ActivatedRegeneration.label>actvated regeneration</NAT_ActivatedRegeneration.label>
+  <!-- EN: This rust regeneration is amplified by rusted activator. -->
+  <NAT_ActivatedRegeneration.description>This rust regeneration is amplified by rusted activator.</NAT_ActivatedRegeneration.description>
+  
+  <!-- EN: activated speed -->
+  <NAT_ActivatedSpeed.label>activated speed</NAT_ActivatedSpeed.label>
+  <!-- EN: This rust moving speed is amplified by rusted activator. -->
+  <NAT_ActivatedSpeed.description>This rust moving speed is amplified by rusted activator.</NAT_ActivatedSpeed.description>
+  
+</LanguageData>

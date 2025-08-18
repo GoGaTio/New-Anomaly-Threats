@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: glass case -->
+  <NAT_CollectorGlassCase.label>glass case</NAT_CollectorGlassCase.label>
+  <!-- EN: A large spiked vessel. It's surface is slick and turbid, but there is definitely something or someone inside. -->
+  <NAT_CollectorGlassCase.description>A large spiked vessel. It's surface is slick and turbid, but there is definitely something or someone inside.</NAT_CollectorGlassCase.description>
+  
+  <!-- EN: ancient trapdoor -->
+  <NAT_CollectorLairEntrance.label>ancient trapdoor</NAT_CollectorLairEntrance.label>
+  <!-- EN: The entrance to an abandoned underground facility. Probably there you would find collector lair. -->
+  <NAT_CollectorLairEntrance.description>The entrance to an abandoned underground facility. Probably there you would find collector lair.</NAT_CollectorLairEntrance.description>
+  <!-- EN: Order someone to open the trapdoor. -->
+  <NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.activateDescString>Order someone to open the trapdoor.</NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.activateDescString>
+  <!-- EN: Order trapdoor opening -->
+  <NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.activateLabelString>Order trapdoor opening</NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.activateLabelString>
+  <!-- EN: opening trapdoor -->
+  <NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.activatingString>opening trapdoor</NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.activatingString>
+  <!-- EN: opening trapdoor -->
+  <NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.activatingStringPending>opening trapdoor</NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.activatingStringPending>
+  <!-- EN: Choose who should open trapdoor. -->
+  <NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.guiLabelString>Choose who should open trapdoor.</NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.guiLabelString>
+  <!-- EN: open -->
+  <NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.jobString>open</NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.jobString>
+  <!-- EN: collector lair entrance -->
+  <NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.openedLabelOverride>collector lair entrance</NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.openedLabelOverride>
+  <!-- EN: buried entrance -->
+  <NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.sealedLabelOverride>buried entrance</NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.sealedLabelOverride>
+  <!-- EN: Bury entrance forever. -->
+  <NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.sealGizmoDesc>Bury entrance forever.</NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.sealGizmoDesc>
+  <!-- EN: Bury -->
+  <NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.sealGizmoLabel>Bury</NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.sealGizmoLabel>
+  <!-- EN: buring {0} -->
+  <NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.sealJobReportOverride>buring {0}</NAT_CollectorLairEntrance.comps.CompUndergroundEntrance.sealJobReportOverride>
+  
+  <!-- EN: collector lair exit -->
+  <NAT_CollectorLairExit.label>collector lair exit</NAT_CollectorLairExit.label>
+  <!-- EN: A ladder which links to the surface above. -->
+  <NAT_CollectorLairExit.description>A ladder which links to the surface above.</NAT_CollectorLairExit.description>
+  
+  <!-- EN: large rusted sculpture -->
+  <NAT_RustedSculpture_Guardsman.label>large rusted sculpture</NAT_RustedSculpture_Guardsman.label>
+  <!-- EN: A large bioferrite piece shaped like humanoid creature.\n\nCan be activated into rusted guardsman using shard. -->
+  <NAT_RustedSculpture_Guardsman.description>A large bioferrite piece shaped like humanoid creature.
+
+Can be activated into rusted guardsman using shard.</NAT_RustedSculpture_Guardsman.description>
+  <!-- EN: Order a pawn to activate rusted guardsman. -->
+  <NAT_RustedSculpture_Guardsman.comps.CompRustedSculpture.activateDescString>Order a pawn to activate rusted guardsman.</NAT_RustedSculpture_Guardsman.comps.CompRustedSculpture.activateDescString>
+  <!-- EN: Order activating -->
+  <NAT_RustedSculpture_Guardsman.comps.CompRustedSculpture.activateLabelString>Order activating</NAT_RustedSculpture_Guardsman.comps.CompRustedSculpture.activateLabelString>
+  <!-- EN: activating rusted guardsman -->
+  <NAT_RustedSculpture_Guardsman.comps.CompRustedSculpture.activatingString>activating rusted guardsman</NAT_RustedSculpture_Guardsman.comps.CompRustedSculpture.activatingString>
+  <!-- EN: activating rusted guardsman -->
+  <NAT_RustedSculpture_Guardsman.comps.CompRustedSculpture.activatingStringPending>activating rusted guardsman</NAT_RustedSculpture_Guardsman.comps.CompRustedSculpture.activatingStringPending>
+  <!-- EN: Choose who should activate rusted guardsman. -->
+  <NAT_RustedSculpture_Guardsman.comps.CompRustedSculpture.guiLabelString>Choose who should activate rusted guardsman.</NAT_RustedSculpture_Guardsman.comps.CompRustedSculpture.guiLabelString>
+  <!-- EN: activate -->
+  <NAT_RustedSculpture_Guardsman.comps.CompRustedSculpture.jobString>activate</NAT_RustedSculpture_Guardsman.comps.CompRustedSculpture.jobString>
+  
+  <!-- EN: rusted sculpture -->
+  <NAT_RustedSculpture_Soldier.label>rusted sculpture</NAT_RustedSculpture_Soldier.label>
+  <!-- EN: A bioferrite piece shaped like humanoid creature.\n\nCan be activated into rusted infantryman using shard. -->
+  <NAT_RustedSculpture_Soldier.description>A bioferrite piece shaped like humanoid creature.
+
+Can be activated into rusted infantryman using shard.</NAT_RustedSculpture_Soldier.description>
+  <!-- EN: Order a pawn to activate rusted infantryman. -->
+  <NAT_RustedSculpture_Soldier.comps.CompRustedSculpture.activateDescString>Order a pawn to activate rusted infantryman.</NAT_RustedSculpture_Soldier.comps.CompRustedSculpture.activateDescString>
+  <!-- EN: Order activating -->
+  <NAT_RustedSculpture_Soldier.comps.CompRustedSculpture.activateLabelString>Order activating</NAT_RustedSculpture_Soldier.comps.CompRustedSculpture.activateLabelString>
+  <!-- EN: activating rusted infantryman -->
+  <NAT_RustedSculpture_Soldier.comps.CompRustedSculpture.activatingString>activating rusted infantryman</NAT_RustedSculpture_Soldier.comps.CompRustedSculpture.activatingString>
+  <!-- EN: activating rusted infantryman -->
+  <NAT_RustedSculpture_Soldier.comps.CompRustedSculpture.activatingStringPending>activating rusted infantryman</NAT_RustedSculpture_Soldier.comps.CompRustedSculpture.activatingStringPending>
+  <!-- EN: Choose who should activate rusted infantryman. -->
+  <NAT_RustedSculpture_Soldier.comps.CompRustedSculpture.guiLabelString>Choose who should activate rusted infantryman.</NAT_RustedSculpture_Soldier.comps.CompRustedSculpture.guiLabelString>
+  <!-- EN: activate -->
+  <NAT_RustedSculpture_Soldier.comps.CompRustedSculpture.jobString>activate</NAT_RustedSculpture_Soldier.comps.CompRustedSculpture.jobString>
+  
+  <!-- EN: small rusted sculpture -->
+  <NAT_RustedSculpture_Trooper.label>small rusted sculpture</NAT_RustedSculpture_Trooper.label>
+  <!-- EN: A small bioferrite piece shaped like humanoid creature.\n\nCan be activated into rusted stormtrooper using shard. -->
+  <NAT_RustedSculpture_Trooper.description>A small bioferrite piece shaped like humanoid creature.
+
+Can be activated into rusted stormtrooper using shard.</NAT_RustedSculpture_Trooper.description>
+  <!-- EN: Order a pawn to activate rusted stormtrooper. -->
+  <NAT_RustedSculpture_Trooper.comps.CompRustedSculpture.activateDescString>Order a pawn to activate rusted stormtrooper.</NAT_RustedSculpture_Trooper.comps.CompRustedSculpture.activateDescString>
+  <!-- EN: Order activating -->
+  <NAT_RustedSculpture_Trooper.comps.CompRustedSculpture.activateLabelString>Order activating</NAT_RustedSculpture_Trooper.comps.CompRustedSculpture.activateLabelString>
+  <!-- EN: activating rusted stormtrooper -->
+  <NAT_RustedSculpture_Trooper.comps.CompRustedSculpture.activatingString>activating rusted stormtrooper</NAT_RustedSculpture_Trooper.comps.CompRustedSculpture.activatingString>
+  <!-- EN: activating rusted stormtrooper -->
+  <NAT_RustedSculpture_Trooper.comps.CompRustedSculpture.activatingStringPending>activating rusted stormtrooper</NAT_RustedSculpture_Trooper.comps.CompRustedSculpture.activatingStringPending>
+  <!-- EN: Choose who should activate rusted stormtrooper. -->
+  <NAT_RustedSculpture_Trooper.comps.CompRustedSculpture.guiLabelString>Choose who should activate rusted stormtrooper.</NAT_RustedSculpture_Trooper.comps.CompRustedSculpture.guiLabelString>
+  <!-- EN: activate -->
+  <NAT_RustedSculpture_Trooper.comps.CompRustedSculpture.jobString>activate</NAT_RustedSculpture_Trooper.comps.CompRustedSculpture.jobString>
+  
+</LanguageData>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: rusted guardsman -->
+  <NAT_RustedGuardsman.label>rusted guardsman</NAT_RustedGuardsman.label>
+  <!-- EN: Bioferrite pieces shaped like tall human figure. This type of rusted creature has thicker armor and better combat skills than regulasr soldiers. -->
+  <NAT_RustedGuardsman.description>Bioferrite pieces shaped like tall human figure. This type of rusted creature has thicker armor and better combat skills than regulasr soldiers.</NAT_RustedGuardsman.description>
+  <!-- EN: head -->
+  <NAT_RustedGuardsman.tools.head.label>head</NAT_RustedGuardsman.tools.head.label>
+  <!-- EN: left claw -->
+  <NAT_RustedGuardsman.tools.left_claw.label>left claw</NAT_RustedGuardsman.tools.left_claw.label>
+  <!-- EN: claw -->
+  <NAT_RustedGuardsman.tools.left_claw.labelNoLocation>claw</NAT_RustedGuardsman.tools.left_claw.labelNoLocation>
+  <!-- EN: right claw -->
+  <NAT_RustedGuardsman.tools.right_claw.label>right claw</NAT_RustedGuardsman.tools.right_claw.label>
+  <!-- EN: claw -->
+  <NAT_RustedGuardsman.tools.right_claw.labelNoLocation>claw</NAT_RustedGuardsman.tools.right_claw.labelNoLocation>
+  
+</LanguageData>

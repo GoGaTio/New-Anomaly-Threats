@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: rusted infantryman creation -->
+  <NAT_CreateRust_Soldier.label>rusted infantryman creation</NAT_CreateRust_Soldier.label>
+  <!-- EN: Create rusted infantryman using bioferrite and dark archotechnology shards. There's always a fail chance, so ritual may require many attempts. -->
+  <NAT_CreateRust_Soldier.description>Create rusted infantryman using bioferrite and dark archotechnology shards. There's always a fail chance, so ritual may require many attempts.</NAT_CreateRust_Soldier.description>
+  <!-- EN: With the current ritual quality, there is a {0} chance of successful rusted infantryman creation.\n\nIf the ritual fails, some bioferrite and all shards will be lost. -->
+  <NAT_CreateRust_Soldier.outcomeDescription>With the current ritual quality, there is a {0} chance of successful rusted infantryman creation.
+
+If the ritual fails, some bioferrite and all shards will be lost.</NAT_CreateRust_Soldier.outcomeDescription>
+  
+  <!-- EN: rusted stormtrooper creation -->
+  <NAT_CreateRust_Trooper.label>rusted stormtrooper creation</NAT_CreateRust_Trooper.label>
+  <!-- EN: Create rusted trooper using bioferrite and dark archotechnology shards. There's always a fail chance, so ritual may require many attempts. -->
+  <NAT_CreateRust_Trooper.description>Create rusted trooper using bioferrite and dark archotechnology shards. There's always a fail chance, so ritual may require many attempts.</NAT_CreateRust_Trooper.description>
+  <!-- EN: With the current ritual quality, there is a {0} chance of successful rusted stormtrooper creation.\n\nIf the ritual fails, some bioferrite and all shards will be lost. -->
+  <NAT_CreateRust_Trooper.outcomeDescription>With the current ritual quality, there is a {0} chance of successful rusted stormtrooper creation.
+
+If the ritual fails, some bioferrite and all shards will be lost.</NAT_CreateRust_Trooper.outcomeDescription>
+  
+</LanguageData>

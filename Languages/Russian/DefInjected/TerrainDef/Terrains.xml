@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: rusted surface -->
+  <NAT_RustedFloor.label>rusted surface</NAT_RustedFloor.label>
+  <!-- EN: TODO -->
+  <NAT_RustedFloor.description>TODO</NAT_RustedFloor.description>
+  
+  <!-- EN: rusted tile -->
+  <NAT_RustedTile.label>rusted tile</NAT_RustedTile.label>
+  <!-- EN: TODO -->
+  <NAT_RustedTile.description>TODO</NAT_RustedTile.description>
+  
+</LanguageData>

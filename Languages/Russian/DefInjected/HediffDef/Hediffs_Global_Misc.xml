@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: combat boost -->
+  <NAT_BannerBoost.label>combat boost</NAT_BannerBoost.label>
+  <!-- EN: This rust is affected by battke cry and fights better. -->
+  <NAT_BannerBoost.description>This rust is affected by battke cry and fights better.</NAT_BannerBoost.description>
+  
+  <!-- EN: bile power -->
+  <NAT_BilePowerSerum.label>bile power</NAT_BilePowerSerum.label>
+  <!-- EN: This creature has the bile power serum in their bloodstream. This substance makes it resistant to bile slowdown effect and additionally decreases acid damage. -->
+  <NAT_BilePowerSerum.description>This creature has the bile power serum in their bloodstream. This substance makes it resistant to bile slowdown effect and additionally decreases acid damage.</NAT_BilePowerSerum.description>
+  
+  <!-- EN: collector hypnosis -->
+  <NAT_CollectorHypnosis.label>collector hypnosis</NAT_CollectorHypnosis.label>
+  <!-- EN: An aftereffect of hypnosis by collector. -->
+  <NAT_CollectorHypnosis.description>An aftereffect of hypnosis by collector.</NAT_CollectorHypnosis.description>
+  
+  <!-- EN: emotions suppression -->
+  <NAT_EmotionSuppression.label>emotions suppression</NAT_EmotionSuppression.label>
+  <!-- EN: This person's neural patterns are being moderated by distant archotech structure. They're unaffected by the highs and lows of human emotion. They will never have a mental break but they will also never feel inspired. -->
+  <NAT_EmotionSuppression.description>This person's neural patterns are being moderated by distant archotech structure. They're unaffected by the highs and lows of human emotion. They will never have a mental break but they will also never feel inspired.</NAT_EmotionSuppression.description>
+  
+  <!-- EN: induced pain -->
+  <NAT_InducedPain.label>induced pain</NAT_InducedPain.label>
+  <!-- EN: A pain without any visible reason. -->
+  <NAT_InducedPain.description>A pain without any visible reason.</NAT_InducedPain.description>
+  
+  <!-- EN: pain quench -->
+  <NAT_PainQuenchSerum.label>pain quench</NAT_PainQuenchSerum.label>
+  <!-- EN: This creature has the pain quench serum in their bloodstream. This substance makes it fully resistant to any pain source and additionally suppress induced pain. -->
+  <NAT_PainQuenchSerum.description>This creature has the pain quench serum in their bloodstream. This substance makes it fully resistant to any pain source and additionally suppress induced pain.</NAT_PainQuenchSerum.description>
+  
+  <!-- EN: rusted regeneration -->
+  <NAT_RustedRegeneration.label>rusted regeneration</NAT_RustedRegeneration.label>
+  <!-- EN: Rusted regeneration. -->
+  <NAT_RustedRegeneration.description>Rusted regeneration.</NAT_RustedRegeneration.description>
+  
+  <!-- EN: slowed by bile -->
+  <NAT_SlowedByBile.label>slowed by bile</NAT_SlowedByBile.label>
+  <!-- EN: Bile covers body and sticks to skin, making movement and manipulation much harder. Serpents' bile is fire-resistant and reacts with acid, causing severe burns. Continued exposure to tox gas results in toxic buildup and eventually death. -->
+  <NAT_SlowedByBile.description>Bile covers body and sticks to skin, making movement and manipulation much harder. Serpents' bile is fire-resistant and reacts with acid, causing severe burns. Continued exposure to tox gas results in toxic buildup and eventually death.</NAT_SlowedByBile.description>
+  <!-- EN: slowed by bile -->
+  <NAT_SlowedByBile.battleStateLabel>slowed by bile</NAT_SlowedByBile.battleStateLabel>
+  <!-- EN: slightly -->
+  <NAT_SlowedByBile.stages.slightly.label>slightly</NAT_SlowedByBile.stages.slightly.label>
+  <!-- EN: moderately -->
+  <NAT_SlowedByBile.stages.moderately.label>moderately</NAT_SlowedByBile.stages.moderately.label>
+  <!-- EN: significantly -->
+  <NAT_SlowedByBile.stages.significantly.label>significantly</NAT_SlowedByBile.stages.significantly.label>
+  
+  <!-- EN: subdued -->
+  <NAT_Subdued.label>subdued</NAT_Subdued.label>
+  <!-- EN: This person is subdued by distant archotech structure. -->
+  <NAT_Subdued.description>This person is subdued by distant archotech structure.</NAT_Subdued.description>
+  
+</LanguageData>

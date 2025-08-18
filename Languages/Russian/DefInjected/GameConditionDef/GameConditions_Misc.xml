@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: hate chanting -->
+  <HateChantDrone.label>hate chanting</HateChantDrone.label>
+  <!-- EN: Cultists of Horax are performing a psychically tuned chant. The ominous chanting conveys a dark and dreamlike hatred. It makes your head pound and your skin crawl. So long as the drone continues, colonists will be unhappy.\n\nThe chant will continue to grow more powerful as long as the cultists are not stopped. -->
+  <HateChantDrone.description>Cultists of Horax are performing a psychically tuned chant. The ominous chanting conveys a dark and dreamlike hatred. It makes your head pound and your skin crawl. So long as the drone continues, colonists will be unhappy.
+
+The chant will continue to grow more powerful as long as the cultists are not stopped.</HateChantDrone.description>
+  
+  <!-- EN: deadlife spewer -->
+  <NAT_DeadlifeSpewer.label>deadlife spewer</NAT_DeadlifeSpewer.label>
+  <!-- EN: The dead will rise! Burn, bury, destroy, or move corpses indoors to prevent them from resurrecting. -->
+  <NAT_DeadlifeSpewer.description>The dead will rise! Burn, bury, destroy, or move corpses indoors to prevent them from resurrecting.</NAT_DeadlifeSpewer.description>
+  <!-- EN: A death-gray cloud has descended on the area.\n\nThe cloud is made of microscopic self-powered archites created by some unknown superintelligence. Where they land on dead flesh, they will enter the body and reanimate it to create a twisted imitation of life.\n\nThe dead will rise! Burn, bury, destroy, or move corpses indoors to prevent them from resurrecting. -->
+  <NAT_DeadlifeSpewer.letterText>A death-gray cloud has descended on the area.
+
+The cloud is made of microscopic self-powered archites created by some unknown superintelligence. Where they land on dead flesh, they will enter the body and reanimate it to create a twisted imitation of life.
+
+The dead will rise! Burn, bury, destroy, or move corpses indoors to prevent them from resurrecting.</NAT_DeadlifeSpewer.letterText>
+  
+  <!-- EN: unnatural darkness -->
+  <NAT_ForcedUnnaturalDarkness.label>unnatural darkness</NAT_ForcedUnnaturalDarkness.label>
+  <!-- EN: The world is blanketed by a layer of unnatural darkness. From the inky blackness, one can hear the inhuman groaning of deadly creatures. Stay in the light. -->
+  <NAT_ForcedUnnaturalDarkness.description>The world is blanketed by a layer of unnatural darkness. From the inky blackness, one can hear the inhuman groaning of deadly creatures. Stay in the light.</NAT_ForcedUnnaturalDarkness.description>
+  
+  <!-- EN: unnatural darkness -->
+  <NAT_PainCauser.label>unnatural darkness</NAT_PainCauser.label>
+  <!-- EN: The world is blanketed by a layer of unnatural darkness. From the inky blackness, one can hear the inhuman groaning of deadly creatures. Stay in the light. -->
+  <NAT_PainCauser.description>The world is blanketed by a layer of unnatural darkness. From the inky blackness, one can hear the inhuman groaning of deadly creatures. Stay in the light.</NAT_PainCauser.description>
+  
+  <!-- EN: unnatural heat -->
+  <UnnaturalHeat.label>unnatural heat</UnnaturalHeat.label>
+  <!-- EN: A thermal projection device is agitating gas molecules in the atmosphere, raising outdoor temperatures. -->
+  <UnnaturalHeat.description>A thermal projection device is agitating gas molecules in the atmosphere, raising outdoor temperatures.</UnnaturalHeat.description>
+  
+</LanguageData>

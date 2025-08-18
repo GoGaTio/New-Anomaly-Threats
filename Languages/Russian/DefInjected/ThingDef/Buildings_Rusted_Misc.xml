@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: rusted army banner -->
+  <NAT_RustedArmyBanner.label>rusted army banner</NAT_RustedArmyBanner.label>
+  <!-- EN: A Rusted army banner. -->
+  <NAT_RustedArmyBanner.description>A Rusted army banner.</NAT_RustedArmyBanner.description>
+  
+  <!-- EN: rusted beacon -->
+  <NAT_RustedBeacon_Reinforcements.label>rusted beacon</NAT_RustedBeacon_Reinforcements.label>
+  <!-- EN: A rusted beacon that calls reinforcements if there are enemies nearby. Can be stunned with EMP or disruptors. -->
+  <NAT_RustedBeacon_Reinforcements.description>A rusted beacon that calls reinforcements if there are enemies nearby. Can be stunned with EMP or disruptors.</NAT_RustedBeacon_Reinforcements.description>
+  
+  <!-- EN: rusted broadcast dish -->
+  <NAT_RustedBroadcastDish.label>rusted broadcast dish</NAT_RustedBroadcastDish.label>
+  <!-- EN: A large rusted broadcast dish. Transfers signals in Rusted army communication network. -->
+  <NAT_RustedBroadcastDish.description>A large rusted broadcast dish. Transfers signals in Rusted army communication network.</NAT_RustedBroadcastDish.description>
+  
+</LanguageData>

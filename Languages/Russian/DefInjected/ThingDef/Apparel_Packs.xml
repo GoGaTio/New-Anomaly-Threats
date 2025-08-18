@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: rusted grenades pack -->
+  <NAT_Apparel_RustedGrenadesPack.label>rusted grenades pack</NAT_Apparel_RustedGrenadesPack.label>
+  <!-- EN: A wearable pack that deploys a hunter drone. The drone will close with the target and detonate when it is within range. -->
+  <NAT_Apparel_RustedGrenadesPack.description>A wearable pack that deploys a hunter drone. The drone will close with the target and detonate when it is within range.</NAT_Apparel_RustedGrenadesPack.description>
+  <!-- EN: rusted grenade -->
+  <NAT_Apparel_RustedGrenadesPack.comps.CompApparelReloadable.chargeNoun>rusted grenade</NAT_Apparel_RustedGrenadesPack.comps.CompApparelReloadable.chargeNoun>
+  <!-- EN: on cooldown -->
+  <NAT_Apparel_RustedGrenadesPack.comps.CompApparelReloadable.cooldownGerund>on cooldown</NAT_Apparel_RustedGrenadesPack.comps.CompApparelReloadable.cooldownGerund>
+  <!-- EN: throw rusted stick grenade -->
+  <NAT_Apparel_RustedGrenadesPack.verbs.throw_rusted_stick_grenade.label>throw rusted stick grenade</NAT_Apparel_RustedGrenadesPack.verbs.throw_rusted_stick_grenade.label>
+  
+  <!-- EN: rusted stick grenade -->
+  <NAT_Proj_RustedStickGrenade.label>rusted stick grenade</NAT_Proj_RustedStickGrenade.label>
+  
+  <!-- EN: rusted stick grenade -->
+  <NAT_RustedStickGrenade.label>rusted stick grenade</NAT_RustedStickGrenade.label>
+  <!-- EN: A piece of clotted pain. -->
+  <NAT_RustedStickGrenade.description>A piece of clotted pain.</NAT_RustedStickGrenade.description>
+  
+</LanguageData>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: bile serpent -->
+  <NAT_BileSerpent.label>bile serpent</NAT_BileSerpent.label>
+  
+  <!-- EN: collector -->
+  <NAT_Collector.label>collector</NAT_Collector.label>
+  
+  <!-- EN: crannied obelisk -->
+  <NAT_CranniedObelisk.label>crannied obelisk</NAT_CranniedObelisk.label>
+  
+  <!-- EN: rusted army -->
+  <NAT_RustedArmy.label>rusted army</NAT_RustedArmy.label>
+  <!-- EN: Alive bioferrite pieces, behaving like some kind of military organization. Rough bioferrite bodies make them tough, but also very flammable.\n\nOutlander researchers don't fully understand the nature of rusted creatures, their goals and function mechanism, but designate that rusts have signs of separation from Horax mind. -->
+  <NAT_RustedArmy.description>Alive bioferrite pieces, behaving like some kind of military organization. Rough bioferrite bodies make them tough, but also very flammable.
+
+Outlander researchers don't fully understand the nature of rusted creatures, their goals and function mechanism, but designate that rusts have signs of separation from Horax mind.</NAT_RustedArmy.description>
+  
+  <!-- EN: rusted mass -->
+  <NAT_RustedMass.label>rusted mass</NAT_RustedMass.label>
+  
+</LanguageData>

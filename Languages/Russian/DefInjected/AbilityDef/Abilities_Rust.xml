@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: call rusted auto turret -->
+  <NAT_Reinforcement_AutoTurret.label>call rusted auto turret</NAT_Reinforcement_AutoTurret.label>
+  <!-- EN: Call rusted auto turret as reinforcement from orbital rusted structures. -->
+  <NAT_Reinforcement_AutoTurret.description>Call rusted auto turret as reinforcement from orbital rusted structures.</NAT_Reinforcement_AutoTurret.description>
+  
+  <!-- EN: call rusted guardsmans -->
+  <NAT_Reinforcement_Guardsmans.label>call rusted guardsmans</NAT_Reinforcement_Guardsmans.label>
+  <!-- EN: Call rusted guardsmans as reinforcements from orbital rusted structures. -->
+  <NAT_Reinforcement_Guardsmans.description>Call rusted guardsmans as reinforcements from orbital rusted structures.</NAT_Reinforcement_Guardsmans.description>
+  
+  <!-- EN: call rusted mini turret -->
+  <NAT_Reinforcement_MiniTurret.label>call rusted mini turret</NAT_Reinforcement_MiniTurret.label>
+  <!-- EN: Call rusted mini turret as reinforcement from orbital rusted structures. -->
+  <NAT_Reinforcement_MiniTurret.description>Call rusted mini turret as reinforcement from orbital rusted structures.</NAT_Reinforcement_MiniTurret.description>
+  
+  <!-- EN: call rusted sniper turret -->
+  <NAT_Reinforcement_SniperTurret.label>call rusted sniper turret</NAT_Reinforcement_SniperTurret.label>
+  <!-- EN: Call rusted sniper turret as reinforcement from orbital rusted structures. -->
+  <NAT_Reinforcement_SniperTurret.description>Call rusted sniper turret as reinforcement from orbital rusted structures.</NAT_Reinforcement_SniperTurret.description>
+  
+  <!-- EN: call rusted troopers -->
+  <NAT_Reinforcement_Troopers.label>call rusted troopers</NAT_Reinforcement_Troopers.label>
+  <!-- EN: Call rusted troopers as reinforcements from orbital rusted structures. -->
+  <NAT_Reinforcement_Troopers.description>Call rusted troopers as reinforcements from orbital rusted structures.</NAT_Reinforcement_Troopers.description>
+  
+</LanguageData>

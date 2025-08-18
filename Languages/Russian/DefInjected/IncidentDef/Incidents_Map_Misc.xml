@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: event -->
+  <NAT_Collector.label>event</NAT_Collector.label>
+  
+  <!-- EN: rusted mass arrival -->
+  <NAT_RustedMassArrival.label>rusted mass arrival</NAT_RustedMassArrival.label>
+  
+  <!-- EN: just skull without any threat -->
+  <NAT_SkullArrival.label>just skull without any threat</NAT_SkullArrival.label>
+  
+  <!-- EN: crannied obelisk -->
+  <NAT_WarpedObelisk_Inducer.label>crannied obelisk</NAT_WarpedObelisk_Inducer.label>
+  <!-- EN: Crannied obelisk -->
+  <NAT_WarpedObelisk_Inducer.letterLabel>Crannied obelisk</NAT_WarpedObelisk_Inducer.letterLabel>
+  <!-- EN: A mysterious obelisk has crashed nearby.\n\nThe obelisk hums with putrid psychic energy, gradually intensifying as it approaches some dangerous limit. You can send colonists to suppress the obelisk to prevent it from activating.\n\nYou can also mark the obelisk for study to try to learn its purpose and perhaps make use of it.\n\nYou can always attack the obelisk to destroy it, but doing so may unleash unnatural and dangerous phenomena. -->
+  <NAT_WarpedObelisk_Inducer.letterText>A mysterious obelisk has crashed nearby.
+
+The obelisk hums with putrid psychic energy, gradually intensifying as it approaches some dangerous limit. You can send colonists to suppress the obelisk to prevent it from activating.
+
+You can also mark the obelisk for study to try to learn its purpose and perhaps make use of it.
+
+You can always attack the obelisk to destroy it, but doing so may unleash unnatural and dangerous phenomena.</NAT_WarpedObelisk_Inducer.letterText>
+  
+</LanguageData>

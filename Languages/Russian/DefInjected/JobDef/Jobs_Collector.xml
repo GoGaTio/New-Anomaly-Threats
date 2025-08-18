@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Doing something. -->
+  <NAT_CollectorCastAbility.reportString>Doing something.</NAT_CollectorCastAbility.reportString>
+  
+  <!-- EN: escaping -->
+  <NAT_CollectorEscape.reportString>escaping</NAT_CollectorEscape.reportString>
+  
+  <!-- EN: collecting TargetA. -->
+  <NAT_CollectorStealPawn.reportString>collecting TargetA.</NAT_CollectorStealPawn.reportString>
+  
+  <!-- EN: collecting TargetA. -->
+  <NAT_CollectorStealThing.reportString>collecting TargetA.</NAT_CollectorStealThing.reportString>
+  
+  <!-- EN: wandering -->
+  <NAT_CollectorWait.reportString>wandering</NAT_CollectorWait.reportString>
+  
+</LanguageData>

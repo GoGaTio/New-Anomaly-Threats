@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: shard upgrade -->
+  <NAT_ShardUpgrade.label>shard upgrade</NAT_ShardUpgrade.label>
+  <!-- EN: This rusted soldier is upgraded using shard of dark archotechnology. -->
+  <NAT_ShardUpgrade.description>This rusted soldier is upgraded using shard of dark archotechnology.</NAT_ShardUpgrade.description>
+  
+</LanguageData>

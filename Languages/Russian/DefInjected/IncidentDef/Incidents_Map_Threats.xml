@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: rusted army raid -->
+  <NAT_RustedArmyRaid.label>rusted army raid</NAT_RustedArmyRaid.label>
+  
+  <!-- EN: rusted army siege -->
+  <NAT_RustedArmySiege.label>rusted army siege</NAT_RustedArmySiege.label>
+  
+  <!-- EN: serpent assault -->
+  <NAT_SerpentAssault.label>serpent assault</NAT_SerpentAssault.label>
+  <!-- EN: Bile serpent attack -->
+  <NAT_SerpentAssault.letterLabel>Bile serpent attack</NAT_SerpentAssault.letterLabel>
+  <!-- EN: A swarm of huge gape-mawed monsters are attacking!\n\nThese creatures' jaws are massive enough to swallow a human whole. Keep your distance! -->
+  <NAT_SerpentAssault.letterText>A swarm of huge gape-mawed monsters are attacking!
+
+These creatures' jaws are massive enough to swallow a human whole. Keep your distance!</NAT_SerpentAssault.letterText>
+  
+</LanguageData>

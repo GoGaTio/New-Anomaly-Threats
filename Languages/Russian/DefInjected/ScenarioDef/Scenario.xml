@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Fugitive cultists -->
+  <NAT_Cultists.label>Fugitive cultists</NAT_Cultists.label>
+  <!-- EN: You did not see eye to eye with the cult leaders and, realizing the problems ahead, decided to flee. Now your goal is to develop your understanding of emptiness into a new faith with only what you managed to steal. -->
+  <NAT_Cultists.description>You did not see eye to eye with the cult leaders and, realizing the problems ahead, decided to flee. Now your goal is to develop your understanding of emptiness into a new faith with only what you managed to steal.</NAT_Cultists.description>
+  <!-- EN: You did not see eye to eye with the cult leaders and, realizing the problems ahead, decided to flee. Now your goal is to develop your understanding of emptiness into a new faith with only what you managed to steal. -->
+  <NAT_Cultists.scenario.description>You did not see eye to eye with the cult leaders and, realizing the problems ahead, decided to flee. Now your goal is to develop your understanding of emptiness into a new faith with only what you managed to steal.</NAT_Cultists.scenario.description>
+  <!-- EN: Fugitive cultists -->
+  <NAT_Cultists.scenario.name>Fugitive cultists</NAT_Cultists.scenario.name>
+  <!-- EN: You did not see eye to eye with the cult leaders and, realizing the problems ahead, decided to flee. Now your goal is to develop your understanding of emptiness into a new faith with only what you managed to steal. -->
+  <NAT_Cultists.scenario.parts.GameStartDialog.text>You did not see eye to eye with the cult leaders and, realizing the problems ahead, decided to flee. Now your goal is to develop your understanding of emptiness into a new faith with only what you managed to steal.</NAT_Cultists.scenario.parts.GameStartDialog.text>
+  <!-- EN: Two outlaw cultists with all their stuff. -->
+  <NAT_Cultists.scenario.summary>Two outlaw cultists with all their stuff.</NAT_Cultists.scenario.summary>
+  
+</LanguageData>

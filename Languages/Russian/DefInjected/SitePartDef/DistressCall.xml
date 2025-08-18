@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: {FACTION_name} distress signal -->
+  <NAT_DistressCall_RustedArmy.label>{FACTION_name} distress signal</NAT_DistressCall_RustedArmy.label>
+  <!-- EN: You've intercepted a distress signal from this outpost. The threat is unknown, but the caller offered everything in the camp as a reward for help. -->
+  <NAT_DistressCall_RustedArmy.description>You've intercepted a distress signal from this outpost. The threat is unknown, but the caller offered everything in the camp as a reward for help.</NAT_DistressCall_RustedArmy.description>
+  <!-- EN: Investigating {0}. -->
+  <NAT_DistressCall_RustedArmy.approachingReportString>Investigating {0}.</NAT_DistressCall_RustedArmy.approachingReportString>
+  <!-- EN: Investigate {0} -->
+  <NAT_DistressCall_RustedArmy.approachOrderString>Investigate {0}</NAT_DistressCall_RustedArmy.approachOrderString>
+  
+</LanguageData>

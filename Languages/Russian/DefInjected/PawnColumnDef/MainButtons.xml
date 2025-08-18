@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: allowed area -->
+  <NAT_AllowedAreaRusts.label>allowed area</NAT_AllowedAreaRusts.label>
+  <!-- EN: Allowed areas only apply for rusted soldiers. -->
+  <NAT_AllowedAreaRusts.headerTip>Allowed areas only apply for rusted soldiers.</NAT_AllowedAreaRusts.headerTip>
+  
+  <!-- EN: draft -->
+  <NAT_DraftRusts.label>draft</NAT_DraftRusts.label>
+  
+  <!-- EN: health -->
+  <NAT_HealthRusts.label>health</NAT_HealthRusts.label>
+  
+</LanguageData>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: rusted assault shotgun -->
+  <NAT_Gun_RustedAssaultShotgun.label>rusted assault shotgun</NAT_Gun_RustedAssaultShotgun.label>
+  <!-- EN: A piece of bioferrite shaped like a large chain shotgun.\n\nSomehow can shoot if wielded by rusted creature. -->
+  <NAT_Gun_RustedAssaultShotgun.description>A piece of bioferrite shaped like a large chain shotgun.
+
+Somehow can shoot if wielded by rusted creature.</NAT_Gun_RustedAssaultShotgun.description>
+  <!-- EN: stock -->
+  <NAT_Gun_RustedAssaultShotgun.tools.stock.label>stock</NAT_Gun_RustedAssaultShotgun.tools.stock.label>
+  <!-- EN: barrel -->
+  <NAT_Gun_RustedAssaultShotgun.tools.barrel.label>barrel</NAT_Gun_RustedAssaultShotgun.tools.barrel.label>
+  <!-- EN: rusted assault shotgun -->
+  <NAT_Gun_RustedAssaultShotgun.verbs.Verb_Shoot.label>rusted assault shotgun</NAT_Gun_RustedAssaultShotgun.verbs.Verb_Shoot.label>
+  
+  <!-- EN: rusted machine gun -->
+  <NAT_Gun_RustedMachineGun.label>rusted machine gun</NAT_Gun_RustedMachineGun.label>
+  <!-- EN: A piece of bioferrite shaped like a machine gun.\n\nSomehow can shoot if wielded by rusted creature. -->
+  <NAT_Gun_RustedMachineGun.description>A piece of bioferrite shaped like a machine gun.
+
+Somehow can shoot if wielded by rusted creature.</NAT_Gun_RustedMachineGun.description>
+  <!-- EN: stock -->
+  <NAT_Gun_RustedMachineGun.tools.stock.label>stock</NAT_Gun_RustedMachineGun.tools.stock.label>
+  <!-- EN: barrel -->
+  <NAT_Gun_RustedMachineGun.tools.barrel.label>barrel</NAT_Gun_RustedMachineGun.tools.barrel.label>
+  <!-- EN: rusted machine gun -->
+  <NAT_Gun_RustedMachineGun.verbs.Verb_Shoot.label>rusted machine gun</NAT_Gun_RustedMachineGun.verbs.Verb_Shoot.label>
+  
+  <!-- EN: rusted sniper rifle -->
+  <NAT_Gun_RustedSniperRifle.label>rusted sniper rifle</NAT_Gun_RustedSniperRifle.label>
+  <!-- EN: A piece of bioferrite shaped like a bolt-action rifle.\n\nSomehow can shoot if wielded by rusted creature. -->
+  <NAT_Gun_RustedSniperRifle.description>A piece of bioferrite shaped like a bolt-action rifle.
+
+Somehow can shoot if wielded by rusted creature.</NAT_Gun_RustedSniperRifle.description>
+  <!-- EN: stock -->
+  <NAT_Gun_RustedSniperRifle.tools.stock.label>stock</NAT_Gun_RustedSniperRifle.tools.stock.label>
+  <!-- EN: barrel -->
+  <NAT_Gun_RustedSniperRifle.tools.barrel.label>barrel</NAT_Gun_RustedSniperRifle.tools.barrel.label>
+  <!-- EN: rusted sniper rifle -->
+  <NAT_Gun_RustedSniperRifle.verbs.Verb_Shoot.label>rusted sniper rifle</NAT_Gun_RustedSniperRifle.verbs.Verb_Shoot.label>
+  
+</LanguageData>

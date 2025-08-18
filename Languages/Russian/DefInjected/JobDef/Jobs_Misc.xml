@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: constructing rust -->
+  <NAT_BuildRust.reportString>constructing rust</NAT_BuildRust.reportString>
+  
+  <!-- EN: sealing TargetA. -->
+  <NAT_Seal.reportString>sealing TargetA.</NAT_Seal.reportString>
+  
+  <!-- EN: using TargetA. -->
+  <NAT_UseItemByRust.reportString>using TargetA.</NAT_UseItemByRust.reportString>
+  
+</LanguageData>

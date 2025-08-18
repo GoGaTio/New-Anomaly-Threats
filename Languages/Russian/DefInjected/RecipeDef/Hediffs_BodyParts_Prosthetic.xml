@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: install bile heart -->
+  <NAT_InstallBileHeart.label>install bile heart</NAT_InstallBileHeart.label>
+  <!-- EN: Install bile heart. -->
+  <NAT_InstallBileHeart.description>Install bile heart.</NAT_InstallBileHeart.description>
+  <!-- EN: Installing bile heart. -->
+  <NAT_InstallBileHeart.jobString>Installing bile heart.</NAT_InstallBileHeart.jobString>
+  
+</LanguageData>

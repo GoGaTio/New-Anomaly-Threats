@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: rusted charge activator -->
+  <NAT_RustedActivator_Charge.label>rusted charge activator</NAT_RustedActivator_Charge.label>
+  <!-- EN: A small device that increases work speed of rust. -->
+  <NAT_RustedActivator_Charge.description>A small device that increases work speed of rust.</NAT_RustedActivator_Charge.description>
+  
+  <!-- EN: rusted durability activator -->
+  <NAT_RustedActivator_Durability.label>rusted durability activator</NAT_RustedActivator_Durability.label>
+  <!-- EN: A small device that increases durability of rust. -->
+  <NAT_RustedActivator_Durability.description>A small device that increases durability of rust.</NAT_RustedActivator_Durability.description>
+  
+  <!-- EN: rusted regeneration activator -->
+  <NAT_RustedActivator_Regeneration.label>rusted regeneration activator</NAT_RustedActivator_Regeneration.label>
+  <!-- EN: A small device that increases regeneration of rust. -->
+  <NAT_RustedActivator_Regeneration.description>A small device that increases regeneration of rust.</NAT_RustedActivator_Regeneration.description>
+  
+  <!-- EN: rusted speed activator -->
+  <NAT_RustedActivator_Speed.label>rusted speed activator</NAT_RustedActivator_Speed.label>
+  <!-- EN: A small device that increases speed of rust. -->
+  <NAT_RustedActivator_Speed.description>A small device that increases speed of rust.</NAT_RustedActivator_Speed.description>
+  
+  <!-- EN: shard upgrader -->
+  <NAT_ShardUpgrader.label>shard upgrader</NAT_ShardUpgrader.label>
+  <!-- EN: Special device that can upgrade rust using shard of dark archotechnology.\n\nMakes rust core fully stable. -->
+  <NAT_ShardUpgrader.description>Special device that can upgrade rust using shard of dark archotechnology.
+
+Makes rust core fully stable.</NAT_ShardUpgrader.description>
+  
+</LanguageData>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: rusted bannerman -->
+  <NAT_RustedBannerman.label>rusted bannerman</NAT_RustedBannerman.label>
+  
+  <!-- EN: rusted grenadier -->
+  <NAT_RustedGrenadier.label>rusted grenadier</NAT_RustedGrenadier.label>
+  
+  <!-- EN: rusted gunner -->
+  <NAT_RustedGunner.label>rusted gunner</NAT_RustedGunner.label>
+  
+  <!-- EN: heavy rusted gunner -->
+  <NAT_RustedGunner_Heavy.label>heavy rusted gunner</NAT_RustedGunner_Heavy.label>
+  
+  <!-- EN: rusted hussar -->
+  <NAT_RustedHussar.label>rusted hussar</NAT_RustedHussar.label>
+  
+  <!-- EN: rusted renegade -->
+  <NAT_RustedRenegade.label>rusted renegade</NAT_RustedRenegade.label>
+  
+  <!-- EN: rusted rifleman -->
+  <NAT_RustedRifleman.label>rusted rifleman</NAT_RustedRifleman.label>
+  
+  <!-- EN: rusted sapper -->
+  <NAT_RustedSapper.label>rusted sapper</NAT_RustedSapper.label>
+  
+  <!-- EN: rusted trooper -->
+  <NAT_RustedTrooper_Reinforcement.label>rusted trooper</NAT_RustedTrooper_Reinforcement.label>
+  
+</LanguageData>

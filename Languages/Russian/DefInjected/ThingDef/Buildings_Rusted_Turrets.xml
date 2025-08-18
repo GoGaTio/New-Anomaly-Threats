@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: rusted autocannon turret -->
+  <NAT_RustedTurret_Auto.label>rusted autocannon turret</NAT_RustedTurret_Auto.label>
+  <!-- EN: A rusted bioferrite piece shaped like a heavy automatic turret. Not actually a turret, rusted autocannon turret is a static rusted creature, powered by dark archotechnology shard. Can shoot through the smoke and slowly regenerate. -->
+  <NAT_RustedTurret_Auto.description>A rusted bioferrite piece shaped like a heavy automatic turret. Not actually a turret, rusted autocannon turret is a static rusted creature, powered by dark archotechnology shard. Can shoot through the smoke and slowly regenerate.</NAT_RustedTurret_Auto.description>
+  
+  <!-- EN: rusted foam turret -->
+  <NAT_RustedTurret_Foam.label>rusted foam turret</NAT_RustedTurret_Foam.label>
+  <!-- EN: A rusted bioferrite piece shaped like a foam turret. Not actually a turret, rusted foam turret is a static rusted creature, powered by dark archotechnology shard. Can shoot through the smoke and slowly regenerate. -->
+  <NAT_RustedTurret_Foam.description>A rusted bioferrite piece shaped like a foam turret. Not actually a turret, rusted foam turret is a static rusted creature, powered by dark archotechnology shard. Can shoot through the smoke and slowly regenerate.</NAT_RustedTurret_Foam.description>
+  
+  <!-- EN: rusted mini-turret -->
+  <NAT_RustedTurret_Mini.label>rusted mini-turret</NAT_RustedTurret_Mini.label>
+  <!-- EN: A rusted bioferrite piece shaped like a small automatic turret. Not actually a turret, rusted mini-turret is a static rusted creature, powered by dark archotechnology shard. Can shoot through the smoke and slowly regenerate. -->
+  <NAT_RustedTurret_Mini.description>A rusted bioferrite piece shaped like a small automatic turret. Not actually a turret, rusted mini-turret is a static rusted creature, powered by dark archotechnology shard. Can shoot through the smoke and slowly regenerate.</NAT_RustedTurret_Mini.description>
+  
+  <!-- EN: rusted sniper turret -->
+  <NAT_RustedTurret_Sniper.label>rusted sniper turret</NAT_RustedTurret_Sniper.label>
+  <!-- EN: A rusted bioferrite piece shaped like an armor-piercing turret. Not actually a turret, rusted sniper turret is a static rusted creature, powered by dark archotechnology shard. Can shoot through the smoke and slowly regenerate. -->
+  <NAT_RustedTurret_Sniper.description>A rusted bioferrite piece shaped like an armor-piercing turret. Not actually a turret, rusted sniper turret is a static rusted creature, powered by dark archotechnology shard. Can shoot through the smoke and slowly regenerate.</NAT_RustedTurret_Sniper.description>
+  
+</LanguageData>
