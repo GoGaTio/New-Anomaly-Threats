@@ -2,18 +2,18 @@
 <LanguageData>
   
   <!-- EN: rusted guardsman -->
-  <NAT_RustedGuardsman.label>rusted guardsman</NAT_RustedGuardsman.label>
-  <!-- EN: Bioferrite pieces shaped like tall human figure. This type of rusted creature has thicker armor and better combat skills than regulasr soldiers. -->
-  <NAT_RustedGuardsman.description>Bioferrite pieces shaped like tall human figure. This type of rusted creature has thicker armor and better combat skills than regulasr soldiers.</NAT_RustedGuardsman.description>
+  <NAT_RustedGuardsman.label>ржавый гвардеец</NAT_RustedGuardsman.label>
+  <!-- EN: Bioferrite pieces shaped like tall human figure. This type of rusted creature has thicker armor and better combat skills than regular soldiers. -->
+  <NAT_RustedGuardsman.description>Куски биоферрита напоминающие высокую гуманоидную фигуру. Являясь элитными бойцами Ржавой армии, ржавые гвардейцы обладуют лучшей живучестю и навыками чем обычные пехотинцы.</NAT_RustedGuardsman.description>
   <!-- EN: head -->
-  <NAT_RustedGuardsman.tools.head.label>head</NAT_RustedGuardsman.tools.head.label>
+  <NAT_RustedGuardsman.tools.head.label>голова</NAT_RustedGuardsman.tools.head.label>
   <!-- EN: left claw -->
-  <NAT_RustedGuardsman.tools.left_claw.label>left claw</NAT_RustedGuardsman.tools.left_claw.label>
+  <NAT_RustedGuardsman.tools.left_claw.label>левая рука</NAT_RustedGuardsman.tools.left_claw.label>
   <!-- EN: claw -->
-  <NAT_RustedGuardsman.tools.left_claw.labelNoLocation>claw</NAT_RustedGuardsman.tools.left_claw.labelNoLocation>
+  <NAT_RustedGuardsman.tools.left_claw.labelNoLocation>рука</NAT_RustedGuardsman.tools.left_claw.labelNoLocation>
   <!-- EN: right claw -->
-  <NAT_RustedGuardsman.tools.right_claw.label>right claw</NAT_RustedGuardsman.tools.right_claw.label>
+  <NAT_RustedGuardsman.tools.right_claw.label>правая рука</NAT_RustedGuardsman.tools.right_claw.label>
   <!-- EN: claw -->
-  <NAT_RustedGuardsman.tools.right_claw.labelNoLocation>claw</NAT_RustedGuardsman.tools.right_claw.labelNoLocation>
+  <NAT_RustedGuardsman.tools.right_claw.labelNoLocation>рука</NAT_RustedGuardsman.tools.right_claw.labelNoLocation>
   
 </LanguageData>
