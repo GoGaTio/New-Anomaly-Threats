@@ -356,10 +356,10 @@ namespace NAT
 		{
 			if (__instance is RustedPawn rust && rust.equipment?.Primary != null && rust.Faction != Faction.OfPlayerSilentFail)
 			{
-				if(rust.equipment.Primary.TryGetComp<CompRustedBanner>(out var banner))
+				/*if(rust.equipment.Primary.TryGetComp<CompRustedBanner>(out var banner))
                 {
 					banner.ApplyEffect(rust.PositionHeld, rust.MapHeld);
-				}
+				}*/
 				CompRustedEquipment comp = rust.equipment.Primary.TryGetComp<CompRustedEquipment>();
 				if (comp != null && comp.Props.destroyOnDrop && !comp.parent.Destroyed)
 				{
