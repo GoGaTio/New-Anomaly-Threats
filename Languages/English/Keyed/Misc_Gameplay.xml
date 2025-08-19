@@ -60,6 +60,18 @@
   <NAT_DropRequested>{0} requested reinforcements!</NAT_DropRequested>
   <NAT_MessageRustedTroopersLeaving>Reinforcements are leaving.</NAT_MessageRustedTroopersLeaving>
 
+  <NAT_RustResurrected>{0} resurrected</NAT_RustResurrected>
+  <NAT_RustResurrected_Desc>{0} reached amount of bioferrite, that's enough for resurrection of {0}.</NAT_RustResurrected_Desc>
+
+  <NAT_ResurrectIn>Resurrect in {0}</NAT_ResurrectIn>
+
+  <NAT_RustedCoreLabel>core of {0}</NAT_RustedCoreLabel>
+
+  <NAT_DestroyCoreConfirmation>Destroying the core would kill {0} forever.\n\n{0} is colony {1}.\n\nAre you sure you want to continue?</NAT_DestroyCoreConfirmation>
+
+  <NAT_RustedCoreDeactivate>Destroy {0}</NAT_RustedCoreDeactivate>
+  <NAT_RustedCoreDeactivateDesc>Destroy {0} forever.</NAT_RustedCoreDeactivateDesc>
+
   <!--Rusted mass-->
   <NAT_RustedSphereDeactivateMissingShards>To deactivate rusted mass you need {0} shards!</NAT_RustedSphereDeactivateMissingShards>
   <NAT_RustedMassArrival>Rusted mass</NAT_RustedMassArrival>

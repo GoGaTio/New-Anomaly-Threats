@@ -286,6 +286,7 @@ namespace NAT
                     action = delegate
                     {
                         accumulatedRustTicks += 100;
+                        graphicInt = null;
                     }
                 };
                 yield return new Command_Action
@@ -294,6 +295,7 @@ namespace NAT
                     action = delegate
                     {
                         accumulatedRustTicks += 1000;
+                        graphicInt = null;
                     }
                 };
                 yield return new Command_Action

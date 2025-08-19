@@ -60,6 +60,18 @@
   <NAT_DropRequested>{0} вызвал подкрепление!</NAT_DropRequested>
   <NAT_MessageRustedTroopersLeaving>Подкрепления уходят.</NAT_MessageRustedTroopersLeaving>
 
+  <NAT_RustResurrected>{0} возродился</NAT_RustResurrected>
+  <NAT_RustResurrected_Desc>{0} успешно набрало достаточно биоферрита, чтобы {1} смог возродиться.</NAT_RustResurrected_Desc>
+
+  <NAT_ResurrectIn>Возродится через {0}</NAT_ResurrectIn>
+
+  <NAT_RustedCoreLabel>ядро {0}</NAT_RustedCoreLabel>
+
+  <NAT_DestroyCoreConfirmation>Уничтожив это ядро вы убьёте {0} навсегда.\n\n{0} - {1} колонии.\n\nВы уверены, что хотите продолжить?</NAT_DestroyCoreConfirmation>
+
+  <NAT_RustedCoreDeactivate>Уничтожить {0}</NAT_RustedCoreDeactivate>
+  <NAT_RustedCoreDeactivateDesc>Навсегда уничтожить {0}.</NAT_RustedCoreDeactivateDesc>
+
   <!--Rusted mass-->
   <NAT_RustedSphereDeactivateMissingShards>Для деактивации ржавой массы вам необходимо: осколок x{0}!</NAT_RustedSphereDeactivateMissingShards>
   <NAT_RustedMassArrival>Ржавая масса</NAT_RustedMassArrival>
