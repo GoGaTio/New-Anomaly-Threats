@@ -2,18 +2,18 @@
 <LanguageData>
   
   <!-- EN: rusted officer -->
-  <NAT_RustedOfficer.label>rusted officer</NAT_RustedOfficer.label>
+  <NAT_RustedOfficer.label>ржавый офицер</NAT_RustedOfficer.label>
   <!-- EN: A large bioferrite chunk shaped like fat human figure with tall three-eyed head. This creature usually appears as leader of rusts groups. -->
-  <NAT_RustedOfficer.description>A large bioferrite chunk shaped like fat human figure with tall three-eyed head. This creature usually appears as leader of rusts groups.</NAT_RustedOfficer.description>
+  <NAT_RustedOfficer.description>Куски биоферрита напоминающие полную гуманоидную фигуру. Ржавые офицеры обычно руководят группами солдат или небольшими аванпостами.</NAT_RustedOfficer.description>
   <!-- EN: head -->
-  <NAT_RustedOfficer.tools.head.label>head</NAT_RustedOfficer.tools.head.label>
+  <NAT_RustedOfficer.tools.head.label>голова</NAT_RustedOfficer.tools.head.label>
   <!-- EN: left claw -->
-  <NAT_RustedOfficer.tools.left_claw.label>left claw</NAT_RustedOfficer.tools.left_claw.label>
+  <NAT_RustedOfficer.tools.left_claw.label>левая рука</NAT_RustedOfficer.tools.left_claw.label>
   <!-- EN: claw -->
-  <NAT_RustedOfficer.tools.left_claw.labelNoLocation>claw</NAT_RustedOfficer.tools.left_claw.labelNoLocation>
+  <NAT_RustedOfficer.tools.left_claw.labelNoLocation>рука</NAT_RustedOfficer.tools.left_claw.labelNoLocation>
   <!-- EN: right claw -->
-  <NAT_RustedOfficer.tools.right_claw.label>right claw</NAT_RustedOfficer.tools.right_claw.label>
+  <NAT_RustedOfficer.tools.right_claw.label>правая рука</NAT_RustedOfficer.tools.right_claw.label>
   <!-- EN: claw -->
-  <NAT_RustedOfficer.tools.right_claw.labelNoLocation>claw</NAT_RustedOfficer.tools.right_claw.labelNoLocation>
+  <NAT_RustedOfficer.tools.right_claw.labelNoLocation>рука</NAT_RustedOfficer.tools.right_claw.labelNoLocation>
   
 </LanguageData>
