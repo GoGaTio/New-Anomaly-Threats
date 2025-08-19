@@ -2,18 +2,18 @@
 <LanguageData>
   
   <!-- EN: rusted infantryman -->
-  <NAT_RustedSoldier.label>rusted infantryman</NAT_RustedSoldier.label>
+  <NAT_RustedSoldier.label>ржавый пехотинец</NAT_RustedSoldier.label>
   <!-- EN: Bioferrite pieces shaped like spindly human figure. Rusted soldiers usually appear in armed groups, sneaking around and looking for a target. -->
-  <NAT_RustedSoldier.description>Bioferrite pieces shaped like spindly human figure. Rusted soldiers usually appear in armed groups, sneaking around and looking for a target.</NAT_RustedSoldier.description>
+  <NAT_RustedSoldier.description>Куски ржавого биоферрита напоминающие изогнутую гуманоидную фигуру. Ржавые пехотинцы обычно появлются в группах, действующие под управлением вышестоящих ржавчин.</NAT_RustedSoldier.description>
   <!-- EN: head -->
-  <NAT_RustedSoldier.tools.head.label>head</NAT_RustedSoldier.tools.head.label>
+  <NAT_RustedSoldier.tools.head.label>голова</NAT_RustedSoldier.tools.head.label>
   <!-- EN: left claw -->
-  <NAT_RustedSoldier.tools.left_claw.label>left claw</NAT_RustedSoldier.tools.left_claw.label>
+  <NAT_RustedSoldier.tools.left_claw.label>левая рука</NAT_RustedSoldier.tools.left_claw.label>
   <!-- EN: claw -->
-  <NAT_RustedSoldier.tools.left_claw.labelNoLocation>claw</NAT_RustedSoldier.tools.left_claw.labelNoLocation>
+  <NAT_RustedSoldier.tools.left_claw.labelNoLocation>рука</NAT_RustedSoldier.tools.left_claw.labelNoLocation>
   <!-- EN: right claw -->
-  <NAT_RustedSoldier.tools.right_claw.label>right claw</NAT_RustedSoldier.tools.right_claw.label>
+  <NAT_RustedSoldier.tools.right_claw.label>правая рука</NAT_RustedSoldier.tools.right_claw.label>
   <!-- EN: claw -->
-  <NAT_RustedSoldier.tools.right_claw.labelNoLocation>claw</NAT_RustedSoldier.tools.right_claw.labelNoLocation>
+  <NAT_RustedSoldier.tools.right_claw.labelNoLocation>рука</NAT_RustedSoldier.tools.right_claw.labelNoLocation>
   
 </LanguageData>
