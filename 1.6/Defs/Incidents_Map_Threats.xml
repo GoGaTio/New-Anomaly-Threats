@@ -43,7 +43,7 @@
     <minThreatPoints>130</minThreatPoints>
     <minAnomalyThreatLevel>1</minAnomalyThreatLevel>
     <letterLabel>Bile serpent attack</letterLabel>
-    <letterText>A swarm of huge gape-mawed monsters are attacking!\n\nThese creatures' jaws are massive enough to swallow a human whole. Keep your distance!</letterText>
+    <letterText>A swarm of huge predatory snakes are attacking!\n\nThese creatures can spit sticky bile onto their enemies. Keep your distance!</letterText>
     <letterDef>ThreatBig</letterDef>
     <earliestDay>15</earliestDay>
   </IncidentDef>

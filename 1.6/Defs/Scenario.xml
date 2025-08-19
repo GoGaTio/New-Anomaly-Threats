@@ -142,7 +142,7 @@
           <closeSound>GameStartSting</closeSound>
         </li>
 		
-		<li Class="ScenPart_MonolithGeneration">
+        <li Class="ScenPart_MonolithGeneration">
           <def>ScenPart_MonolithGeneration</def>
           <method>NearColonists</method>
         </li>

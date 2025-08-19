@@ -42,20 +42,4 @@
 	<hidden>true</hidden>
   </IncidentDef>
   
-  <IncidentDef ParentName="AnomalyIncidentBase">
-    <defName>NAT_SkullArrival</defName>
-    <label>just skull without any threat</label>
-    <targetTags>
-      <li>Map_PlayerHome</li>
-    </targetTags>
-    <workerClass>NAT.IncidentWorker_SkullArrival</workerClass>
-    <baseChance>0.01</baseChance>
-	<minPopulation>3</minPopulation>
-    <earliestDay>15</earliestDay>
-    <minAnomalyThreatLevel>0</minAnomalyThreatLevel>
-    <minRefireDays>60</minRefireDays>
-	<hidden>true</hidden>
-	<category>Misc</category>
-  </IncidentDef>
-
 </Defs>

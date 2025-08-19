@@ -11,7 +11,7 @@
   <NAT_SerpentAssault.label>атака змеев</NAT_SerpentAssault.label>
   <!-- EN: Bile serpent attack -->
   <NAT_SerpentAssault.letterLabel>Нападение желчных змеев</NAT_SerpentAssault.letterLabel>
-  <!-- EN: A swarm of huge gape-mawed monsters are attacking!\n\nThese creatures' jaws are massive enough to swallow a human whole. Keep your distance! -->
+  <!-- EN: A swarm of huge predatory snakes are attacking!\n\nThese creatures can spit sticky bile onto their enemies. Keep your distance! -->
   <NAT_SerpentAssault.letterText>Свора огромных плотоядных змеев нападает!\n\nЖелчные змеи используют свою желчь в качестве оружия, соблюдайте дистанцию чтобы не попасть под плевок.</NAT_SerpentAssault.letterText>
   
 </LanguageData>

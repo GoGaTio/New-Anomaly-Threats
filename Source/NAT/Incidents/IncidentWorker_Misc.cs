@@ -35,24 +35,6 @@ namespace NAT
 	{
 		public override ThingDef ObeliskDef => NATDefOf.NAT_WarpedObelisk_Inducer;
 	}
-	
-
-	public class IncidentWorker_SkullArrival : IncidentWorker
-	{
-		protected override bool TryExecuteWorker(IncidentParms parms)
-		{
-			Map map = (Map)parms.target;
-			if (!map.mapPawns.AllHumanlikeSpawned.Where((Pawn p) => p.Faction == Faction.OfPlayer).TryRandomElement(out Pawn pawn))
-			{
-				return false;
-			}
-			Thing t = ThingMaker.MakeThing(ThingDefOf.Skull);
-			t.TryGetComp<CompHasSources>().AddSource(pawn.LabelShort);
-			DropPodUtility.DropThingsNear(CellFinder.StandableCellNear(pawn.Position, map, 45f), map, new List<Thing> { t }, 90, false, true, true, false, false);
-			Find.LetterStack.ReceiveLetter("NAT_SkullArrival".Translate(), "NAT_SkullArrival_Desc".Translate(pawn.Named("PAWN")), LetterDefOf.NeutralEvent, t);
-			return true;
-		}
-	}
 
 	public class IncidentWorker_Collector : IncidentWorker
 	{

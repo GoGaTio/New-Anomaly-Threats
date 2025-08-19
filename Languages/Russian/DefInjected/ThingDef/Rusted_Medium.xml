@@ -55,7 +55,7 @@
   <NAT_MeleeWeapon_RustedArmyBanner.tools.point.label>остриё</NAT_MeleeWeapon_RustedArmyBanner.tools.point.label>
   
   <!-- EN: rusted axe -->
-  <NAT_MeleeWeapon_RustedAxe.label>rusted axe</NAT_MeleeWeapon_RustedAxe.label>
+  <NAT_MeleeWeapon_RustedAxe.label>ржавый топор</NAT_MeleeWeapon_RustedAxe.label>
   <!-- EN: A sharp bioferrite piece shaped like an axe. -->
   <NAT_MeleeWeapon_RustedAxe.description>Заточенный обломок биоферрита с тяжёлой ударной частью в форме топора.</NAT_MeleeWeapon_RustedAxe.description>
   <!-- EN: handle -->
@@ -64,7 +64,7 @@
   <NAT_MeleeWeapon_RustedAxe.tools.head.label>head</NAT_MeleeWeapon_RustedAxe.tools.head.label>
   
   <!-- EN: rusted sword -->
-  <NAT_MeleeWeapon_RustedSword.label>rusted sword</NAT_MeleeWeapon_RustedSword.label>
+  <NAT_MeleeWeapon_RustedSword.label>ржавый меч</NAT_MeleeWeapon_RustedSword.label>
   <!-- EN: A sharp bioferrite piece shaped like a sword. -->
   <NAT_MeleeWeapon_RustedSword.description>Заточенный обломок биоферрита в форме меча.</NAT_MeleeWeapon_RustedSword.description>
   <!-- EN: handle -->
