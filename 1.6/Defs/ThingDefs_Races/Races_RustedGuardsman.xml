@@ -4,7 +4,7 @@
   <ThingDef ParentName="NAT_BaseRustedPawn">
     <defName>NAT_RustedGuardsman</defName>
     <label>rusted guardsman</label>
-    <description>Bioferrite pieces shaped like tall human figure. This type of rusted creature has thicker armor and better combat skills than regulasr soldiers.</description>
+    <description>Bioferrite pieces shaped like tall human figure. This type of rusted creature is Rusted army elite unit, so has thicker armor and better combat skills than regular soldiers.</description>
     <statBases>
       <MoveSpeed>4.8</MoveSpeed>
       <MarketValue>2100</MarketValue>
