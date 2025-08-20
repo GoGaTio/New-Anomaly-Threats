@@ -19,12 +19,12 @@
           <coverage>0.20</coverage>
           <height>Top</height>
           <groups>
-             <li>HeadAttackTool</li>
-             <li>UpperHead</li>
-             <li>FullHead</li>
+            <li>HeadAttackTool</li>
+            <li>UpperHead</li>
+            <li>FullHead</li>
           </groups>
           <parts>
-		     <li>
+            <li>
               <def>NAT_RustedCore</def>
               <coverage>0.02</coverage>
               <depth>Inside</depth>
@@ -232,21 +232,19 @@
       <depth>Outside</depth>
       <groups>
         <li>Torso</li>
-
       </groups>
       <parts>
-
         <li>
           <def>NAT_RustedHead</def>
           <coverage>0.17</coverage>
           <height>Top</height>
           <groups>
-             <li>HeadAttackTool</li>
-             <li>UpperHead</li>
-             <li>FullHead</li>
+            <li>HeadAttackTool</li>
+            <li>UpperHead</li>
+            <li>FullHead</li>
           </groups>
           <parts>
-		     <li>
+            <li>
               <def>NAT_RustedCore</def>
               <coverage>0.02</coverage>
               <depth>Inside</depth>
@@ -473,7 +471,7 @@
     </corePart>
   </BodyDef>
 
-<BodyDef>
+  <BodyDef>
     <defName>NAT_RustTall</defName>
     <label>tall rust</label>
     <corePart>
@@ -491,12 +489,12 @@
           <coverage>0.20</coverage>
           <height>Top</height>
           <groups>
-             <li>HeadAttackTool</li>
-             <li>UpperHead</li>
-             <li>FullHead</li>
+            <li>HeadAttackTool</li>
+            <li>UpperHead</li>
+            <li>FullHead</li>
           </groups>
           <parts>
-		     <li>
+            <li>
               <def>NAT_RustedCore</def>
               <coverage>0.02</coverage>
               <depth>Inside</depth>
@@ -714,5 +712,5 @@
       </parts>
     </corePart>
   </BodyDef>
-  
+
 </Defs>

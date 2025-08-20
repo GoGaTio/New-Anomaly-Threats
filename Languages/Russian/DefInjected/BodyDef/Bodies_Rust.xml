@@ -54,9 +54,11 @@
 	<NAT_RustFat.corePart.parts.left_shoulder.parts.left_arm.customLabel>левая рука</NAT_RustFat.corePart.parts.left_shoulder.parts.left_arm.customLabel>
 	<!-- EN: left pinky -->
 	<NAT_RustFat.corePart.parts.left_shoulder.parts.left_arm.parts.left_pinky.customLabel>левый мизинец</NAT_RustFat.corePart.parts.left_shoulder.parts.left_arm.parts.left_pinky.customLabel>
-	<!-- EN: left middle finger -->
+  <!-- EN: left ring finger -->
+  <NAT_RustFat.corePart.parts.left_shoulder.parts.left_arm.parts.left_ring_finger.customLabel>левый безымянный плец</NAT_RustFat.corePart.parts.left_shoulder.parts.left_arm.parts.left_ring_finger.customLabel>
+  <!-- EN: left middle finger -->
 	<NAT_RustFat.corePart.parts.left_shoulder.parts.left_arm.parts.left_middle_finger.customLabel>левый средний плец</NAT_RustFat.corePart.parts.left_shoulder.parts.left_arm.parts.left_middle_finger.customLabel>
-	<!-- EN: left index finger -->
+  <!-- EN: left index finger -->
 	<NAT_RustFat.corePart.parts.left_shoulder.parts.left_arm.parts.left_index_finger.customLabel>левый указательный палец</NAT_RustFat.corePart.parts.left_shoulder.parts.left_arm.parts.left_index_finger.customLabel>
 	<!-- EN: left thumb -->
 	<NAT_RustFat.corePart.parts.left_shoulder.parts.left_arm.parts.left_thumb.customLabel>левый большой палец</NAT_RustFat.corePart.parts.left_shoulder.parts.left_arm.parts.left_thumb.customLabel>
@@ -66,9 +68,11 @@
 	<NAT_RustFat.corePart.parts.right_shoulder.parts.right_arm.customLabel>правая рука</NAT_RustFat.corePart.parts.right_shoulder.parts.right_arm.customLabel>
 	<!-- EN: right pinky -->
 	<NAT_RustFat.corePart.parts.right_shoulder.parts.right_arm.parts.right_pinky.customLabel>правый мизинец</NAT_RustFat.corePart.parts.right_shoulder.parts.right_arm.parts.right_pinky.customLabel>
-	<!-- EN: right middle finger -->
-	<NAT_RustFat.corePart.parts.right_shoulder.parts.right_arm.parts.right_middle_finger.customLabel>правый средний палец</NAT_RustFat.corePart.parts.right_shoulder.parts.right_arm.parts.right_middle_finger.customLabel>
-	<!-- EN: right index finger -->
+	<!-- EN: right ring finger -->
+	<NAT_RustFat.corePart.parts.right_shoulder.parts.right_arm.parts.right_ring_finger.customLabel>правый безымянный палец</NAT_RustFat.corePart.parts.right_shoulder.parts.right_arm.parts.right_ring_finger.customLabel>
+  <!-- EN: right middle finger -->
+  <NAT_RustFat.corePart.parts.right_shoulder.parts.right_arm.parts.right_middle_finger.customLabel>правый средний палец</NAT_RustFat.corePart.parts.right_shoulder.parts.right_arm.parts.right_middle_finger.customLabel>
+  <!-- EN: right index finger -->
 	<NAT_RustFat.corePart.parts.right_shoulder.parts.right_arm.parts.right_index_finger.customLabel>правый указательный палец</NAT_RustFat.corePart.parts.right_shoulder.parts.right_arm.parts.right_index_finger.customLabel>
 	<!-- EN: right thumb -->
 	<NAT_RustFat.corePart.parts.right_shoulder.parts.right_arm.parts.right_thumb.customLabel>правый большой палец</NAT_RustFat.corePart.parts.right_shoulder.parts.right_arm.parts.right_thumb.customLabel>
@@ -88,9 +92,9 @@
   <!-- EN: right eye socket -->
   <NAT_RustTall.corePart.parts.NAT_RustedHead.parts.right_eye_socket-0.customLabel>правая глазница</NAT_RustTall.corePart.parts.NAT_RustedHead.parts.right_eye_socket-0.customLabel>
   <!-- EN: side left eye socket -->
-  <NAT_RustTall.corePart.parts.NAT_RustedHead.parts.left_eye_socket-1.customLabel>левая боковая глазница</NAT_RustTall.corePart.parts.NAT_RustedHead.parts.left_eye_socket-1.customLabel>
+  <NAT_RustTall.corePart.parts.NAT_RustedHead.parts.side_left_eye_socket.customLabel>левая боковая глазница</NAT_RustTall.corePart.parts.NAT_RustedHead.parts.side_left_eye_socket.customLabel>
   <!-- EN: side right eye socket -->
-  <NAT_RustTall.corePart.parts.NAT_RustedHead.parts.right_eye_socket-1.customLabel>правая боковая глазница</NAT_RustTall.corePart.parts.NAT_RustedHead.parts.right_eye_socket-1.customLabel>
+  <NAT_RustTall.corePart.parts.NAT_RustedHead.parts.side_right_eye_socket.customLabel>правая боковая глазница</NAT_RustTall.corePart.parts.NAT_RustedHead.parts.side_right_eye_socket.customLabel>
   <!-- EN: left shoulder -->
   <NAT_RustTall.corePart.parts.left_shoulder.customLabel>левое плечо</NAT_RustTall.corePart.parts.left_shoulder.customLabel>
   <!-- EN: left arm -->

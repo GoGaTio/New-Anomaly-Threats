@@ -36,13 +36,13 @@ Requires 2 shards.</NAT_RustedMass.comps.CompRustedMassDeactivation.activateDesc
   <!-- EN: deactivating rusted mass -->
   <NAT_RustedMass.comps.CompRustedMassDeactivation.activatingStringPending>деактивирует ржавую массу</NAT_RustedMass.comps.CompRustedMassDeactivation.activatingStringPending>
   <!-- EN: Choose who should do this -->
-  <NAT_RustedMass.comps.CompRustedMassDeactivation.guiLabelString>Choose who should do this</NAT_RustedMass.comps.CompRustedMassDeactivation.guiLabelString>
+  <NAT_RustedMass.comps.CompRustedMassDeactivation.guiLabelString>Выберите, кто должен это сделать</NAT_RustedMass.comps.CompRustedMassDeactivation.guiLabelString>
   <!-- EN: Deactivate rusted mass -->
-  <NAT_RustedMass.comps.CompRustedMassDeactivation.jobString>Deactivate rusted mass</NAT_RustedMass.comps.CompRustedMassDeactivation.jobString>
+  <NAT_RustedMass.comps.CompRustedMassDeactivation.jobString>Деактивировать ржавую массу</NAT_RustedMass.comps.CompRustedMassDeactivation.jobString>
   <!-- EN: {PAWN_nameDef} has successfully deactivated rusted mass. -->
-  <NAT_RustedMass.comps.CompRustedMassDeactivation.messageCompletedString>{PAWN_nameDef} has successfully deactivated rusted mass.</NAT_RustedMass.comps.CompRustedMassDeactivation.messageCompletedString>
+  <NAT_RustedMass.comps.CompRustedMassDeactivation.messageCompletedString>{PAWN_nameDef} успешно {PAWN_gender ? деактивировал : деактивировала} ржавую массу.</NAT_RustedMass.comps.CompRustedMassDeactivation.messageCompletedString>
   <!-- EN: The activity level of the rusted mass has reached 100% and it has activated. It summoned large rusted group nearby.\n\nIt also divided into rusted soldiers! -->
-  <NAT_RustedMass.comps.CompActivity.letterDesc></NAT_RustedMass.comps.CompActivity.letterDesc>
+  <NAT_RustedMass.comps.CompActivity.letterDesc>Уровень активности ржавой массы достиг критической отметки и она активировалась. Это привлекло огромную группу ржавчин.\n\nОна также разделилась на несколько ржавых пехотинцев.</NAT_RustedMass.comps.CompActivity.letterDesc>
   <!-- EN: Rusted mass activated! -->
   <NAT_RustedMass.comps.CompActivity.letterTitle>Ржавая масса активировалась</NAT_RustedMass.comps.CompActivity.letterTitle>
   

@@ -2,7 +2,7 @@
 <LanguageData>
 
   <!-- EN: twisted obelisk -->
-  <NAT_WarpedObelisk_Inducer.label>изогнутый обелиск</NAT_WarpedObelisk_Inducer.label>
+  <NAT_WarpedObelisk_Inducer.label>потрескавшийся обелиск</NAT_WarpedObelisk_Inducer.label>
   <!-- EN: A large metallic pillar that emanates a putrid psychic energy. The pillar hums ominously and appears to be increasing in activity. It's not clear what will happen when it reaches its full capacity.\n\nYou can send colonists to suppress the obelisk to prevent it from activating. You can also mark the obelisk for study to try to learn its purpose and perhaps make use of it.\n\nYou can attack the obelisk to destroy it, but doing so may unleash unnatural and dangerous phenomena. -->
   <NAT_WarpedObelisk_Inducer.description>Большой металлический столб, от которого исходит тошнотворная пси-энергия. Он зловеще гудит и, похоже, становится всё более активным. Неясно, что произойдёт, когда он достигнет пика мощности.\n\nВы можете попробовать подавить обелиск, отправив к нему поселенцев, или пометить его для изучения, чтобы понять, для чего он нужен и удастся ли его использовать.\n\nПопытка разрушить обелиск может вызвать опасное сверхъестественное явление.</NAT_WarpedObelisk_Inducer.description>
   <!-- EN: Obelisk study progress -->
@@ -30,7 +30,7 @@
   <!-- EN: Trigger pulse -->
   <NAT_WarpedObelisk_Inducer.comps.CompObeliskTriggerInteractor.jobString>Запустить мутацию</NAT_WarpedObelisk_Inducer.comps.CompObeliskTriggerInteractor.jobString>
   <!-- EN: {PAWN_nameDef} has successfully triggered obelisk pulse. -->
-  <NAT_WarpedObelisk_Inducer.comps.CompObeliskTriggerInteractor.messageCompletedString>{PAWN_nameDef} успешно запускает мутацию с помощью обелиска.</NAT_WarpedObelisk_Inducer.comps.CompObeliskTriggerInteractor.messageCompletedString>
+  <NAT_WarpedObelisk_Inducer.comps.CompObeliskTriggerInteractor.messageCompletedString>{PAWN_nameDef} успешно запускает импульс обелиска.</NAT_WarpedObelisk_Inducer.comps.CompObeliskTriggerInteractor.messageCompletedString>
   <!-- EN: The twisted obelisk is ready to use again. -->
   <NAT_WarpedObelisk_Inducer.comps.CompObeliskTriggerInteractor.messageCooldownEnded>Изогнутый обелиск можно использовать снова.</NAT_WarpedObelisk_Inducer.comps.CompObeliskTriggerInteractor.messageCooldownEnded>
   <!-- EN: Psy-pulse cooldown -->
