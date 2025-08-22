@@ -166,7 +166,7 @@ namespace NAT
                 GenPlace.TryPlaceThing(pawn, Position, Map, ThingPlaceMode.Near);
             }
             innerContainer.TryDropAll(Position, Map, ThingPlaceMode.Near);
-            questPart.cases.Remove(this);
+            questPart?.cases.Remove(this);
         }
 
         public ThingOwner GetDirectlyHeldThings()

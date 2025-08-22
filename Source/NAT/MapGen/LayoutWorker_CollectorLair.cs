@@ -77,14 +77,14 @@ namespace NAT
 				}
 				IntVec2 size = NATDefOf.NAT_CollectorGlassCase.size;
 				List<Pawn> pawns = questPart_Collector.stolenPawns.ToList();
-                foreach (Building_CollectionCase glassCase in map.listerBuildings.AllBuildingsColonistOfClass<Building_CollectionCase>().InRandomOrder())
+                foreach (Building_CollectionCase glassCase in map.listerBuildings.AllBuildingsNonColonistOfDef(NATDefOf.NAT_CollectorGlassCase).InRandomOrder())
 				{
                     if (!pawns.NullOrEmpty())
                     {
                         glassCase.pawn = pawns.RandomElement();
 						pawns.Remove(glassCase.pawn);
                     }
-					else if (questPart_Collector.stolenThings.NullOrEmpty())
+					else if (!questPart_Collector.stolenThings.NullOrEmpty())
 					{
                         for (int i = 0; i < 3; i++)
                         {
