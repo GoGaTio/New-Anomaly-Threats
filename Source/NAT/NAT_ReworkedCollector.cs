@@ -31,7 +31,8 @@ using UnityEngine.SceneManagement;
 
 namespace NAT
 {
-	public class ThinkNode_ConditionalCollectorState : ThinkNode_Conditional
+
+    public class ThinkNode_ConditionalCollectorState : ThinkNode_Conditional
 	{
 		public CollectorState state;
 

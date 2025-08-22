@@ -86,30 +86,34 @@ namespace NAT
             contentsGraphicData.CopyFrom(def.graphicData);
             contentsGraphicData.shaderType = ShaderTypeDefOf.Transparent;
             contentsGraphicData.texPath += "_Contents";
+            base.DirtyMapMesh(Map);
         }
 
 		public override void DynamicDrawPhaseAt(DrawPhase phase, Vector3 drawLoc, bool flip = false)
 		{
 			base.DynamicDrawPhaseAt(phase, drawLoc, flip);
-			/*if (pawn != null || !innerContainer.NullOrEmpty())
-			{
-                Mesh obj = contentsGraphicData.Graphic.MeshAt(Rotation);
-                Vector3 drawPos = drawLoc;
-                drawPos.y = AltitudeLayer.MoteOverhead.AltitudeFor() + contentsGraphicData.drawOffset.y;
-                Graphics.DrawMesh(obj, drawLoc + contentsGraphicData.drawOffset.RotatedBy(Rotation), Quaternion.identity, contentsGraphicData.Graphic.MatAt(Rotation), 0);
-                //pawn.Drawer.renderer.DynamicDrawPhaseAt(phase, drawLoc, null, neverAimWeapon: true);
-            }*/
-			GraphicData graphicData = glassBroken ? brokenGlassGraphicData : glassGraphicData;
-			Mesh obj2 = graphicData.Graphic.MeshAt(Rotation);
-			Vector3 drawPos2 = drawLoc;
-			drawPos2.y = AltitudeLayer.MoteOverhead.AltitudeFor() + graphicData.drawOffset.y + 0.1f;
-			Graphics.DrawMesh(obj2, drawPos2 + graphicData.drawOffset.RotatedBy(Rotation), Quaternion.identity, graphicData.Graphic.MatAt(Rotation), 0);
+            if (phase == DrawPhase.Draw)
+            {
+                if (pawn != null || !innerContainer.NullOrEmpty())
+                {
+                    Mesh obj = contentsGraphicData.Graphic.MeshAt(Rotation);
+                    Vector3 drawPos = drawLoc;
+                    drawPos.y = AltitudeLayer.MoteOverhead.AltitudeFor() + contentsGraphicData.drawOffset.y;
+                    Graphics.DrawMesh(obj, drawLoc + contentsGraphicData.drawOffset.RotatedBy(Rotation), Quaternion.identity, contentsGraphicData.Graphic.MatAt(Rotation), 0);
+                    //pawn.Drawer.renderer.DynamicDrawPhaseAt(phase, drawLoc, null, neverAimWeapon: true);
+                }
+                GraphicData graphicData = glassBroken ? brokenGlassGraphicData : glassGraphicData;
+                Mesh obj2 = graphicData.Graphic.MeshAt(Rotation);
+                Vector3 drawPos2 = drawLoc;
+                drawPos2.y = AltitudeLayer.MoteOverhead.AltitudeFor() + graphicData.drawOffset.y + 0.1f;
+                Graphics.DrawMesh(obj2, drawPos2 + graphicData.drawOffset.RotatedBy(Rotation), Quaternion.identity, graphicData.Graphic.MatAt(Rotation), 0);
+            }
 		}
 
         public override void PostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
         {
             base.PostApplyDamage(dinfo, totalDamageDealt);
-			if(!glassBroken && dinfo.Def.armorCategory.armorRatingStat == StatDefOf.ArmorRating_Sharp || dinfo.Def.armorCategory.armorRatingStat == StatDefOf.ArmorRating_Blunt)
+			if(!glassBroken && (dinfo.Def.armorCategory.armorRatingStat == StatDefOf.ArmorRating_Sharp || dinfo.Def.armorCategory.armorRatingStat == StatDefOf.ArmorRating_Blunt))
             {
 				BreakGlass();
 			}
@@ -120,6 +124,7 @@ namespace NAT
 			glassBroken = true;
 			NATDefOf.GestatorGlassShattered.PlayOneShot(this);
             EjectContents();
+            base.DirtyMapMesh(Map);
         }
 
         public override void Destroy(DestroyMode mode = DestroyMode.Vanish)

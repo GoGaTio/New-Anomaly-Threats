@@ -26,7 +26,8 @@
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_DisappearsDisableable">
-        <disappearsAfterTicks>180000</disappearsAfterTicks> <!-- 3 days -->
+        <disappearsAfterTicks>180000</disappearsAfterTicks>
+        <!-- 3 days -->
         <showRemainingTime>true</showRemainingTime>
       </li>
       <li Class="HediffCompProperties_DisappearsOnDeath" />
@@ -43,7 +44,7 @@
       </li>
     </stages>
   </HediffDef>
-  
+
   <HediffDef>
     <defName>NAT_BannerBoost</defName>
     <label>combat boost</label>
@@ -99,7 +100,7 @@
         </statFactors>
         <damageFactors>
           <AcidBurn>1.1</AcidBurn>
-        </damageFactors> 
+        </damageFactors>
       </li>
       <li>
         <label>moderately</label>
@@ -119,7 +120,7 @@
         </statFactors>
         <damageFactors>
           <AcidBurn>1.3</AcidBurn>
-        </damageFactors> 
+        </damageFactors>
       </li>
       <li>
         <label>significantly</label>
@@ -139,7 +140,7 @@
         </statFactors>
         <damageFactors>
           <AcidBurn>1.5</AcidBurn>
-        </damageFactors> 
+        </damageFactors>
       </li>
     </stages>
     <comps>
@@ -148,7 +149,7 @@
       </li>
     </comps>
   </HediffDef>
-  
+
   <HediffDef>
     <defName>NAT_PainQuenchSerum</defName>
     <label>pain quench</label>
@@ -168,7 +169,7 @@
       </li>
     </stages>
   </HediffDef>
-  
+
   <HediffDef>
     <defName>NAT_BilePowerSerum</defName>
     <label>bile power</label>
@@ -194,23 +195,23 @@
       </li>
     </stages>
   </HediffDef>
-  
+
   <HediffDef>
     <defName>NAT_InducedPain</defName>
     <label>induced pain</label>
     <description>A pain without any visible reason.</description>
     <initialSeverity>0.001</initialSeverity>
-	<hediffClass>NAT.Hediff_InducedPain</hediffClass>
-	<isBad>false</isBad>
+    <hediffClass>NAT.Hediff_InducedPain</hediffClass>
+    <isBad>false</isBad>
     <maxSeverity>10</maxSeverity>
-	<comps>
+    <comps>
       <li Class="HediffCompProperties_Disappears">
         <disappearsAfterTicks>5000~15000</disappearsAfterTicks>
-		<showRemainingTime>true</showRemainingTime>
+        <showRemainingTime>true</showRemainingTime>
       </li>
     </comps>
   </HediffDef>
-  
+
   <HediffDef>
     <defName>NAT_RustedRegeneration</defName>
     <label>rusted regeneration</label>
@@ -219,39 +220,39 @@
     <stages>
       <li>
         <regeneration>40</regeneration>
-		<minSeverity>0</minSeverity>
-		<becomeVisible>false</becomeVisible>
+        <minSeverity>0</minSeverity>
+        <becomeVisible>false</becomeVisible>
       </li>
-	  <li>
+      <li>
         <regeneration>70</regeneration>
-		<minSeverity>0.3</minSeverity>
-		<becomeVisible>false</becomeVisible>
+        <minSeverity>0.3</minSeverity>
+        <becomeVisible>false</becomeVisible>
       </li>
-	  <li>
+      <li>
         <regeneration>95</regeneration>
-		<minSeverity>0.5</minSeverity>
-		<becomeVisible>false</becomeVisible>
+        <minSeverity>0.5</minSeverity>
+        <becomeVisible>false</becomeVisible>
       </li>
-	  <li>
+      <li>
         <regeneration>120</regeneration>
-		<minSeverity>0.7</minSeverity>
-		<becomeVisible>false</becomeVisible>
+        <minSeverity>0.7</minSeverity>
+        <becomeVisible>false</becomeVisible>
       </li>
-	  <li>
+      <li>
         <regeneration>200</regeneration>
-		<minSeverity>0.9</minSeverity>
-		<becomeVisible>false</becomeVisible>
+        <minSeverity>0.9</minSeverity>
+        <becomeVisible>false</becomeVisible>
       </li>
     </stages>
   </HediffDef>
-  
+
   <HediffDef>
     <defName>NAT_CollectorHypnosis</defName>
     <label>collector hypnosis</label>
     <description>An aftereffect of hypnosis by collector.</description>
-	<hediffClass>HediffWithComps</hediffClass>
-	<isBad>false</isBad>
-	<comps>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-12.00</severityPerDay>
       </li>
@@ -266,11 +267,11 @@
         </capMods>
       </li>
     </stages>
-	<givesInfectionPathways>
+    <givesInfectionPathways>
       <li>NAT_ByCollector</li>
     </givesInfectionPathways>
   </HediffDef>
-  
+
   <InfectionPathwayDef>
     <defName>NAT_ByCollector</defName>
     <label>implanted by collector</label>

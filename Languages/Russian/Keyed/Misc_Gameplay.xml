@@ -32,6 +32,9 @@
 	<NAT_CubeStealed>Куб исчез</NAT_CubeStealed>
 	<NAT_LetterGoldenCubeStealed>Золотой куб украден коллекционером. Теперь он находится в его логове где-то неподалёку.\n\nНайдите и убейте коллекционера чтобы получить информацию о местонахождении куба.</NAT_LetterGoldenCubeStealed>
 
+  <NAT_CollectorLairFound>Логово коллекционера обнаружено</NAT_CollectorLairFound>
+  <NAT_CollectorLairFound_Desc>Записи коллекционера указывают на {0}. Скорее всего там находится его логово со всем украденным.</NAT_CollectorLairFound_Desc>
+
 	<!--Rusted army-->
 	<NAT_RustedArmyRaid>Налёт: Ржавая Армия</NAT_RustedArmyRaid>
 	<NAT_RustedArmyRaid_NoGroups>Группа ржавчин расположилась поблизости.</NAT_RustedArmyRaid_NoGroups>

@@ -32,6 +32,9 @@
 	<NAT_CubeStealed>Cube disappeared</NAT_CubeStealed>
 	<NAT_LetterGoldenCubeStealed>You've found out that golden cube, beautiful Cube, was stealed.\n\nMaybe cube was stealed by collector, creature that steals everything valuable.</NAT_LetterGoldenCubeStealed>
 
+  <NAT_CollectorLairFound>Collector lair found</NAT_CollectorLairFound>
+  <NAT_CollectorLairFound_Desc>You designated the location of collector lair. It seems to be in {0}.</NAT_CollectorLairFound_Desc>
+  
 	<!--Rusted army-->
 	<NAT_RustedArmyRaid>Raid: Rusted Army</NAT_RustedArmyRaid>
 	<NAT_RustedArmyRaid_NoGroups>A group of rusts walked in the region nearby.</NAT_RustedArmyRaid_NoGroups>

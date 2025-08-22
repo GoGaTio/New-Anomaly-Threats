@@ -121,13 +121,14 @@
     <uiIconPath>Things/Building/NAT_CollectorGlassCase/NAT_CollectorGlassCase_Icon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
-    <drawerType>RealtimeOnly</drawerType>
+    <drawerType>MapMeshAndRealTime</drawerType>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <thingClass>NAT.Building_CollectionCase</thingClass>
     <pathCost>50</pathCost>
     <useHitPoints>true</useHitPoints>
     <rotatable>false</rotatable>
     <tickerType>Rare</tickerType>
+    <soundImpactDefault>GestatorGlassShattered</soundImpactDefault>
     <building>
       <roofCollapseDamageMultiplier>0.1</roofCollapseDamageMultiplier>
       <displayAttackToDestroyOnInspectPane>false</displayAttackToDestroyOnInspectPane>
@@ -135,6 +136,7 @@
       <deconstructible>false</deconstructible>
       <repairable>false</repairable>
       <neverBuildable>true</neverBuildable>
+      <claimable>false</claimable>
     </building>
     <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
     <statBases>

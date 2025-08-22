@@ -157,25 +157,30 @@
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2</drawSize>
         </bodyGraphicData>
+        <swimmingGraphicData>
+          <texPath>Things/Pawn/NAT_BileSerpent/NAT_BileSerpent_Swimming</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+        </swimmingGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/NAT_BileSerpent/NAT_DessicatedBileSerpent</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2</drawSize>
           <attachPoints>
             <li>
-              <offset>(-.5, 0, .5)</offset>
+              <offset>(-.29, 0, .21)</offset>
               <type>PlatformRestraint0</type>
             </li>
             <li>
-              <offset>(.5, 0, .5)</offset>
+              <offset>(.42, 0, .5)</offset>
               <type>PlatformRestraint1</type>
             </li>
             <li>
-              <offset>(.4, 0, -.5)</offset>
+              <offset>(.44, 0, -.56)</offset>
               <type>PlatformRestraint2</type>
             </li>
             <li>
-              <offset>(-.4, 0, -.5)</offset>
+              <offset>(-.15, 0, -.56)</offset>
               <type>PlatformRestraint3</type>
             </li>
           </attachPoints>

@@ -59,17 +59,21 @@
         <li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">
           <subNodes>
             <!-- Smokepop -->
-            <li Class="ThinkNode_ConditionalHasAbility">
-              <ability>NAT_CollectorHowl</ability>
+            <li Class="ThinkNode_HarmedRecently">
               <subNodes>
-                <li Class="NAT.ThinkNode_ConditionalNotHasJobDef">
-                  <def>NAT_CollectorStealPawn</def>
+                <li Class="ThinkNode_ConditionalHasAbility">
+                  <ability>NAT_CollectorHowl</ability>
                   <subNodes>
-                    <li Class="ThinkNode_ConditionalTotalDamage">
-                      <thresholdPercent>0.10</thresholdPercent>
+                    <li Class="NAT.ThinkNode_ConditionalNotHasJobDef">
+                      <def>NAT_CollectorStealPawn</def>
                       <subNodes>
-                        <li Class="JobGiver_AICastAbilityOnSelf">
-                          <ability>NAT_CollectorHowl</ability>
+                        <li Class="ThinkNode_ConditionalTotalDamage">
+                          <thresholdPercent>0.10</thresholdPercent>
+                          <subNodes>
+                            <li Class="JobGiver_AICastAbilityOnSelf">
+                              <ability>NAT_CollectorHowl</ability>
+                            </li>
+                          </subNodes>
                         </li>
                       </subNodes>
                     </li>
