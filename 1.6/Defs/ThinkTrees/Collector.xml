@@ -58,7 +58,6 @@
         
         <li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">
           <subNodes>
-            <!-- Smokepop -->
             <li Class="ThinkNode_HarmedRecently">
               <subNodes>
                 <li Class="ThinkNode_ConditionalHasAbility">
