@@ -114,7 +114,7 @@
       <li Class="CompProperties_HoldingPlatformTarget">
         <baseEscapeIntervalMtbDays>60</baseEscapeIntervalMtbDays>
       </li>
-      
+
       <li Class="CompProperties_AttachPoints">
         <points>
           <li>
@@ -147,6 +147,7 @@
     <race>NAT_BileSerpent</race>
     <overrideDeathOnDownedChance>0.6</overrideDeathOnDownedChance>
     <overrideDebugActionCategory>Entity</overrideDebugActionCategory>
+    <immuneToGameConditionEffects>true</immuneToGameConditionEffects>
     <combatPower>105</combatPower>
     <ecoSystemWeight>0.5</ecoSystemWeight>
     <defaultFactionType>Entities</defaultFactionType>
@@ -195,5 +196,5 @@
       <li>NAT_BileSpit</li>
     </abilities>
   </PawnKindDef>
-  
+
 </Defs>

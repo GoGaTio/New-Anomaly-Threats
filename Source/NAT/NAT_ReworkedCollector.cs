@@ -334,7 +334,14 @@ namespace NAT
 				}
 				QuestUtility.SendQuestTargetSignals(target.questTags, "Kidnapped", target.Named("SUBJECT"), pawn.Named("KIDNAPPER"));
 				Find.GameEnder.CheckOrUpdateGameOver();
-			}
+                foreach (Hediff hediff in target.health.hediffSet.GetHediffsTendable())
+                {
+                    if (!hediff.IsTended())
+                    {
+                        hediff.Tended(new FloatRange(0.8f, 1.1f).RandomInRange, 1f);
+                    }
+                }
+            }
 			pawn.ExitMap(allowedToJoinOrCreateCaravan: false, CellRect.WholeMap(base.Map).GetClosestEdge(pawn.Position));
 		}
 	}

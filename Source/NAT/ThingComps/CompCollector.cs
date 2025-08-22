@@ -110,12 +110,6 @@ namespace NAT
 
 		public HediffComp_Invisibility Invisibility => invisibility ?? (invisibility = Collector.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.HoraxianInvisibility)?.TryGetComp<HediffComp_Invisibility>());
 
-		private List<Hediff_Injury> tmpHediffInjuries = new List<Hediff_Injury>();
-
-		private List<Hediff_MissingPart> tmpHediffMissing = new List<Hediff_MissingPart>();
-
-		private bool regenLastTick;
-
 		public int thingsToStealLeft;
 
 		public int waitTicks = 0;
@@ -251,38 +245,8 @@ namespace NAT
 			{
 				return;
 			}
-			if (parent.IsHashIntervalTick(7))
+			if (parent.IsHashIntervalTick(14))
 			{
-				regenLastTick = !regenLastTick;
-				if (regenLastTick)
-                {
-					float regen = 0.01f;
-					Collector.health.hediffSet.GetHediffs(ref tmpHediffInjuries, (Hediff_Injury h) => true);
-					foreach (Hediff_Injury tmpHediffInjury in tmpHediffInjuries)
-					{
-						float num1 = Mathf.Min(regen, tmpHediffInjury.Severity);
-						regen -= num1;
-						tmpHediffInjury.Heal(num1);
-						Collector.health.hediffSet.Notify_Regenerated(num1);
-						if (regen <= 0f)
-						{
-							break;
-						}
-					}
-					if (regen > 0f)
-					{
-						Collector.health.hediffSet.GetHediffs(ref tmpHediffMissing, (Hediff_MissingPart h) => h.Part.parent != null && !tmpHediffInjuries.Any((Hediff_Injury x) => x.Part == h.Part.parent) && Collector.health.hediffSet.GetFirstHediffMatchingPart<Hediff_MissingPart>(h.Part.parent) == null && Collector.health.hediffSet.GetFirstHediffMatchingPart<Hediff_AddedPart>(h.Part.parent) == null);
-						foreach (Hediff_MissingPart missing in tmpHediffMissing)
-						{
-							BodyPartRecord part = missing.Part;
-							Collector.health.RemoveHediff(missing);
-							Hediff misc = Collector.health.AddHediff(HediffDefOf.Misc, part);
-							float partHealth = Collector.health.hediffSet.GetPartHealth(part);
-							misc.Severity = Mathf.Max(partHealth - 1f, partHealth * 0.9f);
-							Collector.health.hediffSet.Notify_Regenerated(partHealth - misc.Severity);
-						}
-					}
-				}
 				if (Find.TickManager.TicksGame > lastDetectedTick + 1200)
 				{
 					CheckDetected();

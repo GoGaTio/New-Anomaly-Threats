@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Diagnostics;
+﻿using LudeonTK;
 using RimWorld;
 using RimWorld.BaseGen;
 using RimWorld.IO;
@@ -11,15 +6,13 @@ using RimWorld.Planet;
 using RimWorld.QuestGen;
 using RimWorld.SketchGen;
 using RimWorld.Utility;
-using LudeonTK;
-using Verse;
-using Verse.AI;
-using Verse.AI.Group;
-using Verse.Grammar;
-using Verse.Noise;
-using Verse.Profile;
-using Verse.Sound;
-using Verse.Steam;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Jobs;
@@ -28,6 +21,15 @@ using UnityEngine.Jobs;
 using UnityEngine.Profiling;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+using Verse;
+using Verse.AI;
+using Verse.AI.Group;
+using Verse.Grammar;
+using Verse.Noise;
+using Verse.Profile;
+using Verse.Sound;
+using Verse.Steam;
+using static UnityEngine.GraphicsBuffer;
 
 namespace NAT
 {
@@ -224,10 +226,17 @@ namespace NAT
 			if (stolenPawn != null)
 			{
 				stolenPawns.Add(stolenPawn);
-			}
+            }
 			currentlyOutside = true;
 			returnTick = Find.TickManager.TicksGame + CollectorTimeoutRange.RandomInRange;
-		}
+            foreach (Hediff h in collector.health.hediffSet.hediffs.ToList())
+            {
+				if(h is Hediff_Injury i && !i.IsPermanent() && !i.destroysBodyParts)
+				{
+					collector.health.RemoveHediff(i);
+                }
+            }
+        }
 
 		public void Notify_LairGenerated()
         {
