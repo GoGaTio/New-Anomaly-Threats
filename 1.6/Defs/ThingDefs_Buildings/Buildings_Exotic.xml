@@ -118,6 +118,7 @@
       <texPath>Things/Building/NAT_CollectorGlassCase/NAT_CollectorGlassCase</texPath>
       <drawSize>(3,3)</drawSize>
     </graphicData>
+    <uiIconPath>Things/Building/NAT_CollectorGlassCase/NAT_CollectorGlassCase_Icon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
     <drawerType>RealtimeOnly</drawerType>

@@ -42,6 +42,7 @@
 	<NAT_RustedArmyRaid_VoidDefence_Desc>Они пришли защищать структуру пустоты.</NAT_RustedArmyRaid_VoidDefence_Desc>
   <NAT_RustedArmySiege>Осада: Ржавая Армия</NAT_RustedArmySiege>
   <NAT_RustedArmySiege_Desc>Группа ржавчин приземлилась поблизости. Они будут защищать точку падения.</NAT_RustedArmySiege_Desc>
+  <NAT_VoidSiege>Похоже, они здесь чтобы защищать пустотный объект.</NAT_VoidSiege>
 
   <NAT_RustedSoldiers>ржавчины</NAT_RustedSoldiers>
   <NAT_RustedArmy>Ржавая армия</NAT_RustedArmy>
@@ -83,6 +84,5 @@
   <!--Settings-->
   <NAT_Setting_AllowRaid>Разрешить дополнение концовки монолита</NAT_Setting_AllowRaid>
   <NAT_Setting_AllowRaid_Desc>Разрешить дополнения и изменения в концовке пробуждения монолита.</NAT_Setting_AllowRaid_Desc>
-
 
 </LanguageData>

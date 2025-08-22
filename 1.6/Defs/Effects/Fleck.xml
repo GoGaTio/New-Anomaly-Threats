@@ -75,7 +75,8 @@
         <drawSize>0.75</drawSize>
       </li>
     </randomGraphics>
-  </FleckDef>
+  </FleckDef>
+
 
   <FleckDef ParentName="FleckBase_RandomGraphic">
     <defName>NAT_RustedSoldierDeathFlash</defName>

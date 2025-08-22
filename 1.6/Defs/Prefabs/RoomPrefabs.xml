@@ -1,5 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+  
+  <!--Special-->
+
+  <PrefabDef>
+    <defName>NAT_CollectionCase</defName>
+    <size>(3,3)</size>
+    <things>
+      <NAT_CollectorGlassCase>
+        <position>(1,0,1)</position>
+      </NAT_CollectorGlassCase>
+    </things>
+  </PrefabDef>
+  
+  <!--Misc-->
 
   <PrefabDef>
     <defName>NAT_RustedBox_Edge</defName>

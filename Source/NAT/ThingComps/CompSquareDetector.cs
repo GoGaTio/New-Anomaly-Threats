@@ -54,8 +54,8 @@ using Verse.Steam;
 
 namespace NAT
 {
-	public class CompProperties_SquareDetector : CompProperties
-	{
+	public class CompProperties_SquareDetector : CompProperties_Glower
+    {
 		public FleckDef fleck;
 
 		public Vector3 offset;
@@ -72,23 +72,28 @@ namespace NAT
 
 		public SoundDef spawnSound;
 
-		public CompProperties_SquareDetector()
+		public float glowRadiusInactive;
+
+
+        public CompProperties_SquareDetector()
 		{
 			//compClass = typeof(CompSquareDetector);
 		}
 	}
 
-	public abstract class CompSquareDetector : ThingComp
-	{
+	public abstract class CompSquareDetector : CompGlower
+    {
 		public int ticksSinceLastEmitted;
 
-		private CompProperties_SquareDetector Props => (CompProperties_SquareDetector)props;
+		public new CompProperties_SquareDetector Props => (CompProperties_SquareDetector)props;
 
 		public virtual bool Active => activeInt && parent.Spawned;
 
 		protected bool activeInt = true;
 
 		protected CompStunnable stunner;
+
+        public override float GlowRadius { get => Active ? base.GlowRadius : Props.glowRadiusInactive; set => base.GlowRadius = value; }
 
 		public override void CompTick()
 		{
@@ -149,7 +154,12 @@ namespace NAT
 				Props.spawnSound.PlayOneShot(parent);
 			}
 			activeInt = false;
-		}
+            UpdateLit(parent.Map);
+            if (Glows)
+            {
+                ForceRegister(parent.Map);
+            }
+        }
 
         public override void PostPreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
         {

@@ -66,7 +66,8 @@ namespace NAT
 			if (map.PocketMapParent.sourceMap.Parent is Site site && site.parts[0].parms is CollectorLairParams parms)
             {
 				QuestPart_Collector questPart_Collector = parms.questPart;
-				List<CellRect> list = new List<CellRect>();
+				questPart_Collector.cases = new List<Building_CollectionCase>();
+                List<CellRect> list = new List<CellRect>();
 				foreach(var room in layoutStructureSketch.structureLayout.Rooms)
                 {
                     if (room.HasLayoutDef(NATDefOf.NAT_CollectionRoom))
@@ -75,39 +76,35 @@ namespace NAT
                     }
 				}
 				IntVec2 size = NATDefOf.NAT_CollectorGlassCase.size;
-				foreach (Pawn p in questPart_Collector.stolenPawns)
+				List<Pawn> pawns = questPart_Collector.stolenPawns.ToList();
+                foreach (Building_CollectionCase glassCase in map.listerBuildings.AllBuildingsColonistOfClass<Building_CollectionCase>().InRandomOrder())
 				{
-                    while (true)
+                    if (!pawns.NullOrEmpty())
                     {
-						if(list.RandomElement().TryFindRandomInnerRect(size, out var rect, Validator))
-                        {
-							Building_CollectionCase glassCase = ThingMaker.MakeThing(NATDefOf.NAT_CollectorGlassCase) as Building_CollectionCase;
-							glassCase.pawn = p;
-							glassCase.questPart = questPart_Collector;
-                            GenSpawn.Spawn(glassCase, rect.CenterCell, map);
-							break;
-						}
+                        glassCase.pawn = pawns.RandomElement();
+						pawns.Remove(glassCase.pawn);
                     }
-				}
-				foreach (Thing t in questPart_Collector.stolenThings)
-				{
-					GenPlace.TryPlaceThing(t, list.RandomElement().CenterCell, map, ThingPlaceMode.Near);
-				}
-				questPart_Collector.stolenPawns.Clear();
-				questPart_Collector.stolenThings.Clear();
+					else if (questPart_Collector.stolenThings.NullOrEmpty())
+					{
+                        for (int i = 0; i < 3; i++)
+                        {
+							if(questPart_Collector.stolenThings.TryRandomElement(out var thing))
+							{
+								glassCase.innerContainer.TryAddOrTransfer(thing);
+								questPart_Collector.stolenThings.Remove(thing);
+                            }
+                        }
+                    }
+					else
+					{
+						glassCase.Destroy();
+						continue;
+                    }
+					questPart_Collector.cases.Add(glassCase);
+                    glassCase.questPart = questPart_Collector;
+                }
 				parms.questPart = null;
 				questPart_Collector.Notify_LairGenerated();
-            }
-			bool Validator(CellRect r)
-            {
-				foreach(IntVec3 cell in r.Cells)
-                {
-					if(!cell.GetThingList(map).NullOrEmpty())
-                    {
-						return false;
-                    }
-                }
-				return true;
             }
         }
 

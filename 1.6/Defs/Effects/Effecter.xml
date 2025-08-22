@@ -110,7 +110,8 @@
 
   <EffecterDef>
     <defName>NAT_RustedBeaconActivated</defName>
-    <children>
+    <children>
+
       <li>
         <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
         <fleckDef>NAT_RustedBeaconActivated</fleckDef>

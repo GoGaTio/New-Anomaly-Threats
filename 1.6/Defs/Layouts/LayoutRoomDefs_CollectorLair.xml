@@ -47,6 +47,12 @@
       <li>CarpetMossBright</li>
       <li>CarpetBlue</li>
     </floorTypes>
+    <prefabs>
+      <NAT_CollectionCase>
+        <countPerTenEdgeCells>10</countPerTenEdgeCells>
+        <minMaxRange>1~10</minMaxRange>
+      </NAT_CollectionCase>
+    </prefabs>
     <edgeTerrain>TileMarble</edgeTerrain>
   </LayoutRoomDef>
 

@@ -139,7 +139,9 @@ namespace NAT
 				points = points2,
 				faction = Faction.OfEntities
 			}).ToList();
-			list.Add(PawnGenerator.GeneratePawn(NATDefOf.NAT_Collector, Faction.OfEntities));
+			Pawn collector = PawnGenerator.GeneratePawn(NATDefOf.NAT_Collector, Faction.OfEntities);
+			collector.GetComp<CompCollector>().state = CollectorState.Attack;
+            list.Add(collector);
 			PawnsArrivalModeDefOf.EdgeWalkInDistributedGroups.Worker.Arrive(list, incidentParms);
 			LordMaker.MakeNewLord(Faction.OfEntities, new LordJob_AssaultColony(incidentParms.faction, canKidnap: false, canTimeoutOrFlee: false, sappers: false, useAvoidGridSmart: false, canSteal: false), map, list);
 			return list.ToList();
@@ -207,50 +209,42 @@ namespace NAT
 		}
 	}
 
-	[HarmonyPatch(typeof(QuestNode_Root_VoidAwakening), "SpawnStructures")]
-	public class Patch_SpawnRustedDefenders
-	{
-		private static readonly SimpleCurve DefenderPointsByCombatPoints = new SimpleCurve
-	{
-		new CurvePoint(0f, 1000f),
-		new CurvePoint(1000f, 2500f),
-		new CurvePoint(10000f, 5000f)
-	};
+    [HarmonyPatch(typeof(QuestPart_StructureSpawned), "Notify_QuestSignalReceived")]
+    public class Patch_SpawnRustedDefenders
+    {
+        private static readonly SimpleCurve DefenderPointsByCombatPoints = new SimpleCurve
+    {
+        new CurvePoint(0f, 1500f),
+        new CurvePoint(4000f, 2500f),
+        new CurvePoint(10000f, 4000f)
+    };
 
 		[HarmonyPostfix]
-		public static void Postfix(List<CellRect> structureRects, int numStructures, ThingDef structureDef, List<Thing> tmpStageStructures, string structureActivatedSignal)
+		public static void Postfix(Thing ___structure, Signal signal, string ___spawnedSignal)
 		{
-			return; //not finished yet
-			if (!LoadedModManager.GetMod<NewAnomalyThreatsMod>().GetSettings<NewAnomalyThreatsSettings>().allowEndGameRaid)
+			if (signal.tag != ___spawnedSignal)
 			{
 				return;
 			}
-			Quest quest = QuestGen.quest;
-			Map map = QuestGen.slate.Get<Map>("map");
-			var parms = new IncidentParms();
-			parms.target = map;
-			parms.points = DefenderPointsByCombatPoints.Evaluate(StorytellerUtility.DefaultThreatPointsNow(map));
-			IncidentWorker_RustedArmySiege worker = NATDefOf.NAT_RustedArmySiege.Worker as IncidentWorker_RustedArmySiege;
-			worker.letterDescExtra = "NAT_VoidSiege".Translate();
-			worker.TryExecute(parms);
-			/*PawnGroupMakerParms pawnGroupMakerParms = new PawnGroupMakerParms
+			if (!RustedArmyUtility.Settings.allowEndGameRaid)
 			{
-				groupKind = parms.pawnGroupKind ?? DefDatabase<PawnGroupKindDef>.GetNamed("NAT_RustedArmy_Defence"),
-				tile = map.Tile,
-				faction = Faction.OfEntities,
-				points = num
-			};
-			List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(pawnGroupMakerParms).ToList();
-			PawnsArrivalModeDefOf.EdgeWalkIn.Worker.TryResolveRaidSpawnCenter(parms);
-			parms.attackTargets = new List<Thing> { ___structure };
-			PawnsArrivalModeDefOf.EdgeWalkIn.Worker.Arrive(list, parms);
-			if (AnomalyIncidentUtility.IncidentShardChance(num))
-			{
-				AnomalyIncidentUtility.PawnShardOnDeath(list.RandomElement());
+				return;
 			}
-			LordMaker.MakeNewLord(Faction.OfEntities, new LordJob_DefendVoidStructure(___structure, new IntRange(80000, 140000).RandomInRange), map, list);
-			Find.LetterStack.ReceiveLetter("NAT_RustedArmyRaid".Translate(), "NAT_RustedArmyRaid_VoidDefence_Desc".Translate(), LetterDefOf.ThreatBig, list, null, null, null, null, new IntRange(0, 120).RandomInRange);
-			*/
+			Map map = ___structure.Map;
+            int num = map.listerThings.ThingsOfDef(ThingDefOf.VoidStructure).Count;
+			if(num != 2 && num != 5)
+			{
+				return;
+			}
+			float points = DefenderPointsByCombatPoints.Evaluate(StorytellerUtility.DefaultThreatPointsNow(map));
+            if (num == 5)
+			{
+				points *= 1.5f;
+            }
+			RCellFinder.TryFindRandomCellNearWith(___structure.Position, (IntVec3 c) => c.Walkable(map) && !c.Roofed(map), map, out var result);
+            //IntVec3 cell = RCellFinder.FindSiegePositionFrom(result, ___structure.Map, false, false);
+            IncidentWorker_RustedArmySiege worker = NATDefOf.NAT_RustedArmySiege.Worker as IncidentWorker_RustedArmySiege;
+			worker.TryExecuteSiege(result, map, points, "\n\n" + "NAT_VoidSiege".Translate());
 		}
 	}
 

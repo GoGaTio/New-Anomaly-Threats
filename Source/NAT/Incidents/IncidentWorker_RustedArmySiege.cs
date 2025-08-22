@@ -105,7 +105,6 @@ namespace NAT
 			}
 		}
 
-		public string letterDescExtra = "";
 		protected override bool TryExecuteWorker(IncidentParms parms)
 		{
 			if(minPoints < 0f)
@@ -113,18 +112,30 @@ namespace NAT
 				minPoints = Mathf.Min(Pawns.MinBy((PawnGenOption p) => p.kind.combatPower).kind.combatPower, Buildings.MinBy((ThingDef t) => t.building.combatPower).building.combatPower);
             }
 			Map map = (Map)parms.target;
-			List<Unit> list = GenerateUnits(parms.points, map).ToList();
-			GenerateProblems(list, parms.points, map, out var extraDesc, out var descThingDef);
-			IntVec3 center = FindSiegePosition(map, list, 100);
-			if (!center.IsValid)
+			return TryExecuteSiege(IntVec3.Invalid, map, parms.points);
+        }
+
+		public bool TryExecuteSiege(IntVec3 center, Map map, float points, string letterDescExtra = "")
+		{
+			if(points < 1000f)
 			{
-				return false;
+				points = 1000f;
 			}
-			SiegeArrive(center, list, map, out var targets);
-			Find.LetterStack.ReceiveLetter("NAT_RustedArmySiege".Translate(), "NAT_RustedArmySiege_Desc".Translate() + extraDesc + letterDescExtra, LetterDefOf.ThreatBig, new LookTargets(targets), hyperlinkThingDefs: descThingDef == null ? null : new List<ThingDef>() { descThingDef });
-			letterDescExtra = "";
-			return true;
-		}
+            List<Unit> list = GenerateUnits(points, map).ToList();
+            GenerateProblems(list, points, map, out var extraDesc, out var descThingDef);
+            if (!center.IsValid)
+            {
+                center = FindSiegePosition(map, list, 100);
+                if (!center.IsValid)
+                {
+                    return false;
+                }
+            }
+            SiegeArrive(center, list, map, out var targets);
+            Find.LetterStack.ReceiveLetter("NAT_RustedArmySiege".Translate(), "NAT_RustedArmySiege_Desc".Translate() + extraDesc + letterDescExtra, LetterDefOf.ThreatBig, new LookTargets(targets), hyperlinkThingDefs: descThingDef == null ? null : new List<ThingDef>() { descThingDef });
+            letterDescExtra = "";
+            return true;
+        }
 
 		public void SiegeArrive(IntVec3 cell, List<Unit> units, Map map, out List<Thing> sentThings, int baseRectSize = 5)
         {

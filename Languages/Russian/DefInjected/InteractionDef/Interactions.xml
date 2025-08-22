@@ -20,16 +20,16 @@
     <li>maybeDarkSpeechAdverb->[darkSpeechAdverb]</li>
   -->
   <NAT_RustedChat.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] [maybeDarkSpeechAdverb] [spoke] [RECIPIENT_nameDef] про [subjectDisturbing]</li>
+    <li>r_logentry->[INITIATOR_nameDef] [maybeDarkSpeechAdverb] [spoke] [RECIPIENT_nameDef] [subjectDisturbing]</li>
     <li>spoke->говорит</li>
     <li>spoke->шепчет</li>
     <li>spoke->шипит</li>
     <li>spoke->мямлит</li>
     <li>spoke->скрипит</li>
     <li>spoke->скрежетает</li>
-    <li>spoke(p=5)->[rambled]</li>
-    <li>subjectDisturbing(p=3)->[subjectRustAbstract]</li>
-    <li>subjectDisturbing(p=5)->[subjectRust]</li>
+    <li>spoke(p=5)->[rambled] с</li>
+    <li>subjectDisturbing(p=3)->про [subjectRustAbstract]</li>
+    <li>subjectDisturbing(p=5)->про [subjectRust]</li>
     <li>subjectDisturbing(p=2)->[subjectDarkStudy]</li>
     <li>subjectDisturbing(p=2)->[subjectInsane]</li>
     <li>maybeDarkSpeechAdverb(p=3)-></li>

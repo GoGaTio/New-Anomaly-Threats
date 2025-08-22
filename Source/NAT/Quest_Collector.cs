@@ -102,7 +102,10 @@ namespace NAT
 
 		public string debugTag = "Default";
 
-		public override void ExposeData()
+		public List<Building_CollectionCase> cases = null;
+
+
+        public override void ExposeData()
 		{
 			base.ExposeData();
 			Scribe_References.Look(ref collector, "collector");
@@ -112,7 +115,8 @@ namespace NAT
 			Scribe_Values.Look(ref debugTag, "debugTag", defaultValue: "Default");
 			Scribe_Collections.Look(ref stolenThings, "stolenThings", LookMode.Deep);
 			Scribe_Collections.Look(ref stolenPawns, "stolenPawns", saveDestroyedThings: true, LookMode.Reference);
-			Scribe_References.Look(ref mapParent, "mapParent");
+            Scribe_Collections.Look(ref cases, "cases", saveDestroyedThings: true, LookMode.Reference);
+            Scribe_References.Look(ref mapParent, "mapParent");
 		}
 
 		public Map GetMap()
@@ -142,13 +146,25 @@ namespace NAT
         }
         public override void QuestPartTick()
 		{
-			if (currentlyOutside && !caught && mapParent.IsHashIntervalTick(2500) && Find.TickManager.TicksGame > returnTick)
+			if(mapParent == null)
 			{
-                if (!TryArriveOnMap())
+				GetMap();
+            }
+			if (mapParent.IsHashIntervalTick(2500))
+			{
+                if (currentlyOutside && !caught && Find.TickManager.TicksGame > returnTick)
                 {
-					returnTick += 60000;
+                    if (!TryArriveOnMap())
+                    {
+                        returnTick += 60000;
+                    }
+                }
+				if (cases != null && cases.Empty())
+				{
+					Complete();
 				}
-			}
+            }
+			
 		}
 
 		public bool TryArriveOnMap()
@@ -215,7 +231,7 @@ namespace NAT
 
 		public void Notify_LairGenerated()
         {
-			Complete();
+			//Complete();
 		}
 
 		public override void DoDebugWindowContents(Rect innerRect, ref float curY)

@@ -79,6 +79,9 @@
         <range>5</range>
         <activateOnDamagedChance>0.4</activateOnDamagedChance>
         <spawnEffecter>NAT_RustedBeaconActivated</spawnEffecter>
+        <glowRadius>8</glowRadius>
+        <glowRadiusInactive>3</glowRadiusInactive>
+        <glowColor>(255, 0, 0, 0)</glowColor>
       </li>
     </comps>
     <damageMultipliers>

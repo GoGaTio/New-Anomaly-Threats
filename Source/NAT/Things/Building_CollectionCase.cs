@@ -55,11 +55,13 @@ using Verse.Steam;
 namespace NAT
 {
 	[StaticConstructorOnStartup]
-	public class Building_CollectionCase : Building
+	public class Building_CollectionCase : Building, IThingHolder
 	{
 		public bool glassBroken = false;
 
-		private GraphicData glassGraphicData;
+        public ThingOwner innerContainer;
+
+        private GraphicData glassGraphicData;
 
 		private GraphicData brokenGlassGraphicData;
 
@@ -72,7 +74,7 @@ namespace NAT
 		public override void SpawnSetup(Map map, bool respawningAfterLoad)
 		{
 			base.SpawnSetup(map, respawningAfterLoad);
-			glassGraphicData = new GraphicData();
+            glassGraphicData = new GraphicData();
 			glassGraphicData.CopyFrom(def.graphicData);
 			glassGraphicData.shaderType = ShaderTypeDefOf.Transparent;
 			glassGraphicData.texPath += "_Glass";
@@ -89,18 +91,18 @@ namespace NAT
 		public override void DynamicDrawPhaseAt(DrawPhase phase, Vector3 drawLoc, bool flip = false)
 		{
 			base.DynamicDrawPhaseAt(phase, drawLoc, flip);
-			if (pawn != null)
+			/*if (pawn != null || !innerContainer.NullOrEmpty())
 			{
                 Mesh obj = contentsGraphicData.Graphic.MeshAt(Rotation);
                 Vector3 drawPos = drawLoc;
                 drawPos.y = AltitudeLayer.MoteOverhead.AltitudeFor() + contentsGraphicData.drawOffset.y;
                 Graphics.DrawMesh(obj, drawLoc + contentsGraphicData.drawOffset.RotatedBy(Rotation), Quaternion.identity, contentsGraphicData.Graphic.MatAt(Rotation), 0);
                 //pawn.Drawer.renderer.DynamicDrawPhaseAt(phase, drawLoc, null, neverAimWeapon: true);
-            }
+            }*/
 			GraphicData graphicData = glassBroken ? brokenGlassGraphicData : glassGraphicData;
 			Mesh obj2 = graphicData.Graphic.MeshAt(Rotation);
 			Vector3 drawPos2 = drawLoc;
-			drawPos2.y = AltitudeLayer.MoteOverhead.AltitudeFor() + graphicData.drawOffset.y;
+			drawPos2.y = AltitudeLayer.MoteOverhead.AltitudeFor() + graphicData.drawOffset.y + 0.1f;
 			Graphics.DrawMesh(obj2, drawPos2 + graphicData.drawOffset.RotatedBy(Rotation), Quaternion.identity, graphicData.Graphic.MatAt(Rotation), 0);
 		}
 
@@ -117,8 +119,18 @@ namespace NAT
         {
 			glassBroken = true;
 			NATDefOf.GestatorGlassShattered.PlayOneShot(this);
-			questPart.stolenPawns.Remove(pawn);
-			GenPlace.TryPlaceThing(pawn, Position, Map, ThingPlaceMode.Near);
+            EjectContents();
+        }
+
+        public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
+        {
+            EjectContents();
+            base.Destroy(mode);
+        }
+
+        public Building_CollectionCase()
+        {
+            innerContainer = new ThingOwner<Thing>(this);
         }
 
         public override string GetInspectString()
@@ -141,6 +153,30 @@ namespace NAT
             Scribe_References.Look(ref pawn, "pawn");
             Scribe_References.Look(ref questPart, "questPart");
             Scribe_Values.Look(ref glassBroken, "glassBroken");
-		}
-	}
+            Scribe_Deep.Look(ref innerContainer, "innerContainer", this);
+        }
+
+        public virtual void EjectContents()
+        {
+            if(pawn != null)
+            {
+                questPart.stolenPawns.Remove(pawn);
+                Hediff h = pawn.health.GetOrAddHediff(NATDefOf.NAT_CollectorHypnosis);
+                h.Severity = 1f;
+                GenPlace.TryPlaceThing(pawn, Position, Map, ThingPlaceMode.Near);
+            }
+            innerContainer.TryDropAll(Position, Map, ThingPlaceMode.Near);
+            questPart.cases.Remove(this);
+        }
+
+        public ThingOwner GetDirectlyHeldThings()
+        {
+            return innerContainer;
+        }
+
+        public void GetChildHolders(List<IThingHolder> outChildren)
+        {
+            ThingOwnerUtility.AppendThingHoldersFromThings(outChildren, GetDirectlyHeldThings());
+        }
+    }
 }

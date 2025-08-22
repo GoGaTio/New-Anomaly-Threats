@@ -70,7 +70,7 @@ namespace NAT
 
 	public class CompReinforcementsBeacon : CompSquareDetector
 	{
-		private CompProperties_ReinforcementsBeacon Props => (CompProperties_ReinforcementsBeacon)props;
+		public new CompProperties_ReinforcementsBeacon Props => (CompProperties_ReinforcementsBeacon)props;
 
 		public override void Activate()
 		{

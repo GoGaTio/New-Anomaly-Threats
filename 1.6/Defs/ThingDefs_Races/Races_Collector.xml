@@ -60,6 +60,7 @@
       <hediffGiverSets>
         <li>AnomalyEntity</li>
       </hediffGiverSets>
+      <corpseHiddenWhileUndiscovered>true</corpseHiddenWhileUndiscovered>
     </race>
     <comps>
       <li Class="NAT.CompProperties_Collector">

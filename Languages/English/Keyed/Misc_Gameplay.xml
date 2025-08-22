@@ -42,6 +42,7 @@
 	<NAT_RustedArmyRaid_VoidDefence_Desc>A group of rusts arrived to defend void structure!\nThey will attack anyone who would enter area nera the structure.</NAT_RustedArmyRaid_VoidDefence_Desc>
   <NAT_RustedArmySiege>Siege: Rusted Army</NAT_RustedArmySiege>
   <NAT_RustedArmySiege_Desc>A group of rusts dropped from the orbit nearby. They will protect area nearby their current location.</NAT_RustedArmySiege_Desc>
+  <NAT_VoidSiege>It seems that they are here to defend void structure.</NAT_VoidSiege>
 
   <NAT_RustedSoldiers>rusts</NAT_RustedSoldiers>
   <NAT_RustedArmy>Rusted Army</NAT_RustedArmy>

@@ -74,7 +74,7 @@ namespace NAT
 
 	public class CompBombardmentBeacon : CompSquareDetector
 	{
-		private CompProperties_BombardmentBeacon Props => (CompProperties_BombardmentBeacon)props;
+		public new CompProperties_BombardmentBeacon Props => (CompProperties_BombardmentBeacon)props;
 
 		public override void Activate()
 		{
