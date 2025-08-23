@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GameConditionDef>
+  <!--<GameConditionDef>
     <defName>NAT_DeadlifeSpewer</defName>
     <conditionClass>NAT.GameCondition_DeadlifeSpewer</conditionClass>
     <label>deadlife spewer</label>
@@ -31,7 +31,7 @@
     <preventNeutralVisitors>true</preventNeutralVisitors>
     <preventIncidents>false</preventIncidents>
     <canBePermanent>true</canBePermanent>
-    <displayOnUI>false</displayOnUI> <!--  Displayed by weather instead -->
+    <displayOnUI>false</displayOnUI>
     <natural>false</natural>
     <allowUnderground>false</allowUnderground>
   </GameConditionDef>
@@ -55,6 +55,6 @@
     <label>unnatural heat</label>
     <description>A thermal projection device is agitating gas molecules in the atmosphere, raising outdoor temperatures.</description>
     <displayOnUI>false</displayOnUI>
-  </GameConditionDef>
+  </GameConditionDef>-->
 
 </Defs>

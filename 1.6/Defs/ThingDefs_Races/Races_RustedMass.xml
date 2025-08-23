@@ -5,7 +5,7 @@
   <ThingDef Name="NAT_RustedMass" ParentName="MysteriousSphereEntityBase">
     <defName>NAT_RustedMass</defName>
     <label>rusted mass</label>
-    <description>A large piece of bioferrite. It seems to be filling with strange energy.</description>
+    <description>A large piece of rusted bioferrite. It seems to be filling with some powerful and dangerous energy.</description>
     <uiIconPath>Things/Pawn/NAT_RustedMass</uiIconPath>
     <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
     <race>
@@ -16,7 +16,7 @@
       <baseBodySize>1.2</baseBodySize>
     </race>
     <statBases>
-      <Flammability>2</Flammability>
+      <Flammability>1.5</Flammability>
     </statBases>
     <comps>
       <li Class="CompProperties_Studiable">
@@ -178,7 +178,7 @@
     <startingHediffs>
       <li>
         <def>Regeneration</def>
-        <severity>0.1</severity>
+        <severity>1</severity>
       </li>
     </startingHediffs>
     <combatPower>100</combatPower>

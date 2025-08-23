@@ -2,25 +2,6 @@
 <Defs>
 
   <SoundDef>
-    <defName>NAT_DeadlifeSpewer_Ambience</defName>
-    <sustain>True</sustain>
-    <context>MapOnly</context>
-    <priorityMode>PrioritizeNearest</priorityMode>
-    <subSounds>
-      <li>
-        <muteWhenPaused>True</muteWhenPaused>
-        <grains>
-          <li Class="AudioGrain_Clip">
-            <clipPath>Buildings/Exotic/GasSpewer_Ambience_Loop</clipPath>
-          </li>
-        </grains>
-        <volumeRange>40</volumeRange>
-        <distRange>15~30</distRange>
-      </li>
-    </subSounds>
-  </SoundDef>
-
-  <SoundDef>
     <defName>NAT_ActivatorUsed</defName>
     <context>MapOnly</context>
     <maxSimultaneous>5</maxSimultaneous>

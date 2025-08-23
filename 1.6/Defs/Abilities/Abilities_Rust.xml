@@ -170,7 +170,7 @@
     <defName>NAT_Reinforcement_Guardsmans</defName>
     <label>call rusted guardsmans</label>
     <description>Call rusted guardsmans as reinforcements from orbital rusted structures.</description>
-    <iconPath>UI/Abilities/Chunkskip</iconPath>
+    <iconPath>UI/Abilities/NAT_Reinforcement_Troopers</iconPath>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
     </verbProperties>

@@ -61,9 +61,15 @@
     <things>
       <NAT_RustedWall>
         <rects>
-          <li>(1,1,4,4)</li>
+          <li>(2,2,3,3)</li>
         </rects>
         <chance>1</chance>
+      </NAT_RustedWall>
+      <NAT_RustedWall>
+        <rects>
+          <li>(1,1,4,4)</li>
+        </rects>
+        <chance>0.8</chance>
       </NAT_RustedWall>
       <NAT_RustedWall>
         <rects>

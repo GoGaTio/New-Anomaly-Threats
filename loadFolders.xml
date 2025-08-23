@@ -3,7 +3,7 @@
 	<v1.5>
 		<li>/</li>
 		<li>1.5</li>
-		<li IfModActive="CETeam.CombatExtended,CETeam.CombatExtended_steam">1.6/CEPatch</li>
+		<li IfModActive="CETeam.CombatExtended,CETeam.CombatExtended_steam">1.5/CEPatch</li>
 	</v1.5>
 	
 	<v1.6>
