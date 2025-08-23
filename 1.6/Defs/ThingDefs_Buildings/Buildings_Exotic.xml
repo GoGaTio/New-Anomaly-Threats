@@ -118,7 +118,6 @@
       <texPath>Things/Building/NAT_CollectorGlassCase/NAT_CollectorGlassCase</texPath>
       <drawSize>(3,3)</drawSize>
     </graphicData>
-    <uiIconPath>Things/Building/NAT_CollectorGlassCase/NAT_CollectorGlassCase_Icon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
     <drawerType>MapMeshAndRealTime</drawerType>
@@ -140,7 +139,7 @@
     </building>
     <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
     <statBases>
-      <MaxHitPoints>500</MaxHitPoints>
+      <MaxHitPoints>50</MaxHitPoints>
       <Beauty>0</Beauty>
       <Flammability>0</Flammability>
     </statBases>

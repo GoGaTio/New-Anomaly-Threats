@@ -97,8 +97,14 @@ namespace NAT
 		public override void PostMapGenerate(Map map)
 		{
 			Site site = map.Parent as Site;
-			Faction faction = site.Faction ?? Find.FactionManager.RandomEnemyFaction();
-			List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(new PawnGroupMakerParms
+			IntVec3 cell = map.Center;
+			int radius = 20;
+            Faction faction = site.Faction ?? Find.FactionManager.RandomEnemyFaction();
+            if (faction.IsPlayer)
+            {
+                faction = Find.FactionManager.RandomEnemyFaction();
+            }
+            List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(new PawnGroupMakerParms
 			{
 				faction = faction,
 				groupKind = PawnGroupKindDefOf.Settlement,
@@ -109,13 +115,18 @@ namespace NAT
 			float num2 = Mathf.Max(FleshbeastsPointsModifierCurve.Evaluate(site.desiredThreatPoints), num);
 			List<Pawn> list2 = PawnGroupMakerUtility.GeneratePawns(new PawnGroupMakerParms
 			{
-				groupKind = NATDefOf.NAT_RustedArmy,
+				groupKind = NATDefOf.NAT_RustedArmyDefence,
 				points = num2,
 				faction = Faction.OfEntities,
 				raidStrategy = RaidStrategyDefOf.ImmediateAttack
 			}).ToList();
-			DistressCallUtility.SpawnCorpses(map, list, list2, map.Center, 20);
-			DistressCallUtility.SpawnPawns(map, list2, map.Center, 20);
+            if (MapGenerator.TryGetVar<CellRect>("SettlementRect", out var rect))
+            {
+                cell = rect.CenterCell;
+                radius = rect.Width / 2;
+            }
+            DistressCallUtility.SpawnCorpses(map, list, list2, cell, radius);
+			DistressCallUtility.SpawnPawns(map, list2, cell, radius);
 			//map.fogGrid.
 			AnomalyIncidentUtility.PawnShardOnDeath(list2.RandomElement());
 			foreach (Thing allThing in map.listerThings.AllThings)
@@ -129,11 +140,18 @@ namespace NAT
 					}
 				}
 			}
-			LordMaker.MakeNewLord(Faction.OfEntities, new LordJob_AssaultColony(), map, list2);
+			LordMaker.MakeNewLord(Faction.OfEntities, new LordJob_RustedArmy(cell, 15000), map, list2);
 			foreach (Pawn p in map.mapPawns.AllPawnsSpawned.Where((Pawn p2)=> p2.Faction == Faction.OfPlayer && p2.drafter != null))
             {
 				p.drafter.Drafted = true;
             }
+			foreach(Building_Turret b in map.listerThings.GetThingsOfType<Building_Turret>())
+			{
+				if(b.Faction != Faction.OfEntities)
+				{
+					b.SetFaction(Faction.OfEntities);
+				}
+			}
 		}
 	}
 

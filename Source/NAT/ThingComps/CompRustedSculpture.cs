@@ -144,8 +144,8 @@ namespace NAT
             {
 				return;
             }
-			
-			Mesh obj = head.graphicData.Graphic.MeshAt(Rot4.North);
+            Log.Message("no head");
+            Mesh obj = head.graphicData.Graphic.MeshAt(Rot4.North);
 			obj = MeshPool.GridPlaneFlip(obj);
 			Vector3 drawPos = drawLoc;
 			drawPos.y = AltitudeLayer.BuildingOnTop.AltitudeFor() + parent.def.graphicData.drawOffset.y;
@@ -166,7 +166,26 @@ namespace NAT
 			parent.Destroy();
 		}
 
-		private void OrderActivation(Pawn pawn)
+        public override IEnumerable<Gizmo> CompGetGizmosExtra()
+        {
+            foreach (Gizmo g in base.CompGetGizmosExtra())
+            {
+                yield return g;
+            }
+            if (DebugSettings.ShowDevGizmos)
+            {
+                yield return new Command_Action
+                {
+                    defaultLabel = "DEV: Dirty",
+                    action = delegate
+                    {
+                        parent.DirtyMapMesh(parent.Map);
+                    }
+                };
+            }
+        }
+
+        private void OrderActivation(Pawn pawn)
 		{
 			if (pawn.TryFindReserveAndReachableOfDef(ThingDefOf.Shard, out var thing))
 			{

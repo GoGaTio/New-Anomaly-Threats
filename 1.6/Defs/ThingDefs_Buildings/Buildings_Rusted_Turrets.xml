@@ -87,12 +87,10 @@
     <defName>NAT_RustedTurret_Mini</defName>
     <label>rusted mini-turret</label>
     <description>A rusted bioferrite piece shaped like a small automatic turret. Not actually a turret, rusted mini-turret is a static rusted creature, powered by dark archotechnology shard. Can shoot through the smoke and slowly regenerate.</description>
-
     <graphicData>
       <texPath>Things/Building/NAT_RustedTurret</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,1)</drawSize>
-
       <shadowData>
         <volume>(0.27,0.25,0.27)</volume>
         <offset>(0,0,0)</offset>

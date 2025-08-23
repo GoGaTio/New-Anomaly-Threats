@@ -6,13 +6,13 @@
   <SitePartDef ParentName="DistressCallBase">
     <defName>NAT_DistressCall_RustedArmy</defName>
     <workerClass>NAT.SitePartWorker_DistressCall_RustedArmy</workerClass>
-    <selectionWeight>0</selectionWeight> <!--Disabled yet-->
+    <selectionWeight>2</selectionWeight> <!--Disabled yet-->
   </SitePartDef>
 
   <GenStepDef>
     <defName>NAT_DistressCall_Settlement</defName>
     <linkWithSite>NAT_DistressCall_RustedArmy</linkWithSite>
-    <order>454</order>
+    <order>400</order>
     <genStep Class="GenStep_Settlement">
       <count>1</count>
       <nearMapCenter>true</nearMapCenter>
@@ -27,13 +27,44 @@
     <defName>NAT_DistressCall_RustedOutpost</defName>
     <linkWithSite>NAT_DistressCall_RustedArmy</linkWithSite>
     <order>999</order>
-    <genStep Class="NAT.GenStep_RustedBase">
-      <layout>NAT_RustedOutpost</layout>
-      <minBaseSize>(30, 30)</minBaseSize>
-      <maxBaseSize>(40, 40)</maxBaseSize>
+    <genStep Class="NAT.GenStep_RustedOutpost">
+      <points>600~1000</points>
+      <spawnBeacon>true</spawnBeacon>
+      <prefabs>
+        <li>
+          <prefab>NAT_RustedPalletCluster</prefab>
+          <cost>50</cost>
+          <weight>0.5</weight>
+        </li>
+        <li>
+          <prefab>NAT_RustedArmyBanner</prefab>
+          <cost>10</cost>
+          <weight>0.25</weight>
+        </li>
+        <li>
+          <prefab>NAT_RustedTurretPost</prefab>
+          <cost>70</cost>
+          <weight>1</weight>
+        </li>
+        <li>
+          <prefab>NAT_RustedAutoTurretWithFloor</prefab>
+          <cost>170</cost>
+          <weight>0.5</weight>
+        </li>
+        <li>
+          <prefab>NAT_RustedBeacon</prefab>
+          <cost>200</cost>
+          <weight>0.4</weight>
+        </li>
+        <li>
+          <prefab>NAT_RustedWallCluster</prefab>
+          <cost>70</cost>
+          <weight>0.75</weight>
+          <canWipeEdifices>true</canWipeEdifices>
+        </li>
+      </prefabs>
     </genStep>
   </GenStepDef>
- 
 
   <GenStepDef>
     <defName>NAT_DistressCall_BurntPatches</defName>

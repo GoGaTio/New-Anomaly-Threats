@@ -2,12 +2,12 @@
 <LanguageData>
   
   <!-- EN: abandoned settlement -->
-  <NAT_CollectorLair_Base.label>abandoned settlement</NAT_CollectorLair_Base.label>
+  <NAT_CollectorLair_Base.label>заброшенное поселение</NAT_CollectorLair_Base.label>
   <!-- EN: An abandoned settlement. -->
-  <NAT_CollectorLair_Base.description>An abandoned settlement.</NAT_CollectorLair_Base.description>
+  <NAT_CollectorLair_Base.description>Заброшенное поселение.</NAT_CollectorLair_Base.description>
   <!-- EN: Investigating {0}. -->
-  <NAT_CollectorLair_Base.approachingReportString>Investigating {0}.</NAT_CollectorLair_Base.approachingReportString>
+  <NAT_CollectorLair_Base.approachingReportString>Осмотреть: {0}</NAT_CollectorLair_Base.approachingReportString>
   <!-- EN: Investigate {0} -->
-  <NAT_CollectorLair_Base.approachOrderString>Investigate {0}</NAT_CollectorLair_Base.approachOrderString>
+  <NAT_CollectorLair_Base.approachOrderString>Осмотреть: {0}</NAT_CollectorLair_Base.approachOrderString>
   
 </LanguageData>

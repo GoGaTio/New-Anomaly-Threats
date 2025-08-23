@@ -2,12 +2,12 @@
 <LanguageData>
   
   <!-- EN: rusted citadel -->
-  <NAT_RustedCitadel.label>rusted citadel</NAT_RustedCitadel.label>
+  <NAT_RustedCitadel.label>ржавая цитадель</NAT_RustedCitadel.label>
   <!-- EN: An ancient complex containing treasure. -->
   <NAT_RustedCitadel.description>An ancient complex containing treasure.</NAT_RustedCitadel.description>
   <!-- EN: Investigating {0}. -->
-  <NAT_RustedCitadel.approachingReportString>Investigating {0}.</NAT_RustedCitadel.approachingReportString>
+  <NAT_RustedCitadel.approachingReportString>Осмотреть: {0}</NAT_RustedCitadel.approachingReportString>
   <!-- EN: Investigate {0} -->
-  <NAT_RustedCitadel.approachOrderString>Investigate {0}</NAT_RustedCitadel.approachOrderString>
+  <NAT_RustedCitadel.approachOrderString>Осмотреть: {0}</NAT_RustedCitadel.approachOrderString>
   
 </LanguageData>

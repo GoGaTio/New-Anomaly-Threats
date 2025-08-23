@@ -54,7 +54,29 @@ using HarmonyLib;
 
 namespace NAT
 {
-	[HarmonyPatch(typeof(Pawn), nameof(Pawn.IsDuplicate), MethodType.Getter)]
+    [HarmonyPatch(typeof(PawnGroupMakerUtility), nameof(PawnGroupMakerUtility.MaxPawnCost))]
+    public class Patch_MaxPawnCost
+    {
+        [HarmonyPrefix]
+        public static bool Prefix(float totalPoints, PawnGroupKindDef groupKind, ref float __result)
+        {
+            if (groupKind.defName.StartsWith("NAT_RustedArmy"))
+            {
+                __result = RustMaxCostFromPointsTotalCurve.Evaluate(totalPoints);
+                return false;
+            }
+            return true;
+        }
+
+        private static readonly SimpleCurve RustMaxCostFromPointsTotalCurve = new SimpleCurve
+        {
+            new CurvePoint(400f, 400f),
+            new CurvePoint(1200f, 450f),
+            new CurvePoint(7000f, 10000f)
+        };
+    }
+
+    [HarmonyPatch(typeof(Pawn), nameof(Pawn.IsDuplicate), MethodType.Getter)]
 	public class Patch_Subdued
 	{
 		[HarmonyPostfix]

@@ -40,7 +40,7 @@
     <weaponTags>
       <li>NAT_RustedSMG</li>
     </weaponTags>
-    <combatPower>290</combatPower>
+    <combatPower>280</combatPower>
     <combatEnhancingDrugsCount>-9~2</combatEnhancingDrugsCount>
   </PawnKindDef>
 
@@ -50,8 +50,9 @@
     <weaponTags>
       <li>NAT_RustedMachineGun</li>
     </weaponTags>
-    <combatPower>250</combatPower>
-    <combatEnhancingDrugsCount>-9~3</combatEnhancingDrugsCount>
+    <combatPower>320</combatPower>
+    <combatEnhancingDrugsCount>-7~2</combatEnhancingDrugsCount>
+    <aiAvoidCover>false</aiAvoidCover>
   </PawnKindDef>
   
   <PawnKindDef ParentName="NAT_RustedSoldierKindBase">

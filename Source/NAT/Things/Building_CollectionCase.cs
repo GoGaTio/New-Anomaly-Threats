@@ -1,4 +1,20 @@
-﻿using System;
+﻿using DelaunatorSharp;
+using Gilzoide.ManagedJobs;
+using Ionic.Crc;
+using Ionic.Zlib;
+using JetBrains.Annotations;
+using KTrie;
+using LudeonTK;
+using NVorbis.NAudioSupport;
+using RimWorld;
+using RimWorld.BaseGen;
+using RimWorld.IO;
+using RimWorld.Planet;
+using RimWorld.QuestGen;
+using RimWorld.SketchGen;
+using RimWorld.Utility;
+using RuntimeAudioClipLoader;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -19,22 +35,6 @@ using System.Xml.Linq;
 using System.Xml.Serialization;
 using System.Xml.XPath;
 using System.Xml.Xsl;
-using DelaunatorSharp;
-using Gilzoide.ManagedJobs;
-using Ionic.Crc;
-using Ionic.Zlib;
-using JetBrains.Annotations;
-using KTrie;
-using LudeonTK;
-using NVorbis.NAudioSupport;
-using RimWorld;
-using RimWorld.BaseGen;
-using RimWorld.IO;
-using RimWorld.Planet;
-using RimWorld.QuestGen;
-using RimWorld.SketchGen;
-using RimWorld.Utility;
-using RuntimeAudioClipLoader;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Jobs;
@@ -51,6 +51,7 @@ using Verse.Noise;
 using Verse.Profile;
 using Verse.Sound;
 using Verse.Steam;
+using static Verse.HediffCompProperties_RandomizeSeverityPhases;
 
 namespace NAT
 {
@@ -61,11 +62,7 @@ namespace NAT
 
         public ThingOwner innerContainer;
 
-        private GraphicData glassGraphicData;
-
 		private GraphicData brokenGlassGraphicData;
-
-        private GraphicData contentsGraphicData;
 
         public Pawn pawn;
 
@@ -74,41 +71,28 @@ namespace NAT
 		public override void SpawnSetup(Map map, bool respawningAfterLoad)
 		{
 			base.SpawnSetup(map, respawningAfterLoad);
-            glassGraphicData = new GraphicData();
-			glassGraphicData.CopyFrom(def.graphicData);
-			glassGraphicData.shaderType = ShaderTypeDefOf.Transparent;
-			glassGraphicData.texPath += "_Glass";
 			brokenGlassGraphicData = new GraphicData();
 			brokenGlassGraphicData.CopyFrom(def.graphicData);
-			brokenGlassGraphicData.shaderType = ShaderTypeDefOf.Transparent;
-			brokenGlassGraphicData.texPath += "_BrokenGlass";
-            contentsGraphicData = new GraphicData();
-            contentsGraphicData.CopyFrom(def.graphicData);
-            contentsGraphicData.shaderType = ShaderTypeDefOf.Transparent;
-            contentsGraphicData.texPath += "_Contents";
+			brokenGlassGraphicData.texPath += "_Broken";
             base.DirtyMapMesh(Map);
         }
 
-		public override void DynamicDrawPhaseAt(DrawPhase phase, Vector3 drawLoc, bool flip = false)
-		{
-			base.DynamicDrawPhaseAt(phase, drawLoc, flip);
-            if (phase == DrawPhase.Draw)
+
+        protected override void DrawAt(Vector3 drawLoc, bool flip = false)
+        {
+            if (glassBroken)
             {
-                if (pawn != null || !innerContainer.NullOrEmpty())
-                {
-                    Mesh obj = contentsGraphicData.Graphic.MeshAt(Rotation);
-                    Vector3 drawPos = drawLoc;
-                    drawPos.y = AltitudeLayer.MoteOverhead.AltitudeFor() + contentsGraphicData.drawOffset.y;
-                    Graphics.DrawMesh(obj, drawLoc + contentsGraphicData.drawOffset.RotatedBy(Rotation), Quaternion.identity, contentsGraphicData.Graphic.MatAt(Rotation), 0);
-                    //pawn.Drawer.renderer.DynamicDrawPhaseAt(phase, drawLoc, null, neverAimWeapon: true);
-                }
-                GraphicData graphicData = glassBroken ? brokenGlassGraphicData : glassGraphicData;
-                Mesh obj2 = graphicData.Graphic.MeshAt(Rotation);
-                Vector3 drawPos2 = drawLoc;
-                drawPos2.y = AltitudeLayer.MoteOverhead.AltitudeFor() + graphicData.drawOffset.y + 0.1f;
-                Graphics.DrawMesh(obj2, drawPos2 + graphicData.drawOffset.RotatedBy(Rotation), Quaternion.identity, graphicData.Graphic.MatAt(Rotation), 0);
+                GraphicData graphicData = brokenGlassGraphicData;
+                Mesh obj = graphicData.Graphic.MeshAt(Rotation);
+                Vector3 drawPos = drawLoc;
+                drawPos.y = AltitudeLayer.BuildingOnTop.AltitudeFor() + graphicData.drawOffset.y + 0.1f;
+                Graphics.DrawMesh(obj, drawPos + graphicData.drawOffset.RotatedBy(Rotation), Quaternion.identity, graphicData.Graphic.MatAt(Rotation), 0);
             }
-		}
+            else
+            {
+                base.DrawAt(drawLoc, flip);
+            }
+        }
 
         public override void PostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
         {

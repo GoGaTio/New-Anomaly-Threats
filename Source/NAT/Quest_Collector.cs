@@ -104,7 +104,9 @@ namespace NAT
 
 		public string debugTag = "Default";
 
-		public List<Building_CollectionCase> cases = null;
+		public List<Building_CollectionCase> cases = new List<Building_CollectionCase>();
+
+		public bool casesGenerated = false;
 
 
         public override void ExposeData()
@@ -114,7 +116,8 @@ namespace NAT
 			Scribe_Values.Look(ref returnTick, "returnTick", 0);
 			Scribe_Values.Look(ref currentlyOutside, "currentlyOutside");
 			Scribe_Values.Look(ref caught, "caught");
-			Scribe_Values.Look(ref debugTag, "debugTag", defaultValue: "Default");
+            Scribe_Values.Look(ref casesGenerated, "casesGenerated");
+            Scribe_Values.Look(ref debugTag, "debugTag", defaultValue: "Default");
 			Scribe_Collections.Look(ref stolenThings, "stolenThings", LookMode.Deep);
 			Scribe_Collections.Look(ref stolenPawns, "stolenPawns", saveDestroyedThings: true, LookMode.Reference);
             Scribe_Collections.Look(ref cases, "cases", saveDestroyedThings: true, LookMode.Reference);
@@ -161,7 +164,7 @@ namespace NAT
                         returnTick += 60000;
                     }
                 }
-				if (cases != null && cases.Empty())
+				if (casesGenerated && cases.NullOrEmpty())
 				{
 					Complete();
 				}
@@ -240,8 +243,9 @@ namespace NAT
 
 		public void Notify_LairGenerated()
         {
-			//Complete();
-		}
+            casesGenerated = true;
+
+        }
 
 		public override void DoDebugWindowContents(Rect innerRect, ref float curY)
 		{

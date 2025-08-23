@@ -11,4 +11,184 @@
     </things>
   </PrefabDef>
 
+  <PrefabDef>
+    <defName>NAT_RustedPalletCluster</defName>
+    <size>(5,5)</size>
+    <things>
+      <NAT_RustedBeacon_Reinforcements>
+        <position>(2,0,2)</position>
+      </NAT_RustedBeacon_Reinforcements>
+      <NAT_RustedPallet>
+        <positions>
+          <li>(0, 0, 0)</li>
+          <li>(3, 0, 0)</li>
+          <li>(0, 0, 3)</li>
+          <li>(3, 0, 3)</li>
+        </positions>
+      </NAT_RustedPallet>
+    </things>
+    <terrain>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-1,-1,6,6)</li>
+        </rects>
+        <chance>1</chance>
+      </NAT_RustedFloor>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-2,-2,7,7)</li>
+        </rects>
+        <chance>0.8</chance>
+      </NAT_RustedFloor>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-3,-3,8,8)</li>
+        </rects>
+        <chance>0.45</chance>
+      </NAT_RustedFloor>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-4,-4,9,9)</li>
+        </rects>
+        <chance>0.1</chance>
+      </NAT_RustedFloor>
+    </terrain>
+  </PrefabDef>
+
+  <PrefabDef>
+    <defName>NAT_RustedWallCluster</defName>
+    <size>(5,5)</size>
+    <things>
+      <NAT_RustedWall>
+        <rects>
+          <li>(1,1,4,4)</li>
+        </rects>
+        <chance>1</chance>
+      </NAT_RustedWall>
+      <NAT_RustedWall>
+        <rects>
+          <li>(0,0,5,5)</li>
+        </rects>
+        <chance>0.25</chance>
+      </NAT_RustedWall>
+    </things>
+    <terrain>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-1,-1,6,6)</li>
+        </rects>
+        <chance>1</chance>
+      </NAT_RustedFloor>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-2,-2,7,7)</li>
+        </rects>
+        <chance>0.7</chance>
+      </NAT_RustedFloor>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-3,-3,8,8)</li>
+        </rects>
+        <chance>0.45</chance>
+      </NAT_RustedFloor>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-4,-4,9,9)</li>
+        </rects>
+        <chance>0.1</chance>
+      </NAT_RustedFloor>
+    </terrain>
+  </PrefabDef>
+
+  <PrefabDef>
+    <defName>NAT_RustedTurretPost</defName>
+    <size>(3,3)</size>
+    <things>
+      <Sandbags>
+        <positions>
+          <li>(0, 0, 0)</li>
+          <li>(1, 0, 0)</li>
+          <li>(2, 0, 0)</li>
+          <li>(0, 0, 1)</li>
+          <li>(2, 0, 1)</li>
+          <li>(0, 0, 2)</li>
+          <li>(1, 0, 2)</li>
+          <li>(2, 0, 2)</li>
+        </positions>
+        <stuff>NAT_AncientFabric</stuff>
+      </Sandbags>
+      <NAT_RustedTurret_Mini>
+        <position>(1,0,1)</position>
+      </NAT_RustedTurret_Mini>
+    </things>
+    <terrain>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-1,-1,4,4)</li>
+        </rects>
+        <chance>1</chance>
+      </NAT_RustedFloor>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-2,-2,5,5)</li>
+        </rects>
+        <chance>0.7</chance>
+      </NAT_RustedFloor>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-3,-3,6,6)</li>
+        </rects>
+        <chance>0.35</chance>
+      </NAT_RustedFloor>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-4,-4,7,7)</li>
+        </rects>
+        <chance>0.1</chance>
+      </NAT_RustedFloor>
+    </terrain>
+  </PrefabDef>
+
+  <PrefabDef>
+    <defName>NAT_RustedAutoTurretWithFloor</defName>
+    <size>(2,2)</size>
+    <things>
+      <NAT_RustedTurret_Auto>
+        <position>(0,0,0)</position>
+      </NAT_RustedTurret_Auto>
+    </things>
+    <terrain>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-1,-1,3,3)</li>
+        </rects>
+        <chance>1</chance>
+      </NAT_RustedFloor>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-2,-2,4,4)</li>
+        </rects>
+        <chance>0.9</chance>
+      </NAT_RustedFloor>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-3,-3,5,5)</li>
+        </rects>
+        <chance>0.7</chance>
+      </NAT_RustedFloor>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-4,-4,6,6)</li>
+        </rects>
+        <chance>0.35</chance>
+      </NAT_RustedFloor>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-5,-5,7,7)</li>
+        </rects>
+        <chance>0.1</chance>
+      </NAT_RustedFloor>
+    </terrain>
+  </PrefabDef>
+
 </Defs>

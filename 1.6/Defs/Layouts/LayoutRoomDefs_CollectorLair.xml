@@ -13,7 +13,7 @@
     <floorTypes>
       <li>PavedTile</li>
     </floorTypes>
-    <edgeTerrain>MetalTile</edgeTerrain> 
+    <edgeTerrain>AncientTile</edgeTerrain> 
     <!--<prefabs>
       <MU_AncientFacilityEntrance>
         <countPerTenEdgeCells>2</countPerTenEdgeCells>
@@ -32,6 +32,13 @@
         <minMaxRange>0~1</minMaxRange>
       </AncientLamp_Single>
     </prefabs>-->
+    <scatterTerrain>
+      <Soil>
+        <groupsPerHundredCells>2~3</groupsPerHundredCells>
+        <itemsPerGroup>4~6</itemsPerGroup>
+        <groupDistRange>2~3</groupDistRange>
+      </Soil>
+    </scatterTerrain>
   </LayoutRoomDef>
 
   <!-- Common -->
@@ -40,12 +47,12 @@
     <defName>NAT_CollectionRoom</defName>
     <canMergeWithAdjacentRoom>false</canMergeWithAdjacentRoom>
     <requiresSingleRectRoom>true</requiresSingleRectRoom>
-    <minSingleRectWidth>7</minSingleRectWidth>
-    <minSingleRectHeight>7</minSingleRectHeight>
+    <minSingleRectWidth>3</minSingleRectWidth>
+    <minSingleRectHeight>3</minSingleRectHeight>
     <floorTypes>
-      <li>CarpetMagenta</li>
-      <li>CarpetMossBright</li>
-      <li>CarpetBlue</li>
+      <li>AncientConcrete</li>
+      <li>AncientTile</li>
+      <li>TileGranite</li>
     </floorTypes>
     <prefabs>
       <NAT_CollectionCase>
@@ -53,7 +60,13 @@
         <minMaxRange>1~10</minMaxRange>
       </NAT_CollectionCase>
     </prefabs>
-    <edgeTerrain>TileMarble</edgeTerrain>
+    <scatterTerrain>
+      <Soil>
+        <groupsPerHundredCells>3~4</groupsPerHundredCells>
+        <itemsPerGroup>4~8</itemsPerGroup>
+        <groupDistRange>2~3</groupDistRange>
+      </Soil>
+    </scatterTerrain>
   </LayoutRoomDef>
 
   <LayoutRoomDef>
@@ -67,7 +80,13 @@
       <li>CarpetMossBright</li>
       <li>CarpetBlue</li>
     </floorTypes>
-    <edgeTerrain>TileMarble</edgeTerrain>
+    <scatterTerrain>
+      <Soil>
+        <groupsPerHundredCells>2~3</groupsPerHundredCells>
+        <itemsPerGroup>4~6</itemsPerGroup>
+        <groupDistRange>2~3</groupDistRange>
+      </Soil>
+    </scatterTerrain>
   </LayoutRoomDef>
   
 </Defs>

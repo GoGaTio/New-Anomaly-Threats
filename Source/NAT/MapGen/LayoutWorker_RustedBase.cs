@@ -60,6 +60,8 @@ namespace NAT
 		public float cost;
 
 		public float weight;
+
+		public bool canWipeEdifices = false;
 	}
 	public class RustedLayoutDef : StructureLayoutDef
 	{

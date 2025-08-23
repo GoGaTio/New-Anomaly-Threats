@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <OrbitalDebrisDef>
+    <defName>NAT_RustedDebris</defName>
+    <graphics>
+      <li>
+        <weighting>0.25</weighting>
+        <order>1</order>
+        <parallaxPer10Cells>0.2</parallaxPer10Cells>
+        <graphicData>
+          <texPath>World/NAT_RustedDebris/Platform</texPath>
+          <graphicClass>Graphic_Random</graphicClass>
+          <shaderType>OrbitalDebris</shaderType>
+          <drawSize>6</drawSize>
+        </graphicData>
+      </li>
+      <li>
+        <weighting>0.5</weighting>
+        <order>2</order>
+        <parallaxPer10Cells>1</parallaxPer10Cells>
+        <graphicData>
+          <texPath>World/NAT_RustedDebris/Piece</texPath>
+          <graphicClass>Graphic_Random</graphicClass>
+          <shaderType>OrbitalDebris</shaderType>
+          <drawSize>4</drawSize>
+        </graphicData>
+      </li>
+      <li>
+        <weighting>0.75</weighting>
+        <order>3</order>
+        <parallaxPer10Cells>2</parallaxPer10Cells>
+        <graphicData>
+          <texPath>World/NAT_RustedDebris/Troops</texPath>
+          <graphicClass>Graphic_Random</graphicClass>
+          <shaderType>OrbitalDebris</shaderType>
+          <drawSize>2</drawSize>
+        </graphicData>
+      </li>
+    </graphics>
+  </OrbitalDebrisDef>
+  
+</Defs>

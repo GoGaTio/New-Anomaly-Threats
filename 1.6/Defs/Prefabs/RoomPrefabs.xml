@@ -55,9 +55,9 @@
       </NAT_RustedTurret_Mini>
     </things>
   </PrefabDef>
-  
+
   <PrefabDef>
-    <defName>NAT_RustedPalletCluster</defName>
+    <defName>NAT_RustedPalletClusterWithTurret</defName>
     <size>(5,5)</size>
     <things>
       <NAT_RustedTurret_Mini>

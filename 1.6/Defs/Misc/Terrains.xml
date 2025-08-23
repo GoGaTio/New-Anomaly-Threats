@@ -35,12 +35,13 @@
         <li>NAT_RustedPlatformEdge_Loop5</li>
       </LoopTexPaths>
     </spaceEdgeGraphicData>
-	<texturePath>Terrain/NAT_RustedFloor</texturePath>
-    <renderPrecedence>340</renderPrecedence>
+    <texturePath>Terrain/NAT_RustedFloor</texturePath>
+    <renderPrecedence>393</renderPrecedence>
     <fertility>0</fertility>
     <layerable>false</layerable>
     <designationCategory />
     <pathCost>1</pathCost>
+    <edgeType>FadeRough</edgeType>
     <statBases>
       <Beauty>-10</Beauty>
       <Cleanliness>1</Cleanliness>
@@ -48,7 +49,7 @@
       <CleaningTimeFactor>0.8</CleaningTimeFactor>
     </statBases>
   </TerrainDef>
-  
+
   <TerrainDef ParentName="FloorBase">
     <defName>NAT_RustedTile</defName>
     <label>rusted tile</label>
@@ -72,5 +73,5 @@
       <li>Heavy</li>
     </affordances>
   </TerrainDef>
-  
+
 </Defs>

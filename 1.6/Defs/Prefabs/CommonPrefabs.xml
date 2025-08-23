@@ -2,29 +2,6 @@
 <Defs>
 
   <PrefabDef>
-    <defName>NAT_RustedTurretPost</defName>
-    <size>(3,3)</size>
-    <things>
-      <Sandbags>
-        <positions>
-          <li>(0, 0, 0)</li>
-          <li>(1, 0, 0)</li>
-          <li>(2, 0, 0)</li>
-          <li>(0, 0, 1)</li>
-          <li>(2, 0, 1)</li>
-          <li>(0, 0, 2)</li>
-          <li>(1, 0, 2)</li>
-          <li>(2, 0, 2)</li>
-        </positions>
-        <stuff>NAT_AncientFabric</stuff>
-      </Sandbags>
-      <NAT_RustedTurret_Mini>
-        <position>(1,0,1)</position>
-      </NAT_RustedTurret_Mini>
-    </things>
-  </PrefabDef>
-
-  <PrefabDef>
     <defName>NAT_RustedAutoTurret</defName>
     <size>(2,2)</size>
     <things>

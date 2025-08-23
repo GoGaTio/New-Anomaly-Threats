@@ -1,19 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Defs>
+<Defs>
+
   <DutyDef>
     <defName>NAT_RustDefend</defName>
     <alwaysShowWeapon>true</alwaysShowWeapon>
     <thinkNode Class="ThinkNode_Priority">
       <!-- Todo here - if outside of duty radius, go to within duty radius-->
       <!-- Currently this is handled by a hack in JobGiver_AIFightBase-->
-      <subNodes>
+      <subNodes>
+
         <li Class="JobGiver_AIDefendPoint">
           <targetAcquireRadius>65</targetAcquireRadius>
           <targetKeepRadius>72</targetKeepRadius>
         </li>
         <li Class="JobGiver_FightFiresNearPoint">
           <maxDistFromPoint>25</maxDistFromPoint>
-        </li> 
+        </li>
         <li Class="ThinkNode_ForbidOutsideFlagRadius">
           <maxDistToSquadFlag>16</maxDistToSquadFlag>
           <subNodes>
@@ -23,7 +25,7 @@
           </subNodes>
         </li>
         <li Class="JobGiver_WanderNearDutyLocation">
-          <wanderRadius>8</wanderRadius>
+          <wanderRadius>20</wanderRadius>
           <locomotionUrgencyOutsideRadius>Sprint</locomotionUrgencyOutsideRadius>
         </li>
       </subNodes>
@@ -122,7 +124,7 @@
         <li Class="JobGiver_AIFollowEscortee"/>
         <li Class="ThinkNode_Subtree">
           <treeDef>SatisfyVeryUrgentNeeds</treeDef>
-        </li> 
+        </li>
         <li Class="JobGiver_WanderNearDutyLocation">
           <wanderRadius>8</wanderRadius>
         </li>
@@ -134,5 +136,5 @@
     <defName>NAT_CreateRustForPsychicRitual</defName>
     <thinkNode Class="NAT.JobGiver_CreateRustForPsychicRitual" />
   </DutyDef>
-  
+
 </Defs>
