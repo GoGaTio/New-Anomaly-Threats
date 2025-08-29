@@ -1,106 +1,121 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-  
+
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingSetMakerDef[defName = "Reward_GrayBox"]/root/options</xpath>
     <value>
       <li>
-          <weight>0.4</weight>
-          <thingSetMaker Class="ThingSetMaker_StackCount">
-            <fixedParams>
-              <filter>
-                <thingDefs>
-                  <li>NAT_RustedSculpture_Soldier</li>
-                </thingDefs>
-              </filter>
-              <countRange>1</countRange>
-            </fixedParams>
-          </thingSetMaker>
-        </li>
-		<li>
-          <weight>0.3</weight>
-          <thingSetMaker Class="ThingSetMaker_StackCount">
-            <fixedParams>
-              <filter>
-                <thingDefs>
-                  <li>NAT_Apparel_PainLance</li>
-                </thingDefs>
-              </filter>
-              <countRange>1</countRange>
-            </fixedParams>
-          </thingSetMaker>
-        </li>
-		<li>
-          <weight>0.125</weight>
-          <thingSetMaker Class="ThingSetMaker_StackCount">
-            <fixedParams>
-              <filter>
-                <thingDefs>
-                  <li>NAT_PainPulser</li>
-                </thingDefs>
-              </filter>
-              <countRange>1</countRange>
-            </fixedParams>
-          </thingSetMaker>
-        </li>
-		<li>
-          <weight>0.2</weight>
-          <thingSetMaker Class="ThingSetMaker_StackCount">
-            <fixedParams>
-              <filter>
-                <thingDefs>
-                  <li>NAT_PainQuenchSerum</li>
-                </thingDefs>
-              </filter>
-              <countRange>6~10</countRange>
-            </fixedParams>
-          </thingSetMaker>
-        </li>
+        <weight>0.4</weight>
+        <thingSetMaker Class="ThingSetMaker_Count">
+          <fixedParams>
+            <filter>
+              <thingDefs>
+                <li>NAT_RustedSculpture_Soldier</li>
+                <li>NAT_RustedSculpture_Trooper</li>
+              </thingDefs>
+            </filter>
+            <countRange>1</countRange>
+          </fixedParams>
+        </thingSetMaker>
+      </li>
+      <li>
+        <weight>0.3</weight>
+        <thingSetMaker Class="ThingSetMaker_StackCount">
+          <fixedParams>
+            <filter>
+              <thingDefs>
+                <li>NAT_Apparel_PainLance</li>
+              </thingDefs>
+            </filter>
+            <countRange>1</countRange>
+          </fixedParams>
+        </thingSetMaker>
+      </li>
+      <li>
+        <weight>0.125</weight>
+        <thingSetMaker Class="ThingSetMaker_StackCount">
+          <fixedParams>
+            <filter>
+              <thingDefs>
+                <li>NAT_PainPulser</li>
+              </thingDefs>
+            </filter>
+            <countRange>1</countRange>
+          </fixedParams>
+        </thingSetMaker>
+      </li>
+      <li>
+        <weight>0.2</weight>
+        <thingSetMaker Class="ThingSetMaker_StackCount">
+          <fixedParams>
+            <filter>
+              <thingDefs>
+                <li>NAT_PainQuenchSerum</li>
+              </thingDefs>
+            </filter>
+            <countRange>6~10</countRange>
+          </fixedParams>
+        </thingSetMaker>
+      </li>
     </value>
-  </Operation> 
-  
+  </Operation>
+
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingSetMakerDef[defName = "MapGen_FleshSackLoot"]/root/options</xpath>
     <value>
-        <li>
-          <weight>0.15</weight>
-          <thingSetMaker Class="ThingSetMaker_StackCount">
-            <fixedParams>
-              <filter>
-                <thingDefs>
-                  <li>NAT_PainPulser</li>
-                </thingDefs>
-              </filter>
-              <countRange>1</countRange>
-            </fixedParams>
-          </thingSetMaker>
-        </li>
-		<li>
-          <weight>0.15</weight>
-          <thingSetMaker Class="ThingSetMaker_StackCount">
-            <fixedParams>
-              <filter>
-                <thingDefs>
-                  <li>NAT_Apparel_PainLance</li>
-                </thingDefs>
-              </filter>
-              <countRange>1</countRange>
-            </fixedParams>
-          </thingSetMaker>
-        </li>
-		<li>
-          <weight>0.1</weight>
-          <thingSetMaker Class="ThingSetMaker_StackCount">
-            <fixedParams>
-              <filter>
-                <thingDefs>
-                  <li>NAT_RustedSculpture_Soldier</li>
-                </thingDefs>
-              </filter>
-              <countRange>1</countRange>
-            </fixedParams>
-          </thingSetMaker>
-        </li>
+      <li>
+        <weight>0.15</weight>
+        <thingSetMaker Class="ThingSetMaker_StackCount">
+          <fixedParams>
+            <filter>
+              <thingDefs>
+                <li>NAT_PainPulser</li>
+              </thingDefs>
+            </filter>
+            <countRange>1</countRange>
+          </fixedParams>
+        </thingSetMaker>
+      </li>
+      <li>
+        <weight>0.15</weight>
+        <thingSetMaker Class="ThingSetMaker_StackCount">
+          <fixedParams>
+            <filter>
+              <thingDefs>
+                <li>NAT_Apparel_PainLance</li>
+              </thingDefs>
+            </filter>
+            <countRange>1</countRange>
+          </fixedParams>
+        </thingSetMaker>
+      </li>
+      <li>
+        <weight>0.1</weight>
+        <thingSetMaker Class="ThingSetMaker_Count">
+          <fixedParams>
+            <filter>
+              <thingDefs>
+                <li>NAT_RustedSculpture_Soldier</li>
+                <li>NAT_RustedSculpture_Trooper</li>
+              </thingDefs>
+            </filter>
+            <countRange>1</countRange>
+          </fixedParams>
+        </thingSetMaker>
+      </li>
+      <li>
+        <weight>0.03</weight>
+        <thingSetMaker Class="ThingSetMaker_Count">
+          <fixedParams>
+            <filter>
+              <thingDefs>
+                <li>NAT_RustedSculpture_Guardsman</li>
+              </thingDefs>
+            </filter>
+            <countRange>1</countRange>
+          </fixedParams>
+        </thingSetMaker>
+      </li>
     </value>
-  </Operation> 
+  </Operation>
 </Patch>

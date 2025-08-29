@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Patch>
-  
+<Patch>
+
+
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/HediffDef[defName = "MetalhorrorImplant"]/possiblePathways</xpath>
     <value>
@@ -15,12 +16,12 @@
     </value>
   </Operation>
 
-  <Operation Class="PatchOperationReplace">
+  <!--<Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName = "Nociosphere"]/killedLeavings/ChunkSlagSteel</xpath>
     <value>
       <NAT_HoraxChunk>4</NAT_HoraxChunk>
     </value>
-  </Operation>
+  </Operation>-->
 
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/MutantDef[defName = "Ghoul"]/abilityWhitelist</xpath>
@@ -28,15 +29,15 @@
       <li>NAT_BileSpray</li>
     </value>
   </Operation>
-  
+
   <Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="Apparel_Bandolier"]</xpath>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="Apparel_Bandolier"]/apparel/tags</xpath>
-			<value>
-				<li>NAT_Rust_Belt</li>
-			</value>
-		</match>
-	</Operation>
-  
+    <xpath>Defs/ThingDef[defName="Apparel_Bandolier"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Apparel_Bandolier"]/apparel/tags</xpath>
+      <value>
+        <li>NAT_Rust_Belt</li>
+      </value>
+    </match>
+  </Operation>
+
 </Patch>

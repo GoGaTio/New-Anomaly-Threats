@@ -70,7 +70,7 @@
 		  <li>Shard</li>
 		  <li>GrayFleshSample</li>
 		</highPriorityThings>
-        <thingsRange>3~11</thingsRange>
+        <thingsRange>7~11</thingsRange>
 		<waitingTicksRange>50000~75000</waitingTicksRange>
       </li>
       <li Class="CompProperties_HoldingPlatformTarget">

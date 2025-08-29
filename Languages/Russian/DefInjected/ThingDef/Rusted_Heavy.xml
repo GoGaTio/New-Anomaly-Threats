@@ -26,7 +26,7 @@
   <!-- EN: rusted sniper rifle -->
   <NAT_Gun_RustedSniperRifle.label>ржавая снайперская винтовка</NAT_Gun_RustedSniperRifle.label>
   <!-- EN: A piece of bioferrite shaped like a bolt-action rifle.\n\nSomehow can shoot if wielded by rusted creature. -->
-  <NAT_Gun_RustedSniperRifle.description>Кусок биоферрита в форме .\n\nМожет стрелять, если используется ржавым созданием.</NAT_Gun_RustedSniperRifle.description>
+  <NAT_Gun_RustedSniperRifle.description>Кусок биоферрита в форме самозарядной снайперской винтовки.\n\nМожет стрелять, если используется ржавым созданием.</NAT_Gun_RustedSniperRifle.description>
   <!-- EN: stock -->
   <NAT_Gun_RustedSniperRifle.tools.stock.label>приклад</NAT_Gun_RustedSniperRifle.tools.stock.label>
   <!-- EN: barrel -->

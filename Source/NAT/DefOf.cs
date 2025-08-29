@@ -171,5 +171,7 @@ namespace NAT
 		public static DamageDef NAT_RustedBomb;
 
 		public static IncidentDef NAT_RustedArmySiege;
+
+		public static ThingSetMakerDef NAT_CollectoirLairCase;
 	}
 }

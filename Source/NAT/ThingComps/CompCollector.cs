@@ -93,18 +93,29 @@ namespace NAT
 
 		public List<ThingDef> stealedDefs = new List<ThingDef>();
 
+		public float speedOffset = 0;
+
 		public override void PostExposeData()
 		{
 			base.PostExposeData();
 			Scribe_Deep.Look(ref innerContainer, "innerContainer", this);
 			Scribe_Values.Look(ref active, "active", defaultValue: false);
 			Scribe_Values.Look(ref lastDetectedTick, "lastDetectedTick", 0);
-			Scribe_Values.Look(ref thingsToStealLeft, "thingsToStealLeft", 0);
+            Scribe_Values.Look(ref speedOffset, "speedOffset", 0);
+            Scribe_Values.Look(ref thingsToStealLeft, "thingsToStealLeft", 0);
 			Scribe_Values.Look(ref state, "state", CollectorState.Attack);
 			Scribe_References.Look(ref questPart, "questPart");
 		}
+        private static readonly SimpleCurve SpeedOffsetFromSpeedThisTickCurve = new SimpleCurve
+        {
+            new CurvePoint(0f, 9f),
+            new CurvePoint(9f, 0f),
+            new CurvePoint(18f, -9f),
+			new CurvePoint(1000f, -992f)
+        };
 
-		private Pawn Collector => (Pawn)parent;
+
+        private Pawn Collector => (Pawn)parent;
 
 		public QuestPart_Collector questPart;
 
@@ -256,6 +267,10 @@ namespace NAT
 					Invisibility.BecomeInvisible();
 				}
 			}
+            if (parent.IsHashIntervalTick(90))
+            {
+				speedOffset += SpeedOffsetFromSpeedThisTickCurve.Evaluate(Collector.GetStatValue(StatDefOf.MoveSpeed));
+            }
             if (active && state == CollectorState.Wait)
             {
 				waitTicks--;
@@ -266,6 +281,15 @@ namespace NAT
 				}
 			}
 		}
+
+        public override float GetStatOffset(StatDef stat)
+        {
+            if(stat == StatDefOf.MoveSpeed)
+			{
+				return speedOffset;
+			}
+			return base.GetStatOffset(stat);
+        }
 
 		private void CheckDetected()
 		{
@@ -368,7 +392,7 @@ namespace NAT
 		{
             if (ModsConfig.OdysseyActive)
             {
-				Thing engine = GravshipUtility.GetPlayerGravEngine(parent.Map);
+				Thing engine = GravshipUtility.GetPlayerGravEngine_NewTemp(parent.Map);
 				if(engine != null)
                 {
 					if (engine.Spawned)
@@ -398,7 +422,7 @@ namespace NAT
         {
 			foreach(Thing t in parent.Map.listerThings.ThingsInGroup(ThingRequestGroup.HaulableEver))
             {
-                if (!stealedDefs.Contains(t.def))
+                if (t.MarketValue > 30f && !stealedDefs.Contains(t.def))
                 {
 					yield return t;
                 }
@@ -442,10 +466,18 @@ namespace NAT
         public override void PostPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
         {
             base.PostPostApplyDamage(dinfo, totalDamageDealt);
-			if(innerContainer.Any && parent.Spawned && Rand.Chance(totalDamageDealt * 0.01f))
+			if(parent.Spawned && Rand.Chance(totalDamageDealt * 0.01f))
             {
-				innerContainer.TryDrop(innerContainer.RandomElement(), parent.Position, parent.Map, ThingPlaceMode.Near, 1, out var _);
+				if (innerContainer.Any)
+				{
+                    innerContainer.TryDrop(innerContainer.RandomElement(), parent.Position, parent.Map, ThingPlaceMode.Near, 1, out var _);
+                }
+				if (Collector.CurJobDef == NATDefOf.NAT_CollectorStealThing && Rand.Bool)
+				{
+					thingsToStealLeft = 1;
+                }
 			}
+			
         }
 
         public void DropBag(IntVec3 cell, Map map)

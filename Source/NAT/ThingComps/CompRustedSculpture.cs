@@ -58,7 +58,7 @@ namespace NAT
 	{
 		public PawnKindDef pawnKind;
 
-		public Vector3 offset;
+		public float offset;
 
 		public CompProperties_RustedSculpture()
 		{
@@ -137,20 +137,34 @@ namespace NAT
 			return s;
 		}
 
-        public override void DrawAt(Vector3 drawLoc, bool flip)
-		{
-			Log.Message("draw");
-			if (head == null)
+        public override void PostDraw()
+        {
+            base.PostDraw();
+            Log.Message("draw");
+            if (head == null)
             {
-				return;
+                return;
             }
             Log.Message("no head");
             Mesh obj = head.graphicData.Graphic.MeshAt(Rot4.North);
-			obj = MeshPool.GridPlaneFlip(obj);
-			Vector3 drawPos = drawLoc;
-			drawPos.y = AltitudeLayer.BuildingOnTop.AltitudeFor() + parent.def.graphicData.drawOffset.y;
-			Graphics.DrawMesh(obj, drawPos + Props.offset, Quaternion.identity, head.graphicData.Graphic.MatAt(Rot4.North), 0);
-		}
+            obj = MeshPool.GridPlaneFlip(obj);
+            Vector3 drawPos = parent.DrawPos;
+            drawPos.y = AltitudeLayer.BuildingOnTop.AltitudeFor() + parent.def.graphicData.drawOffset.y;
+			drawPos.z += Props.offset;
+            Graphics.DrawMesh(obj, drawPos, Quaternion.identity, head.graphicData.Graphic.MatAt(Rot4.North), 0);
+        }
+
+       /* public override void PostPrintOnto(SectionLayer layer)
+        {
+            if (head != null )
+            {
+				GraphicData graphicData = new GraphicData();
+                graphicData.CopyFrom(head.graphicData);
+				graphicData.drawOffset.y += 0.1f;
+				graphicData.drawOffset.z += Props.offset;
+                graphicData.Graphic.Print(layer, parent, 0f);
+            }
+        }*/
 
 		protected override void OnInteracted(Pawn caster)
 		{

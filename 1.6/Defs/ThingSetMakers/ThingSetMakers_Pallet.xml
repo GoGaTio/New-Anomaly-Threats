@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+<Defs>
+
 
   <ThingSetMakerDef>
     <defName>NAT_RustedPallet</defName>
     <root Class="ThingSetMaker_RandomOption">
-      <options>
+      <options>
+
         <li>
-          <weight>0.3</weight> 
+          <weight>0.3</weight>
           <thingSetMaker Class="NAT.ThingSetMaker_Rusts">
             <kindDef>NAT_RustedTrooper</kindDef>
             <ageRange>200~600</ageRange>
@@ -16,7 +18,7 @@
         </li>
 
         <li>
-          <weight>1</weight> 
+          <weight>1</weight>
           <thingSetMaker Class="ThingSetMaker_Count">
             <fixedParams>
               <filter>
@@ -24,11 +26,11 @@
                   <li>NAT_RustedActivator</li>
                 </thingSetMakerTagsToAllow>
               </filter>
-              <countRange>8~14</countRange>
+              <countRange>6~12</countRange>
             </fixedParams>
           </thingSetMaker>
         </li>
-		
+
         <li>
           <weight>1</weight>
           <thingSetMaker Class="ThingSetMaker_StackCount">
@@ -42,7 +44,7 @@
             </fixedParams>
           </thingSetMaker>
         </li>
-		
+
         <li>
           <weight>1</weight>
           <thingSetMaker Class="ThingSetMaker_StackCount">
@@ -66,10 +68,11 @@
                   <li>Serum</li>
                 </tradeTagsToAllow>
               </filter>
-              <countRange>8~14</countRange>
+              <countRange>6~10</countRange>
             </fixedParams>
           </thingSetMaker>
-        </li>
+        </li>
+
         <li>
           <weight>2</weight>
           <thingSetMaker Class="ThingSetMaker_StackCount">
@@ -83,7 +86,7 @@
             </fixedParams>
           </thingSetMaker>
         </li>
-		
+
         <li>
           <weight>1.7</weight>
           <thingSetMaker Class="ThingSetMaker_StackCount">
@@ -97,7 +100,7 @@
             </fixedParams>
           </thingSetMaker>
         </li>
-		
+
         <li>
           <weight>0.9</weight>
           <thingSetMaker Class="ThingSetMaker_StackCount">
@@ -111,7 +114,7 @@
             </fixedParams>
           </thingSetMaker>
         </li>
-		
+
         <li>
           <weight>0.3</weight>
           <thingSetMaker Class="ThingSetMaker_StackCount">
@@ -139,7 +142,7 @@
             </fixedParams>
           </thingSetMaker>
         </li>
-		
+
         <li>
           <weight>0.7</weight>
           <thingSetMaker Class="ThingSetMaker_Count">
@@ -158,6 +161,7 @@
 
       </options>
     </root>
-  </ThingSetMakerDef>
+  </ThingSetMakerDef>
+
 
 </Defs>

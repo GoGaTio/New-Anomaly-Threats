@@ -4,7 +4,7 @@
   <!-- EN: rusted mass -->
   <NAT_RustedMass.label>ржавая масса</NAT_RustedMass.label>
   <!-- EN: A large piece of bioferrite. It seems to be filling with strange energy. -->
-  <NAT_RustedMass.description>A large piece of bioferrite. It seems to be filling with strange energy.</NAT_RustedMass.description>
+  <NAT_RustedMass.description>Большой кусок биоферрита, наполняющийся опапсной энергией.</NAT_RustedMass.description>
   <!-- EN: Rusted mass study progress -->
   <NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.0.label>Прогресс в изучении ржавой массы</NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.0.label>
   <!-- EN: Investigation of the rusted mass has revealed some information. It is an archotech machine, that has a lot of psy-connections with something far away. \n\nIf not suppressed, its activity level will increase over time. You can't tell what will happen when the device fully activates. -->

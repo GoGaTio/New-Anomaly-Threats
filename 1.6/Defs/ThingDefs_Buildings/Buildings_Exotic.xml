@@ -156,18 +156,22 @@
     <drawerType>MapMeshAndRealTime</drawerType>
     <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <category>Building</category>
     <pathCost>50</pathCost>
     <useHitPoints>true</useHitPoints>
     <rotatable>false</rotatable>
     <tickerType>Normal</tickerType>
+    <thingClass>Building</thingClass>
     <building>
       <roofCollapseDamageMultiplier>0.2</roofCollapseDamageMultiplier>
       <displayAttackToDestroyOnInspectPane>false</displayAttackToDestroyOnInspectPane>
       <paintable>false</paintable>
+      <neverBuildable>true</neverBuildable>
       <deconstructible>false</deconstructible>
       <repairable>false</repairable>
+      <alwaysUninstallable>true</alwaysUninstallable>
       <destroyEffecter>NAT_RustedSoldierDeath</destroyEffecter>
-      <neverBuildable>true</neverBuildable>
+      <claimable>true</claimable>
     </building>
     <thingCategories>
       <li>BuildingsMisc</li>
@@ -187,7 +191,7 @@
     </graphicData>
   </ThingDef>
 
-  <ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="NAT_RustedSculptureBase">
     <defName>NAT_RustedSculpture_Soldier</defName>
     <label>rusted sculpture</label>
     <description>A bioferrite piece shaped like humanoid creature.\n\nCan be activated into rusted infantryman using shard.</description>
@@ -199,7 +203,7 @@
     <comps>
       <li Class="NAT.CompProperties_RustedSculpture">
         <pawnKind>NAT_RustedSoldier</pawnKind>
-        <offset>(0, 0, 0.25)</offset>
+        <offset>0.25</offset>
         <activeTicks>1</activeTicks>
         <ticksToActivate>210</ticksToActivate>
         <activateTexPath>UI/Commands/NAT_ActivateSoldier</activateTexPath>
@@ -220,7 +224,7 @@
     </comps>
   </ThingDef>
   
-  <ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="NAT_RustedSculptureBase">
     <defName>NAT_RustedSculpture_Trooper</defName>
     <label>small rusted sculpture</label>
     <description>A small bioferrite piece shaped like humanoid creature.\n\nCan be activated into rusted stormtrooper using shard.</description>
@@ -232,7 +236,7 @@
     <comps>
       <li Class="NAT.CompProperties_RustedSculpture">
         <pawnKind>NAT_RustedTrooper</pawnKind>
-        <offset>(0, 0, 0.15)</offset>
+        <offset>0.15</offset>
         <activeTicks>1</activeTicks>
         <ticksToActivate>210</ticksToActivate>
         <activateTexPath>UI/Commands/NAT_ActivateSoldier</activateTexPath>
@@ -253,7 +257,7 @@
     </comps>
   </ThingDef>
   
-  <ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="NAT_RustedSculptureBase">
     <defName>NAT_RustedSculpture_Guardsman</defName>
     <label>large rusted sculpture</label>
     <description>A large bioferrite piece shaped like humanoid creature.\n\nCan be activated into rusted guardsman using shard.</description>
@@ -265,7 +269,7 @@
     <comps>
       <li Class="NAT.CompProperties_RustedSculpture">
         <pawnKind>NAT_RustedGuardsman</pawnKind>
-        <offset>(0, 0, 0.65)</offset>
+        <offset>0.65</offset>
         <activeTicks>1</activeTicks>
         <ticksToActivate>210</ticksToActivate>
         <activateTexPath>UI/Commands/NAT_ActivateSoldier</activateTexPath>

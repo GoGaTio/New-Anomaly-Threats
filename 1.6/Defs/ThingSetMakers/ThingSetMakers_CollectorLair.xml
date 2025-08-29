@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingSetMakerDef>
+    <defName>NAT_CollectoirLairCase</defName>
+    <root Class="ThingSetMaker_Sum">
+      <options>
+
+        <!-- Artifacts -->
+        <li>
+          <chance>0.7</chance>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <categories>
+                  <li>Artifacts</li>
+                </categories>
+              </filter>
+              <countRange>1~2</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <!-- Misc cool items -->
+        <li>
+          <chance>0.5</chance>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <qualityGenerator>Reward</qualityGenerator>
+              <filter>
+                <thingDefs>
+                  <li>Apparel_PowerArmor</li>
+                  <li>Apparel_PowerArmorHelmet</li>
+                  <li>Gun_ChargeRifle</li>
+                  <li>Gun_ChargeLance</li>
+                  <li>Gun_AssaultRifle</li>
+                  <li>TechprofSubpersonaCore</li>
+                  <li>ArchotechEye</li>
+                  <li>ArchotechArm</li>
+                  <li>ArchotechLeg</li>
+                  <li>PowerClaw</li>
+                  <li>BionicEye</li>
+                  <li>BionicArm</li>
+                  <li>BionicLeg</li>
+                  <li>BionicSpine</li>
+                  <li>BionicHeart</li>
+                  <li>Joywire</li>
+                  <li>Painstopper</li>
+                  <li>Shell_AntigrainWarhead</li>
+                  <li>MechSerumHealer</li>
+                  <li>MechSerumResurrector</li>
+                  <li>FlatscreenTelevision</li>
+                  <li>MegascreenTelevision</li>
+                  <li>SculptureGrand</li>
+                </thingDefs>
+                <thingSetMakerTagsToAllow>
+                  <li>SingleUseWeapon</li>
+                  <li>SkillNeurotrainer</li>
+                </thingSetMakerTagsToAllow>
+              </filter>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <!-- Techprints -->
+        <!-- note this is intended to ignore player needs entirely, it gives entirely random techprints -->
+        <li>
+          <chance>0.5</chance>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingSetMakerTagsToAllow>
+                  <li>Techprint</li>
+                </thingSetMakerTagsToAllow>
+              </filter>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <!-- Luciferium -->
+        <li>
+          <chance>0.35</chance>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>Luciferium</li>
+                </thingDefs>
+              </filter>
+              <countRange>5~20</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <!-- Advanced components -->
+        <li>
+          <chance>0.35</chance>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>ComponentSpacer</li>
+                </thingDefs>
+              </filter>
+              <countRange>1~4</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <!-- Ultratech meds -->
+        <li>
+          <chance>0.35</chance>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>MedicineUltratech</li>
+                </thingDefs>
+              </filter>
+              <countRange>2~8</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+      </options>
+    </root>
+  </ThingSetMakerDef>
+
+</Defs>

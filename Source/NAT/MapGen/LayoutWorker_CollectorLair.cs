@@ -55,6 +55,8 @@ namespace NAT
 {
 	public class LayoutWorker_CollectorLair : LayoutWorker_Structure
 	{
+
+		private static readonly IntRange ItemRange = new IntRange(3, 6); 
 		public LayoutWorker_CollectorLair(LayoutDef def)
 			: base(def)
 		{
@@ -75,7 +77,14 @@ namespace NAT
 						list.Add(room.rects[0].ContractedBy(2));
                     }
 				}
-				IntVec2 size = NATDefOf.NAT_CollectorGlassCase.size;
+				ThingSetMakerParams setParms = new ThingSetMakerParams
+				{
+					makingFaction = Faction.OfEntities,
+					tile = map.Tile
+				};
+                List<Thing> loot = ThingSetMakerDefOf.Reward_UniqueWeapon.root.Generate(setParms);
+				questPart_Collector.stolenThings.AddRange(loot);
+                IntVec2 size = NATDefOf.NAT_CollectorGlassCase.size;
 				List<Pawn> pawns = questPart_Collector.stolenPawns.ToList();
                 foreach (Building_CollectionCase glassCase in map.listerBuildings.AllBuildingsNonColonistOfDef(NATDefOf.NAT_CollectorGlassCase).InRandomOrder())
 				{
@@ -86,7 +95,7 @@ namespace NAT
                     }
 					else if (!questPart_Collector.stolenThings.NullOrEmpty())
 					{
-                        for (int i = 0; i < 3; i++)
+                        for (int i = 0; i < ItemRange.RandomInRange; i++)
                         {
 							if(questPart_Collector.stolenThings.TryRandomElement(out var thing))
 							{

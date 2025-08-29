@@ -49,7 +49,14 @@ namespace NAT
 
 	public class JobGiver_CollectorSteal : ThinkNode_JobGiver
 	{
-		protected override Job TryGiveJob(Pawn pawn)
+        private static readonly SimpleCurve StealPawnChanceFromCountCurve = new SimpleCurve
+        {
+            new CurvePoint(3f, 0.06f),
+            new CurvePoint(6f, 0.15f),
+            new CurvePoint(10f, 0.5f)
+        };
+
+        protected override Job TryGiveJob(Pawn pawn)
 		{
 			if (pawn.CurJob != null && pawn.CurJob.def == NATDefOf.NAT_CollectorStealPawn)
 			{
@@ -57,7 +64,8 @@ namespace NAT
 			}
 			CompCollector comp = pawn.GetComp<CompCollector>();
 			Map map = pawn.Map;
-			if (map.mapPawns.ColonistCount > 2 && Rand.Chance(0.07f))
+			int num = map.mapPawns.ColonistCount;
+            if (num > 2 && Rand.Chance(StealPawnChanceFromCountCurve.Evaluate(num)))
             {
 				Pawn p = JobDriver_CollectorStealPawn.GetClosestTargetInRadius(pawn, 999f);
 				if(p != null && pawn.Map.pathFinder.FindPathNow(pawn.Position, p.Position, TraverseParms.For(pawn, Danger.Deadly, TraverseMode.PassDoors)) != null)
@@ -74,8 +82,15 @@ namespace NAT
 				t = GenClosest.ClosestThing_Global_Reachable(pawn.Position, map, comp.ThingsToSteal(), PathEndMode.ClosestTouch, TraverseParms.For(pawn));
 				if(t == null)
                 {
-					comp.waitTicks = comp.Props.waitingTicksRange.RandomInRange;
-					comp.state = CollectorState.Wait;
+					if (comp.innerContainer?.Any == true)
+					{
+                        comp.state = CollectorState.Escape;
+                    }
+					else
+					{
+                        comp.waitTicks = comp.Props.waitingTicksRange.RandomInRange;
+                        comp.state = CollectorState.Wait;
+                    }
 					return null;
 				}
             }

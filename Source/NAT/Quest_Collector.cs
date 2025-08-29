@@ -234,7 +234,7 @@ namespace NAT
 			returnTick = Find.TickManager.TicksGame + CollectorTimeoutRange.RandomInRange;
             foreach (Hediff h in collector.health.hediffSet.hediffs.ToList())
             {
-				if(h is Hediff_Injury i && !i.IsPermanent() && !i.destroysBodyParts)
+				if(h is Hediff_Injury i && !i.IsPermanent())
 				{
 					collector.health.RemoveHediff(i);
                 }
