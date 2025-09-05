@@ -258,7 +258,7 @@ namespace NAT
 			}
 			if (parent.IsHashIntervalTick(14))
 			{
-				if (Find.TickManager.TicksGame > lastDetectedTick + 1200)
+				if (state != CollectorState.Wait && Find.TickManager.TicksGame > lastDetectedTick + 1200)
 				{
 					CheckDetected();
 				}
@@ -354,6 +354,11 @@ namespace NAT
 			}
 			lastNotified = RealTime.LastRealTime;
 			lastDetectedTick = Find.TickManager.TicksGame;
+			if(state == CollectorState.Wait)
+			{
+				state = CollectorState.Escape;
+				Collector.jobs.CheckForJobOverride();
+			}
 		}
 
 		public void GetChildHolders(List<IThingHolder> outChildren)

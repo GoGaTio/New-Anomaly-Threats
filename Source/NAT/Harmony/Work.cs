@@ -216,7 +216,8 @@ namespace NAT
 	public static class Patch_Skills
 	{
 		[HarmonyPrefix]
-		[HarmonyPatch(nameof(SkillRecord.Learn))]
+        [HarmonyPriority(505)]
+        [HarmonyPatch(nameof(SkillRecord.Learn))]
 		public static bool Learn(Pawn ___pawn)
 		{
 			if (___pawn is RustedPawn)
@@ -227,7 +228,7 @@ namespace NAT
 		}
 
 		[HarmonyPrefix]
-		[HarmonyPriority(502)]
+		[HarmonyPriority(505)]
 		[HarmonyPatch(nameof(SkillRecord.Interval))]
 		public static bool Interval(Pawn ___pawn)
 		{

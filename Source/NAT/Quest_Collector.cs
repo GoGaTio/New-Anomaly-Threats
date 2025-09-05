@@ -224,7 +224,10 @@ namespace NAT
 		public void EscapeCollector(Pawn stolenPawn = null)
 		{
 			CompCollector comp = collector.GetComp<CompCollector>();
-			stolenThings.AddRange(comp.innerContainer.ToList());
+			if (!comp.innerContainer.NullOrEmpty())
+			{
+                stolenThings.AddRange(comp.innerContainer.ToList());
+            }
 			comp.innerContainer.Clear();
 			if (stolenPawn != null)
 			{
