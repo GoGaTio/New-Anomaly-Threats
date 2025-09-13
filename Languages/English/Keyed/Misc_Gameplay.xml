@@ -37,7 +37,10 @@
   
 	<!--Rusted army-->
 	<NAT_RustedArmyRaid>Raid: Rusted Army</NAT_RustedArmyRaid>
-	<NAT_RustedArmyRaid_NoGroups>A group of rusts walked in the region nearby.</NAT_RustedArmyRaid_NoGroups>
+  <NAT_RustedArmyRaid_CenterDrop>A group of rusts dropped nearby your colony.</NAT_RustedArmyRaid_CenterDrop>
+  <NAT_RustedArmyRaid_RandomDrop>Rusts dropping all over the region.</NAT_RustedArmyRaid_RandomDrop>
+  <NAT_RustedArmyRaid_EdgeDrop>A group of rusts dropped in the region nearby.</NAT_RustedArmyRaid_EdgeDrop>
+  <NAT_RustedArmyRaid_NoGroups>A group of rusts walked in the region nearby.</NAT_RustedArmyRaid_NoGroups>
 	<NAT_RustedArmyRaid_Groups>{0} groups of rusts walked in the region nearby.</NAT_RustedArmyRaid_Groups>
 	<NAT_RustedArmyRaid_Immediate>They are attacking immediately.</NAT_RustedArmyRaid_Immediate>
 	<NAT_RustedArmyRaid_Stage>They will prepare before attack for some time.</NAT_RustedArmyRaid_Stage>
@@ -87,6 +90,7 @@
   <!--Settings-->
   <NAT_Setting_AllowRaid>Allow void awakening extensions</NAT_Setting_AllowRaid>
   <NAT_Setting_AllowRaid_Desc>Allow extra features in void awakening game ending.</NAT_Setting_AllowRaid_Desc>
+
 
 
 </LanguageData>

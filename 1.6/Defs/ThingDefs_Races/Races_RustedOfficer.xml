@@ -13,6 +13,7 @@
       <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
       <MinimumContainmentStrength>100</MinimumContainmentStrength>
       <StaggerDurationFactor>0</StaggerDurationFactor>
+      <NAT_CoreDropChance>0.35</NAT_CoreDropChance>
     </statBases>
     <race>
       <baseBodySize>1.6</baseBodySize>
@@ -203,7 +204,7 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
-    <combatPower>400</combatPower>
+    <combatPower>280</combatPower>
     <weaponMoney>9999~9999</weaponMoney>
     <modExtensions>
       <li Class="NAT.RustedPawnExtention">

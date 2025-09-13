@@ -27,7 +27,7 @@
       <li Class="CompProperties_HoldingPlatformTarget">
         <baseEscapeIntervalMtbDays>60</baseEscapeIntervalMtbDays>
       </li>
-	  <li Class="CompProperties_EffecterOnDeath">
+      <li Class="CompProperties_EffecterOnDeath">
         <effecterDef>NAT_RustedSoldierDeath</effecterDef>
       </li>
       <li Class="CompProperties_AttachPoints">
@@ -63,54 +63,63 @@
       <li Class="NAT.CompProperties_RustedShield">
         <maxHealth>80</maxHealth>
         <regenInterval>300</regenInterval>
-        <ticksToRestore>50000</ticksToRestore> <!--5/6 day-->
+        <ticksToRestore>50000</ticksToRestore>
+        <!--5/6 day-->
         <destroyedEffect>NAT_RustedSoldierDeath</destroyedEffect>
         <renderProps>
           <debugLabel>Rusted shield</debugLabel>
           <parentTagDef>Body</parentTagDef>
-			  <baseLayer>35</baseLayer>
-			  <pawnType>Any</pawnType>
+          <baseLayer>35</baseLayer>
+          <pawnType>Any</pawnType>
           <texPaths>
             <li>Things/Pawn/Armor/NAT_RustedArmor_A</li>
-			<li>Things/Pawn/Armor/NAT_RustedArmor_B</li>
+            <li>Things/Pawn/Armor/NAT_RustedArmor_B</li>
           </texPaths>
           <texSeed>1</texSeed>
-		  <overrideMeshSize>(2, 2)</overrideMeshSize>
-      </renderProps>
-      <statFactors>
-        <MoveSpeed>0.8</MoveSpeed>
-        <RangedCooldownFactor>1.1</RangedCooldownFactor>
-        <StaggerDurationFactor>0</StaggerDurationFactor>
-        <AimingDelayFactor>1.15</AimingDelayFactor>
-     </statFactors>
-		<statFactorsInactive>
-	      <MoveSpeed>1.1</MoveSpeed>
-	      <RangedCooldownFactor>0.9</RangedCooldownFactor>
-	      <StaggerDurationFactor>1.5</StaggerDurationFactor>
-	      <AimingDelayFactor>0.75</AimingDelayFactor>
-        <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-        <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
-		<MeleeCooldownFactor>0.7</MeleeCooldownFactor>
-	    </statFactorsInactive>
+          <overrideMeshSize>(2, 2)</overrideMeshSize>
+        </renderProps>
+        <statFactors>
+          <MoveSpeed>0.8</MoveSpeed>
+          <RangedCooldownFactor>1.1</RangedCooldownFactor>
+          <StaggerDurationFactor>0</StaggerDurationFactor>
+          <AimingDelayFactor>1.15</AimingDelayFactor>
+        </statFactors>
+        <statFactorsInactive>
+          <MoveSpeed>1.1</MoveSpeed>
+          <RangedCooldownFactor>0.9</RangedCooldownFactor>
+          <StaggerDurationFactor>1.5</StaggerDurationFactor>
+          <AimingDelayFactor>0.75</AimingDelayFactor>
+          <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+          <MeleeCooldownFactor>0.7</MeleeCooldownFactor>
+        </statFactorsInactive>
       </li>
       <li Class="NAT.CompProperties_RustedSoldier">
-		<interaction>NAT_RustedChat</interaction>
-		<canInteract>true</canInteract>
-		<hasHead>true</hasHead>
-		<drawData>
-            <dataNorth><offset>(0, 0, 0.15)</offset></dataNorth>
-            <dataEast><offset>(0.05, 0, 0.15)</offset></dataEast>
-            <dataSouth><offset>(0, 0, 0.15)</offset></dataSouth>
-            <dataWest><offset>(-0.05, 0, 0.15)</offset></dataWest>
-		</drawData>
-		<headTags>
-		  <li>Trooper</li>
-		</headTags>
-    <apparelTagsToAllow>
-		  <li>NAT_Rust_Belt</li>
-		</apparelTagsToAllow>
-     <skyfaller>NAT_RustedTrooperIncoming</skyfaller>
-	  </li>
+        <interaction>NAT_RustedChat</interaction>
+        <canInteract>true</canInteract>
+        <hasHead>true</hasHead>
+        <drawData>
+          <dataNorth>
+            <offset>(0, 0, 0.15)</offset>
+          </dataNorth>
+          <dataEast>
+            <offset>(0.05, 0, 0.15)</offset>
+          </dataEast>
+          <dataSouth>
+            <offset>(0, 0, 0.15)</offset>
+          </dataSouth>
+          <dataWest>
+            <offset>(-0.05, 0, 0.15)</offset>
+          </dataWest>
+        </drawData>
+        <headTags>
+          <li>Trooper</li>
+        </headTags>
+        <apparelTagsToAllow>
+          <li>NAT_Rust_Belt</li>
+        </apparelTagsToAllow>
+        <skyfaller>NAT_RustedTrooperIncoming</skyfaller>
+      </li>
       <li Class="NAT.CompProperties_RustedWorker">
         <skills>
           <Shooting>8</Shooting>
@@ -166,22 +175,22 @@
       <li>
         <texPath>Things/Pawn/Bodies/NAT_Trooper_A</texPath>
         <attachPoints>
-			<li>
-				<offset>(-.39, 0, .36)</offset>
-				<type>PlatformRestraint0</type>
-			</li>
-			<li>
-				<offset>(.3, 0, .33)</offset>
-				<type>PlatformRestraint1</type>
-			</li>
-			<li>
-				<offset>(.13, 0, -.43)</offset>
-				<type>PlatformRestraint2</type>
-			</li>
-			<li>
-				<offset>(-.15, 0, -.41)</offset>
-				<type>PlatformRestraint3</type>
-			</li>
+          <li>
+            <offset>(-.39, 0, .36)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.3, 0, .33)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.13, 0, -.43)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.15, 0, -.41)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
         </attachPoints>
       </li>
     </alternateGraphics>
@@ -194,7 +203,7 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
-    <combatPower>240</combatPower>
+    <combatPower>160</combatPower>
     <weaponMoney>9999~9999</weaponMoney>
     <combatEnhancingDrugsCount>-7~2</combatEnhancingDrugsCount>
   </PawnKindDef>

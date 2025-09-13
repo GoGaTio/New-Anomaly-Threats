@@ -12,6 +12,7 @@
       <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
       <MinimumContainmentStrength>110</MinimumContainmentStrength>
       <StaggerDurationFactor>0</StaggerDurationFactor>
+      <NAT_CoreDropChance>0.3</NAT_CoreDropChance>
     </statBases>
     <race>
       <body>NAT_RustTall</body>
@@ -201,7 +202,7 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
-    <combatPower>460</combatPower>
+    <combatPower>320</combatPower>
     <weaponMoney>9999~9999</weaponMoney>
     <combatEnhancingDrugsCount>-4~2</combatEnhancingDrugsCount>
   </PawnKindDef>

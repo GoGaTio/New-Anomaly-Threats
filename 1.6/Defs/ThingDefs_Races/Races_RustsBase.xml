@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
+
   <ThingDef Name="NAT_BaseRustedPawn" ParentName="BasePawn" Abstract="True">
     <thingClass>NAT.RustedPawn</thingClass>
     <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
@@ -24,13 +24,13 @@
     </statBases>
     <tradeability>None</tradeability>
     <hasTooltip>true</hasTooltip>
-    <hideStats>true</hideStats>
-    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <hideStats>true</hideStats>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <race>
       <thinkTreeMain>NAT_Rust</thinkTreeMain>
       <thinkTreeConstant>NAT_RustConstant</thinkTreeConstant>
       <nameGenerator>NAT_NamerRustedSoldier</nameGenerator>
-      <renderTree>NAT_RustedPawn</renderTree>
+      <renderTree>NAT_RustedPawn</renderTree>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1.5</baseHealthScale>
       <intelligence>ToolUser</intelligence>
@@ -72,7 +72,7 @@
           <canTargetMechs>true</canTargetMechs>
           <canTargetHumans>true</canTargetHumans>
         </wakeUpTargetingParams>
-      </li>
+      </li>
     </comps>
     <tools>
       <li>
@@ -86,7 +86,7 @@
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.2</chanceFactor>
       </li>
-	  <li>
+      <li>
         <label>left claw</label>
         <labelNoLocation>claw</labelNoLocation>
         <capacities>

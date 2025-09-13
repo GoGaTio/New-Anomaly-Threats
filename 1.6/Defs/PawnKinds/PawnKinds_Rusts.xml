@@ -21,7 +21,7 @@
     <weaponTags>
 	  <li>NAT_RustedGrenade</li>
     </weaponTags>
-    <combatPower>240</combatPower>
+    <combatPower>160</combatPower>
     <combatEnhancingDrugsCount>-10~2</combatEnhancingDrugsCount>
   </PawnKindDef>
   
@@ -40,7 +40,7 @@
     <weaponTags>
       <li>NAT_RustedSMG</li>
     </weaponTags>
-    <combatPower>280</combatPower>
+    <combatPower>190</combatPower>
     <combatEnhancingDrugsCount>-9~2</combatEnhancingDrugsCount>
   </PawnKindDef>
 
@@ -61,7 +61,7 @@
     <weaponTags>
       <li>NAT_RustedMelee</li>
     </weaponTags>
-    <combatPower>295</combatPower>
+    <combatPower>225</combatPower>
     <combatEnhancingDrugsCount>-7~2</combatEnhancingDrugsCount>
   </PawnKindDef>
   
@@ -97,7 +97,7 @@
     <weaponTags Inherit="False">
       <li>NAT_RustedBreach</li>
     </weaponTags>
-    <combatPower>230</combatPower>
+    <combatPower>160</combatPower>
   </PawnKindDef>
   
 </Defs>

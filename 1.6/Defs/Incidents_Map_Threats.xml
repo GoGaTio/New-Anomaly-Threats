@@ -16,6 +16,7 @@
     <category>ThreatBig</category>
     <minRefireDays>15</minRefireDays>
     <pointsScaleable>true</pointsScaleable>
+    <canOccurOnAllPlanetLayers>true</canOccurOnAllPlanetLayers>
   </IncidentDef>
   
   <IncidentDef ParentName="AnomalyIncidentBase">

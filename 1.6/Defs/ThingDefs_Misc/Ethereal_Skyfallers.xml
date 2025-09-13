@@ -1,10 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+<Defs>
+
+
 
   <ThingDef ParentName="SkyfallerBase">
     <defName>NAT_RustedTrooperIncoming</defName>
     <label>rusted trooper (incoming)</label>
-	<thingClass>NAT.Skyfaller_RustedChunk</thingClass>
+    <thingClass>NAT.Skyfaller_RustedChunk</thingClass>
     <graphicData>
       <texPath>Things/NAT_RustedTrooperIncoming</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -20,10 +22,10 @@
       <impactSound>WarpedObelisk_Impact</impactSound>
       <rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
       <motesPerCell>0</motesPerCell>
-      <explosionRadius>1</explosionRadius>
+      <explosionRadius>1.9</explosionRadius>
     </skyfaller>
   </ThingDef>
-  
+
   <ThingDef ParentName="SkyfallerBase">
     <defName>NAT_RustedMassIncoming</defName>
     <label>rusted mass (incoming)</label>
@@ -60,7 +62,7 @@
     </graphicData>
     <skyfaller>
       <movementType>ConstantSpeed</movementType>
-      <ticksToImpactRange>300~420</ticksToImpactRange>
+      <ticksToImpactRange>600~720</ticksToImpactRange>
       <anticipationSound>WarpedObelisk_Fall</anticipationSound>
       <anticipationSoundTicks>360</anticipationSoundTicks>
       <impactSound>WarpedObelisk_Impact</impactSound>
@@ -71,7 +73,7 @@
       <explosionDamageFactor>0.25</explosionDamageFactor>
     </skyfaller>
   </ThingDef>
-  
+
   <ThingDef ParentName="SkyfallerBase">
     <defName>NAT_RustedChunk1x1Incoming</defName>
     <label>rusted chunk (incoming)</label>
@@ -85,7 +87,7 @@
     </graphicData>
     <skyfaller>
       <movementType>ConstantSpeed</movementType>
-      <ticksToImpactRange>300~420</ticksToImpactRange>
+      <ticksToImpactRange>600~720</ticksToImpactRange>
       <anticipationSound>WarpedObelisk_Fall</anticipationSound>
       <anticipationSoundTicks>360</anticipationSoundTicks>
       <impactSound>WarpedObelisk_Impact</impactSound>
@@ -110,7 +112,7 @@
     </graphicData>
     <skyfaller>
       <movementType>ConstantSpeed</movementType>
-      <ticksToImpactRange>300~420</ticksToImpactRange>
+      <ticksToImpactRange>600~720</ticksToImpactRange>
       <anticipationSound>WarpedObelisk_Fall</anticipationSound>
       <anticipationSoundTicks>360</anticipationSoundTicks>
       <impactSound>WarpedObelisk_Impact</impactSound>
@@ -121,20 +123,27 @@
       <explosionDamageFactor>0.25</explosionDamageFactor>
     </skyfaller>
   </ThingDef>
-
+
+
   <ThingDef ParentName="SkyfallerBase">
     <defName>NAT_RustedChunk3x3Incoming</defName>
     <label>large rusted chunk (incoming)</label>
-    <thingClass>NAT.Skyfaller_RustedChunk</thingClass> 
+    <thingClass>NAT.Skyfaller_RustedChunk</thingClass>
     <size>(3, 3)</size>
     <skyfaller>
       <shadow>Things/Skyfaller/SkyfallerShadowRectangle</shadow>
       <shadowSize>(3.5, 3.5)</shadowSize>
-      <explosionRadius>4.5</explosionRadius>
+      <movementType>ConstantSpeed</movementType>
+      <ticksToImpactRange>600~720</ticksToImpactRange>
+      <anticipationSound>WarpedObelisk_Fall</anticipationSound>
+      <anticipationSoundTicks>360</anticipationSoundTicks>
+      <impactSound>WarpedObelisk_Impact</impactSound>
+      <rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+      <motesPerCell>0</motesPerCell>
+      <explosionRadius>6</explosionRadius>
       <explosionDamageFactor>0.25</explosionDamageFactor>
-      <cameraShake>1</cameraShake>
-      <ticksToImpactRange>180~270</ticksToImpactRange>
     </skyfaller>
-  </ThingDef>
+  </ThingDef>
+
 
 </Defs>

@@ -133,7 +133,7 @@ namespace NAT
             {
 				yield return g;
             }
-			yield return new Command_Action
+			/*yield return new Command_Action
 			{
 				defaultLabel = "DEV: + 0.05",
 				action = delegate
@@ -148,7 +148,7 @@ namespace NAT
 				{
 					def.building.turretTopOffset.y -= 0.05f;
 				}
-			};
+			};*/
 		}
     }
 }

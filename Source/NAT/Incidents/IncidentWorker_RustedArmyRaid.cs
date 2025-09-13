@@ -33,11 +33,13 @@ namespace NAT
 {
 	public class IncidentWorker_RustedArmyRaid : IncidentWorker
 	{
-		private static readonly SimpleCurve PointsFromPoints = new SimpleCurve
+		public static readonly SimpleCurve PointsFromPoints = new SimpleCurve
 		{
-			new CurvePoint(0f, 600f),
-			new CurvePoint(1000f, 1200f),
-			new CurvePoint(10000f, 10000f)
+			new CurvePoint(0f, 700f),
+			new CurvePoint(1000f, 950f),
+			new CurvePoint(5000f, 3700f),
+			new CurvePoint(10000f, 7000f),
+			new CurvePoint(14000f, 10000f)
 		};
 
 		private static readonly SimpleCurve GroupsChanceFromPoints = new SimpleCurve
@@ -50,6 +52,11 @@ namespace NAT
 		protected override bool TryExecuteWorker(IncidentParms parms)
 		{
 			Map map = (Map)parms.target;
+			if (!map.TileInfo.OnSurface)
+			{
+				RustedArmyUtility.ExecuteRaid(map, PointsFromPoints.Evaluate(parms.points), 1, false, true, null, null, true, Rand.Chance(0.5f));
+				return true;
+			}
 			RustedArmyUtility.ExecuteRaid(map, PointsFromPoints.Evaluate(parms.points), Rand.Chance(GroupsChanceFromPoints.Evaluate(parms.points)) ? new IntRange(2, 3).RandomInRange : 1, Rand.Chance(0.2f));
 			return true;
 		}

@@ -37,6 +37,9 @@
 
 	<!--Rusted army-->
 	<NAT_RustedArmyRaid>Налёт: Ржавая Армия</NAT_RustedArmyRaid>
+  <NAT_RustedArmyRaid_CenterDrop>Группа ржавчин приземляется прямо на поселение.</NAT_RustedArmyRaid_CenterDrop>
+  <NAT_RustedArmyRaid_RandomDrop>Ржавчины приземляются по всему региону.</NAT_RustedArmyRaid_RandomDrop>
+  <NAT_RustedArmyRaid_EdgeDrop>Группа ржавчин приземляется неподалёку.</NAT_RustedArmyRaid_EdgeDrop>
 	<NAT_RustedArmyRaid_NoGroups>Группа ржавчин расположилась поблизости.</NAT_RustedArmyRaid_NoGroups>
 	<NAT_RustedArmyRaid_Groups>{0} группы ржавчин расположилось поблизости.</NAT_RustedArmyRaid_Groups>
 	<NAT_RustedArmyRaid_Immediate>Они атакуют немедленно.</NAT_RustedArmyRaid_Immediate>
