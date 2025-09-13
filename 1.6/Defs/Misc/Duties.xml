@@ -71,12 +71,12 @@
           <targetAcquireRadius>65</targetAcquireRadius>
           <targetKeepRadius>72</targetKeepRadius>
         </li>
-        <li Class="JobGiver_AITrashColonyClose" />
-        <li Class="JobGiver_AITrashBuildingsDistant" />
+        <!--<li Class="JobGiver_AITrashColonyClose" />
+        <li Class="JobGiver_AITrashBuildingsDistant" />-->
         <li Class="JobGiver_AIGotoNearestHostile" />
-        <li Class="JobGiver_AITrashBuildingsDistant">
+        <!--<li Class="JobGiver_AITrashBuildingsDistant">
           <attackAllInert>true</attackAllInert>
-        </li>
+        </li>-->
         <li Class="JobGiver_AISapper">
           <canMineNonMineables>false</canMineNonMineables>
         </li>

@@ -35,7 +35,7 @@ namespace NAT
 	{
 		public static readonly SimpleCurve PointsFromPoints = new SimpleCurve
 		{
-			new CurvePoint(0f, 700f),
+			new CurvePoint(0f, 900f),
 			new CurvePoint(1000f, 950f),
 			new CurvePoint(5000f, 3700f),
 			new CurvePoint(10000f, 7000f),
@@ -52,7 +52,7 @@ namespace NAT
 		protected override bool TryExecuteWorker(IncidentParms parms)
 		{
 			Map map = (Map)parms.target;
-			if (!map.TileInfo.OnSurface)
+			if (!map.TileInfo.OnSurface || Rand.Chance(0.3f))
 			{
 				RustedArmyUtility.ExecuteRaid(map, PointsFromPoints.Evaluate(parms.points), 1, false, true, null, null, true, Rand.Chance(0.5f));
 				return true;
