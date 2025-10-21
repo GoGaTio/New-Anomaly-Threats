@@ -26,14 +26,19 @@
     <defName>NAT_RustedArmySiege</defName>
     <workerClass>PawnGroupKindWorker_Normal</workerClass>
   </PawnGroupKindDef>
-  
+
   <PawnGroupKindDef>
     <defName>NAT_RustedMassDrop</defName>
     <workerClass>PawnGroupKindWorker_Normal</workerClass>
   </PawnGroupKindDef>
-  
+
   <PawnGroupKindDef>
     <defName>NAT_RustedArmyDefence</defName>
+    <workerClass>PawnGroupKindWorker_Normal</workerClass>
+  </PawnGroupKindDef>
+
+  <PawnGroupKindDef>
+    <defName>NAT_RustedArmyBarracks</defName>
     <workerClass>PawnGroupKindWorker_Normal</workerClass>
   </PawnGroupKindDef>
 

@@ -142,16 +142,10 @@
     <size>(5,5)</size>
     <things>
       <NAT_RustedWall>
-        <positions>
-          <li>(2, 0, 2)</li>
-        </positions>
-        <chance>1</chance>
-      </NAT_RustedWall>
-      <NAT_RustedWall>
         <rects>
           <li>(1,1,3,3)</li>
         </rects>
-        <chance>0.9</chance>
+        <chance>1</chance>
       </NAT_RustedWall>
     </things>
   </PrefabDef>

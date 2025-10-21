@@ -136,13 +136,21 @@ namespace NAT
 			IntVec3 offset = ((!layoutStructureSketch.spawned) ? pos : (pos - layoutStructureSketch.center));
 			foreach(LayoutRoom r in layoutStructureSketch.structureLayout.Rooms)
             {
-				foreach(IntVec3 c in r.Cells)
-                {
-					map.terrainGrid.SetTerrain(c + offset, Def.terrainDef);
-					foreach (Thing item in c.GetThingList(map).ToList())
+				Thing.allowDestroyNonDestroyable = true;
+				try
+				{
+					foreach (IntVec3 c in r.Cells)
 					{
-						item.Destroy();
+						map.terrainGrid.SetTerrain(c + offset, Def.terrainDef);
+						foreach (Thing item in c.GetThingList(map).ToList())
+						{
+							item.Destroy();
+						}
 					}
+				}
+				finally
+				{
+					Thing.allowDestroyNonDestroyable = false;
 				}
             }
 			List<Thing> list = allSpawnedThings ?? new List<Thing>();
@@ -231,17 +239,17 @@ namespace NAT
 			List<IntVec3> edge = layoutStructureSketch.structureLayout.container.EdgeCells.ToList();
 			while (num < count && num2 > 0)
             {
-				if(layoutStructureSketch.structureLayout.Rooms.TryRandomElement((LayoutRoom x) => !list.Contains(x) && !x.HasLayoutDef(NATDefOf.NAT_CitadelCorridor) && !x.HasLayoutDef(NATDefOf.NAT_OutpostCorridor) && x.Corners.Any((IntVec3 y)=> edge.Contains(y)), out var room))
+				if(layoutStructureSketch.structureLayout.Rooms.InRandomOrder().TryRandomElement((LayoutRoom x) => !list.Contains(x) && !x.HasLayoutDef(NATDefOf.NAT_CitadelCorridor) && !x.HasLayoutDef(NATDefOf.NAT_OutpostCorridor) && x.Corners.Any((IntVec3 y)=> edge.Contains(y)), out var room))
                 {
 					list.Add(room);
 					CellRect rect = FindDoorRect(room, edge, out var rot);
-					if(rect == CellRect.Empty)
+					if(rect == CellRect.Empty || rect.ExpandedBy(1).Count((IntVec3 c)=>c.GetEdifice(map) == null) < 2)
                     {
 						continue;
                     }
 					if(rect.Count() != 2)
                     {
-						Log.Error("NAT - For some rason door rect has more than 2 cells");
+						Log.Error("NAT - For some reason door rect has more than 2 cells");
 						foreach(IntVec3 k in rect)
                         {
 							map.terrainGrid.SetTerrain(k, TerrainDefOf.Concrete);

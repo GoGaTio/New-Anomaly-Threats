@@ -273,21 +273,34 @@ namespace NAT
 
 		public float wanderRadius;
 
+		public string attackSignal = "";
+
+		public bool forceWakeUp = false;
+
+		public bool sleep = true;
+
 		public LordJob_DefendRust()
 		{
 		}
 
-		public LordJob_DefendRust(IntVec3 position, float wanderRadius, bool sendWokenUpMessage = true, bool awakeOnClamor = false)
+		public LordJob_DefendRust(IntVec3 position, float wanderRadius, bool sleep, bool sendWokenUpMessage = true, bool awakeOnClamor = false, bool forceWakeUp = false, string attackSignal = "")
 		{
 			this.sendWokenUpMessage = sendWokenUpMessage;
 			this.position = position;
 			this.wanderRadius = wanderRadius;
 			this.awakeOnClamor = awakeOnClamor;
+			this.forceWakeUp = forceWakeUp;
+			this.attackSignal = attackSignal;
+			this.sleep = sleep;
 		}
 
 		protected virtual LordToil GetIdleToil()
 		{
-			return new LordToil_Sleep();
+			if (sleep)
+			{
+				return new LordToil_Sleep();
+			}
+			return new LordToil_StageRust(position);
 		}
 
 		public override StateGraph CreateGraph()
@@ -299,7 +312,7 @@ namespace NAT
 			LordToil_AssaultColonyRust lordToil_AssaultColony = new LordToil_AssaultColonyRust();
 			stateGraph.AddToil(lordToil_AssaultColony);
 			Transition transition = new Transition(firstSource, lordToil_Stage);
-			transition.AddTrigger(new Trigger_Custom((TriggerSignal signal) => signal.type == TriggerSignalType.DormancyWakeup || (awakeOnClamor && signal.type == TriggerSignalType.Clamor)));
+			transition.AddTrigger(new Trigger_Custom((TriggerSignal signal) => sleep && (signal.type == TriggerSignalType.DormancyWakeup || (awakeOnClamor && signal.type == TriggerSignalType.Clamor))));
 			if (sendWokenUpMessage)
 			{
 				transition.AddPreAction(new TransitionAction_Message("MessageSleepingPawnsWokenUp".Translate("NAT_RustedSoldiers".Translate().CapitalizeFirst()).CapitalizeFirst(), MessageTypeDefOf.ThreatBig, null, 1f, AnyAsleep));
@@ -308,7 +321,7 @@ namespace NAT
 			stateGraph.AddTransition(transition);
 			Transition transition2 = new Transition(firstSource, lordToil_AssaultColony);
 			transition2.AddTrigger(new Trigger_PawnHarmed(1f, requireInstigatorWithFaction: false));
-			transition2.AddTrigger(new Trigger_Custom((TriggerSignal signal) => signal.type == TriggerSignalType.BuildingDamaged || signal.type == TriggerSignalType.BuildingLost || signal.signal.tag == "NAT_CrateOpened"));
+			transition2.AddTrigger(new Trigger_Custom((TriggerSignal signal) => signal.type == TriggerSignalType.BuildingDamaged || signal.type == TriggerSignalType.BuildingLost || signal.signal.tag == "NAT_CrateOpened" || (!attackSignal.NullOrEmpty() && signal.signal.tag == attackSignal && signal.signal.args.GetArg<bool>("wakeUp"))));
 			if (sendWokenUpMessage)
 			{
 				transition2.AddPreAction(new TransitionAction_Message("MessageSleepingPawnsWokenUp".Translate("NAT_RustedSoldiers".Translate().CapitalizeFirst()).CapitalizeFirst(), MessageTypeDefOf.ThreatBig, null, 1f, AnyAsleep));
@@ -317,7 +330,14 @@ namespace NAT
 			stateGraph.AddTransition(transition2);
 			Transition transition3 = new Transition(lordToil_Stage, lordToil_AssaultColony);
 			transition3.AddTrigger(new Trigger_PawnHarmed(1f, requireInstigatorWithFaction: false));
-			transition3.AddTrigger(new Trigger_Custom((TriggerSignal signal) => signal.type == TriggerSignalType.BuildingDamaged || signal.type == TriggerSignalType.BuildingLost));
+			transition3.AddTrigger(new Trigger_Custom((TriggerSignal signal) => signal.type == TriggerSignalType.BuildingDamaged || signal.type == TriggerSignalType.BuildingLost || (!attackSignal.NullOrEmpty() && signal.signal.tag == attackSignal)));
+			transition3.AddPostAction(new TransitionAction_Custom(delegate (Transition t)
+			{
+				foreach(Lord lord in t.Map.lordManager.lords)
+				{
+					lord.Notify_SignalReceived(new Signal("attackSignal", new NamedArgument(forceWakeUp, "wakeUp")));
+				}
+			}));
 			stateGraph.AddTransition(transition3);
 			Transition transition4 = new Transition(lordToil_AssaultColony, lordToil_Stage);
 			transition4.AddTrigger(new Trigger_TicksPassedWithoutHarm(1200));
@@ -356,6 +376,23 @@ namespace NAT
 			Scribe_Values.Look(ref awakeOnClamor, "awakeOnClamor", defaultValue: false);
 			Scribe_Values.Look(ref position, "position");
 			Scribe_Values.Look(ref wanderRadius, "wanderRadius", 0f);
+		}
+	}
+
+	public class Trigger_TicksPassedWithoutHarm : Trigger_TicksPassed
+	{
+		public Trigger_TicksPassedWithoutHarm(int tickLimit)
+			: base(tickLimit)
+		{
+		}
+
+		public override bool ActivateOn(Lord lord, TriggerSignal signal)
+		{
+			if (Trigger_PawnHarmed.SignalIsHarm(signal))
+			{
+				base.Data.ticksPassed = 0;
+			}
+			return base.ActivateOn(lord, signal);
 		}
 	}
 

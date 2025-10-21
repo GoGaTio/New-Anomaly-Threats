@@ -69,7 +69,7 @@ namespace NAT
 					faction = Faction.OfEntities
 				}).ToList();
 				CellRect rect = new CellRect(cell.x, cell.z, 2, 2).ExpandedBy(1);
-				Lord lord = LordMaker.MakeNewLord(Faction.OfEntities, new LordJob_DefendRust(cell, 5f), map, list);
+				Lord lord = LordMaker.MakeNewLord(Faction.OfEntities, new LordJob_DefendRust(cell, 5f, true), map, list);
 				PrefabUtility.SpawnPrefab(NATDefOf.NAT_RustedAutoTurretLabyrinth, map, cell, NATDefOf.NAT_RustedTurret_Auto.defaultPlacingRot, Faction.OfEntities, null, null , delegate(Thing t)
 				{
 					if(t.TryGetComp<CompCanBeDormant>(out var comp))
@@ -256,4 +256,48 @@ namespace NAT
 			}
 		}
 	}
+	public class RoomContents_RustedPawns : RoomContents_RustedRegular
+	{
+		public virtual PawnGroupKindDef groupKindDef => NATDefOf.NAT_RustedArmyDefence;
+
+		public virtual bool Sleep => false;
+
+		public virtual bool ForceWakeUp => false;
+
+		public virtual float WanderRadius(LayoutRoom room)
+		{
+			CellRect rect = room.Boundary;
+			return Mathf.Max(rect.Height / 2f, rect.Width / 2f);
+		}
+
+		public override void FillRoom(Map map, LayoutRoom room, Faction faction, float? threatPoints = null)
+		{
+			base.FillRoom(map, room, faction, threatPoints);
+			List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(new PawnGroupMakerParms
+			{
+				groupKind = groupKindDef,
+				points = new FloatRange(300f, 500f).RandomInRange,
+				faction = Faction.OfEntities
+			}).ToList();
+			Lord lord = LordMaker.MakeNewLord(Faction.OfEntities, new LordJob_DefendRust(room.Boundary.CenterCell, WanderRadius(room), Sleep, true, false, ForceWakeUp, "NAT_Rusts"), map, list);
+			List<IntVec3> cells = new List<IntVec3>();
+			foreach (Pawn p in list)
+			{
+				if (room.TryGetRandomCellInRoom(out var cell, 2, (c) => !cells.Contains(c)))
+				{
+					cells.Add(cell);
+					GenPlace.TryPlaceThing(p, cell, map, ThingPlaceMode.Near);
+				}
+			}
+		}
+	}
+
+	public class RoomContents_RustedBarracks : RoomContents_RustedPawns
+	{
+		public override PawnGroupKindDef groupKindDef => NATDefOf.NAT_RustedArmyBarracks;
+
+		public override bool Sleep => true;
+
+	}
+
 }

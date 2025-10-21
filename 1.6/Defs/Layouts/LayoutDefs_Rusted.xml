@@ -72,8 +72,8 @@
     <defName>NAT_RustedCitadel</defName>
     <workerClass>NAT.LayoutWorker_RustedBase</workerClass>
     <clearRoomsEntirely>true</clearRoomsEntirely>
-    <minRoomWidth>7</minRoomWidth>
-    <minRoomHeight>7</minRoomHeight>
+    <minRoomWidth>9</minRoomWidth>
+    <minRoomHeight>9</minRoomHeight>
     <wallDef>NAT_RustedWall</wallDef>
     <doorDef>NAT_RustedDoor</doorDef>
     <terrainDef>NAT_RustedFloor</terrainDef>
