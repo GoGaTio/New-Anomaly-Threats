@@ -6,9 +6,179 @@
     <root Class="ThingSetMaker_Sum">
       <options>
 
+        <li>
+          <chance>0.6</chance>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>Silver</li>
+                </thingDefs>
+              </filter>
+              <countRange>200~700</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li>
+          <chance>0.3</chance>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>Silver</li>
+                </thingDefs>
+              </filter>
+              <countRange>100~1000</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li>
+          <chance>0.05</chance>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>Silver</li>
+                </thingDefs>
+              </filter>
+              <countRange>100~1000</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li>
+          <chance>0.4</chance>
+          <thingSetMaker Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+              <filter>
+                <categories>
+                  <li>ResourcesRaw</li>
+                </categories>
+                <disallowCheaperThan>7</disallowCheaperThan>
+                <thingSetMakerTagsToDisallow>
+                  <li>RewardStandardHighFreq</li>
+                  <li>RewardStandardCore</li>
+                  <li>NonStandardReward</li>
+                </thingSetMakerTagsToDisallow>
+              </filter>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li>
+          <chance>0.25</chance>
+          <thingSetMaker Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+              <filter>
+                <categories>
+                  <li>ResourcesRaw</li>
+                </categories>
+                <disallowCheaperThan>7</disallowCheaperThan>
+                <thingSetMakerTagsToDisallow>
+                  <li>RewardStandardHighFreq</li>
+                  <li>RewardStandardCore</li>
+                  <li>NonStandardReward</li>
+                </thingSetMakerTagsToDisallow>
+              </filter>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li>
+          <chance>0.25</chance>
+          <thingSetMaker Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+              <maxThingMarketValue>300</maxThingMarketValue>
+              <filter>
+                <categories>
+                  <li>Weapons</li>
+                </categories>
+                <disallowedThingDefs>
+                  <li>WoodLog</li>
+                  <li>ElephantTusk</li>
+                </disallowedThingDefs>
+                <thingSetMakerTagsToDisallow>
+                  <li>RewardStandardHighFreq</li>
+                  <li>RewardStandardCore</li>
+                </thingSetMakerTagsToDisallow>
+              </filter>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li>
+          <chance>0.2</chance>
+          <thingSetMaker Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+              <maxThingMarketValue>300</maxThingMarketValue>
+              <filter>
+                <categories>
+                  <li>Weapons</li>
+                </categories>
+                <disallowedThingDefs>
+                  <li>WoodLog</li>
+                  <li>ElephantTusk</li>
+                </disallowedThingDefs>
+                <thingSetMakerTagsToDisallow>
+                  <li>RewardStandardHighFreq</li>
+                  <li>RewardStandardCore</li>
+                </thingSetMakerTagsToDisallow>
+              </filter>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li>
+          <chance>0.25</chance>
+          <thingSetMaker Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+              <maxThingMarketValue>300</maxThingMarketValue>
+              <filter>
+                <categories>
+                  <li>Apparel</li>
+                </categories>
+                <thingSetMakerTagsToDisallow>
+                  <li>RewardStandardHighFreq</li>
+                  <li>RewardStandardCore</li>
+                </thingSetMakerTagsToDisallow>
+              </filter>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li>
+          <chance>0.3</chance>
+          <thingSetMaker Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+              <maxThingMarketValue>300</maxThingMarketValue>
+              <filter>
+                <categories>
+                  <li>Apparel</li>
+                </categories>
+                <thingSetMakerTagsToDisallow>
+                  <li>RewardStandardHighFreq</li>
+                  <li>RewardStandardCore</li>
+                </thingSetMakerTagsToDisallow>
+              </filter>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li>
+          <chance>0.25</chance>
+          <thingSetMaker Class="ThingSetMaker_RandomGeneralGoods" />
+        </li>
+
+        <li>
+          <chance>0.15</chance>
+          <thingSetMaker Class="ThingSetMaker_RandomGeneralGoods" />
+        </li>
+        
         <!-- Artifacts -->
         <li>
-          <chance>0.7</chance>
+          <chance>0.1</chance>
           <thingSetMaker Class="ThingSetMaker_Count">
             <fixedParams>
               <filter>
@@ -21,9 +191,47 @@
           </thingSetMaker>
         </li>
 
+        <li>
+          <chance>0.2</chance>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <categories>
+                  <li>Artifacts</li>
+                </categories>
+              </filter>
+              <countRange>1~2</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li>
+          <chance>0.1</chance>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <categories>
+                  <li>Artifacts</li>
+                </categories>
+              </filter>
+              <countRange>1~2</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li MayRequire="Ludeon.RimWorld.Odyssey">
+          <chance>0.1</chance>
+          <thingSetMaker Class="ThingSetMaker_UniqueWeapon" />
+        </li>
+
+        <li MayRequire="Ludeon.RimWorld.Odyssey">
+          <chance>0.05</chance>
+          <thingSetMaker Class="ThingSetMaker_UniqueWeapon" />
+        </li>
+
         <!-- Misc cool items -->
         <li>
-          <chance>0.5</chance>
+          <chance>0.15</chance>
           <thingSetMaker Class="ThingSetMaker_Count">
             <fixedParams>
               <qualityGenerator>Reward</qualityGenerator>
@@ -65,7 +273,7 @@
         <!-- Techprints -->
         <!-- note this is intended to ignore player needs entirely, it gives entirely random techprints -->
         <li>
-          <chance>0.5</chance>
+          <chance>0.05</chance>
           <thingSetMaker Class="ThingSetMaker_Count">
             <fixedParams>
               <filter>
@@ -79,7 +287,7 @@
 
         <!-- Luciferium -->
         <li>
-          <chance>0.35</chance>
+          <chance>0.15</chance>
           <thingSetMaker Class="ThingSetMaker_StackCount">
             <fixedParams>
               <filter>
@@ -94,7 +302,7 @@
 
         <!-- Advanced components -->
         <li>
-          <chance>0.35</chance>
+          <chance>0.15</chance>
           <thingSetMaker Class="ThingSetMaker_StackCount">
             <fixedParams>
               <filter>
@@ -109,7 +317,7 @@
 
         <!-- Ultratech meds -->
         <li>
-          <chance>0.35</chance>
+          <chance>0.15</chance>
           <thingSetMaker Class="ThingSetMaker_StackCount">
             <fixedParams>
               <filter>

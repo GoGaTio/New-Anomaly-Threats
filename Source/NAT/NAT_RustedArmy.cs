@@ -259,11 +259,105 @@ namespace NAT
 		}
 	}
 
-	
 
-	
 
-	
+
+
+	public class LordJob_DefendRust : LordJob
+	{
+		private bool sendWokenUpMessage;
+
+		public bool awakeOnClamor;
+
+		public IntVec3 position;
+
+		public float wanderRadius;
+
+		public LordJob_DefendRust()
+		{
+		}
+
+		public LordJob_DefendRust(IntVec3 position, float wanderRadius, bool sendWokenUpMessage = true, bool awakeOnClamor = false)
+		{
+			this.sendWokenUpMessage = sendWokenUpMessage;
+			this.position = position;
+			this.wanderRadius = wanderRadius;
+			this.awakeOnClamor = awakeOnClamor;
+		}
+
+		protected virtual LordToil GetIdleToil()
+		{
+			return new LordToil_Sleep();
+		}
+
+		public override StateGraph CreateGraph()
+		{
+			StateGraph stateGraph = new StateGraph();
+			LordToil firstSource = (stateGraph.StartingToil = GetIdleToil());
+			LordToil_StageRust lordToil_Stage = new LordToil_StageRust(position);
+			stateGraph.AddToil(lordToil_Stage);
+			LordToil_AssaultColonyRust lordToil_AssaultColony = new LordToil_AssaultColonyRust();
+			stateGraph.AddToil(lordToil_AssaultColony);
+			Transition transition = new Transition(firstSource, lordToil_Stage);
+			transition.AddTrigger(new Trigger_Custom((TriggerSignal signal) => signal.type == TriggerSignalType.DormancyWakeup || (awakeOnClamor && signal.type == TriggerSignalType.Clamor)));
+			if (sendWokenUpMessage)
+			{
+				transition.AddPreAction(new TransitionAction_Message("MessageSleepingPawnsWokenUp".Translate("NAT_RustedSoldiers".Translate().CapitalizeFirst()).CapitalizeFirst(), MessageTypeDefOf.ThreatBig, null, 1f, AnyAsleep));
+			}
+			transition.AddPostAction(new TransitionAction_WakeAll());
+			stateGraph.AddTransition(transition);
+			Transition transition2 = new Transition(firstSource, lordToil_AssaultColony);
+			transition2.AddTrigger(new Trigger_PawnHarmed(1f, requireInstigatorWithFaction: false));
+			transition2.AddTrigger(new Trigger_Custom((TriggerSignal signal) => signal.type == TriggerSignalType.BuildingDamaged || signal.type == TriggerSignalType.BuildingLost || signal.signal.tag == "NAT_CrateOpened"));
+			if (sendWokenUpMessage)
+			{
+				transition2.AddPreAction(new TransitionAction_Message("MessageSleepingPawnsWokenUp".Translate("NAT_RustedSoldiers".Translate().CapitalizeFirst()).CapitalizeFirst(), MessageTypeDefOf.ThreatBig, null, 1f, AnyAsleep));
+			}
+			transition2.AddPostAction(new TransitionAction_WakeAll());
+			stateGraph.AddTransition(transition2);
+			Transition transition3 = new Transition(lordToil_Stage, lordToil_AssaultColony);
+			transition3.AddTrigger(new Trigger_PawnHarmed(1f, requireInstigatorWithFaction: false));
+			transition3.AddTrigger(new Trigger_Custom((TriggerSignal signal) => signal.type == TriggerSignalType.BuildingDamaged || signal.type == TriggerSignalType.BuildingLost));
+			stateGraph.AddTransition(transition3);
+			Transition transition4 = new Transition(lordToil_AssaultColony, lordToil_Stage);
+			transition4.AddTrigger(new Trigger_TicksPassedWithoutHarm(1200));
+			stateGraph.AddTransition(transition4);
+			return stateGraph;
+		}
+
+		private bool AnyAsleep()
+		{
+			for (int i = 0; i < lord.ownedPawns.Count; i++)
+			{
+				if (lord.ownedPawns[i].Spawned && !lord.ownedPawns[i].Dead && !lord.ownedPawns[i].Awake())
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+
+		/*public override bool ShouldRemovePawn(Pawn p, PawnLostCondition reason)
+		{
+			if (!p.Dead)
+			{
+				CompCanBeDormant compCanBeDormant = p.TryGetComp<CompCanBeDormant>();
+				if (compCanBeDormant != null && !compCanBeDormant.Awake)
+				{
+					return false;
+				}
+			}
+			return base.ShouldRemovePawn(p, reason);
+		}*/
+
+		public override void ExposeData()
+		{
+			Scribe_Values.Look(ref sendWokenUpMessage, "sendWokenUpMessage", defaultValue: true);
+			Scribe_Values.Look(ref awakeOnClamor, "awakeOnClamor", defaultValue: false);
+			Scribe_Values.Look(ref position, "position");
+			Scribe_Values.Look(ref wanderRadius, "wanderRadius", 0f);
+		}
+	}
 
 	public class LordJob_AssistColony_Rust : LordJob
 	{

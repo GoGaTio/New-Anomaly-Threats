@@ -10,6 +10,13 @@
   </Operation>
 
   <Operation Class="PatchOperationAdd">
+    <xpath>Defs/LayoutDef[defName = "Labyrinth"]/roomDefs</xpath>
+    <value>
+      <NAT_LabyrinthRustedOutpost>0.01</NAT_LabyrinthRustedOutpost>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName = "Nociosphere"]/killedLeavings</xpath>
     <value>
       <NAT_PainClot>60</NAT_PainClot>

@@ -4,25 +4,25 @@
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/DMS.HeavyEquippableDef[defName="HeavyAutomatroid"]/EquippableByRace</xpath>
     <match Class="PatchOperationSequence">
-			<operations>
+      <operations>
 
-         <li Class="PatchOperationAdd">
-           <xpath>Defs/DMS.HeavyEquippableDef[defName="AverageHumanCanUse" or defName="LightAutomatroid" or defName="StandardAutomatroid"]/EquippableByRace</xpath>
-           <value>
-             <li>NAT_RustedSoldier</li>
-             <li>NAT_RustedTrooper</li>
-           </value>
-         </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/DMS.HeavyEquippableDef[defName="AverageHumanCanUse" or defName="LightAutomatroid" or defName="StandardAutomatroid"]/EquippableByRace</xpath>
+          <value>
+            <li>NAT_RustedSoldier</li>
+            <li>NAT_RustedTrooper</li>
+          </value>
+        </li>
 
-         <li Class="PatchOperationAdd">
-           <xpath>Defs/DMS.HeavyEquippableDef[defName="HeavyAutomatroid"]/EquippableByRace</xpath>
-           <value>
-             <li>NAT_RustedOfficer</li>
-           </value>
-         </li> 
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/DMS.HeavyEquippableDef[defName="HeavyAutomatroid"]/EquippableByRace</xpath>
+          <value>
+            <li>NAT_RustedOfficer</li>
+          </value>
+        </li>
 
-			</operations>
-	  </match>
+      </operations>
+    </match>
   </Operation>
 
 </Patch>

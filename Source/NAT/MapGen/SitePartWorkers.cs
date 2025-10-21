@@ -57,7 +57,7 @@ namespace NAT
 {
 	public class SitePartWorker_CollectorLair : SitePartWorker
 	{
-        /*public override string GetPostProcessedThreatLabel(Site site, SitePart sitePart)
+		/*public override string GetPostProcessedThreatLabel(Site site, SitePart sitePart)
         {
 			if(sitePart.parms is CollectorLairParams p)
             {
@@ -77,6 +77,14 @@ namespace NAT
 				return "Parms is not CollectorLairParams";
 			}
         }*/
+
+		public override void PostMapGenerate(Map map)
+		{
+			base.PostMapGenerate(map);
+			MapGenUtility.DestroyTurrets(map);
+			MapGenUtility.DestroyProcessedFood(map);
+			MapGenUtility.ForbidAllItems(map);
+		}
     }
 
 	public class SitePartWorker_DistressCall_RustedArmy : SitePartWorker_DistressCall
@@ -157,6 +165,10 @@ namespace NAT
 
 	public class SitePartWorker_RustedCitadel : SitePartWorker
 	{
-		
+		public override void Init(Site site, SitePart sitePart)
+		{
+			base.Init(site, sitePart);
+			site.doorsAlwaysOpenForPlayerPawns = true;
+		}
 	}
 }

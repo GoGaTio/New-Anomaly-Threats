@@ -1,31 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--<ThingDef Name="ActiveDropPod">
-    <defName>NAT_RustedConstruct</defName>
-    <label>rusted construct</label>
-    <category>Item</category>
-    <drawerType>MapMeshAndRealTime</drawerType>
-    <thingClass>NAT.RustedConstruct</thingClass>
-    <scatterableOnMapGen>false</scatterableOnMapGen>
+  <ThingDef ParentName="EtherealThingBase">
+    <defName>NAT_RustedBoostField</defName>
+    <label>spark field</label>
+    <description>Marks the place where you intend to build a monument. Once placed, this cannot be moved.</description>
+    <thingClass>NAT.RustedBoostField</thingClass>
     <tickerType>Normal</tickerType>
-    <soundOpen>DropPod_Open</soundOpen>
-    <graphicData>
-      <texPath>Things/Special/DropPod</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.9</drawSize>
-      <shadowData>
-        <volume>(0.8, 0.6, 0.8)</volume>
-      </shadowData>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <blockWind>true</blockWind>
-    <useHitPoints>true</useHitPoints>
-    <statBases>
-      <MaxHitPoints>500</MaxHitPoints>
-      <Flammability>0</Flammability>
-    </statBases>
+    <size>(11,11)</size>
+    <rotatable>true</rotatable>
     <selectable>true</selectable>
-  </ThingDef>-->
-  
+    <!--<hasCustomRectForSelector>true</hasCustomRectForSelector>-->
+    <drawerType>None</drawerType>
+    <canLoadIntoCaravan>false</canLoadIntoCaravan>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+  </ThingDef>
+
 </Defs>

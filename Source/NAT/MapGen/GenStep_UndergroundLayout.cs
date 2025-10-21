@@ -53,27 +53,81 @@ using HarmonyLib;
 
 namespace NAT
 {
+	public class GenStep_AncientRuinSingle : GenStep_BaseRuins
+	{
+		private LayoutDef layoutDef;
+
+		private static readonly FloatRange BlastMarksPer10K = new FloatRange(2f, 6f);
+
+		public override int SeedPart => 9164521;
+
+		protected override LayoutDef LayoutDef => layoutDef;
+
+		protected override int RegionSize => 45;
+
+		protected override FloatRange DefaultMapFillPercentRange => new FloatRange(0.15f, 0.3f);
+
+		protected override FloatRange MergeRange => new FloatRange(0.1f, 0.35f);
+
+		protected override int MoveRangeLimit => 3;
+
+		protected override int ContractLimit => 3;
+
+		protected override int MinRegionSize => 14;
+
+		protected override Faction Faction => null;
+
+		protected override IEnumerable<CellRect> GetRects(CellRect area, Map map)
+		{
+			yield return area;
+		}
+
+		protected override CellRect GetBounds(Map map)
+		{
+			return map.Center.RectAbout(50, 60, Rot4.Random);
+		}
+
+		public override void GenerateRuins(Map map, GenStepParams parms, FloatRange mapFillPercentRange)
+		{
+			base.GenerateRuins(map, parms, mapFillPercentRange);
+			MapGenUtility.SpawnScatter(map, ThingDefOf.Filth_BlastMark, BlastMarksPer10K);
+		}
+	}
 	public class GenStep_UndergroundEntrance : GenStep
 	{
 		public ThingDef entranceDef;
 
 		public bool trySpawnInRoom;
 
+		public bool trySpawnInSettlement;
+
+		public bool trySpawnInRect;
+
 		public override int SeedPart => 1234731256;
 
 		public override void Generate(Map map, GenStepParams parms)
 		{
 			IntVec3 cell = IntVec3.Invalid;
-			if (trySpawnInRoom)
+			if ((trySpawnInSettlement && MapGenerator.TryGetVar<CellRect>("SettlementRect", out var rect)) || (trySpawnInRect && (rect = MapGenerator.UsedRects.Last()) != null))
+			{
+				if (trySpawnInRoom)
+				{
+					if(!trySpawnInRoom || !rect.TryFindRandomCell(out cell, (IntVec3 c) => Validator(c, map, mustBeInRoom: true)))
+					{
+						rect.TryFindRandomCell(out cell, (IntVec3 c) => Validator(c, map, mustBeInRoom: false));
+					}
+				}
+			}
+			else if (trySpawnInRoom)
 			{
 				CellFinder.TryFindRandomCell(map, (IntVec3 c) => Validator(c, map, mustBeInRoom: true), out cell);
 			}
-			if (cell.IsValid)
+			if (!cell.IsValid)
             {
 				CellFinder.TryFindRandomCell(map, (IntVec3 c) => Validator(c, map, mustBeInRoom: false), out cell);
 			}
 			int tick = Find.TickManager.TicksGame;
-			foreach(IntVec3 c in CellRect.FromCell(cell).Cells)
+			foreach(IntVec3 c in CellRect.FromCell(cell).ExpandedBy(2).Cells)
             {
 				if(Rand.ChanceSeeded(0.9f, tick))
                 {
@@ -101,6 +155,10 @@ namespace NAT
 				return false;
 			}
 			if (!map.generatorDef.isUnderground && !map.reachability.CanReachMapEdge(c, TraverseMode.PassDoors))
+			{
+				return false;
+			}
+			if (CellRect.FromCell(c).ExpandedBy(1).Cells.Any((x) => x.Impassable(map)))
 			{
 				return false;
 			}

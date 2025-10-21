@@ -126,12 +126,9 @@
         <severity>0.4</severity>
       </li>
     </startingHediffs>
-
     <race>NAT_RustedSoldier</race>
-
     <alternateGraphicChance>0.5</alternateGraphicChance>
     <alternateGraphics>
-
       <li>
         <texPath>Things/Pawn/Bodies/NAT_Soldier_B</texPath>
         <attachPoints>
@@ -153,7 +150,6 @@
           </li>
         </attachPoints>
       </li>
-
       <!--<li>
         <texPath>Things/Pawn/Bodies/NAT_Soldier_C</texPath>
         <attachPoints>
@@ -175,7 +171,6 @@
           </li>
         </attachPoints>
       </li>-->
-
     </alternateGraphics>
     <lifeStages>
       <li>
@@ -184,6 +179,10 @@
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2</drawSize>
         </bodyGraphicData>
+        <silhouetteGraphicData>
+          <texPath>Things/Pawn/NAT_RustedSoldier_Icon</texPath>
+          <drawSize>2</drawSize>
+        </silhouetteGraphicData>
       </li>
     </lifeStages>
     <combatPower>170</combatPower>

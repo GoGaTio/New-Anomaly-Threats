@@ -7,10 +7,10 @@
     <description>A solid rusted wall.</description>
     <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <filthLeaving>NAT_Filth_RustedDebris</filthLeaving> 
+    <filthLeaving>NAT_Filth_RustedDebris</filthLeaving>
     <designationCategory IsNull="True"/>
     <stuffCategories Inherit="False"/>
-	<costStuffCount Inherit="False"/>
+    <costStuffCount Inherit="False"/>
     <damageMultipliers Inherit="False">
       <li>
         <damageDef>Bomb</damageDef>
@@ -41,7 +41,7 @@
       <Beauty>-4</Beauty>
       <Flammability>1</Flammability>
     </statBases>
-  </ThingDef> 
+  </ThingDef>
 
   <ThingDef ParentName="DoorBase">
     <defName>NAT_RustedDoor</defName>
@@ -85,7 +85,7 @@
     <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
     <filthLeaving>NAT_Filth_RustedDebris</filthLeaving>
   </ThingDef>
-  
+
   <ThingDef ParentName="DoorBase">
     <defName>NAT_RustedDoor_Double</defName>
     <label>rusted door</label>

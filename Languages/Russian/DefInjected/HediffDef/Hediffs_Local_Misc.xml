@@ -11,7 +11,7 @@
   <!-- EN: This rust durability is amplified by rusted activator. -->
   <NAT_ActivatedDurability.description>Прочность этой ржавчины усилена ржавым активатором.</NAT_ActivatedDurability.description>
   
-  <!-- EN: actvated regeneration -->
+  <!-- EN: activated regeneration -->
   <NAT_ActivatedRegeneration.label>активированная регенерация</NAT_ActivatedRegeneration.label>
   <!-- EN: This rust regeneration is amplified by rusted activator. -->
   <NAT_ActivatedRegeneration.description>Регенерация этой ржавчины усилена ржавым активатором.</NAT_ActivatedRegeneration.description>
@@ -20,5 +20,10 @@
   <NAT_ActivatedSpeed.label>активированная скорость</NAT_ActivatedSpeed.label>
   <!-- EN: This rust moving speed is amplified by rusted activator. -->
   <NAT_ActivatedSpeed.description>Скорость движения этой ржавчины усилена ржавым активатором.</NAT_ActivatedSpeed.description>
+
+  <!-- EN: activated stability -->
+  <NAT_ActivatedStability.label>активированная стабильность</NAT_ActivatedStability.label>
+  <!-- EN: This rust core is stabilized by rusted activator. -->
+  <NAT_ActivatedStability.description>Стабильность ядра этой ржавчины усилена ржавым активатором.</NAT_ActivatedStability.description>
   
 </LanguageData>

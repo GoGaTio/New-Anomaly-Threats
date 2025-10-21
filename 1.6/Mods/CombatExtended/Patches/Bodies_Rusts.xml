@@ -4,56 +4,56 @@
 	<!-- ========== Add armor coverage ========== -->
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BodyDef[defName="NAT_RustHumanoid" or defName="NAT_RustedOfficer"]/corePart/groups</xpath>
+		<xpath>Defs/BodyDef[defName="NAT_Rust" or defName="NAT_RustFat" or defName="NAT_RustTall"]/corePart/groups</xpath>
 		<value>
 			<li>CoveredByNaturalArmor</li>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BodyDef[defName="NAT_RustHumanoid" or defName="NAT_RustedOfficer"]/corePart/parts/li[def="NAT_RustedHead"]/groups</xpath>
+		<xpath>Defs/BodyDef[defName="NAT_Rust" or defName="NAT_RustFat" or defName="NAT_RustTall"]/corePart/parts/li[def="NAT_RustedHead"]/groups</xpath>
 		<value>
 			<li>CoveredByNaturalArmor</li>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BodyDef[defName="NAT_RustHumanoid" or defName="NAT_RustedOfficer"]/corePart/parts/li[def="NAT_RustedShoulder"]/groups</xpath>
+		<xpath>Defs/BodyDef[defName="NAT_Rust" or defName="NAT_RustFat" or defName="NAT_RustTall"]/corePart/parts/li[def="NAT_RustedShoulder"]/groups</xpath>
 		<value>
 			<li>CoveredByNaturalArmor</li>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BodyDef[defName="NAT_RustHumanoid" or defName="NAT_RustedOfficer"]/corePart/parts/li[def="NAT_RustedShoulder"]/parts/li[def="NAT_RustedArm"]/groups</xpath>
+		<xpath>Defs/BodyDef[defName="NAT_Rust" or defName="NAT_RustFat" or defName="NAT_RustTall"]/corePart/parts/li[def="NAT_RustedShoulder"]/parts/li[def="NAT_RustedArm"]/groups</xpath>
 		<value>
 			<li>CoveredByNaturalArmor</li>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BodyDef[defName="NAT_RustHumanoid" or defName="NAT_RustedOfficer"]/corePart/parts/li[def="NAT_RustedShoulder"]/parts/li[def="NAT_RustedArm"]/parts/li[def="NAT_RustedFinger"]/groups</xpath>
+		<xpath>Defs/BodyDef[defName="NAT_Rust" or defName="NAT_RustFat" or defName="NAT_RustTall"]/corePart/parts/li[def="NAT_RustedShoulder"]/parts/li[def="NAT_RustedArm"]/parts/li[def="NAT_RustedFinger"]/groups</xpath>
 		<value>
 			<li>CoveredByNaturalArmor</li>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BodyDef[defName="NAT_RustHumanoid" or defName="NAT_RustedOfficer"]/corePart/parts/li[def="NAT_RustedLeg"]/groups</xpath>
+		<xpath>Defs/BodyDef[defName="NAT_Rust" or defName="NAT_RustFat" or defName="NAT_RustTall"]/corePart/parts/li[def="NAT_RustedLeg"]/groups</xpath>
 		<value>
 			<li>CoveredByNaturalArmor</li>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BodyDef[defName="NAT_RustHumanoid" or defName="NAT_RustedOfficer"]/corePart/parts/li[def="NAT_RustedLeg"]/parts/li[def="NAT_RustedFoot"]/groups</xpath>
+		<xpath>Defs/BodyDef[defName="NAT_Rust" or defName="NAT_RustFat" or defName="NAT_RustTall"]/corePart/parts/li[def="NAT_RustedLeg"]/parts/li[def="NAT_RustedFoot"]/groups</xpath>
 		<value>
 			<li>CoveredByNaturalArmor</li>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/BodyDef[defName="NAT_RustHumanoid" or defName="NAT_RustedOfficer"]/corePart/parts/li[def="NAT_RustedHead"]/parts/li[def="NAT_RustedEyeSocket"]/groups</xpath>
+		<xpath>Defs/BodyDef[defName="NAT_Rust" or defName="NAT_RustFat" or defName="NAT_RustTall"]/corePart/parts/li[def="NAT_RustedHead"]/parts/li[def="NAT_RustedEyeSocket"]/groups</xpath>
 		<value>
 			<li>CoveredByNaturalArmor</li>
 		</value>

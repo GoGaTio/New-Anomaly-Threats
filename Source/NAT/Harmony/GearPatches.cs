@@ -1,25 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Net;
-using System.Reflection;
-using System.Reflection.Emit;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Xml;
-using System.Xml.Linq;
-using System.Xml.XPath;
-using DelaunatorSharp;
+﻿using DelaunatorSharp;
 using Gilzoide.ManagedJobs;
+using HarmonyLib;
 using Ionic.Crc;
 using Ionic.Zlib;
 using JetBrains.Annotations;
@@ -34,6 +15,27 @@ using RimWorld.QuestGen;
 using RimWorld.SketchGen;
 using RimWorld.Utility;
 using RuntimeAudioClipLoader;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Net;
+using System.Reflection;
+using System.Reflection.Emit;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using System.Runtime.Remoting.Messaging;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Linq;
+using System.Xml.XPath;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Jobs;
@@ -50,7 +52,6 @@ using Verse.Noise;
 using Verse.Profile;
 using Verse.Sound;
 using Verse.Steam;
-using HarmonyLib;
 
 namespace NAT
 {
@@ -60,7 +61,7 @@ namespace NAT
 		[HarmonyPostfix]
 		public static void Postfix(Pawn wearer, ref bool __result)
 		{
-			if (wearer is RustedPawn && wearer.Faction == Faction.OfPlayer)
+			if (wearer is RustedPawn && wearer.Faction == Faction.OfPlayerSilentFail)
 			{
 				__result = false;
 			}
@@ -73,7 +74,7 @@ namespace NAT
 		[HarmonyPrefix]
 		public static bool Prefix(ref bool __result, BroadshieldPack __instance)
 		{
-			if (__instance.Wearer is RustedPawn)
+			if (__instance.Wearer is RustedPawn rust && rust.Faction == Faction.OfPlayerSilentFail)
 			{
 				__result = true;
 				return false;
@@ -88,7 +89,7 @@ namespace NAT
 		[HarmonyPrefix]
 		public static bool Prefix(SmokepopBelt __instance)
 		{
-			if (__instance.Wearer is RustedPawn)
+			if (__instance.Wearer is RustedPawn rust && rust.Faction == Faction.OfPlayerSilentFail)
 			{
 				return false;
 			}
@@ -435,6 +436,33 @@ namespace NAT
 			if (pawn is RustedPawn)
 			{
 				__result = int.MaxValue;
+			}
+		}
+	}
+
+	[HarmonyPatch]
+	public static class CombatExtended_ITab_Inventory_get_IsVisible
+	{
+		public static MethodBase TargetMethod()
+		{
+			return AccessTools.Method("CombatExtended.ITab_Inventory:get_IsVisible");
+		}
+
+		public static bool Prepare(MethodBase method)
+		{
+			return AccessTools.Method("CombatExtended.ITab_Inventory:get_IsVisible") != null;
+		}
+
+		[HarmonyPostfix]
+		public static void Postfix(ref bool __result)
+		{
+			if (__result)
+			{
+				return;
+			}
+			if(Find.Selector.SingleSelectedThing is RustedPawn rust && rust.Faction?.IsPlayer == true)
+			{
+				__result = true;
 			}
 		}
 	}

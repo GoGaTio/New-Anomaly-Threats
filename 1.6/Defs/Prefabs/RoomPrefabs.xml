@@ -16,6 +16,42 @@
   <!--Misc-->
 
   <PrefabDef>
+    <defName>NAT_RustedAutoTurretLabyrinth</defName>
+    <size>(2,2)</size>
+    <things>
+      <NAT_RustedTurret_Auto>
+        <position>(0,0,0)</position>
+      </NAT_RustedTurret_Auto>
+    </things>
+    <terrain>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(0,0,1,1)</li>
+        </rects>
+        <chance>1</chance>
+      </NAT_RustedFloor>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-1,-1,2,2)</li>
+        </rects>
+        <chance>0.8</chance>
+      </NAT_RustedFloor>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-2,-2,3,3)</li>
+        </rects>
+        <chance>0.5</chance>
+      </NAT_RustedFloor>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-3,-3,4,4)</li>
+        </rects>
+        <chance>0.2</chance>
+      </NAT_RustedFloor>
+    </terrain>
+  </PrefabDef>
+
+  <PrefabDef>
     <defName>NAT_RustedBox_Edge</defName>
     <edgeOnly>true</edgeOnly>
     <size>(2,1)</size>
@@ -41,12 +77,12 @@
     <defName>NAT_SecuredRustedStorage</defName>
     <size>(5,3)</size>
     <things>
-      <AncientGenerator>
+      <NAT_RustedPallet>
         <positions>
           <li>(0, 0, 1)</li>
           <li>(3, 0, 1)</li>
         </positions>
-      </AncientGenerator>
+      </NAT_RustedPallet>
       <NAT_RustedTurret_Mini>
         <rects>
           <li>(2,0,2,2)</li>
@@ -98,6 +134,25 @@
           <li>(4, 0, 3)</li>
         </positions>
       </NAT_RustedBox>
+    </things>
+  </PrefabDef>
+
+  <PrefabDef>
+    <defName>NAT_RustedWallBlock</defName>
+    <size>(5,5)</size>
+    <things>
+      <NAT_RustedWall>
+        <positions>
+          <li>(2, 0, 2)</li>
+        </positions>
+        <chance>1</chance>
+      </NAT_RustedWall>
+      <NAT_RustedWall>
+        <rects>
+          <li>(1,1,3,3)</li>
+        </rects>
+        <chance>0.9</chance>
+      </NAT_RustedWall>
     </things>
   </PrefabDef>
 

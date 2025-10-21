@@ -1,25 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Net;
-using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Xml;
-using System.Xml.Linq;
-using System.Xml.Serialization;
-using System.Xml.XPath;
-using System.Xml.Xsl;
-using DelaunatorSharp;
+﻿using DelaunatorSharp;
 using Gilzoide.ManagedJobs;
 using Ionic.Crc;
 using Ionic.Zlib;
@@ -34,6 +13,29 @@ using RimWorld.Planet;
 using RimWorld.QuestGen;
 using RimWorld.Utility;
 using RuntimeAudioClipLoader;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Net;
+using System.Net.NetworkInformation;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Linq;
+using System.Xml.Serialization;
+using System.Xml.XPath;
+using System.Xml.Xsl;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Jobs;
@@ -53,7 +55,76 @@ using Verse.Steam;
 
 namespace NAT
 {
-    public class RoomContents_CollectorLairEntrance : RoomContentsWorker
+	public class RoomContents_RustedOutpost : RoomContentsWorker
+	{
+		public override void FillRoom(Map map, LayoutRoom room, Faction faction, float? threatPoints = null)
+		{
+			base.FillRoom(map, room, faction, threatPoints);
+			if (room.TryGetRandomCellInRoom(NATDefOf.NAT_RustedTurret_Auto, map, out var cell, NATDefOf.NAT_RustedTurret_Auto.defaultPlacingRot, 3, 1))
+			{
+				List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(new PawnGroupMakerParms
+				{
+					groupKind = NATDefOf.NAT_RustedArmyDefence,
+					points = new FloatRange(300f, 500f).RandomInRange,
+					faction = Faction.OfEntities
+				}).ToList();
+				CellRect rect = new CellRect(cell.x, cell.z, 2, 2).ExpandedBy(1);
+				Lord lord = LordMaker.MakeNewLord(Faction.OfEntities, new LordJob_DefendRust(cell, 5f), map, list);
+				PrefabUtility.SpawnPrefab(NATDefOf.NAT_RustedAutoTurretLabyrinth, map, cell, NATDefOf.NAT_RustedTurret_Auto.defaultPlacingRot, Faction.OfEntities, null, null , delegate(Thing t)
+				{
+					if(t.TryGetComp<CompCanBeDormant>(out var comp))
+					{
+						comp.ToSleep();
+					}
+					if(t is Building b)
+					{
+						lord.AddBuilding(b);
+					}
+				});
+				if (!map.generatorDef.isUnderground)
+				{
+					DropSpawnNear(NATDefOf.NAT_RustedBeacon_Reinforcements, rect.RandomCell, map, 1, lord);
+				}
+				DropSpawnNear(NATDefOf.NAT_RustedArmyBanner, rect.RandomCell, map, 1, lord);
+				DropSpawnNear(NATDefOf.NAT_RustedPallet, rect.RandomCell, map, 1, lord);
+				for (int i = 0; i < list.Count; i++)
+				{
+					GenDrop.TryDropSpawn(list[i], rect.EdgeCells.RandomElement(), map, ThingPlaceMode.Near, out var _);
+				}
+			}
+		}
+
+		private void DropSpawnNear(ThingDef thing, IntVec3 cell, Map map, int amount = 1, Lord lord = null)
+		{
+			for (int i = 0; i < amount; i++)
+			{
+				if(GenDrop.TryDropSpawn(ThingMaker.MakeThing(thing), cell, map, ThingPlaceMode.Near, out var t) && lord != null && t is Building b)
+				{
+					lord.AddBuilding(b);
+				}
+			}
+		}
+	}
+
+
+
+	public class RoomContents_CollectorLairBedroom : RoomContentsWorker
+	{
+		private static readonly IntRange TurretsRange = new IntRange(1, 2);
+
+		public override void FillRoom(Map map, LayoutRoom room, Faction faction, float? threatPoints = null)
+		{
+			base.FillRoom(map, room, faction, threatPoints);
+			SignalAction_Sightstealers signalAction_Ambush = (SignalAction_Sightstealers)ThingMaker.MakeThing(NATDefOf.NAT_SignalAction_Sightstealers);
+			signalAction_Ambush.points = new FloatRange(140f, 420f).RandomInRange;
+			signalAction_Ambush.spawnAround = room.rects[0];
+			GenSpawn.Spawn(signalAction_Ambush, room.rects[0].CenterCell, map);
+		}
+
+		
+	}
+
+	public class RoomContents_CollectorLairEntrance : RoomContentsWorker
     {
         private static readonly IntRange TurretsRange = new IntRange(1, 2);
 

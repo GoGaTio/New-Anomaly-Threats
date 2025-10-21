@@ -90,12 +90,12 @@
       <li Class="CompProperties_StudyUnlocks"> 
         <studyNotes> 
           <li> 
-            <threshold>2</threshold> 
+            <threshold>1</threshold> 
             <label>Collector's notes study progress</label> 
             <text>Investigation of the strange symbols has revealed some information. It seems that these notes designate location of all stolen things.\n\n{PAWN_nameDef} believes that he can find out, how to decrypt it.</text> 
           </li> 
           <li> 
-            <threshold>8</threshold> 
+            <threshold>4</threshold> 
             <label>Collector's notes study complete</label> 
             <text>{PAWN_nameDef} has completed {PAWN_possessive} studying. {PAWN_pronoun} finds a way to decrypt the notes. Order someone to peruse them.</text> 
           </li> 

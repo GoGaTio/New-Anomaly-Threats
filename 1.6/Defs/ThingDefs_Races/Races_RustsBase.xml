@@ -61,8 +61,6 @@
       </li>
       <li Class="CompProperties_WakeUpDormant">
         <wakeUpOnDamage>true</wakeUpOnDamage>
-        <wakeUpCheckRadius>4.9</wakeUpCheckRadius>
-        <wakeUpIfAnyTargetClose>true</wakeUpIfAnyTargetClose>
         <wakeUpWithDelay>true</wakeUpWithDelay>
         <wakeUpOnThingConstructedRadius>4.9</wakeUpOnThingConstructedRadius>
         <wakeUpSound>NAT_Pawn_RustedSoldier_Call</wakeUpSound>

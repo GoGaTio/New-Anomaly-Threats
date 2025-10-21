@@ -125,7 +125,7 @@ namespace NAT
 			{
 				return null;
 			}
-			if (pawn.Faction?.IsPlayer == false && pawn is RustedPawn rust && rust.Commander is CompRustedCommander comp && comp.units > 0)
+			if (pawn.Faction?.IsPlayer == false && pawn is RustedPawn rust && rust.Awake() && rust.Commander is CompRustedCommander comp && comp.units > 0)
 			{
 				LocalTargetInfo target = comp.TryCallSupport(out var ability);
                 if (!target.IsValid)

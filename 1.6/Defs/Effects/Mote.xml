@@ -185,6 +185,13 @@
   </ThingDef>
 
   <ThingDef ParentName="NAT_ActivatorMoteBase">
+    <defName>NAT_Mote_Activator_Stability</defName>
+    <graphicData>
+      <color>(0.99, 0.35, 0, 0.75)</color>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="NAT_ActivatorMoteBase">
     <defName>NAT_Mote_Activator_Charge</defName>
     <graphicData>
       <color>(0.75, 0.75, 0.1, 0.75)</color>

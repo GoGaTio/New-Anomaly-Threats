@@ -2,7 +2,7 @@
 <Defs>
 
   <SitePartDef>
-    <defName>NAT_CollectorLair_Base</defName>
+    <defName>NAT_CollectorLair_Settlement</defName>
     <label>abandoned settlement</label>
     <description>An abandoned settlement.</description>
     <workerClass>NAT.SitePartWorker_CollectorLair</workerClass>
@@ -13,7 +13,7 @@
     <arrivedLetterDef>NeutralEvent</arrivedLetterDef>
     <minMapSize>(150, 1, 150)</minMapSize>
     <gravShipsCanLandOn>true</gravShipsCanLandOn>
-    <selectionWeight>4</selectionWeight>
+    <selectionWeight>2</selectionWeight>
     <tags>
       <li>NAT_CollectorLair</li>
     </tags>
@@ -21,26 +21,75 @@
   
   <GenStepDef>
     <defName>NAT_CollectorLair_Settlement</defName>
-    <linkWithSite>NAT_CollectorLair_Base</linkWithSite>
+    <linkWithSite>NAT_CollectorLair_Settlement</linkWithSite>
     <order>454</order>
     <genStep Class="GenStep_Settlement">
       <count>1</count>
       <nearMapCenter>true</nearMapCenter>
       <generatePawns>false</generatePawns>
+      <lootMarketValue>500</lootMarketValue>
       <postProcessSettlementParams>
         <clearBuildingFaction>true</clearBuildingFaction>
+        <noFuel>true</noFuel>
+        <canDamageWalls>true</canDamageWalls>
+        <damageBuildings>true</damageBuildings>
       </postProcessSettlementParams>
     </genStep>
   </GenStepDef>
 
   <GenStepDef>
-    <defName>NAT_CollectorLairEntrance_Base</defName>
-    <linkWithSite>NAT_CollectorLair_Base</linkWithSite>
+    <defName>NAT_CollectorLairEntrance_Settlement</defName>
+    <linkWithSite>NAT_CollectorLair_Settlement</linkWithSite>
     <order>900</order>
     <genStep Class="NAT.GenStep_UndergroundEntrance">
       <entranceDef>NAT_CollectorLairEntrance</entranceDef>
       <trySpawnInRoom>true</trySpawnInRoom>
+      <trySpawnInSettlement>true</trySpawnInSettlement>
     </genStep>
   </GenStepDef>
+
+  <SitePartDef>
+    <defName>NAT_CollectorLair_Ruins</defName>
+    <label>ancient ruins</label>
+    <description>An ancient ruins.</description>
+    <workerClass>NAT.SitePartWorker_CollectorLair</workerClass>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>World/WorldObjects/Expanding/DestroyedSettlement</expandingIconTexture>
+    <approachOrderString>Investigate {0}</approachOrderString>
+    <approachingReportString>Investigating {0}.</approachingReportString>
+    <arrivedLetterDef>NeutralEvent</arrivedLetterDef>
+    <minMapSize>(150, 1, 150)</minMapSize>
+    <gravShipsCanLandOn>true</gravShipsCanLandOn>
+    <selectionWeight>3</selectionWeight>
+    <tags>
+      <li>NAT_CollectorLair</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>NAT_CollectorLair_Ruins</defName>
+    <linkWithSite>NAT_CollectorLair_Ruins</linkWithSite>
+    <order>899</order>
+    <genStep Class="NAT.GenStep_AncientRuinSingle">
+      <layoutDef>NAT_AncientRuins</layoutDef>
+    </genStep>
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>NAT_CollectorLairEntrance_Ruins</defName>
+    <linkWithSite>NAT_CollectorLair_Ruins</linkWithSite>
+    <order>900</order>
+    <genStep Class="NAT.GenStep_UndergroundEntrance">
+      <entranceDef>NAT_CollectorLairEntrance</entranceDef>
+      <trySpawnInRoom>true</trySpawnInRoom>
+      <trySpawnInRect>true</trySpawnInRect>
+    </genStep>
+  </GenStepDef>
+
+  <ThingDef ParentName="SignalActionBase">
+    <defName>NAT_SignalAction_Sightstealers</defName>
+    <thingClass>NAT.SignalAction_Sightstealers</thingClass>
+    <tickerType>Normal</tickerType>
+  </ThingDef>
 
 </Defs>

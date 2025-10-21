@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <StructureLayoutDef>
+    <defName>NAT_AncientRuins</defName>
+    <workerClass>LayoutWorker_AncientRuins</workerClass>
+    <shouldDamage>true</shouldDamage>
+    <canHaveMultipleLayoutsInRoom>true</canHaveMultipleLayoutsInRoom>
+    <corridorDef>ComplexCorridor</corridorDef>
+    <roomDefs>
+      <!-- Decorative -->
+      <NAT_AncientRuinsEmpty>5</NAT_AncientRuinsEmpty>
+      <NAT_AncientRuinsIndustrialStorage>3</NAT_AncientRuinsIndustrialStorage>
+      <NAT_AncientRuinsStorage>2</NAT_AncientRuinsStorage>
+    </roomDefs>
+    <junkScaterrers>
+      <ChunkSlagSteel>
+        <groupsPerHundredCells>1~2</groupsPerHundredCells>
+        <itemsPerGroup>1~3</itemsPerGroup>
+        <groupDistRange>4~6</groupDistRange>
+      </ChunkSlagSteel>
+      <Filth_RubbleRock>
+        <groupsPerHundredCells>1~3</groupsPerHundredCells>
+        <itemsPerGroup>3~8</itemsPerGroup>
+        <groupDistRange>3~5</groupDistRange>
+      </Filth_RubbleRock>
+      <Filth_Trash>
+        <groupsPerHundredCells>0~3</groupsPerHundredCells>
+        <itemsPerGroup>2~4</itemsPerGroup>
+        <groupDistRange>3~5</groupDistRange>
+      </Filth_Trash>
+      <Filth_BlastMark>
+        <groupsPerHundredCells>-2~1</groupsPerHundredCells>
+        <!-- ~66% to not appear -->
+        <itemsPerGroup>1~1</itemsPerGroup>
+      </Filth_BlastMark>
+      <Filth_MachineBits>
+        <groupsPerHundredCells>-1~1</groupsPerHundredCells>
+        <!-- ~50% to not appear -->
+        <itemsPerGroup>2~4</itemsPerGroup>
+        <groupDistRange>2~4</groupDistRange>
+      </Filth_MachineBits>
+    </junkScaterrers>
+  </StructureLayoutDef>
+
+</Defs>

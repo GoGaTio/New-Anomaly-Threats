@@ -72,10 +72,18 @@
         <canInteract>true</canInteract>
         <hasHead>true</hasHead>
         <drawData>
-          <dataNorth><offset>(0, 0, 0.65)</offset></dataNorth>
-          <dataEast><offset>(0.1, 0, 0.65)</offset></dataEast>
-          <dataSouth><offset>(0, 0, 0.65)</offset></dataSouth>
-          <dataWest><offset>(-0.1, 0, 0.65)</offset></dataWest>
+          <dataNorth>
+            <offset>(0, 0, 0.65)</offset>
+          </dataNorth>
+          <dataEast>
+            <offset>(0.1, 0, 0.65)</offset>
+          </dataEast>
+          <dataSouth>
+            <offset>(0, 0, 0.65)</offset>
+          </dataSouth>
+          <dataWest>
+            <offset>(-0.1, 0, 0.65)</offset>
+          </dataWest>
         </drawData>
         <headTags>
           <li>Guardsman</li>
@@ -83,7 +91,7 @@
         <apparelTagsToAllow>
           <li>NAT_Rust_Belt</li>
         </apparelTagsToAllow>
-	  </li>
+      </li>
       <li Class="NAT.CompProperties_RustedWorker">
         <skills>
           <Shooting>14</Shooting>
@@ -116,7 +124,7 @@
         </forceAllowWorkTypes>
       </li>
     </comps>
-    <tools Inherit="False"> 
+    <tools Inherit="False">
       <li>
         <label>head</label>
         <capacities>
@@ -128,7 +136,7 @@
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.2</chanceFactor>
       </li>
-	  <li>
+      <li>
         <label>left claw</label>
         <labelNoLocation>claw</labelNoLocation>
         <capacities>
@@ -200,6 +208,10 @@
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2</drawSize>
         </bodyGraphicData>
+        <silhouetteGraphicData>
+          <texPath>Things/Pawn/NAT_RustedGuardsman_Icon</texPath>
+          <drawSize>2.34</drawSize>
+        </silhouetteGraphicData>
       </li>
     </lifeStages>
     <combatPower>320</combatPower>

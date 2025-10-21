@@ -20,9 +20,9 @@
       <li>
         <statOffsets>
           <MoveSpeed>0.4</MoveSpeed>
-		  <MeleeDodgeChance>10</MeleeDodgeChance>
+          <MeleeDodgeChance>10</MeleeDodgeChance>
         </statOffsets>
-		<capMods>
+        <capMods>
           <li>
             <capacity>Moving</capacity>
             <postFactor>1.25</postFactor>
@@ -49,10 +49,9 @@
     <stages>
       <li>
         <statOffsets>
-          <IncomingDamageFactor>0.75</IncomingDamageFactor> 
+          <IncomingDamageFactor>0.75</IncomingDamageFactor>
           <Flammability>0.5</Flammability>
         </statOffsets>
-
       </li>
     </stages>
   </HediffDef>
@@ -88,7 +87,7 @@
 
   <HediffDef>
     <defName>NAT_ActivatedRegeneration</defName>
-    <label>actvated regeneration</label>
+    <label>activated regeneration</label>
     <hediffClass>HediffWithComps</hediffClass>
     <description>This rust regeneration is amplified by rusted activator.</description>
     <isBad>false</isBad>
@@ -107,5 +106,28 @@
       </li>
     </stages>
   </HediffDef>
-  
+
+  <HediffDef>
+    <defName>NAT_ActivatedStability</defName>
+    <label>activated stability</label>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>This rust core is stabilized by rusted activator.</description>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.99, 0.35, 0)</defaultLabelColor>
+    <comps>
+      <li Class="HediffCompProperties_DisappearsDisableable">
+        <disappearsAfterTicks>300000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath" />
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <NAT_CoreDropChance>0.5</NAT_CoreDropChance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
 </Defs>

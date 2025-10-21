@@ -145,7 +145,6 @@
         </forceAllowWorkTypes>
       </li>
     </comps>
-
     <killedLeavingsRanges>
       <Bioferrite>2~5</Bioferrite>
     </killedLeavingsRanges>
@@ -163,7 +162,7 @@
     <race>NAT_RustedTrooper</race>
     <weaponTags>
       <li>NAT_RustedShotgun</li>
-      <li>NAT_RustedSMG</li>
+      <li>NAT_RustedAssaultSMG</li>
     </weaponTags>
     <modExtensions>
       <li Class="NAT.RustedPawnExtention">
@@ -201,6 +200,10 @@
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2</drawSize>
         </bodyGraphicData>
+        <silhouetteGraphicData>
+          <texPath>Things/Pawn/NAT_RustedTrooper_Icon</texPath>
+          <drawSize>2</drawSize>
+        </silhouetteGraphicData>
       </li>
     </lifeStages>
     <combatPower>160</combatPower>

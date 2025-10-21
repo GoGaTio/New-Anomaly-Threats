@@ -1,13 +1,22 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  
+
   <!-- EN: abandoned settlement -->
-  <NAT_CollectorLair_Base.label>заброшенное поселение</NAT_CollectorLair_Base.label>
+  <NAT_CollectorLair_Settlement.label>заброшенное поселение</NAT_CollectorLair_Settlement.label>
   <!-- EN: An abandoned settlement. -->
-  <NAT_CollectorLair_Base.description>Заброшенное поселение.</NAT_CollectorLair_Base.description>
+  <NAT_CollectorLair_Settlement.description>Заброшенное поселение.</NAT_CollectorLair_Settlement.description>
   <!-- EN: Investigating {0}. -->
-  <NAT_CollectorLair_Base.approachingReportString>Осмотреть: {0}</NAT_CollectorLair_Base.approachingReportString>
+  <NAT_CollectorLair_Settlement.approachingReportString>Осмотреть: {0}</NAT_CollectorLair_Settlement.approachingReportString>
   <!-- EN: Investigate {0} -->
-  <NAT_CollectorLair_Base.approachOrderString>Осмотреть: {0}</NAT_CollectorLair_Base.approachOrderString>
-  
+  <NAT_CollectorLair_Settlement.approachOrderString>Осмотреть: {0}</NAT_CollectorLair_Settlement.approachOrderString>
+
+  <!-- EN: ancient ruins -->
+  <NAT_CollectorLair_Ruins.label>древние развалины</NAT_CollectorLair_Ruins.label>
+  <!-- EN: An ancient ruins. -->
+  <NAT_CollectorLair_Ruins.description>Древние развалины.</NAT_CollectorLair_Ruins.description>
+  <!-- EN: Investigating {0}. -->
+  <NAT_CollectorLair_Ruins.approachingReportString>Осмотреть: {0}</NAT_CollectorLair_Ruins.approachingReportString>
+  <!-- EN: Investigate {0} -->
+  <NAT_CollectorLair_Ruins.approachOrderString>Осмотреть: {0}</NAT_CollectorLair_Ruins.approachOrderString>
+
 </LanguageData>

@@ -129,6 +129,7 @@ namespace NAT
 
 		public override void Spawn(LayoutStructureSketch layoutStructureSketch, Map map, IntVec3 pos, float? threatPoints = null, List<Thing> allSpawnedThings = null, bool roofs = true, bool canReuseSketch = false, Faction faction = null)
 		{
+			faction = Faction.OfEntities;
 			float points = (threatPoints ?? StorytellerUtility.DefaultSiteThreatPointsNow());
 			Log.Message("NAT - Exterior prefabs points: " + Def.actualPointsFromPoints.Evaluate(points) + "/" + points.ToString());
 			points = Def.actualPointsFromPoints.Evaluate(points);
@@ -225,9 +226,10 @@ namespace NAT
         {
 			int count = Def.exteriorDoorsRange.RandomInRange;
 			int num = 0;
+			int num2 = 100;
 			List<LayoutRoom> list = new List<LayoutRoom>();
 			List<IntVec3> edge = layoutStructureSketch.structureLayout.container.EdgeCells.ToList();
-			while (num < count)
+			while (num < count && num2 > 0)
             {
 				if(layoutStructureSketch.structureLayout.Rooms.TryRandomElement((LayoutRoom x) => !list.Contains(x) && !x.HasLayoutDef(NATDefOf.NAT_CitadelCorridor) && !x.HasLayoutDef(NATDefOf.NAT_OutpostCorridor) && x.Corners.Any((IntVec3 y)=> edge.Contains(y)), out var room))
                 {
@@ -263,7 +265,8 @@ namespace NAT
                 {
 					break;
                 }
-            }
+				num2--;
+			}
 		}
 
 		public CellRect FindDoorRect(LayoutRoom room, List<IntVec3> edge, out Rot4 rot)

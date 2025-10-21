@@ -82,7 +82,7 @@ namespace NAT
 					makingFaction = Faction.OfEntities,
 					tile = map.Tile
 				};
-                List<Thing> loot = ThingSetMakerDefOf.Reward_UniqueWeapon.root.Generate(setParms);
+                List<Thing> loot = NATDefOf.NAT_CollectoirLairCase.root.Generate(setParms);
 				questPart_Collector.stolenThings.AddRange(loot);
                 IntVec2 size = NATDefOf.NAT_CollectorGlassCase.size;
 				List<Pawn> pawns = questPart_Collector.stolenPawns.ToList();
@@ -126,7 +126,7 @@ namespace NAT
 		{
 			foreach (LayoutRoom room in layout.Rooms)
 			{
-				room.noExteriorDoors = base.Def.exteriorDoorDef == null;
+				room.noExteriorDoors = true;
 			}
 		}
 	}

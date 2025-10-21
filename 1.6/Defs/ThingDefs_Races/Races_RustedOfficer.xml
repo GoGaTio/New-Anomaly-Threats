@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  
+
   <ThingDef Name="NAT_RustedOfficerBase" ParentName="NAT_BaseRustedPawn">
     <defName>NAT_RustedOfficer</defName>
     <label>rusted officer</label>
@@ -79,15 +79,23 @@
         <canInteract>true</canInteract>
         <hasHead>true</hasHead>
         <drawData>
-          <dataNorth><offset>(0, 0, 0.25)</offset></dataNorth>
-          <dataEast><offset>(0.3, 0, 0.25)</offset></dataEast>
-          <dataSouth><offset>(0, 0, 0.25)</offset></dataSouth>
-          <dataWest><offset>(-0.3, 0, 0.25)</offset></dataWest>
+          <dataNorth>
+            <offset>(0, 0, 0.25)</offset>
+          </dataNorth>
+          <dataEast>
+            <offset>(0.3, 0, 0.25)</offset>
+          </dataEast>
+          <dataSouth>
+            <offset>(0, 0, 0.25)</offset>
+          </dataSouth>
+          <dataWest>
+            <offset>(-0.3, 0, 0.25)</offset>
+          </dataWest>
         </drawData>
         <headTags>
           <li>Officer</li>
         </headTags>
-      </li> 
+      </li>
       <li Class="NAT.CompProperties_RustedWorker">
         <skills>
           <Shooting>12</Shooting>
@@ -120,7 +128,7 @@
         </forceAllowWorkTypes>
       </li>
     </comps>
-    <tools Inherit="False"> 
+    <tools Inherit="False">
       <li>
         <label>head</label>
         <capacities>
@@ -132,7 +140,7 @@
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.2</chanceFactor>
       </li>
-	  <li>
+      <li>
         <label>left claw</label>
         <labelNoLocation>claw</labelNoLocation>
         <capacities>
@@ -183,6 +191,7 @@
     <abilities>
       <li>NAT_Reinforcement_Troopers</li>
       <li>NAT_Reinforcement_MiniTurret</li>
+      <!--<li>NAT_Reinforcement_BoostField</li>-->
     </abilities>
     <skipResistant>true</skipResistant>
     <race>NAT_RustedOfficer</race>
@@ -202,6 +211,10 @@
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2</drawSize>
         </bodyGraphicData>
+        <silhouetteGraphicData>
+          <texPath>Things/Pawn/NAT_RustedOfficer_Icon</texPath>
+          <drawSize>2.34</drawSize>
+        </silhouetteGraphicData>
       </li>
     </lifeStages>
     <combatPower>280</combatPower>

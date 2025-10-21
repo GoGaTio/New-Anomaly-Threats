@@ -427,7 +427,7 @@ namespace NAT
         {
 			foreach(Thing t in parent.Map.listerThings.ThingsInGroup(ThingRequestGroup.HaulableEver))
             {
-                if (t.MarketValue > 30f && !stealedDefs.Contains(t.def))
+                if (!(t is Corpse) && t.MarketValue > 30f && !stealedDefs.Contains(t.def))
                 {
 					yield return t;
                 }

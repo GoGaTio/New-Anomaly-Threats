@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <LayoutRoomDef>
+    <defName>NAT_AncientRuinsEmpty</defName>
+  </LayoutRoomDef>
+
+  <LayoutRoomDef>
+    <defName>NAT_AncientRuinsIndustrialStorage</defName>
+    <canMergeWithAdjacentRoom>true</canMergeWithAdjacentRoom>
+    <roomContentsWorkerType>RoomContents_IndustrialStorage</roomContentsWorkerType>
+    <scatter>
+      <AncientBarrel>
+        <groupsPerHundredCells>2~3</groupsPerHundredCells>
+        <itemsPerGroup>1~5</itemsPerGroup>
+        <groupDistRange>2~4</groupDistRange>
+        <minGroups>1</minGroups>
+      </AncientBarrel>
+    </scatter>
+  </LayoutRoomDef>
+
+  <LayoutRoomDef>
+    <defName>NAT_AncientRuinsStorage</defName>
+    <fillEdges>
+      <AncientDisplayBank>
+        <groupsPerTenEdgeCells>1~3</groupsPerTenEdgeCells>
+        <groupCountRange>1~2</groupCountRange>
+      </AncientDisplayBank>
+    </fillEdges>
+    <fillInterior>
+      <AncientSystemRack>
+        <thingsPerHundredCells>10~20</thingsPerHundredCells>
+        <alignWithRect>true</alignWithRect>
+      </AncientSystemRack>
+    </fillInterior>
+  </LayoutRoomDef>
+  
+</Defs>

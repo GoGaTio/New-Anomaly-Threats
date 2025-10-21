@@ -1,38 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <LayoutRoomDef Name="NAT_BaseRustedRoom">
-    <defName>NAT_RustedRoom</defName>
-    <roomContentsWorkerType>RoomContentsWorker</roomContentsWorkerType>
+  <LayoutRoomDef Abstract="True" Name="NAT_BaseRustedRoom">
+    <roomContentsWorkerType>NAT.RoomContents_RustedRegular</roomContentsWorkerType>
     <floorTypes Inherit="False">
-      <li>NAT_RustedTile</li>
+      <li>NAT_RustedFloor</li>
     </floorTypes>
     <prefabs>
       <NAT_RustedFoamTurret_Edge>
         <countPerTenEdgeCells>0.25</countPerTenEdgeCells>
       </NAT_RustedFoamTurret_Edge>
     </prefabs>
-    <edgeTerrain>NAT_RustedTile</edgeTerrain>
+    <edgeTerrain>NAT_RustedFloor</edgeTerrain>
   </LayoutRoomDef>
-  
+
   <LayoutRoomDef ParentName="NAT_BaseRustedRoom">
     <defName>NAT_CitadelCorridor</defName>
     <!--<roomContentsWorkerType>NAT.RoomContents_CitadelCorridor</roomContentsWorkerType>-->
   </LayoutRoomDef>
-  
+
   <LayoutRoomDef ParentName="NAT_BaseRustedRoom">
     <defName>NAT_OutpostCorridor</defName>
-    <roomContentsWorkerType>RoomContentsWorker</roomContentsWorkerType>
   </LayoutRoomDef>
-  
+
   <LayoutRoomDef ParentName="NAT_BaseRustedRoom">
     <defName>NAT_RustedHall</defName>
-    <roomContentsWorkerType>RoomContentsWorker</roomContentsWorkerType>
   </LayoutRoomDef>
 
   <LayoutRoomDef ParentName="NAT_BaseRustedRoom">
     <defName>NAT_RustedStorage</defName>
-    <roomContentsWorkerType>NAT.RoomContents_RustedRegular</roomContentsWorkerType>
     <prefabs>
       <NAT_RustedBox_Edge>
         <countPerTenEdgeCells>3</countPerTenEdgeCells>
@@ -45,6 +41,25 @@
         <countPerTenEdgeCells>1</countPerTenEdgeCells>
         <minMaxRange>0~1</minMaxRange>
       </NAT_RustedPalletCluster>
+      <NAT_RustedWallBlock>
+        <countPerHundredCells>1.25</countPerHundredCells>
+        <minMaxRange>0~2</minMaxRange>
+      </NAT_RustedWallBlock>
+    </prefabs>
+  </LayoutRoomDef>
+
+  <LayoutRoomDef ParentName="NAT_BaseRustedRoom">
+    <defName>NAT_RustedRoom</defName>
+    <prefabs>
+      <NAT_RustedBox_Edge>
+        <countPerTenEdgeCells>3</countPerTenEdgeCells>
+        <minMaxRange>1~3</minMaxRange>
+      </NAT_RustedBox_Edge>
+      
+      <NAT_RustedWallBlock>
+        <countPerHundredCells>1.25</countPerHundredCells>
+        <minMaxRange>0~2</minMaxRange>
+      </NAT_RustedWallBlock>
     </prefabs>
   </LayoutRoomDef>
 

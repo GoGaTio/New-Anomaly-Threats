@@ -2,7 +2,7 @@
 <Defs>
 
   
-  <!--<CreepJoinerBenefitDef>
+  <CreepJoinerBenefitDef>
     <defName>NAT_RustShaper</defName>
     <label>bioferrite shaper</label>
     <weight>0.5</weight>
@@ -10,7 +10,7 @@
     <abilities>
       <li>NAT_ShapeRust</li>
     </abilities>
-  </CreepJoinerBenefitDef>-->
+  </CreepJoinerBenefitDef>
 
   <!--<CreepJoinerFormKindDef ParentName="BaseCreepJoinerKind">
     <defName>NAT_Ruster</defName>

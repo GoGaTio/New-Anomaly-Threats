@@ -50,7 +50,7 @@
     </statBases>
   </TerrainDef>
 
-  <TerrainDef ParentName="FloorBase">
+  <!--<TerrainDef ParentName="FloorBase">
     <defName>NAT_RustedTile</defName>
     <label>rusted tile</label>
     <description>TODO</description>
@@ -72,6 +72,6 @@
       <li>Medium</li>
       <li>Heavy</li>
     </affordances>
-  </TerrainDef>
+  </TerrainDef>-->
 
 </Defs>

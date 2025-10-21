@@ -70,6 +70,7 @@ namespace NAT
 			foreach (string s in base.ConfigErrors()) yield return s;
 			if (graphicData.graphicClass != typeof(Graphic_Multi))
 			{
+				graphicData.graphicClass = typeof(Graphic_Multi);
 				yield return defName + "NAT.RustHeadDef should have Graphic_Multi graphicClass";
 			}
 

@@ -115,13 +115,14 @@ namespace NAT
 			}
 			if (parent.IsHashIntervalTick(10) && stunner?.StunHandler?.Stunned != true)
 			{
+				Room room = parent.GetRoom();
 				foreach (IntVec3 cell in parent.OccupiedRect().ExpandedBy(Props.range))
 				{
 					List<Thing> list = parent.Map.thingGrid.ThingsListAt(cell).Where((x) => x is Pawn).ToList();
 					for (int i = 0; i < list.Count; i++)
 					{
 						Thing thing = list[i];
-						if (thing.Faction.HostileTo(parent.Faction))
+						if (room == thing.GetRoom() && thing.Faction.HostileTo(parent.Faction))
 						{
 							Activate();
 							return;

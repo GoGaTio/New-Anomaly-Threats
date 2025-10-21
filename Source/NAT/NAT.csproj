@@ -103,6 +103,7 @@
     <Compile Include="Render.cs" />
     <Compile Include="ThingComps\CompBombardmentBeacon.cs" />
     <Compile Include="ThingComps\CompCollector.cs" />
+    <Compile Include="ThingComps\CompCrate.cs" />
     <Compile Include="ThingComps\CompRustedGrenades.cs" />
     <Compile Include="ThingComps\CompUndergroundEntrance.cs" />
     <Compile Include="ThingComps\CompCollectorNotes.cs" />
@@ -126,6 +127,8 @@
     <Compile Include="Things\Building_CollectionCase.cs" />
     <Compile Include="Things\Building_RustedTurret.cs" />
     <Compile Include="Abilities_Rust.cs" />
+    <Compile Include="Things\RustedBoostField.cs" />
+    <Compile Include="Things\SignalAction_Sightstealers.cs" />
     <Compile Include="Things\UndergroundEntrance.cs" />
     <Compile Include="Things\FilthBile.cs" />
     <Compile Include="Things\RustedCore.cs" />

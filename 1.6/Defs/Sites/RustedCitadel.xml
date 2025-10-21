@@ -22,7 +22,7 @@
   <GenStepDef>
     <defName>NAT_RustedCitadel</defName>
     <linkWithSite>NAT_RustedCitadel</linkWithSite>
-    <order>9</order>
+    <order>1100</order>
     <genStep Class="NAT.GenStep_RustedBase">
       <layout>NAT_RustedCitadel</layout>
       <minBaseSize>(80, 80)</minBaseSize>

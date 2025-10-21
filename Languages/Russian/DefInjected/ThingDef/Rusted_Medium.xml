@@ -44,6 +44,17 @@
   <NAT_Gun_RustedSMG.tools.barrel.label>ствол</NAT_Gun_RustedSMG.tools.barrel.label>
   <!-- EN: rusted SMG -->
   <NAT_Gun_RustedSMG.verbs.Verb_Shoot.label>ржавый пистолет-пулемёт</NAT_Gun_RustedSMG.verbs.Verb_Shoot.label>
+
+  <!-- EN: rusted assault SMG -->
+  <NAT_Gun_RustedAssaultSMG.label>ржавый штурмовой пистолет-пулемёт</NAT_Gun_RustedAssaultSMG.label>
+  <!-- EN: A piece of bioferrite shaped like an assault sub-machine gun.\n\nSomehow can shoot if wielded by rusted creature. -->
+  <NAT_Gun_RustedAssaultSMG.description>Кусок биоферрита в форме штурмового пистолет-пулемёта.\n\nМожет стрелять, если используется ржавым созданием.</NAT_Gun_RustedAssaultSMG.description>
+  <!-- EN: grip -->
+  <NAT_Gun_RustedAssaultSMG.tools.grip.label>рукоятка</NAT_Gun_RustedAssaultSMG.tools.grip.label>
+  <!-- EN: barrel -->
+  <NAT_Gun_RustedAssaultSMG.tools.barrel.label>ствол</NAT_Gun_RustedAssaultSMG.tools.barrel.label>
+  <!-- EN: rusted assault SMG -->
+  <NAT_Gun_RustedAssaultSMG.verbs.Verb_Shoot.label>ржавый штурмовой пистолет-пулемёт</NAT_Gun_RustedAssaultSMG.verbs.Verb_Shoot.label>
   
   <!-- EN: rusted army banner -->
   <NAT_MeleeWeapon_RustedArmyBanner.label>знамя ржавой армии</NAT_MeleeWeapon_RustedArmyBanner.label>

@@ -144,14 +144,27 @@ namespace NAT
 			}
 		}
 
-		
+		private int lastDamageCheckTick = -99999;
 
 		public override void PostPreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
 		{
 			absorbed = false;
-			if (destroyed || dinfo.IgnoreInstantKillProtection)
+			if (destroyed)
 			{
 				return;
+			}
+			if(Owner.jobs != null)
+			{
+				Job job = Owner.CurJob;
+				if(job != null && dinfo.Def.ExternalViolenceFor(Owner) && dinfo.Def.canInterruptJobs && !job.playerForced && Find.TickManager.TicksGame >= lastDamageCheckTick + 180)
+				{
+					Thing instigator = dinfo.Instigator;
+					if (job.def.checkOverrideOnDamage == CheckJobOverrideOnDamageMode.Always || (job.def.checkOverrideOnDamage == CheckJobOverrideOnDamageMode.OnlyIfInstigatorNotJobTarget && !job.AnyTargetIs(instigator)))
+					{
+						lastDamageCheckTick = Find.TickManager.TicksGame;
+						Owner.jobs.CheckForJobOverride();
+					}
+				}
 			}
 			if (dinfo.Def.armorCategory != null)
 			{

@@ -70,6 +70,11 @@
     <label>rusted renegade</label>
     <biocodeWeaponChance>0.4</biocodeWeaponChance>
     <defaultFactionType>HoraxCult</defaultFactionType>
+    <combatEnhancingDrugsCount>0~0</combatEnhancingDrugsCount>
+    <apparelTags>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <apparelMoney>1000~1350</apparelMoney>
     <weaponTags>
       <li>ShortShots</li>
       <li>SimpleGun</li>

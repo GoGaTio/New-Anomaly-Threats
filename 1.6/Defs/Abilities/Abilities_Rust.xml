@@ -25,13 +25,49 @@
   </AbilityGroupDef>
 
   <AbilityDef ParentName="NAT_RustCommandBase">
+    <defName>NAT_Reinforcement_BoostField</defName>
+    <label>summon spark field</label>
+    <description>Call rusted troopers as reinforcements from orbital rusted structures.</description>
+    <iconPath>UI/Abilities/NAT_Reinforcement_Troopers</iconPath>
+    <comps>
+      <li Class="NAT.CompProperties_AbilitySpawnWithFaction">
+        <thingDef>NAT_RustedBoostField</thingDef>
+        <allowOnBuildings>true</allowOnBuildings>
+        <color>(255,30,30)</color>
+      </li>
+      <li Class="NAT.CompProperties_AbilityRustedCommander">
+        <cost>1</cost>
+        <castParms>
+          <li>
+            <conditions>EnemyNearby</conditions>
+            <location>OnTarget</location>
+            <weight>49</weight>
+          </li>
+          <li>
+            <conditions>EnemyNearby</conditions>
+            <location>NearCaster</location>
+            <weight>49</weight>
+          </li>
+          <li>
+            <conditions>Attacking, OverwhelmingEnemies</conditions>
+            <location>OnTarget</location>
+            <weight>0.5</weight>
+          </li>
+          <li>
+            <conditions>OverwhelmingEnemies</conditions>
+            <location>BehindTarget</location>
+            <weight>2</weight>
+          </li>
+        </castParms>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="NAT_RustCommandBase">
     <defName>NAT_Reinforcement_Troopers</defName>
     <label>call rusted troopers</label>
     <description>Call rusted troopers as reinforcements from orbital rusted structures.</description>
     <iconPath>UI/Abilities/NAT_Reinforcement_Troopers</iconPath>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-    </verbProperties>
     <comps>
       <li Class="NAT.CompProperties_AbilityReinforcements">
         <missRadius>2.9</missRadius>
@@ -72,9 +108,6 @@
     <label>call rusted mini turret</label>
     <description>Call rusted mini turret as reinforcement from orbital rusted structures.</description>
     <iconPath>UI/Abilities/NAT_Reinforcement_MiniTurret</iconPath>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-    </verbProperties>
     <comps>
       <li Class="NAT.CompProperties_AbilityReinforcements">
         <missRadius>1.9</missRadius>
@@ -105,9 +138,6 @@
     <label>call rusted auto turret</label>
     <description>Call rusted auto turret as reinforcement from orbital rusted structures.</description>
     <iconPath>UI/Abilities/NAT_Reinforcement_AutoTurret</iconPath>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-    </verbProperties>
     <comps>
       <li Class="NAT.CompProperties_AbilityReinforcements">
         <missRadius>1.9</missRadius>
@@ -138,9 +168,6 @@
     <label>call rusted sniper turret</label>
     <description>Call rusted sniper turret as reinforcement from orbital rusted structures.</description>
     <iconPath>UI/Abilities/NAT_Reinforcement_SniperTurret</iconPath>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-    </verbProperties>
     <comps>
       <li Class="NAT.CompProperties_AbilityReinforcements">
         <missRadius>1.9</missRadius>
@@ -171,9 +198,6 @@
     <label>call rusted guardsmans</label>
     <description>Call rusted guardsmans as reinforcements from orbital rusted structures.</description>
     <iconPath>UI/Abilities/NAT_Reinforcement_Troopers</iconPath>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-    </verbProperties>
     <comps>
       <li Class="NAT.CompProperties_AbilityReinforcements">
         <missRadius>4.9</missRadius>

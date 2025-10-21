@@ -51,7 +51,8 @@
     <graphicData>
       <texPath>Things/Projectile/Bullet_big</texPath>
     </graphicData>
-  </ThingDef>
+  </ThingDef>
+
   <ThingDef ParentName="NAT_RustedBullet">
     <defName>NAT_Bullet_RustedLarge</defName>
     <label>rusted shell</label>
@@ -63,7 +64,8 @@
       <stoppingPower>1.8</stoppingPower>
       <speed>88</speed>
     </projectile>
-  </ThingDef>
+  </ThingDef>
+
   <ThingDef ParentName="NAT_RustedBullet">
     <defName>NAT_Bullet_RustedHighVelocity</defName>
     <label>rusted shell</label>
@@ -89,5 +91,6 @@
       <armorPenetrationBase>0.14</armorPenetrationBase>
       <speed>55</speed>
     </projectile>
-  </ThingDef>
+  </ThingDef>
+
 </Defs>

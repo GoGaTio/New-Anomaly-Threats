@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <LayoutRoomDef>
+    <defName>NAT_LabyrinthRustedOutpost</defName>
+    <roomContentsWorkerType>NAT.RoomContents_RustedOutpost</roomContentsWorkerType>
+    <canBeInMixedRoom>false</canBeInMixedRoom>
+    <isValidPlayerSpawnRoom>false</isValidPlayerSpawnRoom>
+    <minSingleRectWidth>8</minSingleRectWidth>
+    <minSingleRectHeight>8</minSingleRectHeight>
+  </LayoutRoomDef>
+  
+</Defs>

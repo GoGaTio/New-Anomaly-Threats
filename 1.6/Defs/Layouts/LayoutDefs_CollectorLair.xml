@@ -8,6 +8,7 @@
     <clearRoomsEntirely>true</clearRoomsEntirely>
     <minRoomWidth>7</minRoomWidth>
     <minRoomHeight>7</minRoomHeight>
+    <terrainDef>AncientConcrete</terrainDef>
 
     <!-- Structure -->
     <doorStuffDef>WoodLog</doorStuffDef>
@@ -26,8 +27,13 @@
       </NAT_CollectorBedroom>
 
       <NAT_CollectionRoom>
-        <weight>1</weight>
+        <weight>2</weight>
       </NAT_CollectionRoom>
+
+      <NAT_LabyrinthRustedOutpost>
+        <weight>0.05</weight>
+        <countRange>0~1</countRange>
+      </NAT_LabyrinthRustedOutpost>
 
     </roomDefs>
     <junkScaterrers>
@@ -66,7 +72,7 @@
         <minGroups>1</minGroups>
       </Granite>
     
-  </junkScaterrers>
+    </junkScaterrers>
   </StructureLayoutDef>
 
 </Defs>

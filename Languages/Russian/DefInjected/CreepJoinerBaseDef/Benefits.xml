@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: bioferrite shaper -->
+  <NAT_RustShaper.label>ржавотворец</NAT_RustShaper.label>
+  <!-- EN: {PAWN_pronoun} offers to use {PAWN_possessive} bioferrite shaping power to help you. -->
+  <NAT_RustShaper.letterExtra>{PAWN_nameDef} отлично разбирается в природе биоферрита и его энергии. С помощью загадочных архотехнологичных процедур {PAWN_pronoun} может оживлять биоферрит в разумную ржавчину.</NAT_RustShaper.letterExtra>
+  
+</LanguageData>

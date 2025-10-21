@@ -140,6 +140,61 @@ namespace NAT
         }
     }
 
+	public class CompProperties_AbilitySpawnWithFaction : CompProperties_AbilityEffect
+	{
+		public ThingDef thingDef;
+
+		public bool allowOnBuildings;
+
+		public Color? color = null;
+
+		public CompProperties_AbilitySpawnWithFaction()
+		{
+			compClass = typeof(CompAbilityEffect_SpawnWithFaction);
+		}
+	}
+	public class CompAbilityEffect_SpawnWithFaction : CompAbilityEffect
+	{
+		public new CompProperties_AbilitySpawnWithFaction Props => (CompProperties_AbilitySpawnWithFaction)props;
+
+		public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
+		{
+			base.Apply(target, dest);
+			Thing t = GenSpawn.Spawn(Props.thingDef, target.Cell, parent.pawn.Map);
+			if (t.def.CanHaveFaction)
+			{
+				t.SetFaction(parent.pawn.Faction);
+			}
+			if (t is RustedBoostField r)
+			{
+				r.rustFaction = parent.pawn.Faction;
+				r.rust = parent.pawn;
+			}
+		}
+
+		public override void DrawEffectPreview(LocalTargetInfo target)
+		{
+			base.DrawEffectPreview(target);
+			if (Props.color != null)
+			{
+				GenDraw.DrawFieldEdges(CellRect.FromCell(target.Cell).ExpandedBy((Props.thingDef.Size.x - 1) / 2, (Props.thingDef.Size.z - 1) / 2).Cells.ToList(), Props.color.Value);
+			}
+		}
+
+		public override bool Valid(LocalTargetInfo target, bool throwMessages = false)
+		{
+			if (target.Cell.Filled(parent.pawn.Map) || (!Props.allowOnBuildings && target.Cell.GetEdifice(parent.pawn.Map) != null))
+			{
+				if (throwMessages)
+				{
+					Messages.Message("CannotUseAbility".Translate(parent.def.label) + ": " + "AbilityOccupiedCells".Translate(), target.ToTargetInfo(parent.pawn.Map), MessageTypeDefOf.RejectInput, historical: false);
+				}
+				return false;
+			}
+			return true;
+		}
+	}
+
 	public class CompProperties_AbilityReinforcements : CompProperties_AbilityEffect
 	{
 		public float missRadius;

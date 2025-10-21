@@ -10,6 +10,27 @@
       </NAT_RustedTurret_Auto>
     </things>
   </PrefabDef>
+
+  <PrefabDef>
+    <defName>NAT_RustedAutoTurretOutpost</defName>
+    <size>(4,4)</size>
+    <things>
+      <Sandbags>
+        <positions>
+          <li>(0, 0, 0)</li>
+          <li>(1, 0, 0)</li>
+          <li>(0, 0, 1)</li>
+          <li>(3, 0, 3)</li>
+          <li>(3, 0, 2)</li>
+          <li>(2, 0, 3)</li>
+        </positions>
+        <stuff>NAT_AncientFabric</stuff>
+      </Sandbags>
+      <NAT_RustedTurret_Auto>
+        <position>(1,0,1)</position>
+      </NAT_RustedTurret_Auto>
+    </things>
+  </PrefabDef>
   
   <PrefabDef>
     <defName>NAT_RustedSniperTurret</defName>

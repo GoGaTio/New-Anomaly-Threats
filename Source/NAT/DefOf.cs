@@ -71,15 +71,21 @@ namespace NAT
 
 		public static ThingDef NAT_RustedCore;
 
+		public static ThingDef NAT_RustedPallet;
+
 		public static ThingDef NAT_RustedBroadcastDish;
 
 		public static ThingDef NAT_CollectorNotes;
 
 		public static ThingDef NAT_CollectorGlassCase;
 
+		public static ThingDef NAT_SignalAction_Sightstealers;
+
 		public static ThingDef NAT_CollectorLairExit;
 
-        public static JobDef NAT_CollectorStealPawn;
+		public static ThingDef NAT_RustedArmyBanner;
+
+		public static JobDef NAT_CollectorStealPawn;
 
 		public static JobDef NAT_CollectorStealThing;
 
@@ -155,6 +161,8 @@ namespace NAT
 		public static OrbitalDebrisDef NAT_RustedDebris;
 
 		public static PrefabDef NAT_RustedDish;
+
+		public static PrefabDef NAT_RustedAutoTurretLabyrinth;
 
 		public static EffecterDef NAT_BannerBoostEffect;
 

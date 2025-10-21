@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  
+
   <ThingDef Name="NAT_ItemUsableByRust" Abstract="True">
     <thingClass>ThingWithComps</thingClass>
     <category>Item</category>
@@ -13,7 +13,7 @@
     <alwaysHaulable>true</alwaysHaulable>
     <drawGUIOverlay>true</drawGUIOverlay>
     <scatterableOnMapGen>false</scatterableOnMapGen>
-	<useHitPoints>true</useHitPoints>
+    <useHitPoints>true</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <soundInteract>Standard_Pickup</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
@@ -31,7 +31,6 @@
     <comps>
       <li Class="CompProperties_Forbiddable" />
     </comps>
-
   </ThingDef>
 
   <ThingDef Name="NAT_RustActivatorBase" Abstract="True" ParentName="NAT_ItemUsableByRust">
@@ -57,8 +56,8 @@
       <ComponentIndustrial>1</ComponentIndustrial>
       <Bioferrite>20</Bioferrite>
     </costList>
-  </ThingDef> 
-  
+  </ThingDef>
+
   <ThingDef ParentName="NAT_RustActivatorBase">
     <defName>NAT_RustedActivator_Speed</defName>
     <label>rusted speed activator</label>
@@ -128,7 +127,7 @@
       <Neutroamine>5</Neutroamine>
     </costList>
   </ThingDef>
-  
+
   <ThingDef ParentName="NAT_RustActivatorBase">
     <defName>NAT_RustedActivator_Regeneration</defName>
     <label>rusted regeneration activator</label>
@@ -151,7 +150,31 @@
       <Meat_Twisted>40</Meat_Twisted>
     </costList>
   </ThingDef>
-  
+
+  <ThingDef ParentName="NAT_RustActivatorBase">
+    <defName>NAT_RustedActivator_Stability</defName>
+    <label>rusted stability activator</label>
+    <description>A small device that increases stability of rust's core.</description>
+    <graphicData>
+      <texPath>Things/Item/NAT_RustedActivator_Stability</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.75</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>60</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="NAT.CompProperties_UsableByRust">
+        <hediff>NAT_ActivatedStability</hediff>
+        <useEffect>NAT_ActivatorUsed_Stability</useEffect>
+        <combatEnhancing>false</combatEnhancing>
+      </li>
+    </comps>
+    <costList>
+      <NAT_PainClot>10</NAT_PainClot>
+    </costList>
+  </ThingDef>
+
   <ThingDef ParentName="NAT_ItemUsableByRust">
     <defName>NAT_ShardUpgrader</defName>
     <label>shard upgrader</label>
@@ -173,15 +196,15 @@
     </comps>
     <costList>
       <Shard>1</Shard>
-	  <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentIndustrial>4</ComponentIndustrial>
       <Bioferrite>65</Bioferrite>
     </costList>
-	<recipeMaker>
-	  <workAmount>2100</workAmount>
+    <recipeMaker>
+      <workAmount>2100</workAmount>
     </recipeMaker>
-	<stackLimit>1</stackLimit>
+    <stackLimit>1</stackLimit>
   </ThingDef>
-  
+
   <HediffDef>
     <defName>NAT_ShardUpgrade</defName>
     <label>shard upgrade</label>
@@ -190,16 +213,16 @@
     <isBad>false</isBad>
     <stages>
       <li>
-		<statFactors>
+        <statFactors>
           <IncomingDamageFactor>0.75</IncomingDamageFactor>
-		  <Flammability>0.75</Flammability>
+          <Flammability>0.75</Flammability>
         </statFactors>
-<statOffsets>
-      <NAT_CoreDropChance>1</NAT_CoreDropChance>
+        <statOffsets>
+          <NAT_CoreDropChance>1</NAT_CoreDropChance>
         </statOffsets>
-		<regeneration>15</regeneration>
+        <regeneration>15</regeneration>
       </li>
     </stages>
   </HediffDef>
-  
+
 </Defs>

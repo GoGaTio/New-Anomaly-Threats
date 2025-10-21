@@ -20,10 +20,16 @@
   <NAT_RustedActivator_Speed.label>ржавый активатор скорости</NAT_RustedActivator_Speed.label>
   <!-- EN: A small device that increases speed of rust. -->
   <NAT_RustedActivator_Speed.description>Малое устройство увеличивающее скорость передвижения ржавчины.</NAT_RustedActivator_Speed.description>
+
+  <!-- EN: rusted stability activator -->
+  <NAT_RustedActivator_Stability.label>ржавый активатор стабильности</NAT_RustedActivator_Stability.label>
+  <!-- EN: A small device that increases stability of rust's core. -->
+  <NAT_RustedActivator_Stability.description>Малое устройство увеличивающее стабильность ядра ржавчины.</NAT_RustedActivator_Stability.description>
   
   <!-- EN: shard upgrader -->
   <NAT_ShardUpgrader.label>осколочный улучшатель</NAT_ShardUpgrader.label>
   <!-- EN: Special device that can upgrade rust using shard of dark archotechnology.\n\nMakes rust core fully stable. -->
   <NAT_ShardUpgrader.description>Специальное устройство, которое улучшает ржавчину при помощи тёмного архо-осколка.\n\nДелает ядро ржавчины полностью стабильным.</NAT_ShardUpgrader.description>
   
+
 </LanguageData>

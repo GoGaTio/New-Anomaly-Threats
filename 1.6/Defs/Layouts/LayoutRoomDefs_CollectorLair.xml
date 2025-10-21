@@ -34,7 +34,7 @@
     </prefabs>-->
     <scatterTerrain>
       <Soil>
-        <groupsPerHundredCells>2~3</groupsPerHundredCells>
+        <groupsPerHundredCells>2~6</groupsPerHundredCells>
         <itemsPerGroup>4~6</itemsPerGroup>
         <groupDistRange>2~3</groupDistRange>
       </Soil>
@@ -62,7 +62,7 @@
     </prefabs>
     <scatterTerrain>
       <Soil>
-        <groupsPerHundredCells>3~4</groupsPerHundredCells>
+        <groupsPerHundredCells>3~6</groupsPerHundredCells>
         <itemsPerGroup>4~8</itemsPerGroup>
         <groupDistRange>2~3</groupDistRange>
       </Soil>
@@ -71,22 +71,17 @@
 
   <LayoutRoomDef>
     <defName>NAT_CollectorBedroom</defName>
+    <roomContentsWorkerType>NAT.RoomContents_CollectorLairBedroom</roomContentsWorkerType>
     <canMergeWithAdjacentRoom>false</canMergeWithAdjacentRoom>
     <requiresSingleRectRoom>true</requiresSingleRectRoom>
     <minSingleRectWidth>9</minSingleRectWidth>
     <minSingleRectHeight>9</minSingleRectHeight>
+    <spawnJunk>false</spawnJunk>
     <floorTypes>
       <li>CarpetMagenta</li>
       <li>CarpetMossBright</li>
       <li>CarpetBlue</li>
     </floorTypes>
-    <scatterTerrain>
-      <Soil>
-        <groupsPerHundredCells>2~3</groupsPerHundredCells>
-        <itemsPerGroup>4~6</itemsPerGroup>
-        <groupDistRange>2~3</groupDistRange>
-      </Soil>
-    </scatterTerrain>
   </LayoutRoomDef>
   
 </Defs>
