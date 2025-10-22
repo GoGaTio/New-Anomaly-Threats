@@ -321,7 +321,15 @@ namespace NAT
 			stateGraph.AddTransition(transition);
 			Transition transition2 = new Transition(firstSource, lordToil_AssaultColony);
 			transition2.AddTrigger(new Trigger_PawnHarmed(1f, requireInstigatorWithFaction: false));
-			transition2.AddTrigger(new Trigger_Custom((TriggerSignal signal) => signal.type == TriggerSignalType.BuildingDamaged || signal.type == TriggerSignalType.BuildingLost || signal.signal.tag == "NAT_CrateOpened" || (!attackSignal.NullOrEmpty() && signal.signal.tag == attackSignal && signal.signal.args.GetArg<bool>("wakeUp"))));
+			transition2.AddTrigger(new Trigger_Custom((TriggerSignal signal) => ((signal.type == TriggerSignalType.BuildingDamaged || signal.type == TriggerSignalType.BuildingLost) && signal.thing is Building b && b.GetLord() == lord) || signal.signal.tag == "NAT_CrateOpened" || (!attackSignal.NullOrEmpty() && signal.signal.tag == attackSignal && (!sleep || signal.signal.args.GetArg<bool>("wakeUp") == true))));
+			transition2.AddPostAction(new TransitionAction_Custom(delegate (Transition t)
+			{
+				Log.Message("NAT_?");
+				foreach (Lord lord in t.Map.lordManager.lords)
+				{
+					lord.Notify_SignalReceived(new Signal(attackSignal, new NamedArgument(forceWakeUp == true, "wakeUp")));
+				}
+			}));
 			if (sendWokenUpMessage)
 			{
 				transition2.AddPreAction(new TransitionAction_Message("MessageSleepingPawnsWokenUp".Translate("NAT_RustedSoldiers".Translate().CapitalizeFirst()).CapitalizeFirst(), MessageTypeDefOf.ThreatBig, null, 1f, AnyAsleep));
@@ -333,15 +341,19 @@ namespace NAT
 			transition3.AddTrigger(new Trigger_Custom((TriggerSignal signal) => signal.type == TriggerSignalType.BuildingDamaged || signal.type == TriggerSignalType.BuildingLost || (!attackSignal.NullOrEmpty() && signal.signal.tag == attackSignal)));
 			transition3.AddPostAction(new TransitionAction_Custom(delegate (Transition t)
 			{
+				Log.Message("NAT_!");
 				foreach(Lord lord in t.Map.lordManager.lords)
 				{
-					lord.Notify_SignalReceived(new Signal("attackSignal", new NamedArgument(forceWakeUp, "wakeUp")));
+					lord.Notify_SignalReceived(new Signal(attackSignal, new NamedArgument(forceWakeUp == true, "wakeUp")));
 				}
 			}));
 			stateGraph.AddTransition(transition3);
 			Transition transition4 = new Transition(lordToil_AssaultColony, lordToil_Stage);
 			transition4.AddTrigger(new Trigger_TicksPassedWithoutHarm(1200));
 			stateGraph.AddTransition(transition4);
+			Transition transition5 = new Transition(lordToil_Stage, firstSource);
+			transition5.AddTrigger(new Trigger_TicksPassedWithoutHarm(5000));
+			stateGraph.AddTransition(transition5);
 			return stateGraph;
 		}
 

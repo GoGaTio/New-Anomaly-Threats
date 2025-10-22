@@ -83,7 +83,19 @@ namespace NAT
 					mainRect = mainRect.ExpandedBy(1).ClipInsideMap(map);
 				}
 			}
-			GenerateAndSpawn(inRect, map, parms, layout);
+			Thing.allowDestroyNonDestroyable = true;
+			try
+			{
+				foreach (Thing t in map.listerThings.ThingsOfDef(ThingDefOf.SteamGeyser).ToList())
+				{
+					t.Destroy();
+				}
+				GenerateAndSpawn(inRect, map, parms, layout);
+			}
+			finally
+			{
+				Thing.allowDestroyNonDestroyable = false;
+			}
 			defeatedFaction = null;
 		}
 

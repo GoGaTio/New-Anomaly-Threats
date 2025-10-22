@@ -133,16 +133,22 @@
       <NAT_RustedRoom>
         <weight>5</weight>
       </NAT_RustedRoom>
+      <NAT_RustedCheckpost>
+        <weight>1</weight>
+      </NAT_RustedCheckpost>
       <NAT_RustedStorage>
         <weight>1</weight>
       </NAT_RustedStorage>
-      <NAT_RustedStorage>
-        <weight>1</weight>
-      </NAT_RustedStorage>
-      <NAT_RustedStorage>
+      <NAT_RustedBarracks>
+        <weight>0.5</weight>
+      </NAT_RustedBarracks>
+      <NAT_RustedHarbingerGarden>
+        <weight>0.4</weight>
+      </NAT_RustedHarbingerGarden>
+      <NAT_RustedBedroom>
         <weight>2</weight>
-        <countRange>0~2</countRange>
-      </NAT_RustedStorage>
+        <countRange>1~2</countRange>
+      </NAT_RustedBedroom>
     </roomDefs>
   </NAT.RustedLayoutDef>
 

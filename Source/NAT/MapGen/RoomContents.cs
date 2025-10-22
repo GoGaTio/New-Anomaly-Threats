@@ -149,14 +149,6 @@ namespace NAT
 		public override void FillRoom(Map map, LayoutRoom room, Faction faction, float? threatPoints = null)
 		{
 			base.FillRoom(map, room, faction, threatPoints);
-			//List<IntVec3> edgeCells = new List<IntVec3>();
-			//foreach (CellRect r in room.rects)
-			//{
-			//	edgeCells.AddRange(r.ContractedBy(1).EdgeCells);
-			//}
-			//int num = Mathf.CeilToInt((float)(edgeCells.Count) / 30f);
-			//Log.Message(num);
-			//SpawnThings(NATDefOf.NAT_RustedTurret_Foam, edgeCells, map, num);
 		}
 
 		public static void SpawnThings(ThingDef def, List<IntVec3> cells, Map map, int amount = 1)
@@ -240,19 +232,31 @@ namespace NAT
 
 	public class RoomContents_HarbingerGarden : RoomContents_RustedRegular
 	{
+		public static FloatRange GrowthRange = new FloatRange(0.15f, 0.85f);
 		public override void FillRoom(Map map, LayoutRoom room, Faction faction, float? threatPoints = null)
 		{
 			base.FillRoom(map, room, faction, threatPoints);
-			List<IntVec3> list = new List<IntVec3>();
-			CellRect mainRect = room.rects.MaxBy((CellRect x) => x.Area);
 			foreach (CellRect rect in room.rects)
 			{
-				list.Add(rect.ClipInsideRect(mainRect).CenterCell);
-			}
-			list.Shuffle();
-			for (int i = 0; i < 2; i++)
-			{
-				SpawnThingRandom(NATDefOf.NAT_RustedTurret_Sniper, list[i], map);
+				List<IntVec3> cells = rect.ContractedBy(2).ToList();
+				List<Thing> list = new List<Thing>();
+				foreach (IntVec3 cell in cells.InRandomOrder())
+				{
+					map.terrainGrid.SetTerrain(cell, TerrainDefOf.Soil);
+					map.roofGrid.SetRoof(cell, null);
+					if (Rand.Bool)
+					{
+						continue;
+					}
+					if (list.Any((Thing p) => p.def.plant.blockAdjacentSow && cell.IsAdjacentToCardinalOrInside(p.OccupiedRect())))
+					{
+						continue;
+					}
+					Plant plant = (Plant)ThingMaker.MakeThing(ThingDefOf.Plant_TreeHarbinger);
+					plant.Growth = GrowthRange.RandomInRange;
+					list.Add(plant);
+					GenSpawn.Spawn(plant, cell, map);
+				}
 			}
 		}
 	}
@@ -273,12 +277,14 @@ namespace NAT
 		public override void FillRoom(Map map, LayoutRoom room, Faction faction, float? threatPoints = null)
 		{
 			base.FillRoom(map, room, faction, threatPoints);
-			List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(new PawnGroupMakerParms
+			List<Pawn> list = GeneratePawns();
+			if (Sleep)
 			{
-				groupKind = groupKindDef,
-				points = new FloatRange(300f, 500f).RandomInRange,
-				faction = Faction.OfEntities
-			}).ToList();
+				foreach (Pawn p in list)
+				{
+					p.canBeDormant.ToSleep();
+				}
+			}
 			Lord lord = LordMaker.MakeNewLord(Faction.OfEntities, new LordJob_DefendRust(room.Boundary.CenterCell, WanderRadius(room), Sleep, true, false, ForceWakeUp, "NAT_Rusts"), map, list);
 			List<IntVec3> cells = new List<IntVec3>();
 			foreach (Pawn p in list)
@@ -290,6 +296,13 @@ namespace NAT
 				}
 			}
 		}
+
+		public virtual List<Pawn> GeneratePawns() => PawnGroupMakerUtility.GeneratePawns(new PawnGroupMakerParms
+		{
+			groupKind = groupKindDef,
+			points = new FloatRange(300f, 500f).RandomInRange,
+			faction = Faction.OfEntities
+		}).ToList();
 	}
 
 	public class RoomContents_RustedBarracks : RoomContents_RustedPawns
@@ -298,6 +311,24 @@ namespace NAT
 
 		public override bool Sleep => true;
 
+	}
+
+	public class RoomContents_RustedBedroom : RoomContents_RustedPawns
+	{
+		public override bool Sleep => true;
+
+		public override bool ForceWakeUp => true;
+
+		public override List<Pawn> GeneratePawns()
+		{
+			List<Pawn> list = new List<Pawn>();
+			for(int i = 0; i < new IntRange(2, 3).RandomInRange; i++)
+			{
+				Pawn rust = PawnGenerator.GeneratePawn(NATDefOf.NAT_RustedOfficer, Faction.OfEntities);
+				list.Add(rust);
+			}
+			return list;
+		}
 	}
 
 }

@@ -121,6 +121,8 @@ namespace NAT
 
 		public static PawnKindDef NAT_RustedSoldier;
 
+		public static PawnKindDef NAT_RustedOfficer;
+
 		public static PawnGroupKindDef NAT_RustedArmy;
 
 		public static PawnGroupKindDef NAT_RustedArmyDefence;

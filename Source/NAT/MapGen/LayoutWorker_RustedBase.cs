@@ -88,15 +88,11 @@ namespace NAT
 	{
 		protected override float RoomToExteriorDoorRatio => 0f;
 
+		protected override ThingDef ForceExteriorDoor => null;
+
 		protected override bool CanConnectRoomsExternally => false;
 
-		private static readonly FloatRange ThreatPointsFactorRange = new FloatRange(0.25f, 0.35f);
-
 		private static readonly List<Thing> tmpSpawnedThreatThings = new List<Thing>();
-
-		private static readonly List<ComplexThreat> useableThreats = new List<ComplexThreat>();
-
-		private static readonly Dictionary<int, List<ComplexThreatDef>> usedThreatsByRoom = new Dictionary<int, List<ComplexThreatDef>>();
 
 		public new RustedLayoutDef Def => (RustedLayoutDef)base.Def;
 
@@ -141,8 +137,9 @@ namespace NAT
 				{
 					foreach (IntVec3 c in r.Cells)
 					{
-						map.terrainGrid.SetTerrain(c + offset, Def.terrainDef);
-						foreach (Thing item in c.GetThingList(map).ToList())
+						IntVec3 cell = c + offset;
+						map.terrainGrid.SetTerrain(cell, Def.terrainDef);
+						foreach (Thing item in cell.GetThingList(map).ToList())
 						{
 							item.Destroy();
 						}
@@ -160,6 +157,7 @@ namespace NAT
 			List<LayoutRoom> rooms = layoutStructureSketch.structureLayout.Rooms;
 			//SpawnThings(layoutStructureSketch, map, rooms, list);
 			tmpSpawnedThreatThings.Clear();
+			
 		}
 
 		public void MakeOuterPart(LayoutStructureSketch layoutStructureSketch, Map map, ref float points)
@@ -268,6 +266,7 @@ namespace NAT
 					thing.SetFaction(Faction.OfEntities);
 					GenSpawn.Spawn(thing, rect.CenterCell, map, rot);
 					num++;
+					if(RCellFinder.) MapGenerator.PlayerStartSpot
 				}
                 else
                 {
