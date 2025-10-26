@@ -44,7 +44,7 @@
           <canTargetHumans>true</canTargetHumans>
         </wakeUpTargetingParams>
       </li>
-	  <li Class="NAT.CompProperties_RustedArmor"/>
+      <li Class="NAT.CompProperties_RustedArmor"/>
     </comps>
     <statBases>
       <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
@@ -65,20 +65,6 @@
       <li>PlaceWorker_ShowTurretRadius</li>
     </placeWorkers>
     <uiIconScale>1.1</uiIconScale>
-    <damageMultipliers>
-      <li>
-        <damageDef>Bomb</damageDef>
-        <multiplier>0.5</multiplier>
-      </li>
-      <li>
-        <damageDef>Thump</damageDef>
-        <multiplier>0.5</multiplier>
-      </li>
-      <li>
-        <damageDef>EMP</damageDef>
-        <multiplier>0.4</multiplier>
-      </li>
-    </damageMultipliers>
   </ThingDef>
 
   <!--=============== Mini-turret ===============-->
@@ -128,8 +114,7 @@
 
   <!--=============== Autocannon turret ===============-->
 
-  <ThingDef ParentName="NAT_BaseRustedTurret" Name="NAT_HeavyRustedTurret" Abstract="True"> 
-
+  <ThingDef ParentName="NAT_BaseRustedTurret" Name="NAT_HeavyRustedTurret" Abstract="True">
     <graphicData>
       <texPath>Things/Building/NAT_RustedHeavyTurret</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -150,18 +135,12 @@
       <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
     </statBases>
-
-
     <fillPercent>0.5</fillPercent>
-
-
     <building>
-
       <turretTopDrawSize>3</turretTopDrawSize>
       <turretTopOffset>(0, 0.1)</turretTopOffset>
       <destroyEffecter>NAT_RustedOfficerDeath</destroyEffecter>
     </building>
-
     <uiIconScale>0.95</uiIconScale>
     <soundImpactDefault>NAT_Pawn_RustedOfficer_Wounded</soundImpactDefault>
   </ThingDef>
@@ -172,7 +151,8 @@
     <description>A rusted bioferrite piece shaped like a heavy automatic turret. Not actually a turret, rusted autocannon turret is a static rusted creature, powered by dark archotechnology shard. Can shoot through the smoke and slowly regenerate.</description>
     <uiIconPath>Things/Building/NAT_RustedAutoTurret_Icon</uiIconPath>
     <statBases>
-      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret> <!-- like level 8 human shooter -->
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+      <!-- like level 8 human shooter -->
     </statBases>
     <building>
       <combatPower>230</combatPower>
@@ -185,8 +165,6 @@
     </killedLeavingsRanges>
   </ThingDef>
 
-
-
   <!--=============== Sniper ===============-->
 
   <ThingDef ParentName="NAT_HeavyRustedTurret">
@@ -195,20 +173,21 @@
     <description>A rusted bioferrite piece shaped like an armor-piercing turret. Not actually a turret, rusted sniper turret is a static rusted creature, powered by dark archotechnology shard. Can shoot through the smoke and slowly regenerate.</description>
     <uiIconPath>Things/Building/NAT_RustedSniperTurret_Icon</uiIconPath>
     <statBases>
-      <ShootingAccuracyTurret>0.98</ShootingAccuracyTurret> <!-- like level 14 human shooter -->
+      <ShootingAccuracyTurret>0.98</ShootingAccuracyTurret>
+      <!-- like level 14 human shooter -->
     </statBases>
     <building>
       <combatPower>290</combatPower>
       <turretGunDef>NAT_Gun_RustedSniperTurret</turretGunDef>
       <turretBurstCooldownTime>3.2</turretBurstCooldownTime>
     </building>
-    <generateCommonality>0.7</generateCommonality> <!-- a bit less common than other turrets -->
+    <generateCommonality>0.7</generateCommonality>
+    <!-- a bit less common than other turrets -->
     <killedLeavingsRanges>
       <Bioferrite>10~30</Bioferrite>
       <Shard>-6~1</Shard>
     </killedLeavingsRanges>
   </ThingDef>
-
 
   <!--=============== Foam ===============-->
 
@@ -242,9 +221,8 @@
         <ticksPerHeal>1000</ticksPerHeal>
       </li>
     </comps>
-
-
-    <generateCommonality>0.2</generateCommonality> <!-- a bit less common than other turrets -->
+    <generateCommonality>0.2</generateCommonality>
+    <!-- a bit less common than other turrets -->
     <building>
       <combatPower>5</combatPower>
       <ai_combatDangerous>false</ai_combatDangerous>

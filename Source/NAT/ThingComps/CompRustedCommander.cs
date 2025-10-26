@@ -112,6 +112,10 @@ namespace NAT
 		public LocalTargetInfo TryCallSupport(out Ability ability)
         {
 			ability = null;
+			if (!Rust.Awake())
+			{
+				return LocalTargetInfo.Invalid;
+			}
 			List<CastParms> castParms = new List<CastParms>();
 			foreach(Ability a in Rust.abilities.AllAbilitiesForReading)
             {

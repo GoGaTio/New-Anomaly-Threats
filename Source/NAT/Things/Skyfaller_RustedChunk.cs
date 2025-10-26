@@ -61,13 +61,20 @@ namespace NAT
         public bool causesExplosion = true;
 
         public Faction faction;
+
         protected override void Impact()
         {
-            if (causesExplosion)
+            Map map = base.Map;
+            IntVec3 pos = base.Position;
+			if (causesExplosion)
             {
-                GenExplosion.DoExplosion(base.Position, base.Map, def.skyfaller.explosionRadius, NATDefOf.NAT_RustedBomb, null, GenMath.RoundRandom((float)NATDefOf.NAT_RustedBomb.defaultDamage * def.skyfaller.explosionDamageFactor), -1f, null, null, null, null, null, 0f, 1, null, null, 255, applyDamageToExplosionCellsNeighbors: false, null, 0f, 1, 0f, damageFalloff: false, null, frendlies.ConcatIfNotNull(Frendlies())?.ToList());
+                GenExplosion.DoExplosion(pos, map, def.skyfaller.explosionRadius, NATDefOf.NAT_RustedBomb, null, GenMath.RoundRandom((float)NATDefOf.NAT_RustedBomb.defaultDamage * def.skyfaller.explosionDamageFactor), -1f, null, null, null, null, null, 0f, 1, null, null, 255, applyDamageToExplosionCellsNeighbors: false, null, 0f, 1, 0f, damageFalloff: false, null, frendlies.ConcatIfNotNull(Frendlies())?.ToList());
             }
-            base.Impact();
+			if (base.innerContainer.First() is Building b)
+			{
+                CellRect rect = CellRect.FromCell(pos).ExpandedBy(b.def.Size.x, b.def.Size.z);
+			}
+			base.Impact();
         }
 
         public override void ExposeData()

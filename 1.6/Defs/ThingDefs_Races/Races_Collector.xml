@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
+
   <ThingDef ParentName="BasePawn">
     <defName>NAT_Collector</defName>
     <label>collector</label>
@@ -65,13 +65,13 @@
     <comps>
       <li Class="NAT.CompProperties_Collector">
         <highPriorityThings>
-		  <li>GoldenCube</li>
-		  <li>RevenantSpine</li>
-		  <li>Shard</li>
-		  <li>GrayFleshSample</li>
-		</highPriorityThings>
+          <li>GoldenCube</li>
+          <li>RevenantSpine</li>
+          <li>Shard</li>
+          <li>GrayFleshSample</li>
+        </highPriorityThings>
         <thingsRange>7~11</thingsRange>
-		<waitingTicksRange>50000~75000</waitingTicksRange>
+        <waitingTicksRange>50000~75000</waitingTicksRange>
       </li>
       <li Class="CompProperties_HoldingPlatformTarget">
         <baseEscapeIntervalMtbDays>60</baseEscapeIntervalMtbDays>
@@ -120,13 +120,13 @@
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.1</chanceFactor>
       </li>
-	  <li>
+      <li>
         <label>left claw</label>
         <labelNoLocation>claw</labelNoLocation>
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>11</power>
+        <power>15</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
         <surpriseAttack>
@@ -138,13 +138,13 @@
           </extraMeleeDamages>
         </surpriseAttack>
       </li>
-	  <li>
+      <li>
         <label>right claw</label>
         <labelNoLocation>claw</labelNoLocation>
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>11</power>
+        <power>15</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
         <surpriseAttack>
@@ -157,7 +157,7 @@
         </surpriseAttack>
       </li>
     </tools>
-	<killedLeavingsRanges>
+    <killedLeavingsRanges>
       <Shard>0~1</Shard>
     </killedLeavingsRanges>
   </ThingDef>
@@ -192,21 +192,21 @@
           <drawSize>2</drawSize>
           <attachPoints>
             <li>
-            <offset>(-.45, 0, .35)</offset>
-            <type>PlatformRestraint0</type>
-          </li>
-          <li>
-            <offset>(.45, 0, .35)</offset>
-            <type>PlatformRestraint1</type>
-          </li>
-          <li>
-            <offset>(.2, 0, -.71)</offset>
-            <type>PlatformRestraint2</type>
-          </li>
-          <li>
-            <offset>(-.2, 0, -.71)</offset>
-            <type>PlatformRestraint3</type>
-          </li>
+              <offset>(-.45, 0, .35)</offset>
+              <type>PlatformRestraint0</type>
+            </li>
+            <li>
+              <offset>(.45, 0, .35)</offset>
+              <type>PlatformRestraint1</type>
+            </li>
+            <li>
+              <offset>(.2, 0, -.71)</offset>
+              <type>PlatformRestraint2</type>
+            </li>
+            <li>
+              <offset>(-.2, 0, -.71)</offset>
+              <type>PlatformRestraint3</type>
+            </li>
           </attachPoints>
         </dessicatedBodyGraphicData>
       </li>

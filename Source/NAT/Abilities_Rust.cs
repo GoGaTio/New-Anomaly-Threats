@@ -302,5 +302,14 @@ namespace NAT
 			}
 			return base.CanApplyOn(target, dest);
 		}
+
+		public override bool AICanTargetNow(LocalTargetInfo target)
+		{
+			if(parent.pawn.Map.IsPocketMap)
+			{
+				return false;
+			}
+			return base.AICanTargetNow(target);
+		}
 	}
 }

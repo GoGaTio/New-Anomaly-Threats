@@ -40,7 +40,7 @@
     <fertility>0</fertility>
     <layerable>false</layerable>
     <designationCategory />
-    <pathCost>1</pathCost>
+    <pathCost>10</pathCost>
     <edgeType>FadeRough</edgeType>
     <statBases>
       <Beauty>-10</Beauty>
@@ -48,6 +48,9 @@
       <Flammability>0</Flammability>
       <CleaningTimeFactor>0.8</CleaningTimeFactor>
     </statBases>
+    <tags>
+      <li>NAT_Rusted</li>
+    </tags>
   </TerrainDef>
 
   <!--<TerrainDef ParentName="FloorBase">

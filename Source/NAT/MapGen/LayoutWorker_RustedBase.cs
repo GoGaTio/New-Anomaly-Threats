@@ -266,7 +266,6 @@ namespace NAT
 					thing.SetFaction(Faction.OfEntities);
 					GenSpawn.Spawn(thing, rect.CenterCell, map, rot);
 					num++;
-					if(RCellFinder.) MapGenerator.PlayerStartSpot
 				}
                 else
                 {

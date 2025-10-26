@@ -391,6 +391,22 @@ namespace NAT
 		}
 	}
 
+	public class LordToil_SleepRust : LordToil
+	{
+		public override void UpdateAllDuties()
+		{
+			for (int i = 0; i < lord.ownedPawns.Count; i++)
+			{
+				Pawn p = lord.ownedPawns[i];
+				p.mindState.duty = new PawnDuty(DutyDefOf.SleepForever);
+				if(p.canBeDormant != null && p.canBeDormant.Awake)
+				{
+					p.canBeDormant.ToSleep();
+				}
+			}
+		}
+	}
+
 	public class Trigger_TicksPassedWithoutHarm : Trigger_TicksPassed
 	{
 		public Trigger_TicksPassedWithoutHarm(int tickLimit)
@@ -477,7 +493,7 @@ namespace NAT
 		{
 			StateGraph stateGraph = new StateGraph();
 			LordToil_DefendPoint lordToil_DefendStructure = (LordToil_DefendPoint)(stateGraph.StartingToil = new LordToil_DefendPoint(structure.Position, wanderRadius: wanderRadius, defendRadius: defendRadius));
-			LordToil_AssaultColony lordToil_AssaultColony = new LordToil_AssaultColony(attackDownedIfStarving: true)
+			LordToil_AssaultColonyRust lordToil_AssaultColony = new LordToil_AssaultColonyRust(attackDownedIfStarving: true)
 			{
 				useAvoidGrid = true
 			};

@@ -127,6 +127,10 @@
         <multiplier>0.5</multiplier>
       </li>
       <li>
+        <damageDef>NAT_RustedBomb</damageDef>
+        <multiplier>0.25</multiplier>
+      </li>
+      <li>
         <damageDef>Thump</damageDef>
         <multiplier>0.5</multiplier>
       </li>
@@ -148,6 +152,12 @@
     <minGenerationAge>100</minGenerationAge>
     <overrideDebugActionCategory>Rusts</overrideDebugActionCategory>
     <weaponTags></weaponTags>
+    <moveSpeedFactorByTerrainTag>
+      <li>
+        <key>NAT_Rusted</key>
+        <value>2.0</value>
+      </li>
+    </moveSpeedFactorByTerrainTag>
   </PawnKindDef>
 
 </Defs>

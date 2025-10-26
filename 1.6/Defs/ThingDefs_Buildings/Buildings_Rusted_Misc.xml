@@ -26,6 +26,24 @@
       <Flammability>1.5</Flammability>
       <Beauty>-10</Beauty>
     </statBases>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+      <li>
+        <damageDef>NAT_RustedBomb</damageDef>
+        <multiplier>0.25</multiplier>
+      </li>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>0.5</multiplier>
+      </li>
+      <li>
+        <damageDef>EMP</damageDef>
+        <multiplier>0.4</multiplier>
+      </li>
+    </damageMultipliers>
   </ThingDef>
 
   <ThingDef ParentName="NAT_RustedBuildingBase">
@@ -84,20 +102,39 @@
         <glowColor>(255, 0, 0, 0)</glowColor>
       </li>
     </comps>
-    <damageMultipliers>
-      <li>
-        <damageDef>Bomb</damageDef>
-        <multiplier>0.5</multiplier>
-      </li>
-      <li>
-        <damageDef>Thump</damageDef>
-        <multiplier>0.5</multiplier>
-      </li>
-      <li>
-        <damageDef>EMP</damageDef>
-        <multiplier>0.4</multiplier>
-      </li>
-    </damageMultipliers>
+  </ThingDef>
+
+  <ThingDef ParentName="NAT_RustedBuildingBase">
+    <defName>NAT_RustedTankTrap</defName>
+    <label>rusted tank trap</label>
+    <description>A rusted beacon that calls reinforcements if there are enemies nearby. Can be stunned with EMP or disruptors.</description>
+    <graphicData>
+      <texPath>Things/Building/NAT_RustedTankTrap</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(0.6, 0.65, 0.6)</volume>
+      </shadowData>
+    </graphicData>
+    <pathCost>70</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <building>
+      <buildingTags>
+        <li>NAT_RustedTankTrap</li>
+      </buildingTags>
+      <ai_chillDestination>true</ai_chillDestination>
+      <ai_neverTrashThis>true</ai_neverTrashThis>
+    </building>
+    <comps>
+      <li Class="NAT.CompProperties_RustedArmor"/>
+    </comps>
+    <statBases>
+      <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+      <MaxHitPoints>550</MaxHitPoints>
+    </statBases>
+    <rotatable>false</rotatable>
+    <size>(2,2)</size>
   </ThingDef>
 
   <ThingDef ParentName="NAT_RustedBuildingBase">

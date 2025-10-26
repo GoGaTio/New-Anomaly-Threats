@@ -5,5 +5,6 @@
   <NAT_AncientFabric.label>древняя ткань</NAT_AncientFabric.label>
   <!-- EN: Ancient fabric usually found in Rusted army furnisments. It is soft, light, non-flammable, and insulates well. -->
   <NAT_AncientFabric.description>Древняя ткань обычно используемая ржавыми созданиями.</NAT_AncientFabric.description>
+  <NAT_AncientFabric.stuffProps.stuffAdjective>древней ткани</NAT_AncientFabric.stuffProps.stuffAdjective>
   
 </LanguageData>
