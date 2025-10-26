@@ -64,7 +64,7 @@ namespace NAT
             {
 				return 0;
             }
-			return 1f;
+			return 0.5f;
 		}
 
         public override void Notify_UsedVerb(Pawn pawn, Verb verb)

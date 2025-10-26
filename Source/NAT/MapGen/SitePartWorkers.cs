@@ -153,9 +153,9 @@ namespace NAT
             {
 				p.drafter.Drafted = true;
             }
-			foreach(Building_Turret b in map.listerThings.GetThingsOfType<Building_Turret>())
+			foreach(Building b in map.listerThings.GetThingsOfType<Building>())
 			{
-				if(b.Faction != Faction.OfEntities)
+				if(b.def.CanHaveFaction && b.Faction != Faction.OfEntities && (b is Building_Turret || b.HasComp<CompPower>()))
 				{
 					b.SetFaction(Faction.OfEntities);
 				}
@@ -169,6 +169,12 @@ namespace NAT
 		{
 			base.Init(site, sitePart);
 			site.doorsAlwaysOpenForPlayerPawns = true;
+		}
+
+		public override void PostMapGenerate(Map map)
+		{
+			base.PostMapGenerate(map);
+			map.Parent.doorsAlwaysOpenForPlayerPawns = true;
 		}
 	}
 }

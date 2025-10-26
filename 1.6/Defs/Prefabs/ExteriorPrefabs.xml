@@ -6,9 +6,35 @@
     <size>(5,5)</size>
     <things>
       <NAT_RustedBroadcastDish>
-        <position>(0,0,0)</position>
+        <position>(2,0,2)</position>
       </NAT_RustedBroadcastDish>
     </things>
+    <terrain>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-1,-1,5,5)</li>
+        </rects>
+        <chance>1</chance>
+      </NAT_RustedFloor>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-2,-2,6,6)</li>
+        </rects>
+        <chance>0.8</chance>
+      </NAT_RustedFloor>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-3,-3,7,7)</li>
+        </rects>
+        <chance>0.45</chance>
+      </NAT_RustedFloor>
+      <NAT_RustedFloor>
+        <rects>
+          <li>(-4,-4,8,8)</li>
+        </rects>
+        <chance>0.1</chance>
+      </NAT_RustedFloor>
+    </terrain>
   </PrefabDef>
 
   <PrefabDef>

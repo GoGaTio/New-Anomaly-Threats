@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <SitePartDef>
+    <defName>NAT_RustedBroadcastNode</defName>
+    <label>rusted broadcast node</label>
+    <description>An ancient complex containing treasure.</description>
+    <workerClass>NAT.SitePartWorker_RustedCitadel</workerClass>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>World/NAT_RustedCitadel</expandingIconTexture>
+    <approachOrderString>Investigate {0}</approachOrderString>
+    <approachingReportString>Investigating {0}.</approachingReportString>
+    <arrivedLetterDef>NeutralEvent</arrivedLetterDef>
+    <wantsThreatPoints>true</wantsThreatPoints>
+    <minMapSize>(150, 1, 150)</minMapSize>
+    <gravShipsCanLandOn>true</gravShipsCanLandOn>
+    <tags>
+      <li>NAT_RustedBroadcastNode</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>NAT_RustedBroadcastNode</defName>
+    <linkWithSite>NAT_RustedBroadcastNode</linkWithSite>
+    <order>1100</order>
+    <genStep Class="NAT.GenStep_RustedPoint">
+      <rectSize>33</rectSize>
+      <rustsRectSize>25</rustsRectSize>
+      <fixedPoints>400~800</fixedPoints>
+      <centerDef>NAT_RustedDish</centerDef>
+      <cornerPrefabs>
+        <li>
+          <prefab>NAT_RustedDefencePost_1</prefab>
+          <weight>1</weight>
+        </li>
+        <li>
+          <prefab>NAT_RustedDefencePost_2</prefab>
+          <weight>1</weight>
+        </li>
+      </cornerPrefabs>
+    </genStep>
+  </GenStepDef>
+
+
+</Defs>

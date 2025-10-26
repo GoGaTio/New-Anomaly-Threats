@@ -6,7 +6,7 @@
     <label>ancient fabric</label>
     <description>Ancient fabric usually found in Rusted army furnisments. It is soft, light, non-flammable, and insulates well.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Synthread</texPath>
+      <texPath>Things/Item/NAT_AncientFabric</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <tradeability>None</tradeability>

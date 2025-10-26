@@ -471,7 +471,7 @@ namespace NAT
         public override void PostPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
         {
             base.PostPostApplyDamage(dinfo, totalDamageDealt);
-			if(parent.Spawned && Rand.Chance(totalDamageDealt * 0.01f))
+			if(innerContainer != null && parent.Spawned && Rand.Chance(totalDamageDealt * 0.01f))
             {
 				if (innerContainer.Any)
 				{

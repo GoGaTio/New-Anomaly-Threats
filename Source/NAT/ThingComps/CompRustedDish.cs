@@ -71,7 +71,6 @@ namespace NAT
 
 		public override void PostDraw()
 		{
-			Log.Message("dish");
 			Mesh obj = Props.graphicData.Graphic.MeshAt(parent.Rotation);
 			Vector3 drawPos = parent.DrawPos;
 			drawPos.y = AltitudeLayer.MoteOverhead.AltitudeFor() + parent.def.graphicData.drawOffset.y;
@@ -102,6 +101,15 @@ namespace NAT
 						rot -= 1f;
 					}
 				};
+			}
+		}
+
+		public override void PostSpawnSetup(bool respawningAfterLoad)
+		{
+			base.PostSpawnSetup(respawningAfterLoad);
+			if (!respawningAfterLoad)
+			{
+				rot = new FloatRange(-30f, 30f).RandomInRange;
 			}
 		}
 

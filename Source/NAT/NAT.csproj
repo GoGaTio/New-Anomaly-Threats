@@ -84,6 +84,7 @@
     <Compile Include="Jobs\JobGivers.cs" />
     <Compile Include="Incidents\IncidentWorker_Misc.cs" />
     <Compile Include="DefOf.cs" />
+    <Compile Include="MapGen\GenStep_RustedDish.cs" />
     <Compile Include="MapGen\GenStep_RustedOutpost.cs" />
     <Compile Include="MapGen\GenStep_RustedNode.cs" />
     <Compile Include="MapGen\GenStep_RustedPlatform.cs" />

@@ -87,7 +87,7 @@ namespace NAT
 				(SkyfallerMaker.SpawnSkyfaller(Props.skyfaller, p, cell2, parent.MapHeld ?? Find.CurrentMap) as Skyfaller_RustedChunk).faction = parent.Faction ?? Faction.OfEntities;
 			}
 			RCellFinder.TryFindRandomSpotJustOutsideColony(parent.PositionHeld, parent.MapHeld, out var result);
-			LordMaker.MakeNewLord(parent.Faction, new LordJob_AssaultColony(parent.Faction, false, false, false, false, false, false, false), parent.MapHeld, list);
+			LordMaker.MakeNewLord(parent.Faction, new LordJob_RustedArmy(IntVec3.Invalid, -1), parent.MapHeld, list);
 			Messages.Message("NAT_DropRequested".Translate(parent.LabelCap), list, MessageTypeDefOf.ThreatBig);
 			base.Activate();
 		}
