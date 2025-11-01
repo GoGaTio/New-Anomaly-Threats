@@ -2,27 +2,39 @@
 <Patch>
 
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/DMS.HeavyEquippableDef[defName="HeavyAutomatroid"]/EquippableByRace</xpath>
+    <xpath>Defs/Fortified.HeavyEquippableDef[defName="TransHeavyAutomatroid"]/EquippableByRace</xpath>
     <match Class="PatchOperationSequence">
       <operations>
 
         <li Class="PatchOperationAdd">
-          <xpath>Defs/DMS.HeavyEquippableDef[defName="AverageHumanCanUse" or defName="LightAutomatroid" or defName="StandardAutomatroid"]/EquippableByRace</xpath>
+          <xpath>Defs/Fortified.HeavyEquippableDef[defName="AverageHumanCanUse" or defName="LightAutomatroid" or defName="StandardAutomatroid"]/EquippableByRace</xpath>
           <value>
             <li>NAT_RustedSoldier</li>
             <li>NAT_RustedTrooper</li>
+            <li>NAT_RustedOfficer</li>
+            <li>NAT_RustedGuardsman</li>
           </value>
         </li>
 
         <li Class="PatchOperationAdd">
-          <xpath>Defs/DMS.HeavyEquippableDef[defName="HeavyAutomatroid"]/EquippableByRace</xpath>
+          <xpath>Defs/Fortified.HeavyEquippableDef[defName="TransHeavyAutomatroid"]/EquippableByRace</xpath>
           <value>
             <li>NAT_RustedOfficer</li>
+            <li>NAT_RustedGuardsman</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/Fortified.HeavyEquippableDef[defName="BulkyAutomatroid"]/EquippableByRace</xpath>
+          <value>
+            <li>NAT_RustedOfficer</li>
+            <li>NAT_RustedGuardsman</li>
           </value>
         </li>
 
       </operations>
     </match>
   </Operation>
+
 
 </Patch>
