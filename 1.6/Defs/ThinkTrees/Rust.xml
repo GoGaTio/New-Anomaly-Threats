@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <Defs>
 
   <ThinkTreeDef>
@@ -16,8 +17,12 @@
         </li>
 
         <!-- Sleep -->
-       <li Class="NAT.JobGiver_Sleep">          <wantedLevel>0</wantedLevel>
-          <forceIfExhausted>true</forceIfExhausted>       </li>
+
+       <li Class="NAT.JobGiver_Sleep">
+          <wantedLevel>0</wantedLevel>
+          <forceIfExhausted>true</forceIfExhausted>
+       </li>
+
         <!-- Do a queued job -->
         <li Class="ThinkNode_QueuedJob" />
 
@@ -44,7 +49,10 @@
               </subNodes>
             </li>
           </subNodes>
-        </li>                <!-- Commander abilities -->        <li Class="NAT.JobGiver_RustedCommander" />
+        </li>
+        
+        <!-- Commander abilities -->
+        <li Class="NAT.JobGiver_RustedCommander" />
 
         <!-- Lord -->
         <li Class="ThinkNode_Subtree">
@@ -71,7 +79,8 @@
             <li Class="ThinkNode_ConditionalNotFormingCaravan">
               <subNodes>
 
-                              <!-- Seek area and defend it -->
+              
+                <!-- Seek area and defend it -->
                 <li Class="JobGiver_SeekAllowedArea" />
 
                 <li Class="JobGiver_PickupDroppedWeapon">
@@ -83,10 +92,15 @@
                   <targetKeepRadius>72</targetKeepRadius>
                 </li>
 
-                <!-- Sleep -->                <li Class="NAT.JobGiver_Sleep">
-                  <wantedLevel>0.9</wantedLevel>
-                  <startFromLevel>0.3</startFromLevel>
-                </li>
+
+                <!-- Sleep -->
+                <li Class="NAT.JobGiver_Sleep">
+
+                  <wantedLevel>0.9</wantedLevel>
+
+                  <startFromLevel>0.3</startFromLevel>
+
+                </li>
 
                 <li Class="ThinkNode_Tagger">
                   <tagToGive>UnloadingOwnInventory</tagToGive>
@@ -100,15 +114,20 @@
                 <li Class="JobGiver_DropUnusedInventory" />
 
                 <li Class="JobGiver_Work">
-                  <emergency>true</emergency>
-                </li>
-                
-                <li Class="JobGiver_Work"/>
+
+                  <emergency>true</emergency>
+
+                </li>
+
+                
+
+                <li Class="JobGiver_Work"/>
 
                 <!-- Sleep -->
                 <li Class="NAT.JobGiver_Sleep">
                   <wantedLevel>1</wantedLevel>
-                  <startFromLevel>0.9</startFromLevel>
+
+                  <startFromLevel>0.9</startFromLevel>
                 </li>
 
               </subNodes>
@@ -116,7 +135,8 @@
 
             <li Class="ThinkNode_Tagger">
               <tagToGive>Idle</tagToGive>
-              <subNodes>
+              <subNodes>
+
                 <li Class="JobGiver_ShamblerWander">
                   <wanderRadius>9</wanderRadius>
                 </li>
@@ -125,7 +145,8 @@
 
           </subNodes>
         </li>
-
+
+
         <!-- Idle -->
         <li Class="ThinkNode_Tagger">
           <tagToGive>Idle</tagToGive>

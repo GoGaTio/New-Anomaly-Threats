@@ -130,7 +130,7 @@ namespace NAT
 		[HarmonyPostfix]
 		public static void Postfix(ref Verb __result, Pawn __instance)
 		{
-			if(__result.verbProps.onlyManualCast && __instance is RustedPawn && __instance.Faction == Faction.OfPlayer)
+			if(__result.verbProps?.onlyManualCast == true && __instance is RustedPawn && __instance.Faction == Faction.OfPlayerSilentFail)
             {
 				__result = __instance.TryGetAttackVerb(null, false);
 			}
@@ -422,60 +422,6 @@ namespace NAT
 			if (pawn is RustedPawn rust)
 			{
 				__result = false;
-			}
-		}
-	}
-
-	
-	[HarmonyPatch(typeof(ITab_Pawn_Gear))]
-	[HarmonyPatch("DrawThingRow")]
-	public class Patch_UseGear
-	{
-
-		[HarmonyPostfix]
-		public static void Postfix(ref float y, float width, Thing thing, bool inventory = false)
-		{
-			if (inventory && thing.TryGetComp<CompUsableByRust>(out CompUsableByRust comp) && Find.Selector.SingleSelectedThing is RustedPawn rust && rust.restNeed?.exhausted != true && rust.Faction == Faction.OfPlayer && rust.CarriedBy == null && rust.Controllable && rust.Spawned && !rust.Downed)
-			{
-				Rect rect = new Rect(width - 72f, y - 28f, 24f, 24f);
-				TooltipHandler.TipRegion(rect, comp.JobReport);
-				if (Widgets.ButtonImage(rect, RustedArmyUtility.Use))
-				{
-					SoundDefOf.Tick_High.PlayOneShotOnCamera();
-					rust.jobs.TryTakeOrderedJob(JobMaker.MakeJob(NATDefOf.NAT_UseItemByRust, thing), JobTag.DraftedOrder);
-				}
-			}
-		}
-	}
-
-	[HarmonyPatch(typeof(ITab_Pawn_Gear))]
-	[HarmonyPatch("CanControlColonist")]
-	[HarmonyPatch(MethodType.Getter)]
-	public class Patch_CanDropEquipment
-	{
-		[HarmonyPostfix]
-		public static void Postfix(ref bool __result)
-		{
-			if (__result) return;
-			if (Find.Selector.SingleSelectedThing is RustedPawn rust && rust.restNeed?.exhausted != true && rust.Faction == Faction.OfPlayer && rust.CarriedBy == null && rust.Controllable && !rust.Downed)
-			{
-				__result = true;
-			}
-		}
-	}
-
-	[HarmonyPatch(typeof(ITab_Pawn_Gear))]
-	[HarmonyPatch("IsVisible")]
-	[HarmonyPatch(MethodType.Getter)]
-	public class Patch_IsVisible
-	{
-		[HarmonyPostfix]
-		public static void Postfix(ref bool __result)
-		{
-			if (__result) return;
-			if (Find.Selector.SingleSelectedThing is RustedPawn rust && (DebugSettings.godMode || rust.Faction == Faction.OfPlayer))
-			{
-				__result = true;
 			}
 		}
 	}

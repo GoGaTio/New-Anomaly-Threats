@@ -107,13 +107,67 @@ namespace NAT
             {
 				p.drafter.Drafted = false;
 			}
-			Job job = JobMaker.MakeJob(JobDefOf.Wait_AsleepDormancy, p.Position);
+			IntVec3 cell = p.Position;
+			if(!RCellFinder.TryFindRandomCellNearWith(cell, (IntVec3 c) => CanSleep(c, p, p.Map), p.Map, out cell, 5, 20))
+			{
+				cell = p.Position;
+			}
+			Job job = JobMaker.MakeJob(JobDefOf.Wait_AsleepDormancy, cell);
 			job.forceSleep = true;
             if (forced)
             {
 				job.startInvoluntarySleep = true;
 			}
 			return job;
+		}
+
+		private static bool CanSleep(IntVec3 c, Pawn pawn, Map map, bool allowForbidden = false)
+		{
+			if (!c.InBounds(map))
+			{
+				return false;
+			}
+			if (!pawn.CanReserve(c))
+			{
+				return false;
+			}
+			if (!pawn.CanReach(c, PathEndMode.OnCell, Danger.Some))
+			{
+				return false;
+			}
+			if (!c.Standable(map))
+			{
+				return false;
+			}
+			if (c.GetTerrain(map).dangerous)
+			{
+				return false;
+			}
+			if (!allowForbidden && c.IsForbidden(pawn))
+			{
+				return false;
+			}
+			if (c.GetFirstBuilding(map) != null)
+			{
+				return false;
+			}
+			for (int i = 0; i < GenAdj.CardinalDirections.Length; i++)
+			{
+				IntVec3 c2 = c + GenAdj.CardinalDirections[i];
+				if (!c2.InBounds(map))
+				{
+					continue;
+				}
+				List<Thing> thingList = c2.GetThingList(map);
+				for (int j = 0; j < thingList.Count; j++)
+				{
+					if (thingList[j].def.hasInteractionCell && thingList[j].InteractionCell == c)
+					{
+						return false;
+					}
+				}
+			}
+			return true;
 		}
 	}
 
