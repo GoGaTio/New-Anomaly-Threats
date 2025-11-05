@@ -50,7 +50,7 @@ namespace NAT
 			useDuration = job.GetTarget(TargetIndex.A).Thing.TryGetComp<CompUsableByRust>().Props.useDuration;
 			job.count = 1;
 			usingFromInventory = pawn.inventory != null && pawn.inventory.Contains(Item);
-			if(job.GetTarget(TargetIndex.B).Thing != null && job.GetTarget(TargetIndex.B).Thing is RustedPawn)
+			if(job.GetTarget(TargetIndex.B).Thing != null && job.GetTarget(TargetIndex.B).Thing is RustedPawn rust && rust != pawn as RustedPawn)
             {
 				targetsAnotherPawn = true;
 			}

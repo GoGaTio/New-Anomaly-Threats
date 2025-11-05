@@ -62,6 +62,8 @@ namespace NAT
 
 		protected override bool Multiselect => false;
 
+		protected override bool CanSelfTarget => true;
+
 		protected override bool AppliesInt(FloatMenuContext context)
 		{
 			return context.FirstSelectedPawn is RustedPawn;
@@ -85,11 +87,7 @@ namespace NAT
 
         public override IEnumerable<FloatMenuOption> GetOptionsFor(Pawn clickedPawn, FloatMenuContext context)
         {
-			if (context.FirstSelectedPawn == clickedPawn)
-			{
-				yield break;
-			}
-			if (!context.FirstSelectedPawn.CanReach(clickedPawn, PathEndMode.ClosestTouch, Danger.Deadly))
+			if (context.FirstSelectedPawn != clickedPawn && !context.FirstSelectedPawn.CanReach(clickedPawn, PathEndMode.ClosestTouch, Danger.Deadly))
 			{
 				yield break;
 			}
@@ -106,7 +104,7 @@ namespace NAT
 					if (!list2.Contains(thing.def))
 					{
 						CompUsableByRust comp = thing.TryGetComp<CompUsableByRust>();
-						yield return FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption(comp.JobReport + " " + thing.Label, delegate
+						yield return FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption(comp.JobReport + " " + thing.Label + (context.FirstSelectedPawn == clickedPawn ? "" : (" (" + clickedPawn.Name?.ToStringShort + ")") ?? ""), delegate
 						{
 							context.FirstSelectedPawn.jobs.TryTakeOrderedJob(JobMaker.MakeJob(NATDefOf.NAT_UseItemByRust, thing, rust), JobTag.Misc);
 						}, MenuOptionPriority.High), context.FirstSelectedPawn, clickedPawn);

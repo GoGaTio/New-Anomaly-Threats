@@ -76,6 +76,64 @@ namespace NAT
 		}
 	}
 
+	[HarmonyPatch]
+	public static class CombatExtended_ITab_Inventory_DrawThingRowCE
+	{
+		public static MethodBase TargetMethod()
+		{
+			return AccessTools.Method("CombatExtended.ITab_Inventory:DrawThingRowCE");
+		}
+
+		public static bool Prepare(MethodBase method)
+		{
+			return AccessTools.Method("CombatExtended.ITab_Inventory:DrawThingRowCE") != null;
+		}
+
+		[HarmonyPostfix]
+		public static void Postfix(ref float y, float width, Thing thing, bool showDropButtonIfPrisoner = false)
+		{
+			if (thing.TryGetComp<CompUsableByRust>(out CompUsableByRust comp) && Find.Selector.SingleSelectedThing is RustedPawn rust && rust.restNeed?.exhausted != true && rust.Faction == Faction.OfPlayer && rust.CarriedBy == null && rust.Controllable && rust.Spawned && !rust.Downed)
+			{
+				Rect rect = new Rect(width - 72f, y - 28f, 24f, 24f);
+				TooltipHandler.TipRegion(rect, comp.JobReport);
+				if (Widgets.ButtonImage(rect, RustedArmyUtility.Use))
+				{
+					SoundDefOf.Tick_High.PlayOneShotOnCamera();
+					rust.jobs.TryTakeOrderedJob(JobMaker.MakeJob(NATDefOf.NAT_UseItemByRust, thing), JobTag.DraftedOrder);
+				}
+			}
+		}
+	}
+
+	[HarmonyPatch]
+	public static class Sandy_Detailed_RPG_Inventory_DrawThingRow
+	{
+		public static MethodBase TargetMethod()
+		{
+			return AccessTools.Method("Sandy_Detailed_RPG_Inventory.Sandy_Detailed_RPG_GearTab:DrawThingRow");
+		}
+
+		public static bool Prepare(MethodBase method)
+		{
+			return AccessTools.Method("Sandy_Detailed_RPG_Inventory.Sandy_Detailed_RPG_GearTab:DrawThingRow") != null;
+		}
+
+		[HarmonyPostfix]
+		public static void Postfix(ref float y, float width, Thing thing, bool inventory = false)
+		{
+			if (inventory && thing.TryGetComp<CompUsableByRust>(out CompUsableByRust comp) && Find.Selector.SingleSelectedThing is RustedPawn rust && rust.restNeed?.exhausted != true && rust.Faction == Faction.OfPlayer && rust.CarriedBy == null && rust.Controllable && rust.Spawned && !rust.Downed)
+			{
+				Rect rect = new Rect(width - 72f, y - 28f, 24f, 24f);
+				TooltipHandler.TipRegion(rect, comp.JobReport);
+				if (Widgets.ButtonImage(rect, RustedArmyUtility.Use))
+				{
+					SoundDefOf.Tick_High.PlayOneShotOnCamera();
+					rust.jobs.TryTakeOrderedJob(JobMaker.MakeJob(NATDefOf.NAT_UseItemByRust, thing), JobTag.DraftedOrder);
+				}
+			}
+		}
+	}
+
 	[HarmonyPatch(typeof(ITab_Pawn_Gear))]
 	[HarmonyPatch("CanControlColonist")]
 	[HarmonyPatch(MethodType.Getter)]
@@ -128,7 +186,7 @@ namespace NAT
 			{
 				return;
 			}
-			if (Find.Selector.SingleSelectedThing is RustedPawn rust && rust.Faction?.IsPlayer == true)
+			if (Find.Selector.SingleSelectedThing is RustedPawn rust && (rust.Faction?.IsPlayer == true || DebugSettings.ShowDevGizmos))
 			{
 				__result = true;
 			}
@@ -137,6 +195,33 @@ namespace NAT
 
 	[HarmonyPatch]
 	public static class Sandy_Detailed_RPG_Inventory_get_IsVisible
+	{
+		public static MethodBase TargetMethod()
+		{
+			return AccessTools.Method("Sandy_Detailed_RPG_Inventory.Sandy_Detailed_RPG_GearTab:get_IsVisible");
+		}
+
+		public static bool Prepare(MethodBase method)
+		{
+			return AccessTools.Method("Sandy_Detailed_RPG_Inventory.Sandy_Detailed_RPG_GearTab:get_IsVisible") != null;
+		}
+
+		[HarmonyPostfix]
+		public static void Postfix(ref bool __result)
+		{
+			if (__result)
+			{
+				return;
+			}
+			if (Find.Selector.SingleSelectedThing is RustedPawn rust && (rust.Faction?.IsPlayer == true || DebugSettings.ShowDevGizmos))
+			{
+				__result = true;
+			}
+		}
+	}
+
+	[HarmonyPatch]
+	public static class Sandy_Detailed_RPG_Inventory_get_CanControlColonist
 	{
 		public static MethodBase TargetMethod()
 		{
