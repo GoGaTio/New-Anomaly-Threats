@@ -91,4 +91,10 @@
   <NAT_Setting_AllowRaid>Разрешить дополнение концовки монолита</NAT_Setting_AllowRaid>
   <NAT_Setting_AllowRaid_Desc>Разрешить дополнения и изменения в концовке пробуждения монолита.</NAT_Setting_AllowRaid_Desc>
 
+  <NAT_RustDormant>Неактивно</NAT_RustDormant>
+
+  <NAT_PsychicRitual_NotEnoughBioferrite>Недостаточно биоферрита</NAT_PsychicRitual_NotEnoughBioferrite>
+  <NAT_CreateRustCompleteText_Success>{INVOKER_nameDef} завершает ритуал «{RITUAL_definite}», в результате которого биоферрит трансмутировался в живую ржавчину: {RUST_nameDef}({RUST_kind}).</NAT_CreateRustCompleteText_Success>
+  <NAT_CreateRustCompleteText_Fail>{INVOKER_nameDef} завершает ритуал «{RITUAL_definite}», в результате которого ничего не происходит. Подношения потрачены впустую.</NAT_CreateRustCompleteText_Fail>
+
 </LanguageData>

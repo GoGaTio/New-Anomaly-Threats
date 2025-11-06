@@ -91,6 +91,10 @@
   <NAT_Setting_AllowRaid>Allow void awakening extensions</NAT_Setting_AllowRaid>
   <NAT_Setting_AllowRaid_Desc>Allow extra features in void awakening game ending.</NAT_Setting_AllowRaid_Desc>
 
+  <NAT_RustDormant>Inactive</NAT_RustDormant>
 
+  <NAT_PsychicRitual_NotEnoughBioferrite>Not enough bioferrite</NAT_PsychicRitual_NotEnoughBioferrite>
+  <NAT_CreateRustCompleteText_Success>{INVOKER_nameDef} has completed {RITUAL_definite} ritual, turning bioferrite into {RUST_nameDef}({RUST_kind}).</NAT_CreateRustCompleteText_Success>
+  <NAT_CreateRustCompleteText_Fail>{INVOKER_nameDef} has completed {RITUAL_definite} ritual, but nothing happens.</NAT_CreateRustCompleteText_Fail>
 
 </LanguageData>
