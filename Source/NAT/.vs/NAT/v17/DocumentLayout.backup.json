@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\newanomalythreats\\source\\nat\\harmony\\gearpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:harmony\\gearpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Languages\\Russian\\Keyed\\Misc_Gameplay.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
@@ -19,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:defof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\newanomalythreats\\source\\nat\\psychicrituals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\psychicrituals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:psychicrituals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -51,11 +55,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "DefOf.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\DefOf.cs",
               "RelativeDocumentMoniker": "DefOf.cs",
@@ -64,12 +68,11 @@
               "ViewState": "AgIAAGoAAAAAAAAAAAAgwHsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-18T08:10:42.148Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Misc_Gameplay.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Languages\\English\\Keyed\\Misc_Gameplay.xml",
               "RelativeDocumentMoniker": "..\\..\\Languages\\English\\Keyed\\Misc_Gameplay.xml",
@@ -78,18 +81,17 @@
               "ViewState": "AgIAAEIAAAAAAAAAAAAAAF8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2025-08-19T13:52:32.484Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Misc_Gameplay.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Languages\\Russian\\Keyed\\Misc_Gameplay.xml",
               "RelativeDocumentMoniker": "..\\..\\Languages\\Russian\\Keyed\\Misc_Gameplay.xml",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Languages\\Russian\\Keyed\\Misc_Gameplay.xml",
               "RelativeToolTip": "..\\..\\Languages\\Russian\\Keyed\\Misc_Gameplay.xml",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAGMAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2025-08-19T14:57:22.559Z",
               "IsPinned": true,
@@ -97,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "IncidentWorker_RustedArmyRaid.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\Incidents\\IncidentWorker_RustedArmyRaid.cs",
               "RelativeDocumentMoniker": "Incidents\\IncidentWorker_RustedArmyRaid.cs",
@@ -110,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "NAT_RustedArmy.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\NAT_RustedArmy.cs",
               "RelativeDocumentMoniker": "NAT_RustedArmy.cs",
@@ -123,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "RoomContents.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\MapGen\\RoomContents.cs",
               "RelativeDocumentMoniker": "MapGen\\RoomContents.cs",
@@ -136,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "LayoutRoomDefs_Rusted.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Layouts\\LayoutRoomDefs_Rusted.xml",
               "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\Layouts\\LayoutRoomDefs_Rusted.xml",
@@ -149,7 +151,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "GearPatches.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\Harmony\\GearPatches.cs",
+              "RelativeDocumentMoniker": "Harmony\\GearPatches.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\Harmony\\GearPatches.cs",
+              "RelativeToolTip": "Harmony\\GearPatches.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAgwIIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T15:00:56.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Letters.xml",
               "DocumentMoniker": "C:\\Users\\\u0415\u0433\u043E\u0440\\AppData\\Local\\Temp\\Rar$DIa10564.30623.rartemp\\Letters.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\..\\Users\\\u0415\u0433\u043E\u0440\\AppData\\Local\\Temp\\Rar$DIa10564.30623.rartemp\\Letters.xml",
@@ -157,12 +172,11 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\..\\Users\\\u0415\u0433\u043E\u0440\\AppData\\Local\\Temp\\Rar$DIa10564.30623.rartemp\\Letters.xml",
               "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-11-06T15:57:49.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T15:57:49.803Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Messages.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Languages\\English\\Keyed\\Messages.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Data\\Core\\Languages\\English\\Keyed\\Messages.xml",
@@ -170,12 +184,11 @@
               "RelativeToolTip": "..\\..\\..\\..\\Data\\Core\\Languages\\English\\Keyed\\Messages.xml",
               "ViewState": "AgIAAMsBAAAAAAAAAAAAAOkBAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-11-06T15:49:03.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T15:49:03.417Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Letters.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Anomaly\\Languages\\English\\Keyed\\Letters.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Data\\Anomaly\\Languages\\English\\Keyed\\Letters.xml",
@@ -183,12 +196,11 @@
               "RelativeToolTip": "..\\..\\..\\..\\Data\\Anomaly\\Languages\\English\\Keyed\\Letters.xml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAACGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-11-06T15:46:51.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T15:46:51.769Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PsychicRituals.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\PsychicRituals.cs",
               "RelativeDocumentMoniker": "PsychicRituals.cs",
@@ -196,12 +208,11 @@
               "RelativeToolTip": "PsychicRituals.cs",
               "ViewState": "AgIAAH4AAAAAAAAAAAAkwJYAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T15:45:51.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T15:45:51.67Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Races_RustsBase.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\ThingDefs_Races\\Races_RustsBase.xml",
               "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Races\\Races_RustsBase.xml",
@@ -209,8 +220,7 @@
               "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Races\\Races_RustsBase.xml",
               "ViewState": "AgIAADMAAAAAAAAAAAAAADoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-11-06T15:45:37.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T15:45:37.761Z"
             }
           ]
         }

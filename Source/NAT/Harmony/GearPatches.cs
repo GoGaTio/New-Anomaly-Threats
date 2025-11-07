@@ -115,6 +115,10 @@ namespace NAT
 
 		public static bool Prepare(MethodBase method)
 		{
+			if (ModsConfig.IsActive("Sandy.RPGStyleInventory.avilmask.Revamped"))
+			{
+				return false;
+			}
 			return AccessTools.Method("Sandy_Detailed_RPG_Inventory.Sandy_Detailed_RPG_GearTab:DrawThingRow") != null;
 		}
 
