@@ -213,22 +213,10 @@ namespace NAT
 	}
 
 	[HarmonyPatch(typeof(SkillRecord))]
-	public static class Patch_Skills
+	public static class Patch_Skills_Intreval
 	{
 		[HarmonyPrefix]
-        [HarmonyPriority(505)]
-        [HarmonyPatch(nameof(SkillRecord.Learn))]
-		public static bool Learn(Pawn ___pawn)
-		{
-			if (___pawn is RustedPawn)
-			{
-				return false;
-			}
-			return true;
-		}
-
-		[HarmonyPrefix]
-		[HarmonyPriority(505)]
+		[HarmonyPriority(int.MaxValue)]
 		[HarmonyPatch(nameof(SkillRecord.Interval))]
 		public static bool Interval(Pawn ___pawn)
 		{
@@ -237,6 +225,60 @@ namespace NAT
 				return false;
 			}
 			return true;
+		}
+	}
+
+	[HarmonyPatch(typeof(SkillRecord))]
+	public static class Patch_Skills_Learn
+	{
+		[HarmonyPrefix]
+		[HarmonyPriority(int.MaxValue)]
+		[HarmonyPatch(nameof(SkillRecord.Learn))]
+		public static bool Learn(Pawn ___pawn)
+		{
+			if (___pawn is RustedPawn)
+			{
+				return false;
+			}
+			return true;
+		}
+	}
+
+	[HarmonyPatch]
+	public static class DestroyingROMShittyPatch
+	{
+		public static MethodBase TargetMethod()
+		{
+			Type type = AccessTools.TypeByName("TorannMagic.TorannMagicMod");
+			if(type == null)
+			{
+				return null;
+			}
+			MethodInfo method = AccessTools.Method(AccessTools.Inner(type, "Pawn_SkillTracker_Base_Patch"), "Prefix");
+			return method;
+		}
+
+		public static bool Prepare(MethodBase method)
+		{
+			Type type = AccessTools.TypeByName("TorannMagic.TorannMagicMod");
+			if (type == null)
+			{
+				return false;
+			}
+			MethodInfo m = AccessTools.Method(AccessTools.Inner(type, "Pawn_SkillTracker_Base_Patch"), "Prefix");
+			if (m == null)
+			{
+				return false;
+			}
+			return true;
+		}
+
+		[HarmonyPrefix]
+		[HarmonyPriority(int.MaxValue)]
+		public static bool Prefix(ref bool __result)
+		{
+			__result = true;
+			return false;
 		}
 	}
 

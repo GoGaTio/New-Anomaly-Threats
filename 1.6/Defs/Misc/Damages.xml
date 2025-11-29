@@ -28,4 +28,18 @@
     <explosionColorEdge>(0.75, 0.35, 0.25)</explosionColorEdge>
   </DamageDef>
 
+  <DamageDef>
+    <defName>NAT_DeadlifeBomb</defName>
+    <label>deadlife dust</label>
+    <canInterruptJobs>false</canInterruptJobs>
+    <makesBlood>false</makesBlood>
+    <defaultDamage>0</defaultDamage>
+    <workerClass>NAT.DamageWorker_Deadlife</workerClass>
+    <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+    <explosionColorEdge>(0.706, 0.839, 0.09, 0.1)</explosionColorEdge>
+    <harmsHealth>false</harmsHealth>
+    <soundExplosion>Explosion_Smoke</soundExplosion>
+    <combatLogRules>Damage_Smoke</combatLogRules>
+  </DamageDef>
+
 </Defs>

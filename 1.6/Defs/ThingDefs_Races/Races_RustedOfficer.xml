@@ -106,9 +106,13 @@
           <Plants>4</Plants>
           <Crafting>10</Crafting>
           <Medicine>6</Medicine>
+          <Social>8</Social>
           <Intellectual>10</Intellectual>
         </skills>
         <canWork>true</canWork>
+        <forceDisallowWorkTypes>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Childcare</li>
+        </forceDisallowWorkTypes>
         <workTags>
           <li>Firefighting</li>
           <li>Hunting</li>
@@ -118,6 +122,7 @@
           <li>Crafting</li>
           <li>Hauling</li>
           <li>Cleaning</li>
+          <li>Social</li>
         </workTags>
         <forceAllowWorkGivers>
           <li>Strip</li>

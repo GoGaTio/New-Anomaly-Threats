@@ -312,6 +312,64 @@ namespace NAT
 		}
 	}
 
+	[HarmonyPatch(typeof(JobDriver_ManTurret), nameof(JobDriver_ManTurret.FindAmmoForTurret))]
+	public class Patch_FindAmmoIdentifier
+	{
+		[HarmonyPrefix]
+		public static void Prefix(Pawn pawn, Building_TurretGun gun)
+		{
+			preGun = gun;
+			prePawn = pawn;
+		}
+
+		public static Building_TurretGun preGun;
+
+		public static Pawn prePawn;
+	}
+
+	[HarmonyPatch]
+	public static class Patch_FindAmmo
+	{
+		public static MethodBase TargetMethod()
+		{
+			return AccessTools.Method(AccessTools.Inner(typeof(JobDriver_ManTurret), "<>c__DisplayClass10_0"), "<FindAmmoForTurret>g__ShellValidator|0");
+		}
+
+		public static bool Prepare(MethodBase method)
+		{
+			return AccessTools.Method(AccessTools.Inner(typeof(JobDriver_ManTurret), "<>c__DisplayClass10_0"), "<FindAmmoForTurret>g__ShellValidator|0") != null;
+		}
+
+		[HarmonyPrefix]
+		public static bool Prefix(Thing t, ref bool __result)
+		{
+			if (Patch_FindAmmoIdentifier.prePawn is RustedPawn rust)
+			{
+				__result = false;
+				if (t.IsForbidden(rust))
+				{
+					return false;
+				}
+				if (!rust.CanReserve(t, 10, 1))
+				{
+					return false;
+				}
+				if (Patch_FindAmmoIdentifier.preGun?.gun?.TryGetComp<CompChangeableProjectile>(out var comp) == null || !comp.allowedShellsSettings.filter.Allows(t))
+				{
+					__result = false;
+					return false;
+				}
+				if (rust.Faction != Faction.OfPlayer && t.def.projectileWhenLoaded?.projectile != null && !t.def.projectileWhenLoaded.projectile.damageDef.harmsHealth && (!t.def.projectileWhenLoaded.projectile.damageDef.defName.Contains("Deadlife")))
+				{
+					return false;
+				}
+				__result = true;
+				return false;
+			}
+			return true;
+		}
+	}
+
 	[HarmonyPatch(typeof(BackCompatibility), nameof(BackCompatibility.BackCompatibleDefName))]
 	public class Patch_BackCompatibility
 	{

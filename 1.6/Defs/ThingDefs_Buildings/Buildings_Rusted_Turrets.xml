@@ -60,7 +60,6 @@
     </building>
     <soundImpactDefault>NAT_Pawn_RustedSoldier_Wounded</soundImpactDefault>
     <placeWorkers>
-
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_ShowTurretRadius</li>
     </placeWorkers>
@@ -89,7 +88,6 @@
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
     </statBases>
     <comps>
-
       <li Class="CompProperties_SelfhealHitpoints">
         <ticksPerHeal>1000</ticksPerHeal>
       </li>
@@ -109,8 +107,6 @@
       <Shard>-18~1</Shard>
     </killedLeavingsRanges>
   </ThingDef>
-
-
 
   <!--=============== Autocannon turret ===============-->
 
@@ -152,7 +148,6 @@
     <uiIconPath>Things/Building/NAT_RustedAutoTurret_Icon</uiIconPath>
     <statBases>
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
-      <!-- like level 8 human shooter -->
     </statBases>
     <building>
       <combatPower>230</combatPower>
@@ -174,7 +169,6 @@
     <uiIconPath>Things/Building/NAT_RustedSniperTurret_Icon</uiIconPath>
     <statBases>
       <ShootingAccuracyTurret>0.98</ShootingAccuracyTurret>
-      <!-- like level 14 human shooter -->
     </statBases>
     <building>
       <combatPower>290</combatPower>
@@ -182,7 +176,6 @@
       <turretBurstCooldownTime>3.2</turretBurstCooldownTime>
     </building>
     <generateCommonality>0.7</generateCommonality>
-    <!-- a bit less common than other turrets -->
     <killedLeavingsRanges>
       <Bioferrite>10~30</Bioferrite>
       <Shard>-6~1</Shard>
@@ -222,7 +215,6 @@
       </li>
     </comps>
     <generateCommonality>0.2</generateCommonality>
-    <!-- a bit less common than other turrets -->
     <building>
       <combatPower>5</combatPower>
       <ai_combatDangerous>false</ai_combatDangerous>
@@ -234,7 +226,123 @@
       </buildingTags>
       <turretBurstWarmupTime>0</turretBurstWarmupTime>
     </building>
+  </ThingDef>
 
+  <!--=============== Mortar ===============-->
+
+  <ThingDef ParentName="NAT_BaseRustedTurret">
+    <defName>NAT_RustedTurret_Mortar</defName>
+    <label>rusted mortar</label>
+    <description>A rusted bioferrite piece shaped like a mortar.</description>
+    <thingClass>NAT.Building_RustedTurret</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/NAT_RustedHeavyTurret</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2, 2)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Building/NAT_RustedFoamTurret_Icon</uiIconPath>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <ShootingAccuracyTurret>1</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Mannable">
+        <manWorkType>Violent</manWorkType>
+        <planetLayerWhitelist>
+          <li>Surface</li>
+        </planetLayerWhitelist>
+      </li>
+      <li Class="CompProperties_SelfhealHitpoints">
+        <ticksPerHeal>1000</ticksPerHeal>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Shells</li>
+    </inspectorTabs>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <hasInteractionCell>True</hasInteractionCell>
+    <size>(2,2)</size>
+    <rotatable>true</rotatable>
+    <building>
+      <combatPower>500</combatPower>
+      <ai_combatDangerous>false</ai_combatDangerous>
+      <turretGunDef>NAT_RustedGun_Mortar</turretGunDef>
+      <turretTopDrawSize>2</turretTopDrawSize>
+      <turretBurstWarmupTime>9.0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>18.0</turretBurstCooldownTime>
+      <buildingTags Inherit="False">
+        <li>NAT_RustedSiegeMortar</li>
+        <li>NAT_RustedSiegeProblem</li>
+        <li>NAT_RustedSiegeMember</li>
+      </buildingTags>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeapon">
+    <defName>NAT_RustedGun_Mortar</defName>
+    <label>rusted mortar</label>
+    <description>Mortar launcher. Lobs bombs over walls. Very inaccurate but long-ranged.</description>
+    <recoilPower>3</recoilPower>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapon/NAT_RustedMortar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2, 2)</drawSize>
+    </graphicData>
+    <destroyOnDrop>True</destroyOnDrop>
+    <drawerType>RealtimeOnly</drawerType>
+    <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <tradeability>None</tradeability>
+    <useHitPoints>false</useHitPoints>
+    <weaponTags>
+      <li>NAT_RustedMortar</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+    <allowedArchonexusCount>0</allowedArchonexusCount>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <warmupTime>9.0</warmupTime>
+        <forcedMissRadius>7</forcedMissRadius>
+        <isMortar>true</isMortar>
+        <requireLineOfSight>false</requireLineOfSight>
+        <minRange>19.9</minRange>
+        <range>500</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Mortar_LaunchA</soundCast>
+        <muzzleFlashScale>16</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_ChangeableProjectile" />
+    </comps>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+          <thingDefs>
+            <li>NAT_RustedShell_Explosive</li>
+            <li>NAT_RustedShell_Deadlife</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+          <thingDefs>
+            <li>NAT_RustedShell_Explosive</li>
+            <li>NAT_RustedShell_Deadlife</li>
+          </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
   </ThingDef>
 
 </Defs>

@@ -64,6 +64,8 @@ namespace NAT
 
 		public List<WorkTypeDef> forceAllowWorkTypes = new List<WorkTypeDef>();
 
+		public List<WorkTypeDef> forceDisallowWorkTypes = new List<WorkTypeDef>();
+
 		public List<WorkGiverDef> forceAllowWorkGivers = new List<WorkGiverDef>();
 
 		public CompProperties_RustedWorker()
@@ -121,7 +123,7 @@ namespace NAT
 				List<WorkTypeDef> list = WorkTypes;
 				for (int i = 0; i < list.Count; i++)
 				{
-					if ((workTags & list[i].workTags) != 0)
+					if ((workTags & list[i].workTags) != 0 && !forceDisallowWorkTypes.Contains(list[i]))
 					{
 						yield return list[i];
 					}
@@ -143,7 +145,7 @@ namespace NAT
 			foreach (SkillGain s in Props.skills)
             {
 				Rust.skills.GetSkill(s.skill).Level = s.amount;
-            }
+			}
 		}
 
 		public List<WorkTypeDef> DisabledWorkTypes => Props.DisabledWorkTypes;

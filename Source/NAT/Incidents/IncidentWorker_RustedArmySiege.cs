@@ -203,6 +203,18 @@ namespace NAT
                 {
 					lordPawns.Add(p);
                 }
+				if (unit.thing is Building_RustedTurret turret && turret.gun.TryGetComp<CompChangeableProjectile>(out var comp) && !comp.Loaded)
+				{
+					List<Thing> things = new List<Thing>();
+					for (int i = 0; i < new IntRange(9, 14).RandomInRange; i++)
+					{
+						things.Add(ThingMaker.MakeThing(turret.gun.def.building.fixedStorageSettings.filter.AllowedThingDefs.RandomElement()));
+					}
+					Skyfaller_RustedChunk skyfaller2 = (Skyfaller_RustedChunk)SkyfallerMaker.SpawnSkyfaller(NATDefOf.NAT_RustedChunk1x1Incoming, things, unit.rect.ExpandedBy(3).ClipInsideMap(map).RandomCell, map);
+					skyfaller2.frendlies = sentThings;
+					skyfaller2.faction = Faction.OfEntities;
+					skyfaller2.ticksToImpact += 60;
+				}
 			}
             if (!lordPawns.NullOrEmpty())
             {
@@ -226,7 +238,7 @@ namespace NAT
                 }
                 else
                 {
-					ThingDef def = Buildings.RandomElementByWeight((ThingDef x) => !x.building.buildingTags.Contains("NAT_RustedSiegeProblem") && x.building.combatPower > points ? 0.001f : x.generateCommonality);
+					ThingDef def = Buildings.RandomElementByWeight((ThingDef x) => (x.building.buildingTags.Contains("NAT_RustedSiegeProblem")) ? 0 : (x.building.combatPower > points ? 0.001f : x.generateCommonality));
 					unit.thing = ThingMaker.MakeThing(def);
 					unit.thing.SetFaction(Faction.OfEntities);
 					cost = def.building.combatPower;
@@ -243,16 +255,17 @@ namespace NAT
 
 		public static void GenerateProblems(List<Unit> units, float points, Map map, out string extraLetterString, out ThingDef problemThingDef)
 		{
-			IEnumerable<ThingDef> items = Buildings.Where((ThingDef x) => x.building.buildingTags.Contains("NAT_RustedSiegeProblem"));
-			if (items.EnumerableNullOrEmpty())
+			extraLetterString = "";
+			List<ThingDef> items = Buildings.Where((ThingDef x) => x.building.buildingTags.Contains("NAT_RustedSiegeProblem")).ToList();
+			if (items.NullOrEmpty())
             {
-				extraLetterString = "";
 				problemThingDef = null;
 				return;
             }
 			problemThingDef = items.RandomElementByWeight((ThingDef y) => (y.building.combatPower > points ? 0.001f : y.generateCommonality));
-			extraLetterString = problemThingDef.description;
-			int num = 1;
+			//extraLetterString = problemThingDef.description;
+			Log.Message(points);
+			int num = Mathf.RoundToInt(ProblemsFromPoints.Evaluate(points));
 			for(int i = 0; i < num; i++)
 			{
 				Unit unit = new Unit(null);
@@ -262,6 +275,15 @@ namespace NAT
 				units.Insert(0, unit);
 			}
 		}
+
+		public static readonly SimpleCurve ProblemsFromPoints = new SimpleCurve
+		{
+			new CurvePoint(0f, 1f),
+			new CurvePoint(3000f, 1f),
+			new CurvePoint(5000f, 1.5f),
+			new CurvePoint(8000f, 2.5f),
+			new CurvePoint(9000f, 3f)
+		};
 
 		public static IntVec3 FindSiegePosition(Map map, List<Unit> units, int maxTries = 100)
 		{

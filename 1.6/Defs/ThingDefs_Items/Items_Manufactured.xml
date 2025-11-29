@@ -43,5 +43,142 @@
     </thingCategories>
     <allowedArchonexusCount>80</allowedArchonexusCount>
   </ThingDef>
+
+  <ThingDef Name="NAT_RustedShellBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <tradeability>None</tradeability>
+    <category>Item</category>
+    <genericMarketSellable>false</genericMarketSellable>
+    <drawerType>MapMeshOnly</drawerType>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <graphicData>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <tradeability>None</tradeability>
+    <tickerType>Normal</tickerType>
+    <stackLimit>25</stackLimit>
+    <techLevel>Archotech</techLevel>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>55</MarketValue>
+      <Mass>1.25</Mass>
+      <Flammability>1.5</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="NAT_RustedShellBase">
+    <defName>NAT_RustedShell_Explosive</defName>
+    <label>rusted explosive shell</label>
+    <description>A piece of clotted pain.</description>
+    <graphicData>
+      <texPath>Things/Item/NAT_RustedShell_Explosive</texPath>
+    </graphicData>
+    <projectileWhenLoaded>NAT_RustedShell_Explosive_Flying</projectileWhenLoaded>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>NAT_RustedShell_Explosive_Flying</defName>
+    <label>rusted explosive shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/NAT_RustedShell</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(2, 2)</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>NAT_RustedBomb</damageDef>
+      <speed>41</speed>
+      <explosionRadius>3.9</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <preExplosionSpawnSingleThingDef>Filth_BlastMark</preExplosionSpawnSingleThingDef>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="NAT_RustedShellBase">
+    <defName>NAT_RustedShell_Deadlife</defName>
+    <label>rusted deadlife shell</label>
+    <description>A piece of clotted pain.</description>
+    <graphicData>
+      <texPath>Things/Item/NAT_RustedShell_Explosive</texPath>
+    </graphicData>
+    <projectileWhenLoaded>NAT_RustedShell_Deadlife_Flying</projectileWhenLoaded>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>NAT_RustedShell_Deadlife_Flying</defName>
+    <label>rusted deadlife shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/NAT_RustedShell</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(2, 2)</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>NAT_DeadlifeBomb</damageDef>
+      <speed>41</speed>
+      <explosionRadius>9.9</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <preExplosionSpawnSingleThingDef>Filth_BlastMark</preExplosionSpawnSingleThingDef>
+    </projectile>
+  </ThingDef>
+
+  <!--<ThingDef ParentName="NAT_RustedShellBase">
+    <defName>NAT_RustedShell_</defName>
+    <label>rusted explosive shell</label>
+    <description>A piece of clotted pain.</description>
+    <graphicData>
+      <texPath>Things/Item/NAT_PainClot</texPath>
+    </graphicData>
+    <projectileWhenLoaded>NAT_RustedShell_Explosive_Flying</projectileWhenLoaded>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>NAT_RustedShell_Explosive_Flying</defName>
+    <label>rusted explosive shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/NAT_RustedShell</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>NAT_RustedBomb</damageDef>
+      <speed>41</speed>
+      <explosionRadius>3.9</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <preExplosionSpawnSingleThingDef>Filth_BlastMark</preExplosionSpawnSingleThingDef>
+    </projectile>
+  </ThingDef>-->
   
 </Defs>

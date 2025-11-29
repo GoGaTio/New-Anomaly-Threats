@@ -31,6 +31,21 @@ using UnityEngine.SceneManagement;
 
 namespace NAT
 {
+	public class DamageWorker_Deadlife : DamageWorker
+	{
+		public override void ExplosionAffectCell(Explosion explosion, IntVec3 c, List<Thing> damagedThings, List<Thing> ignoredThings, bool canThrowMotes)
+		{
+			if(c.DistanceTo(explosion.Position) < explosion.radius / 2f && canThrowMotes)
+			{
+				GasUtility.AddDeadifeGas(c, explosion.Map, explosion.instigator?.Faction ?? Faction.OfEntities, 255);
+			}
+			else
+			{
+				GasUtility.MarkDeadlifeCorpsesForFaction(c, explosion.Map, explosion.instigator?.Faction ?? Faction.OfEntities, 255);
+			}
+			base.ExplosionAffectCell(explosion, c, damagedThings, ignoredThings, canThrowMotes);
+		}
+	}
 	public class CompProperties_PainFigure : CompProperties
 	{
 		public CompProperties_PainFigure()
