@@ -180,7 +180,7 @@ namespace NAT
 		protected override void Tick()
 		{
 			base.Tick();
-			if (this.IsHashIntervalTick(7500) && Faction == Faction.OfEntities && gun.TryGetComp<CompChangeableProjectile>(out var comp) )
+			if (this.IsHashIntervalTick(2500) && Faction == Faction.OfEntities && gun.TryGetComp<CompChangeableProjectile>(out var comp) )
 			{
 				comp.allowedShellsSettings = new StorageSettings(comp);
 				if (comp.parent.def.building.defaultStorageSettings != null)

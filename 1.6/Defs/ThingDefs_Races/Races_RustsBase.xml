@@ -128,7 +128,7 @@
       </li>
       <li>
         <damageDef>NAT_RustedBomb</damageDef>
-        <multiplier>0.25</multiplier>
+        <multiplier>0.1</multiplier>
       </li>
       <li>
         <damageDef>Thump</damageDef>

@@ -44,7 +44,7 @@
           <def>NAT_StartingRustedSoldier</def>
           <pawnKind>NAT_RustedSoldier</pawnKind>
         </li>
-        
+
         <!-- Player starting things -->
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
@@ -61,7 +61,7 @@
           <thingDef>MedicineIndustrial</thingDef>
           <count>15</count>
         </li>
-		<li Class="ScenPart_StartingThing_Defined">
+        <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>NAT_RustedActivator_Regeneration</thingDef>
           <count>2</count>
@@ -93,18 +93,18 @@
           <def>StartingThing_Defined</def>
           <thingDef>Apparel_FlakVest</thingDef>
         </li>
-		
-		<!-- Starting research -->
+
+        <!-- Starting research -->
 
         <li Class="ScenPart_StartingResearch">
           <def>StartingResearch</def>
           <project>NAT_RustedSoldiers</project>
         </li>
-		<li Class="ScenPart_StartingResearch">
+        <li Class="ScenPart_StartingResearch">
           <def>StartingResearch</def>
           <project>Smithing</project>
         </li>
-		
+
 
         <!-- Scatter some things near player start -->
         <li Class="ScenPart_ScatterThingsNearPlayerStart">
@@ -116,7 +116,7 @@
           <def>ScatterThingsNearPlayerStart</def>
           <thingDef>WoodLog</thingDef>
           <count>200</count>
-        </li>      
+        </li>
 
         <!-- Scatter some things anywhere -->
         <li Class="ScenPart_ScatterThingsAnywhere">
@@ -124,7 +124,7 @@
           <thingDef>Steel</thingDef>
           <count>400</count>
         </li>
-		<li Class="ScenPart_ScatterThingsAnywhere">
+        <li Class="ScenPart_ScatterThingsAnywhere">
           <def>ScatterThingsAnywhere</def>
           <thingDef>Bioferrite</thingDef>
           <count>150</count>
@@ -134,23 +134,23 @@
           <thingDef>MealSurvivalPack</thingDef>
           <count>7</count>
         </li>
-        
+
         <!-- Game start dialog -->
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
           <text>You did not see eye to eye with the cult leaders and, realizing the problems ahead, decided to flee. Now your goal is to develop your understanding of emptiness into a new faith with only what you managed to steal.</text>
           <closeSound>GameStartSting</closeSound>
         </li>
-		
+
         <li Class="ScenPart_MonolithGeneration">
           <def>ScenPart_MonolithGeneration</def>
           <method>NearColonists</method>
         </li>
-        
+
       </parts>
     </scenario>
   </ScenarioDef>
-  
+
   <FactionDef ParentName="PlayerFactionBase">
     <defName>NAT_PlayerCult</defName>
     <label>Outlaw cultists</label>
@@ -162,7 +162,9 @@
     <techLevel>Industrial</techLevel>
     <factionNameMaker>NamerFactionOutlander</factionNameMaker>
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
-    <allowedCultures><li>Astropolitan</li></allowedCultures>
+    <allowedCultures>
+      <li>Astropolitan</li>
+    </allowedCultures>
     <backstoryFilters>
       <li>
         <categories>
@@ -184,12 +186,12 @@
       </thingDefs>
     </apparelStuffFilter>
   </FactionDef>
-  
+
   <PawnKindDef ParentName="BasePlayerPawnKind">
-	<defName>NAT_PlayerCultist</defName>
+    <defName>NAT_PlayerCultist</defName>
     <label>cultist</label>
     <defaultFactionType>NAT_PlayerCult</defaultFactionType>
-	<apparelColor>(85, 85, 85)</apparelColor>
+    <apparelColor>(85, 85, 85)</apparelColor>
     <styleItemTags>
       <li>
         <tag>Cultist</tag>
@@ -201,7 +203,7 @@
       <li>
         <def>Inhumanized</def>
       </li>
-	  <li>
+      <li>
         <def>Tentacle</def>
         <chance>0.15</chance>
       </li>
@@ -213,17 +215,18 @@
         <def>FleshWhip</def>
         <chance>0.05</chance>
       </li>
-	  <li>
+      <li>
         <def>Metalblood</def>
-        <durationTicksRange>60000~300000</durationTicksRange> <!-- 1~5 days -->
-		<chance>0.05</chance>
+        <durationTicksRange>60000~300000</durationTicksRange>
+        <!-- 1~5 days -->
+        <chance>0.05</chance>
       </li>
       <li>
         <def>DeathRefusal</def>
-		<chance>0.03</chance>
+        <chance>0.03</chance>
       </li>
     </startingHediffs>
-	<specificApparelRequirements>
+    <specificApparelRequirements>
       <li>
         <bodyPartGroup>Torso</bodyPartGroup>
         <alternateTagChoices>
@@ -245,7 +248,7 @@
     <requiredWorkTags>
       <li>Violent</li>
     </requiredWorkTags>
-	<initialResistanceRange>13~21</initialResistanceRange>
+    <initialResistanceRange>13~21</initialResistanceRange>
   </PawnKindDef>
-  
+
 </Defs>

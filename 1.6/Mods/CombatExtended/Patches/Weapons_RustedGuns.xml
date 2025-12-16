@@ -380,7 +380,7 @@
     <defName>NAT_Gun_RustedAssaultShotgun</defName>
     <statBases>
       <Mass>9.05</Mass>
-      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
       <ShotSpread>0.14</ShotSpread>
       <SwayFactor>1.31</SwayFactor>
       <Bulk>13.0</Bulk>
@@ -391,10 +391,10 @@
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>NAT_Bullet_RustedShotgun</defaultProjectile>
-      <warmupTime>0.6</warmupTime>
+      <warmupTime>0.3</warmupTime>
       <range>12</range>
       <burstShotCount>9</burstShotCount>
-      <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+      <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
       <soundCast>Shot_Shotgun</soundCast>
       <soundCastTail>GunTail_Heavy</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
@@ -425,6 +425,7 @@
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>NAT_Bullet_RustedLarge</defaultProjectile>
       <warmupTime>1.1</warmupTime>
+      <burstShotCount>3</burstShotCount>
       <range>85</range>
       <soundCast>Shot_BoltActionRifle</soundCast>
       <soundCastTail>GunTail_Heavy</soundCastTail>

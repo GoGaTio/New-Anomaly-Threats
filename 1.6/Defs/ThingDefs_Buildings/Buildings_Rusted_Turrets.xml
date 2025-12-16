@@ -245,6 +245,8 @@
     <statBases>
       <MaxHitPoints>150</MaxHitPoints>
       <ShootingAccuracyTurret>1</ShootingAccuracyTurret>
+      <ArmorRating_Blunt>1.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
     </statBases>
     <tickerType>Normal</tickerType>
     <comps>
