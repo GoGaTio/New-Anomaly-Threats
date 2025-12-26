@@ -30,6 +30,7 @@
     <label>rusted rifleman</label>
     <weaponTags>
       <li>NAT_RustedBoltRifle</li>
+	  <li>NAT_RustedCarabine</li>
     </weaponTags>
     <combatEnhancingDrugsCount>-11~2</combatEnhancingDrugsCount>
   </PawnKindDef>
@@ -65,12 +66,12 @@
     <combatEnhancingDrugsCount>-7~2</combatEnhancingDrugsCount>
   </PawnKindDef>
   
-  <PawnKindDef ParentName="NAT_RustedSoldierKindBase">
+  <PawnKindDef MayRequire="GoGaTio.DeadManSwitch.RenegadeClan" ParentName="NAT_RustedSoldierKindBase">
     <defName>NAT_RustedRenegade</defName>
     <label>rusted renegade</label>
     <biocodeWeaponChance>0.4</biocodeWeaponChance>
-    <defaultFactionType>HoraxCult</defaultFactionType>
-    <combatEnhancingDrugsCount>0~0</combatEnhancingDrugsCount>
+    <defaultFactionType>DMSRC_RenegadeClan</defaultFactionType>
+    <combatEnhancingDrugsCount>1~3</combatEnhancingDrugsCount>
     <apparelTags>
       <li>BeltDefensePop</li>
     </apparelTags>
