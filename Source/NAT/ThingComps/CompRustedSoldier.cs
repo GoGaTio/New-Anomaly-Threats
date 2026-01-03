@@ -76,6 +76,8 @@ namespace NAT
 
 		public List<string> apparelTagsToAllow = new List<string>();
 
+		public bool canWearApparel = true;
+
 		public SimpleCurve interactionChanceFromIndexCurve = new SimpleCurve
 		{
 			new CurvePoint(0f, 0f),
@@ -192,7 +194,10 @@ namespace NAT
 
 		public bool CanWearApparel(Apparel apparel)
         {
-
+			if (!Props.canWearApparel)
+			{
+				return false;
+			}
 			if(apparel.def.apparel.LastLayer.IsUtilityLayer || apparel.def.apparel.layers[0] == ApparelLayerDefOf.Belt || apparel.def.apparel.tags.SharesElementWith(Props.apparelTagsToAllow))
             {
 				return true;

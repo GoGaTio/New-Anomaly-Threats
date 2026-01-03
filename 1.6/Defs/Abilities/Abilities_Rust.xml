@@ -72,7 +72,7 @@
       <li Class="NAT.CompProperties_AbilityReinforcements">
         <missRadius>2.9</missRadius>
         <kindDefs>
-          <NAT_RustedTrooper_Reinforcement>2</NAT_RustedTrooper_Reinforcement>
+          <NAT_RustedTrooper>2</NAT_RustedTrooper>
         </kindDefs>
       </li>
       <li Class="NAT.CompProperties_AbilityRustedCommander">
@@ -194,19 +194,19 @@
   </AbilityDef>
 
   <AbilityDef ParentName="NAT_RustCommandBase">
-    <defName>NAT_Reinforcement_Guardsmans</defName>
-    <label>call rusted guardsmans</label>
-    <description>Call rusted guardsmans as reinforcements from orbital rusted structures.</description>
-    <iconPath>UI/Abilities/NAT_Reinforcement_Troopers</iconPath>
+    <defName>NAT_Reinforcement_Guardsman</defName>
+    <label>call rusted guardsman</label>
+    <description>Call rusted guardsman as reinforcement from orbital rusted structures.</description>
+    <iconPath>UI/Abilities/NAT_Reinforcement_Guardsman</iconPath>
     <comps>
       <li Class="NAT.CompProperties_AbilityReinforcements">
-        <missRadius>4.9</missRadius>
+        <missRadius>1.9</missRadius>
         <kindDefs>
-          <NAT_RustedGuardsman>4</NAT_RustedGuardsman>
+          <NAT_RustedGuardsman>1</NAT_RustedGuardsman>
         </kindDefs>
       </li>
       <li Class="NAT.CompProperties_AbilityRustedCommander">
-        <cost>7</cost>
+        <cost>4</cost>
         <castParms>
           <li>
             <conditions>Attacking</conditions>

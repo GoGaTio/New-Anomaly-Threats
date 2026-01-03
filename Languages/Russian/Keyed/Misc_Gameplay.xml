@@ -86,7 +86,13 @@
 
   <NAT_SelectAllRusts>Выбрать всех</NAT_SelectAllRusts>
   <NAT_UseItem>Использовать</NAT_UseItem>
+  <NAT_CannotEquip_NotRust>Не ржавчина</NAT_CannotEquip_NotRust>
+  <NAT_CannotEquip_Bladelink>Ржавчины не могут свзываться с личным оружием</NAT_CannotEquip_Bladelink>
+  <NAT_CannotEquip_Apparel>Не может носить</NAT_CannotEquip_Apparel>
+  <NAT_CannotEquip_Size>Необходим размер тела не меньше (0)</NAT_CannotEquip_Size>
 
+  <TerrainTagNAT_Rusted>ржавое</TerrainTagNAT_Rusted>
+  
   <!--Settings-->
   <NAT_Setting_AllowRaid>Разрешить дополнение концовки монолита</NAT_Setting_AllowRaid>
   <NAT_Setting_AllowRaid_Desc>Разрешить дополнения и изменения в концовке пробуждения монолита.</NAT_Setting_AllowRaid_Desc>

@@ -118,7 +118,7 @@
     <label>rusted carabine</label>
     <description>A piece of bioferrite shaped like a carabine.\n\nSomehow can shoot if wielded by rusted creature.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/Weapon/NAT_RustedRifle</texPath>
+      <texPath>Things/Item/Equipment/Weapon/NAT_RustedCarabine</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -351,6 +351,7 @@
     <graphicData>
       <texPath>Things/Item/Equipment/Weapon/NAT_RustedGrenades</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
     </graphicData>
     <statBases>
       <Mass>1</Mass>
@@ -406,7 +407,6 @@
       <texPath>Things/Item/Equipment/Weapon/NAT_RustedSword</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-
     <weaponClasses>
       <li>Melee</li>
     </weaponClasses>
@@ -417,7 +417,6 @@
       <Mass>0.85</Mass>
       <MarketValue>250</MarketValue>
     </statBases>
-
     <equippedAngleOffset>-65</equippedAngleOffset>
     <tools>
       <li>
@@ -448,7 +447,6 @@
     <butcherProducts>
       <Bioferrite>17</Bioferrite>
     </butcherProducts>
-
   </ThingDef>
 
   <ThingDef ParentName="NAT_BaseRustedWeapon">
@@ -459,7 +457,6 @@
       <texPath>Things/Item/Equipment/Weapon/NAT_RustedAxe</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-
     <weaponClasses>
       <li>Melee</li>
     </weaponClasses>
@@ -470,7 +467,6 @@
       <Mass>1.5</Mass>
       <MarketValue>250</MarketValue>
     </statBases>
-
     <equippedAngleOffset>-65</equippedAngleOffset>
     <tools>
       <li>

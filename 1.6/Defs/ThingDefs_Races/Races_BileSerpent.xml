@@ -15,6 +15,7 @@
       <needsRest>false</needsRest>
       <fleshType>EntityFlesh</fleshType>
       <isImmuneToInfections>true</isImmuneToInfections>
+      <renderTree>Animal</renderTree>
       <specificMeatDef>Meat_Twisted</specificMeatDef>
       <foodType>None</foodType>
       <bloodDef>Filth_DarkBlood</bloodDef>
@@ -69,7 +70,6 @@
         <power>15</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
-
       </li>
       <li>
         <label>head</label>
@@ -103,7 +103,6 @@
       </li>
     </tools>
     <comps>
-
       <li Class="CompProperties_Studiable">
         <frequencyTicks>120000</frequencyTicks>
         <knowledgeCategory>Basic</knowledgeCategory>
@@ -114,7 +113,6 @@
       <li Class="CompProperties_HoldingPlatformTarget">
         <baseEscapeIntervalMtbDays>60</baseEscapeIntervalMtbDays>
       </li>
-
       <li Class="CompProperties_AttachPoints">
         <points>
           <li>

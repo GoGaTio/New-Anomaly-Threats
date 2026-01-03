@@ -66,19 +66,19 @@
     <combatEnhancingDrugsCount>-7~2</combatEnhancingDrugsCount>
   </PawnKindDef>
   
-  <PawnKindDef MayRequire="GoGaTio.DeadManSwitch.RenegadeClan" ParentName="NAT_RustedSoldierKindBase">
+  <PawnKindDef MayRequire="Aoba.DeadManSwitch.Core" ParentName="NAT_RustedSoldierKindBase">
     <defName>NAT_RustedRenegade</defName>
     <label>rusted renegade</label>
     <biocodeWeaponChance>0.4</biocodeWeaponChance>
-    <defaultFactionType>DMSRC_RenegadeClan</defaultFactionType>
+    <defaultFactionType MayRequire="GoGaTio.DeadManSwitch.RenegadeClan">DMSRC_RenegadeClan</defaultFactionType>
     <combatEnhancingDrugsCount>1~3</combatEnhancingDrugsCount>
     <apparelTags>
       <li>BeltDefensePop</li>
     </apparelTags>
     <apparelMoney>1000~1350</apparelMoney>
     <weaponTags>
-      <li>ShortShots</li>
-      <li>SimpleGun</li>
+      <li>A_SG_LongRifle</li>
+      <li>DMS_MechWeaponMedium</li>
     </weaponTags>
   </PawnKindDef>
 

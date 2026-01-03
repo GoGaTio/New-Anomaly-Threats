@@ -121,7 +121,7 @@
     <label>rusted deadlife shell</label>
     <description>A piece of clotted pain.</description>
     <graphicData>
-      <texPath>Things/Item/NAT_RustedShell_Explosive</texPath>
+      <texPath>Things/Item/NAT_RustedShell_Deadlife</texPath>
     </graphicData>
     <projectileWhenLoaded>NAT_RustedShell_Deadlife_Flying</projectileWhenLoaded>
   </ThingDef>
@@ -145,7 +145,6 @@
       <soundExplode>MortarBomb_Explode</soundExplode>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>
-      <preExplosionSpawnSingleThingDef>Filth_BlastMark</preExplosionSpawnSingleThingDef>
     </projectile>
   </ThingDef>
 

@@ -38,6 +38,7 @@
       Defs/ThingDef[
       defName="NAT_Gun_RustedShotgun" or
       defName="NAT_Gun_RustedBoltActionRifle" or
+      defName="NAT_Gun_RustedCarabine" or
       defName="NAT_Gun_RustedSMG" or
       defName="NAT_Gun_RustedAssaultSMG"
       ]/tools
@@ -207,6 +208,38 @@
       <defaultProjectile>NAT_Bullet_RustedMedium</defaultProjectile>
       <warmupTime>1.1</warmupTime>
       <range>55</range>
+      <soundCast>Shot_BoltActionRifle</soundCast>
+      <soundCastTail>GunTail_Heavy</soundCastTail>
+      <muzzleFlashScale>9</muzzleFlashScale>
+    </Properties>
+    <FireModes>
+      <aiAimMode>AimedShot</aiAimMode>
+    </FireModes>
+    <weaponTags>
+      <li>CE_AI_SR</li>
+    </weaponTags>
+    <AllowWithRunAndGun>false</AllowWithRunAndGun>
+  </Operation>
+
+  <!-- ========== Carabine ========== -->
+
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>NAT_Gun_RustedCarabine</defName>
+    <statBases>
+      <Mass>3.89</Mass>
+      <RangedWeapon_Cooldown>0.89</RangedWeapon_Cooldown>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.02</ShotSpread>
+      <SwayFactor>1.73</SwayFactor>
+      <Bulk>9.80</Bulk>
+    </statBases>
+    <Properties>
+      <recoilAmount>2.04</recoilAmount>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>NAT_Bullet_RustedMedium</defaultProjectile>
+      <warmupTime>0.9</warmupTime>
+      <range>40</range>
       <soundCast>Shot_BoltActionRifle</soundCast>
       <soundCastTail>GunTail_Heavy</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>

@@ -11,6 +11,17 @@
   <NAT_Gun_RustedBoltActionRifle.tools.barrel.label>ствол</NAT_Gun_RustedBoltActionRifle.tools.barrel.label>
   <!-- EN: rusted rifle -->
   <NAT_Gun_RustedBoltActionRifle.verbs.Verb_Shoot.label>ржавая винтовка</NAT_Gun_RustedBoltActionRifle.verbs.Verb_Shoot.label>
+
+  <!-- EN: rusted carabine -->
+  <NAT_Gun_RustedCarabine.label>ржавый карабин</NAT_Gun_RustedCarabine.label>
+  <!-- EN: A piece of bioferrite shaped like a carabine.\n\nSomehow can shoot if wielded by rusted creature. -->
+  <NAT_Gun_RustedCarabine.description>Кусок биоферрита в форме самозарядного карабина.\n\nМожет стрелять, если используется ржавым созданием.</NAT_Gun_RustedCarabine.description>
+  <!-- EN: stock -->
+  <NAT_Gun_RustedCarabine.tools.stock.label>приклад</NAT_Gun_RustedCarabine.tools.stock.label>
+  <!-- EN: barrel -->
+  <NAT_Gun_RustedCarabine.tools.barrel.label>ствол</NAT_Gun_RustedCarabine.tools.barrel.label>
+  <!-- EN: rusted carabine -->
+  <NAT_Gun_RustedCarabine.verbs.Verb_Shoot.label>ржавый карабин</NAT_Gun_RustedCarabine.verbs.Verb_Shoot.label>
   
   <!-- EN: rusted revolver -->
   <NAT_Gun_RustedRevolver.label>ржавый револьвер</NAT_Gun_RustedRevolver.label>

@@ -8,7 +8,6 @@
   </ThingCategoryDef>
 
   <ThingDef Abstract="True" ParentName="BaseGun" Name="NAT_WeaponUsablyByRust">
-
     <techLevel>Archotech</techLevel>
     <tradeability>None</tradeability>
     <destroyOnDrop>false</destroyOnDrop>
@@ -19,9 +18,7 @@
       <li>NAT_WeaponsRusted</li>
     </thingCategories>
     <statBases>
-
       <DeteriorationRate>0</DeteriorationRate>
-
       <Flammability>1.5</Flammability>
     </statBases>
   </ThingDef>
@@ -33,6 +30,9 @@
     <thingSetMakerTags>
       <li>NAT_RustedWeapon</li>
     </thingSetMakerTags>
+    <graphicData>
+      <drawSize>1.15</drawSize>
+    </graphicData>
     <weaponTags>
       <li>NAT_RustedMedium</li>
     </weaponTags>

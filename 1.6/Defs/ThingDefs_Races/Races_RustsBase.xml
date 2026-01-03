@@ -51,6 +51,16 @@
         <li>AnomalyEntity</li>
       </hediffGiverSets>
     </race>
+    <inspectorTabs Inherit="False">
+      <li>ITab_Pawn_Health</li>
+      <li>ITab_Pawn_Needs</li>
+      <li>ITab_Pawn_Social</li>
+      <li>ITab_Pawn_Guest</li>
+      <li>ITab_Entity</li>
+      <li>ITab_Pawn_FormingCaravan</li>
+      <li>ITab_Pawn_Gear</li>
+      <li>ITab_Pawn_Log</li>
+    </inspectorTabs>
     <comps>
       <li Class="CompProperties_CanBeDormant">
         <maxDistAwakenByOther>5</maxDistAwakenByOther>

@@ -86,6 +86,12 @@
 
   <NAT_SelectAllRusts>Select all</NAT_SelectAllRusts>
   <NAT_UseItem>Use</NAT_UseItem>
+  <NAT_CannotEquip_NotRust>Not rust</NAT_CannotEquip_NotRust>
+  <NAT_CannotEquip_Bladelink>Rusts cannot use bladelink</NAT_CannotEquip_Bladelink>
+  <NAT_CannotEquip_Apparel>Not allowed</NAT_CannotEquip_Apparel>
+  <NAT_CannotEquip_Size>Require body size of (0)</NAT_CannotEquip_Size>
+
+  <TerrainTagNAT_Rusted>rusted</TerrainTagNAT_Rusted>
 
   <!--Settings-->
   <NAT_Setting_AllowRaid>Allow void awakening extensions</NAT_Setting_AllowRaid>
