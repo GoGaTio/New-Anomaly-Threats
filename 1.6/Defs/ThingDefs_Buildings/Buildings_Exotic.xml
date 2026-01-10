@@ -9,7 +9,7 @@
     <useHitPoints>false</useHitPoints>
     <thingClass>NAT.UndergroundEntrance</thingClass>
     <rotatable>false</rotatable>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <canOverlapZones>false</canOverlapZones>
     <tickerType>Normal</tickerType>
     <graphicData>

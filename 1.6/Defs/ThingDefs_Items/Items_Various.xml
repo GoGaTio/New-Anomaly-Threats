@@ -81,9 +81,9 @@
         <forbidOnMake>true</forbidOnMake> 
       </li> 
       <li Class="CompProperties_Studiable"> 
-        <frequencyTicks>120000</frequencyTicks> 
+        <frequencyTicks>60000</frequencyTicks> 
         <knowledgeCategory>Advanced</knowledgeCategory> 
-        <anomalyKnowledge>0.5</anomalyKnowledge>
+        <anomalyKnowledge>1.5</anomalyKnowledge>
         <minMonolithLevelForStudy>1</minMonolithLevelForStudy> 
         <showToggleGizmo>true</showToggleGizmo> 
       </li> 

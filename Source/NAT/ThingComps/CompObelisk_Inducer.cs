@@ -54,7 +54,7 @@ namespace NAT
 			}
 			List<Pawn> list = new List<Pawn>();
 			int colonistsUnffected = parent.Map.mapPawns.ColonistsSpawnedCount;
-			int colonists = Mathf.CeilToInt(colonistsUnffected * 0.4f);
+			int colonists = Mathf.Max(Mathf.CeilToInt(colonistsUnffected * 0.4f), 1);
 			foreach (Pawn p in parent.Map.mapPawns.AllPawnsSpawned.InRandomOrder().ToList())
 			{
 				if (Affectable(p) && TryCastNegativeAction(p, p.IsColonist, true, false, triggeredByPlayer))

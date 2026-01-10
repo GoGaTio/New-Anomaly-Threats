@@ -108,20 +108,79 @@ namespace NAT
 
 
 
-	public class RoomContents_CollectorLairBedroom : RoomContentsWorker
+	public class RoomContents_CollectorLairRoom : RoomContentsWorker
 	{
-		private static readonly IntRange TurretsRange = new IntRange(1, 2);
+		public virtual float Chance => 0.15f;
+
+		public virtual FloatRange PointsRange => new FloatRange(140f, 280f);
 
 		public override void FillRoom(Map map, LayoutRoom room, Faction faction, float? threatPoints = null)
 		{
 			base.FillRoom(map, room, faction, threatPoints);
+			if (!Rand.Chance(Chance))
+			{
+				return;
+			}
 			SignalAction_Sightstealers signalAction_Ambush = (SignalAction_Sightstealers)ThingMaker.MakeThing(NATDefOf.NAT_SignalAction_Sightstealers);
-			signalAction_Ambush.points = new FloatRange(140f, 420f).RandomInRange;
+			signalAction_Ambush.points = PointsRange.RandomInRange;
 			signalAction_Ambush.spawnAround = room.rects[0];
-			GenSpawn.Spawn(signalAction_Ambush, room.rects[0].CenterCell, map);
+			if(room.rects[0].TryFindRandomCell(out var cell, (c)=> c.Standable(map)))
+			{
+				GenSpawn.Spawn(signalAction_Ambush, cell, map);
+			}
 		}
+	}
 
-		
+	public class RoomContents_CollectorLairStorage : RoomContents_CollectorLairRoom
+	{
+		public override FloatRange PointsRange => new FloatRange(140f, 350f);
+
+		public override void FillRoom(Map map, LayoutRoom room, Faction faction, float? threatPoints = null)
+		{
+			base.FillRoom(map, room, faction, threatPoints);
+			List<IntVec3> cells = new List<IntVec3>();
+			foreach(IntVec3 cell in room.rects[0])
+			{
+				if(cell.GetFirstBuilding(map)?.def == ThingDefOf.Shelf)
+				{
+					cells.Add(cell);
+				}
+			}
+			if(cells.NullOrEmpty())
+			{
+				return;
+			}
+			ThingSetMakerParams setParms = new ThingSetMakerParams
+			{
+				makingFaction = Faction.OfEntities,
+				tile = map.Tile
+			};
+			List<Thing> loot = NATDefOf.NAT_CollectoirLairStorage.root.Generate(setParms);
+			if (loot.NullOrEmpty())
+			{
+				return;
+			}
+			foreach (Thing thing in loot)
+			{
+				if (cells.NullOrEmpty())
+				{
+					return;
+				}
+				IntVec3 c = cells.RandomElement();
+				GenPlace.TryPlaceThing(thing, c, map, ThingPlaceMode.Near);
+				if(c.GetThingList(map)?.Count > 4)
+				{
+					cells.Remove(c);
+				}
+			}
+		}
+	}
+
+	public class RoomContents_CollectorLairBedroom : RoomContents_CollectorLairRoom
+	{
+		public override float Chance => 1f;
+
+		public override FloatRange PointsRange => new FloatRange(280f, 490f);
 	}
 
 	public class RoomContents_CollectorLairEntrance : RoomContentsWorker

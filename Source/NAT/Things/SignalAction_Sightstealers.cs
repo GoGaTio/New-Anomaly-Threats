@@ -70,7 +70,7 @@ namespace NAT
 		protected override void Tick()
 		{
 			base.Tick();
-			if (this.IsHashIntervalTick(60) && this.GetRoom() != null && this.GetRoom().ContainedThings<Pawn>().Any((Pawn p) => p.HostileTo(Faction.OfEntities)))
+			if (this.IsHashIntervalTick(60) && this.GetRoom() != null && (!Position.Fogged(Map) || this.GetRoom().ContainedThings<Pawn>().Any((Pawn p) => p.HostileTo(Faction.OfEntities))))
 			{
 				DoAction(new Signal().args);
 			}

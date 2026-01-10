@@ -71,6 +71,7 @@
           <chance>0.25</chance>
           <thingSetMaker Class="ThingSetMaker_MarketValue">
             <fixedParams>
+              <totalMarketValueRange>150~200</totalMarketValueRange>
               <filter>
                 <categories>
                   <li>ResourcesRaw</li>
@@ -164,16 +165,6 @@
               </filter>
             </fixedParams>
           </thingSetMaker>
-        </li>
-
-        <li>
-          <chance>0.25</chance>
-          <thingSetMaker Class="ThingSetMaker_RandomGeneralGoods" />
-        </li>
-
-        <li>
-          <chance>0.15</chance>
-          <thingSetMaker Class="ThingSetMaker_RandomGeneralGoods" />
         </li>
         
         <!-- Artifacts -->

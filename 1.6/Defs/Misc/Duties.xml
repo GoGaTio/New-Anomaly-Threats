@@ -83,6 +83,11 @@
         <li Class="JobGiver_AISapper">
           <canMineNonMineables>false</canMineNonMineables>
         </li>
+        <li Class="JobGiver_AITrashColonyClose" />
+        <li Class="JobGiver_AITrashBuildingsDistant" />
+        <li Class="JobGiver_AITrashBuildingsDistant">
+          <attackAllInert>true</attackAllInert>
+        </li>
       </subNodes>
     </thinkNode>
     <constantThinkNode Class="ThinkNode_ConditionalCanPickupOpportunisticWeapon">
@@ -105,8 +110,6 @@
           <needLOSToAcquireNonPawnTargets>true</needLOSToAcquireNonPawnTargets>
         </li>
         <li Class="JobGiver_AISapper" />
-        <li Class="JobGiver_AITrashColonyClose" />
-        <li Class="JobGiver_AITrashBuildingsDistant" />
         <li Class="JobGiver_AIGotoNearestHostile" />
       </subNodes>
     </thinkNode>

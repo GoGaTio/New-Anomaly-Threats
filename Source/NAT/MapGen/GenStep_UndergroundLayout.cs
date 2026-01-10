@@ -110,12 +110,9 @@ namespace NAT
 			IntVec3 cell = IntVec3.Invalid;
 			if ((trySpawnInSettlement && MapGenerator.TryGetVar<CellRect>("SettlementRect", out var rect)) || (trySpawnInRect && (rect = MapGenerator.UsedRects.Last()) != null))
 			{
-				if (trySpawnInRoom)
+				if (!trySpawnInRoom || !rect.TryFindRandomCell(out cell, (IntVec3 c) => Validator(c, map, mustBeInRoom: true)))
 				{
-					if(!trySpawnInRoom || !rect.TryFindRandomCell(out cell, (IntVec3 c) => Validator(c, map, mustBeInRoom: true)))
-					{
-						rect.TryFindRandomCell(out cell, (IntVec3 c) => Validator(c, map, mustBeInRoom: false));
-					}
+					rect.TryFindRandomCell(out cell, (IntVec3 c) => Validator(c, map, mustBeInRoom: false));
 				}
 			}
 			else if (trySpawnInRoom)
@@ -127,7 +124,11 @@ namespace NAT
 				CellFinder.TryFindRandomCell(map, (IntVec3 c) => Validator(c, map, mustBeInRoom: false), out cell);
 			}
 			int tick = Find.TickManager.TicksGame;
-			foreach(IntVec3 c in CellRect.FromCell(cell).ExpandedBy(2).Cells)
+			foreach (IntVec3 c in CellRect.FromCell(cell).ExpandedBy(1).Cells)
+			{
+				map.terrainGrid.SetTerrain(c, TerrainDefOf.AncientConcrete);
+			}
+			foreach (IntVec3 c in CellRect.FromCell(cell).ExpandedBy(2).EdgeCells)
             {
 				if(Rand.ChanceSeeded(0.9f, tick))
                 {
@@ -142,15 +143,11 @@ namespace NAT
 
 		private bool Validator(IntVec3 c, Map map, bool mustBeInRoom)
 		{
-			if (!GenSpawn.CanSpawnAt(entranceDef, c, map))
+			if (c.DistanceToEdge(map) <= 3)
 			{
 				return false;
 			}
-			if (c.DistanceToEdge(map) <= 2)
-			{
-				return false;
-			}
-			if ((mustBeInRoom && c.GetRoom(map) == null) || !c.GetRoom(map).ProperRoom)
+			if (mustBeInRoom && (c.GetRoom(map) == null || !c.GetRoom(map).ProperRoom))
 			{
 				return false;
 			}

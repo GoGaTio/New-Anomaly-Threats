@@ -14,24 +14,24 @@
       <li>PavedTile</li>
     </floorTypes>
     <edgeTerrain>AncientTile</edgeTerrain> 
-    <!--<prefabs>
-      <MU_AncientFacilityEntrance>
+    <prefabs>
+      <AncientDisplayBank_Edge>
         <countPerTenEdgeCells>2</countPerTenEdgeCells>
         <minMaxRange>1~1</minMaxRange>
-      </MU_AncientFacilityEntrance>
-      <MU_AncientUpgradesStorage_Edge>
+      </AncientDisplayBank_Edge>
+      <AncientStorageCylinder_Edge>
         <countPerHundredCells>5</countPerHundredCells>
         <minMaxRange>1~3</minMaxRange>
-      </MU_AncientUpgradesStorage_Edge>
-      <AncientBasicRecharger_Edge>
+      </AncientStorageCylinder_Edge>
+      <AncientLockerBank_Row>
         <countPerHundredCells>5</countPerHundredCells>
         <minMaxRange>1~1</minMaxRange>
-      </AncientBasicRecharger_Edge>
+      </AncientLockerBank_Row>
       <AncientLamp_Single>
-        <countPerHundredCells>5</countPerHundredCells>
-        <minMaxRange>0~1</minMaxRange>
+        <countPerHundredCells>1</countPerHundredCells>
+        <minMaxRange>1~2</minMaxRange>
       </AncientLamp_Single>
-    </prefabs>-->
+    </prefabs>
     <scatterTerrain>
       <Soil>
         <groupsPerHundredCells>2~6</groupsPerHundredCells>
@@ -46,6 +46,7 @@
   <LayoutRoomDef>
     <defName>NAT_CollectionRoom</defName>
     <canMergeWithAdjacentRoom>false</canMergeWithAdjacentRoom>
+    <roomContentsWorkerType>NAT.RoomContents_CollectorLairRoom</roomContentsWorkerType>
     <requiresSingleRectRoom>true</requiresSingleRectRoom>
     <minSingleRectWidth>3</minSingleRectWidth>
     <minSingleRectHeight>3</minSingleRectHeight>
@@ -59,6 +60,57 @@
         <countPerTenEdgeCells>10</countPerTenEdgeCells>
         <minMaxRange>1~10</minMaxRange>
       </NAT_CollectionCase>
+      <AncientStorageCylinder_Edge>
+        <countPerHundredCells>1</countPerHundredCells>
+        <minMaxRange>1~1</minMaxRange>
+      </AncientStorageCylinder_Edge>
+      <AncientLockerBank_Row>
+        <countPerHundredCells>1</countPerHundredCells>
+        <minMaxRange>1~1</minMaxRange>
+      </AncientLockerBank_Row>
+      <AncientLamp_Single>
+        <countPerHundredCells>1</countPerHundredCells>
+        <minMaxRange>0~1</minMaxRange>
+      </AncientLamp_Single>
+    </prefabs>
+    <scatterTerrain>
+      <Soil>
+        <groupsPerHundredCells>3~6</groupsPerHundredCells>
+        <itemsPerGroup>4~8</itemsPerGroup>
+        <groupDistRange>2~3</groupDistRange>
+      </Soil>
+    </scatterTerrain>
+  </LayoutRoomDef>
+
+  <LayoutRoomDef>
+    <defName>NAT_AncientStorageRoom</defName>
+    <canMergeWithAdjacentRoom>false</canMergeWithAdjacentRoom>
+    <roomContentsWorkerType>NAT.RoomContents_CollectorLairStorage</roomContentsWorkerType>
+    <requiresSingleRectRoom>true</requiresSingleRectRoom>
+    <minSingleRectWidth>5</minSingleRectWidth>
+    <minSingleRectHeight>5</minSingleRectHeight>
+    <floorTypes>
+      <li>AncientConcrete</li>
+      <li>AncientTile</li>
+      <li>TileGranite</li>
+    </floorTypes>
+    <prefabs>
+      <Shelves_Rows>
+        <countPerTenEdgeCells>30</countPerTenEdgeCells>
+        <minMaxRange>1</minMaxRange>
+      </Shelves_Rows>
+      <AncientStorageCylinder_Edge>
+        <countPerHundredCells>1</countPerHundredCells>
+        <minMaxRange>1~1</minMaxRange>
+      </AncientStorageCylinder_Edge>
+      <AncientLockerBank_Row>
+        <countPerHundredCells>1</countPerHundredCells>
+        <minMaxRange>1~1</minMaxRange>
+      </AncientLockerBank_Row>
+      <AncientLamp_Single>
+        <countPerHundredCells>2</countPerHundredCells>
+        <minMaxRange>0~1</minMaxRange>
+      </AncientLamp_Single>
     </prefabs>
     <scatterTerrain>
       <Soil>
@@ -82,6 +134,19 @@
       <li>CarpetMossBright</li>
       <li>CarpetBlue</li>
     </floorTypes>
+    <prefabs>
+      <AncientLamp_Single>
+        <countPerHundredCells>5</countPerHundredCells>
+        <minMaxRange>1~2</minMaxRange>
+      </AncientLamp_Single>
+    </prefabs>
+    <scatterTerrain>
+      <Soil>
+        <groupsPerHundredCells>3~6</groupsPerHundredCells>
+        <itemsPerGroup>4~8</itemsPerGroup>
+        <groupDistRange>2~3</groupDistRange>
+      </Soil>
+    </scatterTerrain>
   </LayoutRoomDef>
   
 </Defs>

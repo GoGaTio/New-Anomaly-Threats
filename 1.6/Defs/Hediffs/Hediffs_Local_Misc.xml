@@ -48,10 +48,10 @@
     </comps>
     <stages>
       <li>
-        <statOffsets>
+        <statFactors>
           <IncomingDamageFactor>0.75</IncomingDamageFactor>
           <Flammability>0.5</Flammability>
-        </statOffsets>
+        </statFactors>
       </li>
     </stages>
   </HediffDef>
@@ -116,7 +116,7 @@
     <defaultLabelColor>(0.99, 0.35, 0)</defaultLabelColor>
     <comps>
       <li Class="HediffCompProperties_DisappearsDisableable">
-        <disappearsAfterTicks>300000</disappearsAfterTicks>
+        <disappearsAfterTicks>1800000</disappearsAfterTicks>
         <showRemainingTime>true</showRemainingTime>
       </li>
       <li Class="HediffCompProperties_DisappearsOnDeath" />
@@ -125,6 +125,29 @@
       <li>
         <statOffsets>
           <NAT_CoreDropChance>0.5</NAT_CoreDropChance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>NAT_RustedCommandBuff_Officer</defName>
+    <label>officer command</label>
+    <description>Combat abilities are boosted thanks to being near someone who is using the combat command ability.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1, 0.6, 0.5)</defaultLabelColor>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+    </comps>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+          <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+          <MeleeHitChance>3</MeleeHitChance>
         </statOffsets>
       </li>
     </stages>

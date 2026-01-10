@@ -1,4 +1,20 @@
-﻿using System;
+﻿using DelaunatorSharp;
+using Gilzoide.ManagedJobs;
+using Ionic.Crc;
+using Ionic.Zlib;
+using JetBrains.Annotations;
+using KTrie;
+using LudeonTK;
+using NVorbis.NAudioSupport;
+using RimWorld;
+using RimWorld.BaseGen;
+using RimWorld.IO;
+using RimWorld.Planet;
+using RimWorld.QuestGen;
+using RimWorld.SketchGen;
+using RimWorld.Utility;
+using RuntimeAudioClipLoader;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -19,22 +35,6 @@ using System.Xml.Linq;
 using System.Xml.Serialization;
 using System.Xml.XPath;
 using System.Xml.Xsl;
-using DelaunatorSharp;
-using Gilzoide.ManagedJobs;
-using Ionic.Crc;
-using Ionic.Zlib;
-using JetBrains.Annotations;
-using KTrie;
-using LudeonTK;
-using NVorbis.NAudioSupport;
-using RimWorld;
-using RimWorld.BaseGen;
-using RimWorld.IO;
-using RimWorld.Planet;
-using RimWorld.QuestGen;
-using RimWorld.SketchGen;
-using RimWorld.Utility;
-using RuntimeAudioClipLoader;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Jobs;
@@ -51,6 +51,7 @@ using Verse.Noise;
 using Verse.Profile;
 using Verse.Sound;
 using Verse.Steam;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace NAT
 {
@@ -82,11 +83,26 @@ namespace NAT
 			compClass = typeof(CompUsableByRust);
 		}
 
+		public override void ResolveReferences(ThingDef parentDef)
+		{
+			base.ResolveReferences(parentDef);
+			if (parentDef.descriptionHyperlinks.NullOrEmpty())
+			{
+				parentDef.descriptionHyperlinks = new List<DefHyperlink>();
+			}
+			parentDef.descriptionHyperlinks.Add(new DefHyperlink(hediff));
+		}
+
         public override IEnumerable<StatDrawEntry> SpecialDisplayStats(StatRequest req)
         {
 			foreach (StatDrawEntry item in base.SpecialDisplayStats(req))
 			{
 				yield return item;
+			}
+			HediffCompProperties_Disappears comp = hediff.CompProps<HediffCompProperties_Disappears>();
+			if (comp != null)
+			{
+				yield return new StatDrawEntry(StatCategoryDefOf.Drug, "StatsReport_SerumDuration".Translate(), comp.disappearsAfterTicks.min.ToStringTicksToPeriod(), "StatsReport_SerumDuration_Desc".Translate(), 1000);
 			}
 			if (restOffset != 0f)
 			{

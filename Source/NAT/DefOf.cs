@@ -183,5 +183,7 @@ namespace NAT
 		public static IncidentDef NAT_RustedArmySiege;
 
 		public static ThingSetMakerDef NAT_CollectoirLairCase;
+
+		public static ThingSetMakerDef NAT_CollectoirLairStorage;
 	}
 }

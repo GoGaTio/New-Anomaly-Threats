@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingSetMakerDef>
+    <defName>NAT_CollectoirLairStorage</defName>
+    <root Class="ThingSetMaker_Sum">
+      <options>
+
+        <li>
+          <chance>0.6</chance>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>Silver</li>
+                </thingDefs>
+              </filter>
+              <countRange>100~300</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li>
+          <chance>0.75</chance>
+          <thingSetMaker Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+              <totalMarketValueRange>50~100</totalMarketValueRange>
+              <filter>
+                <categories>
+                  <li>ResourcesRaw</li>
+                </categories>
+                <disallowCheaperThan>7</disallowCheaperThan>
+                <thingSetMakerTagsToDisallow>
+                  <li>RewardStandardHighFreq</li>
+                  <li>RewardStandardCore</li>
+                  <li>NonStandardReward</li>
+                </thingSetMakerTagsToDisallow>
+              </filter>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+        
+        <!-- Artifacts -->
+        <li>
+          <chance>0.1</chance>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <categories>
+                  <li>Artifacts</li>
+                </categories>
+              </filter>
+              <countRange>1~2</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li>
+          <chance>0.75</chance>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>Steel</li>
+                  <li>WoodLog</li>
+                </thingDefs>
+              </filter>
+              <countRange>50~100</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li>
+          <chance>0.25</chance>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>Bioferrite</li>
+                </thingDefs>
+              </filter>
+              <countRange>15~40</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+
+        <li>
+          <chance>0.05</chance>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>Shard</li>
+                </thingDefs>
+              </filter>
+              <countRange>1</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+      </options>
+    </root>
+  </ThingSetMakerDef>
+
+</Defs>

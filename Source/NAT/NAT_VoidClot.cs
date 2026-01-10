@@ -168,7 +168,7 @@ namespace NAT
 	{
 		private PawnKindDef pawnKind;
 
-		private IEnumerable<PawnKindDef> PossibleMechs => DefDatabase<PawnKindDef>.AllDefs.Where((PawnKindDef td) => td.GetModExtension<RustedPawnExtention>()?.scenarioAvailable == true);
+		private IEnumerable<PawnKindDef> PossibleRusts => DefDatabase<PawnKindDef>.AllDefs.Where((PawnKindDef td) => td.GetModExtension<RustedPawnExtention>()?.scenarioAvailable == true);
 
 		public override void ExposeData()
 		{
@@ -186,7 +186,7 @@ namespace NAT
 				{
 					pawnKind = null;
 				}));
-				foreach (PawnKindDef possibleMech in PossibleMechs)
+				foreach (PawnKindDef possibleMech in PossibleRusts)
 				{
 					PawnKindDef localKind = possibleMech;
 					list.Add(new FloatMenuOption(localKind.LabelCap, delegate
@@ -200,7 +200,7 @@ namespace NAT
 
 		public override void Randomize()
 		{
-			pawnKind = PossibleMechs.RandomElement();
+			pawnKind = PossibleRusts.RandomElement();
 		}
 
 		public override string Summary(Scenario scen)
@@ -220,7 +220,7 @@ namespace NAT
 		{
 			if (pawnKind == null)
 			{
-				pawnKind = PossibleMechs.RandomElement();
+				pawnKind = PossibleRusts.RandomElement();
 			}
 			//PawnGenerationRequest request = new PawnGenerationRequest(pawnKind, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, mustBeCapableOfViolence: false, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowPregnant: false, allowFood: true, allowAddictions: true, inhabitant: false, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, null, null, null, null, forceNoIdeo: false, forceNoBackstory: false, forbidAnyTitle: false, forceDead: false, null, null, null, null, null, 0f, DevelopmentalStage.Newborn);
 			Pawn pawn = PawnGenerator.GeneratePawn(pawnKind, Faction.OfPlayer);

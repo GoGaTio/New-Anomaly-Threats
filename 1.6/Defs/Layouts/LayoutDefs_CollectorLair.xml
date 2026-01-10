@@ -9,13 +9,11 @@
     <minRoomWidth>7</minRoomWidth>
     <minRoomHeight>7</minRoomHeight>
     <terrainDef>AncientConcrete</terrainDef>
-
     <!-- Structure -->
     <doorStuffDef>WoodLog</doorStuffDef>
     <wallStuffDef>BlocksGranite</wallStuffDef>
-
     <roomDefs>
-
+      
       <NAT_CollectorLairEntrance>
         <weight>999</weight>
         <countRange>1</countRange>
@@ -30,8 +28,12 @@
         <weight>2</weight>
       </NAT_CollectionRoom>
 
+      <NAT_AncientStorageRoom>
+        <weight>0.5</weight>
+      </NAT_AncientStorageRoom>
+
       <NAT_LabyrinthRustedOutpost>
-        <weight>0.05</weight>
+        <weight>0.075</weight>
         <countRange>0~1</countRange>
       </NAT_LabyrinthRustedOutpost>
 
@@ -59,6 +61,12 @@
         <groupDistRange>1~3</groupDistRange>
         <minGroups>1</minGroups>
       </CollapsedRocks>
+      <AncientRazorWire>
+        <groupsPerHundredCells>1~2</groupsPerHundredCells>
+        <itemsPerGroup>4~6</itemsPerGroup>
+        <groupDistRange>2~4</groupDistRange>
+        <minGroups>1</minGroups>
+      </AncientRazorWire>
       <Filth_RubbleRock>
         <groupsPerHundredCells>2~4</groupsPerHundredCells>
         <itemsPerGroup>3~8</itemsPerGroup>
@@ -71,7 +79,6 @@
         <groupDistRange>1~2</groupDistRange>
         <minGroups>1</minGroups>
       </Granite>
-    
     </junkScaterrers>
   </StructureLayoutDef>
 

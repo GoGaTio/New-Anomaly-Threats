@@ -168,7 +168,7 @@
     <description>A rusted bioferrite piece shaped like an armor-piercing turret. Not actually a turret, rusted sniper turret is a static rusted creature, powered by dark archotechnology shard. Can shoot through the smoke and slowly regenerate.</description>
     <uiIconPath>Things/Building/NAT_RustedSniperTurret_Icon</uiIconPath>
     <statBases>
-      <ShootingAccuracyTurret>0.98</ShootingAccuracyTurret>
+      <ShootingAccuracyTurret>0.985</ShootingAccuracyTurret>
     </statBases>
     <building>
       <combatPower>290</combatPower>

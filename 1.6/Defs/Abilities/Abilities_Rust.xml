@@ -3,7 +3,7 @@
 
   <AbilityDef Name="NAT_RustCommandBase" Abstract="True">
     <groupDef>NAT_RustedCommander</groupDef>
-    <warmupSound>PsycastCastLoop</warmupSound>
+    <!--<warmupSound>PsycastCastLoop</warmupSound>-->
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <range>44.9</range>
@@ -18,11 +18,56 @@
     </verbProperties>
   </AbilityDef>
 
+  <AbilityDef Abstract="True" Name="NAT_RustAuraBuffBase">
+    <targetRequired>False</targetRequired>
+    <canUseAoeToGetTargets>true</canUseAoeToGetTargets>
+    <stunTargetWhileCasting>True</stunTargetWhileCasting>
+    <showPsycastEffects>False</showPsycastEffects>
+    <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <cooldownTicksRange>120000</cooldownTicksRange>
+    <statBases>
+      <Ability_Duration>1000</Ability_Duration>
+      <Ability_EffectRadius>12.9</Ability_EffectRadius>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0.5</warmupTime>
+      <range>12.9</range>
+      <drawAimPie>False</drawAimPie>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetHumans>false</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+
   <AbilityGroupDef>
     <defName>NAT_RustedCommander</defName>
     <cooldownTicks>2500</cooldownTicks>
     <sendMessageOnCooldownComplete>false</sendMessageOnCooldownComplete>
   </AbilityGroupDef>
+
+  <AbilityDef ParentName="NAT_RustAuraBuffBase">
+    <defName>NAT_RustedCommand_Officer</defName>
+    <label>officer command</label>
+    <description>TODO</description>
+    <iconPath>UI/Abilities/NAT_RustedCommand</iconPath>
+    <warmupMoteSocialSymbol>UI/Abilities/NAT_RustedCommand</warmupMoteSocialSymbol>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>NAT_RustedCommandBuff_Officer</hediffDef>
+        <onlyApplyToSelf>false</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+    </comps>
+  </AbilityDef>
 
   <AbilityDef ParentName="NAT_RustCommandBase">
     <defName>NAT_Reinforcement_BoostField</defName>

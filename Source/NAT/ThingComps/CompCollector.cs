@@ -114,8 +114,16 @@ namespace NAT
 			new CurvePoint(1000f, -992f)
         };
 
+		private static readonly SimpleCurve DamageOffsetCurve = new SimpleCurve
+		{
+			new CurvePoint(0f, 0f),
+			new CurvePoint(10f, 0f),
+			new CurvePoint(30f, 0.3f),
+			new CurvePoint(60f, 0.6f),
+			new CurvePoint(120f, 0.9f)
+		};
 
-        private Pawn Collector => (Pawn)parent;
+		private Pawn Collector => (Pawn)parent;
 
 		public QuestPart_Collector questPart;
 
@@ -124,6 +132,8 @@ namespace NAT
 		public int thingsToStealLeft;
 
 		public int waitTicks = 0;
+
+		public int takenDamage;
 
 		public override IEnumerable<Gizmo> CompGetGizmosExtra()
 		{
@@ -211,7 +221,11 @@ namespace NAT
         public override void CompTickInterval(int delta)
         {
             base.CompTickInterval(delta);
-        }
+			if(takenDamage > 0)
+			{
+				takenDamage -= delta;
+			}
+		}
 
         public override string CompInspectStringExtra()
         {
@@ -287,6 +301,10 @@ namespace NAT
             if(stat == StatDefOf.MoveSpeed)
 			{
 				return speedOffset;
+			}
+			if(stat == StatDefOf.IncomingDamageFactor)
+			{
+				return -DamageOffsetCurve.Evaluate(takenDamage);
 			}
 			return base.GetStatOffset(stat);
         }
@@ -471,7 +489,8 @@ namespace NAT
         public override void PostPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
         {
             base.PostPostApplyDamage(dinfo, totalDamageDealt);
-			if(innerContainer != null && parent.Spawned && Rand.Chance(totalDamageDealt * 0.01f))
+			takenDamage += Mathf.RoundToInt(dinfo.Amount);
+			if (innerContainer != null && parent.Spawned && Rand.Chance(totalDamageDealt * 0.01f))
             {
 				if (innerContainer.Any)
 				{

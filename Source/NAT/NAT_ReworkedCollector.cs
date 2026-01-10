@@ -175,7 +175,7 @@ namespace NAT
 				Job curJob = toil1.actor.jobs.curJob;
 				if (Rand.MTBEventOccurs(180f, 1f, delta))
 				{
-					curJob.SetTarget(TargetIndex.A, GetClosestTargetInRadius(pawn, 10f, true) ?? curJob.GetTarget(TargetIndex.A).Pawn);
+					curJob.SetTarget(TargetIndex.A, GetClosestTargetInRadius(pawn, 20f, true) ?? curJob.GetTarget(TargetIndex.A).Pawn);
 					pawn.mindState.enemyTarget = curJob.GetTarget(TargetIndex.A).Pawn;
 				}
 				if (curJob.targetA == null)
@@ -241,7 +241,7 @@ namespace NAT
 
 		public static bool ValidTarget(Pawn pawn)
 		{
-			if (pawn.RaceProps.Humanlike && pawn.Faction != Faction.OfEntities && !pawn.IsSubhuman && pawn.Spawned)
+			if (pawn.RaceProps.Humanlike && pawn.Faction == Faction.OfPlayerSilentFail && !pawn.IsSubhuman && pawn.Spawned)
 			{
 				return true;
 			}
