@@ -40,6 +40,13 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="NAT_BaseRustedPawn"]/statBases</xpath>
+    <value>
+      <ArmorRating_Electric>0.7</ArmorRating_Electric>
+    </value>
+  </Operation>
+
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[@Name="NAT_BaseRustedPawn"]/tools</xpath>
     <value>

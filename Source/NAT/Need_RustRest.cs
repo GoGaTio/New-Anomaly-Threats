@@ -124,12 +124,12 @@ namespace NAT
 			if (exhausted && CurLevel > 0.1f)
 			{
 				exhausted = false;
-				pawn?.jobs.CheckForJobOverride();
+				pawn.jobs?.CheckForJobOverride();
 				Messages.Message("NAT_RustSleptEnough".Translate(), pawn, MessageTypeDefOf.NeutralEvent, false);
 			}
 			if (exhausted || CurLevel < 0.01f)
             {
-				if(pawn?.jobs.curDriver?.asleep == false)
+				if(pawn.jobs?.curDriver?.asleep == false)
                 {
 					Job job = JobMaker.MakeJob(JobDefOf.Wait_AsleepDormancy, pawn.Position);
 					job.forceSleep = true;
@@ -140,7 +140,7 @@ namespace NAT
 			}
 			if (CurLevel > 0.6f && Resting)
 			{
-				pawn?.jobs.CheckForJobOverride();
+				pawn.jobs?.CheckForJobOverride();
 			}
 		}
 

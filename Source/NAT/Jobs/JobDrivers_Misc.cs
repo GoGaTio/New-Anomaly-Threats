@@ -86,4 +86,145 @@ namespace NAT
 			return Entrance.Comp.Props.sealJobReportOverride.Formatted(Entrance.LabelShort);
 		}
 	}
+
+	public class JobDriver_UseItemByRust : JobDriver
+	{
+		private int useDuration = -1;
+
+		private bool usingFromInventory;
+
+		private bool targetsAnotherPawn;
+
+		private Thing Item => job.GetTarget(TargetIndex.A).Thing;
+
+		private RustedPawn Target => job.GetTarget(TargetIndex.B).Thing as RustedPawn;
+
+		public override void ExposeData()
+		{
+			base.ExposeData();
+			Scribe_Values.Look(ref useDuration, "useDuration", 0);
+			Scribe_Values.Look(ref targetsAnotherPawn, "targetsAnotherPawn", defaultValue: false);
+			Scribe_Values.Look(ref usingFromInventory, "usingFromInventory", defaultValue: false);
+		}
+
+		public override void Notify_Starting()
+		{
+			base.Notify_Starting();
+			useDuration = job.GetTarget(TargetIndex.A).Thing.TryGetComp<CompUsableByRust>().Props.useDuration;
+			job.count = 1;
+			usingFromInventory = pawn.inventory != null && pawn.inventory.Contains(Item);
+			if (job.GetTarget(TargetIndex.B).Thing != null && job.GetTarget(TargetIndex.B).Thing is RustedPawn rust && rust != pawn as RustedPawn)
+			{
+				targetsAnotherPawn = true;
+			}
+		}
+
+		public override bool TryMakePreToilReservations(bool errorOnFailed)
+		{
+			if (job.GetTarget(TargetIndex.B).Thing != null)
+			{
+				if (!pawn.Reserve(Target, job, 1, 1, null, errorOnFailed))
+				{
+					return false;
+				}
+			}
+			else if (!pawn.Reserve(Item, job, 10, 1, null, errorOnFailed))
+			{
+				return false;
+			}
+			return true;
+		}
+
+		protected override IEnumerable<Toil> MakeNewToils()
+		{
+
+			this.FailOnIncapable(PawnCapacityDefOf.Manipulation);
+			if (pawn is RustedPawn rust && rust.Controllable)
+			{
+				foreach (Toil item in PrepareToUseToils())
+				{
+					yield return item;
+				}
+				Toil toil1 = (targetsAnotherPawn ? Toils_General.WaitWith(TargetIndex.B, useDuration, maintainPosture: true, maintainSleep: true) : Toils_General.Wait(useDuration, TargetIndex.A));
+				toil1.WithProgressBarToilDelay(targetsAnotherPawn ? TargetIndex.B : TargetIndex.A);
+				toil1.handlingFacing = true;
+				toil1.tickAction = delegate
+				{
+					if (targetsAnotherPawn)
+					{
+						pawn.rotationTracker.FaceTarget(Target);
+					}
+				};
+				yield return toil1;
+				Toil use = ToilMaker.MakeToil("Use");
+				use.initAction = delegate
+				{
+					CompUsableByRust comp = Item.TryGetComp<CompUsableByRust>();
+					comp.UsedBy(targetsAnotherPawn ? Target : rust);
+				};
+				use.defaultCompleteMode = ToilCompleteMode.Instant;
+				yield return use;
+			}
+			else
+			{
+				this.FailOn(() => true);
+			}
+		}
+
+		private IEnumerable<Toil> PrepareToUseToils()
+		{
+			if (usingFromInventory)
+			{
+				yield return Toils_Misc.TakeItemFromInventoryToCarrier(pawn, TargetIndex.A);
+			}
+			else
+			{
+				yield return ReserveItem();
+				yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.ClosestTouch).FailOnDespawnedNullOrForbidden(TargetIndex.A);
+				Toil toil = ToilMaker.MakeToil("PickupItem");
+				toil.initAction = delegate
+				{
+					Pawn actor = toil.actor;
+					Job curJob = actor.jobs.curJob;
+					Thing thing = Item;
+					actor.carryTracker.TryStartCarry(thing, 1);
+					if (thing != actor.carryTracker.CarriedThing && actor.Map.reservationManager.ReservedBy(thing, actor, curJob))
+					{
+						actor.Map.reservationManager.Release(thing, actor, curJob);
+					}
+					actor.jobs.curJob.targetA = actor.carryTracker.CarriedThing;
+				};
+				toil.defaultCompleteMode = ToilCompleteMode.Instant;
+				yield return toil;
+			}
+			if (targetsAnotherPawn)
+			{
+				yield return Toils_Goto.GotoThing(TargetIndex.B, PathEndMode.ClosestTouch).FailOnDespawnedOrNull(TargetIndex.B);
+			}
+		}
+
+		private Toil ReserveItem()
+		{
+			Toil toil = ToilMaker.MakeToil("ReserveItem");
+			toil.initAction = delegate
+			{
+				if (pawn.Faction != null)
+				{
+					Thing thing = job.GetTarget(TargetIndex.A).Thing;
+					if (pawn.carryTracker.CarriedThing != thing)
+					{
+						if (!pawn.Reserve(thing, job, 10, 1))
+						{
+							Log.Error(string.Concat("NAT RustedPawn usable reservation for ", pawn, " on job ", this, " failed, because it could not register item from ", thing));
+							pawn.jobs.EndCurrentJob(JobCondition.Errored);
+						}
+						job.count = 1;
+					}
+				}
+			};
+			toil.defaultCompleteMode = ToilCompleteMode.Instant;
+			toil.atomicWithPrevious = true;
+			return toil;
+		}
+	}
 }

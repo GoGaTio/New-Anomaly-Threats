@@ -112,6 +112,7 @@
         <canWork>true</canWork>
         <forceDisallowWorkTypes>
           <li MayRequire="Ludeon.RimWorld.Biotech">Childcare</li>
+          <li>DarkStudy</li>
         </forceDisallowWorkTypes>
         <workTags>
           <li>Firefighting</li>
@@ -123,13 +124,16 @@
           <li>Hauling</li>
           <li>Cleaning</li>
           <li>Social</li>
+          <li>Intellectual</li>
         </workTags>
         <forceAllowWorkGivers>
           <li>Strip</li>
+          <li>Research</li>
         </forceAllowWorkGivers>
         <forceAllowWorkTypes>
           <li>BasicWorker</li>
           <li>PlantCutting</li>
+          <li>Research</li>
         </forceAllowWorkTypes>
       </li>
     </comps>

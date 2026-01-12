@@ -162,7 +162,7 @@ namespace NAT
 					if (job.def.checkOverrideOnDamage == CheckJobOverrideOnDamageMode.Always || (job.def.checkOverrideOnDamage == CheckJobOverrideOnDamageMode.OnlyIfInstigatorNotJobTarget && !job.AnyTargetIs(instigator)))
 					{
 						lastDamageCheckTick = Find.TickManager.TicksGame;
-						Owner.jobs.CheckForJobOverride();
+						Owner.jobs?.CheckForJobOverride();
 					}
 				}
 			}

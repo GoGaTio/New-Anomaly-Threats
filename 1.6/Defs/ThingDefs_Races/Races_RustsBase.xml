@@ -47,6 +47,7 @@
       <trainability>None</trainability>
       <hideTrainingTab>true</hideTrainingTab>
       <bloodDef>NAT_Filth_RustedDebris</bloodDef>
+      <waterCellCost>24</waterCellCost>
       <hediffGiverSets>
         <li>AnomalyEntity</li>
       </hediffGiverSets>
@@ -147,6 +148,10 @@
       <li>
         <damageDef>EMP</damageDef>
         <multiplier>0.4</multiplier>
+      </li>
+      <li>
+        <damageDef>NerveStun</damageDef>
+        <multiplier>0.05</multiplier>
       </li>
     </damageMultipliers>
   </ThingDef>

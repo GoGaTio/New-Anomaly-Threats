@@ -185,5 +185,7 @@ namespace NAT
 		public static ThingSetMakerDef NAT_CollectoirLairCase;
 
 		public static ThingSetMakerDef NAT_CollectoirLairStorage;
+
+		public static StatCategoryDef NAT_Skills;
 	}
 }

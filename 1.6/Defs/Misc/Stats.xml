@@ -15,14 +15,14 @@
     <overridesHideStats>true</overridesHideStats>
   </StatDef>
 
-  <!--<StatCategoryDef>
-    <defName>NAT_Rust</defName>
-    <label>Rusted creature</label>
+  <StatCategoryDef>
+    <defName>NAT_Skills</defName>
+    <label>skills</label>
     <displayOrder>105</displayOrder>
     <displayAllByDefault>true</displayAllByDefault>
   </StatCategoryDef>
   
-  <StatDef Abstract="True" Name="MechanitorStatBase">
+  <!--<StatDef Abstract="True" Name="MechanitorStatBase">
     <workerClass>NAT.StatWorker_Rust</workerClass>
     <category>NAT_Rust</category>
     <defaultBaseValue>0</defaultBaseValue>

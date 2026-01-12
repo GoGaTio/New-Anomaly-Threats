@@ -49,6 +49,7 @@
       <disableIgniteVerb>true</disableIgniteVerb>
       <trainability>None</trainability>
       <canBecomeShambler>true</canBecomeShambler>
+      <waterCellCost>14</waterCellCost>
       <lifeStageAges>
         <li>
           <def>EntityFullyFormed</def>

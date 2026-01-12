@@ -19,6 +19,7 @@
     <workerClass>NAT.PawnTable_Rusts</workerClass>
     <columns>
       <li>LabelWithIcon</li>
+      <li>NAT_RenameRust</li>
       <li>NAT_RustedWeapon</li>
       <li>NAT_DraftRusts</li>
       <li>CopyPasteWorkPriorities</li>
@@ -40,6 +41,12 @@
   <PawnColumnDef>
     <defName>NAT_RustedWeapon</defName>
     <workerClass>NAT.PawnColumnWorker_RustedWeapon</workerClass>
+    <sortable>false</sortable>
+  </PawnColumnDef>
+
+  <PawnColumnDef>
+    <defName>NAT_RenameRust</defName>
+    <workerClass>NAT.PawnColumnWorker_RenameRust</workerClass>
     <sortable>false</sortable>
   </PawnColumnDef>
   

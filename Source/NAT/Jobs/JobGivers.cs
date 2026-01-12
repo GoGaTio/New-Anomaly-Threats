@@ -192,6 +192,19 @@ namespace NAT
 		}
 	}
 
+	public class JobGiver_ExtinguishSelfImmediately : ThinkNode_JobGiver
+	{
+		protected override Job TryGiveJob(Pawn pawn)
+		{
+			Fire fire = (Fire)pawn.GetAttachment(ThingDefOf.Fire);
+			if (fire != null)
+			{
+				return JobMaker.MakeJob(JobDefOf.ExtinguishSelf, fire);
+			}
+			return null;
+		}
+	}
+
 	public class ThinkNode_ConditionalReinforcement : ThinkNode_Conditional
 	{
         protected override bool Satisfied(Pawn pawn)

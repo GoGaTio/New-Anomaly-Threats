@@ -1,4 +1,20 @@
-﻿using System;
+﻿using DelaunatorSharp;
+using Gilzoide.ManagedJobs;
+using Ionic.Crc;
+using Ionic.Zlib;
+using JetBrains.Annotations;
+using KTrie;
+using LudeonTK;
+using NVorbis.NAudioSupport;
+using RimWorld;
+using RimWorld.BaseGen;
+using RimWorld.IO;
+using RimWorld.Planet;
+using RimWorld.QuestGen;
+using RimWorld.SketchGen;
+using RimWorld.Utility;
+using RuntimeAudioClipLoader;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -19,22 +35,6 @@ using System.Xml.Linq;
 using System.Xml.Serialization;
 using System.Xml.XPath;
 using System.Xml.Xsl;
-using DelaunatorSharp;
-using Gilzoide.ManagedJobs;
-using Ionic.Crc;
-using Ionic.Zlib;
-using JetBrains.Annotations;
-using KTrie;
-using LudeonTK;
-using NVorbis.NAudioSupport;
-using RimWorld;
-using RimWorld.BaseGen;
-using RimWorld.IO;
-using RimWorld.Planet;
-using RimWorld.QuestGen;
-using RimWorld.SketchGen;
-using RimWorld.Utility;
-using RuntimeAudioClipLoader;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Jobs;
@@ -51,6 +51,7 @@ using Verse.Noise;
 using Verse.Profile;
 using Verse.Sound;
 using Verse.Steam;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace NAT
 {
@@ -127,6 +128,21 @@ namespace NAT
 					{
 						yield return list[i];
 					}
+				}
+			}
+		}
+
+		public override IEnumerable<StatDrawEntry> SpecialDisplayStats(StatRequest req)
+		{
+			foreach (StatDrawEntry item in base.SpecialDisplayStats(req))
+			{
+				yield return item;
+			}
+			if (!skills.NullOrEmpty() && (!req.HasThing || req.Thing.Faction == Faction.OfPlayerSilentFail))
+			{
+				foreach(SkillGain skill in skills)
+				{
+					yield return new StatDrawEntry(NATDefOf.NAT_Skills, skill.skill.LabelCap, skill.amount.ToString(), skill.skill.description, Mathf.RoundToInt(skill.skill.listOrder), overridesHideStats: true);
 				}
 			}
 		}

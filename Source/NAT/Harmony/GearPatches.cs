@@ -105,7 +105,7 @@ namespace NAT
 		}
 	}
 
-	[HarmonyPatch]
+	/*[HarmonyPatch]
 	public static class Sandy_Detailed_RPG_Inventory_DrawThingRow
 	{
 		public static MethodBase TargetMethod()
@@ -136,7 +136,7 @@ namespace NAT
 				}
 			}
 		}
-	}
+	}*/
 
 	[HarmonyPatch(typeof(ITab_Pawn_Gear))]
 	[HarmonyPatch("CanControlColonist")]
@@ -197,7 +197,7 @@ namespace NAT
 		}
 	}
 
-	[HarmonyPatch]
+	/*[HarmonyPatch]
 	public static class Sandy_Detailed_RPG_Inventory_get_IsVisible
 	{
 		public static MethodBase TargetMethod()
@@ -246,7 +246,7 @@ namespace NAT
 				__result = true;
 			}
 		}
-	}
+	}*/
 
 	[HarmonyPatch(typeof(CompAIUsablePack), "CanOpportunisticallyUseNow")]
 	public class Patch_AIUSablePack

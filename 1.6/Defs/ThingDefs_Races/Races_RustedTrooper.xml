@@ -126,7 +126,6 @@
           <Melee>8</Melee>
           <Plants>4</Plants>
           <Crafting>4</Crafting>
-          <Medicine>4</Medicine>
           <Intellectual>4</Intellectual>
         </skills>
         <canWork>true</canWork>

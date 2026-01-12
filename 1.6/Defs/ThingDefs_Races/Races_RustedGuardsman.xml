@@ -13,6 +13,7 @@
       <MinimumContainmentStrength>110</MinimumContainmentStrength>
       <StaggerDurationFactor>0</StaggerDurationFactor>
       <NAT_CoreDropChance>0.3</NAT_CoreDropChance>
+      <ArrestSuccessChance>2</ArrestSuccessChance>
     </statBases>
     <race>
       <body>NAT_RustTall</body>
@@ -102,6 +103,7 @@
           <Plants>4</Plants>
           <Crafting>8</Crafting>
           <Medicine>6</Medicine>
+          <Social>4</Social>
           <Intellectual>8</Intellectual>
         </skills>
         <canWork>true</canWork>
@@ -114,7 +116,11 @@
           <li>Crafting</li>
           <li>Hauling</li>
           <li>Cleaning</li>
+          <li>Social</li>
         </workTags>
+        <forceDisallowWorkTypes>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Childcare</li>
+        </forceDisallowWorkTypes>
         <forceAllowWorkGivers>
           <li>Strip</li>
         </forceAllowWorkGivers>

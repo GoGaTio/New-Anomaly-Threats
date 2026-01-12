@@ -100,7 +100,6 @@ namespace NAT
 			}
 			Faction faction = list[0].Faction;
 			LordMaker.MakeNewLord(faction, new LordJob_AssaultColony(faction), base.Map, list);
-			//Find.LetterStack.ReceiveLetter("LetterLabelAmbushInExistingMap".Translate(), "LetterAmbushInExistingMap".Translate(PawnKindDefOf.Sightstealer.GetLabelPlural()).CapitalizeFirst(), LetterDefOf.ThreatBig, list);
 			if (!base.Destroyed)
 			{
 				Destroy();

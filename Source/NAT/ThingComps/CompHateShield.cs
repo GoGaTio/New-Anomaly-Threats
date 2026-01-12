@@ -304,45 +304,4 @@ namespace NAT
 			}
 		}
 	}
-
-	[StaticConstructorOnStartup]
-	public class Gizmo_HateShieldStatus : Gizmo
-	{
-		public CompHateShield shield;
-
-		private static readonly Texture2D FullShieldBarTex = SolidColorMaterials.NewSolidColorTexture(new Color(0.74f, 0.11f, 0.11f));
-
-		private static readonly Texture2D EmptyShieldBarTex = SolidColorMaterials.NewSolidColorTexture(Color.clear);
-
-		public Gizmo_HateShieldStatus()
-		{
-			Order = -100f;
-		}
-
-		public override float GetWidth(float maxWidth)
-		{
-			return 140f;
-		}
-
-		public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
-		{
-			Rect rect = new Rect(topLeft.x, topLeft.y, GetWidth(maxWidth), 75f);
-			Rect rect2 = rect.ContractedBy(6f);
-			Widgets.DrawWindowBackground(rect);
-			Rect rect3 = rect2;
-			rect3.height = rect.height / 2f;
-			Text.Font = GameFont.Tiny;
-			Widgets.Label(rect3, shield.parent.LabelCap);
-			Rect rect4 = rect2;
-			rect4.yMin = rect2.y + rect2.height / 2f;
-			float fillPercent = shield.energy / Mathf.Max(1f, shield.parent.GetStatValue(StatDefOf.EnergyShieldEnergyMax));
-			Widgets.FillableBar(rect4, fillPercent, FullShieldBarTex, EmptyShieldBarTex, doBorder: false);
-			Text.Font = GameFont.Small;
-			Text.Anchor = TextAnchor.MiddleCenter;
-			Widgets.Label(rect4, (shield.energy * 100f).ToString("F0") + " / " + (shield.Props.energyMax * 100f).ToString("F0"));
-			Text.Anchor = TextAnchor.UpperLeft;
-			TooltipHandler.TipRegion(rect2, shield.parent.def.description);
-			return new GizmoResult(GizmoState.Clear);
-		}
-	}
 }

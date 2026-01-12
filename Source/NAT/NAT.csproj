@@ -80,6 +80,7 @@
     <Compile Include="Incidents\IncidentWorker_RustedArmyRaid.cs" />
     <Compile Include="Incidents\IncidentWorker_RustedMassArrival.cs" />
     <Compile Include="Incidents\IncidentWorker_SerpentAssault.cs" />
+    <Compile Include="Jobs\Lords.cs" />
     <Compile Include="Jobs\JobDrivers_Misc.cs" />
     <Compile Include="Jobs\JobGivers.cs" />
     <Compile Include="Incidents\IncidentWorker_Misc.cs" />
@@ -96,14 +97,18 @@
     <Compile Include="MapGen\RustedOutpostUtility.cs" />
     <Compile Include="NAT_PainPulses.cs" />
     <Compile Include="Harmony\NAT_Patch.cs" />
+    <Compile Include="ScenParts.cs" />
     <Compile Include="Quest_Collector.cs" />
-    <Compile Include="NAT_ReworkedCollector.cs" />
+    <Compile Include="Jobs\Jobs_Collector.cs" />
     <Compile Include="NAT_RustedArmy.cs" />
     <Compile Include="Need_RustRest.cs" />
     <Compile Include="PsychicRituals.cs" />
     <Compile Include="Render.cs" />
     <Compile Include="ThingComps\CompBombardmentBeacon.cs" />
     <Compile Include="ThingComps\CompCollector.cs" />
+    <Compile Include="ThingComps\CompPainFigure.cs" />
+    <Compile Include="ThingComps\CompTargetEffect_InducePain.cs" />
+    <Compile Include="ThingComps\CompUseEffect_AddPainToTargetPawns.cs" />
     <Compile Include="ThingComps\CompCrate.cs" />
     <Compile Include="ThingComps\CompRustedGrenades.cs" />
     <Compile Include="ThingComps\CompUndergroundEntrance.cs" />
@@ -134,9 +139,12 @@
     <Compile Include="Things\FilthBile.cs" />
     <Compile Include="Things\RustedCore.cs" />
     <Compile Include="Things\Skyfaller_RustedChunk.cs" />
-    <Compile Include="UI\NAT_RustsTab.cs" />
+    <Compile Include="UI\Gizmo.cs" />
+    <Compile Include="UI\PawnColumnWorkers.cs" />
+    <Compile Include="UI\Dialog_NameRustedSoldier.cs" />
+    <Compile Include="UI\MainButtons.cs" />
     <Compile Include="MapGen\SitePartWorkers.cs" />
-    <Compile Include="NAT_VoidClot.cs" />
+    <Compile Include="Mod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Things\RustedPawn.cs" />
   </ItemGroup>
