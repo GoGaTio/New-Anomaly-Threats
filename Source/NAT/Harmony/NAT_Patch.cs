@@ -131,10 +131,26 @@ namespace NAT
 		[HarmonyPostfix]
 		public static void Postfix(ref Verb __result, Pawn __instance)
 		{
-			if(__result.verbProps?.onlyManualCast == true && __instance is RustedPawn && __instance.Faction == Faction.OfPlayerSilentFail)
+			if(__result?.verbProps?.onlyManualCast == true && __instance is RustedPawn && __instance.Faction == Faction.OfPlayerSilentFail)
             {
 				__result = __instance.TryGetAttackVerb(null, false);
 			}
+		}
+	}
+
+	[HarmonyPatch(typeof(JobGiver_AIFightEnemy), nameof(JobGiver_AIFightEnemy.GetAbilityJob))]
+	public class Patch_AIFightEnemy_Ability
+	{
+
+		[HarmonyPrefix]
+		public static bool Prefix(Pawn pawn, Thing enemyTarget, ref Job __result)
+		{
+			if (pawn is RustedPawn rust && rust.Faction == Faction.OfPlayerSilentFail)
+			{
+				__result = null;
+				return false;
+			}
+			return true;
 		}
 	}
 
