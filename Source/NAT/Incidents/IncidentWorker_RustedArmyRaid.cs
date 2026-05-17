@@ -35,7 +35,7 @@ namespace NAT
 	{
 		public static readonly SimpleCurve PointsFromPoints = new SimpleCurve
 		{
-			new CurvePoint(0f, 900f),
+			new CurvePoint(0f, 600f),
 			new CurvePoint(1000f, 950f),
 			new CurvePoint(5000f, 3700f),
 			new CurvePoint(10000f, 7000f),

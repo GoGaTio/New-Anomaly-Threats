@@ -232,26 +232,5 @@
       </li>
     </comps>
   </ThingDef>
-
-  <ThingDef ParentName="ChunkBase">
-    <defName>NAT_HoraxChunk</defName>
-    <label>dark archochunk</label>
-    <description>A chunk of steel slag. While it's useless in its current form, it can be smelted to recover steel.</description>
-    <graphicData>
-      <texPath>Things/Item/Chunk/ChunkSlag</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-    </graphicData>
-    <statBases>
-      <Mass>10</Mass>
-    </statBases>
-    <soundDrop>ChunkSlag_Drop</soundDrop>
-    <thingCategories>
-      <li>Chunks</li>
-    </thingCategories>
-    <smeltable>true</smeltable>
-    <smeltProducts>
-      <Steel>15</Steel>
-    </smeltProducts>
-  </ThingDef>
   
 </Defs>

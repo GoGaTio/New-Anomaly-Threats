@@ -103,7 +103,28 @@ namespace NAT
 			apparelTagsToAllow.Add("Gunlink");
 			apparelTagsToAllow.Add("NAT_Rust_All");
 		}
-    }
+
+		public override IEnumerable<StatDrawEntry> SpecialDisplayStats(StatRequest req)
+		{
+			if (req.Thing == null || !(req.Thing is RustedPawn rust) || rust.Faction?.IsPlayer != true)
+			{
+				yield break;
+			}
+			foreach (StatDef item in DefDatabase<StatDef>.AllDefs.Where((StatDef st) => st == StatDefOf.WorkSpeedGlobal || st == StatDefOf.Mass || st == StatDefOf.MoveSpeed || (st.category == StatCategoryDefOf.PawnCombat && !st.alwaysHide)))
+			{
+				if (!item.Worker.IsDisabledFor(rust))
+				{
+					float statValue = rust.GetStatValue(item);
+					if (item.showOnDefaultValue || statValue != item.defaultBaseValue)
+					{
+						StatDrawEntry entry = new StatDrawEntry(item.category, item, statValue, req);
+						entry.overridesHideStats = true;
+						yield return entry;
+					}
+				}
+			}
+		}
+	}
 	public class CompRustedSoldier : ThingComp
 	{
 		public int interactionIndex;

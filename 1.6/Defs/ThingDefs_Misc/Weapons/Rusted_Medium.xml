@@ -14,7 +14,7 @@
       <AccuracyTouch>0.80</AccuracyTouch>
       <AccuracyShort>0.75</AccuracyShort>
       <AccuracyMedium>0.45</AccuracyMedium>
-      <AccuracyLong>0.35</AccuracyLong>
+      <AccuracyLong>0.55</AccuracyLong>
       <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
       <MarketValue>200</MarketValue>
     </statBases>
@@ -27,7 +27,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>NAT_Bullet_RustedSmallStop</defaultProjectile>
         <warmupTime>0.3</warmupTime>
-        <range>34.9</range>
+        <range>44.9</range>
         <soundCast>Shot_Revolver</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>

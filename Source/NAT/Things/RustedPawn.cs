@@ -480,6 +480,15 @@ namespace NAT
 			}
 		}
 
+		public override void PreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
+		{
+			if (dinfo.Tool != null)
+			{
+				dinfo.SetAmount(dinfo.Amount * 0.75f);
+			}
+			base.PreApplyDamage(ref dinfo, out absorbed);
+		}
+
 		public override void DrawExtraSelectionOverlays()
         {
             base.DrawExtraSelectionOverlays();

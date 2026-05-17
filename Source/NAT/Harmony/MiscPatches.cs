@@ -60,7 +60,7 @@ namespace NAT
         [HarmonyPrefix]
         public static bool Prefix(float totalPoints, PawnGroupKindDef groupKind, ref float __result)
         {
-            if (groupKind.defName.StartsWith("NAT_RustedArmy"))
+            if (groupKind?.defName?.StartsWith("NAT_RustedArmy") == true)
             {
                 __result = RustMaxCostFromPointsTotalCurve.Evaluate(totalPoints);
                 return false;

@@ -99,7 +99,7 @@
         <label>left claw</label>
         <labelNoLocation>claw</labelNoLocation>
         <capacities>
-          <li>Stab</li>
+          <li>Scratch</li>
         </capacities>
         <power>10</power>
         <cooldownTime>2</cooldownTime>
@@ -117,7 +117,7 @@
         <label>right claw</label>
         <labelNoLocation>claw</labelNoLocation>
         <capacities>
-          <li>Stab</li>
+          <li>Scratch</li>
         </capacities>
         <power>10</power>
         <cooldownTime>2</cooldownTime>
