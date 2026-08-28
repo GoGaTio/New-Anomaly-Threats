@@ -51,9 +51,9 @@ namespace NAT
 	{
         private static readonly SimpleCurve StealPawnChanceFromCountCurve = new SimpleCurve
         {
-            new CurvePoint(3f, 0.06f),
-            new CurvePoint(6f, 0.15f),
-            new CurvePoint(10f, 0.5f)
+            new CurvePoint(3f, 0.01f),
+            new CurvePoint(6f, 0.05f),
+            new CurvePoint(10f, 0.15f)
         };
 
         protected override Job TryGiveJob(Pawn pawn)

@@ -8,9 +8,7 @@
   <!-- EN: Rusted mass study progress -->
   <NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.0.label>Прогресс в изучении ржавой массы</NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.0.label>
   <!-- EN: Investigation of the rusted mass has revealed some information. It is an archotech machine, that has a lot of psy-connections with something far away. \n\nIf not suppressed, its activity level will increase over time. You can't tell what will happen when the device fully activates. -->
-  <NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.0.text>Investigation of the rusted mass has revealed some information. It is an archotech machine, that has a lot of psy-connections with something far away. 
-
-If not suppressed, its activity level will increase over time. You can't tell what will happen when the device fully activates.</NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.0.text>
+  <NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.0.text>\n\n.</NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.0.text>
   <!-- EN: Rusted mass study progress -->
   <NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.1.label>Прогресс в изучении ржавой массы</NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.1.label>
   <!-- EN: You've learned more about the rusted mass. It is a beginning of rusted army, connected with countless rusted soldiers. Rusted mass will grow getting mor life power and then will transfofm into rusted soldiers, causing rusted hordes to attack this place.\n\nThe power level of the rusted mass rises unless suppressed. If it fully activates, it will transform into group of rusted soldiers and draw others to attack colony.\n\n{PAWN_nameDef} thinks that it may be possible to safely deactivate the rusted mass but this will need significantly more study. -->
@@ -26,13 +24,11 @@ The power level of the rusted mass rises unless suppressed. If it fully activate
 
 You can no longer study the rusted mass after deactivating it.</NAT_RustedMass.comps.CompStudyUnlocks.studyNotes.2.text>
   <!-- EN: Permanently and safely disable Rusted mass. This will prevent it from activating and being studied further.\n\nRequires 2 shards. -->
-  <NAT_RustedMass.comps.CompRustedMassDeactivation.activateDescString>Permanently and safely disable Rusted mass. This will prevent it from activating and being studied further.
-
-Requires 2 shards.</NAT_RustedMass.comps.CompRustedMassDeactivation.activateDescString>
+  <NAT_RustedMass.comps.CompRustedMassDeactivation.activateDescString>\n\n</NAT_RustedMass.comps.CompRustedMassDeactivation.activateDescString>
   <!-- EN: Deactivate rusted mass -->
   <NAT_RustedMass.comps.CompRustedMassDeactivation.activateLabelString>Деактивировать ржавую массу</NAT_RustedMass.comps.CompRustedMassDeactivation.activateLabelString>
   <!-- EN: deactivating rusted mass: {1}s -->
-  <NAT_RustedMass.comps.CompRustedMassDeactivation.activatingString>деактивирует ржавую массу: {1}s</NAT_RustedMass.comps.CompRustedMassDeactivation.activatingString>
+  <NAT_RustedMass.comps.CompRustedMassDeactivation.activatingString>деактивирует ржавую массу: {1}с</NAT_RustedMass.comps.CompRustedMassDeactivation.activatingString>
   <!-- EN: deactivating rusted mass -->
   <NAT_RustedMass.comps.CompRustedMassDeactivation.activatingStringPending>деактивирует ржавую массу</NAT_RustedMass.comps.CompRustedMassDeactivation.activatingStringPending>
   <!-- EN: Choose who should do this -->

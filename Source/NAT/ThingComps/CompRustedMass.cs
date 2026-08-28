@@ -92,7 +92,7 @@ namespace NAT
 
 		public void Activate(Map map)
 		{
-			if (map == null)
+			if (map == null || passive)
 			{
 				return;
 			}
@@ -157,6 +157,7 @@ namespace NAT
 		public override void PostExposeData()
 		{
 			base.PostExposeData();
+			Scribe_Values.Look(ref passive, "passive", defaultValue: false);
 			Scribe_Values.Look(ref raidIndex, "raidIndex", 0);
 			Scribe_Values.Look(ref ticksSinceRaid, "ticksSinceRaid", 60000);
 			Scribe_Values.Look(ref ticksTillRaid, "ticksTillRaid", 0);

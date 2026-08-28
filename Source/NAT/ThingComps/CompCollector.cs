@@ -108,7 +108,7 @@ namespace NAT
 		}
         private static readonly SimpleCurve SpeedOffsetFromSpeedThisTickCurve = new SimpleCurve
         {
-            new CurvePoint(0f, 9f),
+            new CurvePoint(0f, 6f),
             new CurvePoint(9f, 0f),
             new CurvePoint(18f, -9f),
 			new CurvePoint(1000f, -992f)
@@ -117,10 +117,10 @@ namespace NAT
 		private static readonly SimpleCurve DamageOffsetCurve = new SimpleCurve
 		{
 			new CurvePoint(0f, 0f),
-			new CurvePoint(10f, 0f),
-			new CurvePoint(30f, 0.3f),
-			new CurvePoint(60f, 0.6f),
-			new CurvePoint(120f, 0.9f)
+			new CurvePoint(20f, 0f),
+			new CurvePoint(60f, 0.3f),
+			new CurvePoint(120f, 0.6f),
+			new CurvePoint(300f, 0.9f)
 		};
 
 		private Pawn Collector => (Pawn)parent;

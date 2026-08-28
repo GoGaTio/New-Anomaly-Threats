@@ -171,7 +171,7 @@
       </li>
     </comps>
     <costList>
-      <NAT_PainClot>10</NAT_PainClot>
+      <NAT_PainClot>5</NAT_PainClot>
     </costList>
   </ThingDef>
 
@@ -200,7 +200,20 @@
       <Bioferrite>65</Bioferrite>
     </costList>
     <recipeMaker>
-      <workAmount>2100</workAmount>
+      <workAmount>10000</workAmount>
+      <researchPrerequisite>NAT_RustedSoldiers</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <productCount>1</productCount>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <effectWorking>Cook</effectWorking>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>BioferriteShaper</li>
+      </recipeUsers>
     </recipeMaker>
     <stackLimit>1</stackLimit>
   </ThingDef>

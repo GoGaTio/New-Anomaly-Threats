@@ -201,11 +201,15 @@ namespace NAT
 	public static class Patch_DisableWorkTypes
 	{
 		[HarmonyPrefix]
-		public static bool Prefix(ref List<WorkTypeDef> __result, Pawn __instance)
+		public static bool Prefix(ref List<WorkTypeDef> __result, Pawn __instance, ref List<WorkTypeDef> ___cachedDisabledWorkTypes)
 		{
 			if (__instance is RustedPawn rust)
 			{
 				__result = rust.Worker?.DisabledWorkTypes ?? CompProperties_RustedWorker.WorkTypes;
+				if(___cachedDisabledWorkTypes == null)
+				{
+					___cachedDisabledWorkTypes = new List<WorkTypeDef>(rust.Worker?.DisabledWorkTypes ?? CompProperties_RustedWorker.WorkTypes);
+				}
 				return false;
 			}
 			return true;

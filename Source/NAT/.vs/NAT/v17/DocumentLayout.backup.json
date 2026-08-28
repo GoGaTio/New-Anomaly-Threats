@@ -3,15 +3,55 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\newanomalythreats\\source\\nat\\incidents\\incidentworker_rustedarmysiege.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\harmony\\nat_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:harmony\\nat_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\newanomalythreats\\source\\nat\\harmony\\work.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:harmony\\work.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\harmony\\miscpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:harmony\\miscpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\thingcomps\\compcollectornotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:thingcomps\\compcollectornotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\defof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:defof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\thingcomps\\comprustedmass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:thingcomps\\comprustedmass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\thingcomps\\comprustedmassdeactivation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:thingcomps\\comprustedmassdeactivation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\jobs\\jobs_collector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:jobs\\jobs_collector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\thingcomps\\compcollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:thingcomps\\compcollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\nat_rustedarmy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:nat_rustedarmy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\incidents\\incidentworker_rustedarmysiege.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:incidents\\incidentworker_rustedarmysiege.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\newanomalythreats\\source\\nat\\incidents\\incidentworker_rustedarmyraid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\incidents\\incidentworker_rustedarmyraid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:incidents\\incidentworker_rustedarmyraid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\newanomalythreats\\source\\nat\\things\\rustedpawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\things\\rustedpawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:things\\rustedpawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -21,14 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\thingcomps\\comprustedworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:thingcomps\\comprustedworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\harmony\\miscpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:harmony\\miscpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\harmony\\nat_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0B85C08-B9C7-459F-AA75-E100DEE7B7A9}|NAT.csproj|solutionrelative:harmony\\nat_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|NAT||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
@@ -41,7 +73,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,6 +82,103 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Work.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\Harmony\\Work.cs",
+              "RelativeDocumentMoniker": "Harmony\\Work.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\Harmony\\Work.cs",
+              "RelativeToolTip": "Harmony\\Work.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAAAawNQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T23:58:17.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CompCollectorNotes.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\ThingComps\\CompCollectorNotes.cs",
+              "RelativeDocumentMoniker": "ThingComps\\CompCollectorNotes.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\ThingComps\\CompCollectorNotes.cs",
+              "RelativeToolTip": "ThingComps\\CompCollectorNotes.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAnwFYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T14:33:59.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DefOf.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\DefOf.cs",
+              "RelativeDocumentMoniker": "DefOf.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\DefOf.cs",
+              "RelativeToolTip": "DefOf.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAgwI0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T14:33:41.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CompRustedMassDeactivation.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\ThingComps\\CompRustedMassDeactivation.cs",
+              "RelativeDocumentMoniker": "ThingComps\\CompRustedMassDeactivation.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\ThingComps\\CompRustedMassDeactivation.cs",
+              "RelativeToolTip": "ThingComps\\CompRustedMassDeactivation.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAuwGsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T17:31:58.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CompRustedMass.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\ThingComps\\CompRustedMass.cs",
+              "RelativeDocumentMoniker": "ThingComps\\CompRustedMass.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\ThingComps\\CompRustedMass.cs",
+              "RelativeToolTip": "ThingComps\\CompRustedMass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T17:28:36.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Jobs_Collector.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\Jobs\\Jobs_Collector.cs",
+              "RelativeDocumentMoniker": "Jobs\\Jobs_Collector.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\Jobs\\Jobs_Collector.cs",
+              "RelativeToolTip": "Jobs\\Jobs_Collector.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T15:40:50.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CompCollector.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\ThingComps\\CompCollector.cs",
+              "RelativeDocumentMoniker": "ThingComps\\CompCollector.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\ThingComps\\CompCollector.cs",
+              "RelativeToolTip": "ThingComps\\CompCollector.cs",
+              "ViewState": "AgIAANMAAAAAAAAAAAAYwJUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T15:16:05.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NAT_RustedArmy.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\NAT_RustedArmy.cs",
+              "RelativeDocumentMoniker": "NAT_RustedArmy.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\NAT_RustedArmy.cs",
+              "RelativeToolTip": "NAT_RustedArmy.cs",
+              "ViewState": "AgIAAOIAAAAAAAAAAAAcwEwAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T08:29:30.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "IncidentWorker_RustedArmyRaid.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\Incidents\\IncidentWorker_RustedArmyRaid.cs",
               "RelativeDocumentMoniker": "Incidents\\IncidentWorker_RustedArmyRaid.cs",
@@ -57,12 +186,11 @@
               "RelativeToolTip": "Incidents\\IncidentWorker_RustedArmyRaid.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAACUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T08:27:48.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-11T08:27:48.084Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "IncidentWorker_RustedArmySiege.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\Incidents\\IncidentWorker_RustedArmySiege.cs",
               "RelativeDocumentMoniker": "Incidents\\IncidentWorker_RustedArmySiege.cs",
@@ -70,12 +198,11 @@
               "RelativeToolTip": "Incidents\\IncidentWorker_RustedArmySiege.cs",
               "ViewState": "AgIAAIkBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T08:27:43.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-11T08:27:43.625Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "RustedPawn.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\Things\\RustedPawn.cs",
               "RelativeDocumentMoniker": "Things\\RustedPawn.cs",
@@ -83,12 +210,11 @@
               "RelativeToolTip": "Things\\RustedPawn.cs",
               "ViewState": "AgIAAMgAAAAAAAAAAAAswIMBAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T16:10:27.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-10T16:10:27.279Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "CompRustedWorker.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\ThingComps\\CompRustedWorker.cs",
               "RelativeDocumentMoniker": "ThingComps\\CompRustedWorker.cs",
@@ -100,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "CompRustedSoldier.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\ThingComps\\CompRustedSoldier.cs",
               "RelativeDocumentMoniker": "ThingComps\\CompRustedSoldier.cs",
@@ -112,31 +238,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "MiscPatches.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\Harmony\\MiscPatches.cs",
               "RelativeDocumentMoniker": "Harmony\\MiscPatches.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\Harmony\\MiscPatches.cs",
               "RelativeToolTip": "Harmony\\MiscPatches.cs",
-              "ViewState": "AgIAAEoBAAAAAAAAAAAgwEQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAJUBAAAAAAAAAAAmwEQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-10T16:04:22.779Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "NAT_Patch.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\Harmony\\NAT_Patch.cs",
               "RelativeDocumentMoniker": "Harmony\\NAT_Patch.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\Harmony\\NAT_Patch.cs",
               "RelativeToolTip": "Harmony\\NAT_Patch.cs",
-              "ViewState": "AgIAAOsAAAAAAAAAAAAIwEMAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAB0BAAAAAAAAAAAWwDgBAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T22:14:15.052Z"
+              "WhenOpened": "2026-04-03T22:14:15.052Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "NAT",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Source\\NAT\\NAT.csproj",
               "RelativeDocumentMoniker": "NAT.csproj",
